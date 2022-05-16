@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Metro Futuro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Descripción del sitio: Es una landing page de Metro Futuro, empresa que se dedica a gestionar inversiones del tipo crowdfunding en RealState en España respaldadas en un ecosistema de blockchain facilitándolas a inversores latinoamericanos. La misma presentará a la empresa, mostrará los proyectos, tendrá información actualizada del mercado, proveerá de capacitación para el éxito de la futura inversión y brindará la posibilidad de contactarse para mas información.
 
-## Available Scripts
+### Público Objetivo: Apunta a inversionistas latinoamericanos de aproximadamente entre 25 y 40 años capacitados o dispuestos a capacitarse en el mundo del blockchain.
 
-In the project directory, you can run:
+### Sitios de referencia:
 
-### `npm start`
+- **Lista de proyectos:** https://www.zonaprop.com.ar/emprendimientos
+- **Diseño:** https://tether.to/es/
+- **Explicación de trabajo:** https://www.ethichub.com/es/
+- https://www.reental.co/
+- https://www.bricksave.com/es/
+- https://cocos.com.ar/
+- https://www.simplestate.com.ar/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Descripción del equipo:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Desarrollo FullStack Agustín Narvaez:**
+  Vivo en Gral San Martín, tengo 26 años, trabajo en Siemens en el sector Mobility que se encarga de proyectos de electrificación y señalamiento ferroviario.
+  Respecto a mi educación, soy Técnico Electromecánico, realicé el curso de Full-Stack Web Developer (Digital House), estoy cursando el segundo cuatrimestre de la carrera Tecnicatura Universitaria en Programación Informática (UNSAM) y tengo pausado los estudios de Ingeniería Electrónica (UNSAM) por tiempo definido.
+  Respecto a mis idiomas, rendí el examen de inglés First Certificate Exam (Cambridge) y realicé un curso de inglés de 3 semanas en Londres en el año 2014.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Diseño UX/UI: Facundo Forcellati**
+  Actualmente tengo 22 años, vivo en San Martin y trabajo como Account Manager en Media.Monks, más específicamente para el área de Media Consulting, en donde me desempeño realizando tareas de estrategia de negocios, auditoria de plataformas de marketing digital y recomendando a los clientes continuamente según sus objetivos y metas.
+  En cuanto a mi educación, estoy transitando mi ultimo año de la Licenciatura en Publicidad (UADE) y a la par realizando cursos de Diseño UX/UI Avanzado (Coderhouse), SQL (Linkedin Learning) y poseo certificaciones por parte de Google en las diferentes herramientas de marketing digital.
+  Respecto a idiomas, poseo un nivel de inglés Upper-Intermediate, habiendo rendido en FCE (Cambridge).
