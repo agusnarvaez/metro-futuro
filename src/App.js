@@ -7,6 +7,9 @@ import About from './pages/About'
 import Contact from './pages/Contact';
 import NotFound404 from './pages/NotFound404';
 import Footer from "./components/Footer";
+import "./assets/css/normalize.css"
+import "./assets/css/styles.css"
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 function App() {
   return (

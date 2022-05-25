@@ -1,0 +1,15 @@
+.mainFooter{
+    background-color: #004DFF;
+    padding: 1vh 5vw 1vh 5vw;
+}
+.mainFooter *{
+    color: #F3F2F2;
+}
+
+.mainFooter .footerLinks li{
+    list-style: none;
+}
+
+.mainFooter .footerLinks a {
+    text-decoration: none;
+}

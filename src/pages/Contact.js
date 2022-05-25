@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from "react";
+import React, { /* useEffect */ useState } from "react";
 import emailjs from 'emailjs-com'
 import "../assets/css/contact.css"
 
@@ -70,7 +70,7 @@ function Contact() {
                             <input type="file" name="attachment" class="" id="attachment" />
                         </span>
                         <label for="attachment" class='labelAttachment'>
-                            <span ><img src="../assets/images/icons/attachment.svg" /><p>Adjuntar archivo</p></span>
+                            <span ><img alt="attachment" src="../assets/images/icons/attachment.svg" /><p>Adjuntar archivo</p></span>
                         </label>
                     </div>
 
