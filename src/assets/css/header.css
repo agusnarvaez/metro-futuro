@@ -4,20 +4,21 @@
 }
 
 .header{
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     padding: 1vh 5vw 1vh 5vw;
-    background-color: #ffffff;
+    background-color: #FBFDFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 100;
 }
 
-.header .title{
-    font-size: 3em;
-    color: #004DFF;
-    width: 40%;
+.header img{
+    width: 25%;
+    height: auto;
+    
     align-items: center;
 }
 
@@ -39,3 +40,5 @@
     font-size: 1.3em;
     color: black;
 }
+
+

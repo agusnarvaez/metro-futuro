@@ -2,49 +2,79 @@
     color: #F3F2F2;
 }
 .mainFooter{
-    background-color: #004DFF;
-    padding: 10vh 5vw 10vh 5vw;
+    background: linear-gradient(to right,#C2D4FF,#004DFF);
+    padding: 15vh 10vw 10vh 10vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height:50vh;
+    height:fit-content;
+    width: 100%;
+    border-top-left-radius: 150px;
 }
-.mainFooter .footerLinks{
-    width: 45%;
-    height: 100% !important; 
+.topFooter{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-bottom: 65px;
 }
-.mainFooter .footerLinks ul{
+.footerMetroLogo{
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+}
+.footerMetroLogo h3{
+    font-size: 2.5em;
+}
+.footerMetroLogo img{
+    width: 400px;
+    height: auto;
+}
+.footerLinks{
+    width: 45%;
+    height: 100% !important; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.footerLinks ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 40%;
     height: 100%;
     margin: 0;
     padding: 0;
-    
 }
-.mainFooter .footerLinks li{
+.footerLinks li{
     list-style: none;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    padding: 5% 0 5% 0;
 }
 
-.mainFooter .footerLinks a {
+.footerLinks a {
     text-decoration: none;
     font-size: 1.2em;
+    font-weight: lighter;
+    
 }
-.mainFooter .footerSocials{
-    width: 45%;
-        height: 70%;
+.bottomFooter{
+    border-top: 1px white solid;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .mainFooter .briken{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .mainFooter .briken *{
@@ -53,18 +83,29 @@
 }
 
 .footerSocials{
+    width: 45%;
+        height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
 .footerSocials a {
-    padding-left: 3%;
-    height: auto;
-    width: 10%;
+    padding: 2.5%;
+    height: 40px;
+    width: 40px;
+    border: 1.7px white solid;
+    border-radius: 50rem;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerSocials a *{
     height: auto;
-    width: 100%
+    width: 100%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }

@@ -1,4 +1,188 @@
 .homePage{
     padding: 15vh 5vw 10vh 5vw;
-    height: 70vh;
+    width: 100%;
+    height: fit-content;
+    background-color: #FBFDFF;
+}
+
+.homePage .homeAbout{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 0 5% 0;
+}
+
+.homePage .homeAbout .homeAboutCover{
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.homeAboutInfo{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 50%;
+}
+
+.homeAboutInfo h2{
+    font-size: 5em;
+    font-weight: 550;
+    color: #000F33;
+}
+.homeAboutInfo p{
+    width: 60%;
+    font-size: 1.5em;
+    padding: 2% 0 2% 0;
+    font-weight: 300;
+    color: #000F33;
+}
+
+.homeAboutInfo a{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.5em;
+    
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5%;
+    font-weight: 500;
+    
+    
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill; 
+    
+    z-index: 5;
+}
+.homeAboutInfoLink{
+    display: flex;
+    min-width: fit-content;
+    max-width: 20%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#004DFF, #FF00CC);
+    z-index: 1;
+        white-space: nowrap;
+    /* width: fit-content; */
+    border-radius: 50rem;
+}
+.homeAboutInfoLink div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dcdcdc;
+    width: -webkit-fill-available;
+    height: auto;
+    margin: 2.5px 2px;
+    z-index: 2;
+    border-radius: 50rem;
+}
+
+.homeSlogan {
+    width: 100%;
+    border-radius: 30px;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+    
+    background-image: linear-gradient(145deg,
+                hsl(222deg 100% 50%) 0%,
+                hsl(235deg 100% 81%) 39%,
+                hsl(288deg 67% 79%) 61%,
+                hsl(312deg 100% 50%) 100%);
+    font-size: 3em;
+    color: #F3F2F2;
+}
+.homeSlogan h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.homeInvestmentSteps{
+    width: 100%;
+    height: 50vh;
+    margin: 5% 0 5% 0;
+    padding: 10% 0 5% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
+        border-radius: 150px 0px 0px 0px;
+}
+.homeInvestments{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.homeInvestments h3 font {
+    font-size: inherit;
+}
+.homeInvestments h3 {
+    font-size: 2.5em;
+    width: 70%;
+
+}
+.homeInvestmensInfoLink a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.5em;
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5%;
+    font-weight: 500;
+
+
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
+
+    z-index: 5;
+}
+
+.homeInvestmensInfoLink {
+    display: flex;
+    width: inherit;
+    max-width:25%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #004DFF, #FF00CC);
+    z-index: 1;
+    white-space: nowrap;
+    border-radius: 50rem;
+}
+
+.homeInvestmensInfoLink div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FBFDFF;
+    width: -webkit-fill-available;
+    height: auto;
+    margin: 2.5px 2px;
+    z-index: 2;
+    border-radius: 50rem;
 }

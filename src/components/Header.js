@@ -4,7 +4,9 @@ import "../assets/css/header.css"
 function Header() {
     return (
         <header className="header">
-            <h1 className='title'>Metro Futuro</h1>
+            <img
+                src="./assets/images/icons/metroFuturoLogo.png" alt="metroFuturoLogo"
+            />
             <ul className="navigation">
                 <li ><NavLink className={({ isActive }) => (isActive ? "navLink active" : "navLink")} to='/' exact="true">Home</NavLink></li>
                 <li><NavLink to='/investments/list'>Inversiones</NavLink></li>
