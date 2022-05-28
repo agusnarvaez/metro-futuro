@@ -1,8 +1,8 @@
 .homePage{
     padding: 1vh 6vw 10vh 6vw;
+    background-color: #FBFDFF;
     width: 100%;
     height: fit-content;
-    background-color: #FBFDFF;
 }
 
 .homePage .homeAbout{
@@ -139,7 +139,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
+    /* background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%); */
+    
     border-radius: 150px 0px 0px 0px;
     position: relative;
 }

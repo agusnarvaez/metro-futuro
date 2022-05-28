@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../assets/css/home.css"
-import { NavLink } from 'react-router-dom'
+import "../assets/css/home.css";
+import { NavLink } from 'react-router-dom';
 import livingRoom from '../assets/img/livingRoom.png';
 import investmentStepsBg from "../assets/img/background/homeInvestmentStepsBg.png";
 import clockIcon from '../assets/img/icons/homeClock.png';
