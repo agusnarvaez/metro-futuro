@@ -6,17 +6,18 @@
 .header{
     width: 100%;
     height: 15vh;
-    padding: 1vh 5vw 1vh 5vw;
+    padding: 1vh 6vw 1vh 6vw;
     background-color: #FBFDFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 100;
 }
 
 .header img{
-    width: 25%;
+    width: 19vw;
     height: auto;
     
     align-items: center;
