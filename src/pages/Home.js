@@ -2,6 +2,15 @@ import { useState } from "react";
 import "../assets/css/home.css"
 import { NavLink } from 'react-router-dom'
 import livingRoom from '../assets/img/livingRoom.png';
+import investmentStepsBg from "../assets/img/background/homeInvestmentStepsBg.png";
+import clockIcon from '../assets/img/icons/homeClock.png';
+import shoppingCartIcon from '../assets/img/icons/homeShoppingCart.png';
+import dollarSignIcon from '../assets/img/icons/homeDollarSign.png';
+import padlockIcon from '../assets/img/icons/homePadlock.png';
+import suitcaseIcon from '../assets/img/icons/homeSuitcase.png';
+import building from '../assets/img/building.png';
+import homeBenefitsBg from "../assets/img/background/homeBenefitsBg.png";
+import learnWithUsBg from "../assets/img/background/homeLearnWithUsBg.png"
 function Home() {
     const [carrousel, setCarrousel] = useState(true);
 
@@ -26,11 +35,12 @@ function Home() {
                 <h2>Invierte en España desde 100 euros</h2>
             </div>
             <div className="homeInvestmentSteps">
+                <img className="homeInvestmentStepsBg" alt="homeInvestmentStepsBg" src={investmentStepsBg} />
                 <div className="homeInvestments">
                     <h3>¿Como <font color="#004DFF">invertir</font> en simples pasos?</h3>
                     <div className="homeInvestmensInfoLink">
                         <div>
-                            <NavLink to='/investments'>
+                            <NavLink to='/investments/list'>
                                 Invierte
                             </NavLink>
                         </div>
@@ -79,6 +89,85 @@ function Home() {
                                 <p>Una vez realizado el pago recibes tus tokens en tu billetera digital, para poder disponer de ellos o recibir tu renta mensualmente.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="homeBenefits">
+                <img className="homeBenefitsBg" alt="homeBenefitsBackground" src={homeBenefitsBg} />
+                <h4>Beneficios de invertir con metro futuro</h4>
+                <div className="homeBenefitsContainer">
+                    <div className="homeBenefitsImg">
+                        <img alt="homeBenefitsImg" src={building} />
+                    </div>
+                    <ul className="homeBenefitsItems">
+                        <li>
+                            <img alt="icon" src={clockIcon} />
+                            <div>
+                                <h5>Liquidez</h5>
+                                <p>Recibe una renta mensual por el alquiler del imueble</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img alt="icon" src={shoppingCartIcon} />
+                            <div>
+                                <h5>Descentralización</h5>
+                                <p>Vende y compra tus tokens inmobiliarios cuando quieras</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img alt="icon" src={dollarSignIcon} />
+                            <div>
+                                <h5>Rentabilidad</h5>
+                                <p>Obten tu rentabilidad al venderse la propiedad</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img alt="icon" src={padlockIcon} />
+                            <div>
+                                <h5>Seguridad</h5>
+                                <p>Utilizamos Smart Contracts Para garantizar la seguridad en tu operación</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img alt="icon" src={suitcaseIcon} />
+                            <div>
+                                <h5>Relaciones Jurídicas</h5>
+                                <p>Nuestras inversiones cumplen con lass normativas de la Comisión nacional del Mercado de Valores de España (CNMV)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className="homeLearnWithUs">
+                <img className="learnWithUsBg" alt="learnWithUsBackground" src={learnWithUsBg} />
+                <div className="homeLearnWithUsVideo">
+
+                </div>
+                <div className="homeLearnWithUsText">
+                    <h4>Aprende con <font color="#004DFF">Metro Futuro</font></h4>
+                    <p>
+                        Te ofrecemos una plataforma eLearning online y gratuita para formarse en inversioens inmobiliarias y la tecnología Blockchain.<br /><br />
+                        Únete a la academia de Metro Futuro para lograr capitalizar tus ahorros y transformarte en un inversor del Real State, la industria con mayor seguridad y menor riesgo.
+                    </p>
+                    <div className="homeLearnWithUsLink">
+                        <div>
+                            <NavLink to='/academy'>
+                                Ver más
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="homeNews">
+                <div className="homeNewsText">
+                    <h3>Novedades</h3>
+                    <p>Entérate de últimas noticias del sector inmobiliario en Europa y Latam.</p>
+                </div>
+                <div className="homeNewsLink">
+                    <div>
+                        <NavLink to='/academy'>
+                            Quiero saber más
+                        </NavLink>
                     </div>
                 </div>
             </div>

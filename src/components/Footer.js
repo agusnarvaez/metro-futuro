@@ -1,13 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import "../assets/css/footer.css";
-
+import footerRightBg from "../assets/img/background/footerRightBg.svg"
+import footerLeftBg from "../assets/img/background/footerLeftBg.svg"
 function Footer() {
 
 	return (
 
 		<React.Fragment>
 			<footer className="mainFooter">
+				{/* <div className='mainFooterBackground'> */}
+					<img className='mainFooterBackgroundLeft' alt="footerBackground" src={footerLeftBg} />
+					<img className='mainFooterBackgroundRight' alt="footerBackground" src={footerRightBg} />
+				{/* </div> */}
 				<div className="topFooter">
 					<div className='footerMetroLogo'>
 						<h3>Sumate a</h3>
