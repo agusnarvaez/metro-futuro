@@ -13,14 +13,16 @@ import homeBenefitsBg from "../assets/img/background/homeBenefitsBg.png";
 import learnWithUsBg from "../assets/img/background/homeLearnWithUsBg.png";
 import homePartnersBg from "../assets/img/background/homePartnersBg.png";
 import homeFaqIcon from '../assets/img/icons/homeFaqIcon.png';
-
-
+import metroXLogo from "../assets/img/logos/metroXLogo.png";
+import stayRealTVLogo from "../assets/img/logos/stayRealTVLogo.png";
+import brikenLogo from "../assets/img/logos/brikenLogo.png";
 function Home() {
     const [carrousel, setCarrousel] = useState(true);
 
     console.log(carrousel);
     return (
         <div className="homePage">
+
             <section className="homeAbout">
                 <div className="homeAboutInfo">
                     <h2>Inversiones por M<sup>2</sup></h2>
@@ -35,9 +37,13 @@ function Home() {
                 </div>
                 <img className="homeAboutCover" src={livingRoom} alt="livingRoom" />
             </section>
+
+
             <section className="homeSlogan">
                 <h2>Invierte en España desde 100 euros</h2>
             </section>
+
+
             <section className="homeInvestmentSteps">
                 <img className="homeInvestmentStepsBg" alt="homeInvestmentStepsBg" src={investmentStepsBg} />
                 <div className="homeInvestments">
@@ -96,6 +102,8 @@ function Home() {
                     </div>
                 </div>
             </section>
+
+
             <section className="homeBenefits">
                 <img className="homeBenefitsBg" alt="homeBenefitsBackground" src={homeBenefitsBg} />
                 <h4>Beneficios de invertir con metro futuro</h4>
@@ -142,6 +150,8 @@ function Home() {
                     </ul>
                 </div>
             </section>
+
+
             <section className="homeLearnWithUs">
                 <img className="learnWithUsBg" alt="learnWithUsBackground" src={learnWithUsBg} />
                 <div className="homeLearnWithUsVideo">
@@ -180,12 +190,12 @@ function Home() {
 
             <section className="homePartners">
                 <img alt="homePartnersBackground" className="homePartnersBg" src={homePartnersBg} />
-                <h3>Nuestros Partners</h3>
+                <h3>Nuestros partners</h3>
                 <ul>
                     <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><img alt="metroXLogo" src={metroXLogo} /></li>
+                    <li><img alt="stayRealTVLogo" src={stayRealTVLogo} /></li>
+                    <li><img alt="brikenLogo" src={brikenLogo} /></li>
                 </ul>
             </section>
             <section className="homeFaq">
