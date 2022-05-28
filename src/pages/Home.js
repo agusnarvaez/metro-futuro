@@ -10,14 +10,15 @@ import padlockIcon from '../assets/img/icons/homePadlock.png';
 import suitcaseIcon from '../assets/img/icons/homeSuitcase.png';
 import building from '../assets/img/building.png';
 import homeBenefitsBg from "../assets/img/background/homeBenefitsBg.png";
-import learnWithUsBg from "../assets/img/background/homeLearnWithUsBg.png"
+import learnWithUsBg from "../assets/img/background/homeLearnWithUsBg.png";
+import homePartnersBg from "../assets/img/background/homePartnersBg.png";
 function Home() {
     const [carrousel, setCarrousel] = useState(true);
 
     console.log(carrousel);
     return (
         <div className="homePage">
-            <div className="homeAbout">
+            <section className="homeAbout">
                 <div className="homeAboutInfo">
                     <h2>Inversiones por M<sup>2</sup></h2>
                     <p>Una plataforma con tecnología blockchain que permite invertir por metro cuadrado en Europa</p>
@@ -30,11 +31,11 @@ function Home() {
                     </div>
                 </div>
                 <img className="homeAboutCover" src={livingRoom} alt="livingRoom" />
-            </div>
-            <div className="homeSlogan">
+            </section>
+            <section className="homeSlogan">
                 <h2>Invierte en España desde 100 euros</h2>
-            </div>
-            <div className="homeInvestmentSteps">
+            </section>
+            <section className="homeInvestmentSteps">
                 <img className="homeInvestmentStepsBg" alt="homeInvestmentStepsBg" src={investmentStepsBg} />
                 <div className="homeInvestments">
                     <h3>¿Como <font color="#004DFF">invertir</font> en simples pasos?</h3>
@@ -91,8 +92,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="homeBenefits">
+            </section>
+            <section className="homeBenefits">
                 <img className="homeBenefitsBg" alt="homeBenefitsBackground" src={homeBenefitsBg} />
                 <h4>Beneficios de invertir con metro futuro</h4>
                 <div className="homeBenefitsContainer">
@@ -137,8 +138,8 @@ function Home() {
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div className="homeLearnWithUs">
+            </section>
+            <section className="homeLearnWithUs">
                 <img className="learnWithUsBg" alt="learnWithUsBackground" src={learnWithUsBg} />
                 <div className="homeLearnWithUsVideo">
 
@@ -157,8 +158,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="homeNews">
+            </section>
+
+
+            <section className="homeNews">
                 <div className="homeNewsText">
                     <h3>Novedades</h3>
                     <p>Entérate de últimas noticias del sector inmobiliario en Europa y Latam.</p>
@@ -170,7 +173,18 @@ function Home() {
                         </NavLink>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section className="homePartners">
+                <img alt="homePartnersBackground" className="homePartnersBg" src={homePartnersBg} />
+                <h3>Nuestros Partners</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
         </div>
     )
 }
