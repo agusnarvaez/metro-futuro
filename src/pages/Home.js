@@ -12,6 +12,9 @@ import building from '../assets/img/building.png';
 import homeBenefitsBg from "../assets/img/background/homeBenefitsBg.png";
 import learnWithUsBg from "../assets/img/background/homeLearnWithUsBg.png";
 import homePartnersBg from "../assets/img/background/homePartnersBg.png";
+import homeFaqIcon from '../assets/img/icons/homeFaqIcon.png';
+
+
 function Home() {
     const [carrousel, setCarrousel] = useState(true);
 
@@ -184,6 +187,42 @@ function Home() {
                     <li></li>
                     <li></li>
                 </ul>
+            </section>
+            <section className="homeFaq">
+                <h3>Preguntas frecuentes</h3>
+                <ul>
+                    <li>
+                        <div>
+                            <h4>¿En que estoy invirtiendo?</h4>
+                            <img alt="homeFaqIcon" src={homeFaqIcon} />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h4>¿Como funciona legalmente?</h4>
+                            <img alt="homeFaqIcon" src={homeFaqIcon} />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h4>¿Cuando y cómo puedo salir de mi inversión?</h4>
+                            <img alt="homeFaqIcon" src={homeFaqIcon} />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h4>¿Como recibo mi alquiler mensualmente?</h4>
+                            <img alt="homeFaqIcon" src={homeFaqIcon} />
+                        </div>
+                    </li>
+                </ul>
+                <div className="homeFaqLink">
+                    <div>
+                        <NavLink to='/faq'>
+                            Ver más
+                        </NavLink>
+                    </div>
+                </div>
             </section>
         </div>
     )

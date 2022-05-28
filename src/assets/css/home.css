@@ -422,7 +422,7 @@
     text-align: end;
     padding: 5% 0;
 }
-/* Link degradado*/
+/* Link degradado */
 .homeLearnWithUsLink a {
     text-decoration: none;
     font-style: normal;
@@ -440,7 +440,6 @@
 
     z-index: 5;
 }
-
 .homeLearnWithUsLink {
     display: flex;
     
@@ -453,7 +452,6 @@
     /* width: fit-content; */
     border-radius: 50rem;
 }
-
 .homeLearnWithUsLink div {
     display: flex;
     justify-content: center;
@@ -512,7 +510,7 @@
     font-weight: 300;
 }
 
-/* Link degradado*/
+/* Link degradado */
 .homeNewsLink a {
     text-decoration: none;
     font-style: normal;
@@ -598,3 +596,117 @@
         box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
         border-radius: 10px;
 }
+
+
+/* #### Preguntas frecuentes ####*/
+
+.homeFaq{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homeFaq h3{
+    color: #000F33;
+        font-size: 3em;
+        font-weight: 600;
+        padding: 3% 0;
+}
+.homeFaq ul{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.homeFaq img{
+    width: 53px;
+    height: 53px;
+}
+.homeFaq li h4 {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 2em;
+    text-align: start;
+    width: 100%;
+    height: auto;
+    
+    padding: 4% 2%;
+    font-weight: 500;
+    color:#000F33;
+
+    z-index: 5;
+}
+
+.homeFaq li {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #004DFF, #FF00CC);
+    z-index: 1;
+    white-space: nowrap;
+    margin: 1% 0;
+    border-radius: 23px;
+}
+
+.homeFaq li div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FBFDFF;
+    width: -webkit-fill-available;
+    height: auto;
+    margin: 5px 4.5px;
+    z-index: 2;
+    border-radius: 20px;
+    padding: 2% 5%;
+}
+
+/* Link degradado */
+.homeFaqLink a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.3em;
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 7%;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
+
+    z-index: 5;
+}
+
+.homeFaqLink {
+    display: flex;
+    margin: 1.5% 0;
+    width: 7%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #004DFF, #FF00CC);
+    z-index: 1;
+    white-space: nowrap;
+    /* width: fit-content; */
+    border-radius: 50rem;
+}
+
+.homeFaqLink div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FBFDFF;
+    width: -webkit-fill-available;
+    height: auto;
+    margin: 2px 1.5px;
+    z-index: 2;
+    border-radius: 50rem;
+}
+
