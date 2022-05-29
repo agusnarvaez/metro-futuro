@@ -25,6 +25,8 @@
     font-size: 5em;
     font-weight: 500;
     display: inline;
+    justify-content: center;
+    text-align: center;
 }
 
 .aboutPage h2 {
