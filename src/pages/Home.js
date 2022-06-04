@@ -16,6 +16,7 @@ import homeFaqIcon from '../assets/img/icons/homeFaqIcon.png';
 import metroXLogo from "../assets/img/logos/metroXLogo.png";
 import stayRealTVLogo from "../assets/img/logos/stayRealTVLogo.png";
 import brikenLogo from "../assets/img/logos/brikenLogo.png";
+
 function Home() {
     const [carrousel, setCarrousel] = useState(true);
 
