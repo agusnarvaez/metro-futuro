@@ -145,7 +145,7 @@ function Home() {
                             <img alt="icon" src={suitcaseIcon} />
                             <div>
                                 <h5>Relaciones Jurídicas</h5>
-                                <p>Nuestras inversiones cumplen con lass normativas de la Comisión nacional del Mercado de Valores de España (CNMV)</p>
+                                <p>Nuestras inversiones cumplen con las normativas de la Comisión nacional del Mercado de Valores de España (CNMV)</p>
                             </div>
                         </li>
                     </ul>

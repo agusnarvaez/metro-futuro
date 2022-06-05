@@ -24,7 +24,7 @@ function About() {
                     Somos <br />
                     <font color="#004DFF">Metro Futuro</font>
                 </h1>
-                <p>Somos una empresa global de inmuebles tokenizados</p>
+                <p>Una empresa global de inmuebles tokenizados</p>
             </section>
 
 

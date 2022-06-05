@@ -11,7 +11,7 @@ function Contact() {
     const [messageContainer,setMessageContainer]= useState("inputLargeContainer");
 
 
-    const frmContact = { from_name: '', from_email: '', phone: '', reason: '', message: '', attachment: '' };
+    const frmContact = { from_name: '', from_email: '', phone: '', subject: '', message: '', attachment: '' };
 
     const [contact, setContact] = useState(frmContact);
     const [showMessage, setShowMessage] = useState(false);
@@ -81,10 +81,10 @@ function Contact() {
                         <input
                             className="largeInput"
                             id="input"
-                            name="reason"
+                            name="subject"
                             placeholder="Asunto"
                             type="text"
-                            value={contact.reason}
+                            value={contact.subject}
                             onFocus={()=>{setSubjectContainer("inputContainer inputContainerFocus")}}
                             onChange={handleChange}
                             onBlur={()=>{setSubjectContainer("inputContainer")}}
