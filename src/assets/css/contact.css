@@ -87,7 +87,7 @@
 .inputContainer input{
     width: 100%;
     border-radius: 50rem;
-    margin: 2px 2px;
+    margin: 3px 2.5px;
     padding: 3% 3% 3% 5%;
     color: #000F33;
     opacity: 100%;
@@ -105,7 +105,7 @@
     background: #004cff89;
     padding: 2px 2px;
     
-    height: 120px;
+    height: 130px;
     margin: 1% 0;
 }
 .inputLargeContainer textarea{
@@ -115,7 +115,7 @@
     width: 100%;
     height: 100%;
     padding: 2% 2% 2% 5%;
-    /* margin: 2px 2px; */
+    margin: 3px 1px;
     resize: none;
     font-size: 16px;
     color: #000F33;
@@ -157,7 +157,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #FBFAFF;
-    margin: 2px 2px;
+    margin: 2.5px 2.5px;
     padding: 1%;
     border-radius: 50rem;
 }
@@ -182,7 +182,7 @@
     
     color: #F3F2F2;
 }
-.contactSubmit{
+/* .contactSubmit{
     font-weight: 500;
     font-size: 16px;
     background-color: #004cff;
@@ -192,7 +192,52 @@
     
     color: #F3F2F2;
     border: none;
+}*/
+.contactSubmit div:active{
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+} 
+
+
+/* Link degradado */
+.contactSubmit p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 6%;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
+    z-index: 5;
 }
-.contactSubmit:active{
-    background-color: #000F33;
+.contactSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    background: linear-gradient(to right, #004DFF, #FF00CC);
+    z-index: 1;
+    white-space: nowrap;
+    margin: 2% 0;
+    /* width: fit-content; */
+    border-radius: 50rem;
+    border: none;
+}
+.contactSubmit div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FBFDFF;
+    width: -webkit-fill-available;
+    height: auto;
+    margin: 2.5px 2.5px 2.5px 2.5px;
+    z-index: 2;
+    border-radius: 50rem;
 }

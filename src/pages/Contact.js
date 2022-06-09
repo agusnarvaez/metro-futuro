@@ -125,9 +125,18 @@ function Contact() {
                         </label>
                     </div> */}
 
-
-                    <button className="contactSubmit" type="submit">Enviar</button>
-
+                    
+                    <button
+                        className="contactSubmit"
+                        type="submit"
+                    >
+                        <div>
+                            <p>
+                                Enviar
+                            </p>
+                        </div>
+                    </button>
+                    
 
                     {showMessage ? <div className="alertSuccess" role="alert">Enviado con éxito!</div> : ``}
                 </form >
