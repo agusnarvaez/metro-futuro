@@ -235,7 +235,7 @@
     justify-content: center;
     align-items: center;
     background: #FBFDFF;
-    width: -webkit-fill-available;
+    width: 100%;
     height: auto;
     margin: 2.5px 2.5px 2.5px 2.5px;
     z-index: 2;

@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import "../assets/css/footer.css";
 import footerRightBg from "../assets/img/background/footerRightBg.svg"
 import footerLeftBg from "../assets/img/background/footerLeftBg.svg"
+import brikenLogo from "../assets/img/logos/brikenLogo.png";
+import metroFuturoLogo from "../assets/img/logos/metroFuturoLogo.png";
 function Footer() {
 
 	return (
@@ -17,7 +19,7 @@ function Footer() {
 					<div className='footerMetroLogo'>
 						<h3>Sumate a</h3>
 						<img
-							src="./assets/images/icons/metroFuturoLogo.png" alt="metroFuturoLogo"
+							src={metroFuturoLogo} alt="metroFuturoLogo"
 						/>
 					</div>
 					<div className="footerLinks">
@@ -41,7 +43,7 @@ function Footer() {
 					<div className="briken">
 						<p>Powered by  </p>
 						<img
-							src="./assets\images\icons\brikenLogo.png"
+							src={brikenLogo}
 							alt="brikenLogo"
 						/>
 					</div>

@@ -86,7 +86,7 @@
     justify-content: center;
     align-items: center;
     background: #dcdcdc;
-    width: -webkit-fill-available;
+    width: 100%;
     height: auto;
     margin: 2.5px 2px;
     z-index: 2;
@@ -109,7 +109,7 @@
     
     font-size: 3em;
     color: #F3F2F2;
-    background-size: 150% 200%;
+    background-size: 200% 300%;
     animation: gradient 10s ease-out infinite;
 }
 @keyframes gradient {
@@ -201,7 +201,7 @@
     justify-content: center;
     align-items: center;
     background: #FBFDFF;
-    width: -webkit-fill-available;
+    width: 100%;
     height: auto;
     margin: 2.5px 2px;
     z-index: 2;
@@ -459,7 +459,7 @@
     justify-content: center;
     align-items: center;
     background: #FBFDFF;
-    width: -webkit-fill-available;
+    width: 100%;
     height: auto;
     margin: 2.5px 2px;
     z-index: 2;
@@ -491,7 +491,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-    background-size: 150% 250%;
+    background-size: 200% 300%;
         animation: gradient 15s ease-out infinite;
 }
 .homeNewsText{
@@ -549,7 +549,7 @@
     justify-content: center;
     align-items: center;
     background: hsl(236deg 51% 91%);
-    width: -webkit-fill-available;
+    width: 100%;
     height: auto;
     margin: 2.5px 2px;
     z-index: 2;
@@ -669,7 +669,7 @@
     justify-content: space-between;
     align-items: center;
     background: #FBFDFF;
-    width: -webkit-fill-available;
+    width: 100%;
     height: auto;
     margin: 5px 4.5px;
     z-index: 2;
@@ -714,7 +714,7 @@
     justify-content: center;
     align-items: center;
     background: #FBFDFF;
-    width: -webkit-fill-available;
+    width: 100%;
     height: auto;
     margin: 2px 1.5px;
     z-index: 2;

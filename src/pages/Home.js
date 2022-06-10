@@ -17,6 +17,9 @@ import metroXLogo from "../assets/img/logos/metroXLogo.png";
 import stayRealTVLogo from "../assets/img/logos/stayRealTVLogo.png";
 import brikenLogo from "../assets/img/logos/brikenLogo.png";
 
+import rightArrowHomeCarrousel from "../assets/img/icons/rightArrow.png"
+import leftArrowHomeCarrousel from "../assets/img/icons/leftArrow.png"
+
 function Home() {
     const [carrousel, setCarrousel] = useState(true);
 
@@ -63,7 +66,7 @@ function Home() {
                             onClick={() => setCarrousel(!carrousel)}
                         >
                             <div>
-                                <img src="./assets/images/icons/leftArrow.svg" alt="leftArrowNav" />
+                                <img src={leftArrowHomeCarrousel} alt="leftArrowNav" />
                             </div>
                         </div>
                         <div className="homeInvestmentStepsCarrouselArrowContainer"
@@ -71,7 +74,7 @@ function Home() {
 
                         >
                             <div>
-                                <img src="./assets/images/icons/rightArrow.svg" alt="rightArrowNav" />
+                                <img src={rightArrowHomeCarrousel} alt="rightArrowNav" />
                             </div>
                         </div>
                     </div>
