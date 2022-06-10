@@ -325,6 +325,7 @@
     font-weight: 500;
     height: 10%;
     color: #000F33;
+    z-index: 5;
 }
 .homeBenefitsContainer{
     width: 100%;
