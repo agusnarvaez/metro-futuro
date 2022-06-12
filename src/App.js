@@ -12,12 +12,34 @@ import "./assets/css/styles.css"
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 function App() {
+  const investmentsList = [
+    {
+      id: 0,
+      title:"Edificio Nita - 3A",
+      cover:"../assets/images/projects/nitaCover.png",
+      addres: "Valencia 18",
+      estimatedEarnings: "15%-18%",
+      contractExpiration: "30/06/25",
+      area: "47.8",
+      areaValue: "$500"
+    },
+    {
+      id: 1,
+      title:"Edificio Nita - 2A",
+      cover:"../assets/images/projects/nitaCover.png",
+      addres: "Valencia 18",
+      estimatedEarnings: "15%-18%",
+      contractExpiration: "30/06/25",
+      area: "47.8",
+      areaValue: "$500"
+    }]
+
   return (
     <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='/investments/list' element={<Investments />} />
+        <Route path='/investments/list' element={<Investments investmentsList={investmentsList} />} />
         <Route path='/investments/:id' element={<InvestmentDetail />} />
         <Route path='/academy' element={<Academy />} />
         <Route path='/about' element={<About />} />

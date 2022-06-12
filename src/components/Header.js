@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom'
 import "../assets/css/header.css"
-
+import metroFuturoLogo from "../assets/img/icons/metroFuturoLogo.png"
 function Header() {
     return (
         <header className="header">
             <img
-                src="./assets/images/icons/metroFuturoLogo.png" alt="metroFuturoLogo"
+                src={metroFuturoLogo} alt="metroFuturoLogo"
             />
             <ul className="navigation">
                 <li ><NavLink className={({ isActive }) => (isActive ? "navLink active" : "navLink")} to='/' exact="true">Home</NavLink></li>

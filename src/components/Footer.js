@@ -5,6 +5,9 @@ import footerRightBg from "../assets/img/background/footerRightBg.svg"
 import footerLeftBg from "../assets/img/background/footerLeftBg.svg"
 import brikenLogo from "../assets/img/logos/brikenLogo.png";
 import metroFuturoLogo from "../assets/img/logos/metroFuturoLogo.png";
+import instagramLogo from "../assets/img/icons/instagramLogo.svg";
+import linkedinLogo from "../assets/img/icons/linkedInLogo.svg";
+import twitterLogo from "../assets/img/icons/twitterLogo.svg";
 function Footer() {
 
 	return (
@@ -51,7 +54,7 @@ function Footer() {
 						<a target="_blank" href="/">
 							<div className="instagramLogo">
 								<img
-									src="./assets\images\icons\instagramLogo.svg"
+									src={instagramLogo}
 									alt="instagramLogo"
 								/>
 							</div>
@@ -59,7 +62,7 @@ function Footer() {
 						<a target="_blank" href="/">
 							<div className="twitterLogo">
 								<img
-									src="./assets\images\icons\twitterLogo.svg"
+									src={twitterLogo}
 									alt="twitterLogo"
 								/>
 							</div>
@@ -67,7 +70,7 @@ function Footer() {
 						<a target="_blank" href="/">
 							<div className="linkedInLogo">
 								<img
-									src="./assets\images\icons\linkedInLogo.svg"
+									src={linkedinLogo}
 									alt="linkedInLogo"
 								/>
 							</div>

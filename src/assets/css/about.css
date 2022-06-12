@@ -52,7 +52,7 @@
     display: inline;
 }
 
-.sectionBackground{
+.aboutPage .sectionBackground{
     position: absolute;
     top: 0;
     left: -6vw;
@@ -344,6 +344,21 @@
 .aboutTeamImage img{
     position: absolute;
     bottom: 0;
+}
+#jobCarreraAvatar{
+    width: 120%;
+}
+#marielaScheloneAvatar{
+    width: 155%;
+}
+#pedroSilvestriAvatar{
+    width: 200%;
+}
+#pedroNicholsonAvatar{
+    width: 125%;
+}
+#juanPorrazzoAvatar{
+    width: 130%;
 }
 
 .aboutTeamInfo{

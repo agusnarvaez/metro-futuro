@@ -12,7 +12,11 @@ import valuesIcon from "../assets/img/icons/valuesIcon.png";
 import aboutInfoBg from "../assets/img/background/aboutInfoBg.png";
 
 import avatarExample from "../assets/img/avatarExample.png";
-
+import jobCarreraAvatar from "../assets/img/team/jobCarreraDiaz.png";
+import marielaScheloneAvatar from "../assets/img/team/marielaSchelone.png";
+import pedroSilvestriAvatar from "../assets/img/team/pedroSilvestri.png";
+import pedroNicholsonAvatar from "../assets/img/team/pedroNicholson.png";
+import juanPorrazzoAvatar from "../assets/img/team/juanPorrazzo.png";
 function About() {
 
     return (
@@ -113,8 +117,9 @@ function About() {
                         <div className="aboutTeamImage">
                             <div>
                                 <img
+                                    id='jobCarreraAvatar'
                                     alt="aboutTeamMemberImg"
-                                    src={avatarExample}
+                                    src={jobCarreraAvatar}
                                 />
                             </div>
                         </div>
@@ -127,8 +132,9 @@ function About() {
                         <div className="aboutTeamImage">
                             <div>
                                 <img
+                                    id='marielaScheloneAvatar'
                                     alt="aboutTeamMemberImg"
-                                    src={avatarExample}
+                                    src={marielaScheloneAvatar}
                                 />
                             </div>
                         </div>
@@ -141,8 +147,9 @@ function About() {
                         <div className="aboutTeamImage">
                             <div>
                                 <img
+                                    id="pedroSilvestriAvatar"
                                     alt="aboutTeamMemberImg"
-                                    src={avatarExample}
+                                    src={pedroSilvestriAvatar}
                                 />
                             </div>
                         </div>
@@ -155,8 +162,9 @@ function About() {
                         <div className="aboutTeamImage">
                             <div>
                                 <img
+                                    id="pedroNicholsonAvatar"
                                     alt="aboutTeamMemberImg"
-                                    src={avatarExample}
+                                    src={pedroNicholsonAvatar}
                                 />
                             </div>
                         </div>
@@ -166,11 +174,12 @@ function About() {
                         </div>
                     </li>
                     <li>
-                        <div className="aboutTeamImage">
+                        <div className="aboutTeamImage" >
                             <div>
                                 <img
+                                    id="juanPorrazzoAvatar"
                                     alt="aboutTeamMemberImg"
-                                    src={avatarExample}
+                                    src={juanPorrazzoAvatar}
                                 />
                             </div>
                         </div>
