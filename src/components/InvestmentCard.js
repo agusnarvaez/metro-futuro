@@ -1,6 +1,7 @@
 /* import React, { useEffect, useState } from "react"; */
 
 function InvestmentCard(props) {
+    console.log(props)
     return (
         <article className="investmentsPageProjectCard">
                         <div className="investmentsPageProjectsCover">
