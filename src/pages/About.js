@@ -10,8 +10,8 @@ import missionIcon from "../assets/img/icons/missionIcon.png";
 import visionIcon from "../assets/img/icons/visionIcon.png";
 import valuesIcon from "../assets/img/icons/valuesIcon.png";
 import aboutInfoBg from "../assets/img/background/aboutInfoBg.png";
+import linkedinLogo from "../assets/img/icons/aboutLinkedinLogo.png";
 
-import avatarExample from "../assets/img/avatarExample.png";
 import jobCarreraAvatar from "../assets/img/team/jobCarreraDiaz.png";
 import marielaScheloneAvatar from "../assets/img/team/marielaSchelone.png";
 import pedroSilvestriAvatar from "../assets/img/team/pedroSilvestri.png";
@@ -126,6 +126,14 @@ function About() {
                         <div className="aboutTeamInfo">
                             <h3>Job Carrera Diaz</h3>
                             <p>Director de inmuebles</p>
+                            <a target="_blank" href="https://www.linkedin.com/in/job-carrera-diaz-3471a325/">
+                                <div className="aboutTeamlinkedInLogo">
+                                    <img
+                                        src={linkedinLogo}
+                                        alt="linkedInLogo"
+                                    />
+                                </div>
+						    </a>
                         </div>
                     </li>
                     <li>
@@ -141,6 +149,14 @@ function About() {
                         <div className="aboutTeamInfo">
                             <h3>Mariela Schenone</h3>
                             <p>Directora financiera, fiscal y de estructuración</p>
+                            <a target="_blank" href="https://www.linkedin.com/in/mariela-schenone-1890a43/">
+                                <div className="aboutTeamlinkedInLogo">
+                                    <img
+                                        src={linkedinLogo}
+                                        alt="linkedInLogo"
+                                    />
+                                </div>
+						    </a>
                         </div>
                     </li>
                     <li>
@@ -156,6 +172,14 @@ function About() {
                         <div className="aboutTeamInfo">
                             <h3>Pedro Silvestri</h3>
                             <p>Director financiero</p>
+                            <a target="_blank" href="/">
+                                <div className="aboutTeamlinkedInLogo">
+                                    <img
+                                        src={linkedinLogo}
+                                        alt="linkedInLogo"
+                                    />
+                                </div>
+						    </a>
                         </div>
                     </li>
                     <li>
@@ -171,6 +195,14 @@ function About() {
                         <div className="aboutTeamInfo">
                             <h3>Pedro Nicholson</h3>
                             <p>Director de legales</p>
+                            <a target="_blank" href="https://www.linkedin.com/in/pedro-nicholson-ba737b9/">
+                                <div className="aboutTeamlinkedInLogo">
+                                    <img
+                                        src={linkedinLogo}
+                                        alt="linkedInLogo"
+                                    />
+                                </div>
+						    </a>
                         </div>
                     </li>
                     <li>
@@ -186,6 +218,14 @@ function About() {
                         <div className="aboutTeamInfo">
                             <h3>Juan Porrazo</h3>
                             <p>Tech</p>
+                            <a target="_blank" href="https://www.linkedin.com/in/juan-porrazzo-969b8383/">
+                                <div className="aboutTeamlinkedInLogo">
+                                    <img
+                                        src={linkedinLogo}
+                                        alt="linkedInLogo"
+                                    />
+                                </div>
+						    </a>
                         </div>
                     </li>
                 </ul>

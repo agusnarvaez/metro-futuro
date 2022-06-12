@@ -374,4 +374,34 @@
     font-weight: 500;
 }
 
+.aboutTeamInfo a{
+    margin-top: 3%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 50rem;
+    background: linear-gradient(to right, #004DFF, #FF00CC);
+    z-index: 0;
+}
+.aboutTeamlinkedInLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FBFAFF;
+    z-index: 5;
+    border-radius: 50rem;
+}
+
+.aboutTeamlinkedInLogo img{
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+ 
+}
+
 
