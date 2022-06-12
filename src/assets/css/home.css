@@ -399,12 +399,23 @@
     border-top-left-radius: 150px;
 }
 .homeLearnWithUsVideo{
-    width: 40%;
-    height: 100%;
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
     z-index: 5;
+
+}
+.homeLearnWithUsVideoPlayer{
+    width: 300%;
+    height: 200%;
+    border: none;
 }
 .homeLearnWithUsText{
-    width: 50%;
+    width: 65%;
     height: 100%;
     display: flex;
     flex-direction: column;

@@ -19,7 +19,7 @@ import brikenLogo from "../assets/img/logos/brikenLogo.png";
 
 import rightArrowHomeCarrousel from "../assets/img/icons/rightArrow.png"
 import leftArrowHomeCarrousel from "../assets/img/icons/leftArrow.png"
-
+import ReactPlayer from "react-player";
 function Home() {
     const [carrousel, setCarrousel] = useState(true);
 
@@ -159,7 +159,18 @@ function Home() {
             <section className="homeLearnWithUs">
                 <img className="learnWithUsBg" alt="learnWithUsBackground" src={learnWithUsBg} />
                 <div className="homeLearnWithUsVideo">
-
+                    <ReactPlayer
+                        className="homeLearnWithUsVideoPlayer"
+                        url="https://youtu.be/wX7HmpI8NsY"
+                        controls
+                        width="110%"
+                        height="100%"
+                        border-radius="30px"
+                        /* volume="0"   */
+                        border="none"  
+                        loop
+                        
+                    />
                 </div>
                 <div className="homeLearnWithUsText">
                     <h4>Aprende con <font color="#004DFF">Metro Futuro</font></h4>
