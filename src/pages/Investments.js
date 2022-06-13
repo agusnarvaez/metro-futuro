@@ -12,6 +12,7 @@ function Investments(props) {
     const [listClass,setListClass]=useState("");
     const [priceFilterList,setPriceFilterList]=useState([]);
     const [investmentSearch,setInvestmentSearch] = useState("");
+    const [investmentSearchClass,setInvestmentSearchClass] = useState("investmentsSearch");
     useEffect(()=>{
             if(investmentSearch===""){
             setInvestmentsCards(
@@ -51,11 +52,19 @@ function Investments(props) {
             <section className="investmentsPageList">
                 <div className="investmentsPageListFilter">
                     <form>
-                        <input type="text" name="search" placeholder="Buscar" className="investmentsSearch" id="investmentsSearch"
-                            onChange={(e)=>{
-                                setInvestmentSearch(e.target.value);
-                            }}
-                        />
+                        <div className={investmentSearchClass}>
+                            <input type="text" name="search" placeholder="Buscar"  id="investmentsSearch"
+                                onChange={(e)=>{
+                                    setInvestmentSearch(e.target.value);
+                                }}
+                                onFocus={()=>{
+                                    setInvestmentSearchClass("investmentsSearchFocus");
+                                }}
+                                onBlur={()=>{
+                                    setInvestmentSearchClass("investmentsSearch");
+                                }}
+                            />
+                        </div>
                         {/* <div name="Precio" className="priceFilter" 
                         onClick={()=>{
                             setListClass(
