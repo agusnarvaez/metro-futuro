@@ -305,6 +305,13 @@
     margin: 2px 2px;
     z-index: 2;
     border-radius: 50rem;
+    transition: background-color 0.5s ease-in-out;
+}
+.aboutSlogansLink:hover div{
+    background: transparent;
+}
+.aboutSlogansLink:hover a{
+    -webkit-text-fill-color: #FBFDFF;
 }
 
 /* #### Team ####*/

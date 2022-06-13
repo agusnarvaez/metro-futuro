@@ -50,6 +50,7 @@
     color: #000F33;
 }
 
+/* Link degradado */
 .homeAboutInfo a{
     text-decoration: none;
     font-style: normal;
@@ -91,6 +92,13 @@
     margin: 2.5px 2px;
     z-index: 2;
     border-radius: 50rem;
+    transition: background-color 0.5s ease-in-out;
+}
+.homeAboutInfoLink:hover div{
+    background: transparent;
+}
+.homeAboutInfoLink:hover a{
+    -webkit-text-fill-color: #FBFDFF;
 }
 
 .homeSlogan {
@@ -206,7 +214,16 @@
     margin: 2.5px 2px;
     z-index: 2;
     border-radius: 50rem;
+    transition: background-color 0.5s ease-in-out;
 }
+.homeInvestmensInfoLink:hover div{
+    background: transparent;
+}
+.homeInvestmensInfoLink:hover a{
+    -webkit-text-fill-color: #FBFDFF;
+}
+
+
 .homeInvestmentStepsCarrousel{
     width: 48vw;
     height: 100%;
@@ -451,12 +468,11 @@
     background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
     -webkit-background-clip: text;
     -webkit-border-image: fill;
-
     z-index: 5;
+    transition: background-color 2s ease-in-out;
 }
 .homeLearnWithUsLink {
     display: flex;
-    
     width: 15%;
     justify-content: center;
     align-items: center;
@@ -476,6 +492,14 @@
     margin: 2.5px 2px;
     z-index: 2;
     border-radius: 50rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.homeLearnWithUsLink:hover div{
+    background: transparent;
+}
+.homeLearnWithUsLink:hover a{
+    -webkit-text-fill-color: #FBFDFF;
 }
 
 
@@ -539,7 +563,7 @@
     background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
     -webkit-background-clip: text;
     -webkit-border-image: fill;
-
+    /* transition: background-color,color 2s ease-in-out; */
     z-index: 5;
 }
 
@@ -566,6 +590,13 @@
     margin: 2.5px 2px;
     z-index: 2;
     border-radius: 50rem;
+    transition: background-color 0.5s ease-in-out;
+}
+.homeNewsLink:hover div{
+    background: transparent;
+}
+.homeNewsLink:hover a{
+    -webkit-text-fill-color: #FBFDFF;
 }
 
 
@@ -731,5 +762,12 @@
     margin: 2px 2px;
     z-index: 2;
     border-radius: 50rem;
+    transition: background-color 0.5s ease-in-out;
+}
+.homeFaqLink:hover div{
+    background: transparent;
+}
+.homeFaqLink:hover a{
+    -webkit-text-fill-color: #FBFDFF;
 }
 

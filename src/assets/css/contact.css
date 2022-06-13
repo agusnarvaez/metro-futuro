@@ -240,4 +240,11 @@
     margin: 2.5px 2.5px 2.5px 2.5px;
     z-index: 2;
     border-radius: 50rem;
+    transition: background-color 0.5s ease-in-out;
+}
+.contactSubmit:hover div{
+    background: transparent;
+}
+.contactSubmit:hover p{
+    -webkit-text-fill-color: #FBFDFF;
 }

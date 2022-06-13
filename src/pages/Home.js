@@ -22,8 +22,8 @@ import leftArrowHomeCarrousel from "../assets/img/icons/leftArrow.png"
 import ReactPlayer from "react-player";
 function Home() {
     const [carrousel, setCarrousel] = useState(true);
-
-    console.log(carrousel);
+    const [faqCross, setFaqCross] = useState(true);
+    console.log(faqCross);
     return (
         <div className="homePage">
 
@@ -219,7 +219,11 @@ function Home() {
                     <li>
                         <div>
                             <h4>¿En que estoy invirtiendo?</h4>
-                            <img alt="homeFaqIcon" src={homeFaqIcon} />
+                            <img
+                                alt="homeFaqIcon" 
+                                src={homeFaqIcon}
+                                onClick={() => setFaqCross(!faqCross)}
+                            />
                         </div>
                     </li>
                     <li>
