@@ -5,7 +5,7 @@ function Faq() {
     return (
 
         <div className='faqPage'>
-            <h1>FAQ</h1>
+            <h1>Vista en construcción</h1>
         </div>
     )
 }

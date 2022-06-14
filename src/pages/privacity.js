@@ -5,7 +5,7 @@ function Privacity() {
     return (
 
         <div className='privacitysPage'>
-            <h1>Políticas de privacidad</h1>
+            <h1>Vista en construcción</h1>
         </div>
     )
 }

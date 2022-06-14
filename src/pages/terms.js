@@ -5,7 +5,7 @@ function Terms() {
     return (
 
         <div className='termsPage'>
-            <h1>Términos y condiciones</h1>
+            <h1>Vista en construcción</h1>
         </div>
     )
 }

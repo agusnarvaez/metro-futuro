@@ -675,16 +675,20 @@
     justify-content: space-between;
     align-items: center;
 }
-.homeFaq img{
+.homeFaqCross{
     width: 53px;
     height: 53px;
+    transition: transform 0.5s ease;
+}
+.rotated45{
+    transform: rotate(135deg);
 }
 .homeFaq li h4 {
     text-decoration: none;
     font-style: normal;
     font-size: 2em;
     text-align: start;
-    width: 100%;
+    width: 80%;
     height: auto;
     
     padding: 4% 2%;
@@ -694,31 +698,53 @@
     z-index: 5;
 }
 
-.homeFaq li {
+.homeFaqCollapsed{
     display: flex;
-    height: 20%;
-    width: 100%;
+    height: fit-content;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    max-height: 20%;
+    width: 100%;
     background: linear-gradient(to right, #004DFF, #FF00CC);
     z-index: 1;
+    padding: 4.5px;
     white-space: nowrap;
     margin: 1% 0;
     border-radius: 23px;
+    transition: max-height 13s ease;
+}
+.homeFaqExpanded{
+    max-height: fit-content !important;
+}
+.homeFaqResCollapsed{
+    display: none;
+    transition: max-height 13s ease;
+}
+.homeFaqResExpanded{
+    width: 100%;
+    max-height: fit-content;
+    display: inline;
+    white-space: initial;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 3% 3%;
 }
 
 .homeFaq li div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background: #FBFDFF;
     width: 100%;
-    height: auto;
-    margin: 5px 4.5px;
+    height: 100%;
+   /*  margin: 5px 4.5px; */
     z-index: 2;
     border-radius: 20px;
     padding: 2% 5%;
 }
+
 
 /* Link degradado */
 .homeFaqLink a {

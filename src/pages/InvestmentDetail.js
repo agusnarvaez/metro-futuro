@@ -5,7 +5,7 @@ function InvestmentDetail() {
     
     return (
         <div className="investmentDetailPage">
-            <h1>Detalle de inversion</h1>
+            <h1>Vista en construcción</h1>
         </div>
     )
 }

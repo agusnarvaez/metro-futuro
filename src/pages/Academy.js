@@ -5,7 +5,7 @@ function Academy() {
 	return (
 
 		<div className='academyPage'>
-			<h1>Academia</h1>
+			<h1>Vista en construcción</h1>
 		</div>
 	)
 }
