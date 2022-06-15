@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../assets/css/investments.css";
 import investmentsTitleBg from "../assets/img/background/investmentsTitleBg.png";
 import investmentsPageProjectsCover from "../assets/img/projects/nitaCover.png";
-import InvestmentCard from "../components/InvestmentCard";
+import InvestmentCard from "../components/Investments/InvestmentCard";
 import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";
 import investmentsFilterHomeIcon from "../assets/img/icons/investmentsFilterHomeIcon.png"
 
@@ -14,12 +14,14 @@ function Investments(props) {
     const [investmentSearch,setInvestmentSearch] = useState("");
     const [investmentSearchClass,setInvestmentSearchClass] = useState("investmentsSearch");
     useEffect(()=>{
+            // Algoritmo de buscador
             if(investmentSearch===""){
-            setInvestmentsCards(
-                investmentsList.map((investment,i)=>{
-                    return <InvestmentCard {...investment} key={i} />
-                })
-            )}else{
+                setInvestmentsCards(
+                    investmentsList.map((investment,i)=>{
+                     return <InvestmentCard {...investment} key={i} />
+                    })
+                )
+            }else{
                 setInvestmentsCards(
                 investmentsList.filter((investment)=>(
                     investment.title.toLowerCase().includes(investmentSearch.toLowerCase())||investment.address.toLowerCase().includes(investmentSearch.toLowerCase())
@@ -28,15 +30,18 @@ function Investments(props) {
                     })
                 )
             }
-            setPriceFilterList(<ul className={listClass}>
-                <li><br></br></li>
-                <li>$0-$500</li>
-                <li>$500-$1000</li>
-                <li>$1000-$1500</li>
-                <li>$2000-$2500</li>
-                <li>$2500-$3000</li>
-                <li>+$3000</li>
-            </ul>)
+
+            setPriceFilterList(
+                <ul className={listClass}>
+                    <li><br></br></li>
+                    <li>$0-$500</li>
+                    <li>$500-$1000</li>
+                    <li>$1000-$1500</li>
+                    <li>$2000-$2500</li>
+                    <li>$2500-$3000</li>
+                    <li>+$3000</li>
+                </ul>
+            )
             console.log(investmentSearch);
     },
     [listClass,investmentSearch])

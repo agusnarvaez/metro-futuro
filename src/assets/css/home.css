@@ -243,6 +243,7 @@
     border-radius: 50rem;
     z-index: 1;
     margin: 1%;
+    cursor: pointer;
 }
 .homeInvestmentStepsCarrouselArrowContainer div{
     background: #FBFDFF;
@@ -684,6 +685,7 @@
     height: 53px;
     transition: transform 0.5s ease;
     z-index: 5;
+    cursor: pointer;
 }
 .rotated45{
     transform: rotate(135deg);
