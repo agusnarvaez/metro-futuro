@@ -17,10 +17,9 @@ function HomeLearnWithUs() {
                         className="homeLearnWithUsVideoPlayer"
                         url="https://youtu.be/wX7HmpI8NsY"
                         controls
-                        width="110%"
+                        width="100%"
                         height="100%"
                         border-radius="30px"
-                        /* volume="0"   */
                         border="none"  
                         loop
                         
