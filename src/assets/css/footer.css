@@ -84,10 +84,13 @@
 
 .footerLinks a {
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: lighter;
-    
+    font-size: 1.5em;
+    font-weight: lighter;    
 }
+.footerLinks h4{
+    font-size: 2em;
+}
+
 .bottomFooter{
     border-top: 1px white solid;
     width: 100%;
