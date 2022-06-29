@@ -1,3 +1,6 @@
+// Importo React
+import React from "react";
+
 import { NavLink } from 'react-router-dom'
 import "../assets/css/header.css"
 import metroFuturoLogo from "../assets/img/icons/metroFuturoLogo.png"

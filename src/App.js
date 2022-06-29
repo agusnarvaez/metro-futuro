@@ -1,3 +1,6 @@
+// Importo React
+import React from "react";
+
 import Header from "./components/Header";
 import Home from './pages/Home.js'
 import Investments from "./pages/Investments";

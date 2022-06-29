@@ -1,4 +1,7 @@
 // ###### VISTA DE HOME ####
+// Importo React
+import React from "react";
+
 // > Hoja de estilo
 import "../assets/css/home.css";
 

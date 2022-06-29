@@ -100,22 +100,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 25px;
     width: 100%;
     background: #004cff89;
-    padding: 2px 2px;
+    padding: 3px 3px;
     
     height: 130px;
     margin: 1% 0;
 }
 .inputLargeContainer textarea{
     min-height: fit-content;
-    border-radius: 18px;
+    border-radius: 23px;
     border: none;
     width: 100%;
     height: 100%;
     padding: 2% 2% 2% 5%;
-    margin: 3px 1px;
     resize: none;
     font-size: 16px;
     color: #000F33;
@@ -193,7 +192,23 @@
     color: #F3F2F2;
     border: none;
 }*/
-
+/***** Errores de contacto *****/
+.contactErrors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+.errorHidden{
+    display: none;
+}
+.errorShown{
+    color: red;
+    display: block;
+}
 
 /* Link degradado */
 .contactSubmit {

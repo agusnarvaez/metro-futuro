@@ -32,7 +32,7 @@ function AboutTeam() {
                         <a 
                             target="_blank"
                             href="https://www.linkedin.com/in/job-carrera-diaz-3471a325/"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                         >
                             <div className="aboutTeamlinkedInLogo">
                                 <img
@@ -59,7 +59,7 @@ function AboutTeam() {
                         <a 
                             target="_blank"
                             href="https://www.linkedin.com/in/mariela-schenone-1890a43/"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                         >
                             <div className="aboutTeamlinkedInLogo">
                                 <img
@@ -86,7 +86,7 @@ function AboutTeam() {
                         <a 
                             target="_blank" 
                             href="/"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                         >
                             <div className="aboutTeamlinkedInLogo">
                                 <img
@@ -113,7 +113,7 @@ function AboutTeam() {
                         <a
                             target="_blank" 
                             href="https://www.linkedin.com/in/pedro-nicholson-ba737b9/"
-                            rel="noreferrer"    
+                            rel="noopener noreferrer"   
                         >
                             <div className="aboutTeamlinkedInLogo">
                                 <img
@@ -140,7 +140,7 @@ function AboutTeam() {
                         <a
                             target="_blank"
                             href="https://www.linkedin.com/in/juan-porrazzo-969b8383/"
-                            rel="noreferrer"    
+                            rel="noopener noreferrer"   
                         >
                             <div className="aboutTeamlinkedInLogo">
                                 <img

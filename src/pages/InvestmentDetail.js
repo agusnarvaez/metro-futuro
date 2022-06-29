@@ -1,8 +1,14 @@
-/* import React, { useEffect, useState } from "react"; */
+// Importo React
+import React from "react";
+// Hoja de estilos
 import "../assets/css/investmentDetail.css"
-import Map from "../components/Investments/Map";
+
+// Mapa de google
+/* import Map from "../components/Investments/Map";
 import credentials from "../components/Investments/credentials";
-import {withScriptjs,withGoogleMap} from "react-google-maps";
+import {withScriptjs,withGoogleMap} from "react-google-maps"; */
+
+
 function InvestmentDetail() {
     
     return (

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import { NavLink } from 'react-router-dom';
 
 // Íconos
@@ -12,7 +12,7 @@ function HomeFaq() {
     const [faqCross3, setFaqCross3] = useState(true);
     const [faqCross4, setFaqCross4] = useState(true);
     
-    return (
+return (
 
     <section className="homeFaq">
         {/**Título**/}

@@ -1,5 +1,6 @@
-
-
+/** ##### Página ABOUT #### **/
+// Importo React
+import React from "react";
 // Hoja de estilos
 import "../assets/css/about.css"
 
