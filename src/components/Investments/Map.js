@@ -14,7 +14,6 @@ const Map=(props)=> {
                 defaultCenter={{lat: 37.387600242114246, lng: 5.987771585269565}}
             />
         </div>
-          
     )
 }
 

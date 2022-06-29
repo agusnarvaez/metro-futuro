@@ -9,7 +9,7 @@ import contactPageBg from "../assets/img/background/contactPageBg.png";
 import emailjs from 'emailjs-com';
 // Captcha
 import ReCAPTCHA from "react-google-recaptcha";
-import contacCredentials from "../components/Contact/contacCredentials";
+import credentials from "../credentials";
 
 function Contact() {
     // Clases para los inputs del formulario
@@ -195,7 +195,7 @@ function Contact() {
                     <div className="recaptcha">
                         <ReCAPTCHA
                             ref={captcha}
-                            sitekey={contacCredentials.key}
+                            sitekey={credentials.captchaKey}
                             onChange={onChangeCaptcha}
                         />
                     </div>
