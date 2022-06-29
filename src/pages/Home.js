@@ -19,7 +19,7 @@ import HomeFaq from "../components/Home/HomeFaq";
 function Home() {
 
     return (
-        <div className="homePage">
+        <main className="homePage">
 
             <HomeAbout/>
 
@@ -37,7 +37,7 @@ function Home() {
 
             <HomeFaq/>
             
-        </div>
+        </main>
     )
 }
 export default Home;

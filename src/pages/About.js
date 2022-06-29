@@ -21,7 +21,7 @@ import AboutTeam from "../components/About/AboutTeam";
 function About() {
 
     return (
-        <div className="aboutPage">
+        <main className="aboutPage">
             
             <AboutTitle/>
 
@@ -35,7 +35,7 @@ function About() {
 
             <AboutTeam/>
             
-        </div>
+        </main>
     )
 }
 

@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
 }
@@ -36,10 +36,18 @@
     justify-content: center;
     align-items: center;
 }
-.header .navigation a{
+.navLink{
     text-decoration: none;
     font-size: 1.3em;
     color: black;
+}
+
+.active{
+    /* color: #004DFF; */
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
 }
 
 

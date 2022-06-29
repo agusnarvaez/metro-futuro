@@ -46,7 +46,7 @@ function Investments(props) {
     },
     [listClass,investmentSearch])
     return (
-        <div className="investmentsPage">
+        <main className="investmentsPage">
             <section className="investmentstPageTitle">
                 <img alt="sectionBackground" className="sectionBackground" src={investmentsTitleBg} />
                 <h1>
@@ -86,7 +86,7 @@ function Investments(props) {
                     {investmentsCards}
                 </div>
             </section>
-        </div>
+        </main>
     )
 }
 

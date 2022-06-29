@@ -4,9 +4,9 @@ function Terms() {
 
     return (
 
-        <div className='termsPage'>
+        <main className='termsPage'>
             <h1>Vista en construcción</h1>
-        </div>
+        </main>
     )
 }
 export default Terms;

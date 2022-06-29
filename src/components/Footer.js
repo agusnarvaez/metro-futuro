@@ -9,6 +9,15 @@ import instagramLogo from "../assets/img/icons/instagramLogo.svg";
 import linkedinLogo from "../assets/img/icons/linkedInLogo.svg";
 import twitterLogo from "../assets/img/icons/twitterLogo.svg";
 function Footer() {
+	// Función para scrollear hacia arriba cada vez que se toca un enlace
+    const scrollToTop = () =>{
+        window.scrollTo({
+          top: 0, 
+          behavior: 'smooth'
+          /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+        });
+      };
 
 	return (
 
@@ -28,17 +37,41 @@ function Footer() {
 					<div className="footerLinks">
 						<ul className="leftLinks">
 							<li><h4>Metro futuro</h4></li>
-							<li ><NavLink to='/'>Home</NavLink></li>
-							<li><NavLink to='/investments/list'>Inversiones</NavLink></li>
-							<li><NavLink to='/academy'>Academia</NavLink></li>
-							<li><NavLink to='/about'>Quienes somos</NavLink></li>
+							<li>
+								<NavLink
+									onClick={scrollToTop}
+									to='/'
+								>Home
+								</NavLink>
+							</li>
+							<li>
+								<NavLink
+									onClick={scrollToTop}
+									to='/investments/list'
+								>Inversiones
+								</NavLink>
+							</li>
+							<li>
+								<NavLink
+									onClick={scrollToTop}
+									to='/academy'
+								>Academia
+								</NavLink>
+							</li>
+							<li>
+								<NavLink
+									onClick={scrollToTop}
+									to='/about'
+								>
+								Quienes somos</NavLink>
+							</li>
 						</ul>
 						<ul className="rightLinks">
 							<li><h4>Recursos</h4></li>
-							<li ><NavLink to='/contact'>Contactanos</NavLink></li>
-							<li><NavLink to='/help/faq'>Ayuda/FAQ</NavLink></li>
-							<li><NavLink to='/academy'>Políticas de privacidad</NavLink></li>
-							<li><NavLink to='/about'>Términos y condiciones</NavLink></li>
+							<li><NavLink onClick={scrollToTop} to='/contact'>Contactanos</NavLink></li>
+							<li><NavLink onClick={scrollToTop} to='/help/faq'>Ayuda/FAQ</NavLink></li>
+							<li><NavLink onClick={scrollToTop} to='/privacy'>Políticas de privacidad</NavLink></li>
+							<li><NavLink onClick={scrollToTop} to='/about'>Términos y condiciones</NavLink></li>
 						</ul>
 					</div>
 				</div>

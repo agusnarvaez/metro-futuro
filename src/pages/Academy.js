@@ -4,9 +4,9 @@ function Academy() {
 
 	return (
 
-		<div className='academyPage'>
+		<main className='academyPage'>
 			<h1>Vista en construcción</h1>
-		</div>
+		</main>
 	)
 }
 export default Academy;

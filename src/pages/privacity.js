@@ -4,9 +4,9 @@ function Privacity() {
 
     return (
 
-        <div className='privacitysPage'>
+        <main className='privacitysPage'>
             <h1>Vista en construcción</h1>
-        </div>
+        </main>
     )
 }
 export default Privacity;

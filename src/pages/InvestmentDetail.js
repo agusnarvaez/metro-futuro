@@ -13,14 +13,14 @@ import {withScriptjs,withGoogleMap} from "react-google-maps"; */
 function InvestmentDetail() {
     
     return (
-        <div className="investmentDetailPage">
+        <main className="investmentDetailPage">
             <h1>Vista en construccion</h1>
             {/* <Map
                 googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&key=${credentials.mapsKey}`}
                 containerElement:<div style={{height:`100%`}}/>
             /> */}
             <Map/>
-        </div>
+        </main>
     )
 }
 
