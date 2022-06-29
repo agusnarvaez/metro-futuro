@@ -9,7 +9,7 @@ import contactPageBg from "../assets/img/background/contactPageBg.png";
 import emailjs from 'emailjs-com';
 // Captcha
 import ReCAPTCHA from "react-google-recaptcha";
-
+import contacCredentials from "../components/Contact/contacCredentials";
 
 function Contact() {
     // Clases para los inputs del formulario
@@ -96,7 +96,7 @@ function Contact() {
                     console.log('FAILED...', err);
                 });
         }else{
-            console.log("Ingrese el captcha!");
+            console.log("ERROR");
         }
     }
     
@@ -195,7 +195,7 @@ function Contact() {
                     <div className="recaptcha">
                         <ReCAPTCHA
                             ref={captcha}
-                            sitekey="6LcVEKsgAAAAAKed1cNnnSsGtRZa3XVz1Nmibgrn"
+                            sitekey={contacCredentials.key}
                             onChange={onChangeCaptcha}
                         />
                     </div>
