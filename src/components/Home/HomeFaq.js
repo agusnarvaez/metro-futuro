@@ -28,8 +28,8 @@ function HomeFaq() {
                             src={homeFaqIcon}
                             alt="homeFaqIcon" 
                             className={faqCross1?"homeFaqCross":"homeFaqCross rotated45"}
-                            onClick={() => setFaqCross1(!faqCross1)
-                            }
+                            onClick={() => setFaqCross1(!faqCross1)}
+                            
                         />
                     </div>
                     <div className={faqCross1?"homeFaqResCollapsed":"homeFaqResExpanded"}>

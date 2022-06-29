@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "../assets/css/investments.css";
 import investmentsTitleBg from "../assets/img/background/investmentsTitleBg.png";
-import investmentsPageProjectsCover from "../assets/img/projects/nitaCover.png";
+// import investmentsPageProjectsCover from "../assets/img/projects/nitaCover.png";
 import InvestmentCard from "../components/Investments/InvestmentCard";
-import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";
-import investmentsFilterHomeIcon from "../assets/img/icons/investmentsFilterHomeIcon.png"
+// import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";
+// import investmentsFilterHomeIcon from "../assets/img/icons/investmentsFilterHomeIcon.png"
 
 function Investments(props) {
     const investmentsList= props.investmentsList;
     const [investmentsCards,setInvestmentsCards]=useState([]);
     const [listClass,setListClass]=useState("");
-    const [priceFilterList,setPriceFilterList]=useState([]);
+    //const [priceFilterList,setPriceFilterList]=useState([]);
     const [investmentSearch,setInvestmentSearch] = useState("");
-    const [investmentSearchClass,setInvestmentSearchClass] = useState("investmentsSearch");
+    // const [investmentSearchClass,setInvestmentSearchClass] = useState("investmentsSearch");
     useEffect(()=>{
             // Algoritmo de buscador
             if(investmentSearch===""){
@@ -31,7 +31,7 @@ function Investments(props) {
                 )
             }
 
-            setPriceFilterList(
+            /* setPriceFilterList(
                 <ul className={listClass}>
                     <li><br></br></li>
                     <li>$0-$500</li>
@@ -41,7 +41,7 @@ function Investments(props) {
                     <li>$2500-$3000</li>
                     <li>+$3000</li>
                 </ul>
-            )
+            ) */
             console.log(investmentSearch);
     },
     [listClass,investmentSearch])
@@ -55,7 +55,7 @@ function Investments(props) {
                 </h1>
             </section>
             <section className="investmentsPageList">
-                <div className="investmentsPageListFilter">
+                {/* <div className="investmentsPageListFilter">
                     <form>
                         <div className={investmentSearchClass}>
                             <input type="text" name="search" placeholder="Buscar"  id="investmentsSearch"
@@ -70,7 +70,7 @@ function Investments(props) {
                                 }}
                             />
                         </div>
-                        {/* <div name="Precio" className="priceFilter" 
+                        <div name="Precio" className="priceFilter" 
                         onClick={()=>{
                             setListClass(
                                 (listClass=="")?
@@ -79,9 +79,9 @@ function Investments(props) {
                             <p><img alt="investmentsFilterHomeIcon" className="investmentsFilterHomeIcon" src={investmentsFilterHomeIcon}/>Precio</p>
                             {priceFilterList}
                             <img className="investmentsSearchFilterArrow" alt="investmentsSearchFilterArrow" src={investmentsSearchFilterArrow}/>
-                        </div> */}
+                        </div>
                     </form>
-                </div>
+                </div> */}
                 <div className="investmentsPageProjectsList">
                     {investmentsCards}
                 </div>

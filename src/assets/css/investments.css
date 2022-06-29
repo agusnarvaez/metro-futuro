@@ -187,6 +187,13 @@
     border: 1px solid #F3F2F2;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
     border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out,width 0.5s ease-in-out,color 15s ease-in-out;
+}
+.investmentsPageProjectCard:hover{
+    height: 45vh;
+    width: 105%;
+    -webkit-transition: height 0.5s ease-in-out,width 0.5s ease-in-out,color 15s ease-in-out;
 }
 .investmentsPageProjectsCover{
     width: 40%;
@@ -201,12 +208,44 @@
     min-width: 100%;
     min-height: 100%;
 }
+
+.investmentsPageProjectCard a{
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.investmentsPageProjectCard a:visited{
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.investmentsPageProjectCard a:hover{
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #004DFF;
+}
 .investmentsPageProjectInfo{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     width: 60%;
+    height: 100%;
     padding: 3% 3%;
 }
 .investmentsPageProjectInfoTitle{
@@ -219,7 +258,7 @@
     font-size: 2em;
 }
 .investmentsPageProjectInfoTitle p{
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #000F33;
     font-style: normal;
     font-weight: 300;
@@ -241,6 +280,7 @@
     align-items: center;
     padding: 0.5% 0%;
 }
+
 .investmentsPageProjectInfoDetails li p{
     width: 100%;
     display: flex;

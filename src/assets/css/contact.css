@@ -193,30 +193,9 @@
     color: #F3F2F2;
     border: none;
 }*/
-.contactSubmit div:active{
-    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
-} 
 
 
 /* Link degradado */
-.contactSubmit p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 1.2em;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 6%;
-    font-weight: 500;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
-    -webkit-background-clip: text;
-    -webkit-border-image: fill;
-    z-index: 5;
-}
 .contactSubmit {
     display: flex;
     justify-content: center;
@@ -242,8 +221,32 @@
     border-radius: 50rem;
     transition: background-color 0.5s ease-in-out;
 }
+
+.contactSubmit p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 !important;
+    padding: 6%;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
+    z-index: 5;
+}
+
 .contactSubmit:hover div{
     background: transparent;
+}
+.contactSubmit div:active{
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
 }
 .contactSubmit:hover p{
     -webkit-text-fill-color: #FBFDFF;
