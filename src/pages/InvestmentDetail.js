@@ -1,24 +1,50 @@
 // Importo React
-import React from "react";
+import React, {useState, useEffect} from "react";
+// Importo useParams para obtener los parametros de la url
+import {useParams} from "react-router-dom";
+
 // Hoja de estilos
 import "../assets/css/investmentDetail.css"
 
 // Mapa de google
 import Map from "../components/Investments/Map";
-/*
-import credentials from "../components/Investments/credentials";
-import {withScriptjs,withGoogleMap} from "react-google-maps"; */
 
-
-function InvestmentDetail() {
+function InvestmentDetail(props) {
+    const params = useParams();
+    const investmentsList= props.investmentsList;
+    const investment = investmentsList[params.id];
     
+    useEffect(() => {
+        console.log(investment);
+    }, [params]);
+
     return (
         <main className="investmentDetailPage">
-            <h1>Vista en construccion</h1>
-            {/* <Map
-                googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&key=${credentials.mapsKey}`}
-                containerElement:<div style={{height:`100%`}}/>
-            /> */}
+
+            <section className="investmentDetailPageTitle">
+                <div className="investmentDetailPageTitleInfo">
+                    <h1>{investment.title}</h1>
+                    <h2>Dirección, Localidad</h2>
+                </div>
+                <div className="investmentDetailPageTitleShare">
+
+                </div>
+            </section>
+
+            <section className="investmentDetailPageMedia">
+                <div className="investmentDetailPageMediaImage"></div>
+                <div className="investmentDetailPageMediaVideo"></div>
+                <div className="investmentDetailPageMedia360"></div>
+                <div className="investmentDetailPageMediaPano"></div>
+                <div className="investmentDetailPageMediaSelect"></div>
+            </section>
+
+            <section className="investmentDetailPageInfo">
+
+            </section>
+            <section className="investmentDetailPageResume">
+
+            </section>
             <Map/>
         </main>
     )
