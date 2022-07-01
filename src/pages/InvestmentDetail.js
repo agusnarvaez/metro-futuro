@@ -42,9 +42,11 @@ function InvestmentDetail(props) {
             <section className="investmentDetailPageInfo">
 
             </section>
+
             <section className="investmentDetailPageResume">
 
             </section>
+            
             <Map/>
         </main>
     )

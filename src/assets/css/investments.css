@@ -1,8 +1,9 @@
 .investmentsPage{
     width: 100vw;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 1vh 6vw 10vh 6vw;
     background-color: #FBFDFF;
