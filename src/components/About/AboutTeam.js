@@ -84,9 +84,7 @@ function AboutTeam() {
                         <h3>Pedro Silvestri</h3>
                         <p>Director financiero</p>
                         <a 
-                            target="_blank" 
-                            href="/"
-                            rel="noopener noreferrer"
+                            target="_blank" href="https://www.linkedin.com/in/pedro-silvestri-07300b2a/" rel="noopener noreferrer"
                         >
                             <div className="aboutTeamlinkedInLogo">
                                 <img
