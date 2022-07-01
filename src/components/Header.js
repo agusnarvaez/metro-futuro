@@ -43,14 +43,15 @@ function Header() {
                     >
                         Inversiones</NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <NavLink 
                         onClick={scrollToTop}
                         className={({ isActive }) => (isActive ? "navLink active" : "navLink")}
                         to='/academy'
                     >
                         Aprende</NavLink>
-                </li>
+                </li> */}
+                
                 <li>
                     <NavLink 
                         onClick={scrollToTop}
@@ -59,7 +60,14 @@ function Header() {
                     >
                         Quienes somos</NavLink>
                 </li>
-                {/* <li><NavLink to='/contact' >Contacto</NavLink></li> */}
+                <li>
+                    <NavLink 
+                        onClick={scrollToTop}
+                        className={({ isActive }) => (isActive ? "navLink active" : "navLink")}
+                        to='/contact'
+                    >
+                        Contacto</NavLink>
+                </li>
             </ul>
         </header >
     )
