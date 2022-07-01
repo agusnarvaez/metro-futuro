@@ -19,10 +19,19 @@ function HomePartners() {
                 <img alt="homePartnersBackground" className="homePartnersBg" src={homePartnersBg} />
                 <h3>Nuestros partners</h3>
                 <ul>
-                    <li></li>
-                    <li><img alt="metroXLogo" src={metroXLogo} /></li>
-                    <li><img alt="stayRealTVLogo" src={stayRealTVLogo} /></li>
-                    <li><img alt="brikenLogo" src={brikenLogo} /></li>
+                    <li><a
+                            target="_blank"
+                            href="https://metrox.com.ar/"
+                            rel="noopener noreferrer">
+                                <img alt="metroXLogo" src={metroXLogo} /></a></li>
+                    <li><a 
+                            target="_blank"
+                            href="https://stayreal.tv/main/"
+                            rel="noopener noreferrer">
+                                <img alt="stayRealTVLogo" src={stayRealTVLogo} /></a></li>
+                    <li><a 
+                            target="_blank"
+                            href="https://briken.io/es/" rel="noopener noreferrer"><img alt="brikenLogo" src={brikenLogo} /></a></li>
                 </ul>
             </section>
     )

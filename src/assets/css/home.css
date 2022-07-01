@@ -609,14 +609,16 @@
 
 .homePartners{
     width: 100%;
-    height: 20vw;
+    height: 23vw;
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 5% 0;
+    margin: 5% 0 !important;
 }
+
 .homePartnersBg{
     position: absolute;
     width: 100%;
@@ -630,16 +632,16 @@
 }
 .homePartners ul{
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     z-index: 5;
     padding: 3% 5%;
 }
 .homePartners li{
     list-style: none;
-    width: 20%;
+    width: 25%;
     height: 100%;
     background: #FFFFFF;
     border: 1px solid #F3F2F2;
@@ -650,8 +652,26 @@
     align-items: center;
     object-fit: cover;
     padding: 1%;
+    -webkit-transition: height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
 }
 
+.homePartners li:hover{
+    height: 110%;
+    width: 30%;
+    -webkit-transition: height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
+}
+
+.homePartners a{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    padding: 0%;
+}
 .homePartners img{
     width: 100%;
 }
