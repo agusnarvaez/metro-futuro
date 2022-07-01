@@ -1,5 +1,5 @@
 // Importo React
-import React from "react";
+import React,{useState} from "react";
 // Hoja de estilos
 import "../assets/css/header.css"
 
@@ -9,8 +9,12 @@ import { NavLink } from 'react-router-dom'
 // Logo de Metro Futuro
 import metroFuturoLogo from "../assets/img/icons/metroFuturoLogo.png"
 
-function Header() {
+// Ícono de menú
+import burgerMenuIcon from "../assets/img/icons/burgerMenuIcon.png";
+import burgerMenuCrossIcon from "../assets/img/icons/BurgerMenuCrossIcon.png";
 
+function Header() {
+    const [burgerMenu, setBurgerMenu] = useState(true);
     // Función para scrollear hacia arriba cada vez que se toca un enlace
     const scrollToTop = () =>{
         window.scrollTo({
@@ -22,10 +26,26 @@ function Header() {
       };
     return (
         <header className="header">
-            <img
-                src={metroFuturoLogo} alt="metroFuturoLogo"
-            />
-            <ul className="navigation">
+            <div className="headerIcons">
+                <img
+                    src={metroFuturoLogo}
+                    alt="metroFuturoLogo"
+                    className="metroFuturoLogo"
+                />
+                <img
+                    className={burgerMenu?"burgerMenuIcon":"burgerMenuIconHidden"}
+                    src={burgerMenuIcon}
+                    alt="burgerMenuIcon"
+                    onClick={() => setBurgerMenu(!burgerMenu)}
+                />
+                <img
+                    className={burgerMenu?"burgerMenuIconHidden":"burgerMenuIcon"}
+                    src={burgerMenuCrossIcon}
+                    alt="burgerMenuCrossIcon"
+                    onClick={() => setBurgerMenu(!burgerMenu)}
+                />
+            </div>
+            <ul className={burgerMenu?"navigation hiddenMenu":"navigation"} >
                 <li >
                     <NavLink 
                         onClick={scrollToTop}

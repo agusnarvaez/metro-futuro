@@ -5,8 +5,7 @@
 
 .header{
     width: 100%;
-    height: 15vh;
-    padding: 1vh 6vw 1vh 6vw;
+    height: 10vh;
     background-color: #FBFDFF;
     display: flex;
     justify-content: space-between;
@@ -14,32 +13,74 @@
     position: fixed;
     top: 0;
     z-index: 100;
+    padding: 0;
 }
-
-.header img{
-    width: 19vw;
-    height: auto;
-    
-    align-items: center;
-}
-
-.header .navigation{
-    width: 40%;
+.headerIcons{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background-color: #FBFDFF;
+    z-index: 20;
+    padding: 1vh 6vw 1vh 6vw;
 }
+.burgerMenuIcon{
+    width: auto;
+    display: block;
+    transition: display 1s ease;
+}
+.burgerMenuIconHidden{
+    display: none;
+    transition: display 1s ease;
+}
+.metroFuturoLogo{
+    width: 40vw;
+    height: auto;
+    align-items: center;
+    z-index: 20;
+}
+
+.header .navigation{
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: #FBFDFF;
+    transition: top 0.5s ease-in-out;
+}
+
+.header .hiddenMenu{
+    width: 100%;
+    position: absolute;
+    top: -300%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    background-color: #FBFDFF;
+    /* transition: top 1s ease-in-out; */
+}
+.header .hiddenMenu li,
 .header .navigation li {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3% 0;
+    z-index: 5;
 }
+
 .navLink{
     text-decoration: none;
     font-size: 1.3em;
     color: black;
+    z-index: 5;
 }
 
 .active{
@@ -50,4 +91,31 @@
     -webkit-border-image: fill;
 }
 
+@media (min-width: 1024px) {
+    .header{
+        padding: 1vh 6vw 1vh 6vw;
+    }
+    .metroFuturoLogo{
+        width: 19vw;
+        height: auto;
+        align-items: center;
+    }
 
+    .burgerMenuIcon{
+        display: none;
+    }
+    .header .hiddenMenu,
+    .header .navigation{
+        width: 40%;
+        flex-direction: row;
+        position: relative;
+        z-index: 5;
+        top: 0;
+        transition: none;
+    }
+    .headerIcons{
+        width: fit-content;
+    }
+
+
+}
