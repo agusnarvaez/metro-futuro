@@ -7,16 +7,6 @@ import homeFaqIcon from '../../assets/img/icons/homeFaqIcon.png';
 function HomeFaqHidden() {
 
     // Controladores de cruces para mostrar info (+)
-    const [faqCross1, setFaqCross1] = useState(true);
-    const [faqCross2, setFaqCross2] = useState(true);
-    const [faqCross3, setFaqCross3] = useState(true);
-    const [faqCross4, setFaqCross4] = useState(true);
-    const [faqCross5, setFaqCross5] = useState(true);
-    const [faqCross6, setFaqCross6] = useState(true);
-    const [faqCross7, setFaqCross7] = useState(true);
-    const [faqCross8, setFaqCross8] = useState(true);
-    const [faqCross9, setFaqCross9] = useState(true);
-    const [faqCross10, setFaqCross10] = useState(true);
     const [homeFaqHidden,setHomeFaqHidden]= useState(true);
 
     const [faqListHidden,setFaqListHidden]=useState([]);
