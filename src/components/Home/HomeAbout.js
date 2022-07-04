@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 // Background
 import livingRoom from '../../assets/img/livingRoom.png';
 
-
+import homeAboutCoverMobile from '../../assets/img/background/homeAboutCoverMobile.png';
 
 function HomeAbout() {
     return (
@@ -20,7 +20,8 @@ function HomeAbout() {
                         </div>
                     </div>
                 </div>
-                <img className="homeAboutCover" src={livingRoom} alt="livingRoom" />
+                <img className="homeAboutCoverDesktop"  src={livingRoom} alt="livingRoom" />
+                <img className="homeAboutCoverMobile" src={homeAboutCoverMobile} alt="livingRoom" />
             </section>
     )
 }
