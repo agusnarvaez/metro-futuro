@@ -8,20 +8,31 @@ import homeAboutCoverMobile from '../../assets/img/background/homeAboutCoverMobi
 function HomeAbout() {
     return (
 
-        <section className="homeAbout">
-                <div className="homeAboutInfo">
-                    <h2>Inversiones por M<sup>2</sup></h2>
-                    <p>Una plataforma con tecnología blockchain que permite invertir por metro cuadrado en Europa</p>
-                    <div className="homeAboutInfoLink">
-                        <div>
-                            <NavLink to='/about'>
+        <section id="homeAbout">
+                <div className="sectionInfo">
+                    <h2 
+                        className='section_subTitle blackText'
+                        id="homeAboutSubtitle">
+                            Inversiones por M<sup>2</sup>
+                    </h2>
+                    <p
+                        className='section_paragraph blackText'
+                        id="homeAboutParagraph">
+                            Somos una empresa global de inversiones inmobiliarias entre Europa y LATAM con tecnología blockchain y crowdfunding
+                    </p>
+                    <div className="degradedLink" id='homeAboutLink'>
+                        <div className='degradedLink_TextContainer degradedLink_TextContainer--lightGray' id="homeAboutInfoLink">
+                            <NavLink className="degradedLink_Text" to='/about'>
                                 Más información
                             </NavLink>
                         </div>
                     </div>
                 </div>
-                <img className="homeAboutCoverDesktop"  src={livingRoom} alt="livingRoom" />
-                <img className="homeAboutCoverMobile" src={homeAboutCoverMobile} alt="livingRoom" />
+
+
+                {/* Background */}
+                <img className="sectionBackground--desktop"  src={livingRoom} alt="livingRoom" />
+                <img className="sectionBackground--mobile" src={homeAboutCoverMobile} alt="sectionBackground" />
             </section>
     )
 }

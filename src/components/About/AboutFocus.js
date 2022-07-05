@@ -28,7 +28,7 @@ function AboutFocus() {
                     <img alt="focusItemIcon" src={visionIcon} />
                     <div>
                         <h3>Visión</h3>
-                        <p>Dar acceso a cualquier persona del mundo a que pueda ser parte del engocio del Real State en Europa.</p>
+                        <p>Dar acceso a cualquier persona del mundo a que pueda ser parte del engocio del Real Estate en Europa.</p>
                     </div>
                 </li>
                 <li>

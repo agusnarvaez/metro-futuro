@@ -93,6 +93,7 @@
 
 @media (min-width: 1024px) {
     .header{
+        height: 15vh;
         padding: 1vh 6vw 1vh 6vw;
     }
     .metroFuturoLogo{

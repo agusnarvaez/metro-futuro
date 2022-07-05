@@ -11,7 +11,7 @@ function AboutSlogan() {
             <div className="aboutSlogansLink">
                 <div>
                     <NavLink to='/investments/list'>
-                        ¡Sumate a Metro Futuro, accede al Real State!
+                        ¡Sumate a Metro Futuro, accede al Real Estate!
                     </NavLink>
                 </div>
             </div>

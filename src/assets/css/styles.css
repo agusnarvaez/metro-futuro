@@ -1,3 +1,9 @@
+/*#######################################*/
+/* ######## MEDIDAS PARA MOBILE ########*/
+/*#######################################*/
+
+/* #### Estilos generales #### */
+
 * {
     font-family: Lexend;
     font-size: 12px;
@@ -6,6 +12,7 @@
     margin: 0;
     
 }
+
 html{
     width: 100%;
     overflow-x: hidden;
@@ -20,13 +27,260 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+
 #root{
     width: 100vw;
     overflow-x: hidden;
 }
+
 main{
-    margin-top: 15vh;
+    margin-top: 10vh;
+    width: 100%;
+    height: fit-content;
+    padding: 1vh 0 10vh 0;
+    position: relative;
+    background-color: #FBFDFF;
+}
+
+section{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 0 0 0;
+}
+
+/* Información de la sección */
+.sectionInfo{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    padding: 1vh 6vw 10vh 6vw;
+}
+
+
+/* Tipografías*/
+
+.section_subTitle{
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.section_paragraph{
+    line-height: 1.2em;
+    width: 100%;
+    font-size: 1.8em;
+    font-weight: 300;
+    z-index: 10;
+    padding: 2% 0;
+}
+
+.blackText{
+    color: #000F33;
+}
+
+/*Backgrounds de secciones*/
+.sectionBackground--desktop{
+    display: none;
+}
+.sectionBackground--mobile{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    object-position: center;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+    /* ### LINK DEGRADADO ### */
+    .degradedLink{
+        display: flex;
+        min-width: fit-content;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right,#004DFF, #FF00CC);
+        z-index: 40;
+        white-space: nowrap;
+        padding: 2.5px 2.5px;
+        border-radius: 50rem;
+    }
+    .degradedLink_TextContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: auto;
+        
+        z-index: 50;
+        border-radius: 50rem;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    .degradedLink_TextContainer--lightGray{
+        background: #dcdcdc;
+    }
+
+    .degradedLink:active .degradedLink_TextContainer{
+        background: transparent !important;
+    }
+    
+
+    /* Puede ser Link(a) o Párrafo (p) según necesidad*/
+    .degradedLink_Text{
+        text-decoration: none;
+        font-style: normal;
+        font-size: 1.5em;
+        
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 5%;
+        font-weight: 500;
+
+
+        /* Efecto degradado texto */
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+        -webkit-background-clip: text;
+        -webkit-border-image: fill; 
+        z-index: 50;
+    }   
+    .degradedLink:active .degradedLink_Text{
+        -webkit-text-fill-color: #FBFDFF;
+    }
+
+    /* ### fin link degradado ### */
+
+
+/*#######################################*/
+/* ######## MEDIDAS PARA DESKTOP ########*/
+/*#######################################*/
+@media (min-width: 1024px) {
+
+
+    main{
+        margin-top: 15vh;
+        padding: 1vh 6vw 10vh 6vw;
+    }
+    section{
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        margin: 0 0 5% 0;
+    }
+
+    /* Información de la sección */
+    .sectionInfo{
+        align-items: flex-start;
+        padding: 0 5%;
+    }
+
+    /* Tipografías*/
+
+    .section_subTitle{
+        font-size: 5em;
+        font-weight: 550;
+    }
+    .section_paragraph{
+        width: 70%;
+        font-size: 2em;
+        padding: 2% 0 2% 0;
+        font-weight: 300;
+    }
+
+    /* ### Backgroun de secciones ### */
+    .sectionBackground--desktop{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+    .sectionBackground--mobile{
+        display: none;
+    }
+
+
+    /* ### LINK DEGRADADO ### */
+    .degradedLink{
+        display: flex;
+        min-width: fit-content;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right,#004DFF, #FF00CC);
+        z-index: 40;
+        white-space: nowrap;
+        padding: 2.5px 2.5px;
+        border-radius: 50rem;
+    }
+    .degradedLink_TextContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: auto;
+        
+        border-radius: 50rem;
+        transition: background-color 0.5s ease-in-out;
+        z-index: 50;
+    }
+
+    .degradedLink_TextContainer--lightGray{
+        background: #dcdcdc;
+    }
+
+    .degradedLink:hover .degradedLink_TextContainer{
+        background: transparent !important;
+    }
+    
+
+    /* Puede ser Link(a) o Párrafo (p) según necesidad*/
+    .degradedLink_Text{
+        text-decoration: none;
+        font-style: normal;
+        font-size: 1.5em;
+        
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 5%;
+        font-weight: 500;
+
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+        -webkit-background-clip: text;
+        -webkit-border-image: fill; 
+        z-index: 50;
+    }   
+    .degradedLink:hover .degradedLink_Text{
+        -webkit-text-fill-color: #FBFDFF;
+    }
+
+    /* ### fin link degradado ### */
 }
