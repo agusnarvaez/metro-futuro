@@ -51,13 +51,13 @@ function Footer() {
 								>Inversiones
 								</NavLink>
 							</li>
-							<li>
+							{/* <li>
 								<NavLink
 									onClick={scrollToTop}
 									to='/academy'
 								>Academia
 								</NavLink>
-							</li>
+							</li> */}
 							<li>
 								<NavLink
 									onClick={scrollToTop}
