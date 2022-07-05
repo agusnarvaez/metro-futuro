@@ -137,6 +137,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 5;
 }
 
 .footerSocials a {
@@ -170,7 +171,7 @@
 @media (min-width: 1024px) {
 
     .mainFooter{
-        padding: 15vh 5vw 10vh 5vw;
+        padding: 15vh 10vw 10vh 10vw;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
@@ -272,6 +273,7 @@
     .mainFooter .briken{
         width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: flex-start;
         align-items: center;
     }
@@ -289,6 +291,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        
     }
     
     .footerSocials a {
@@ -301,6 +304,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     
     .footerSocials a *{
@@ -309,6 +313,7 @@
         display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
     }
 
 }
