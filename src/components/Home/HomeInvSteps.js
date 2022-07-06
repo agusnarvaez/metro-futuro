@@ -11,30 +11,31 @@ import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.png"
 
 function HomeInvestmentSteps() {
     const [carrousel, setCarrousel] = useState(true);
+
     return (
 
-        <section className="homeInvestmentSteps">
-                <img className="homeInvestmentStepsBg" alt="homeInvestmentStepsBg" src={investmentStepsBg} />
-                <div className="homeInvestments">
-                    <h3>¿Como <font color="#004DFF">invertir</font> en simples pasos?</h3>
-                    <div className="homeInvestmensInfoLink">
-                        <div>
-                            <NavLink to='/investments/list'>
+        <section id="homeInvestmentSteps">
+                <img className="sectionBackground--desktop" alt="homeInvestmentStepsBg" src={investmentStepsBg} />
+                <div className="sectionInfo_subsection sectionInfo_subsection--column">
+                    <h2 id="homeInvestmentSteps_subTitle" className="section_subTitle section_subTitle--left">¿Como <font color="#004DFF">invertir</font> en simples pasos?</h2>
+                    <div className="degradedLink" id="homeInvestmentSteps_desktopLink">
+                        <div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
+                            <NavLink className="degradedLink_Text" to='/investments/list'>
                                 Invierte
                             </NavLink>
                         </div>
                     </div>
                 </div>
-                <div className="homeInvestmentStepsCarrousel">
-                    <div className="homeInvestmentStepsCarrouselNav">
-                        <div className="homeInvestmentStepsCarrouselArrowContainer"
+                <div className="sectionInfo_subsection sectionInfo_subsection--column sectionInfo_subsection--50width">
+                    <div className="carrouselNav">
+                        <div className="carrouselNav_arrowContainer"
                             onClick={() => setCarrousel(!carrousel)}
                         >
                             <div>
                                 <img src={leftArrowHomeCarrousel} alt="leftArrowNav" />
                             </div>
                         </div>
-                        <div className="homeInvestmentStepsCarrouselArrowContainer"
+                        <div className="carrouselNav_arrowContainer"
                             onClick={() => setCarrousel(!carrousel)}
 
                         >
@@ -43,38 +44,45 @@ function HomeInvestmentSteps() {
                             </div>
                         </div>
                     </div>
-                    <div className="homeInvestmentStepsCarrouselContainer">
+                    <div className="carrouselContainer">
                         <div
-                            className={carrousel ? "homeInvestmentStepsCarrouselMobil" : "homeInvestmentStepsCarrouselMobil moved"}
+                            className={carrousel ? "carrouselContainer_mobil" : "carrouselContainer_mobil carrouselContainer_mobil--moved"}
                         >
-                            <div className="homeInvestmentStepsCarrouselCard">
-                                <div className="homeInvestmentStepsCarrouselCardId">
-                                    <div className="homeInvestmentStepsCarrouselCardNumber">1</div>
+                            <div className="carrouselContainer_card">
+                                <div className="carrouselContainer_cardId">
+                                    <div className="carrouselContainer_cardNumber">1</div>
                                     <h4>Regístrate</h4>
                                 </div >
                                 <p>Inscribite en la plataforma y realiza el proceso de validación de identidad y origen de datos.</p>
                             </div>
-                            <div className="homeInvestmentStepsCarrouselCard">
-                                <div className="homeInvestmentStepsCarrouselCardId">
-                                    <div className="homeInvestmentStepsCarrouselCardNumber">2</div>
+                            <div className="carrouselContainer_card">
+                                <div className="carrouselContainer_cardId">
+                                    <div className="carrouselContainer_cardNumber">2</div>
                                     <h4>Selección de tokens</h4>
                                 </div>    
                                 <p>Elige el proyecto inmobiliario en el que quieras invertir y la cantidad e m<sup>2</sup> que quieras comprar.</p>
                             </div>
-                            <div className="homeInvestmentStepsCarrouselCard">
-                                <div className="homeInvestmentStepsCarrouselCardId">
-                                    <div className="homeInvestmentStepsCarrouselCardNumber">3</div>
+                            <div className="carrouselContainer_card">
+                                <div className="carrouselContainer_cardId">
+                                    <div className="carrouselContainer_cardNumber">3</div>
                                     <h4>Firma</h4>
                                 </div>
                                 <p>Nuestras operaciones son innovadoras y están establecidas en Smart Contracts, una herramienta que le brinda independencia y seguridad al inversor.</p>
                             </div>
-                            <div className="homeInvestmentStepsCarrouselCard">
-                                <div className="homeInvestmentStepsCarrouselCardId">
-                                    <div className='homeInvestmentStepsCarrouselCardNumber'>4</div>
+                            <div className="carrouselContainer_card">
+                                <div className="carrouselContainer_cardId">
+                                    <div className='carrouselContainer_cardNumber'>4</div>
                                     <h4>Pago</h4>
                                 </div>
                                 <p>Una vez realizado el pago recibes tus tokens en tu billetera digital, para poder disponer de ellos o recibir tu renta mensualmente.</p>
                             </div>
+                        </div>
+                    </div>
+                    <div className="degradedLink" id="homeInvestmentSteps_mobileLink">
+                        <div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
+                            <NavLink className="degradedLink_Text" to='/investments/list'>
+                                Invierte
+                            </NavLink>
                         </div>
                     </div>
                 </div>

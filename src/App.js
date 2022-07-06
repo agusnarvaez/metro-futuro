@@ -8,6 +8,7 @@ import InvestmentDetail from "./pages/InvestmentDetail"
 import Academy from "./pages/Academy"
 import About from './pages/About'
 import Contact from './pages/Contact';
+import Faq from "./pages/Faq";
 import NotFound404 from './pages/NotFound404';
 import Footer from "./components/Footer";
 import "./assets/css/normalize.css"
@@ -47,6 +48,7 @@ function App() {
         <Route path='/academy' element={<Academy />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/help' element={<Faq />} />
         <Route path='*' element={<NotFound404 />} />
       </Routes>
       <Footer />

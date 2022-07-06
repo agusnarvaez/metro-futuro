@@ -25,7 +25,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     position: relative;
 }
 
@@ -71,15 +71,50 @@ section{
     width: 100%;
     height: 100%;
 }
+.sectionInfo_subsection{
+    height: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 5;
+}
+.sectionInfo_subsection--column{
+    flex-direction: column;
+}
+.sectionInfo_subsection--row{
+    flex-direction: row;
+}
+.sectionInfo_subsection--100width{
+    width: 100%;
+}
+.sectionInfo_subsection--70width{
+    width: 70%;
+}
+.sectionInfo_subsection--60width{
+    width: 60%;
+}
+.sectionInfo_subsection--50width{
+    width: 50%;
+}
+.sectionInfo_subsection--40width{
+    width: 40%;
+}
+.sectionInfo_subsection--30width{
+    width: 30%;
+}
 
 
 /* Tipografías*/
 
 .section_subTitle{
-    font-size: 3.5em;
+    font-size: 3em; 
     text-align: center;
     font-weight: 600;
     z-index: 10;
+}
+.section_subTitle--left{
+    text-align: start;
 }
 
 .section_paragraph{
@@ -94,8 +129,12 @@ section{
 .blackText{
     color: #000F33;
 }
+font {
+    font-size: inherit;
+}
 
-/*Backgrounds de secciones*/
+
+/* ### Backgrounds de secciones ###*/
 .sectionBackground--desktop{
     display: none;
 }
@@ -110,6 +149,110 @@ section{
     object-fit: cover;
     z-index: 0;
 }
+
+/* ### FIN Background de secciones ### */
+
+/* ### CARROUSEL ### */
+.carrouselNav{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.carrouselNav_arrowContainer{
+    background: linear-gradient(to right, #004DFF, #FF00CC);
+    border-radius: 50rem;
+    z-index: 1;
+    margin: 1%;
+    cursor: pointer;
+}
+
+.carrouselNav_arrowContainer div{
+    background: #FBFDFF;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+.carrouselNav_arrowContainer img{
+    width: 27px;   
+    transition: filter 0.2s ease-in-out;
+}
+.carrouselContainer{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    border-radius: 50px;
+    background: #ffff;
+    box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carrouselContainer_mobil{
+    position: absolute;
+    left: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90%;
+    width: 200%;
+    transition: left 1.2s ease-out;
+}
+.carrouselContainer_mobil--moved{
+    left:-100%;
+}
+.carrouselContainer_card{
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 21%;
+        height: 90%;
+        box-shadow: 0px 100px 80px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
+        border-radius: 15px;
+        margin: 0 3%;
+        padding: 3% 1% 1.5% 1%;
+        background-color: #FFFFFF;
+}
+.carrouselContainer_card h4{
+    color: #004DFF;
+    font-size: 2em;
+    font-weight: 500;
+}
+.carrouselContainer_card p{
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 20px;
+    height: 50%;
+}
+.carrouselContainer_cardId{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+.carrouselContainer_cardNumber{
+    background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
+    padding: 1%;
+    width: 30%;
+    border-radius: 50rem;
+    font-size: 1.8em;
+    color: #F3F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ### FIN Carrousel ### */
 
 
     /* ### LINK DEGRADADO ### */
@@ -140,6 +283,9 @@ section{
 
     .degradedLink_TextContainer--lightGray{
         background: #dcdcdc;
+    }
+    .degradedLink_TextContainer--white{
+        background: #FBFDFF;
     }
 
     .degradedLink:active .degradedLink_TextContainer{
@@ -201,12 +347,20 @@ section{
         align-items: flex-start;
         padding: 0 5%;
     }
+    .sectionInfo_subsection{
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 5;
+    }
+    /* ### FIN Información de la sección ### */
 
-    /* Tipografías*/
+
+    /* ### TIPOGRAFÍAS ### */
 
     .section_subTitle{
-        font-size: 5em;
-        font-weight: 550;
+        font-size: 4em;
+        font-weight: 500;
     }
     .section_paragraph{
         width: 70%;
@@ -214,11 +368,13 @@ section{
         padding: 2% 0 2% 0;
         font-weight: 300;
     }
+    /* ### FIN Tipografías ### */
 
-    /* ### Backgroun de secciones ### */
+
+    /* ### BACKGROUND DE SECCIONES ### */
     .sectionBackground--desktop{
         display: block;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         object-fit: cover;
         object-position: center;
@@ -230,6 +386,116 @@ section{
     .sectionBackground--mobile{
         display: none;
     }
+    /* ### FIN Background de secciones ###*/
+
+
+    /* ### CARROUSEL ### */
+    .carrouselNav{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .carrouselNav_arrowContainer{
+        background: linear-gradient(to right, #004DFF, #FF00CC);
+        border-radius: 50rem;
+        z-index: 1;
+        margin: 1%;
+        cursor: pointer;
+    }
+    .carrouselNav_arrowContainer:hover div{
+        background: transparent;
+    }
+    .carrouselNav_arrowContainer:hover img{
+        filter: grayscale(500%) brightness(600%);
+    }
+    .carrouselNav_arrowContainer div{
+        background: #FBFDFF;
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+        border-radius: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .carrouselNav_arrowContainer img{
+        width: 27px;   
+        transition: filter 0.2s ease-in-out;
+    }
+    .carrouselContainer{
+        position: relative;
+        width: 100%;
+        height: 60%;
+        border-radius: 50px;
+        background: #ffff;
+        box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .carrouselContainer_mobil{
+        position: absolute;
+        left: 0%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 90%;
+        width: 200%;
+        transition: left 1.2s ease-out;
+    }
+    .carrouselContainer_mobil--moved{
+        left:-100%;
+    }
+    .carrouselContainer_card{
+        display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 21%;
+            height: 90%;
+            box-shadow: 0px 100px 80px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
+            border-radius: 15px;
+            margin: 0 3%;
+            padding: 3% 1% 1.5% 1%;
+            background-color: #FFFFFF;
+    }
+    .carrouselContainer_card h4{
+        color: #004DFF;
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .carrouselContainer_card p{
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 20px;
+        height: 50%;
+    }
+    .carrouselContainer_cardId{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        /* padding-top: 5%; */
+        background-color: #FFFFFF;
+    }
+    .carrouselContainer_cardNumber{
+        background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
+        padding: 1%;
+        width: 30%;
+        border-radius: 50rem;
+        font-size: 1.8em;
+        color: #F3F2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ### FIN Carrousel ### */
 
 
     /* ### LINK DEGRADADO ### */

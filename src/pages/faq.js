@@ -1,12 +1,13 @@
 import React from 'react';
-
+import HomeFaq from "../components/Home/HomeFaq";
+import "../assets/css/faqPage.css";
 function Faq() {
 
     return (
 
-        <div className='faqPage'>
-            <h1>Vista en construcción</h1>
-        </div>
+        <main className='faqPage'>
+            <HomeFaq/>
+        </main>
     )
 }
 export default Faq;

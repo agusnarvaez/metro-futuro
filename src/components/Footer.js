@@ -69,9 +69,9 @@ function Footer() {
 						<ul className="rightLinks">
 							<li><h4>Recursos</h4></li>
 							<li><NavLink onClick={scrollToTop} to='/contact'>Contactanos</NavLink></li>
-							<li><NavLink onClick={scrollToTop} to='/help/faq'>Ayuda/FAQ</NavLink></li>
-							<li><NavLink onClick={scrollToTop} to='/privacy'>Políticas de privacidad</NavLink></li>
-							<li><NavLink onClick={scrollToTop} to='/about'>Términos y condiciones</NavLink></li>
+							<li><NavLink onClick={scrollToTop} to='/help'>Ayuda/FAQ</NavLink></li>
+							{/* <li><NavLink onClick={scrollToTop} to='/privacy'>Políticas de privacidad</NavLink></li> */}
+							{/* <li><NavLink onClick={scrollToTop} to='/about'>Términos y condiciones</NavLink></li> */}
 						</ul>
 					</div>
 				</div>

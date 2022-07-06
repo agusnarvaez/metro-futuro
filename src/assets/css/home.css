@@ -64,9 +64,24 @@
 
 /* ### FIN Slogan ###*/
 
+/* ### ¿COMO INVERTIR EN SIMPLES PASOS? ###*/
+
+#homeInvestmentSteps{
+    flex-direction: column;
+}
+#homeInvestmentSteps_subTitle{
+    text-align: center;
+    font-size: 2.3em;
+}
+#homeInvestmentSteps_desktopLink{
+    display: none;
+}
+#homeInvestmentSteps_mobileLink{
+    display: block;
+}
+/* ### FIN ¿Como invertir en simples pasos? ###*/
 
 
-.homeInvestmentSteps,
 .homeBenefits,
 .homeLearnWithUs,
 .homeNews,
@@ -97,6 +112,7 @@
     }
     /* ### FIN Sobre nosotros ### */
 
+
     /* ### SLOGAN ###*/
     #homeSlogan {
         width: 100%;
@@ -122,215 +138,26 @@
         letter-spacing: 0.5px;
     }
 
-
     /* ### FIN Slogan ###*/
-
-
-
-
-
-
-
-
     
     
-    /* #### Como invertir en simples pasos? ####*/
-    .homeInvestmentSteps{
-        width: 100%;
-        height: 50vw;
-        margin: 5% 0 5% 0;
-        padding: 10% 0 5% 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%); */
+    /* #### ¿COMO INVERTIR EN SIMPLES PASOS? ####*/
+    #homeInvestmentSteps{
         background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
         border-radius: 150px 0px 0px 0px;
-        position: relative;
+        flex-direction: row;
     }
-    .homeInvestmentStepsBg{
-        border-radius: 150px 0px 0px 0px;
-        position: absolute;
-        top: 0;
-        left: -6vw;
-        z-index: 0;
+    #homeInvestmentSteps_subTitle{
+        text-align: start;
     }
-    .homeInvestments{
-        width: 40%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        z-index: 5;
+    #homeInvestmentSteps_desktopLink{
+        display: block;
     }
-    .homeInvestments h3 font {
-        font-size: inherit;
+        
+    #homeInvestmentSteps_mobileLink{
+        display: none;
     }
-    .homeInvestments h3 {
-        font-size: 3em;
-        width: 70%;
-        padding-bottom: 5%;
-    }
-    .homeInvestmensInfoLink a {
-        text-decoration: none;
-        font-style: normal;
-        font-size: 1.5em;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        padding: 5%;
-        font-weight: 500;
-        -webkit-text-fill-color: transparent;
-        background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
-        -webkit-background-clip: text;
-        -webkit-border-image: fill;
-        z-index: 5;
-    }
-    
-    .homeInvestmensInfoLink {
-        display: flex;
-        width: inherit;
-        max-width:25%;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, #004DFF, #FF00CC);
-        z-index: 1;
-        white-space: nowrap;
-        border-radius: 50rem;
-    }
-    
-    .homeInvestmensInfoLink div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #FBFDFF;
-        width: 100%;
-        height: auto;
-        margin: 2.5px 2px;
-        z-index: 2;
-        border-radius: 50rem;
-        transition: background-color 0.5s ease-in-out;
-    }
-    .homeInvestmensInfoLink:hover div{
-        background: transparent;
-    }
-    .homeInvestmensInfoLink:hover a{
-        -webkit-text-fill-color: #FBFDFF;
-    }
-    
-    
-    .homeInvestmentStepsCarrousel{
-        width: 48vw;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .homeInvestmentStepsCarrouselNav{
-        width: 90%;
-        height: auto;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    .homeInvestmentStepsCarrouselArrowContainer{
-        background: linear-gradient(to right, #004DFF, #FF00CC);
-        border-radius: 50rem;
-        z-index: 1;
-        margin: 1%;
-        cursor: pointer;
-    }
-    .homeInvestmentStepsCarrouselArrowContainer div{
-        background: #FBFDFF;
-        width: 50px;
-        height: 50px;
-        margin: 2px;
-        border-radius: 50rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .homeInvestmentStepsCarrouselArrowContainer img{
-        width: 27px;
-    }
-    .homeInvestmentStepsCarrouselContainer{
-        position: relative;
-        width: 100%;
-        height: 60%;
-        border-radius: 50px;
-        background: #ffff;
-        box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-    }
-    /* .homeInvestmentStepsCarrouselContainer *{
-        border: 1px solid black;
-    } */
-    .homeInvestmentStepsCarrouselMobil{
-            position: absolute;
-            left: 0%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            height: 90%;
-            width: 200%;
-            transition: left 1.2s ease-out;
-    }
-    .moved{
-        left:-100%;
-    }
-    .homeInvestmentStepsCarrouselCard{
-        display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 21%;
-            height: 90%;
-            box-shadow: 0px 100px 80px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
-            border-radius: 15px;
-            margin: 0 3%;
-            padding: 3% 1% 1.5% 1%;
-            background-color: #FFFFFF;
-    }
-    
-    .homeInvestmentStepsCarrouselCardId{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        height: 50%;
-        margin: 0;
-        /* padding-top: 5%; */
-        background-color: #FFFFFF;
-    }
-    
-    .homeInvestmentStepsCarrouselCardNumber {
-        background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
-        padding: 1%;
-        width: 30%;
-        border-radius: 50rem;
-        font-size: 1.8em;
-        color: #F3F2F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .homeInvestmentStepsCarrouselCard h4{
-        color: #004DFF;
-        font-size: 2.2em;
-        font-weight: 550;
-        /* height: 40%; */
-    }
-    .homeInvestmentStepsCarrouselCard p{
-        font-size: 1.2em;
-        font-weight: 300;
-        line-height: 20px;
-        height: 50%;
-    }
+    /* #### FIN ¿Como invertir en simples pasos? ####*/
     
     /*Beneficios de invertir con Metro Futuro*/
     
