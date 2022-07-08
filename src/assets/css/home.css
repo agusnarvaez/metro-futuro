@@ -1,9 +1,9 @@
-/*#######################################*/
-/* ############### MOBILE ##############*/
-/*#######################################*/
+/*! #######################################*/
+/*! ################ MOBILE ###############*/
+/*! #######################################*/
 
 
-/* ### SOBRE NOSOTROS ### */
+/** ### SOBRE NOSOTROS ### */
 #homeAboutLink div{
     background-color: #FBFAFF;
 }
@@ -20,10 +20,10 @@
 #homeAboutParagraph{
     text-align: center;
 }
-/* ### FIN Sobre nosotros ### */
+/*! ### Sobre nosotros ### */
 
 
-/* ### SLOGAN ###*/
+/** ### SLOGAN ###*/
 #homeSlogan {
     width: 90%;
     border-radius: 15px;
@@ -62,24 +62,41 @@
 }
 
 
-/* ### FIN Slogan ###*/
+/*! ### Slogan ###*/
 
-/* ### ¿COMO INVERTIR EN SIMPLES PASOS? ###*/
+/** ### ¿COMO INVERTIR EN SIMPLES PASOS? ###*/
 
 #homeInvestmentSteps{
     flex-direction: column;
+    padding: 2%;
+    align-items: center;
+    height: auto;
+    position: relative;
 }
 #homeInvestmentSteps_subTitle{
     text-align: center;
     font-size: 2.3em;
+}
+#homeCarrousel{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 5% 0;
+}
+#homeCarrouselNav{
+    justify-content: space-evenly;
+    align-items: center;
 }
 #homeInvestmentSteps_desktopLink{
     display: none;
 }
 #homeInvestmentSteps_mobileLink{
     display: block;
+    position: relative;
+    bottom: 0
 }
-/* ### FIN ¿Como invertir en simples pasos? ###*/
+/*! ### ¿Como invertir en simples pasos? ###*/
 
 
 .homeBenefits,
@@ -91,12 +108,19 @@
 }
 
 
-/*#######################################*/
-/* ############### DESKTOP ##############*/
-/*#######################################*/
-@media (min-width: 1024px) {
+/* ! ####################################### **/
+/* ! ############### DESKTOP ############### **/
+/* ! ####################################### **/
 
+@media (min-width: 1024px) {
+/**### Important
+* ! sdada
+* TODO: 
+*/
     /* ### SOBRE NOSOTROS ### */
+    #homeAbout{
+        overflow: hidden;
+    }
     #homeAboutLink div{
         background-color: #dcdcdc;
     }
@@ -138,14 +162,18 @@
         letter-spacing: 0.5px;
     }
 
-    /* ### FIN Slogan ###*/
+    /*! ### Slogan ###*/
     
     
-    /* #### ¿COMO INVERTIR EN SIMPLES PASOS? ####*/
+    /** #### ¿COMO INVERTIR EN SIMPLES PASOS? ####*/
     #homeInvestmentSteps{
         background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
         border-radius: 150px 0px 0px 0px;
         flex-direction: row;
+        justify-content: space-between;
+    }
+    #homeCarrousel{
+        width: 50%;
     }
     #homeInvestmentSteps_subTitle{
         text-align: start;
@@ -153,13 +181,18 @@
     #homeInvestmentSteps_desktopLink{
         display: block;
     }
+    #homeCarrouselNav{
+        justify-content: flex-end;
+        align-items: center;
+    }
         
     #homeInvestmentSteps_mobileLink{
         display: none;
     }
-    /* #### FIN ¿Como invertir en simples pasos? ####*/
+    /*! #### ¿Como invertir en simples pasos? ####*/
     
-    /*Beneficios de invertir con Metro Futuro*/
+
+    /**### Beneficios de invertir con Metro Futuro ###**/
     
     .homeBenefits{
         position: relative;

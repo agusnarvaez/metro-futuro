@@ -23,7 +23,7 @@ function HomeAbout() {
                     <div className="degradedLink" id='homeAboutLink'>
                         <div className='degradedLink_TextContainer degradedLink_TextContainer--lightGray' id="homeAboutInfoLink">
                             <NavLink className="degradedLink_Text" to='/about'>
-                                Más información
+                                Conocenos
                             </NavLink>
                         </div>
                     </div>

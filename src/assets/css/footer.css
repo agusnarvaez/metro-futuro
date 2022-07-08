@@ -1,6 +1,6 @@
-/*#######################################*/
-/* ############### MOBILE ##############*/
-/*#######################################*/
+/*! #######################################*/
+/*! ################ MOBILE ###############*/
+/*! #######################################*/
 
 .mainFooter *{
     color: #F3F2F2;
@@ -20,7 +20,7 @@
     position: relative;
 }
 
-/* BACKGROUNDS */
+/** ### BACKGROUNDS ### */
 .mainFooterBackgroundLeft{
     position: absolute;
     border-top-left-radius: 150px;
@@ -45,7 +45,7 @@
     z-index: 0;
     opacity: 50%;
 }
-/* FIN Backgrounds */
+/*! ### Backgrounds ### */
 
 
 .topFooter{
@@ -165,9 +165,9 @@
     width: 17px;
 }
 
-/*#######################################*/
-/* ############### DESKTOP ##############*/
-/*#######################################*/
+/*! #######################################*/
+/*! ################ DESKTOP ##############*/
+/*! #######################################*/
 @media (min-width: 1024px) {
 
     .mainFooter{
@@ -179,7 +179,7 @@
         height:fit-content;
         border-top-left-radius: 150px;
     }
-    /* BACKGROUNDS */
+    /** ### BACKGROUNDS ### */
     .mainFooterBackgroundLeft{
         position: absolute;
         border-top-left-radius: 150px;
@@ -204,7 +204,7 @@
         z-index: 0;
         opacity: 50%;
     }
-    /* FIN Backgrounds */
+    /*! ### Backgrounds ### */
 
 
     .topFooter{
@@ -217,7 +217,7 @@
         z-index: 5;
     }
     .footerMetroLogo{
-        width: 40%;
+        width: 30%;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;

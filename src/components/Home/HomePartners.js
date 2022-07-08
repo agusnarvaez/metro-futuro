@@ -31,7 +31,7 @@ function HomePartners() {
                                 <img alt="stayRealTVLogo" src={stayRealTVLogo} /></a></li>
                     <li><a 
                             target="_blank"
-                            href="https://briken.io/es/" rel="noopener noreferrer"><img alt="brikenLogo" src={brikenLogo} /></a></li>
+                            href="https://briken.io/" rel="noopener noreferrer"><img alt="brikenLogo" src={brikenLogo} /></a></li>
                 </ul>
             </section>
     )

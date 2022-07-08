@@ -10,12 +10,33 @@ import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.png"
 
 
 function HomeInvestmentSteps() {
+    const [carrouselInfo, setCarrouselInfo]=useState([
+        {
+            id: 1,
+            title: "Regístrate",
+            text: "Inscríbete en la plataforma y realiza el pedido de validación de identidad y origen de datos."
+        },
+        {
+            id: 2,
+            title: "Selección de tokens",
+            text: "Elije el proyecto inmobiliario en el que quieras invertir y la cantidad de m2 que quieras comprar."
+        },
+        {
+            id: 3,
+            title: "Firma",
+            text: "Nuestras operaciones son innovadoras y están establecidas en Smart Contracts, una herramienta que le brinda independencia y seguridad al inversor."
+        },
+        {
+            id: 4,
+            title: "Pago",
+            text: "Una vez realidao el pago, recibes tus tokens en tu billetera digital para poder disponer de ellos o recibir tu renta mensualmente."
+        }
+    ]);
     const [carrousel, setCarrousel] = useState(true);
-
+    
     return (
 
         <section id="homeInvestmentSteps">
-                <img className="sectionBackground--desktop" alt="homeInvestmentStepsBg" src={investmentStepsBg} />
                 <div className="sectionInfo_subsection sectionInfo_subsection--column">
                     <h2 id="homeInvestmentSteps_subTitle" className="section_subTitle section_subTitle--left">¿Como <font color="#004DFF">invertir</font> en simples pasos?</h2>
                     <div className="degradedLink" id="homeInvestmentSteps_desktopLink">
@@ -26,8 +47,8 @@ function HomeInvestmentSteps() {
                         </div>
                     </div>
                 </div>
-                <div className="sectionInfo_subsection sectionInfo_subsection--column sectionInfo_subsection--50width">
-                    <div className="carrouselNav">
+                <div className="sectionInfo_subsection sectionInfo_subsection--column" id='homeCarrousel'>
+                    <div className="carrouselNav" id="homeCarrouselNav">
                         <div className="carrouselNav_arrowContainer"
                             onClick={() => setCarrousel(!carrousel)}
                         >
@@ -46,36 +67,32 @@ function HomeInvestmentSteps() {
                     </div>
                     <div className="carrouselContainer">
                         <div
-                            className={carrousel ? "carrouselContainer_mobil" : "carrouselContainer_mobil carrouselContainer_mobil--moved"}
-                        >
-                            <div className="carrouselContainer_card">
+                            className={carrousel ? "carrouselContainer_mobil carrousel_mobil--desktop" : "carrouselContainer_mobil carrouselContainer_mobil--moved carrousel_mobil--desktop"}
+                        >{carrouselInfo.map((card) => {
+                            return(
+                                <div className="carrouselContainer_card">
+                                    <div className="carrouselContainer_cardId">
+                                        <div className="carrouselContainer_cardNumber">{card.id}</div>
+                                        <h4>{card.title}</h4>
+                                    </div >
+                                <p>{card.text}</p>
+                                </div>
+                            )
+                        })}
+                        </div>
+                        <div
+                            className={carrousel ? "carrouselContainer_mobil carrousel_mobil--mobile" : "carrouselContainer_mobil carrouselContainer_mobil--moved carrousel_mobil--mobile"}
+                        >{carrouselInfo.map((card) => {
+                            return(
+                                <div className="carrouselContainer_card">
                                 <div className="carrouselContainer_cardId">
-                                    <div className="carrouselContainer_cardNumber">1</div>
-                                    <h4>Regístrate</h4>
+                                    <div className="carrouselContainer_cardNumber">{card.id}</div>
+                                    <h4>{card.title}</h4>
                                 </div >
-                                <p>Inscribite en la plataforma y realiza el proceso de validación de identidad y origen de datos.</p>
+                                <p>{card.text}</p>
                             </div>
-                            <div className="carrouselContainer_card">
-                                <div className="carrouselContainer_cardId">
-                                    <div className="carrouselContainer_cardNumber">2</div>
-                                    <h4>Selección de tokens</h4>
-                                </div>    
-                                <p>Elige el proyecto inmobiliario en el que quieras invertir y la cantidad e m<sup>2</sup> que quieras comprar.</p>
-                            </div>
-                            <div className="carrouselContainer_card">
-                                <div className="carrouselContainer_cardId">
-                                    <div className="carrouselContainer_cardNumber">3</div>
-                                    <h4>Firma</h4>
-                                </div>
-                                <p>Nuestras operaciones son innovadoras y están establecidas en Smart Contracts, una herramienta que le brinda independencia y seguridad al inversor.</p>
-                            </div>
-                            <div className="carrouselContainer_card">
-                                <div className="carrouselContainer_cardId">
-                                    <div className='carrouselContainer_cardNumber'>4</div>
-                                    <h4>Pago</h4>
-                                </div>
-                                <p>Una vez realizado el pago recibes tus tokens en tu billetera digital, para poder disponer de ellos o recibir tu renta mensualmente.</p>
-                            </div>
+                            )
+                        })}
                         </div>
                     </div>
                     <div className="degradedLink" id="homeInvestmentSteps_mobileLink">
@@ -86,6 +103,8 @@ function HomeInvestmentSteps() {
                         </div>
                     </div>
                 </div>
+            {/* ### Background ### */}
+            <img className="sectionBackground--desktop" alt="homeInvestmentStepsBg" src={investmentStepsBg} />
             </section>
     )
 }

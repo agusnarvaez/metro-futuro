@@ -1,8 +1,8 @@
-/*#######################################*/
-/* ######## MEDIDAS PARA MOBILE ########*/
-/*#######################################*/
+/*! #######################################*/
+/*! ############### MOBILE ###############*/
+/*! #######################################*/
 
-/* #### Estilos generales #### */
+/** #### Estilos generales #### */
 
 * {
     font-family: Lexend;
@@ -53,7 +53,7 @@ section{
     width: 100%;
     height: 90vh;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@ section{
     margin: 0 0 5% 0;
 }
 
-/* Información de la sección */
+/** ### INFORMACIÓN DE LA SECCIÓN ### */
 .sectionInfo{
     z-index: 10;
     display: flex;
@@ -104,158 +104,177 @@ section{
     width: 30%;
 }
 
+/*! ### Información de la sección ### */
 
-/* Tipografías*/
+/** ### TIPOGRAFÍAS ### */
 
-.section_subTitle{
-    font-size: 3em; 
-    text-align: center;
-    font-weight: 600;
-    z-index: 10;
-}
-.section_subTitle--left{
-    text-align: start;
-}
+    .section_subTitle{
+        font-size: 3em; 
+        text-align: center;
+        font-weight: 600;
+        z-index: 10;
+    }
+    .section_subTitle--left{
+        text-align: start;
+    }
 
-.section_paragraph{
-    line-height: 1.2em;
-    width: 100%;
-    font-size: 1.8em;
-    font-weight: 300;
-    z-index: 10;
-    padding: 2% 0;
-}
+    .section_paragraph{
+        line-height: 1.2em;
+        width: 100%;
+        font-size: 1.8em;
+        font-weight: 300;
+        z-index: 10;
+        padding: 2% 0;
+    }
 
-.blackText{
-    color: #000F33;
-}
-font {
-    font-size: inherit;
-}
+    .blackText{
+        color: #000F33;
+    }
+    font {
+        font-size: inherit;
+    }
+/*! ### Tipografías ### */
 
 
-/* ### Backgrounds de secciones ###*/
-.sectionBackground--desktop{
-    display: none;
-}
-.sectionBackground--mobile{
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    object-position: center;
-    object-fit: cover;
-    z-index: 0;
-}
+/** ### BACKGROUND DE SECCIONES ###*/
+    .sectionBackground--desktop{
+        display: none;
+    }
+    .sectionBackground--mobile{
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        object-position: center;
+        object-fit: cover;
+        z-index: 0;
+    }
 
-/* ### FIN Background de secciones ### */
+/*! ### Background de secciones ### */
 
-/* ### CARROUSEL ### */
-.carrouselNav{
-    width: 90%;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.carrouselNav_arrowContainer{
-    background: linear-gradient(to right, #004DFF, #FF00CC);
-    border-radius: 50rem;
-    z-index: 1;
-    margin: 1%;
-    cursor: pointer;
-}
+/** ### CARROUSEL ### */
+    .carrouselNav{
+        width: 90%;
+        height: auto;
+        display: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .carrouselNav_arrowContainer{
+        background: linear-gradient(to right, #004DFF, #FF00CC);
+        border-radius: 50rem;
+        z-index: 1;
+        margin: 1%;
+        cursor: pointer;
+    }
 
-.carrouselNav_arrowContainer div{
-    background: #FBFDFF;
-    width: 50px;
-    height: 50px;
-    margin: 2px;
-    border-radius: 50rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.2s ease-in-out;
-}
-.carrouselNav_arrowContainer img{
-    width: 27px;   
-    transition: filter 0.2s ease-in-out;
-}
-.carrouselContainer{
-    position: relative;
-    width: 100%;
-    height: 60%;
-    border-radius: 50px;
-    background: #ffff;
-    box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
+    .carrouselNav_arrowContainer div{
+        background: #FBFDFF;
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+        border-radius: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .carrouselNav_arrowContainer img{
+        width: 27px;   
+        transition: filter 0.2s ease-in-out;
+    }
+    .carrouselContainer{
+        position: relative;
+        width: 100%;
+        height: 55vh;
+        border-radius: none;
+        background: #ffff;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        /* overflow-y: visible; */
+        /* overflow: visible; */
+        /* scroll-snap-type: x mandatory; */
+        padding: 0 0 0% 0;
+        margin: 0;
+    }
 
-.carrouselContainer_mobil{
-    position: absolute;
-    left: 0%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 90%;
-    width: 200%;
-    transition: left 1.2s ease-out;
-}
-.carrouselContainer_mobil--moved{
-    left:-100%;
-}
-.carrouselContainer_card{
-    display: flex;
+    .carrouselContainer_mobil{
+        position: absolute;
+        left: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        width: 250vw;
+        margin: 0 0 0 0;
+        padding: 0;
+        transition: left 1.2s ease-out;
+    }
+    .carrousel_mobil--mobile{
+        display: flex;
+    }
+    .carrousel_mobil--desktop{
+        display: none;
+    }
+    .carrouselContainer_mobil--moved1{
+        left:-100%;
+    }
+    .carrouselContainer_mobil--moved2{
+        left:-100%;
+    }
+    .carrouselContainer_card{
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 21%;
-        height: 90%;
-        box-shadow: 0px 100px 80px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
+        width: 23%;
+        height: 85%;
+        box-shadow: 0px 15px 20px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
         border-radius: 15px;
-        margin: 0 3%;
-        padding: 3% 1% 1.5% 1%;
+        margin: 0 1%;
+        padding: 2% 1% 1% 1%;
         background-color: #FFFFFF;
-}
-.carrouselContainer_card h4{
-    color: #004DFF;
-    font-size: 2em;
-    font-weight: 500;
-}
-.carrouselContainer_card p{
-    font-size: 1.2em;
-    font-weight: 400;
-    line-height: 20px;
-    height: 50%;
-}
-.carrouselContainer_cardId{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    height: 50%;
-    margin: 0;
-    background-color: #FFFFFF;
-}
-.carrouselContainer_cardNumber{
-    background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
-    padding: 1%;
-    width: 30%;
-    border-radius: 50rem;
-    font-size: 1.8em;
-    color: #F3F2F2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* ### FIN Carrousel ### */
+    }
+    .carrouselContainer_card h4{
+        color: #004DFF;
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .carrouselContainer_card p{
+        font-size: 1.2em;
+        font-weight: 400;
+        line-height: 20px;
+        height: 100%;
+    }
+    .carrouselContainer_cardId{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        background-color: #FFFFFF;
+    }
+    .carrouselContainer_cardNumber{
+        background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
+        padding: 1%;
+        width: 30%;
+        border-radius: 50rem;
+        font-size: 1.8em;
+        color: #F3F2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/*! ### Carrousel ### */
 
 
-    /* ### LINK DEGRADADO ### */
+/** ### LINK DEGRADADO ### */
     .degradedLink{
         display: flex;
         min-width: fit-content;
@@ -267,6 +286,7 @@ font {
         white-space: nowrap;
         padding: 2.5px 2.5px;
         border-radius: 50rem;
+        margin: 5% 0;
     }
     .degradedLink_TextContainer{
         display: flex;
@@ -293,7 +313,7 @@ font {
     }
     
 
-    /* Puede ser Link(a) o Párrafo (p) según necesidad*/
+    /*? Puede ser Link(a) o Párrafo (p) según necesidad*/
     .degradedLink_Text{
         text-decoration: none;
         font-style: normal;
@@ -317,12 +337,12 @@ font {
         -webkit-text-fill-color: #FBFDFF;
     }
 
-    /* ### fin link degradado ### */
+/*! ### Link degradado ### */
 
 
-/*#######################################*/
-/* ######## MEDIDAS PARA DESKTOP ########*/
-/*#######################################*/
+/*! #######################################*/
+/*! ############### DESKTOP ###############*/
+/*! #######################################*/
 @media (min-width: 1024px) {
 
 
@@ -334,7 +354,7 @@ font {
         width: 100%;
         height: 80vh;
         position: relative;
-        overflow: hidden;
+        /* overflow: hidden; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -342,18 +362,18 @@ font {
         margin: 0 0 5% 0;
     }
 
-    /* Información de la sección */
-    .sectionInfo{
-        align-items: flex-start;
-        padding: 0 5%;
-    }
-    .sectionInfo_subsection{
-        height: 100%;
-        justify-content: center;
-        align-items: flex-start;
-        z-index: 5;
-    }
-    /* ### FIN Información de la sección ### */
+    /** ### Información de la sección ###*/
+        .sectionInfo{
+            align-items: flex-start;
+            padding: 0 5%;
+        }
+        .sectionInfo_subsection{
+            height: 100%;
+            justify-content: center;
+            align-items: flex-start;
+            z-index: 5;
+        }
+    /*! ### Información de la sección ###*/
 
 
     /* ### TIPOGRAFÍAS ### */
@@ -389,7 +409,7 @@ font {
     /* ### FIN Background de secciones ###*/
 
 
-    /* ### CARROUSEL ### */
+    /**  ### CARROUSEL ### */
     .carrouselNav{
         width: 90%;
         height: auto;
@@ -426,26 +446,31 @@ font {
         transition: filter 0.2s ease-in-out;
     }
     .carrouselContainer{
-        position: relative;
-        width: 100%;
-        height: 60%;
-        border-radius: 50px;
-        background: #ffff;
-        box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
+        background: #ffff;
+        border-radius: 50px;
+        box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
         overflow: hidden;
     }
 
     .carrouselContainer_mobil{
         position: absolute;
         left: 0%;
-        display: flex;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         height: 90%;
         width: 200%;
         transition: left 1.2s ease-out;
+    }
+    .carrousel_mobil--mobile{
+        display: none;
+    }
+    .carrousel_mobil--desktop{
+        display: flex;
     }
     .carrouselContainer_mobil--moved{
         left:-100%;
@@ -454,11 +479,11 @@ font {
         display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            width: 21%;
-            height: 90%;
+            width: 25%;
+            height: 95%;
             box-shadow: 0px 100px 80px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
             border-radius: 15px;
-            margin: 0 3%;
+            margin: 0 2%;
             padding: 3% 1% 1.5% 1%;
             background-color: #FFFFFF;
     }
@@ -495,10 +520,10 @@ font {
         justify-content: center;
         align-items: center;
     }
-    /* ### FIN Carrousel ### */
+/*! ### Carrousel ### */
 
 
-    /* ### LINK DEGRADADO ### */
+/** ### LINK DEGRADADO ### */
     .degradedLink{
         display: flex;
         min-width: fit-content;
@@ -555,5 +580,5 @@ font {
         -webkit-text-fill-color: #FBFDFF;
     }
 
-    /* ### fin link degradado ### */
+    /*! ### Link degradado ### */
 }

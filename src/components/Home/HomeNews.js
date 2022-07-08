@@ -12,7 +12,7 @@ function HomeNews() {
                 </div>
                 <div className="homeNewsLink">
                     <div>
-                        <NavLink to='/academy'>
+                        <NavLink to='/conact'>
                             Quiero saber más
                         </NavLink>
                     </div>
