@@ -208,9 +208,74 @@
 }
 /*! ### Aprende con Metro Futuro ### */
 
+/** ### NUESTROS PARTNERS ### **/
+    
+#homePartners{
+    height: 65vh;
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+#homePartners h3{
+    font-size: 3em;
+    font-weight: 500;
+}
+#homePartnersContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0% 3%;
+}
+#homePartnersContainer ul{
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 200%;
+    height: 60%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    margin: 0;
+}
+#homePartnersContainer li{
+    list-style: none;
+    width: 30%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F3F2F2;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    padding: 1%;
+    -webkit-transition: height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
+}
+
+#homePartners a{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    padding: 0%;
+}
+#homePartners img{
+    width: 100%;
+}
+/*! ### Nuestros partners ### **/
+
 
 .homeNews,
-.homePartners,
 .homeFaq{
     display: none;
 }
@@ -381,7 +446,7 @@
     
 /*! ### Aprende con Metro Futuro ### */
     
-    /* #### Novedades ####*/
+/** #### Novedades ####*/
     .homeNews{
         width: 100%;
         height: 15vw;
@@ -476,46 +541,31 @@
     .homeNewsLink:hover a{
         -webkit-text-fill-color: #FBFDFF;
     }
+/*! ### Novedades ### */
     
+/** ### NUESTROS PARTNERS ### **/
     
-    /*#### Nuestros Partners ####*/
-    
-    .homePartners{
-        width: 100%;
-        height: 23vw;
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        margin: 5% 0 !important;
+    #homePartners{
+        height: 50vh;
+        margin: 5% 0;
     }
     
-    .homePartnersBg{
-        position: absolute;
-        width: 100%;
-        top: 0;
+    #homePartners h3{
+        font-size: 3.5em;
     }
-    .homePartners h3{
-        color: #000F33;
-        font-size: 3em;
-        font-weight: 500;
-        z-index: 5;
+    #homePartnersContainer{
+        overflow: visible;
+        padding: 0;
     }
-    .homePartners ul{
-        display: flex;
-        width: 90%;
+    #homePartnersContainer ul{
+        position: static;
         height: 100%;
-        justify-content: space-around;
-        align-items: center;
-        z-index: 5;
         padding: 3% 5%;
     }
-    .homePartners li{
+    #homePartnersContainer li{
         list-style: none;
-        width: 25%;
-        height: 100%;
+        width: 30%;
+        max-height: 90%;
         background: #FFFFFF;
         border: 1px solid #F3F2F2;
         box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
@@ -525,18 +575,18 @@
         align-items: center;
         object-fit: cover;
         padding: 1%;
-        -webkit-transition: height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
+        -webkit-transition: max-height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
     }
     
-    .homePartners li:hover{
-        height: 110%;
-        width: 30%;
-        -webkit-transition: height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
+    #homePartnersContainer li:hover{
+        max-height: 100%;
+        width: 35%;
+        -webkit-transition: max-height 0.3s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
     }
     
-    .homePartners a{
+    #homePartnersContainer a{
         width: 100%;
-        height: 100%;
+        max-height: 100%;
         background: #FFFFFF;
         border-radius: 10px;
         display: flex;
@@ -545,10 +595,11 @@
         object-fit: cover;
         padding: 0%;
     }
-    .homePartners img{
+    #homePartnersContainer img{
         width: 100%;
+        max-height: 100%;
     }
-    
+/*! ### Nuestros partners ### **/
     
     /* #### Preguntas frecuentes ####*/
     

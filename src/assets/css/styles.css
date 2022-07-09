@@ -218,12 +218,7 @@ section{
     .carrousel_mobil--desktop{
         display: none;
     }
-    .carrouselContainer_mobil--moved1{
-        left:-100%;
-    }
-    .carrouselContainer_mobil--moved2{
-        left:-100%;
-    }
+    
     .carrouselContainer_card{
         display: flex;
         flex-direction: column;
@@ -374,11 +369,11 @@ section{
         width: 100%;
         height: 80vh;
         position: relative;
-        /* overflow: hidden; */
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
+        z-index: 1;
         margin: 0 0 5% 0;
     }
 

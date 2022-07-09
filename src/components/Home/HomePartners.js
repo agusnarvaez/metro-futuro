@@ -12,27 +12,44 @@ import brikenLogo from "../../assets/img/logos/brikenLogo.png";
 
 
 function HomePartners() {
-
+    const partnersList = [
+        {
+            link: "https://metrox.com.ar/",
+            img: metroXLogo,
+            alt: "metroXLogo"
+        },
+        {
+            link: "https://stayreal.tv/main/",
+            img: stayRealTVLogo,
+            alt: "stayRealTVLogo"
+        },
+        {
+            link: "https://briken.io/",
+            img: brikenLogo,
+            alt: "brikenLogo"
+        }
+    ];
     return (
 
-        <section className="homePartners">
-                <img alt="homePartnersBackground" className="homePartnersBg" src={homePartnersBg} />
-                <h3>Nuestros partners</h3>
-                <ul>
-                    <li><a
-                            target="_blank"
-                            href="https://metrox.com.ar/"
-                            rel="noopener noreferrer">
-                                <img alt="metroXLogo" src={metroXLogo} /></a></li>
-                    <li><a 
-                            target="_blank"
-                            href="https://stayreal.tv/main/"
-                            rel="noopener noreferrer">
-                                <img alt="stayRealTVLogo" src={stayRealTVLogo} /></a></li>
-                    <li><a 
-                            target="_blank"
-                            href="https://briken.io/" rel="noopener noreferrer"><img alt="brikenLogo" src={brikenLogo} /></a></li>
-                </ul>
+        <section id="homePartners">
+                <img alt="homePartnersBackground" className="sectionBackground--desktop" src={homePartnersBg} />
+                <h3 className='section_subTitle'>Nuestros partners</h3>
+                <div id='homePartnersContainer'>
+                    <ul>
+                        {partnersList.map((partner) => {
+                            return (
+                                <li>
+                                    <a
+                                        target="_blank"
+                                        href={partner.link}
+                                        rel="noopener noreferrer">
+                                        <img alt={partner.alt} src={partner.img} />
+                                    </a>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
             </section>
     )
 }
