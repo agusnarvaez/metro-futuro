@@ -10,11 +10,11 @@ function HomeLearnWithUs() {
 
     return (
 
-        <section className="homeLearnWithUs">
-                <img className="learnWithUsBg" alt="learnWithUsBackground" src={learnWithUsBg} />
-                <div className="homeLearnWithUsVideo">
+        <section id="homeLearnWithUs">
+                <img className="sectionBackground--desktop" id="homeLearnWithUsBackground" alt="learnWithUsBackground" src={learnWithUsBg} />
+                <div className="youTubeVideo_Container">
                     <ReactPlayer
-                        className="homeLearnWithUsVideoPlayer"
+                        className="youTubeVideo_Player"
                         url="https://youtu.be/wX7HmpI8NsY"
                         controls
                         width="100%"
@@ -25,15 +25,15 @@ function HomeLearnWithUs() {
                         
                     />
                 </div>
-                <div className="homeLearnWithUsText">
-                    <h4>Aprende con <font color="#004DFF">Metro Futuro</font></h4>
+                <div className="sectionInfo" id="homeLearnWithUs_Info">
+                    <h4>Aprendé con <font color="#004DFF">Metro Futuro</font></h4>
                     <p>
                         Te ofrecemos una plataforma eLearning online y gratuita para formarse en inversioens inmobiliarias y la tecnología Blockchain.<br /><br />
                         Únete a la academia de Metro Futuro para lograr capitalizar tus ahorros y transformarte en un inversor del Real Estate, la industria con mayor seguridad y menor riesgo.
                     </p>
-                    <div className="homeLearnWithUsLink">
-                        <div>
-                            <NavLink to='/academy'>
+                    <div className="degradedLink" id="homeLearnWithUs_Link">
+                        <div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
+                            <NavLink className="degradedLink_Text" to='/academy'>
                                 Ver más
                             </NavLink>
                         </div>

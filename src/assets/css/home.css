@@ -177,7 +177,46 @@
     font-weight: 300;
 }
 /*! ### BENEFICIOS DE INVERTIR EN METRO FUTURO ### **/
-.homeLearnWithUs,
+/** ### APRENDE CON METRO FUTURO ### */
+#homeLearnWithUs{
+    width: 100%;
+    height: auto;
+    padding: 0% 0;
+    flex-direction: column;
+    border-top-left-radius: 150px;
+}
+#homeLearnWithUsBackground{
+    border-top-left-radius: 150px;
+}
+
+#homeLearnWithUs_Info{
+    justify-content: center;
+    padding: 0 5%;
+    margin: 0;
+}
+#homeLearnWithUs_Info h4 font {
+    font-size: inherit;
+}
+#homeLearnWithUs_Info h4{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+#homeLearnWithUs_Info p {
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    padding: 2% 0;
+}
+/* Link degradado */
+#homeLearnWithUs_Link {
+    width: 30%;
+}
+/*! ### Aprende con Metro Futuro ### */
+
+
 .homeNews,
 .homePartners,
 .homeFaq{
@@ -254,6 +293,8 @@
     }
     #homeInvestmentSteps_subTitle{
         text-align: start;
+        font-size: 3.5em;
+        padding: 0 10% 3% 0;
     }
     #homeInvestmentSteps_desktopLink{
         display: block;
@@ -320,114 +361,33 @@
     }
 /*! ### Beneficios de invertir con Metro Futuro ###**/
 
-/** ### Aprende con Metro Futuro ### */
-    .homeLearnWithUs{
-        width: 100%;
+/** ### APRENDE CON METRO FUTURO ### */
+    #homeLearnWithUs{
         height: 50vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5% 0;
-        position: relative;
-        border-top-left-radius: 150px;
+        flex-direction: row;
     }
-    .learnWithUsBg{
-        position:absolute;
-        top: 0;
-        width: 100vw;
-        border-top-left-radius: 150px;
-    }
-    .homeLearnWithUsVideo{
-        width: 400px;
-        height: 225.7px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        overflow: hidden;
-        z-index: 5;
-    
-    }
-    .homeLearnWithUsVideoPlayer{
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .homeLearnWithUsText{
+
+    #homeLearnWithUs_Info{
         width: 65%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
         align-items: flex-end;
-        justify-content: center;
-        z-index: 5;
+        padding: 0;
     }
-    .homeLearnWithUsText h4 font {
-        font-size: inherit;
-    }
-    .homeLearnWithUsText h4{
+    #homeLearnWithUs_Info h4{
         font-size: 3em;
+        font-weight: 600;
     }
-    .homeLearnWithUsText p {
-        color: #000000;
-        font-size: 1.1em;
-        font-weight: 300;
+    #homeLearnWithUs_Info p {
+        
+        font-size: 1.3em;
         text-align: end;
-        padding: 5% 0;
+        padding: 3% 0;
     }
     /* Link degradado */
-    .homeLearnWithUsLink a {
-        text-decoration: none;
-        font-style: normal;
-        font-size: 1.2em;
-    
-        width: 100%;
-        height: auto;
-        text-align: center;
-        padding: 5%;
-        font-weight: 500;
-        -webkit-text-fill-color: transparent;
-        background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
-        -webkit-background-clip: text;
-        -webkit-border-image: fill;
-        z-index: 5;
-        transition: background-color 2s ease-in-out;
-    }
-    .homeLearnWithUsLink {
-        display: flex;
-        width: 15%;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, #004DFF, #FF00CC);
-        z-index: 1;
-        white-space: nowrap;
-        /* width: fit-content; */
-        border-radius: 50rem;
-    }
-    .homeLearnWithUsLink div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #FBFDFF;
-        width: 100%;
-        height: auto;
-        margin: 2.5px 2px;
-        z-index: 2;
-        border-radius: 50rem;
-        transition: background-color 0.5s ease-in-out;
+    #homeLearnWithUs_Link {
+        width: 20%;
     }
     
-    .homeLearnWithUsLink:hover div{
-        background: transparent;
-    }
-    .homeLearnWithUsLink:hover a{
-        -webkit-text-fill-color: #FBFDFF;
-    }
-    
+/*! ### Aprende con Metro Futuro ### */
     
     /* #### Novedades ####*/
     .homeNews{
