@@ -22,7 +22,6 @@ function HomeLearnWithUs() {
                         border-radius="30px"
                         border="none"  
                         loop
-                        
                     />
                 </div>
                 <div className="sectionInfo" id="homeLearnWithUs_Info">

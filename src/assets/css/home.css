@@ -179,23 +179,15 @@
 /*! ### BENEFICIOS DE INVERTIR EN METRO FUTURO ### **/
 /** ### APRENDE CON METRO FUTURO ### */
 #homeLearnWithUs{
-    width: 100%;
+    
     height: auto;
-    padding: 0% 0;
     flex-direction: column;
-    border-top-left-radius: 150px;
-}
-#homeLearnWithUsBackground{
-    border-top-left-radius: 150px;
 }
 
 #homeLearnWithUs_Info{
     justify-content: center;
     padding: 0 5%;
     margin: 0;
-}
-#homeLearnWithUs_Info h4 font {
-    font-size: inherit;
 }
 #homeLearnWithUs_Info h4{
     text-align: center;
