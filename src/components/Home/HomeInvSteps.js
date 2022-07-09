@@ -33,7 +33,6 @@ function HomeInvestmentSteps() {
         }
     ]);
     const [carrousel, setCarrousel] = useState(true);
-    
     return (
 
         <section id="homeInvestmentSteps">

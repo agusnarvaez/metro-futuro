@@ -376,7 +376,7 @@ section{
     /*! ### Información de la sección ###*/
 
 
-    /* ### TIPOGRAFÍAS ### */
+/** ### TIPOGRAFÍAS ### */
 
     .section_subTitle{
         font-size: 4em;
@@ -388,10 +388,10 @@ section{
         padding: 2% 0 2% 0;
         font-weight: 300;
     }
-    /* ### FIN Tipografías ### */
+/*! ### Tipografías ### */
 
 
-    /* ### BACKGROUND DE SECCIONES ### */
+/** ### BACKGROUND DE SECCIONES ### */
     .sectionBackground--desktop{
         display: block;
         width: 100vw;
@@ -406,10 +406,10 @@ section{
     .sectionBackground--mobile{
         display: none;
     }
-    /* ### FIN Background de secciones ###*/
+/*! ### Background de secciones ###*/
 
 
-    /**  ### CARROUSEL ### */
+/**  ### CARROUSEL ### */
     .carrouselNav{
         width: 90%;
         height: auto;

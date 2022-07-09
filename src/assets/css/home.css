@@ -75,7 +75,11 @@
 }
 #homeInvestmentSteps_subTitle{
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2.5em;
+    letter-spacing: -2.5px;
+    font-weight: 500;
+    padding: 0;
+    margin: 2% 0;
 }
 #homeCarrousel{
     width: 100%;
@@ -93,13 +97,86 @@
 }
 #homeInvestmentSteps_mobileLink{
     display: block;
+    width: 40%;
     position: relative;
     bottom: 0
 }
 /*! ### ¿Como invertir en simples pasos? ###*/
 
+/** ### BENEFICIOS DE INVERTIR EN METRO FUTURO ### **/
+#homeBenefits{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+#homeBenefits h3{
+    width: 100%;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    height: 10%;
+    color: #000F33;
+    z-index: 5;
+}
+#homeBenefitsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    z-index: 5;
+}
+#homeBenefitsImg{
+    display: none;
+}
+#homeBenefitsContainer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 0;
+    margin: 0 3%;
+}
+#homeBenefitsContainer ul li{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    padding: 1% 2%;
+    margin: 3% 0;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.062), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+    border-radius: 10px;
+    border: 1px solid #F3F2F2;
+}
 
-.homeBenefits,
+#homeBenefitsContainer ul li div{
+    padding-left: 3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#homeBenefitsContainer ul li img{
+    width: 40px;
+    height: 40px;
+    margin: 0 3%;
+}
+#homeBenefitsContainer ul li div h5{
+    font-size: 1.5em;
+    color: #004DFF;
+    font-weight: 600;
+}
+#homeBenefitsContainer ul li div p{
+    color: #000F33;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+/*! ### BENEFICIOS DE INVERTIR EN METRO FUTURO ### **/
 .homeLearnWithUs,
 .homeNews,
 .homePartners,
@@ -134,10 +211,10 @@
     #homeAboutParagraph{
         text-align: start;
     }
-    /* ### FIN Sobre nosotros ### */
+/*! ### Sobre nosotros ### */
 
 
-    /* ### SLOGAN ###*/
+/** ### SLOGAN ###*/
     #homeSlogan {
         width: 100%;
         padding: 0;
@@ -162,10 +239,10 @@
         letter-spacing: 0.5px;
     }
 
-    /*! ### Slogan ###*/
+/*! ### Slogan ###*/
     
     
-    /** #### ¿COMO INVERTIR EN SIMPLES PASOS? ####*/
+/** #### ¿COMO INVERTIR EN SIMPLES PASOS? ####*/
     #homeInvestmentSteps{
         background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
         border-radius: 150px 0px 0px 0px;
@@ -189,90 +266,61 @@
     #homeInvestmentSteps_mobileLink{
         display: none;
     }
-    /*! #### ¿Como invertir en simples pasos? ####*/
+/*! #### ¿Como invertir en simples pasos? ####*/
     
 
-    /**### Beneficios de invertir con Metro Futuro ###**/
-    
-    .homeBenefits{
-        position: relative;
-        width: 100%;
-        height: 50vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+/** ### BENEFICIOS DE INVERTIR CON METRO FUTURO ###**/
+    #homeBenefits{
+        padding: 0;
+        margin: 5% 0;
+    }    
+
+    #homeBenefits h3{
+        font-size: 2.8em;
+        text-align: start;
     }
-    .homeBenefitsBg{
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        z-index: 0;
+    #homeBenefitsContainer{
+        padding-top: 3%;
     }
-    .homeBenefits h4{
-        width: 100%;
-        font-size: 3em;
-        font-weight: 500;
-        height: 10%;
-        color: #000F33;
-        z-index: 5;
-    }
-    .homeBenefitsContainer{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 5%;
-        z-index: 5;
-    }
-    .homeBenefitsImg{
-        width: 50%;
-        height: 100;
+    #homeBenefitsImg{
+        width: 45%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
-    .homeBenefitsImg img{
-        width: 25vw;
+    #homeBenefitsImg img{
+        width: 60%;
     }
-    .homeBenefitsItems{
-        width: 45%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 1% 0 1% 2%;
+    #homeBenefitsContainer ul{
+        width: 60%;
+        padding: 0 0 0 1%;
+        margin: 0;
     }
-    .homeBenefitsItems li{
-        display: flex;
-        height: 20%;
-        list-style: none;
-        align-items: center;
-        padding: 3% 0 3% 5%;
+    #homeBenefitsContainer ul li{
+        padding: 1% 0;
+        margin: 0;
+        box-shadow: none;
+        border-radius: none;
+        border: none;
     }
-    .homeBenefitsItems img{
+    
+    #homeBenefitsContainer ul li div{
+        padding: 0 0 0 1%;
+    }
+    #homeBenefitsContainer ul li div img{
         width: 50px;
         height: 50px;
     }
-    .homeBenefitsItems div{
-        padding-left: 3%;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    #homeBenefitsContainer ul li div h5{
+        color: #000F33;
     }
-    .homeBenefitsItems h5{
+    #homeBenefitsContainer ul li div p{
         font-size: 1.5em;
-        color: #000F33;
+        line-height: 20px;
     }
-    .homeBenefitsItems p{
-        color: #000F33;
-        font-size: 1.3em;
-        font-weight: 300;
-    }
-    /* Aprende con Metro Futuro*/
+/*! ### Beneficios de invertir con Metro Futuro ###**/
+
+/** ### Aprende con Metro Futuro ### */
     .homeLearnWithUs{
         width: 100%;
         height: 50vw;
