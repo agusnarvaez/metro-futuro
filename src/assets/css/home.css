@@ -563,18 +563,7 @@
         padding: 3% 5%;
     }
     #homePartnersContainer li{
-        list-style: none;
-        width: 30%;
         max-height: 90%;
-        background: #FFFFFF;
-        border: 1px solid #F3F2F2;
-        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        object-fit: cover;
-        padding: 1%;
         -webkit-transition: max-height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
     }
     
@@ -582,22 +571,6 @@
         max-height: 100%;
         width: 35%;
         -webkit-transition: max-height 0.3s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
-    }
-    
-    #homePartnersContainer a{
-        width: 100%;
-        max-height: 100%;
-        background: #FFFFFF;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        object-fit: cover;
-        padding: 0%;
-    }
-    #homePartnersContainer img{
-        width: 100%;
-        max-height: 100%;
     }
 /*! ### Nuestros partners ### **/
     
