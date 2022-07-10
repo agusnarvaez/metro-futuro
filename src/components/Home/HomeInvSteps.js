@@ -10,7 +10,7 @@ import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.png"
 
 
 function HomeInvestmentSteps() {
-    const [carrouselInfo, setCarrouselInfo]=useState([
+    const carrouselInfo=[
         {
             id: 1,
             title: "Regístrate",
@@ -31,7 +31,7 @@ function HomeInvestmentSteps() {
             title: "Pago",
             text: "Una vez realidao el pago, recibes tus tokens en tu billetera digital para poder disponer de ellos o recibir tu renta mensualmente."
         }
-    ]);
+    ];
     const [carrousel, setCarrousel] = useState(true);
     return (
 
