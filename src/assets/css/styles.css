@@ -279,6 +279,7 @@ section{
         padding: 2.5px 2.5px;
         border-radius: 50rem;
         margin: 5% 0;
+        cursor: pointer;
     }
     .degradedLink_TextContainer{
         display: flex;
@@ -291,6 +292,9 @@ section{
         z-index: 50;
         border-radius: 50rem;
         transition: background-color 0.2s ease-in-out;
+    }
+    .degradedLink_TextContainer--hidden{
+        display: none;
     }
 
     .degradedLink_TextContainer--lightGray{
@@ -313,7 +317,7 @@ section{
         text-decoration: none;
         font-style: normal;
         font-size: 1.5em;
-        
+        margin: 0;
         width: 100%;
         height: auto;
         text-align: center;
@@ -543,49 +547,19 @@ section{
 
 /** ### LINK DEGRADADO ### */
     .degradedLink{
-        
         width: 25%;
         margin: 0;
     }
     .degradedLink_TextContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        width: 100%;
-        height: auto;
-        
-        border-radius: 50rem;
         transition: background-color 0.5s ease-in-out;
         z-index: 50;
     }
-
-    .degradedLink_TextContainer--lightGray{
-        background: #dcdcdc;
-    }
-
     .degradedLink:hover .degradedLink_TextContainer{
         background: transparent !important;
     }
-    
-
     /* Puede ser Link(a) o Párrafo (p) según necesidad*/
     .degradedLink_Text{
-        text-decoration: none;
-        font-style: normal;
-        font-size: 1.5em;
-        
-        width: 100%;
-        height: auto;
-        text-align: center;
-        padding: 5%;
         font-weight: 500;
-
-        -webkit-text-fill-color: transparent;
-        background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
-        -webkit-background-clip: text;
-        -webkit-border-image: fill; 
-        z-index: 50;
     }   
     .degradedLink:hover .degradedLink_Text{
         -webkit-text-fill-color: #FBFDFF;

@@ -94,22 +94,25 @@ function HomeFaqHidden() {
     
 return (
 
-    <div className="homeFaqHidden">
-        <ul className={homeFaqHidden?"homeFaqHiddenExpanded homeFaqHiddenCollapsed":"homeFaqHiddenExpanded"}>
+    <div className="hiddenFaqs">
+        <ul className={homeFaqHidden?"faqList faqList--collapsed":"faqList"}>
             {faqList.map((faq,i) =>{
                 return (
-                    <li className={(faq.cross&&faq.id)?"homeFaqList":"homeFaqList homeFaqCollapsed"}>
-                        <div className="homeFaqContainer">
-                            <div className="homeFaqQuestion">
+                    <li className="faqItem">
+                        <div className="faqContainer">
+                            {/**Pregunta*/}
+                            <div className="faqQuestion">
                                 <h4>{faq.question}</h4>
+                                {/**Cruz de FAQ*/}
                                 <img
                                     src={homeFaqIcon}
-                                    alt="homeFaqIcon" 
-                                    className={faq.cross?"homeFaqCross":"homeFaqCross rotated45"}
+                                    alt="faqIcon" 
+                                    className={faq.cross?"faqCross":"faqCross faqCross--rotated45"}
                                     onClick={() => handleFaqListChange(faq.id)}
                                 />
                             </div>
-                            <div className={faq.cross?"homeFaqResCollapsed":"homeFaqResExpanded"}>
+                            {/* Respuesta FAQ */}
+                            <div className={faq.cross?"faqResponse":" faqResponse faqResponse--Expanded"}>
                                 <p>
                                 {faq.answer}
                                 </p>
@@ -120,15 +123,15 @@ return (
             })} 
         </ul>
 
-        <div className="homeFaqLink"
+        <div className="degradedLink" id="faqLink"
             onClick={() => setHomeFaqHidden(!homeFaqHidden)}>
-                <div className={homeFaqHidden?"homeFaqLinkShown":"homeFaqLinkHidden"}>
-                    <p>
+                <div className={homeFaqHidden?"degradedLink_TextContainer degradedLink_TextContainer--white":"degradedLink_TextContainer--hidden"}>
+                    <p className="degradedLink_Text">
                         Ver más
                     </p>
                 </div>
-                <div className={homeFaqHidden?"homeFaqLinkHidden":"homeFaqLinkShown"}>
-                    <p>
+                <div className={homeFaqHidden?"degradedLink_TextContainer--hidden":"degradedLink_TextContainer degradedLink_TextContainer--white"}>
+                    <p className="degradedLink_Text">
                         Ver menos
                     </p>
                 </div>

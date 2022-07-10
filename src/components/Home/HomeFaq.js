@@ -8,7 +8,7 @@ function HomeFaq() {
     
 return (
     
-    <section className="homeFaq">
+    <section className="sectionInfo" id="homeFaq">
 
         {/**Título**/}
         <h3>Preguntas frecuentes</h3>

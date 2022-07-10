@@ -274,9 +274,161 @@
 }
 /*! ### Nuestros partners ### **/
 
+/** #### PREGUNTAS FRECUENTES ####*/
+    
+    #homeFaq{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+    }
+    #homeFaq h3{
+        color: #000F33;
+        font-size: 2.5em;
+        font-weight: 600;
+        padding: 3% 0;
+    }
+    .faqList{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
 
-.homeNews,
-.homeFaq{
+    #principalFaqs{
+        height: fit-content;
+    }
+
+    .faqItem,
+    .faqItem--collapsed{
+        height: fit-content;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background: linear-gradient(to right, #004DFF, #FF00CC);
+        padding: 3px;
+        white-space: nowrap;
+        margin: 1% 0;
+        border-radius: 13px;
+        z-index: 5;
+    }
+
+    .faqContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #FBFDFF;
+        width: 100%;
+        height: fit-content;
+        z-index: 5;
+        border-radius: 10px;
+        padding: 2% 3%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .faqQuestion{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        padding: 0% 0%;
+        display: flex;
+        justify-content: space-between  ;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        background: #FBFDFF;
+        border-radius: 20px;
+        z-index: 5;
+    }
+
+    .faqList li h4 {
+        text-decoration: none;
+        font-style: normal;
+        font-size: 1.5em;
+        text-align: start;
+        width: 80%;
+        height: auto;
+        padding: 1% 0;
+        margin: 0;
+        font-weight: 500;
+        color:#000F33;
+        white-space: pre-wrap;
+        z-index: 5;
+    }
+
+    .faqCross{
+        width: 35px;
+        height: 35px;
+        transition: transform 0.5s ease;
+        z-index: 5;
+        cursor: pointer;
+    }
+    .faqCross--rotated45{
+        transform: rotate(135deg);
+    }
+
+    .faqResponse{
+        height: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: height 0.3s ease-in;
+    }
+    .faqResponse--Expanded{
+        height: 220px;
+    }
+    .faqResponse p{
+        font-size: 1.2em;
+        font-weight: 300;
+        padding: 0% 0%;
+        white-space: pre-wrap;
+    }
+
+
+    /***** Preguntas extra *****/
+
+    .hiddenFaqs{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .faqList--collapsed{
+        height: 0px !important;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: height 3s ease-in;
+    }
+    #faqLink{
+        width: 30%;
+    }
+
+/*! #### Preguntas frecuentes ####*/
+
+
+#homeNews{
     display: none;
 }
 
@@ -525,242 +677,63 @@
     }
 /*! ### Nuestros partners ### **/
     
-/** #### Preguntas frecuentes ####*/
+
+
+    /** #### PREGUNTAS FRECUENTES ####*/
     
-    .homeFaq{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .homeFaq ul{
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    .homeFaq h3{
-        color: #000F33;
-            font-size: 3em;
-            font-weight: 600;
-            padding: 3% 0;
-    }
-    
-    .homeFaqPrincipal{
-        width: 80%;
-        display: flex;
-        height: fit-content;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .homeFaqCross{
-        width: 53px;
-        height: 53px;
-        transition: transform 0.5s ease;
-        z-index: 5;
-        cursor: pointer;
-    }
-    .rotated45{
-        transform: rotate(135deg);
-    }
-    
-    .homeFaqContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        background: #FBFDFF;
-        width: 100%;
-        /* height: 100%; */
-        height: fit-content;
-       /*  margin: 5px 4.5px; */
-        z-index: 5;
-        border-radius: 20px;
-        padding: 2% 5%;
-        position: relative;
-        overflow: hidden;
-        
-    }
-    
-    .homeFaqQuestion{
-        width: 100%;
-        /* height: 100%; */
-        height: fit-content;
-        padding: 0% 0%;
-        display: flex;
-        justify-content: space-between  ;
-        align-items: center;
-        flex-wrap: wrap;
-        
-        background: #FBFDFF;
-        border-radius: 20px;
-        position: relative;
-        overflow: hidden;
-        z-index: 5;
-    }
-    
-    .homeFaq li h4 {
-        text-decoration: none;
-        font-style: normal;
-        font-size: 2em;
-        text-align: start;
-        width: 80%;
-        height: auto;
-        
-        padding: 4% 2%;
+    #homeFaq h3{
+        font-size: 2.5em;
         font-weight: 500;
-        color:#000F33;
-    
-        z-index: 5;
     }
-    .homeFaqList,
-    .homeFaqCollapsed{
+    .faqList{
+        width: 70%;
+    }
+
+    #principalFaqs{
         height: fit-content;
-        /* max-height: 20%; */
-        /* height: 20%; */
-        width: 100%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    
-        background: linear-gradient(to right, #004DFF, #FF00CC);
-        padding: 4.5px;
-        white-space: nowrap;
-        margin: 1% 0;
-        border-radius: 23px;
-        z-index: 5;
     }
-    /* .homeFaqExpanded{
-        height: fit-content !important;
-    } */
-    .homeFaqResCollapsed{
-        height: 0px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        -webkit-transition: height 0.3s ease-in;
+
+    .faqItem,
+    .faqItem--collapsed{
+        padding: 4px;
+        border-radius: 20px;
     }
-    .homeFaqResExpanded{
-        width: 100%;
-        height: 200px;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        -webkit-transition: height 0.3s ease-in-out;
+
+    .faqContainer{
+        border-radius: 16px;
     }
-    .homeFaqResCollapsed p,
-    .homeFaqResExpanded p{
+
+    .faqQuestion{
+        padding: 3% 3%;
+    }
+
+    .faqList li h4 {
+        font-size: 2.3em;
+        width: 80%;
+    }
+
+    .faqCross{
+        width: 45px;
+        height: 45px;
+    }
+    .faqResponse--Expanded{
+        height: 175px;
+    }
+    .faqResponse p{
         font-size: 1.5em;
         font-weight: 300;
-        /* padding: 3% 3%; */
         padding: 0% 0%;
-        white-space: pre-wrap;
-        /* border: 1px solid black; */
-        
     }
-    
-    
+
+
     /***** Preguntas extra *****/
-    
-    .homeFaqHidden{
-        width: 80%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: nowrap;
+
+    #faqLink{
+        width: 10%;
     }
-    
-    .homeFaqHiddenExpanded{
-        height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        -webkit-transition: height 3s ease-in-out;
-        min-height: fit-content !important;
-    }
-    
-    .homeFaqHiddenCollapsed{
-        height: 0px !important;
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        -webkit-transition: height 3s ease-in;
-    }
-    
-    /* Link degradado */
-    .homeFaqLink {
-        display: flex;
-        margin: 1% 10%;
-        width: 15%;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, #004DFF, #FF00CC);
-        z-index: 1;
-        white-space: nowrap;
-        padding: 2px;
-        /* width: fit-content; */
-        border-radius: 50rem;
-        cursor: pointer;
-    }
-    
-    .homeFaqLinkShown {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #FBFDFF;
-        width: 100%;
-        height: auto;
-        z-index: 2;
-        border-radius: 50rem;
-        transition: background-color 0.5s ease-in-out;
-    }
-    .homeFaqLinkHidden{
-        display: none;
-    }
-    .homeFaqLink:hover div{
-        background: transparent;
-    }
-    
-    .homeFaqLink p {
-        text-decoration: none;
-        font-style: normal;
-        font-size: 1.3em;
-        width: 100%;
-        height: auto;
-        text-align: center;;
-        font-weight: 500;
-        -webkit-text-fill-color: transparent;
-        background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
-        -webkit-background-clip: text;
-        -webkit-border-image: fill;
-        overflow: hidden;
-        z-index: 5;
-        padding: 5%;
-        
-        margin: 0%;
-    }
-    .homeFaqLink:hover p{
-        -webkit-text-fill-color: #FBFDFF;
-    }
+
+/*! #### Preguntas frecuentes ####*/
+
 }
 
 

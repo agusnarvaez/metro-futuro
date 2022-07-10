@@ -54,21 +54,24 @@ function HomeFaqPrincipal() {
     
 return (
 
-        <ul className="homeFaqPrincipal">
+        <ul className="faqList" id="principalFaqs">
             {faqList.map((faq,i) =>{
                 return (
-                    <li className={(faq.cross&&faq.id)?"homeFaqList":"homeFaqList homeFaqCollapsed"}>
-                        <div className="homeFaqContainer">
-                            <div className="homeFaqQuestion">
+                    <li className="faqItem">
+                        <div className="faqContainer">
+                            {/**Pregunta*/}
+                            <div className="faqQuestion">
                                 <h4>{faq.question}</h4>
+                                {/**Cruz de FAQ*/}
                                 <img
                                     src={homeFaqIcon}
-                                    alt="homeFaqIcon" 
-                                    className={faq.cross?"homeFaqCross":"homeFaqCross rotated45"}
+                                    alt="faqIcon" 
+                                    className={faq.cross?"faqCross":"faqCross faqCross--rotated45"}
                                     onClick={() => handleFaqListChange(faq.id)}
                                 />
                             </div>
-                            <div className={faq.cross?"homeFaqResCollapsed":"homeFaqResExpanded"}>
+                            {/* Respuesta FAQ */}
+                            <div className={faq.cross?"faqResponse":"faqResponse faqResponse--Expanded"}>
                                 <p>
                                 {faq.answer}
                                 </p>
