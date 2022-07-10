@@ -296,6 +296,9 @@ section{
     .degradedLink_TextContainer--lightGray{
         background: #dcdcdc;
     }
+    .degradedLink_TextContainer--lightBlue{
+        background: hsl(236deg 51% 91%);
+    }
     .degradedLink_TextContainer--white{
         background: #FBFDFF;
     }
