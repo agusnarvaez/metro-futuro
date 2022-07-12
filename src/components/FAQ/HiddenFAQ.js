@@ -1,8 +1,11 @@
 // Importo React
 import React, { useState,useEffect } from "react";
 
+// Componentes
+import FAQCard from "./FAQCard";
+
 // Íconos
-import homeFaqIcon from '../../assets/img/icons/homeFaqIcon.png';
+
 
 function HomeFaqHidden() {
 
@@ -80,17 +83,6 @@ function HomeFaqHidden() {
             cross: true,
         }
     ])
-
-    const handleFaqListChange = (id)=>{
-        setFaqList(
-            faqList.map(faq => {
-                if(faq.id === id){
-                    faq.cross = !faq.cross;
-                }
-                return faq;
-            }
-        ))
-    }
     
 return (
 
@@ -98,27 +90,7 @@ return (
         <ul className={homeFaqHidden?"faqList faqList--collapsed":"faqList"}>
             {faqList.map((faq,i) =>{
                 return (
-                    <li className="faqItem">
-                        <div className="faqContainer">
-                            {/**Pregunta*/}
-                            <div className="faqQuestion">
-                                <h4>{faq.question}</h4>
-                                {/**Cruz de FAQ*/}
-                                <img
-                                    src={homeFaqIcon}
-                                    alt="faqIcon" 
-                                    className={faq.cross?"faqCross":"faqCross faqCross--rotated45"}
-                                    onClick={() => handleFaqListChange(faq.id)}
-                                />
-                            </div>
-                            {/* Respuesta FAQ */}
-                            <div className={faq.cross?"faqResponse":" faqResponse faqResponse--Expanded"}>
-                                <p>
-                                {faq.answer}
-                                </p>
-                            </div>
-                        </div>
-                    </li> 
+                    <FAQCard faq={faq} faqList={faqList}/>
                 )
             })} 
         </ul>

@@ -311,11 +311,14 @@
     }
     .faqList{
         width: 95%;
+        max-height: 4000px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        overflow: hidden;
         padding: 0;
+        transition: max-height 2s ease-in-out;
     }
 
     #principalFaqs{
@@ -396,23 +399,22 @@
     }
 
     .faqResponse{
-        height: 0px;
+        max-height: 0px;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: relative;
         overflow: hidden;
-        -webkit-transition: height 0.3s ease-in;
-    }
-    .faqResponse--Expanded{
-        height: 220px;
-    }
-    .faqResponse p{
         font-size: 1.2em;
         font-weight: 300;
-        padding: 0% 0%;
+        padding: 0% 3%;
+        margin: 0;
         white-space: pre-wrap;
+        transition: max-height 0.7s ease-in-out;
+    }
+    .faqResponse--Expanded{
+        /* min-height: fit-content; */
+        max-height: 300px;
+        transition: max-height 1s ease-in-out;
+        /* min-height: fit-content !important; */
     }
 
 
@@ -429,15 +431,15 @@
     }
 
     .faqList--collapsed{
-        height: 0px !important;
-        width: 100%;
+        max-height: 0px;
+        width: 95%;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         align-items: center;
         position: relative;
         overflow: hidden;
-        -webkit-transition: height 3s ease-in;
+        transition: max-height 3s ease-in;
     }
     #faqLink{
         width: 30%;
@@ -741,16 +743,11 @@
         width: 55px;
         height: 55px;
     }
-    .faqResponse--Expanded{
-        height: 175px;
-    }
-    .faqResponse p{
-        font-size: 1.5em;
-        font-weight: 300;
-        padding: 0% 0%;
-    }
 
 
+    .faqResponse{
+        font-size: 1.8em;
+    }
     /***** Preguntas extra *****/
 
     #faqLink{

@@ -1,8 +1,8 @@
 import React from "react";
 
-import HomeFaqPrincipal from "./HomeFaqPrincipal";
+import PrincipalFAQ from "../FAQ/PrincipalFAQ";
 
-import HomeFaqHidden from "./HomeFaqHidden";
+import HiddenFAQ from "../FAQ/HiddenFAQ";
 
 function HomeFaq() {
     
@@ -13,9 +13,9 @@ return (
         {/**Título**/}
         <h3>Preguntas frecuentes</h3>
 
-        <HomeFaqPrincipal/>
+        <PrincipalFAQ/>
 
-        <HomeFaqHidden/>
+        <HiddenFAQ/>
 
     </section>
     )
