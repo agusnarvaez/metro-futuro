@@ -4,9 +4,14 @@ import React from "react";
 
 
 function DegradedLink(props) {
-    
+    const scrollToTop = () =>{
+        window.scrollTo({
+          top: 0, 
+          behavior: 'smooth'
+        });
+      };
 return (
-    <div className="degradedLink" id={props.id}>
+    <div onClick={scrollToTop} className="degradedLink" id={props.id}>
         <div className={`degradedLink_TextContainer degradedLink_TextContainer--${props.backgroundColor}`}>
             <a href={props.route} className="degradedLink_Text">
                 {props.text}

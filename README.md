@@ -1,5 +1,5 @@
 # Metro Futuro :house_with_garden::chart_with_upwards_trend:
-## Montaje temporal de desarrollo(solo desktop temporalmente): https://metro-futuro.com/
+## Montaje de desarrollo(solo desktop temporalmente): https://metro-futuro.com/
 ### Descripción del sitio: Es una landing page de Metro Futuro, empresa que se dedica a gestionar inversiones del tipo crowdfunding en RealState en España respaldadas en un ecosistema de blockchain facilitándolas a inversores latinoamericanos. La misma presentará a la empresa, mostrará los proyectos, tendrá información actualizada del mercado, proveerá de capacitación para el éxito de la futura inversión y brindará la posibilidad de contactarse para mas información.
 
 ### Público Objetivo: Apunta a inversionistas latinoamericanos de aproximadamente entre 25 y 40 años capacitados o dispuestos a capacitarse en el mundo del blockchain.

@@ -103,6 +103,24 @@
 }
 /*! ### ¿Como invertir en simples pasos? ###*/
 
+/** ### OPORTUNIDAD DE INVERSIÓN ###*/
+
+    #homeOportunity .section_subTitle{ 
+        font-size: 1.7em;
+        line-height: 1.3em;
+        width: 80%;
+        text-align: center;
+    }
+    #homeOportunity .section_paragraph{ 
+        font-size: 1.3em;
+        width: 70%;
+        text-align: center;
+    }
+    #homeOportunityLink{
+        width: 45%;
+    }
+/*! ### Oportunidad de inversión ###*/
+
 /** ### BENEFICIOS DE INVERTIR EN METRO FUTURO ### **/
 #homeBenefits{
     height: auto;
@@ -351,14 +369,14 @@
         z-index: 5;
     }
 
-    .faqList li h4 {
+    .faqItem h4 {
         text-decoration: none;
         font-style: normal;
         font-size: 1.5em;
         text-align: start;
         width: 80%;
         height: auto;
-        padding: 1% 0;
+        padding: 5% 0;
         margin: 0;
         font-weight: 500;
         color:#000F33;
@@ -518,6 +536,12 @@
     }
 /*! #### ¿Como invertir en simples pasos? ####*/
     
+/** ### OPORTUNIDAD DE INVERSIÓN ###*/
+
+#homeOportunity { 
+    display: none;
+}
+/*! ### Oportunidad de inversión ###*/
 
 /** ### BENEFICIOS DE INVERTIR CON METRO FUTURO ###**/
     #homeBenefits{
@@ -704,17 +728,18 @@
     }
 
     .faqQuestion{
-        padding: 3% 3%;
+        padding: 0% 3%;
     }
 
-    .faqList li h4 {
+    .faqItem h4 {
         font-size: 2.3em;
-        width: 80%;
+        padding: 5% 0;
+        width: 90%;
     }
 
     .faqCross{
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
     }
     .faqResponse--Expanded{
         height: 175px;

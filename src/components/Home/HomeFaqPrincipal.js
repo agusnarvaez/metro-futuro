@@ -34,12 +34,12 @@ function HomeFaqPrincipal() {
         }
     ])
 
-    const [faq,setFaq]=useState({
+    /* const [faq,setFaq]=useState({
         id:0,
         question: "",
         answer: "",
         cross: true
-    })
+    }) */
 
     const handleFaqListChange = (id)=>{
         setFaqList(
@@ -57,7 +57,7 @@ return (
         <ul className="faqList" id="principalFaqs">
             {faqList.map((faq,i) =>{
                 return (
-                    <li className="faqItem">
+                    <li className="faqItem" onClick={() => handleFaqListChange(faq.id)}>
                         <div className="faqContainer">
                             {/**Pregunta*/}
                             <div className="faqQuestion">
@@ -67,7 +67,7 @@ return (
                                     src={homeFaqIcon}
                                     alt="faqIcon" 
                                     className={faq.cross?"faqCross":"faqCross faqCross--rotated45"}
-                                    onClick={() => handleFaqListChange(faq.id)}
+                                    
                                 />
                             </div>
                             {/* Respuesta FAQ */}

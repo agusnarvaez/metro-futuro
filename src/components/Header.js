@@ -20,18 +20,17 @@ function Header() {
         window.scrollTo({
           top: 0, 
           behavior: 'smooth'
-          /* you can also use 'auto' behaviour
-             in place of 'smooth' */
         });
       };
     return (
-        <header className="header">
+        <header className="header" onClick={() => setBurgerMenu(!burgerMenu)}>
             <div className="headerIcons">
                 <img
                     src={metroFuturoLogo}
                     alt="metroFuturoLogo"
                     className="metroFuturoLogo"
                 />
+                {/** Burger Menu Icons **/}
                 <img
                     className={burgerMenu?"burgerMenuIcon":"burgerMenuIconHidden"}
                     src={burgerMenuIcon}
@@ -45,6 +44,7 @@ function Header() {
                     onClick={() => setBurgerMenu(!burgerMenu)}
                 />
             </div>
+            {/** Navigation Links */}
             <ul className={burgerMenu?"navigation hiddenMenu":"navigation"} >
                 <li >
                     <NavLink 

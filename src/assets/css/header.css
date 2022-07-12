@@ -35,8 +35,8 @@
     transition: display 1s ease;
 }
 .metroFuturoLogo{
-    width: 40vw;
-    height: auto;
+    width: auto;
+    height: 100%;
     align-items: center;
     z-index: 20;
 }
@@ -118,6 +118,8 @@
     }
     .headerIcons{
         width: fit-content;
+        justify-content: flex-start;
+        padding: 0;
     }
 
 

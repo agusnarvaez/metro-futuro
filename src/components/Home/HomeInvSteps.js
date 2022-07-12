@@ -33,13 +33,19 @@ function HomeInvestmentSteps() {
         }
     ];
     const [carrousel, setCarrousel] = useState(true);
+    const scrollToTop = () =>{
+        window.scrollTo({
+          top: 0, 
+          behavior: 'smooth'
+        });
+    }
     return (
 
         <section id="homeInvestmentSteps">
                 <div className="sectionInfo_subsection sectionInfo_subsection--column">
                     <h2 id="homeInvestmentSteps_subTitle" className="section_subTitle section_subTitle--left">¿Como <font color="#004DFF">invertir</font> en simples pasos?</h2>
                     <div className="degradedLink" id="homeInvestmentSteps_desktopLink">
-                        <div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
+                        <div onClick={scrollToTop} className='degradedLink_TextContainer degradedLink_TextContainer--white'>
                             <NavLink className="degradedLink_Text" to='/investments/list'>
                                 Invierte
                             </NavLink>
@@ -94,7 +100,7 @@ function HomeInvestmentSteps() {
                         })}
                         </div>
                     </div>
-                    <div className="degradedLink" id="homeInvestmentSteps_mobileLink">
+                    <div onClick={scrollToTop} className="degradedLink" id="homeInvestmentSteps_mobileLink">
                         <div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
                             <NavLink className="degradedLink_Text" to='/investments/list'>
                                 Invierte
