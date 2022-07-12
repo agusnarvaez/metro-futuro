@@ -1,12 +1,12 @@
 import React from 'react';
 
-function HomeSlogan() {
+const HomeSlogan = React.forwardRef((props,ref) =>
 
-    return (
+     (
 
-        <section className='sectionInfo' id="homeSlogan">
+        <section ref={ref} className={'sectionInfo '+(props.scrollTransition) } id="homeSlogan">
                 <h2>Invierte en España desde €100</h2>
         </section>
     )
-}
+)
 export default HomeSlogan;

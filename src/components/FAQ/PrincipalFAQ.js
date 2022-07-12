@@ -1,15 +1,15 @@
 // Importo React
-import React,{ useState } from "react";
+import React from "react";
 
 // Componentes
 import FAQCard from "./FAQCard";
 // Íconos
 
 
-function HomeFaqPrincipal() {
+function PrincipalFAQ() {
 
     // Controladores de cruces para mostrar info (+)
-    const [faqList,setFaqList] =useState( [
+    const faqList = [
         {
             id: 0,
             question: "¿Quienes somos?",
@@ -34,17 +34,17 @@ function HomeFaqPrincipal() {
             answer: "Los tokens cumplen con las normativas legales requeridas por la Comisión Nacional del Mercado de Valores (CNMV. ) El instrumento de inversion emitido es un Security Token Offering  (STO) aprobado por una Entidad de Asistencia Financiera  (EAF) Como agente regulado por la CNMV y representan títulos de deuda tokenizados o prestamos participativos.",
             cross: true,
         }
-    ])
+    ]
 
 return (
 
         <ul className="faqList" id="principalFaqs">
-            {faqList.map((faq,i) =>{
+            {faqList.map((faq,key) =>{
                 return (
-                    <FAQCard faq={faq} faqList={faqList}/>
+                    <FAQCard faq={faq} faqList={faqList} key={key}/>
                 )
             })} 
         </ul>
     )
 }
-export default HomeFaqPrincipal;
+export default PrincipalFAQ;

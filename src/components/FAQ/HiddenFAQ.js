@@ -1,5 +1,5 @@
 // Importo React
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 
 // Componentes
 import FAQCard from "./FAQCard";
@@ -7,21 +7,12 @@ import FAQCard from "./FAQCard";
 // Íconos
 
 
-function HomeFaqHidden() {
+function HiddenFAQ() {
 
     // Controladores de cruces para mostrar info (+)
     const [homeFaqHidden,setHomeFaqHidden]= useState(true);
 
-    const [faqListHidden,setFaqListHidden]=useState([]);
-
-    const [faq,setFaq]=useState({
-        id:0,
-        question: "",
-        answer: "",
-        cross: true
-    })
-
-    const [faqList,setFaqList] =useState( [
+    const faqList = [
         {
             id: 0,
             question: "¿Que es la CNMV?",
@@ -82,15 +73,15 @@ function HomeFaqHidden() {
             answer: "Invertir en Metro Futuro puede llevarte unos pocos minutos y lo podes realizar desde cualquier dispositivo que utilices. Registrate y realiza el proceso de validación de identidad y de KYC/AML. Selecciona el inmueble en el cual deseas invertir. Realizá el pago. Firma el Acuerdo de Inversión. Recibe tus tokens y los dividendos mensuales en tu billetera digital.",
             cross: true,
         }
-    ])
+    ]
     
 return (
 
     <div className="hiddenFaqs">
         <ul className={homeFaqHidden?"faqList faqList--collapsed":"faqList"}>
-            {faqList.map((faq,i) =>{
+            {faqList.map((faq,key) =>{
                 return (
-                    <FAQCard faq={faq} faqList={faqList}/>
+                    <FAQCard faq={faq} faqList={faqList} key={key}/>
                 )
             })} 
         </ul>
@@ -112,4 +103,4 @@ return (
     </div>
     )
 }
-export default HomeFaqHidden;
+export default HiddenFAQ;

@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 
+// Componentes
+import HomeInvStepsCard from "./HomeInvStepsCard";
+
 // Background
 import investmentStepsBg from "../../assets/img/background/homeInvestmentStepsBg.png";
 
@@ -73,29 +76,17 @@ function HomeInvestmentSteps() {
                     <div className="carrouselContainer">
                         <div
                             className={carrousel ? "carrouselContainer_mobil carrousel_mobil--desktop" : "carrouselContainer_mobil carrouselContainer_mobil--moved carrousel_mobil--desktop"}
-                        >{carrouselInfo.map((card) => {
+                        >{carrouselInfo.map((card,key) => {
                             return(
-                                <div className="carrouselContainer_card">
-                                    <div className="carrouselContainer_cardId">
-                                        <div className="carrouselContainer_cardNumber">{card.id}</div>
-                                        <h4>{card.title}</h4>
-                                    </div >
-                                <p>{card.text}</p>
-                                </div>
+                                <HomeInvStepsCard card={card} key={key} />
                             )
                         })}
                         </div>
                         <div
                             className={carrousel ? "carrouselContainer_mobil carrousel_mobil--mobile" : "carrouselContainer_mobil carrouselContainer_mobil--moved carrousel_mobil--mobile"}
-                        >{carrouselInfo.map((card) => {
+                        >{carrouselInfo.map((card,key) => {
                             return(
-                                <div className="carrouselContainer_card">
-                                <div className="carrouselContainer_cardId">
-                                    <div className="carrouselContainer_cardNumber">{card.id}</div>
-                                    <h4>{card.title}</h4>
-                                </div >
-                                <p>{card.text}</p>
-                            </div>
+                                <HomeInvStepsCard card={card} key={key} />
                             )
                         })}
                         </div>

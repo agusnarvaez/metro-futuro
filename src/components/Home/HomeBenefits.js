@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Componentes
+import HomeBenefitCard from './HomeBenefitsCard';
+
 // Background
 import homeBenefitsBg from "../../assets/img/background/homeBenefitsBg.png";
 
@@ -49,15 +52,9 @@ function HomeBenefits() {
                         <img alt="homeBenefitsImg" src={building} />
                     </div>
                     <ul>
-                        {benefitsList.map((benefit, index) =>{
+                        {benefitsList.map((benefit, key) =>{
                             return(
-                            <li>
-                                <img alt="icon" src={benefit.img} />
-                                <div>
-                                    <h5>{benefit.title}</h5>
-                                    <p>{benefit.text}</p>
-                                </div>
-                            </li>
+                                <HomeBenefitCard benefit={benefit} key={key} />
                             )
                         }
                         )}

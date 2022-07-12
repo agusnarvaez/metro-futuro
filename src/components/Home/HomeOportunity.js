@@ -7,7 +7,6 @@ import DegradedLink from "../DegradedLink";
 //* Íconos
 
 function HomeOportunity(props) {
-    console.log(props.principalInvestment);
     const principalInvestment= props.principalInvestment;
     return (
         <section className="sectionInfo" id="homeOportunity">

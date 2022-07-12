@@ -7,6 +7,7 @@ import homePartnersBg from "../../assets/img/background/homePartnersBg.png";
 import metroXLogo from "../../assets/img/logos/metroXLogo.png";
 import stayRealTVLogo from "../../assets/img/logos/stayRealTVLogo.png";
 import brikenLogo from "../../assets/img/logos/brikenLogo.png";
+import PartnerCard from './PartnerCard';
 
 
 
@@ -36,16 +37,9 @@ function HomePartners() {
                 <h3 className='section_subTitle'>Nuestros partners</h3>
                 <div id='homePartnersContainer'>
                     <ul>
-                        {partnersList.map((partner) => {
+                        {partnersList.map((partner,key) => {
                             return (
-                                <li>
-                                    <a
-                                        target="_blank"
-                                        href={partner.link}
-                                        rel="noopener noreferrer">
-                                        <img alt={partner.alt} src={partner.img} />
-                                    </a>
-                                </li>
+                                <PartnerCard partner={partner} key={key}/>
                             )
                         })}
                     </ul>

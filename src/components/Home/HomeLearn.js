@@ -15,13 +15,14 @@ function HomeLearnWithUs() {
                 <div className="youTubeVideo_Container">
                     <ReactPlayer
                         className="youTubeVideo_Player"
-                        url="https://youtu.be/wX7HmpI8NsY"
+                        url="http://youtu.be/wX7HmpI8NsY"
                         controls
                         width="100%"
                         height="100%"
                         border-radius="30px"
                         border="none"  
                         loop
+                        
                     />
                 </div>
                 <div className="sectionInfo" id="homeLearnWithUs_Info">
