@@ -113,6 +113,7 @@ section{
         text-align: center;
         font-weight: 600;
         z-index: 10;
+        padding: 2% 0;
     }
     .section_subTitle--left{
         text-align: start;
@@ -125,12 +126,23 @@ section{
         font-weight: 300;
         z-index: 10;
         padding: 2% 0;
+        margin: 0;
     }
 
     .blackText{
         color: #000F33;
     }
     font {
+        font-size: inherit;
+    }
+    .degradedText{
+        /* Efecto degradado texto */
+        margin: 0;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+        -webkit-background-clip: text;
+        -webkit-border-image: fill; 
+        z-index: 50;
         font-size: inherit;
     }
 /*! ### Tipografías ### */
@@ -153,6 +165,15 @@ section{
     }
 
 /*! ### Background de secciones ### */
+
+/** ### SECTION COVER ### */
+    .sectionCover{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+/*! ### Section Cover ### */
 
 /** ### CARROUSEL ### */
     .carrouselNav{
@@ -189,7 +210,7 @@ section{
     .carrouselContainer{
         position: relative;
         width: 100%;
-        height: 55vh;
+        height: 40vh;
         border-radius: none;
         background: #ffff;
         box-shadow: none;
@@ -471,6 +492,7 @@ section{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        height: 50vh;
         align-items: center;
         background: #ffff;
         border-radius: 50px;
