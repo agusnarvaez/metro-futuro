@@ -452,6 +452,14 @@ section{
     }
 /*! ### Background de secciones ###*/
 
+/** ### SECTION COVER ### */
+.sectionCover{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*! ### Section Cover ### */
 
 /**  ### CARROUSEL ### */
     .carrouselNav{

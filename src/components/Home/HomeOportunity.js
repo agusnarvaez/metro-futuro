@@ -12,11 +12,11 @@ function HomeOportunity(props) {
     return (
         <section className="sectionInfo" id="homeOportunity">
             <img src={principalInvestment.cover} alt="investmentCover" className='sectionCover'/>
-            <h2 className='section_subTitle'>Oportunidad de inversión inmobiliaria en <span className="degradedText">{principalInvestment.city +", "+ principalInvestment.country}</span></h2>
-            <p className="section_paragraph">Rentabilidad neta estimada anual {principalInvestment.estimatedEarnings}</p>
-            <DegradedLink id="homeOportunityLink" text="Mas información" backgroundColor="white" route="/contact" />
-            {/* ### Background ### */}
-            <img className="sectionBackground--desktop" alt="homeOportinityBackground" src="" />
+            <div className='sectionInfo'>
+                <h2 className='section_subTitle'>Oportunidad de inversión inmobiliaria en <span className="degradedText">{principalInvestment.city +", "+ principalInvestment.country}</span></h2>
+                <p className="section_paragraph">Rentabilidad neta estimada anual {principalInvestment.estimatedEarnings}</p>
+                <DegradedLink id="homeOportunityLink" text="Mas información" backgroundColor="white" route="/contact" />
+            </div>
         </section>
     )
 }

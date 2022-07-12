@@ -104,7 +104,12 @@
 /*! ### ¿Como invertir en simples pasos? ###*/
 
 /** ### OPORTUNIDAD DE INVERSIÓN ###*/
-
+    #homeOportunity{
+        margin: 5% 0;
+    }
+    #homeOportunity .sectionInfo{
+        padding: 5% 0 0 0;
+    }
     #homeOportunity .section_subTitle{ 
         font-size: 1.7em;
         line-height: 1.3em;
@@ -542,7 +547,35 @@
 /** ### OPORTUNIDAD DE INVERSIÓN ###*/
 
 #homeOportunity { 
-    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+#homeOportunity .sectionCover{
+    order: 4;
+}
+#homeOportunity .sectionInfo{
+    padding: 0;
+    justify-content: center;
+}
+#homeOportunity .section_subTitle{ 
+    font-size: 3em;
+    line-height: 1.3em;
+    font-weight: 600;
+    width: 95%;
+    text-align: start;
+    padding: 0;
+}
+#homeOportunity .section_paragraph{ 
+    font-size: 2em;
+    width: 95%;
+    text-align: start;
+    padding: 0 0 5% 0;
+    font-weight: 600;
+    color: #004DFF;
+}
+#homeOportunityLink{
+    width: 30%;
 }
 /*! ### Oportunidad de inversión ###*/
 

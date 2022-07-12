@@ -29,10 +29,10 @@ function Home(props) {
 
             <HomeInvestmentSteps/>
             
-            <HomeOportunity principalInvestment={principalInvestment} />
-
             <HomeBenefits/>
 
+            <HomeOportunity principalInvestment={principalInvestment} />
+            
             <HomeLearnWithUs/>
 
             <HomeNews/>
