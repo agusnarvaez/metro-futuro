@@ -246,6 +246,7 @@ section{
         justify-content: flex-start;
         width: 23%;
         height: 85%;
+        max-height: 230px;
         box-shadow: 0px 15px 20px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
         border-radius: 15px;
         margin: 0 1%;
@@ -525,6 +526,7 @@ section{
             justify-content: flex-start;
             width: 25%;
             height: 95%;
+            max-height: 450px;
             box-shadow: 0px 100px 80px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
             border-radius: 15px;
             margin: 0 2%;
@@ -533,11 +535,11 @@ section{
     }
     .carrouselContainer_card h4{
         color: #004DFF;
-        font-size: 2em;
+        font-size: 2.3em;
         font-weight: 500;
     }
     .carrouselContainer_card p{
-        font-size: 1.2em;
+        font-size: 1.6em;
         font-weight: 400;
         line-height: 20px;
         height: 50%;
