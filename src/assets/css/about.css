@@ -1,88 +1,62 @@
-
-
-.aboutPage{
-    width: 100vw;
-    min-height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1vh 6vw 0vh 6vw;
-    background-color: #FBFDFF;
-}
-.aboutPage *{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    /* border: 1px solid black; */
-    z-index: 5;
+body{
+    background-color: #E5E5E5;
 }
 
-.aboutPage h1{
-    color: #000F33;
-    font-size: 5em;
-    font-weight: 500;
-    display: inline;
-    justify-content: center;
-    text-align: center;
+#aboutPage{
+    background-color: #E5E5E5;
+    
 }
 
-.aboutPage h2 {
-    color: #000F33;
-    font-size: 4em;
-    font-weight: 500;
-    display: inline;
-}
 .aboutPage h3{
     color: #000F33;
     font-size: 2em;
     font-weight: 500;
     display: inline;
 }
-.aboutPage p{
-    color: #000F33;
-    font-size: 1.3em;
-    font-weight: 300;
-}
-.aboutPage b,
-.aboutPage font {
-    font-size: inherit;
-    display: inline;
+.aboutServices,
+.aboutFocus,
+.aboutInfo,
+.aboutSlogan,
+.aboutTeam{
+    display: none;
 }
 
-.aboutPage .sectionBackground{
-    position: absolute;
-    top: 0;
-    left: -6vw;
-    width: 100vw;
-    height: 100%;
-    z-index: 0;
-}
-.aboutPage section{
-    height: 40vw;
-}
+/** #### SOMOS METRO FUTURO ####*/
 
-/* #### Somos Metro Futuro ####*/
-
-.aboutTitle{
+#aboutTitle{
     flex-direction: column;
-    justify-content: center;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 55vh;
+    width: 90vw;
 }
-
+#aboutTitle .sectionBackground{
+    width: 88vw;
+    background-color: #FBFAFF;
+    border-radius: 30px;
+    height: 100%;
+}
+#aboutTitle p{
+    text-align: center;
+}
 .aboutMetroLogo{
-    width: 115px;
+    width: 95px;
     height: auto;
+    z-index: 10;
 }
-.aboutTitle h1{
+#aboutTitle h1{
     flex-direction: column;
     margin: 0;
     padding: 1% 0;
+    font-size: 3em;
+    font-weight: 600;
 }
+
+/*! #### SOMOS METRO FUTURO ####*/
 
 /* #### Enfocamos nuestros esfuerzos en el mejor servicio ####*/
 .aboutServices{
+    display: none;
     justify-content: space-between;
 }
 .aboutServicesImg{
@@ -124,8 +98,9 @@
 }
 
 
-/* #### ¿Cual es nuestro foco? ####*/
+/** #### ¿Cual es nuestro foco? ####*/
 .aboutFocus{
+    display: none;
     flex-direction: column;
     height: 90vh !important;
     border-top-left-radius: 150px;
@@ -305,7 +280,7 @@
     -webkit-text-fill-color: #FBFDFF;
 }
 
-/* #### Team ####*/
+/** #### Team ####*/
 
 .aboutTeam{
     min-height: fit-content;
@@ -402,4 +377,76 @@
  
 }
 
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
 
+/** #### SOMOS METRO FUTURO ####*/
+
+    
+    #aboutTitle p{
+        text-align: center;
+        font-size: 2em
+    }
+    .aboutMetroLogo{
+        width: 150px;
+        height: auto;
+        z-index: 10;
+    }
+    #aboutTitle h1{
+        flex-direction: column;
+        margin: 0;
+        padding: 1% 0;
+        font-size: 5em;
+        font-weight: 600;
+    }
+
+/*! #### SOMOS METRO FUTURO ####*/
+
+
+}
+
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
+/** ###### GENERAL #####*/
+    body{
+        background-color: #FBFDFF;
+    }
+    
+
+/*! ###### GENERAL #####*/
+
+/** ##### SOMOS METRO FUTURO ####*/
+    #aboutPage{
+        background-color: #FBFDFF;
+    }
+    #aboutTitle .sectionBackground{
+        width: 100%;
+        background-color: #FBFAFF;
+        /* border-radius: 0; */
+        height: 100%;
+    }
+/*! ##### SOMOS METRO FUTURO ####*/
+
+
+}
+
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
+
+
+/** ##### SOMOS METRO FUTURO ####*/
+    #aboutTitle .sectionBackground{
+        width: 100%;
+        background-color: #FBFAFF;
+    }
+    #aboutTitle p{
+        font-size: 3em;
+    }
+/*! ##### SOMOS METRO FUTURO ####*/    
+}
