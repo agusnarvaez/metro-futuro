@@ -17,8 +17,6 @@
     position: fixed;
     top: 0;
     z-index: 100;
-    padding: 0;
-    
 }
 .headerShadow{
     width: 100%;
@@ -36,7 +34,7 @@
     align-items: center;
     background-color: #FBFDFF;
     z-index: 20;
-    padding: 1vh 6vw 1vh 6vw;
+    padding: 1vh 6vw 1vh 3vw;
 }
 .burgerMenuIcon{
     width: auto;
@@ -49,7 +47,7 @@
 }
 .metroFuturoLogo{
     width: auto;
-    height: 100%;
+    height: 90%;
     align-items: center;
     z-index: 20;
 }
@@ -78,7 +76,6 @@
     align-items: center;
     z-index: 5;
     background-color: #FBFDFF;
-    /* transition: top 1s ease-in-out; */
 }
 .header .hiddenMenu li,
 .header .navigation li {
@@ -96,9 +93,7 @@
     color: black;
     z-index: 5;
 }
-
 .active{
-    /* color: #004DFF; */
     -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
     -webkit-background-clip: text;
@@ -106,13 +101,23 @@
 }
 
 
-/*! #########################################*/
-/*! ############ LAPTOPS AND MORE ###########*/
-/*! #########################################*/
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
+    .navLink{
+        font-size: 2em;
+    }
+}
+
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
 @media (min-width: 769px) {
+
     .header{
-        height: 15vh;
-        padding: 1vh 6vw 1vh 6vw;
+        height: 10vh;
+        padding: 1vh 3vw 1vh 3vw;
     }
     .headerShadow{
         display: none;
@@ -128,12 +133,12 @@
     }
     .header .hiddenMenu,
     .header .navigation{
-        width: 40%;
+        width: 70%;
         flex-direction: row;
         position: relative;
-        z-index: 5;
         top: 0;
         padding: 0;
+        margin: 0;
         transition: none;
     }
     .headerIcons{
@@ -141,6 +146,23 @@
         justify-content: flex-start;
         padding: 0;
     }
+}
 
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
+    .header{
+        height: 15vh;
+    }
+    .headerShadow{
+        display: none;
+    }
+    .metroFuturoLogo{
+        width: 20vw;
+    }
 
+    .header .navigation{
+        width: 50%;
+    }
 }
