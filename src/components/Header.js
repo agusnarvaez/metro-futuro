@@ -24,6 +24,7 @@ function Header() {
       };
     return (
         <header className="header" onClick={() => setBurgerMenu(!burgerMenu)}>
+            <div className="headerShadow"></div>
             <div className="headerIcons">
                 <img
                     src={metroFuturoLogo}
