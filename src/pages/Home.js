@@ -1,6 +1,6 @@
 // ###### VISTA DE HOME ####
 // Importo React
-import React, {useState, useRef, useEffect} from "react";
+import React, {/* useState, */ useRef/* , useEffect */} from "react";
 
 // > Hoja de estilo
 import "../assets/css/home.css";
@@ -21,21 +21,21 @@ import HomeFaq from "../components/Home/HomeFaq";
 function Home(props) {
     const principalInvestment = props.investmentsList[0];
     
-    const [scrollTransition,setScrollTransition]=useState(" ");
     const sloganRef = useRef();
+    /* const [scrollTransition,setScrollTransition]=useState('scrollInitial');
 
-    useEffect( () => {
+    useEffect(() => {
         const handleScroll = ()=>{
             const slogan = sloganRef.current;
             const sloganCoordinates=slogan.getBoundingClientRect();
             const sloganY = sloganCoordinates.y;
-            if(sloganY<=200){
-                setScrollTransition("topAppear");
-                console.log(scrollTransition);
-            }
+            const topAppear = sloganY < 500 ? 'topAppear':'scrollInitial';
             
+            setScrollTransition(topAppear);
+            
+            /* console.log(sloganY + ' ' + scrollTransition);     */
+      /*      
         }
-
 
 
         window.addEventListener("scroll",handleScroll);
@@ -43,20 +43,20 @@ function Home(props) {
         return ()=>{
             window.removeEventListener("scroll",handleScroll);
         }
-    },[])
+    },[scrollTransition]); */
     return (
         <main className="homePage">
 
             <HomeAbout/>
 
-            <HomeSlogan ref={sloganRef} scrollTransition={scrollTransition} />
+            <HomeOportunity principalInvestment={principalInvestment} />
+            
+            <HomeSlogan ref={sloganRef} /*  scrollTransition={scrollTransition}  *//>
 
             <HomeInvestmentSteps/>
             
             <HomeBenefits/>
 
-            <HomeOportunity principalInvestment={principalInvestment} />
-            
             <HomeLearnWithUs/>
 
             <HomeNews/>

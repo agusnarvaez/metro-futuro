@@ -1,14 +1,14 @@
 // Importo React
-import React,{ useState } from "react";
+import React,{ useEffect, useState } from "react";
 
 // Íconos
 import homeFaqIcon from '../../assets/img/icons/homeFaqIcon.png';
 
 function HomeFaqPrincipal(props) {
-    const [faqList,setFaqList] = useState(props.faqList);
-    const faq=props.faq;
+    /* const [faqList,setFaqList] = useState(props.faqList);
+    const faq=props.faq; */
 
-    const handleFaqListChange = (id)=>{
+    /* const handleFaqListChange = (id)=>{
         setFaqList(
             faqList.map(faq => {
                 if(faq.id === id){
@@ -18,9 +18,18 @@ function HomeFaqPrincipal(props) {
             }
         ))
     }
+    useEffect(()=>{
+        console.log(faq.cross);
+    },[faq]) */
+    const [faq,setFaq] = useState(props.faq);
+    const handleFaqChange = ()=>{
+        setFaq({...faq,cross:(!faq.cross)});
+
+    }
     
 return (
-    <li className="faqItem" onClick={() => handleFaqListChange(faq.id)}>
+    <li className="faqItem" onClick={handleFaqChange}>    
+    {/* <li className="faqItem" onClick={() => handleFaqListChange(faq.id)}> */}
         <div className="faqContainer">
             {/**Pregunta*/}
             <div className="faqQuestion">

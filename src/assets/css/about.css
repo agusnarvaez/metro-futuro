@@ -27,7 +27,7 @@ body{
     flex-direction: column;
     border-radius: 30px;
     overflow: hidden;
-    height: 55vh;
+    height: fit-content;
     width: 90vw;
 }
 #aboutTitle .sectionBackground{
@@ -54,48 +54,60 @@ body{
 
 /*! #### SOMOS METRO FUTURO ####*/
 
-/* #### Enfocamos nuestros esfuerzos en el mejor servicio ####*/
-.aboutServices{
-    display: none;
-    justify-content: space-between;
-}
-.aboutServicesImg{
-    width: 50%;
-}
-.aboutServicesImg img{
-    width: 100%;
-}
-.aboutServicesText{
-    width: 45%;
-    height: 100%;
+/** #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
+#aboutServices{
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 5% 7% 5% 0;
+    justify-content: space-between;
+    height: fit-content;
 }
-.aboutServicesItemsSeparator{
-    background: linear-gradient(to left, #004DFF 0%, #FF00CC 100%);
-    height: 5px;
-    border-radius: 50rem;
-    border: none;
+
+#aboutServices .sectionInfo{
+    padding: 5% 0;
+    width: 90%;
+    justify-content: flex-start;
 }
-.aboutServicesItems {
+
+#aboutServices .sectionInfo h2{
+    color: #000F33;
+    font-size: 1.9em;
+    font-weight: 600;
+    text-align: center
+}
+#aboutServices .sectionInfo p{
+    font-size: 1.5em;
+}
+#aboutServices .sectionInfo ul {
+    width: 100%;
     
+    list-style: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #FBFAFF;
+    padding: 5% 0;
+    background-color: transparent;
 }
-.aboutServicesItems li{
-    justify-content: flex-start;
+#aboutServices .sectionInfo ul li{
+    display: flex;
+    width: 100%;
     padding: 1% 0;
-    font-size: 1.5em;
-    font-weight: 300;
+    align-items: center;
     color: #000F33;
 }
-.aboutServicesItems img {
+#aboutServices .sectionInfo ul li img {
     width: 24px;
     height: 24px;
     margin-right: 3%;
 }
+#aboutServices .sectionInfo ul li p{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+/*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 
 
 /** #### ¿Cual es nuestro foco? ####*/
@@ -407,38 +419,80 @@ body{
 
 }
 
+
+
+
+
+
 /*! ########################################*/
 /*! ################ LAPTOPS ###############*/
 /*! ########################################*/
 @media (min-width: 769px) {
-/** ###### GENERAL #####*/
-    body{
-        background-color: #FBFDFF;
-    }
-    
+    /** ###### GENERAL #####*/
+        body{
+            background-color: #FBFDFF;
+        }
+        
 
-/*! ###### GENERAL #####*/
+    /*! ###### GENERAL #####*/
 
-/** ##### SOMOS METRO FUTURO ####*/
-    #aboutPage{
-        background-color: #FBFDFF;
-    }
-    #aboutTitle .sectionBackground{
-        width: 100%;
-        background-color: #FBFAFF;
-        /* border-radius: 0; */
-        height: 100%;
-    }
-/*! ##### SOMOS METRO FUTURO ####*/
+    /** ##### SOMOS METRO FUTURO ####*/
+        #aboutPage{
+            background-color: #FBFDFF;
+        }
+        #aboutTitle .sectionBackground{
+            width: 100%;
+            background-color: #FBFAFF;
+            /* border-radius: 0; */
+            height: 100%;
+        }
+    /*! ##### SOMOS METRO FUTURO ####*/
 
+    /** #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
+    #aboutServices{
+        width: 90vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #aboutServices .sectionCover{
+        border-radius: 50px;
+    }
+    #aboutServices .sectionInfo{
+        padding: 0% 0 0% 3%;
+        width: 50%;
+        justify-content: center;
+    }
+
+    #aboutServices .sectionInfo h2{
+        font-size: 2.2em;
+        text-align: start
+    }
+    #aboutServices .sectionInfo p{
+        font-size: 1.7em;
+    }
+    #aboutServices .sectionInfo ul {
+        margin: 0;
+        padding: 5% 0 0 0;
+    }
+    #aboutServices .sectionInfo ul li img {
+        width: 24px;
+        height: 24px;
+    }
+    #aboutServices .sectionInfo ul li p{
+        font-size: 1.7em;
+        font-weight: 400;
+    }
+    /*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 
 }
+
+
+
 
 /*! ########################################*/
 /*! ############ LARGER DESKTOPS ###########*/
 /*! ########################################*/
 @media (min-width: 1280px) {
-
 
 /** ##### SOMOS METRO FUTURO ####*/
     #aboutTitle .sectionBackground{
@@ -448,5 +502,46 @@ body{
     #aboutTitle p{
         font-size: 3em;
     }
-/*! ##### SOMOS METRO FUTURO ####*/    
+/*! ##### SOMOS METRO FUTURO ####*/
+
+/** #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
+#aboutServices{
+    width: 90vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#aboutServices .sectionCover{
+    border-radius: 50px;
+    width: 45%;
+}
+#aboutServices .sectionInfo{
+    padding: 0% 0 0% 3%;
+    width: 50%;
+    justify-content: center;
+}
+
+#aboutServices .sectionInfo h2{
+    font-size: 3em;
+    text-align: start
+}
+#aboutServices .sectionInfo p{
+    font-size: 2em;
+}
+#aboutServices .sectionInfo ul {
+    margin: 0;
+    padding: 5% 0 0 0;
+}
+#aboutServices .sectionInfo ul li{
+    padding: 2% 0;
+}
+#aboutServices .sectionInfo ul li img {
+    width: 35px;
+    height: 35px;
+}
+#aboutServices .sectionInfo ul li p{
+    font-size: 2em;
+    font-weight: 400;
+}
+/*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
+
 }

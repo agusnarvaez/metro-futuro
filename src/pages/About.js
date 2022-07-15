@@ -1,4 +1,5 @@
 /** ##### Página ABOUT #### **/
+
 // Importo React
 import React from "react";
 // Hoja de estilos
@@ -21,7 +22,7 @@ import AboutTeam from "../components/About/AboutTeam";
 function About() {
 
     return (
-        <main className="aboutPage">
+        <main id="aboutPage">
             
             <AboutTitle/>
 

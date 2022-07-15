@@ -19,7 +19,7 @@ html{
 }
 body {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -36,8 +36,8 @@ body {
 }
 
 main{
-    margin-top: 10vh;
-    width: 100%;
+    margin: 10vh 0 0 0;
+    width: 100vw;
     height: fit-content;
     padding: 1vh 0 10vh 0;
     position: relative;
@@ -52,12 +52,11 @@ section{
     width: 100%;
     height: 90vh;
     position: relative;
-    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
     margin: 0 0 5% 0;
+    z-index: 10;
 }
 
 /** PRUEBA SCROLL **/
@@ -68,7 +67,7 @@ section{
 
 @keyframes scrollAnimation{
     0%{
-        transform: translateY(100px);
+        transform: translateY(-200px);
     }
     100%{
         transform: translateY(0);
@@ -123,7 +122,14 @@ section{
 /*! ### Información de la sección ### */
 
 /** ### TIPOGRAFÍAS ### */
-
+    h1{
+        color: #000F33;
+        font-size: 5em;
+        font-weight: 500;
+        justify-content: center;
+        text-align: center;
+        z-index: 10;
+    }
     .section_subTitle{
         font-size: 3em; 
         text-align: center;
@@ -136,7 +142,7 @@ section{
     }
 
     .section_paragraph{
-        line-height: 1.2em;
+        line-height: 1em;
         width: 100%;
         font-size: 1.8em;
         font-weight: 300;
@@ -150,6 +156,7 @@ section{
     }
     font {
         font-size: inherit;
+        display: inherit;
     }
     .degradedText{
         /* Efecto degradado texto */
@@ -165,6 +172,16 @@ section{
 
 
 /** ### BACKGROUND DE SECCIONES ###*/
+    .sectionBackground{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        object-position: center;
+        object-fit: cover;
+        z-index: 0;
+    }
     .sectionBackground--desktop{
         display: none;
     }
@@ -191,7 +208,20 @@ section{
 
 /*! ### Section Cover ### */
 
+/** ##### DEGRADED SEPARATOR #####*/
+.degradedSeparator{
+    width: 100%;
+    background: linear-gradient(to left, #004DFF 0%, #FF00CC 100%);
+    height: 6px;
+    border-radius: 50rem;
+    border: none;
+    z-index: 5;
+    }
+/*! ##### DEGRADED SEPARATOR #####*/
+
+
 /** ### CARROUSEL ### */
+
     .carrouselNav{
         width: 90%;
         height: auto;
@@ -400,11 +430,32 @@ section{
 /*! ### YouTube Video ###*/
 
 
-/*! #######################################*/
-/*! ############### DESKTOP ###############*/
-/*! #######################################*/
-@media (min-width: 1024px) {
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
 
+    
+    
+}
+    
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
+    /** ### SECTION COVER ### */
+        .sectionCover{
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+        }
+    /*! ### Section Cover ### */
+}
+
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
 
     main{
         margin-top: 15vh;
@@ -452,6 +503,17 @@ section{
 
 
 /** ### BACKGROUND DE SECCIONES ### */
+    .sectionBackground{
+        display: block;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
     .sectionBackground--desktop{
         display: block;
         width: 100vw;
@@ -476,6 +538,8 @@ section{
 }
 
 /*! ### Section Cover ### */
+
+
 
 /**  ### CARROUSEL ### */
     .carrouselNav{
