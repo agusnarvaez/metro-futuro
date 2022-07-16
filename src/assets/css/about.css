@@ -664,16 +664,22 @@ main{
 
 /** #### ¿CUAL ES NUESTRO FOCO? ####*/
 #aboutFocus{
-    max-height: 73vh;
+    max-height: 65vh;
     background: transparent;
 }
-
+#aboutFocus .sectionBackground--desktop{
+    border-top-left-radius: 300px;
+    
+}
 #aboutFocus h2{
     font-size: 3em;
 }
-
+#aboutFocus .sectionInfo{
+    padding: 0 0 5% 0;
+}
 #aboutFocus .sectionInfo ul{
     width: 70%;
+    
 }
 
 #aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
