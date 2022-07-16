@@ -664,47 +664,28 @@ main{
 
 /** #### ¿CUAL ES NUESTRO FOCO? ####*/
 #aboutFocus{
-    max-height: 70vh;
+    max-height: 73vh;
     background: transparent;
 }
-#aboutFocus .sectionBackground--desktop{
-    border-top-left-radius: 300px;
-    background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
-}
+
 #aboutFocus h2{
     font-size: 3em;
-    font-weight: 600;
 }
-#aboutFocus .sectionInfo{
-    overflow-x: visible;
-    background: transparent;
-    
-    padding: 0  0  10% 0 ;
-    justify-content: center;
-    align-items: center;
-}
+
 #aboutFocus .sectionInfo ul{
     width: 70%;
-    padding: 3% 0;
-    background: transparent;
 }
-#aboutFocus .sectionInfo ul li{
-    width: 30%;
-    
-}
-#aboutFocus .sectionInfo ul li .cardTitle{
-    padding: 5% 0;
-}
+
 #aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
 }
 #aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon img{
-    width: 60px;
+    width: 65px;
 }
 #aboutFocus h3{
-    font-size: 2.7em;
-    padding: 10% 0 0 0 ;
+    font-size: 2.8em;
+
 }
 #aboutFocus .sectionInfo ul li p{
     font-size: 1.9em;
