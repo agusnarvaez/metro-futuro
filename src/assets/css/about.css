@@ -1,6 +1,9 @@
 body{
     background-color: #E5E5E5;
 }
+main{
+    background-color: #E5E5E5;
+}
 
 #aboutPage{
     background-color: #E5E5E5;
@@ -62,7 +65,7 @@ body{
 }
 
 #aboutServices .sectionInfo{
-    padding: 5% 0;
+    padding: 5% 0 0 0;
     width: 90%;
     justify-content: flex-start;
 }
@@ -83,7 +86,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5% 0;
+    padding: 5% 0 0 0;
+    margin: 0;
     background-color: transparent;
 }
 #aboutServices .sectionInfo ul li{
@@ -110,57 +114,91 @@ body{
 /*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 
 
-/** #### ¿Cual es nuestro foco? ####*/
-.aboutFocus{
-    display: none;
+/** #### ¿CUAL ES NUESTRO FOCO? ####*/
+#aboutFocus{
+    display: flex;
     flex-direction: column;
-    height: 90vh !important;
+    justify-content: flex-start;
+    max-height: 55vh;
     border-top-left-radius: 150px;
-    overflow: visible;
 }
 
-.aboutFocus .sectionBackground{
-    border-top-left-radius: 150px;
-    z-index: 0;
+
+#aboutFocus h2{
+    font-size: 2em;
+    margin: 0;
+    padding: 5% 0 0 0;
 }
-.aboutFocus h2{
-    text-align: center;
+#aboutFocus .sectionInfo{
+    overflow-x: scroll;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+    padding: 0 0 30% 0;
+    height: 100%;
 }
-.aboutFocus ul{
-    width: 80%;
+#aboutFocus .sectionInfo ul{
+    width: fit-content;
+    height: 100%;
+    display: flex;
     justify-content: space-between;
     padding: 5% 0;
+    margin: 0;
     z-index: 5;
 }
-.aboutFocus li{
+#aboutFocus .sectionInfo ul li{
+    width: 80vw;
+    min-height: 100%;
     background-color: #FBFAFF;
     z-index: 5;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
-    width: 35%;
-    height: 100%;
+    
     padding: 2%;
-    margin: 0 3%;
+    margin: 0 1%;
     border-radius: 10px;
-    align-items: flex-start;
-}
-.aboutFocus ul li img{
-    width: 60px;
-    height: auto;
-}
-.aboutFocus ul li div{
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5% 0;
     
 }
-.aboutFocus h3{
+#aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
+    width: 40px;
+    height: 40px;
+}
+#aboutFocus .sectionInfo ul li img{
+    width: 40px;
+    height: auto;
+}
+#aboutFocus .sectionInfo ul li .cardTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3% 0;
+    height: 60%;
+    width: 100%;
+    
+}
+#aboutFocus h3{
     color: #004DFF;
     text-align: start;
+    font-size: 1.7em;
+    font-weight: 500;
     justify-content: flex-start;
-    padding: 3% 0;
+    padding: 0 0;
+    margin: 0;
 }
+#aboutFocus .sectionInfo ul li p{
+    /* height: fit-content; */
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 0% 0;
+}
+
+/*! #### ¿Cual es nuestro foco? ####*/
 
 
 /* #### Agregamos valor generando mayor acceso a la industria inmobiliaria####*/
@@ -417,6 +455,36 @@ body{
 /*! #### SOMOS METRO FUTURO ####*/
 
 
+/** #### ¿CUAL ES NUESTRO FOCO? ####*/
+#aboutFocus{
+    max-height: 55vh;
+}
+
+#aboutFocus .sectionInfo{
+    overflow-x: visible;
+    padding: 0  0  10% 0 ;
+}
+#aboutFocus .sectionInfo ul{
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+#aboutFocus .sectionInfo ul li{
+    width: 30%;
+}
+#aboutFocus .sectionInfo ul li .cardTitle{
+    padding: 5% 0;
+}
+
+#aboutFocus h3{
+    padding: 10% 0 0 0 ;
+}
+#aboutFocus .sectionInfo ul li p{
+    font-size: 1.4em;
+}
+
+/*! #### ¿Cual es nuestro foco? ####*/
+
 }
 
 
@@ -484,6 +552,56 @@ body{
     }
     /*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 
+
+/** #### ¿CUAL ES NUESTRO FOCO? ####*/
+#aboutFocus{
+    max-height: 80vh;
+    background: transparent;
+}
+#aboutFocus .sectionBackground--desktop{
+    border-top-left-radius: 150px;
+    background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
+}
+#aboutFocus h2{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+#aboutFocus .sectionInfo{
+    overflow-x: visible;
+    background: transparent;
+    
+    padding: 0  0  10% 0 ;
+    justify-content: center;
+    align-items: center;
+}
+#aboutFocus .sectionInfo ul{
+    width: 80%;
+    padding: 3% 0;
+    background: transparent;
+}
+#aboutFocus .sectionInfo ul li{
+    width: 30%;
+    
+}
+#aboutFocus .sectionInfo ul li .cardTitle{
+    padding: 5% 0;
+}
+#aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
+    width: 55px;
+    height: 55px;
+}
+#aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon img{
+    width: 55px;
+}
+#aboutFocus h3{
+    font-size: 2.5em;
+    padding: 10% 0 0 0 ;
+}
+#aboutFocus .sectionInfo ul li p{
+    font-size: 1.7em;
+}
+
+/*! #### ¿Cual es nuestro foco? ####*/
 }
 
 
@@ -543,5 +661,55 @@ body{
     font-weight: 400;
 }
 /*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
+
+/** #### ¿CUAL ES NUESTRO FOCO? ####*/
+#aboutFocus{
+    max-height: 70vh;
+    background: transparent;
+}
+#aboutFocus .sectionBackground--desktop{
+    border-top-left-radius: 300px;
+    background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
+}
+#aboutFocus h2{
+    font-size: 3em;
+    font-weight: 600;
+}
+#aboutFocus .sectionInfo{
+    overflow-x: visible;
+    background: transparent;
+    
+    padding: 0  0  10% 0 ;
+    justify-content: center;
+    align-items: center;
+}
+#aboutFocus .sectionInfo ul{
+    width: 70%;
+    padding: 3% 0;
+    background: transparent;
+}
+#aboutFocus .sectionInfo ul li{
+    width: 30%;
+    
+}
+#aboutFocus .sectionInfo ul li .cardTitle{
+    padding: 5% 0;
+}
+#aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
+    width: 60px;
+    height: 60px;
+}
+#aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon img{
+    width: 60px;
+}
+#aboutFocus h3{
+    font-size: 2.7em;
+    padding: 10% 0 0 0 ;
+}
+#aboutFocus .sectionInfo ul li p{
+    font-size: 1.9em;
+}
+
+/*! #### ¿Cual es nuestro foco? ####*/
 
 }
