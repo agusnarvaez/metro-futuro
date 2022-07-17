@@ -59,7 +59,6 @@ section{
     align-items: center;
     margin: 0 0 5% 0;
     z-index: 10;
-    overflow: hidden;
 }
 li{
     list-style: none;

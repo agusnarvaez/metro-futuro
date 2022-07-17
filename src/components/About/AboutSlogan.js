@@ -1,20 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import DegradedLink from '../DegradedLink';
 
 function AboutSlogan() {
 
     return (
-        <section className="aboutSlogan">
+        <section id="aboutSlogan">
             <div className="aboutSloganText">
-                <h2>A través de <font color="#004DFF">Metro Futuro</font>, todos podemos obtener los beneficios de participar de la compra y operación de un inmueble en europa </h2>
+                <h2>A través de <font color="#004DFF">Metro Futuro</font>, todos podemos obtener los beneficios de participar de la compra y operación de un inmueble en Europa </h2>
             </div>
-            <div className="aboutSlogansLink">
-                <div>
-                    <NavLink to='/investments/list'>
-                        ¡Sumate a Metro Futuro, accede al Real Estate!
-                    </NavLink>
-                </div>
-            </div>
+            <DegradedLink id="aboutSloganLink" text="¡Accede al Real Estate!" backgroundColor="lightGray" route="/investments/list" />      
         </section>
     )
 }
