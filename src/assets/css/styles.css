@@ -59,6 +59,7 @@ section{
     align-items: center;
     margin: 0 0 5% 0;
     z-index: 10;
+    overflow: hidden;
 }
 li{
     list-style: none;
@@ -159,9 +160,10 @@ li{
     .blackText{
         color: #000F33;
     }
+    b,
     font {
         font-size: inherit;
-        display: inherit;
+        display: inline;
     }
     .degradedText{
         /* Efecto degradado texto */
@@ -268,6 +270,7 @@ li{
         display: flex;
         align-items: center;
         overflow-x: scroll;
+        scrollbar-width: none;
         padding: 0 0 0% 0;
         margin: 0;
     }

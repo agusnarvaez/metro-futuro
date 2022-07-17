@@ -4,6 +4,9 @@
 
 
 /** ### SOBRE NOSOTROS ### */
+#homeAbout{
+    overflow: hidden;
+}
 #homeAboutLink div{
     background-color: #FBFAFF;
 }
@@ -468,7 +471,7 @@
 * ! sdada
 * TODO: 
 */
-    /* ### SOBRE NOSOTROS ### */
+/** ### SOBRE NOSOTROS ### */
     #homeAbout{
         overflow: hidden;
     }

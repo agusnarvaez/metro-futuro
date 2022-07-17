@@ -119,8 +119,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-height: 55vh;
-    border-top-left-radius: 150px;
+    max-height: 60vh;
 }
 
 
@@ -131,10 +130,12 @@ main{
 }
 #aboutFocus .sectionInfo{
     overflow-x: scroll;
+    scrollbar-width: 0;
+    
     justify-content: flex-start;
     align-items: flex-start;
     height: fit-content;
-    padding: 0 0 30% 0;
+    padding: 0 0 15% 0;
     height: 100%;
 }
 #aboutFocus .sectionInfo ul{
@@ -147,7 +148,7 @@ main{
     z-index: 5;
 }
 #aboutFocus .sectionInfo ul li{
-    width: 80vw;
+    width: 70vw;
     min-height: 100%;
     background-color: #FBFAFF;
     z-index: 5;
@@ -201,25 +202,35 @@ main{
 /*! #### ¿Cual es nuestro foco? ####*/
 
 
-/* #### Agregamos valor generando mayor acceso a la industria inmobiliaria####*/
-.aboutInfo{
-    /* justify-content: space-around; */
+/** #### AGREGAMOS VALOR GENERANDO MAYOR ACCESO A LA INDUSTRIA INMOBILIARIA ####*/
+#aboutInfo{
+    width: 100%;
+    height: fit-content;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 !important;
+    padding: 13% 0;
 }
-.aboutInfo *{
-    display: block;
+#aboutInfo .sectionBackground{
+    background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
+    border-radius: 0px 100px 0px 0px;
 }
-.aboutInfo h2 {
-    width: 70%;
-    padding: 2% 0;
+#aboutInfo .section_subTitle {
+    width: 90%;
+    font-size: 1.7em;
+    padding: 0;
+    text-align: center;
+}
+#aboutInfo .section_paragraph{
+    width: 90%;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 300;
+    padding: 0;
+    line-height: 1.2em;
 }
 
-.aboutInfo p * {
-    display: inline;
-}
-
+/*! #### Agregamos valor generando mayor acceso a la industria inmobiliaria####*/
 
 /* #### Slogan ####*/
 
@@ -485,6 +496,14 @@ main{
 
 /*! #### ¿Cual es nuestro foco? ####*/
 
+/** #### AGREGAMOS VALOR GENERANDO MAYOR ACCESO A LA INDUSTRIA INMOBILIARIA ####*/
+#aboutInfo{
+    padding: 10% 0;
+}
+
+/*! #### Agregamos valor generando mayor acceso a la industria inmobiliaria####*/
+
+
 }
 
 
@@ -602,6 +621,28 @@ main{
 }
 
 /*! #### ¿Cual es nuestro foco? ####*/
+
+
+/** #### AGREGAMOS VALOR GENERANDO MAYOR ACCESO A LA INDUSTRIA INMOBILIARIA ####*/
+#aboutInfo{
+    padding: 10% 0;
+}
+#aboutInfo .sectionBackground{
+    border-top-right-radius: 200px;
+}
+#aboutInfo .section_subTitle {
+    font-size: 3em;
+    text-align: start;
+}
+#aboutInfo .section_paragraph{
+    font-size: 1.7em;
+    text-align: start;
+    
+}
+
+/*! #### Agregamos valor generando mayor acceso a la industria inmobiliaria####*/
+
+
 }
 
 
@@ -665,6 +706,7 @@ main{
 /** #### ¿CUAL ES NUESTRO FOCO? ####*/
 #aboutFocus{
     max-height: 65vh;
+    min-height: fit-content;
     background: transparent;
 }
 #aboutFocus .sectionBackground--desktop{
@@ -698,5 +740,27 @@ main{
 }
 
 /*! #### ¿Cual es nuestro foco? ####*/
+
+/** #### AGREGAMOS VALOR GENERANDO MAYOR ACCESO A LA INDUSTRIA INMOBILIARIA ####*/
+#aboutInfo{
+    padding: 7% 0;
+    width: 100%;
+    overflow: visible;
+}
+#aboutInfo .sectionBackground{
+    border-radius: 0px 300px 0px 0px;
+}
+#aboutInfo .section_subTitle {
+    font-size: 4em;
+    
+    text-align: start;
+}
+#aboutInfo .section_paragraph{
+    font-size: 2.5em;
+    text-align: start;
+    
+}
+
+/*! #### Agregamos valor generando mayor acceso a la industria inmobiliaria####*/
 
 }
