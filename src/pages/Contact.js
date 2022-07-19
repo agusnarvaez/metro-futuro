@@ -87,7 +87,7 @@ function Contact() {
             </div>
             );
         if(validCaptcha&&validName&&validEmail&&validSubject&&validMessage){
-            emailjs.send('default_service', 'template_b1tdztw', contact, 'gFpiIvrXnj4ZS_Jvk')
+            emailjs.send('default_service', 'template_b1tdztw', contact, credentials.emailJs)
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
                     setContact(frmContact);
