@@ -1,7 +1,12 @@
 /*! #######################################*/
 /*! ################ MOBILE ###############*/
 /*! #######################################*/
-
+:root{
+    --main-color: #FBFAFF
+}
+#root{
+    background-color: var(--main-color);
+}
 
 /** ### SOBRE NOSOTROS ### */
 #homeAbout{

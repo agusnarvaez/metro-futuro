@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import "../assets/css/footer.css";
 import footerRightBg from "../assets/img/background/footerRightBg.svg"
 import footerLeftBg from "../assets/img/background/footerLeftBg.svg"
@@ -18,10 +18,20 @@ function Footer() {
              in place of 'smooth' */
         });
       };
-
+	  	// Obtener la ruta actual
+		const location = useLocation().pathname;
+		// Cambia color segun la ruta actual
+		const changeBgColor = () => {
+			switch(location){
+				case "/": return("homeFooterBg");
+				case "/about": return("aboutFooterBg");
+				default: return("");
+			}
+		}
 	return (
 
 		<React.Fragment>
+			<div className={changeBgColor()} ></div>
 			<footer className="mainFooter">
 				{/* <div className='mainFooterBackground'> */}
 					<img className='mainFooterBackgroundLeft' alt="footerBackground" src={footerLeftBg} />

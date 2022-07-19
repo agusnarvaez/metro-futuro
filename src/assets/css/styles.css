@@ -26,7 +26,7 @@ body {
     align-items: center;
     overflow-x: hidden;
     position: relative;
-    overflow-x: hidden;
+    
 }
 
 :root{
@@ -48,6 +48,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
+    
 }
 
 section{
