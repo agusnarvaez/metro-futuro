@@ -101,17 +101,17 @@ function Contact() {
     }
     
     return (
-        <main className="contactPage">
+        <main id="contactPage">
             <img
                 alt="contactPageBg"
-                className="contactPageBg"
+                className="sectionBackground--desktop"
                 src={contactPageBg}
             />
-            <section className="contactPageSlogan">
+            <section id="contactPageSlogan">
                 <h1>¡Estamos para <br/><font color="#004DFF">ayudarte</font>!</h1>
                 <p>Ponte en contacto con nosotros enviándonos un mensaje</p>
             </section>
-            <section className="formContainer">
+            <section id="formContainer">
                 
                 <form onSubmit={handleSubmit}>
                     <div className={nameContainer} id="inputContainer">
