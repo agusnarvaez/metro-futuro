@@ -56,6 +56,7 @@ function Header() {
                     >
                     Home</NavLink>
                 </li>
+                <div className="degradedSeparator degradedSeparator--header"></div>
                 {/* <li>
                     <NavLink
                         onClick={scrollToTop}
@@ -81,6 +82,7 @@ function Header() {
                     >
                         Quienes somos</NavLink>
                 </li>
+                <div className="degradedSeparator degradedSeparator--header"></div>
                 <li>
                     <NavLink 
                         onClick={scrollToTop}

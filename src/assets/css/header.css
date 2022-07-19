@@ -60,12 +60,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0;
     z-index: 10;
     background-color: #FBFDFF;
     transition: top 0.5s ease-in-out;
 }
-
+.degradedSeparator--header{
+    width: 75% !important;
+    height: 2px !important;
+    opacity: 40%;
+}
 .header .hiddenMenu{
     width: 100%;
     position: absolute;
@@ -83,13 +87,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3% 0;
+    padding: 5% 0;
     z-index: 5;
 }
 
 .navLink{
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 2em;
     color: black;
     z-index: 5;
 }
@@ -122,6 +126,9 @@
     .header{
         height: 10vh;
         padding: 1vh 3vw 1vh 3vw;
+    }
+    .degradedSeparator--header{
+        display: none;
     }
     .headerShadow{
         display: none;

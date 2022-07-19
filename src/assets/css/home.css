@@ -214,7 +214,10 @@
     height: auto;
     flex-direction: column;
 }
-
+#homeLearnWithUs .youTubeVideo_Container{
+    margin: 0;
+    height: 35vh;
+}
 #homeLearnWithUs_Info{
     justify-content: center;
     padding: 0 5%;

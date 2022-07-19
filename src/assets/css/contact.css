@@ -204,12 +204,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 40%;
     background: linear-gradient(to right, #004DFF, #FF00CC);
     z-index: 1;
     white-space: nowrap;
     margin: 2% 0;
-    padding: 2.3px 1.5px;
+    padding: 3px 3px;
     border-radius: 50rem;
     border: none;
 }
@@ -232,7 +232,7 @@ body {
     align-items: center;
     text-decoration: none;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 2.3em;
     width: 100%;
     height: auto;
     text-align: center;
