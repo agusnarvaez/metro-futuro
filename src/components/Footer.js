@@ -44,13 +44,13 @@ function Footer() {
 								>Home
 								</NavLink>
 							</li>
-							<li>
+							{/* <li>
 								<NavLink
 									onClick={scrollToTop}
 									to='/investments/list'
 								>Inversiones
 								</NavLink>
-							</li>
+							</li> */}
 							{/* <li>
 								<NavLink
 									onClick={scrollToTop}

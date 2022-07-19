@@ -49,7 +49,7 @@ function HomeInvestmentSteps() {
                     <h2 id="homeInvestmentSteps_subTitle" className="section_subTitle section_subTitle--left">¿Como <font color="#004DFF">invertir</font> en simples pasos?</h2>
                     <div className="degradedLink" id="homeInvestmentSteps_desktopLink">
                         <div onClick={scrollToTop} className='degradedLink_TextContainer degradedLink_TextContainer--white'>
-                            <NavLink className="degradedLink_Text" to='/investments/list'>
+                            <NavLink className="degradedLink_Text" to='/contact'>
                                 Invierte
                             </NavLink>
                         </div>
@@ -93,7 +93,7 @@ function HomeInvestmentSteps() {
                     </div>
                     <div onClick={scrollToTop} className="degradedLink" id="homeInvestmentSteps_mobileLink">
                         <div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
-                            <NavLink className="degradedLink_Text" to='/investments/list'>
+                            <NavLink className="degradedLink_Text" to='/contact'>
                                 Invierte
                             </NavLink>
                         </div>

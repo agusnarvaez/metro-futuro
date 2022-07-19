@@ -33,9 +33,14 @@ function HomeLearnWithUs() {
                     </p>
                     <div className="degradedLink" id="homeLearnWithUs_Link">
                         <div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
-                            <NavLink className="degradedLink_Text" to='/academy'>
+                            <a 
+                                className="degradedLink_Text"
+                                href='https://www.youtube.com/channel/UCmiKhrSZxmtVFlz7wt1dcKw'
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
                                 Ver más
-                            </NavLink>
+                            </a>
                         </div>
                     </div>
                 </div>

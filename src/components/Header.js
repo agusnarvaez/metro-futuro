@@ -56,14 +56,14 @@ function Header() {
                     >
                     Home</NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <NavLink
                         onClick={scrollToTop}
                         className={({ isActive }) => (isActive ? "navLink active" : "navLink")}
                         to='/investments/list'
                     >
                         Inversiones</NavLink>
-                </li>
+                </li> */}
                 {/* <li>
                     <NavLink 
                         onClick={scrollToTop}
