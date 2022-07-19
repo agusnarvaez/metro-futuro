@@ -308,12 +308,13 @@ main{
     flex-direction: column;
     align-items: center;
     width: 40%;
+    min-height: fit-content;
     padding: 0% ;
     margin: 0 5% ;
 }
 
 .aboutTeamImage{
-    width: 150px;
+    width: 150px ;
     height: 150px;
     background: linear-gradient(113.75deg, rgba(255, 178, 0, 0.6) 12.54%, rgba(117, 251, 90, 0.522) 64.51%, rgba(194, 212, 255, 0.522) 93.52%);
     border-radius: 50rem;
@@ -368,7 +369,7 @@ main{
 }
 
 .aboutTeamInfo a{
-    margin-top: 3%;
+    
     width: 40px;
     height: 40px;
     display: flex;
@@ -376,7 +377,7 @@ main{
     align-items: center;
     align-self: flex-end;
     padding: 2px;
-    margin: 0;
+    margin: 3% 0 0 0;
     border-radius: 50rem;
     background: linear-gradient(to right, #004DFF, #FF00CC);
     z-index: 0;
@@ -397,6 +398,9 @@ main{
     height: 20px;
     z-index: 5;
 }
+/*! #### Conoce al equipo ####*/
+
+
 
 /*! ########################################*/
 /*! ##### TABLETS & LARGER SMARTPHONES #####*/
@@ -480,6 +484,21 @@ main{
 }
 
 /*! #### Slogan ####*/
+
+/** #### CONOCE AL EQUIPO ####*/
+
+.aboutTeamCard{
+    height: fit-content;
+}
+
+.aboutTeamImage{
+    margin: 15% 0 5% 0;
+}
+
+.aboutTeamlinkedInLogo{
+    background-color: #E5E5E5;
+}
+/*! #### Conoce al equipo ####*/
 
 }
 
@@ -634,6 +653,39 @@ main{
 }
 /*! #### Slogan ####*/
 
+/** #### CONOCE AL EQUIPO ####*/
+#aboutTeam h2{
+    margin: 0;
+}
+#aboutTeam ul{
+    padding: 0;
+}
+.aboutTeamCard{
+    height: fit-content;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutTeamImage{
+    margin: 10% 0 5% 0;
+}
+.aboutTeamInfo h3{
+    font-size: 1.5em;
+    padding: 1% 0;
+}
+.aboutTeamInfo p{
+    font-size: 1.5em;
+    padding: 1% 0;
+}
+.aboutTeamInfo a{
+    margin: 5% 0 0 0;
+}
+.aboutTeamlinkedInLogo{
+    background-color: #FBFDFF;
+}
+/*! #### Conoce al equipo ####*/
+
 }
 
 
@@ -771,5 +823,51 @@ main{
 }
 
 /*! #### Slogan ####*/
+
+/** #### CONOCE AL EQUIPO ####*/
+#aboutTeam h2{
+    margin: 0;
+}
+#aboutTeam ul{
+    padding: 0;
+}
+.aboutTeamCard{
+    height: fit-content;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutTeamImage{
+    width: 250px;
+    height: 250px;
+    margin: 10% 0 5% 0;
+}
+
+.aboutTeamInfo h3{
+    font-size: 2.5em;
+    padding: 1% 0;
+}
+.aboutTeamInfo p{
+    font-size: 1.7em;
+    padding: 1% 0;
+}
+.aboutTeamInfo a{
+    margin: 5% 0 0 0;
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+}
+.aboutTeamlinkedInLogo{
+    background-color: #FBFDFF;
+}
+.aboutTeamlinkedInLogo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+/*! #### Conoce al equipo ####*/
 
 }
