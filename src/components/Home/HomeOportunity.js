@@ -3,7 +3,8 @@ import React from 'react';
 //* Background
 
 //* Componentes
-import DegradedLink from "../DegradedLink";
+/* import DegradedLink from "../DegradedLink"; */
+import DegradedNavLink from "../DegradedNavLink";
 //* Íconos
 
 function HomeOportunity(props) {
@@ -14,7 +15,7 @@ function HomeOportunity(props) {
             <div className='sectionInfo'>
                 <h2 className='section_subTitle'>Oportunidad de inversión inmobiliaria en <span className="degradedText">{principalInvestment.city +", "+ principalInvestment.country}</span></h2>
                 <p className="section_paragraph">Rentabilidad neta estimada anual {principalInvestment.estimatedEarnings}</p>
-                <DegradedLink id="homeOportunityLink" text="Mas información" backgroundColor="white" route="/contact" />
+                <DegradedNavLink id="homeOportunityLink" text="Mas información" backgroundColor="white" route="/contact" />
             </div>
         </section>
     )

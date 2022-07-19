@@ -1,6 +1,6 @@
 //* Importo React
 import React from "react";
-/* import {NavLink}from "react-router-dom"; */
+import { Link } from 'react-router-dom';
 
 
 function DegradedLink(props) {
@@ -13,9 +13,9 @@ function DegradedLink(props) {
 return (
     <div onClick={scrollToTop} className="degradedLink" id={props.id}>
         <div className={`degradedLink_TextContainer degradedLink_TextContainer--${props.backgroundColor}`}>
-            <a href={props.route} className="degradedLink_Text">
+            <Link to={props.route} className="degradedLink_Text">
                 {props.text}
-            </a>
+            </Link>
         </div>
     </div>
     

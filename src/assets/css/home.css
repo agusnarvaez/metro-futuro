@@ -469,12 +469,10 @@
     display: none;
 }
 
-
-/* ! ####################################### **/
-/* ! ############### DESKTOP ############### **/
-/* ! ####################################### **/
-
-@media (min-width: 1024px) {
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
 /**### Important
 * ! sdada
 * TODO: 
@@ -482,9 +480,29 @@
 /** ### SOBRE NOSOTROS ### */
     #homeAbout{
         overflow: hidden;
+        width: 100%;
+    }
+    #homeAbout #homeAboutSubtitle{
+        margin: 0;
+        padding: 0;
+        text-align: start;
+        width: 90%;
+    }
+    #homeAbout .section_paragraph{
+        width: 90%;
+        font-size: 2em;
+        text-align: start;
+    }
+
+    #homeAboutLink{
+        width: 20%;
+        margin: 0;
     }
     #homeAboutLink div{
         background-color: #dcdcdc;
+    }
+    #homeAboutLink a{
+        font-size: 2em;
     }
     #homeAboutSubtitle sup,
     #homeAboutSubtitle{
@@ -501,7 +519,7 @@
 
 /** ### SLOGAN ###*/
     #homeSlogan {
-        width: 100%;
+        width: 95%;
         padding: 0;
         border-radius: 30px;
         height: 45vh;
@@ -535,7 +553,7 @@
         justify-content: space-between;
     }
     #homeCarrousel{
-        width: 50%;
+        width: 85%;
     }
     #homeInvestmentSteps_subTitle{
         text-align: start;
@@ -566,7 +584,7 @@
     order: 4;
 }
 #homeOportunity .sectionInfo{
-    padding: 0;
+    padding: 0 0 0 3%;
     justify-content: center;
 }
 #homeOportunity .section_subTitle{ 
@@ -586,7 +604,8 @@
     color: #004DFF;
 }
 #homeOportunityLink{
-    width: 30%;
+    width: 40%;
+    margin: 0;
 }
 /*! ### Oportunidad de inversión ###*/
 
@@ -597,6 +616,7 @@
     }    
 
     #homeBenefits h3{
+        width: 95%;
         font-size: 2.8em;
         text-align: start;
     }
@@ -646,19 +666,23 @@
         height: 35vw;
         flex-direction: row;
         margin:  0;
+        width: 95%;
     }
     #homeLearnWithUs .youTubeVideo_Container{
         margin: 0;
-        height: 60%;
+        height: 70%;
+        width: 60%;
+        border-radius: 20px;
+        z-index: 10;
     }
 
     #homeLearnWithUs_Info{
-        width: 65%;
+        width: 60%;
         align-items: flex-end;
         padding: 0;
     }
     #homeLearnWithUs_Info h4{
-        font-size: 3.5em;
+        font-size: 3em;
         font-weight: 600;
     }
     #homeLearnWithUs_Info p {
@@ -670,6 +694,7 @@
     /* Link degradado */
     #homeLearnWithUs_Link {
         width: 20%;
+        margin: 0;
     }
     
 /*! ### Aprende con Metro Futuro ### */

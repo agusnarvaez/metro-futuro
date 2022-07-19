@@ -451,6 +451,21 @@ li{
 /*! ################ LAPTOPS ###############*/
 /*! ########################################*/
 @media (min-width: 769px) {
+    section{
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        z-index: 1;
+        margin: 0 0 5% 0;
+    }
+    .sectionInfo{
+        align-items: flex-start;
+        padding: 0 5%;
+    }
     /** ### SECTION COVER ### */
         .sectionCover{
             width: 50%;
@@ -471,6 +486,124 @@ li{
         bottom: 0;
         z-index: 0;
     }
+    .sectionBackground--mobile{
+        display: none;
+    }
+
+    /**  ### CARROUSEL ### */
+    .carrouselNav{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .carrouselNav_arrowContainer{
+        background: linear-gradient(to right, #004DFF, #FF00CC);
+        border-radius: 50rem;
+        z-index: 1;
+        margin: 1%;
+        cursor: pointer;
+    }
+    .carrouselNav_arrowContainer:hover div{
+        background: transparent;
+    }
+    .carrouselNav_arrowContainer:hover img{
+        filter: grayscale(500%) brightness(600%);
+    }
+    .carrouselNav_arrowContainer div{
+        background: #FBFDFF;
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+        border-radius: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .carrouselNav_arrowContainer img{
+        width: 27px;   
+        transition: filter 0.2s ease-in-out;
+    }
+    .carrouselContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 50vh;
+        align-items: center;
+        background: #ffff;
+        border-radius: 50px;
+        box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
+        overflow: hidden;
+    }
+
+    .carrouselContainer_mobil{
+        position: absolute;
+        left: 0%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 90%;
+        width: 200%;
+        transition: left 1.2s ease-out;
+    }
+    .carrousel_mobil--mobile{
+        display: none;
+    }
+    .carrousel_mobil--desktop{
+        display: flex;
+    }
+    .carrouselContainer_mobil--moved{
+        left:-100%;
+    }
+    .carrouselContainer_card{
+        display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 25%;
+            height: 95%;
+            max-height: 450px;
+            box-shadow: 0px 100px 80px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
+            border-radius: 15px;
+            margin: 0 2%;
+            padding: 3% 1% 1.5% 1%;
+            background-color: #FFFFFF;
+    }
+    .carrouselContainer_card h4{
+        color: #004DFF;
+        font-size: 2.3em;
+        font-weight: 500;
+    }
+    .carrouselContainer_card p{
+        font-size: 1.6em;
+        font-weight: 400;
+        line-height: 20px;
+        height: 50%;
+    }
+    .carrouselContainer_cardId{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        /* padding-top: 5%; */
+        background-color: #FFFFFF;
+    }
+    .carrouselContainer_cardNumber{
+        background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
+        padding: 1%;
+        width: 30%;
+        border-radius: 50rem;
+        font-size: 1.8em;
+        color: #F3F2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/*! ### Carrousel ### */
 }
 
 /*! ########################################*/
@@ -482,7 +615,8 @@ li{
         margin-top: 15vh;
         padding: 1vh 6vw 10vh 6vw;
     }
-    section{
+    
+    /* section{
         width: 100%;
         height: 80vh;
         position: relative;
@@ -492,7 +626,7 @@ li{
         border-radius: 20px;
         z-index: 1;
         margin: 0 0 5% 0;
-    }
+    } */
 
     /** ### Información de la sección ###*/
         .sectionInfo{
