@@ -16,13 +16,7 @@ main{
     font-weight: 500;
     display: inline;
 }
-.aboutServices,
-.aboutFocus,
-.aboutInfo,
-.aboutSlogan,
-.aboutTeam{
-    display: none;
-}
+
 
 /** #### SOMOS METRO FUTURO ####*/
 
@@ -523,6 +517,9 @@ main{
         #aboutPage{
             background-color: #FBFDFF;
         }
+        #aboutTitle{
+            padding: 5% 0;
+        }
         #aboutTitle .sectionBackground{
             width: 100%;
             background-color: #FBFAFF;
@@ -748,7 +745,7 @@ main{
 
 /** #### ¿CUAL ES NUESTRO FOCO? ####*/
 #aboutFocus{
-    max-height: 65vh;
+    max-height: 80vh;
     min-height: fit-content;
     background: transparent;
 }
@@ -809,7 +806,7 @@ main{
 /** #### SLOGAN ####*/
 
 #aboutSlogan{
-    max-height: 40vh;
+    max-height: 50vh;
     margin: 3% 0;
 }
 .aboutSloganText{
@@ -819,13 +816,14 @@ main{
     font-size: 3em;
 }
 #aboutSlogan #aboutSloganLink{
-    width: 15%;
+    width: 20%;
 }
 
 /*! #### Slogan ####*/
 
 /** #### CONOCE AL EQUIPO ####*/
-#aboutTeam h2{
+#aboutTeam .section_subTitle{
+    font-size: 3em;
     margin: 0;
 }
 #aboutTeam ul{

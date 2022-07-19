@@ -635,8 +635,13 @@
 
 /** ### APRENDE CON METRO FUTURO ### */
     #homeLearnWithUs{
-        height: 50vw;
+        height: 35vw;
         flex-direction: row;
+        margin:  0;
+    }
+    #homeLearnWithUs .youTubeVideo_Container{
+        margin: 0;
+        height: 60%;
     }
 
     #homeLearnWithUs_Info{
@@ -645,12 +650,12 @@
         padding: 0;
     }
     #homeLearnWithUs_Info h4{
-        font-size: 3em;
+        font-size: 3.5em;
         font-weight: 600;
     }
     #homeLearnWithUs_Info p {
-        
-        font-size: 1.3em;
+        width: 90%;
+        font-size: 1.5em;
         text-align: end;
         padding: 3% 0;
     }
