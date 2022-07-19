@@ -1,7 +1,7 @@
 import React from 'react';
 
-// Logos
-import linkedinLogo from "../../assets/img/icons/aboutLinkedinLogo.png";
+// Componentes
+import AboutTeamCard from './AboutTeamCard';
 
 // Team avatars
 import jobCarreraAvatar from "../../assets/img/team/jobCarreraDiaz.png";
@@ -11,144 +11,45 @@ import pedroNicholsonAvatar from "../../assets/img/team/pedroNicholson.png";
 import juanPorrazzoAvatar from "../../assets/img/team/juanPorrazzo.png";
 
 function AboutTeam() {
-
+    const teamList = [
+        {
+            name: "Job Carrera Diaz",
+            function: "Dir. de inmuebles",
+            linkedin: "https://www.linkedin.com/in/job-carrera-diaz-3471a325/",
+            avatar: jobCarreraAvatar
+        },
+        {
+            name: "Mariela Schenone",
+            function: "Dir. de estructuración financiera",
+            linkedin: "https://www.linkedin.com/in/mariela-schenone-1890a43/",
+            avatar: marielaScheloneAvatar
+        },
+        {
+            name: "Pedro Silvestri",
+            function: "Dir. financiero",
+            linkedin: "https://www.linkedin.com/in/pedro-silvestri-07300b2a/",
+            avatar: pedroSilvestriAvatar
+        },
+        {
+            name: "Pedro Nicholson",
+            function: "Dir. de legales",
+            linkedin: "https://www.linkedin.com/in/pedro-nicholson-ba737b9/",
+            avatar: pedroNicholsonAvatar
+        },
+        {
+            name: "Juan Porrazzo",
+            function: "Tech",
+            linkedin: "https://www.linkedin.com/in/juan-porrazzo-969b8383/",
+            avatar: juanPorrazzoAvatar
+        }
+    ]
     return (
-        <section className="aboutTeam">
-            <h2>Conoce al equipo</h2>
+        <section id="aboutTeam">
+            <h2 className='section_subTitle'>Conoce al equipo</h2>
             <ul>
-                <li>
-                    <div className="aboutTeamImage">
-                        <div>
-                            <img
-                                id='jobCarreraAvatar'
-                                alt="aboutTeamMemberImg"
-                                src={jobCarreraAvatar}
-                            />
-                        </div>
-                    </div>
-                    <div className="aboutTeamInfo">
-                        <h3>Job Carrera Diaz</h3>
-                        <p>Director de inmuebles</p>
-                        <a 
-                            target="_blank"
-                            href="https://www.linkedin.com/in/job-carrera-diaz-3471a325/"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="aboutTeamlinkedInLogo">
-                                <img
-                                    src={linkedinLogo}
-                                    alt="linkedInLogo"
-                                />
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div className="aboutTeamImage">
-                        <div>
-                            <img
-                                id='marielaScheloneAvatar'
-                                alt="aboutTeamMemberImg"
-                                src={marielaScheloneAvatar}
-                            />
-                        </div>
-                    </div>
-                    <div className="aboutTeamInfo">
-                        <h3>Mariela Schenone</h3>
-                        <p>Directora financiera, fiscal y de estructuración</p>
-                        <a 
-                            target="_blank"
-                            href="https://www.linkedin.com/in/mariela-schenone-1890a43/"
-                            rel="noopener noreferrer"
-                        >
-                            <div className="aboutTeamlinkedInLogo">
-                                <img
-                                    src={linkedinLogo}
-                                    alt="linkedInLogo"
-                                />
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div className="aboutTeamImage">
-                        <div>
-                            <img
-                                id="pedroSilvestriAvatar"
-                                alt="aboutTeamMemberImg"
-                                src={pedroSilvestriAvatar}
-                            />
-                        </div>
-                    </div>
-                    <div className="aboutTeamInfo">
-                        <h3>Pedro Silvestri</h3>
-                        <p>Director financiero</p>
-                        <a 
-                            target="_blank" href="https://www.linkedin.com/in/pedro-silvestri-07300b2a/" rel="noopener noreferrer"
-                        >
-                            <div className="aboutTeamlinkedInLogo">
-                                <img
-                                    src={linkedinLogo}
-                                    alt="linkedInLogo"
-                                />
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div className="aboutTeamImage">
-                        <div>
-                            <img
-                                id="pedroNicholsonAvatar"
-                                alt="aboutTeamMemberImg"
-                                src={pedroNicholsonAvatar}
-                            />
-                        </div>
-                    </div>
-                    <div className="aboutTeamInfo">
-                        <h3>Pedro Nicholson</h3>
-                        <p>Director de legales</p>
-                        <a
-                            target="_blank" 
-                            href="https://www.linkedin.com/in/pedro-nicholson-ba737b9/"
-                            rel="noopener noreferrer"   
-                        >
-                            <div className="aboutTeamlinkedInLogo">
-                                <img
-                                    src={linkedinLogo}
-                                    alt="linkedInLogo"
-                                />
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div className="aboutTeamImage" >
-                        <div>
-                            <img
-                                id="juanPorrazzoAvatar"
-                                alt="aboutTeamMemberImg"
-                                src={juanPorrazzoAvatar}
-                            />
-                        </div>
-                    </div>
-                    <div className="aboutTeamInfo">
-                        <h3>Juan Porrazo</h3>
-                        <p>Tech</p>
-                        <a
-                            target="_blank"
-                            href="https://www.linkedin.com/in/juan-porrazzo-969b8383/"
-                            rel="noopener noreferrer"   
-                        >
-                            <div className="aboutTeamlinkedInLogo">
-                                <img
-                                    src={linkedinLogo}
-                                    alt="linkedInLogo"
-                                />
-                            </div>
-                        </a>
-                    </div>
-                </li>
+                {teamList.map((teamMember, index) => { return (
+                    <AboutTeamCard teamMember={teamMember} key={index} />
+                )})}
             </ul>
         </section>
     )

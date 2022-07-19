@@ -283,26 +283,33 @@ main{
 
 /*! #### Slogan ####*/
 
-/** #### Team ####*/
+/** #### CONOCE AL EQUIPO ####*/
 
-.aboutTeam{
-    min-height: fit-content;
-    height: 115vh !important;
+#aboutTeam{
+    height: fit-content;
     flex-direction: column;
     margin: 2% 0;
+    
 }
-.aboutTeam h2{
-    text-align: center;
+#aboutTeam .section_subTitle{
+    font-size: 2em;
 }
 
-.aboutTeam ul{
+#aboutTeam ul{
     width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    padding: 3% 0;
 }
-.aboutTeam li{
+.aboutTeamCard{
+    display: flex;
     flex-direction: column;
-    width: 30%;
-    padding: 2% 0;
+    align-items: center;
+    width: 40%;
+    padding: 0% ;
+    margin: 0 5% ;
 }
 
 .aboutTeamImage{
@@ -310,44 +317,54 @@ main{
     height: 150px;
     background: linear-gradient(113.75deg, rgba(255, 178, 0, 0.6) 12.54%, rgba(117, 251, 90, 0.522) 64.51%, rgba(194, 212, 255, 0.522) 93.52%);
     border-radius: 50rem;
+    margin: 30% 0 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .aboutTeamImage div{
     width: 75%;
     height: 75%;
     background-color: #FFEDC2;
     border-radius: 50rem;
+    position: relative;
 }
 .aboutTeamImage img{
     position: absolute;
     bottom: 0;
-}
-#jobCarreraAvatar{
     width: 100%;
 }
-#marielaScheloneAvatar{
-    width: 155%;
-}
-#pedroSilvestriAvatar{
-    width: 200%;
-}
-#pedroNicholsonAvatar{
-    width: 125%;
-}
-#juanPorrazzoAvatar{
-    width: 130%;
-}
+
 
 .aboutTeamInfo{
-    flex-direction: column;
+    display: flex;
+    height: 40%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 .aboutTeamInfo *{
     text-align: center;
 }
-.aboutTeamInfo{
-    font-size: 1em;
-    font-weight: 500;
+.aboutTeamInfo h3{
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.aboutTeamInfo p{
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 400;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
 }
 
 .aboutTeamInfo a{
@@ -357,7 +374,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
     padding: 2px;
+    margin: 0;
     border-radius: 50rem;
     background: linear-gradient(to right, #004DFF, #FF00CC);
     z-index: 0;
@@ -368,7 +387,7 @@ main{
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #FBFAFF;
+    background-color: #E5E5E5;
     z-index: 5;
     border-radius: 50rem;
 }
@@ -377,7 +396,6 @@ main{
     width: 20px;
     height: 20px;
     z-index: 5;
- 
 }
 
 /*! ########################################*/
