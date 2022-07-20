@@ -14,7 +14,9 @@ import Footer from "./components/Footer";
 import "./assets/css/normalize.css"
 import "./assets/css/styles.css"
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+// React Router Dom
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 function App() {
   const investmentsList = [
     {
@@ -65,7 +67,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/help' element={<Faq />} />
-        <Route path='*' element={<Error404 />} />
+        <Route path='/*' element={<Error404 />} />
       </Routes>
       <Footer />
     </BrowserRouter>
