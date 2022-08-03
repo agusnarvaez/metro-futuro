@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeFaq from "../components/Home/HomeFaq";
+import HomeFaq from "../sections/Home/HomeFaq";
 import "../assets/css/faqPage.css";
 function Faq() {
 

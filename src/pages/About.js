@@ -13,12 +13,12 @@ import "../assets/css/about.css"
 
 
 /** #### Import de componentes de página #### **/
-import AboutTitle from '../components/About/AboutTitle';
-import AboutServices from '../components/About/AboutServices';
-import AboutFocus from '../components/About/AboutFocus';
-import AboutInfo from '../components/About/AboutInfo';
-import AboutSlogan from '../components/About/AboutSlogan';
-import AboutTeam from "../components/About/AboutTeam";
+import AboutTitle from '../sections/About/AboutTitle';
+import AboutServices from '../sections/About/AboutServices';
+import AboutFocus from '../sections/About/AboutFocus';
+import AboutInfo from '../sections/About/AboutInfo';
+import AboutSlogan from '../sections/About/AboutSlogan';
+import AboutTeam from "../sections/About/AboutTeam";
 function About() {
 
     return (

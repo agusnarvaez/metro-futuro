@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../assets/css/investments.css";
 import investmentsTitleBg from "../assets/img/background/investmentsTitleBg.png";
 // import investmentsPageProjectsCover from "../assets/img/projects/nitaCover.png";
-import InvestmentCard from "../components/Investments/InvestmentCard";
+import InvestmentCard from "../sections/Investments/InvestmentCard";
 // import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";
 // import investmentsFilterHomeIcon from "../assets/img/icons/investmentsFilterHomeIcon.png"
 

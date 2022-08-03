@@ -1,5 +1,5 @@
 // Importo React
-import React,{ useEffect, useState } from "react";
+import React,{ useState } from "react";
 
 // Íconos
 import homeFaqIcon from '../../assets/img/icons/homeFaqIcon.png';

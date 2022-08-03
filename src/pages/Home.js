@@ -6,15 +6,15 @@ import React, {/* useState, */ useRef/* , useEffect */} from "react";
 import "../assets/css/home.css";
 
 /** ### Import de componentes ### **/
-import HomeAbout from "../components/Home/HomeAbout";
-import HomeSlogan from "../components/Home/HomeSlogan";
-import HomeInvestmentSteps from "../components/Home/HomeInvSteps";
-import HomeOportunity from "../components/Home/HomeOportunity";
-import HomeBenefits from "../components/Home/HomeBenefits";
-import HomeLearnWithUs from "../components/Home/HomeLearn";
-import HomeNews from "../components/Home/HomeNews";
-import HomePartners from "../components/Home/HomePartners";
-import HomeFaq from "../components/Home/HomeFaq";
+import HomeAbout from "../sections/Home/HomeAbout";
+import HomeSlogan from "../sections/Home/HomeSlogan";
+import HomeInvestmentSteps from "../sections/Home/HomeInvSteps";
+import HomeOportunity from "../sections/Home/HomeOportunity";
+import HomeBenefits from "../sections/Home/HomeBenefits";
+import HomeLearnWithUs from "../sections/Home/HomeLearn";
+import HomeNews from "../sections/Home/HomeNews";
+import HomePartners from "../sections/Home/HomePartners";
+import HomeFaq from "../sections/Home/HomeFaq";
 
 
 

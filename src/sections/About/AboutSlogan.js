@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Componentes
-import DegradedLink from '../DegradedLink';
+import DegradedLink from '../../components/DegradedLink';
 
 function AboutSlogan() {
 

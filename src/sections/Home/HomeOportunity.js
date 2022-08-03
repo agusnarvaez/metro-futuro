@@ -4,7 +4,7 @@ import React from 'react';
 
 //* Componentes
 /* import DegradedLink from "../DegradedLink"; */
-import DegradedNavLink from "../DegradedNavLink";
+import DegradedNavLink from "../../components/DegradedNavLink";
 //* Íconos
 
 function HomeOportunity(props) {
