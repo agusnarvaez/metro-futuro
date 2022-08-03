@@ -11,6 +11,7 @@
 /** ### SOBRE NOSOTROS ### */
 #homeAbout{
     overflow: hidden;
+    height: 40vh;
 }
 #homeAboutLink div{
     background-color: #FBFAFF;
@@ -35,7 +36,7 @@
 #homeSlogan {
     width: 90%;
     border-radius: 15px;
-    height: 30vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +49,7 @@
     
     font-size: 1.9em;
     color: #F3F2F2;
-    background-size: 200% 300%;
+    background-size: 200% 500%;
     animation: gradient 10s ease-out infinite;
 }
 @keyframes gradient {
@@ -67,6 +68,7 @@
     font-size: 1em;
     font-weight: 500;
     letter-spacing: 0.5px;
+    margin: 0;
 }
 
 
@@ -210,7 +212,7 @@
 /*! ### BENEFICIOS DE INVERTIR EN METRO FUTURO ### **/
 /** ### APRENDE CON METRO FUTURO ### */
 #homeLearnWithUs{
-    
+    margin: 10% 0 0 0;
     height: auto;
     flex-direction: column;
 }
@@ -220,7 +222,7 @@
 }
 #homeLearnWithUs_Info{
     justify-content: center;
-    padding: 0 5%;
+    padding: 5% 5%;
     margin: 0;
 }
 #homeLearnWithUs_Info h4{
@@ -245,7 +247,7 @@
 /** ### NUESTROS PARTNERS ### **/
     
 #homePartners{
-    height: 65vh;
+    height: 40vh;
     flex-direction: column;
     margin: 5% 0;
 }
@@ -253,6 +255,8 @@
 #homePartners h3{
     font-size: 3em;
     font-weight: 500;
+    /* padding: 0; */
+    margin: 0;
 }
 #homePartnersContainer{
     position: relative;
@@ -272,8 +276,8 @@
     width: 200%;
     height: 60%;
     justify-content: space-around;
-    align-items: center;
-    padding: 5%;
+    align-items: flex-start;
+    padding: 0 5%;
     margin: 0;
 }
 #homePartnersContainer li{
@@ -480,7 +484,9 @@
 /** ### SOBRE NOSOTROS ### */
     #homeAbout{
         overflow: hidden;
-        width: 100%;
+        width: 95%;
+        height: 50vh;
+        margin: 0;
     }
     #homeAbout #homeAboutSubtitle{
         margin: 0;
@@ -579,12 +585,13 @@
     flex-direction: row;
     align-items: center;
     padding: 0;
+    width: 95%;
 }
 #homeOportunity .sectionCover{
     order: 4;
 }
 #homeOportunity .sectionInfo{
-    padding: 0 0 0 3%;
+    padding: 0 0 0 0%;
     justify-content: center;
 }
 #homeOportunity .section_subTitle{ 
@@ -613,6 +620,7 @@
     #homeBenefits{
         padding: 0;
         margin: 5% 0;
+        width: 95%;
     }    
 
     #homeBenefits h3{

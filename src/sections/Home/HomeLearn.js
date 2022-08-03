@@ -28,7 +28,7 @@ function HomeLearnWithUs() {
                 <div className="sectionInfo" id="homeLearnWithUs_Info">
                     <h4>Aprendé con <font color="#004DFF">Metro Futuro</font></h4>
                     <p>
-                        Te ofrecemos una plataforma eLearning online y gratuita para formarse en inversioens inmobiliarias y la tecnología Blockchain.<br /><br />
+                        Te ofrecemos una plataforma eLearning online y gratuita para formarse en inversiones inmobiliarias y la tecnología Blockchain.<br /><br />
                         Únete a la academia de Metro Futuro para lograr capitalizar tus ahorros y transformarte en un inversor del Real Estate, la industria con mayor seguridad y menor riesgo.
                     </p>
                     <div className="degradedLink" id="homeLearnWithUs_Link">

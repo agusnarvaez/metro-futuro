@@ -13,7 +13,7 @@ function AboutServices() {
                 
                 <div className="sectionInfo">
                     <h2>Enfocamos nuestros esfuerzos en el mejor servicio</h2>
-                    <p>Nos ocupamos de la búsqueda de la menor oportunidad en los mercados europeos</p>
+                    <p>Nos ocupamos de la búsqueda de la mejor oportunidad en los mercados europeos</p>
                     <div className="degradedSeparator"></div>
                     <ul>
                         {services.map((service, index) => { return(

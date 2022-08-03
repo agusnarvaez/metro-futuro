@@ -18,7 +18,7 @@ function HomeAbout() {
                     <p
                         className='section_paragraph blackText'
                         id="homeAboutParagraph">
-                            Somos una empresa global de inversiones inmobiliarias entre Europa y LATAM con tecnología blockchain y crowdfunding
+                            Somos una empresa global de inversiones inmobiliarias entre Europa y LATAM con tecnología blockchain
                     </p>
                     <div className="degradedLink" id='homeAboutLink'>
                         <div className='degradedLink_TextContainer degradedLink_TextContainer--lightGray' id="homeAboutInfoLink">
