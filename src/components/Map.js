@@ -3,7 +3,7 @@ import React, {Component} from "react";
 // Importo Google Maps
 import GoogleMaps from "simple-react-google-maps";
 // Importo credenciales
-import credentials from "../../credentials";
+import credentials from "../credentials";
 
 export default class Map extends Component {
     render() {

@@ -7,7 +7,7 @@ import {useParams} from "react-router-dom";
 import "../assets/css/investmentDetail.css"
 
 // Mapa de google
-import Map from "../sections/Investments/Map";
+import Map from "../components/Map";
 
 function InvestmentDetail(props) {
     const params = useParams();
