@@ -6,7 +6,7 @@ const investmentsList = [
       address: "Valencia 18",
       city: "Cadiz",
       country: "España",
-      estimatedEarnings: "15%-18%",
+      estimatedEarnings: "30%",
       contractExpiration: "30/06/25",
       area: "47.8",
       areaValue: "$500"
