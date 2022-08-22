@@ -47,6 +47,33 @@ function Contact() {
         const { name, value } = e.target;
         setContact({ ...contact, [name]: value });
         
+        // Validación de nombre
+        if(contact.from_name.length>0){
+            setValidName(true);
+        }else{
+            setValidName(false);
+        }
+        // Validación de email
+        if(contact.from_email.length<0){
+            setValidEmail(false);
+        }else if(!(contact.from_email.indexOf('@hotmail.com') !== (-1) || contact.from_email.indexOf('@gmail.com') !== (-1) || contact.from_email.indexOf('@outlook.com') !== (-1) || contact.from_email.indexOf('@live.com') !== (-1) || contact.from_email.indexOf('@yahoo.com') !== (-1) || contact.from_email.indexOf('@gmx.') !== (-1) || contact.from_email.indexOf('@aol.com') !== (-1))){
+            setValidEmail(false);
+        }else{
+            setValidEmail(true);
+        }
+        
+        // Validación de asunto
+        if(contact.subject.length<=0){
+            setValidSubject(false);
+        }else{
+            setValidSubject(true);
+        }
+        // Validación de mensaje
+        if(contact.message.length<=0){
+            setValidMessage(false);
+        }else{
+            setValidMessage(true);
+        }
     };
     const handleSubmit = e => {
         e.preventDefault();
@@ -66,13 +93,13 @@ function Contact() {
         }
         
         // Validación de asunto
-        if(contact.subject.length<0){
+        if(contact.subject.length<=0){
             setValidSubject(false);
         }else{
             setValidSubject(true);
         }
         // Validación de mensaje
-        if(contact.message.length<0){
+        if(contact.message.length<=0){
             setValidMessage(false);
         }else{
             setValidMessage(true);
@@ -86,10 +113,12 @@ function Contact() {
                 <p className={validCaptcha?"errorHidden":"errorShown"}>Por favor, verifique que no es un robot</p>
             </div>
             );
+        
         if(validCaptcha&&validName&&validEmail&&validSubject&&validMessage){
             emailjs.send('default_service', 'template_b1tdztw', contact, credentials.emailJs)
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
+                    alert("Mensaje enviado con éxito!");
                     setContact(frmContact);
                     setShowMessage(true);
                 }, (err) => {
@@ -97,6 +126,7 @@ function Contact() {
                 });
         }else{
             console.log("ERROR");
+            alert("Por favor revise los campos!")
         }
     }
     
@@ -124,7 +154,9 @@ function Contact() {
                             value={contact.from_name}
                             onChange={handleChange}
                             onFocus={()=>{setNameContainer("inputContainer inputContainerFocus")}}
-                            onBlur={()=>{setNameContainer("inputContainer")}}
+                            onBlur={()=>{
+                                setNameContainer("inputContainer")
+                            }}
                             required
                         />
                     </div>

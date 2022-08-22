@@ -4,8 +4,8 @@ import React from "react";
 import Header from "./components/Header";
 import Home from './pages/Home.js'
 /* import Investments from "./pages/Investments";
-import InvestmentDetail from "./pages/InvestmentDetail";
-import Academy from "./pages/Academy"; */
+import InvestmentDetail from "./pages/InvestmentDetail"; */
+import Learn from "./pages/Learn";
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Faq from "./pages/Faq";
@@ -28,8 +28,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home investmentsList={investmentsList} />} />
         {/* <Route path='/investments/list' element={<Investments investmentsList={investmentsList} />} />
-        <Route path='/investments/:id' element={<InvestmentDetail investmentsList={investmentsList} />} />
-        <Route path='/academy' element={<Academy />} /> */}
+        <Route path='/investments/:id' element={<InvestmentDetail investmentsList={investmentsList} />} />*/}
+        <Route path='/learn' element={<Learn />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/help' element={<Faq />} />
