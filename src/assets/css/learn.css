@@ -63,7 +63,7 @@
     border-radius: 10px;
 }
 
-.learnCoursesCard_Dificulty{
+.learnCoursesCard_Difficulty{
     font-weight: 300;
     
     font-size: 1.7em;
@@ -74,10 +74,10 @@
     border-radius: 50rem;
     
 }
-.learnCoursesCard_Dificulty--Básico{
+.learnCoursesCard_Difficulty--Básico{
     background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
 }
-.learnCoursesCard_Dificulty--Avanzado{
+.learnCoursesCard_Difficulty--Avanzado{
     background: linear-gradient(90.36deg, rgba(255, 0, 204, 0.6) -0.35%, rgba(255, 0, 204, 0) 135.57%);
 }
 
@@ -117,7 +117,7 @@
         width: 45%;
         margin: 3% 0%;
     }
-    #learnCoursesCardDificulty{
+    #learnCoursesCardDifficulty{
         font-size: 1.5em;
     }
     #learnCoursesCard h3{
@@ -140,7 +140,7 @@
         min-height: 30vh;
     }
 
-    #learnCoursesCardDificulty{
+    #learnCoursesCardDifficulty{
         font-size: 1.5em;
         padding: 0 5%;
         margin: 3% 0
@@ -175,7 +175,7 @@
         padding: 0 0% 2% 0%;
     }
 
-    #learnCoursesCardDificulty{
+    #learnCoursesCardDifficulty{
         font-size: 1.5em;
         padding: 0 5%;
         margin: 3% 0

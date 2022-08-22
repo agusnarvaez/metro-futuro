@@ -1,16 +1,17 @@
 import React from 'react';
 import learnDemoImage from '../../assets/img/learn/learnCoursesCardDemo.jpg'
-import LearnCoursesCardDificulty from './LearnCoursesCardDificulty.js'
+import LearnCoursesCardDifficulty from './LearnCoursesCardDifficulty.js'
 import DegradedNavLink from '../../components/DegradedNavLink.js'
-function LearnCourses() {
-
+function LearnCourses(props) {
+	const course = props.course;
+	console.log(props.course)
 	return (
 
 		<article id='learnCoursesCard'>
 			<img src={learnDemoImage} alt="learnCoursesCardDemo" />
-			<LearnCoursesCardDificulty />
-			<h3>¿Que es la tecnología bockchain?</h3>
-			<p>Aprende todo lo necesario para saber acerca de los nuevos términos en tecnología blockchain y ser un experto en la materia</p>
+			<LearnCoursesCardDifficulty  difficulty={course.difficulty}/>
+			<h3>{course.title}</h3>
+			<p>{course.description}</p>
 			<DegradedNavLink route="/learn/1" text="Mas información" backgroundColor="white" />
 		</article>
 
