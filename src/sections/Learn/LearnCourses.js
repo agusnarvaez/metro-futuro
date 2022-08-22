@@ -6,6 +6,10 @@ function LearnCourses() {
 
 		<section id='learnCourses'>
 			<LearnCoursesCard/>
+			<LearnCoursesCard/>
+			<LearnCoursesCard/>
+			<LearnCoursesCard/>
+			<LearnCoursesCard/>
 		</section>
 
 	)
