@@ -9,7 +9,8 @@ const investmentsList = [
       estimatedEarnings: "30%",
       contractExpiration: "30/06/25",
       area: "47.8",
-      areaValue: "$500"
+      areaValue: "$500",
+      status: "Active"
     },
     {
       id: 1,
