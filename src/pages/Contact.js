@@ -115,7 +115,7 @@ function Contact() {
             );
         
         if(validCaptcha&&validName&&validEmail&&validSubject&&validMessage){
-            emailjs.send('default_service', 'template_b1tdztw', contact, credentials.emailJs)
+            emailjs.send('service_sddwvre', 'template_b1tdztw', contact, credentials.emailJs)
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
                     alert("Mensaje enviado con éxito!");
