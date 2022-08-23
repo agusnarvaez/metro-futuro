@@ -4,7 +4,6 @@ import LearnCoursesCardDifficulty from './LearnCoursesCardDifficulty.js'
 import DegradedNavLink from '../../components/DegradedNavLink.js'
 function LearnCourses(props) {
 	const course = props.course;
-	console.log(props.course)
 	return (
 
 		<article id='learnCoursesCard'>
