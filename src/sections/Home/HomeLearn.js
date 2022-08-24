@@ -5,7 +5,7 @@ import learnWithUsBg from "../../assets/img/background/homeLearnWithUsBg.png";
 
 // Visor de videos de Youtube
 import ReactPlayer from "react-player";
-
+import DegradedLink from '../../components/DegradedLink';
 function HomeLearnWithUs() {
 
     return (
@@ -31,18 +31,8 @@ function HomeLearnWithUs() {
                         Te ofrecemos una plataforma eLearning online y gratuita para formarse en inversiones inmobiliarias y la tecnología Blockchain.<br /><br />
                         Únete a la academia de Metro Futuro para lograr capitalizar tus ahorros y transformarte en un inversor del Real Estate, la industria con mayor seguridad y menor riesgo.
                     </p>
-                    <div className="degradedLink" id="homeLearnWithUs_Link">
-                        <div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
-                            <a 
-                                className="degradedLink_Text"
-                                href='https://www.youtube.com/channel/UCmiKhrSZxmtVFlz7wt1dcKw'
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >
-                                Ver más
-                            </a>
-                        </div>
-                    </div>
+                    <DegradedLink route="https://www.youtube.com/channel/UCmiKhrSZxmtVFlz7wt1dcKw" id="homeLearnWithUs_Link" text="Ver más" backgroundColor="white"/>
+                    
                 </div>
             </section>
     )
