@@ -73,8 +73,8 @@
     border-bottom: 1px solid black;
 }
 .learnCoursePage_Nav li{
-    padding: 2% 1%;
-    font-size: 1.5em;
+    width: fit-content;
+    font-size: 1.3em;
     font-weight: 300;
     cursor: pointer;
  }
@@ -128,6 +128,11 @@
         width: 100vw;
         border-radius: 0;
     }
+    .learnCoursePage_Nav li{
+        font-size: 1.5em;
+        padding: 2% 1%;
+        
+     }
 }
 
 /*! ########################################*/
