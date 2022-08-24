@@ -16,14 +16,14 @@ const coursesList = [
 			title: "Como registrarse en Metro Futuro",
 			description: "Aprende cómo ingresar a la plataforma y registrarte para comenzar a invertir.",
 			type: "PDF",
-			url:""
+			url:"/assets/pdf/Registrarse_MF.pdf"
 		}]
 	},
 	{
 		id: 1,
 		title: '¿Que es la tecnología bockchain?',
 		cover: "/assets/images/learn/learnCoursesCardDemo.jpg",
-		description: 'Aprende todo lo necesario para saber acerca de los nuevos términos en tecnología blockchain y ser un experto en la materia',
+		description: 'Aprende todo lo necesario para saber acerca de los nuevos términos en tecnología blockchain y ser un experto en la materia.',
 		difficulty: 'Básico',
 		videos: [
 			/* {
@@ -32,6 +32,11 @@ const coursesList = [
 			} */
 		],
 		author: "Juan Porrazzo",
-		aditionalContents:[]
+		aditionalContents:[{
+			title: "¿Que es blockchain?",
+			description: "Aprende todo lo necesario para saber acerca de los nuevos términos en tecnología blockchain y ser un experto en la materia.",
+			type: "PDF",
+			url:"/assets/pdf/BlockChain_MF.pdf"
+		}]
 	}]
 export default coursesList;

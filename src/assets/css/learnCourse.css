@@ -14,7 +14,7 @@
 .learnCoursePage_Cover{
     width: 100%;
     height: fit-content;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     margin: 0;
 }
@@ -76,6 +76,7 @@
     padding: 2% 1%;
     font-size: 1.5em;
     font-weight: 300;
+    cursor: pointer;
  }
  .learnCoursePage_Nav .activeNav{
     font-weight: 600;
@@ -91,6 +92,23 @@
  .learnCoursePage_InfoVideos p{
     font-size: 1.5em;
  }
+
+
+ .learnCoursePage_InfoAditional{
+    display: flex;
+    justify-content: center;
+ }
+ .learnCoursesCard_Type{
+    font-weight: 300;
+    z-index: 10;
+    font-size: 1.7em;
+    padding: 1% 10%;
+    margin: 3% 0;
+    color: white;
+    
+    border-radius: 50rem;
+    background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
+ }
 /*! ########################################*/
 /*! ##### TABLETS & LARGER SMARTPHONES #####*/
 /*! ########################################*/
@@ -104,7 +122,12 @@
 /*! ########################################*/
 @media (min-width: 769px) {
 
-    
+    .learnCoursePage_Cover{
+        max-height: 60vh;
+        overflow: hidden;
+        width: 100vw;
+        border-radius: 0;
+    }
 }
 
 /*! ########################################*/

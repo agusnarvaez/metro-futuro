@@ -9,7 +9,7 @@ import LearnCourseInfo from "../sections/LearnCourse/LearnCourseInfo";
 function LearnCourse(props) {
 	const params = useParams();
     const coursesList= props.coursesList;
-    const course = coursesList[params.id-1];
+    const course = coursesList[params.id];
 	
 	
 	useEffect(() => {
