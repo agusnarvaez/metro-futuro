@@ -65,15 +65,15 @@ function Header() {
                     >
                         Inversiones</NavLink>
                 </li> */}
-                {/* <li>
+                <li>
                     <NavLink 
                         onClick={scrollToTop}
                         className={({ isActive }) => (isActive ? "navLink active" : "navLink")}
-                        to='/academy'
+                        to='/learn'
                     >
                         Aprende</NavLink>
-                </li> */}
-                
+                </li>
+                <div className="degradedSeparator degradedSeparator--header"></div>
                 <li>
                     <NavLink 
                         onClick={scrollToTop}
