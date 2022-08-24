@@ -1,5 +1,5 @@
 import React from 'react';
-import LearnCoursesCard from './LearnCoursesCard.js'
+import LearnCoursesCard from '../../components/Learn/LearnCoursesCard'
 function LearnCourses(props) {
 	const coursesList = props.coursesList
 	return (

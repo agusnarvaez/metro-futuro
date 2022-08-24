@@ -21,6 +21,7 @@
 .learnCoursePage_Cover div{
     position: absolute;
     bottom: -5%;
+    /* bottom: 0; */
     width: 100%;
     background: linear-gradient(180deg, rgba(251, 253, 255, 0) 7.61%, rgba(251, 253, 255, 0.12709) 16.22%, rgba(251, 253, 255, 0.253148) 22.67%, rgba(251, 253, 255, 0.392475) 29.2%, rgba(251, 253, 255, 0.705621) 47.48%, #FBFDFF 60.68%, #FBFDFF 87.2%);
 
@@ -37,7 +38,7 @@
 .learnCoursePage_Title{
     flex-direction: column;
     align-items: flex-start;
-    width: 95%;
+    width: 93%;
     height: fit-content;
     margin: 0;
     padding: 0;
@@ -45,6 +46,7 @@
 .learnCoursePage_Title h1{
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
     margin: 0;
     margin-bottom: 1rem;
 }
