@@ -58,7 +58,7 @@ export default function App() {
     },
     {
       component: <LearnCourse coursesList={coursesList} />,
-      path: "/learn/:id'"
+      path: "/learn/:id"
     },
     {
       component: <About />,
