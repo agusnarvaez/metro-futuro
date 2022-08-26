@@ -1,7 +1,9 @@
-import React from 'react';
+
+// COMPONENTS
 import HomeFaq from "../sections/Home/HomeFaq";
-import "../assets/css/faqPage.css";
-function Faq() {
+
+
+export default function Faq() {
 
     return (
 
@@ -10,4 +12,3 @@ function Faq() {
         </main>
     )
 }
-export default Faq;

@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from "react";
-import "../assets/css/investments.css";
+import { useEffect, useState } from "react";
+
+
+// images
 import investmentsTitleBg from "../assets/img/background/investmentsTitleBg.png";
 // import investmentsPageProjectsCover from "../assets/img/projects/nitaCover.png";
+
+// COMPONENTS
+
 import InvestmentCard from "../sections/Investments/InvestmentCard";
 // import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";
 // import investmentsFilterHomeIcon from "../assets/img/icons/investmentsFilterHomeIcon.png"
 
-function Investments(props) {
+export default function Investments(props) {
     const investmentsList= props.investmentsList;
     const [investmentsCards,setInvestmentsCards]=useState([]);
     const [listClass,setListClass]=useState("");
@@ -89,5 +94,3 @@ function Investments(props) {
         </main>
     )
 }
-
-export default Investments;

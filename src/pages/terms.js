@@ -1,6 +1,5 @@
-import React from 'react';
-
-function Terms() {
+// ### PÁGINA DE TÉRMINOS Y CONDICIONES ###
+export default function Terms() {
 
     return (
 
@@ -9,4 +8,3 @@ function Terms() {
         </main>
     )
 }
-export default Terms;

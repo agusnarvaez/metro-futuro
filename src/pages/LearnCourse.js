@@ -1,19 +1,24 @@
-import React, {useEffect} from "react";
+import {useEffect} from "react";
 import {useParams} from "react-router-dom";
-import "../assets/css/learnCourse.css";
 
-// Importo secciones
+
+// SECTIONS 
 import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover";
 import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle";
 import LearnCourseInfo from "../sections/LearnCourse/LearnCourseInfo";
-function LearnCourse(props) {
+
+
+export default function LearnCourse(props) {
+
 	const params = useParams();
+
     const coursesList= props.coursesList;
+
     const course = coursesList[params.id];
-	
 	
 	useEffect(() => {
     }, [params]);
+
 	return (
 		<main className='learnCoursePage'>
 			<LearnCourseCover course={course}/>
@@ -24,4 +29,3 @@ function LearnCourse(props) {
 		</main>
 	)
 }
-export default LearnCourse;

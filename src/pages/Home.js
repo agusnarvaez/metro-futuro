@@ -1,9 +1,9 @@
 // ###### VISTA DE HOME ####
-// Importo React
-import React, {/* useState, */ useRef/* , useEffect */} from "react";
 
-// > Hoja de estilo
-import "../assets/css/home.css";
+
+// MÉTODOS DE REACT
+import { useRef } from "react";
+
 
 /** ### Import de componentes ### **/
 import HomeAbout from "../sections/Home/HomeAbout";
@@ -18,8 +18,8 @@ import HomeFaq from "../sections/Home/HomeFaq";
 
 
 
-function Home(props) {
-    const principalInvestment = props.investmentsList[0];
+export default function Home({investmentsList}) {
+    const principalInvestment = investmentsList[0];
     
     const sloganRef = useRef();
     /* const [scrollTransition,setScrollTransition]=useState('scrollInitial');
@@ -68,4 +68,3 @@ function Home(props) {
         </main>
     )
 }
-export default Home;
