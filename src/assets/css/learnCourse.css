@@ -82,11 +82,80 @@
     font-weight: 600;
     color: black;
     border-bottom: 3px solid black;
- }.learnCoursePage_InfoContainer{
+
+ }
+ .learnCoursePage_InfoContainer{
     width: 95%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
  .learnCoursePage_InfoDescription{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 1.5em;
+ }
+ .learnCoursePage_InfoDescription h1{
+    width: 100%;
+    text-align: start;
+    font-weight: 600;
+    font-size: 2em;
+ }
+ .learnCoursePage_InfoDescriptionResume{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    margin: 2% 0;
+    align-items: center;
+ }
+ .learnCoursePage_InfoDescriptionResume .learnCoursesCard_Difficulty{
+    font-size: 1em;
+    padding: 0.3% 3%;
+    margin: 0 5% 0% 0;
+    align-self: flex-start;
+
+
+ }
+ .learnCoursePage_InfoDescriptionResume p{
+    padding: 0 1% 0 0;
+    margin: 0;
+    color: gray;
+    font-size: 1.5em;
+    font-weight: 300;
+ }
+ .learnCoursePage_InfoDescriptionResume img{
+    width: 20px;
+    margin: 0 0 0 2%;
+ }
+ .learnCoursePage_InfoDescriptionCard{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+ }
+ .learnCoursePage_InfoDescriptionCard h2{
+    width: 100%;
+    height: fit-content;
+    padding: 2% 0 2% 0;
+    font-size: 2.3em;
+ }
+ .learnCoursePage_InfoDescriptionCard p{
+    width: 100%;
+    font-size: 1.7em;
+    text-align: justify;
+ }
+ .learnCoursePage_InfoDescriptionCard img{
+    max-width: 95%;
+    max-height: 50vh
  }
 
  .learnCoursePage_InfoVideos p{
@@ -132,6 +201,11 @@
         font-size: 1.5em;
         padding: 2% 1%;
         
+     }
+
+     .learnCoursePage_InfoDescriptionCard img{
+        max-width: 95%;
+        max-height: 70vh
      }
 }
 

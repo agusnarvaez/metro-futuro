@@ -1,12 +1,20 @@
 
-function LearnCourseInfoDescription(props) {
-	const course = props.course;
+
+/* import coursesList from '../../data/coursesList'; */
+import LearnCourseInfoDescriptionCard from './LearnCourseInfoDescriptionCard';
+import LearnCourseInfoDescriptionResume from './LearnCourseInfoDescriptionResume';
+
+export default function LearnCourseInfoDescription({content,course}) {
 	
-	console.log(course)
 	return (
 		<div className="learnCoursePage_InfoDescription">
-			{course.description}
+			<h1>{course.title}</h1>
+			
+			<LearnCourseInfoDescriptionResume course={course} />
+			
+			{content.map((item,key) => {
+				return <LearnCourseInfoDescriptionCard key={key} content={item} />
+			})}
 		</div>	
 	)
 }
-export default LearnCourseInfoDescription;

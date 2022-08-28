@@ -1,19 +1,19 @@
-
+// COMPONENTS
 import LearnCourseInfoDescription from "./LearnCourseInfoDescription";
 import LearnCourseInfoVideos from "./LearnCourseInfoVideos";
 import LearnCourseInfoAditional from "./LearnCourseInfoAditional";
-function LearnCourseInfoContainer(props) {
-	const course = props.course;
+
+export default function LearnCourseInfoContainer({infoIndex,course}) {
+	
 	const infoContent = [
-			<LearnCourseInfoDescription course={course}/>,
+			<LearnCourseInfoDescription content={course.content} course={course}/>,
 			<LearnCourseInfoVideos course={course}/>,
 			<LearnCourseInfoAditional course={course}/>
 		]
 
 	return (
 		<div className="learnCoursePage_InfoContainer">
-			{infoContent[props.infoIndex]}
+			{infoContent[infoIndex]}
 		</div>
 	)
 }
-export default LearnCourseInfoContainer;
