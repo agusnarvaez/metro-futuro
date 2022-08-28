@@ -13,7 +13,6 @@ import "./assets/css/learnCourse.css";
 import "./assets/css/about.css";
 import "./assets/css/contact.css";
 import "./assets/css/faqPage.css";
-
 import "./assets/css/footer.css";
 
 //*TODO:INVESTMENTS
@@ -85,7 +84,7 @@ export default function App() {
 
       <Routes>
 
-        {routesList.map((route, index) => { return (<Route path={route.path} element={route.component} />)})}
+        {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
        
       </Routes>
 

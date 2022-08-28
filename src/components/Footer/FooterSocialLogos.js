@@ -33,9 +33,10 @@ export default function FooterSocialLogos() {
 		<div className='footerSocials'>
 			{
 				socialLogos.map(
-					(socialLogo)=> {
+					(socialLogo,key)=> {
 						return(
 							<a 
+								key={key}
 								target="_blank"
 								href={socialLogo.href}
 								rel="noreferrer"

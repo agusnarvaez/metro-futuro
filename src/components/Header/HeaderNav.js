@@ -27,11 +27,9 @@ export default function HeaderNav({burgerMenu}) {
     return (
         
             <ul className={burgerMenu?"navigation hiddenMenu":"navigation"} >
-                {links.map((link, index) => {
+                {links.map((link, key) => {
                     return(
-                        <>
-                            <HeaderNavLink link={link} index={index}/>
-                        </>
+                        <HeaderNavLink link={link} key={key} index={key}/>
                 )})}
             </ul>
     )

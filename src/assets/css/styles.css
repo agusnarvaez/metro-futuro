@@ -64,6 +64,9 @@ section{
 li{
     list-style: none;
 }
+.hidden{
+    display: none !important;
+}
 
 /** PRUEBA SCROLL **/
 
@@ -81,6 +84,8 @@ li{
 }
 
 /*! Prueba scroll*/
+
+
 
 /** ### INFORMACIÓN DE LA SECCIÓN ### */
 .sectionInfo{
