@@ -21,7 +21,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // Importo lista de proyectos
 import investmentsList from './data/investmentsList.js';
 import coursesList from "./data/coursesList";
-function App() {
+
+export default function App() {
 
   return (
     <BrowserRouter>
@@ -41,5 +42,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
