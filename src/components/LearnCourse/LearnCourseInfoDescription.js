@@ -3,7 +3,7 @@
 /* import coursesList from '../../data/coursesList'; */
 import LearnCourseInfoDescriptionCard from './LearnCourseInfoDescriptionCard';
 import LearnCourseInfoDescriptionResume from './LearnCourseInfoDescriptionResume';
-
+import DegradedNavLink from "./../DegradedNavLink";
 export default function LearnCourseInfoDescription({content,course}) {
 	
 	return (
@@ -14,6 +14,7 @@ export default function LearnCourseInfoDescription({content,course}) {
 			{content.map((item,key) => {
 				return <LearnCourseInfoDescriptionCard key={key} content={item} />
 			})}
+			<DegradedNavLink route="/learn/courses" text="Más artículos" backgroundColor="white" />
 		</div>	
 	)
 }
