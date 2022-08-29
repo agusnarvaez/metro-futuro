@@ -67,12 +67,10 @@
 
 .learnCoursesCard_Difficulty{
     font-weight: 300;
-    
     font-size: 1.7em;
     padding: 1% 10%;
     margin: 3% 0;
     color: white;
-    
     border-radius: 50rem;
     
 }
@@ -84,7 +82,7 @@
 }
 
 #learnCoursesCard h3{
-    width: 100%;
+    width: 95%;
     text-align: center;
     font-size: 2em;
     font-weight: 600;

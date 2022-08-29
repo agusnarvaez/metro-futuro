@@ -1,15 +1,16 @@
 // Importo React
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
+
 // Importo useParams para obtener los parametros de la url
 import {useParams} from "react-router-dom";
 
 // Hoja de estilos
-import "../assets/css/investmentDetail.css"
+
 
 // Mapa de google
 import Map from "../components/Map";
 
-function InvestmentDetail(props) {
+export default function InvestmentDetail(props) {
     const params = useParams();
     const investmentsList= props.investmentsList;
     const investment = investmentsList[params.id];
@@ -51,5 +52,3 @@ function InvestmentDetail(props) {
         </main>
     )
 }
-
-export default InvestmentDetail;

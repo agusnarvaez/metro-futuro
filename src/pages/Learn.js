@@ -1,8 +1,11 @@
-import React from 'react';
-import "../assets/css/learn.css"
+// ### SECCIÓN APRENDE ###
+
+// COMPONENTS
 import LearnSlogan from"../sections/Learn/LearnSlogan.js"
 import LearnCourses from '../sections/Learn/LearnCourses.js'
-function Learn(props) {
+
+
+export default function Learn(props) {
 	const coursesList = props.coursesList;
 	return (
 		<main className='learnPage'>
@@ -13,4 +16,3 @@ function Learn(props) {
 		</main>
 	)
 }
-export default Learn;

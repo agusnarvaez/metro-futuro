@@ -1,17 +1,17 @@
 // Importo React
-import React, { useState,useRef } from "react";
-// Hoja de estilos
-import "../assets/css/contact.css";
+import { useState,useRef } from "react";
+
 // Fondo de pantalla
 import contactPageBg from "../assets/img/background/contactPageBg.png";
 
 // API de Emails
 import emailjs from 'emailjs-com';
+
 // Captcha
 import ReCAPTCHA from "react-google-recaptcha";
 import credentials from "../credentials";
 
-function Contact() {
+export default function Contact() {
     // Clases para los inputs del formulario
     const [nameContainer,setNameContainer]= useState("inputContainer");
     const [emailContainer,setEmailContainer]= useState("inputContainer");
@@ -34,15 +34,14 @@ function Contact() {
     const [contact, setContact] = useState(frmContact);
     const [showMessage, setShowMessage] = useState(false);
     const [validName,setValidName]= useState(false);
-    //const [nameError,setNameError]=useState("");
     const [validEmail,setValidEmail]= useState(false);
-    //const [emailError,setEmailError]=useState("");
+    
     const [validSubject,setValidSubject]= useState(false);
-    //const [subjectError,setSubjectError]=useState("");
+    
     const [validMessage,setValidMessage]= useState(false);
-    //const [messageError,setMessageError]=useState("");
+    
     const [errors,setErrors]=useState([]);
-    /* setErrors([nameError,emailError,subjectError,messageError]); */
+    
     const handleChange = e => {
         const { name, value } = e.target;
         setContact({ ...contact, [name]: value });
@@ -112,7 +111,7 @@ function Contact() {
                 <p className={validMessage?"errorHidden":"errorShown"}>Ingrese un mensaje</p>
                 <p className={validCaptcha?"errorHidden":"errorShown"}>Por favor, verifique que no es un robot</p>
             </div>
-            );
+        );
         
         if(validCaptcha&&validName&&validEmail&&validSubject&&validMessage){
             emailjs.send('service_sddwvre', 'template_b1tdztw', contact, credentials.emailJs)
@@ -251,5 +250,3 @@ function Contact() {
         </main >
     )
 }
-
-export default Contact;

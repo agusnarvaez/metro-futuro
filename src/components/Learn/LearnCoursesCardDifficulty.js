@@ -1,13 +1,11 @@
-import React from 'react';
 
-function LearnCoursesCardDificulty(props) {
+export default function LearnCoursesCardDifficulty({difficulty}) {
 
 	return (
 
-		<div className={`learnCoursesCard_Difficulty learnCoursesCard_Difficulty--${props.difficulty}`}>
-			{props.difficulty}
+		<div className={`learnCoursesCard_Difficulty learnCoursesCard_Difficulty--${difficulty}`}>
+			{difficulty}
 		</div>
 
 	)
 }
-export default LearnCoursesCardDificulty;

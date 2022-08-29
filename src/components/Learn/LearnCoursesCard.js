@@ -12,7 +12,7 @@ function LearnCourses(props) {
 			<img src={learnDemoImage} alt="learnCoursesCardDemo" />
 			<LearnCoursesCardDifficulty  difficulty={course.difficulty}/>
 			<h3>{course.title}</h3>
-			<p>{course.description}</p>
+			<p>{course.shortDescription}</p>
 			<DegradedNavLink route={`/learn/${course.id}`} text="Mas información" backgroundColor="white" />
 		</article>
 

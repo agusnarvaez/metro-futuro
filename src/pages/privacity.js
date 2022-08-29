@@ -1,6 +1,6 @@
-import React from 'react';
+// ### PÁGINA DE POLÍTICAS DE PRIVACIDAD ###
 
-function Privacity() {
+export default function Privacity() {
 
     return (
 
@@ -9,4 +9,3 @@ function Privacity() {
         </main>
     )
 }
-export default Privacity;
