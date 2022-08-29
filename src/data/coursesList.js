@@ -13,7 +13,7 @@ const coursesList = [
 				title:"",
 				subTitle:"",
 				link:"metro-futuro.com",
-				text:`{self.link}Metro Futuro es una plataforma de inversión de inmuebles tokenizados en Europa. Por medio de la tecnología blockchain y los contratos inteligentes puedes comprar de a metros cuadrados en propiedades que generan renta en España.`,
+				text:`<a href="http://metro-futuro.com" target="_blank" >Metro Futuro</a> es una plataforma de inversión de inmuebles tokenizados en Europa. Por medio de la tecnología blockchain y los contratos inteligentes puedes comprar de a metros cuadrados en propiedades que generan renta en España.`,
 				image:"",
 				youTubeVideo:""
 			},
