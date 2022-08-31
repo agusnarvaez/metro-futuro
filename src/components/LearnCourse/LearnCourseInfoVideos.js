@@ -1,27 +1,27 @@
 import {useState,useEffect} from 'react'
 import LearnCourseInfoVideoCard from "./LearnCourseInfoVideoCard";
-function LearnCourseInfoVideos(props){
-	const course = props.course;
+
+export default function LearnCourseInfoVideos({item}){
 	
-	const [courseVideos,setCourseVideos]=useState([])
+	
+	const [videos,setVideos]=useState([])
 	
 	useEffect(() => {
-		if(course.videos.length===0){
-			setCourseVideos(<p>Aún no se encuentran videos disponibles</p>)
+		if(item.videos.length===0){
+			setVideos(<p>Aún no se encuentran videos disponibles</p>)
 		}else{
-			setCourseVideos(course.videos.map((video)=>{ 
+			setVideos(item.videos.map((video)=>{ 
 				return(
 					<LearnCourseInfoVideoCard video={video}/>
 				)})
 			)
 		}
 		
-	},[course.videos])
+	},[item.videos])
 
 	return (
 		<div className="learnCoursePage_InfoVideos">
-			{courseVideos}
+			{videos}
 		</div>	
 	)
 }
-export default LearnCourseInfoVideos;

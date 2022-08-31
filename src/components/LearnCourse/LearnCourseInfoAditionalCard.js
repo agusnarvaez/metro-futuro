@@ -1,9 +1,12 @@
-import React from 'react';
+
 import learnDemoImage from '../../assets/img/learn/learnCoursesCardDemo.jpg'
+
+//* Components
 import LearnCourseInfoAditionalType from './LearnCourseInfoAditionalType'
 import DegradedLink from '../DegradedLink.js'
-function LearnCourseInfoAditionalCard(props) {
-	const aditional = props.aditionalContent;
+
+export default function LearnCourseInfoAditionalCard({aditional}) {
+	
 	return (
 
 		<article id='learnCoursesCard'>
@@ -16,4 +19,3 @@ function LearnCourseInfoAditionalCard(props) {
 
 	)
 }
-export default LearnCourseInfoAditionalCard;

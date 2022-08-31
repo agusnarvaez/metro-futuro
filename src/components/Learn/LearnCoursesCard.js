@@ -1,21 +1,25 @@
-import React from 'react';
-import learnDemoImage from '../../assets/img/learn/learnCoursesCardDemo.jpg'
+
+/* import learnDemoImage from '../../assets/img/learn/learnCoursesCardDemo.jpg' */
 import LearnCoursesCardDifficulty from './LearnCoursesCardDifficulty.js'
 import DegradedNavLink from '../../components/DegradedNavLink.js'
 
-function LearnCourses(props) {
-	const course = props.course;
-	console.log(props.key)
+export default function LearnCourses({item,url}) {
+	
 	return (
 
 		<article id='learnCoursesCard'>
-			<img src={learnDemoImage} alt="learnCoursesCardDemo" />
-			<LearnCoursesCardDifficulty  difficulty={course.difficulty}/>
-			<h3>{course.title}</h3>
-			<p>{course.shortDescription}</p>
-			<DegradedNavLink route={`/learn/${course.id}`} text="Mas información" backgroundColor="white" />
+
+			<img src={item.cover} alt="learnCoursesCardDemo" />
+
+			<LearnCoursesCardDifficulty  difficulty={item.difficulty}/>
+
+			<h3>{item.title}</h3>
+
+			<p>{item.shortDescription}</p>
+
+			<DegradedNavLink route={`/learn/${url+item.id}`} text="Mas información" backgroundColor="white" />
+
 		</article>
 
 	)
 }
-export default LearnCourses;

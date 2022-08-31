@@ -3,12 +3,12 @@ import LearnCourseInfoDescription from "./LearnCourseInfoDescription";
 import LearnCourseInfoVideos from "./LearnCourseInfoVideos";
 import LearnCourseInfoAditional from "./LearnCourseInfoAditional";
 
-export default function LearnCourseInfoContainer({infoIndex,course}) {
+export default function LearnCourseInfoContainer({infoIndex,item,url,type}) {
 	
 	const infoContent = [
-			<LearnCourseInfoDescription content={course.content} course={course}/>,
-			<LearnCourseInfoVideos course={course}/>,
-			<LearnCourseInfoAditional course={course}/>
+			<LearnCourseInfoDescription content={item.content} item={item} url={url} type={type}/>,
+			<LearnCourseInfoVideos item={item}/>,
+			<LearnCourseInfoAditional item={item}/>
 		]
 
 	return (

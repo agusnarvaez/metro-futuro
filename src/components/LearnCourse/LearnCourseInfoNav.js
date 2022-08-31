@@ -1,5 +1,4 @@
-
-function LearnCourseInfoNav({infoIndex,setInfoIndex}/* handleClick */) {
+export default function LearnCourseInfoNav({infoIndex,setInfoIndex}/* handleClick */) {
 
 	const navItems = ["Descripción","Videos","Contenido Adicional"]
 
@@ -17,4 +16,3 @@ function LearnCourseInfoNav({infoIndex,setInfoIndex}/* handleClick */) {
 		</ul>
 	)
 }
-export default LearnCourseInfoNav;

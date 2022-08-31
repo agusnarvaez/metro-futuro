@@ -1,7 +1,7 @@
 const coursesList = {
-	title: "Aprende",
-	type: "curso",
-	url:"courses/",
+	title: "Infórmate",
+	type: "artículo",
+	url:"blog/",
 	list: [
 	{
 		id: 0,
@@ -11,7 +11,7 @@ const coursesList = {
 		published: "Aug 23, 2022",
 		updated: "Aug 27, 2022",
 		lectureTime: "5m",
-		difficulty: 'Básico',
+		author: "Juan Porrazzo",
 		content: [
 			{
 				title:"",
@@ -105,21 +105,7 @@ const coursesList = {
 				image:"",
 				youTubeVideo:""
 			}
-		],
-		
-		videos: [
-			/* {
-				title: "Curso 1: Introducción a la plataforma",
-				video: ""
-			} */
-		],
-		author: "Juan Porrazzo",
-		aditionalContents:[{
-			title: "Como registrarse en Metro Futuro",
-			shortDescription: "Aprende cómo ingresar a la plataforma y registrarte para comenzar a invertir.",
-			type: "PDF",
-			url:"/assets/pdf/Registrarse_MF.pdf"
-		}]
+		]
 	},
 	{
 		id: 1,
@@ -129,21 +115,25 @@ const coursesList = {
 		published: "Aug 23, 2022",
 		updated: "Aug 27, 2022",
 		lectureTime: "5m",
+		author: "Juan Porrazzo",
 		content: [			
 			{
-				title:"¿Qué es la tecnología blockchain o Web 3.0?",
+				title:"",
+				subTitle:"",
 				text:'En pocas palabras, una blockchain es una red de cadenas de bloques o un listado de registros de datos que funciona de modo descentralizado.',
 				image:"",
 				youTubeVideo:""
 			},
 			{
 				title:"",
+				subTitle:"",
 				text:'Comencemos con una analogía con el internet que conocemos hoy. Internet es un conjunto de redes de comunicación interconectadas que nos permite transferir datos o información. La transmisión de estos datos se hace de manera centralizada.  Por ejemplo, al enviar un email primero lo recibe la empresa de nuestro correo y luego lo envía al receptor.',
 				image:"/assets/images/learn/envio-mial-receptor.jpg",
 				youTubeVideo:""
 			},
 			{
 				title:"",
+				subTitle:"",
 				text:'En cambio la red blockchain, es una red descentralizada porque no existe un actor central ocupado de intermediar la información que se transfiere en la red.',
 				image:"",
 				youTubeVideo:""
@@ -151,66 +141,60 @@ const coursesList = {
 			
 			{
 				title:"¿Como funciona?",
+				subTitle:"",
 				text:'Una red blockchain se compone por un montón de ordenadores o computadoras distribuidas por todo el mundo, que sirven para almacenar la información transaccionada, y son llamadas nodos.',
 				image:"",
 				youTubeVideo:""
 			},
 			{
 				title:"¿Qué ocurre al transaccionar un dato en la Web 3.0?",
+				subTitle:"",
 				text:'Cuando un dato es transmitido en una red blockchain de un emisor a un receptor, se almacena en un bloque hasta completar el espacio de dicho bloque.',
 				image:"/assets/images/learn/Bloque.jpg",
 				youTubeVideo:""
 			},
 			{
 				title:"",
+				subTitle:"",
 				text:'Luego se genera un nuevo bloque, que se encuentra vinculado con el anterior, es por eso que es llamada una cadena de bloques. ',
 				image:"",
 				youTubeVideo:""
 			},
 			{
 				title:"",
+				subTitle:"",
 				text:'Los nodos (computadoras) distribuidos por todo el mundo realizan una copia idéntica de cada uno de estos bloques. De esta manera, no es necesario contar con un actor central que se encargue de verificar la información, porque al ser verificada en simultáneo por muchas partes distribuidas se logra mayor efectividad.',
 				image:"/assets/images/learn/Nodos.jpg",
 				youTubeVideo:""
 			},
 			{
 				title:"",
+				subTitle:"",
 				text:'Por ejemplo, si alguien quisiera alterar la información de una transacción debe hacerlo en cada uno de los nodos y modificar toda la información almacenada en la cadena de bloques, algo extremadamente difícil.',
 				image:"",
 				youTubeVideo:""
 			},
 			{
 				title:"¿Qué beneficios trajo la web 3.0?",
+				subTitle:"",
 				text:'Al poder transmitir un dato de manera descentralizada se logró el valor de unicidad en una red. Es decir, ese dato es único e irrepetible y no existe un actor central capaz de manipularlo.',
 				image:"",
 				youTubeVideo:""
 			},
 			{
 				title:"",
+				subTitle:"",
 				text:'De aquí surge su aplicación en activos, si podemos transmitir un valor único de una forma extremadamente segura, es posible realizar una réplica digital de un activo de la economía real y transferirlo mediante una red con alcance mundial, lo que llamamos tokens.',
 				image:"",
 				youTubeVideo:""
 			},
 			{
 				title:"",
+				subTitle:"",
 				text:'Este descubrimiento dio inicio a la nueva economía tokenizada donde cualquier activo como una moneda, un inmueble, una obra de arte o un grano de soja puede ser representado digitalmente y por lo tanto fraccionado en pequeñas partes para que muchas personas puedan participar de sus beneficios, esta práctica es llamada tokenización de activos.',
 				image:"",
 				youTubeVideo:""
 			}
-		],
-		difficulty: 'Básico',
-		videos: [
-			/* {
-				title: "Curso 1: Introducción a Blockchain",
-				video: ""
-			} */
-		],
-		author: "Juan Porrazzo",
-		aditionalContents:[{
-			title: "¿Que es blockchain?",
-			shortDescription: "Aprende todo lo necesario para saber acerca de los nuevos términos en tecnología blockchain y ser un experto en la materia.",
-			type: "PDF",
-			url:"/assets/pdf/BlockChain_MF.pdf"
-		}]
+		]
 	}]}
 export default coursesList;

@@ -1,8 +1,4 @@
-
-
-function LearnCourseInfoVideoCard(props){
-	const video = props.video;
-	
+export default function LearnCourseInfoVideoCard({video}){
 
 	return (
 		<div className="learnCoursePage_InfoVideoCard">
@@ -10,4 +6,3 @@ function LearnCourseInfoVideoCard(props){
 		</div>	
 	)
 }
-export default LearnCourseInfoVideoCard;

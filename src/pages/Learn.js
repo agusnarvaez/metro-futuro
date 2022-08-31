@@ -1,18 +1,24 @@
-// ### SECCIÓN APRENDE ###
+//* ### SECCIÓN APRENDE ###
 
-// COMPONENTS
+
+
+//* COMPONENTS
 import LearnSlogan from"../sections/Learn/LearnSlogan.js"
 import LearnCourses from '../sections/Learn/LearnCourses.js'
 
 
-export default function Learn(props) {
-	const coursesList = props.coursesList;
+export default function Learn({list}) {
+	console.log(list);
+	const text = list.title;
+	
+
 	return (
 		<main className='learnPage'>
 
-			<LearnSlogan />
+			<LearnSlogan text={text} />
 
-			<LearnCourses coursesList={coursesList} />
+			<LearnCourses list={list.list} url={list.url} />
+
 		</main>
 	)
 }

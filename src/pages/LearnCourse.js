@@ -8,24 +8,25 @@ import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle";
 import LearnCourseInfo from "../sections/LearnCourse/LearnCourseInfo";
 
 
-export default function LearnCourse(props) {
-
+export default function LearnCourse({list}) {
+	// Capturo los parámetros de la URL
 	const params = useParams();
 
-    const coursesList= props.coursesList;
-
-    const course = coursesList[params.id];
+	// Selecciono el ítem según la URL
+    const item = list.list[params.id];
+	
 	
 	useEffect(() => {
+
     }, [params]);
 
 	return (
 		<main className='learnCoursePage'>
-			<LearnCourseCover course={course}/>
+			<LearnCourseCover item={item}/>
 			
-			<LearnCourseTitle course={course}/>
+			<LearnCourseTitle item={item}/>
 			
-			<LearnCourseInfo course={course}/>
+			<LearnCourseInfo item={item} type={list.type} url={list.url}/>
 		</main>
 	)
 }

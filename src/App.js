@@ -42,7 +42,7 @@ import InvestmentDetail from "./pages/InvestmentDetail";
 //* DATA
 import investmentsList from './data/investmentsList.js';
 import coursesList from "./data/coursesList";
-
+import blogArticles from "./data/blogArticles"
 
 
 export default function App() {
@@ -53,12 +53,20 @@ export default function App() {
       path: "/"
     },
     {
-      component: <Learn coursesList={coursesList} />,
-      path: "/learn"
+      component: <Learn list={coursesList} />,
+      path: "/learn/courses"
     },
     {
-      component: <LearnCourse coursesList={coursesList} />,
-      path: "/learn/:id"
+      component: <LearnCourse list={coursesList} />,
+      path: "/learn/courses/:id"
+    },
+    {
+      component: <Learn list={blogArticles} />,
+      path: "/learn/blog"
+    },
+    {
+      component: <LearnCourse list={blogArticles} />,
+      path: "/learn/blog/:id"
     },
     {
       component: <About />,

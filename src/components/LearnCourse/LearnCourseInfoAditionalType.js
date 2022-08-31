@@ -1,6 +1,4 @@
-import React from 'react';
-
-function LearnCoursesCardDificulty(props) {
+export default function LearnCoursesCardDificulty(props) {
 
 	return (
 
@@ -10,4 +8,3 @@ function LearnCoursesCardDificulty(props) {
 
 	)
 }
-export default LearnCoursesCardDificulty;

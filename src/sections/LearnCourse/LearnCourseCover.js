@@ -1,14 +1,13 @@
 
 
-function LearnCourseCover(props) {
-	const course = props.course
+export default function LearnCourseCover({item}) {
+	
 	return (
 
 		<section className="learnCoursePage_Cover">
-				<img src={course.cover} alt={course.title} className='learnCourseCover'/>
+				<img src={item.cover} alt={item.title} className='learnCourseCover'/>
 				<div></div>
 		</section>
 
 	)
 }
-export default LearnCourseCover;

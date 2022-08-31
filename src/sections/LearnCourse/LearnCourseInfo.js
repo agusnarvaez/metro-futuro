@@ -1,28 +1,25 @@
 import {useState, useEffect} from 'react'
+
 // Importo componentes
 import LearnCourseInfoNav from '../../components/LearnCourse/LearnCourseInfoNav'
 import LearnCourseInfoContainer from '../../components/LearnCourse/LearnCourseInfoContainer'
 
 
-function LearnCourseInfo(props) {
-	const course = props.course
+export default function LearnCourseInfo({item,type,url}) {
+	
 	const [infoIndex,setInfoIndex]=useState(0)
 	
 	useEffect(() => {
-
-/* 		console.log(infoIndex) */
 
 	},[infoIndex])
 	return (
 
 		<section className="learnCoursePage_Info">
-
-				<LearnCourseInfoNav infoIndex={infoIndex} setInfoIndex={setInfoIndex}/>
+				{type==="curso"?<LearnCourseInfoNav infoIndex={infoIndex} setInfoIndex={setInfoIndex}/>:""}
 				
-				<LearnCourseInfoContainer infoIndex={infoIndex} course={course} />
+				<LearnCourseInfoContainer infoIndex={infoIndex} item={item} url={url} type={type}/>
 				
 		</section>
 
 	)
 }
-export default LearnCourseInfo;

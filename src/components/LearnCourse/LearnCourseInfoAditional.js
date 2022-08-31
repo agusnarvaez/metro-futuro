@@ -1,23 +1,23 @@
 import {useState,useEffect} from 'react'
 import LearnCourseInfoAditionalCard from './LearnCourseInfoAditionalCard'
 
-function LearnCourseInfoAditional(props){
-	const course = props.course;
+export default function LearnCourseInfoAditional({item}){
+	
 	
 	const [courseAditionalContent,setCourseAditionalContent]=useState([])
 	
 	useEffect(() => {
-		if(course.aditionalContents.length===0){
+		if(item.aditionalContents.length===0){
 			setCourseAditionalContent(<p>Aún no se encuentra contenido adicional</p>)
 		}else{
-			setCourseAditionalContent(course.aditionalContents.map((content,key)=>{ 
+			setCourseAditionalContent(item.aditionalContents.map((content,key)=>{ 
 				return(
 					<LearnCourseInfoAditionalCard aditionalContent={content} key={key}/>
 				)}))
 			
 		}
 		
-	},[course.aditionalContents])
+	},[item.aditionalContents])
 
 	return (
 		<div className="learnCoursePage_InfoAditional">
@@ -25,4 +25,3 @@ function LearnCourseInfoAditional(props){
 		</div>	
 	)
 }
-export default LearnCourseInfoAditional;

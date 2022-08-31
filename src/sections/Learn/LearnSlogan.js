@@ -1,16 +1,16 @@
-import React from 'react';
+
 import background from '../../assets/img/background/learnSloganBg.svg'
-function LearnSlogan() {
+
+export default function LearnSlogan({text}) {
 
 	return (
 
 		<section id='learnSlogan'>
 			
-            <h2>Aprende con <font color="#004DFF">Metro Futuro</font></h2>
+            <h2>{text} con <font color="#004DFF">Metro Futuro</font></h2>
 
 			<img src={background} alt='background' className='sectionBackground' id="learnSloganBackground" />
 		</section>
 
 	)
 }
-export default LearnSlogan;

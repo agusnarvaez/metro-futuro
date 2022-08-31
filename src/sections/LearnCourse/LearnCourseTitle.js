@@ -1,14 +1,13 @@
 
 
-function LearnCourseTitle(props) {
-	const course = props.course
+export default function LearnCourseTitle({item,type}) {
+	
 	return (
 
 		<section className="learnCoursePage_Title">
-				<h1>{course.title}</h1>
-				<p>Un curso de <b>{course.author}</b></p>
+				<h1>{item.title}</h1>
+				<p>Un {type} de <b>{item.author}</b></p>
 		</section>
 
 	)
 }
-export default LearnCourseTitle;

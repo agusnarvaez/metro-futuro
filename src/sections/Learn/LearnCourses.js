@@ -1,11 +1,12 @@
 import React from 'react';
 import LearnCoursesCard from '../../components/Learn/LearnCoursesCard'
-function LearnCourses(props) {
-	const coursesList = props.coursesList
+function LearnCourses({list,url}) {
+
+	
 	return (
 
 		<section id='learnCourses'>
-			{coursesList.map((course) => {return <LearnCoursesCard key={course.id} course={course} />})}
+			{list.map((item,key) => {return <LearnCoursesCard key={key} item={item} url={url}/>})}
 		</section>
 
 	)
