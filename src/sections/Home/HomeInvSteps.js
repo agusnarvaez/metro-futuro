@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 
 // Componentes
@@ -14,7 +14,7 @@ import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.png"
 // Info Carrousel
 import carrouselInfo from "../../data/homeCarrouselInfo";
 
-function HomeInvestmentSteps() {
+export default function HomeInvestmentSteps() {
     
     const [carrousel, setCarrousel] = useState(true);
     const scrollToTop = () =>{
@@ -85,4 +85,3 @@ function HomeInvestmentSteps() {
             </section>
     )
 }
-export default HomeInvestmentSteps;

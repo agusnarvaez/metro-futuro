@@ -1,5 +1,5 @@
 // Importo React
-import React, { useState } from "react";
+import { useState } from "react";
 
 // Componentes
 import FAQCard from "./FAQCard";
@@ -8,7 +8,7 @@ import FAQCard from "./FAQCard";
 
 import completeFaqList from "../../data/faqList";
 
-function HiddenFAQ() {
+export default function HiddenFAQ() {
 
     // Controladores de cruces para mostrar info (+)
     const [homeFaqHidden,setHomeFaqHidden]= useState(true);
@@ -19,9 +19,9 @@ return (
 
     <div className="hiddenFaqs">
         <ul className={homeFaqHidden?"faqList faqList--collapsed":"faqList"}>
-            {faqList.map((faq,key) =>{
+            {faqList.map((item,key) =>{
                 return (
-                    <FAQCard faq={faq} faqList={faqList} key={key}/>
+                    <FAQCard item={item} faqList={faqList} key={key}/>
                 )
             })} 
         </ul>
@@ -43,4 +43,3 @@ return (
     </div>
     )
 }
-export default HiddenFAQ;

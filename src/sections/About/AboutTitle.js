@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Background
 import aboutTitleBg from "../../assets/img/background/aboutTitleBg.png";
 
@@ -7,7 +5,7 @@ import aboutTitleBg from "../../assets/img/background/aboutTitleBg.png";
 import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogoTag.png";
 
 
-function AboutTitle() {
+export default function AboutTitle() {
 
     return (
         <section id="aboutTitle">
@@ -21,4 +19,3 @@ function AboutTitle() {
         </section>
     )
 }
-export default AboutTitle;

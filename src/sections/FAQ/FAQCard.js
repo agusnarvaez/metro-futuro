@@ -4,24 +4,9 @@ import React,{ useState } from "react";
 // Íconos
 import homeFaqIcon from '../../assets/img/icons/homeFaqIcon.png';
 
-function HomeFaqPrincipal(props) {
-    /* const [faqList,setFaqList] = useState(props.faqList);
-    const faq=props.faq; */
-
-    /* const handleFaqListChange = (id)=>{
-        setFaqList(
-            faqList.map(faq => {
-                if(faq.id === id){
-                    faq.cross = !faq.cross;
-                }
-                return faq;
-            }
-        ))
-    }
-    useEffect(()=>{
-        console.log(faq.cross);
-    },[faq]) */
-    const [faq,setFaq] = useState(props.faq);
+export default function FAQCard({item}) {
+   
+    const [faq,setFaq] = useState(item);
     const handleFaqChange = ()=>{
         setFaq({...faq,cross:(!faq.cross)});
 
@@ -29,7 +14,7 @@ function HomeFaqPrincipal(props) {
     
 return (
     <li className="faqItem" onClick={handleFaqChange}>    
-    {/* <li className="faqItem" onClick={() => handleFaqListChange(faq.id)}> */}
+    
         <div className="faqContainer">
             {/**Pregunta*/}
             <div className="faqQuestion">
@@ -50,4 +35,3 @@ return (
     </li>
     )
 }
-export default HomeFaqPrincipal;

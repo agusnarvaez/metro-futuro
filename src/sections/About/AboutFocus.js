@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Componente
 import AboutFocusCard from './AboutFocusCard';
 
@@ -10,7 +8,7 @@ import aboutFocusBg from "../../assets/img/background/aboutFocusBg.png";
 // Lista de tarjetas
 import focusItems from '../../data/aboutFocusItems';
 
-function AboutFocus() {
+export default function AboutFocus() {
     return (
 
         <section id="aboutFocus">
@@ -31,4 +29,3 @@ function AboutFocus() {
 
     )
 }
-export default AboutFocus;

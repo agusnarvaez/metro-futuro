@@ -1,7 +1,6 @@
-import React from 'react';
 
-function HomeBenefitCard(props) {
-    const benefit = props.benefit;
+export default function HomeBenefitCard({benefit}) {
+    
     return (
 
             <li>
@@ -13,4 +12,3 @@ function HomeBenefitCard(props) {
             </li>
             )
 }
-export default HomeBenefitCard;

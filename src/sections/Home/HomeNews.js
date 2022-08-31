@@ -1,7 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function HomeNews() {
+import DegradedNavLink from "../../components/DegradedNavLink";
+
+export default function HomeNews() {
 
     return (
 
@@ -17,7 +19,7 @@ function HomeNews() {
                         </NavLink>
                     </div>
                 </div>
+                <DegradedNavLink route="/contact" text="Quiero saber más" backgroundColor="lightBlue" />
         </section>
     )
 }
-export default HomeNews;

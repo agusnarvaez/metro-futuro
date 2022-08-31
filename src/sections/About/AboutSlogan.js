@@ -1,9 +1,7 @@
-import React from 'react';
-
 // Componentes
 import DegradedLink from '../../components/DegradedLink';
 
-function AboutSlogan() {
+export default function AboutSlogan() {
 
     return (
         <section id="aboutSlogan">
@@ -14,4 +12,3 @@ function AboutSlogan() {
         </section>
     )
 }
-export default AboutSlogan;

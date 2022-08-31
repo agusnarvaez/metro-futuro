@@ -5,7 +5,7 @@ import livingRoom from '../../assets/img/livingRoom.png';
 
 import homeAboutCoverMobile from '../../assets/img/background/homeAboutCoverMobile.png';
 
-function HomeAbout() {
+export default function HomeAbout() {
     return (
 
         <section id="homeAbout">
@@ -36,4 +36,3 @@ function HomeAbout() {
             </section>
     )
 }
-export default HomeAbout;

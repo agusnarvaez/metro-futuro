@@ -5,7 +5,7 @@ import {useState} from "react";
 import HeaderNav from "./Header/HeaderNav.js"
 import HeaderIcons from "./Header/HeaderIcons.js"
 
-function Header() {
+export default function Header() {
 
     const [burgerMenu, setBurgerMenu] = useState(true);
     
@@ -22,5 +22,3 @@ function Header() {
         </header >
     )
 }
-
-export default Header;

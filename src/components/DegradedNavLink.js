@@ -2,7 +2,7 @@
 
 import { Link } from 'react-router-dom';
 
-export default function DegradedLink(props) {
+export default function DegradedLink({id,text,route,backgroundColor}) {
 
     //* FUNCIÓN PARA DESLIZAR HACIA ARRIBA DE TODO
     const scrollToTop = () =>{
@@ -12,18 +12,18 @@ export default function DegradedLink(props) {
         });
       };
 
-return (
-    <div onClick={scrollToTop} className="degradedLink" id={props.id}>
+    return (
+        <div onClick={scrollToTop} className="degradedLink" id={id}>
 
-        <div className={`degradedLink_TextContainer degradedLink_TextContainer--${props.backgroundColor}`}>
+            <div className={`degradedLink_TextContainer degradedLink_TextContainer--${backgroundColor}`}>
 
-            <Link to={props.route} className="degradedLink_Text">
-                {props.text}
-            </Link>
+                <Link to={route} className="degradedLink_Text">
+                    {text}
+                </Link>
 
+            </div>
+            
         </div>
         
-    </div>
-    
-    )
+        )
 }

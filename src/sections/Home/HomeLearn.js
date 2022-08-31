@@ -1,12 +1,11 @@
-import React from 'react';
-/* import { NavLink } from 'react-router-dom'; */
 // Background
 import learnWithUsBg from "../../assets/img/background/homeLearnWithUsBg.png";
 
 // Visor de videos de Youtube
 import ReactPlayer from "react-player";
 import DegradedLink from '../../components/DegradedLink';
-function HomeLearnWithUs() {
+
+export default function HomeLearnWithUs() {
 
     return (
 
@@ -37,4 +36,3 @@ function HomeLearnWithUs() {
             </section>
     )
 }
-export default HomeLearnWithUs;

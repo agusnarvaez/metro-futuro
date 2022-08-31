@@ -1,10 +1,8 @@
-import React from 'react';
-
 // Images & icons
 import aboutServicesImg from "../../assets/img/aboutLiving.png";
 import aboutListIcon from "../../assets/img/icons/aboutListIcon.png";
 
-function AboutServices() {
+export default function AboutServices() {
     const services = ["Analizamos y estructuramos el negocio inmobiliario","Aplicamos la tecnología en el activo","Realizamos la estrategia de marketing","Lo comercializamos para obtener su plusvalía"]
     return (
 
@@ -28,4 +26,3 @@ function AboutServices() {
             </section>
     )
 }
-export default AboutServices;

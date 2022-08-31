@@ -4,7 +4,7 @@ import PrincipalFAQ from "../FAQ/PrincipalFAQ";
 
 import HiddenFAQ from "../FAQ/HiddenFAQ";
 
-function HomeFaq() {
+export default function HomeFaq() {
     
 return (
     
@@ -20,4 +20,3 @@ return (
     </section>
     )
 }
-export default HomeFaq;

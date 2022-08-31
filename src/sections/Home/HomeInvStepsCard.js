@@ -1,8 +1,6 @@
-import React from 'react';
 
-
-function HomeInvestmentCard(props) {
-    const card=props.card;
+export default function HomeInvestmentCard({card}) {
+    
     return (
         <div className="carrouselContainer_card">
             <div className="carrouselContainer_cardId">
@@ -13,4 +11,3 @@ function HomeInvestmentCard(props) {
         </div>
     )
 }
-export default HomeInvestmentCard;

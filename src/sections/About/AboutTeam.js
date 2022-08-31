@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Componentes
 import AboutTeamCard from './AboutTeamCard';
@@ -10,7 +9,8 @@ import pedroSilvestriAvatar from "../../assets/img/team/pedroSilvestri.png";
 import pedroNicholsonAvatar from "../../assets/img/team/pedroNicholson.png";
 import juanPorrazzoAvatar from "../../assets/img/team/juanPorrazzo.png";
 
-function AboutTeam() {
+export default function AboutTeam() {
+    
     const teamList = [
         {
             name: "Job Carrera Diaz",
@@ -54,4 +54,3 @@ function AboutTeam() {
         </section>
     )
 }
-export default AboutTeam;

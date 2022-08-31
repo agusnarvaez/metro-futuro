@@ -1,10 +1,8 @@
-import React from 'react';
-
 // Logos
 import linkedinLogo from "../../assets/img/icons/aboutLinkedinLogo.png";
 
-function AboutTeamCard(props) {
-    const teamMember=props.teamMember;
+export default function AboutTeamCard({teamMember}) {
+    
     return (
             <li className='aboutTeamCard'>
                 <div className="aboutTeamImage">
@@ -35,4 +33,3 @@ function AboutTeamCard(props) {
             </li>
     )
 }
-export default AboutTeamCard;

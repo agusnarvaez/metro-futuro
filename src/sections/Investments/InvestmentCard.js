@@ -1,7 +1,7 @@
-import React from "react";
+
 import { NavLink } from 'react-router-dom'
 
-function InvestmentCard(props) {
+export default function InvestmentCard(props) {
     console.log(props)
     return (
         <article className="investmentsPageProjectCard">
@@ -33,5 +33,3 @@ function InvestmentCard(props) {
         </article>
     )
 }
-
-export default InvestmentCard;

@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Background
 import homePartnersBg from "../../assets/img/background/homePartnersBg.png";
 
@@ -12,7 +10,7 @@ import PartnerCard from './PartnerCard';
 
 
 
-function HomePartners() {
+export default function HomePartners() {
     const partnersList = [
         {
             link: "https://metrox.com.ar/",
@@ -47,4 +45,3 @@ function HomePartners() {
             </section>
     )
 }
-export default HomePartners;

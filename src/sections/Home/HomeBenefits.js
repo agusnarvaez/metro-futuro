@@ -1,21 +1,20 @@
-import React from 'react';
-
-// Componentes
+//* Componentes
 import HomeBenefitCard from './HomeBenefitsCard';
 
-// Background
+//* Background
 import homeBenefitsBg from "../../assets/img/background/homeBenefitsBg.png";
 
-// Imágenes
+//* Imágenes
 import building from '../../assets/img/building.png';
 
-// Íconos
+//* Íconos
 import clockIcon from '../../assets/img/icons/homeClock.png';
 import shoppingCartIcon from '../../assets/img/icons/homeShoppingCart.png';
 import dollarSignIcon from '../../assets/img/icons/homeDollarSign.png';
 import padlockIcon from '../../assets/img/icons/homePadlock.png';
 import suitcaseIcon from '../../assets/img/icons/homeSuitcase.png';
-function HomeBenefits() {
+
+export default function HomeBenefits() {
     const benefitsList = [
             {
                 img: clockIcon,
@@ -63,4 +62,3 @@ function HomeBenefits() {
             </section>
     )
 }
-export default HomeBenefits;

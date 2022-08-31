@@ -1,10 +1,7 @@
-import React from 'react';
-
 // Background
 
-
-function AboutFocusCard(props) {
-    const focus=props.focus;
+export default function AboutFocusCard({focus}) {
+    
     return (
         <li>
             <div className='cardTitle'>
@@ -17,4 +14,3 @@ function AboutFocusCard(props) {
         </li>       
     )
 }
-export default AboutFocusCard;

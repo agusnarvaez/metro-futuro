@@ -1,9 +1,7 @@
-import React from 'react';
-
 // Background
 import aboutInfoBg from "../../assets/img/background/aboutInfoBg.png";
 
-function AboutInfo() {
+export default  function AboutInfo() {
 
     return (
         <section id="aboutInfo">
@@ -17,4 +15,3 @@ function AboutInfo() {
         </section>
     )
 }
-export default AboutInfo;

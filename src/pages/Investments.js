@@ -11,8 +11,7 @@ import InvestmentCard from "../sections/Investments/InvestmentCard";
 // import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";
 // import investmentsFilterHomeIcon from "../assets/img/icons/investmentsFilterHomeIcon.png"
 
-export default function Investments(props) {
-    const investmentsList= props.investmentsList;
+export default function Investments({investmentsList}) {
     const [investmentsCards,setInvestmentsCards]=useState([]);
     const [listClass,setListClass]=useState("");
     //const [priceFilterList,setPriceFilterList]=useState([]);

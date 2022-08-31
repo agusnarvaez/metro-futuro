@@ -1,12 +1,10 @@
-// Importo React
-import React from "react";
 
 // Componentes
 import FAQCard from "./FAQCard";
 // Íconos
 import completeFaqList from "../../data/faqList";
 
-function PrincipalFAQ() {
+export default function PrincipalFAQ() {
 
     // Controladores de cruces para mostrar info (+)
     const faqList = completeFaqList.principal;
@@ -14,12 +12,11 @@ function PrincipalFAQ() {
 return (
 
         <ul className="faqList" id="principalFaqs">
-            {faqList.map((faq,key) =>{
+            {faqList.map((item,key) =>{
                 return (
-                    <FAQCard faq={faq} faqList={faqList} key={key}/>
+                    <FAQCard item={item} faqList={faqList} key={key}/>
                 )
             })} 
         </ul>
     )
 }
-export default PrincipalFAQ;

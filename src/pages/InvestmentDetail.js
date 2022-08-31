@@ -10,9 +10,8 @@ import {useParams} from "react-router-dom";
 // Mapa de google
 import Map from "../components/Map";
 
-export default function InvestmentDetail(props) {
+export default function InvestmentDetail({investmentsList}) {
     const params = useParams();
-    const investmentsList= props.investmentsList;
     const investment = investmentsList[params.id];
     
     useEffect(() => {

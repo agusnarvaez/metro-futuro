@@ -1,8 +1,5 @@
-import React from 'react';
-
-
-function PartnerCard(props) {
-    const partner= props.partner;
+export default  function PartnerCard({partner}) {
+    
     return (
         <li>
             <a
@@ -14,4 +11,3 @@ function PartnerCard(props) {
         </li>
     )
 }
-export default PartnerCard;
