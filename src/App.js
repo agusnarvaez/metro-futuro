@@ -52,14 +52,14 @@ export default function App() {
       component: <Home investmentsList={investmentsList} />,
       path: "/"
     },
-    {
+    /* {
       component: <Learn list={coursesList} />,
       path: "/learn/courses"
     },
     {
       component: <LearnCourse list={coursesList} />,
       path: "/learn/courses/:id"
-    },
+    }, */
     {
       component: <Learn list={blogArticles} />,
       path: "/learn/blog"

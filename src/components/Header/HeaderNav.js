@@ -8,10 +8,10 @@ export default function HeaderNav({burgerMenu}) {
             title:"Home",
             to:"/"
         },
-        {
+       /*  {
             title:"Aprende",
             to:"/learn/courses"
-        },
+        }, */
         {
             title:"Blog",
             to:"/learn/blog"
