@@ -41,7 +41,7 @@ import InvestmentDetail from "./pages/InvestmentDetail";
 
 //* DATA
 import investmentsList from './data/investmentsList.js';
-import coursesList from "./data/coursesList";
+/* import coursesList from "./data/coursesList"; */
 import blogArticles from "./data/blogArticles"
 
 
