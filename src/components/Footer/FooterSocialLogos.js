@@ -4,9 +4,9 @@
 import instagramLogo from "../../assets/img/icons/instagramLogo.svg";
 
 //TODO: ESPERAR A QUE JUAN GENERE LAS REDES
-/* import linkedinLogo from "../../assets/img/icons/linkedInLogo.svg";
-import twitterLogo from "../../assets/img/icons/twitterLogo.svg"; */
-
+import linkedinLogo from "../../assets/img/icons/linkedInLogo.svg";
+import twitterLogo from "../../assets/img/icons/twitterLogo.svg";
+import telegramLogo from "../../assets/img/icons/telegramLogo.png";
 
 export default function FooterSocialLogos() {
 	const socialLogos = [
@@ -14,17 +14,22 @@ export default function FooterSocialLogos() {
 			className: "instagramLogo",
 			src: instagramLogo,
 			href: "https://www.instagram.com/metrofuturo/"
-		}/* ,
+		},
 		{
 			className: "linkedinLogo",
 			src: linkedinLogo,
-			href: "https://www.instagram.com/metrofuturo/"
+			href: "https://www.linkedin.com/company/metro-futuro/"
 		},
 		{
 			className: "twitterLogo",
 			src: twitterLogo,
-			href: "https://www.instagram.com/metrofuturo/"
-		} */
+			href: "https://twitter.com/MProptech"
+		},
+		{
+			className: "telegramLogo",
+			src: telegramLogo,
+			href: "https://t.me/metrofuturodefi"
+		} 
 
 	];
 	
