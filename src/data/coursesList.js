@@ -110,12 +110,12 @@ const coursesList = [
 			} */
 		],
 		author: "Juan Porrazzo",
-		aditionalContents:[{
+		aditionalContents:[/* {
 			title: "Como registrarse en Metro Futuro",
 			shortDescription: "Aprende cómo ingresar a la plataforma y registrarte para comenzar a invertir.",
 			type: "PDF",
 			url:"/assets/pdf/Registrarse_MF.pdf"
-		}]
+		} */]
 	},
 	{
 		id: 1,
@@ -202,11 +202,11 @@ const coursesList = [
 			} */
 		],
 		author: "Juan Porrazzo",
-		aditionalContents:[{
+		aditionalContents:[/* {
 			title: "¿Que es blockchain?",
 			shortDescription: "Aprende todo lo necesario para saber acerca de los nuevos términos en tecnología blockchain y ser un experto en la materia.",
 			type: "PDF",
 			url:"/assets/pdf/BlockChain_MF.pdf"
-		}]
+		} */]
 	}]
 export default coursesList;
