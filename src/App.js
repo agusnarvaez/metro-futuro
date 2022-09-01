@@ -3,6 +3,8 @@
 //* REACT-ROUTER-DOM
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+
+
 //* STYLESHEETS
 import "./assets/css/normalize.css"
 import "./assets/css/styles.css"
@@ -94,6 +96,7 @@ export default function App() {
       <Routes>
 
         {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
+        
       </Routes>
 
 

@@ -1,9 +1,11 @@
 // ###### VISTA DE HOME ####
 
 
-// MÉTODOS DE REACT
+//* MÉTODOS DE REACT
 import { useRef } from "react";
 
+//* REACT-HELMET
+import { Helmet } from 'react-helmet';
 
 /** ### Import de componentes ### **/
 import HomeAbout from "../sections/Home/HomeAbout";
@@ -19,6 +21,8 @@ import HomeFaq from "../sections/Home/HomeFaq";
 
 
 export default function Home({investmentsList}) {
+
+    
     const principalInvestment = investmentsList[0];
     
     const sloganRef = useRef();
@@ -46,6 +50,11 @@ export default function Home({investmentsList}) {
     },[scrollTransition]); */
     return (
         <main className="homePage">
+            
+            <Helmet>
+                <title>Metro Futuro | Inversión en Real Estate</title>
+                <meta name="Home" content=""></meta>
+            </Helmet>
 
             <HomeAbout/>
 
