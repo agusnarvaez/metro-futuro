@@ -460,7 +460,7 @@
 }
 #aboutFocus .sectionInfo ul{
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     padding: 5% 0;
 }
 #aboutFocus .sectionInfo ul li{
@@ -647,6 +647,7 @@
 
 /** #### AGREGAMOS VALOR GENERANDO MAYOR ACCESO A LA INDUSTRIA INMOBILIARIA ####*/
 #aboutInfo{
+    
     padding: 10% 0;
 }
 #aboutInfo .sectionBackground{
@@ -770,30 +771,31 @@
 #aboutServices .sectionInfo ul li p{
     font-size: 2em;
     font-weight: 400;
+
 }
 /*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 
 /** #### ¿CUAL ES NUESTRO FOCO? ####*/
-#aboutFocus{
-    max-height: 80vh;
-    min-height: fit-content;
+#aboutFocus{    
     background: transparent;
 }
 #aboutFocus .sectionBackground--desktop{
     border-top-left-radius: 300px;
-    
 }
 #aboutFocus h2{
     font-size: 3em;
 }
 #aboutFocus .sectionInfo{
     padding: 0 0 5% 0;
+
 }
 #aboutFocus .sectionInfo ul{
     width: 90%;
-    
+    height: fit-content;
 }
-
+#aboutFocus .sectionInfo ul li{
+    height: fit-content;
+}
 #aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
     width: 65px;
     height: 65px;
@@ -807,6 +809,7 @@
 }
 #aboutFocus .sectionInfo ul li p{
     font-size: 1.9em;
+    height: fit-content;
 }
 
 /*! #### ¿Cual es nuestro foco? ####*/

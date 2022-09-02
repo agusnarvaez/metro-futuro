@@ -1,4 +1,4 @@
-const coursesList = {
+const blogArticles = {
 	title: "Infórmate",
 	type: "artículo",
 	url:"blog/",
@@ -334,4 +334,4 @@ const coursesList = {
 		} */		
 	]
 }
-export default coursesList;
+export default blogArticles;

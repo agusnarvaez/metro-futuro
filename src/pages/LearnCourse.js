@@ -17,14 +17,14 @@ export default function LearnCourse({list}) {
 	
 	
 	useEffect(() => {
-
+		console.log(list);
     }, [params]);
 
 	return (
 		<main className='learnCoursePage'>
 			<LearnCourseCover item={item}/>
 			
-			<LearnCourseTitle item={item}/>
+			<LearnCourseTitle item={item} type={list.type}/>
 			
 			<LearnCourseInfo item={item} type={list.type} url={list.url}/>
 		</main>

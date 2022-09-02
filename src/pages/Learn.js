@@ -8,7 +8,7 @@ import LearnCourses from '../sections/Learn/LearnCourses.js'
 
 
 export default function Learn({list}) {
-	console.log(list);
+	
 	const text = list.title;
 	
 
