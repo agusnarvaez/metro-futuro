@@ -8,11 +8,33 @@
 <!--  <meta name="theme-color" content="#000000" />
   <meta name="description" content="Metro Futuro - Inversión en Real Estate" /> -->
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/metroFuturoLogoTag.png" />
+  <!-- Icon in the highest resolution we need it for -->
+  <link rel="icon" sizes="192x192" href="%PUBLIC_URL%/metroFuturoLogoTag.png">
+  <!-- Safari Pinned Tab Icon -->
+  <link rel="mask-icon" href="%PUBLIC_URL%/metroFuturoLogoTag.png">
+  
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- Control the behavior of search engine crawling and indexing -->
+  <meta name="robots" content="index,follow"><!-- All Search Engines -->
+  <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+  <!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
+  <meta name="generator" content="react">
+
+  <!-- Short description of your document's subject -->
+  <meta name="subject" content="real estate">
+
+  <!-- Gives a general age rating based on the document's content -->
+  <meta name="rating" content="35">
+
+  <!-- Allows control over how referrer information is passed -->
+  <meta name="referrer" content="no-referrer">
+
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

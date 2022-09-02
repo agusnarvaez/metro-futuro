@@ -1,5 +1,4 @@
-// ###### VISTA DE HOME ####
-
+//* ###### VISTA DE HOME ####
 
 //* MÉTODOS DE REACT
 import { useRef } from "react";
@@ -17,8 +16,6 @@ import HomeLearnWithUs from "../sections/Home/HomeLearn";
 import HomeNews from "../sections/Home/HomeNews";
 import HomePartners from "../sections/Home/HomePartners";
 import HomeFaq from "../sections/Home/HomeFaq";
-
-
 
 export default function Home({investmentsList}) {
 
@@ -53,7 +50,8 @@ export default function Home({investmentsList}) {
             
             <Helmet>
                 <title>Metro Futuro | Inversión en Real Estate</title>
-                <meta name="Home" content=""></meta>
+                <meta name="description" content="Enterate de las últimas novedades en Real Estate y como invertir en este fantástico mundo! " />
+                
             </Helmet>
 
             <HomeAbout/>
