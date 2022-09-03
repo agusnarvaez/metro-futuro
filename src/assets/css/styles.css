@@ -741,7 +741,8 @@ li{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        height: 50vh;
+        /* height: 50vh; */
+        min-height: 65vh;
         align-items: center;
         background: #ffff;
         border-radius: 50px;
@@ -754,7 +755,7 @@ li{
         left: 0%;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         height: 90%;
         width: 200%;
         transition: left 1.2s ease-out;
@@ -788,7 +789,7 @@ li{
     }
     .carrouselContainer_card p{
         font-size: 1.6em;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 20px;
         height: 50%;
     }
