@@ -776,7 +776,8 @@
 /*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 
 /** #### ¿CUAL ES NUESTRO FOCO? ####*/
-#aboutFocus{    
+#aboutFocus{   
+    min-height: 95vh;
     background: transparent;
 }
 #aboutFocus .sectionBackground--desktop{
@@ -791,10 +792,12 @@
 }
 #aboutFocus .sectionInfo ul{
     width: 90%;
+    /* height: max-content; */
     height: fit-content;
 }
 #aboutFocus .sectionInfo ul li{
     height: fit-content;
+    /* height: max-content; */
 }
 #aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
     width: 65px;
