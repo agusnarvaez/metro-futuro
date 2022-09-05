@@ -1,7 +1,8 @@
-// ###### VISTA DE HOME ####
+//* ###### VISTA DE HOME ####
 
 
-// MÉTODOS DE REACT
+
+//* MÉTODOS DE REACT
 import { useRef } from "react";
 
 
@@ -16,9 +17,10 @@ import HomeNews from "../sections/Home/HomeNews";
 import HomePartners from "../sections/Home/HomePartners";
 import HomeFaq from "../sections/Home/HomeFaq";
 
+import HelmetData from "../components/HelmetData";
 
+export default function Home({investmentsList,metaData}) {
 
-export default function Home({investmentsList}) {
     const principalInvestment = investmentsList[0];
     
     const sloganRef = useRef();
@@ -44,8 +46,11 @@ export default function Home({investmentsList}) {
             window.removeEventListener("scroll",handleScroll);
         }
     },[scrollTransition]); */
+
     return (
         <main className="homePage">
+            
+            <HelmetData metaData={metaData} />
 
             <HomeAbout/>
 

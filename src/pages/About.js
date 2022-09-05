@@ -7,13 +7,15 @@ import AboutFocus from '../sections/About/AboutFocus';
 import AboutInfo from '../sections/About/AboutInfo';
 import AboutSlogan from '../sections/About/AboutSlogan';
 import AboutTeam from "../sections/About/AboutTeam";
+import HelmetData from "../components/HelmetData";
 
-
-export default function About() {
+export default function About({metaData}) {
 
     return (
         <main id="aboutPage">
             
+            <HelmetData metaData={metaData} />
+
             <AboutTitle/>
 
             <AboutServices/>

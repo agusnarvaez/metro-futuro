@@ -3,12 +3,14 @@ import NotFound404ErrorImage from "../assets/img/404Error.png";
 
 // COMPONENTS
 import DegradedNavLink from '../components/DegradedNavLink';
+import HelmetData from "../components/HelmetData";
 
-export default function Error404() {
+export default function Error404({metaData}) {
     
     return (
         <main id="NotFound404ErrorPage">
-
+            <HelmetData metaData={metaData} />
+            
             <img src={NotFound404ErrorImage} alt='Imagen de error 404' />
 
             <div className="sectionInfo">
