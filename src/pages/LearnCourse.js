@@ -6,9 +6,9 @@ import {useParams} from "react-router-dom";
 import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover";
 import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle";
 import LearnCourseInfo from "../sections/LearnCourse/LearnCourseInfo";
+import HelmetData from "../components/HelmetData";
 
-
-export default function LearnCourse({list}) {
+export default function LearnCourse({list,metaData}) {
 	// Capturo los parámetros de la URL
 	const params = useParams();
 
@@ -22,6 +22,8 @@ export default function LearnCourse({list}) {
 
 	return (
 		<main className='learnCoursePage'>
+			<HelmetData metaData={metaData} />
+			
 			<LearnCourseCover item={item}/>
 			
 			<LearnCourseTitle item={item}/>

@@ -11,7 +11,10 @@ import emailjs from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 import credentials from "../credentials";
 
-export default function Contact() {
+//* COMPONENTES
+import HelmetData from "../components/HelmetData";
+
+export default function Contact({metaData}) {
     // Clases para los inputs del formulario
     const [nameContainer,setNameContainer]= useState("inputContainer");
     const [emailContainer,setEmailContainer]= useState("inputContainer");
@@ -131,6 +134,7 @@ export default function Contact() {
     
     return (
         <main id="contactPage">
+            <HelmetData metaData={metaData} />
             <img
                 alt="contactPageBg"
                 className="sectionBackground--desktop"

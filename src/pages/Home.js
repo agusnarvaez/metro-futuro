@@ -1,10 +1,10 @@
 //* ###### VISTA DE HOME ####
 
+
+
 //* MÉTODOS DE REACT
 import { useRef } from "react";
 
-//* REACT-HELMET
-import { Helmet } from 'react-helmet';
 
 /** ### Import de componentes ### **/
 import HomeAbout from "../sections/Home/HomeAbout";
@@ -17,9 +17,10 @@ import HomeNews from "../sections/Home/HomeNews";
 import HomePartners from "../sections/Home/HomePartners";
 import HomeFaq from "../sections/Home/HomeFaq";
 
-export default function Home({investmentsList}) {
+import HelmetData from "../components/HelmetData";
 
-    
+export default function Home({investmentsList,metaData}) {
+
     const principalInvestment = investmentsList[0];
     
     const sloganRef = useRef();
@@ -45,19 +46,11 @@ export default function Home({investmentsList}) {
             window.removeEventListener("scroll",handleScroll);
         }
     },[scrollTransition]); */
+
     return (
         <main className="homePage">
             
-            <Helmet>
-                <title>Metro Futuro | Inversión en Real Estate</title>
-                <meta name="description" content="Enterate de las últimas novedades en Real Estate y como invertir en este fantástico mundo!" />
-                <meta property="og:type" content="website"/>
-                <meta property="og:title" content="Inicio"/>
-                <meta property="og:image" content="/public/assets/images/icons/metroFuturoLogoTag.png"/>
-                <meta property="og:image:alt" content="Logo Metro Futuro"/>
-                <meta property="og:description" content="Enterate de las últimas novedades en Real Estate y como invertir en este fantástico mundo!"/>
-                <meta property="og:site_name" content="Metro Futuro"/>
-            </Helmet>
+            <HelmetData metaData={metaData} />
 
             <HomeAbout/>
 

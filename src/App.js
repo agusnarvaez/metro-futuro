@@ -43,19 +43,20 @@ import InvestmentDetail from "./pages/InvestmentDetail";
 
 //* DATA
 import investmentsList from './data/investmentsList.js';
-/* import coursesList from "./data/coursesList"; */
 import blogArticles from "./data/blogArticles"
+import metaData from "./data/metaData";
+/* import coursesList from "./data/coursesList"; */
 
 
 export default function App() {
 
   const routesList =[
     {
-      component: <Home investmentsList={investmentsList} />,
+      component: <Home investmentsList={investmentsList} metaData={metaData.home} />,
       path: "/"
     },
     /* {
-      component: <Learn list={coursesList} />,
+      component: <Learn list={coursesList} metaData={metaData} />,
       path: "/learn/courses"
     },
     {
@@ -63,27 +64,27 @@ export default function App() {
       path: "/learn/courses/:id"
     }, */
     {
-      component: <Learn list={blogArticles} />,
+      component: <Learn list={blogArticles} metaData={metaData.blog} />,
       path: "/learn/blog"
     },
     {
-      component: <LearnCourse list={blogArticles} />,
+      component: <LearnCourse list={blogArticles} metaData={metaData.blogArticle} />,
       path: "/learn/blog/:id"
     },
     {
-      component: <About />,
+      component: <About metaData={metaData.about} />,
       path: "/about"
     },
     {
-      component: <Contact />,
+      component: <Contact metaData={metaData.contact} />,
       path: "/contact"
     },
     {
-      component: <Faq />,
-      path: "/faq"
+      component: <Faq metaData={metaData.faq} />,
+      path: "/help"
     },
     {
-      component: <Error404 />,
+      component: <Error404 metaData={metaData.error404} />,
       path: "/*"
     }
   ]
