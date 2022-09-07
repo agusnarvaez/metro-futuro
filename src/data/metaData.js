@@ -39,9 +39,9 @@ const metaData = {
         ,
     error404:
         {
-            title: "Página no encontrada",
+            title: "Página no encontrada | Error 404",
             description:"No se ha encontrado la página que busca. Puede volver al inicio.",
-            keywords:"eror, 404"
+            keywords:"error, 404"
         }
 };
 export default metaData;
