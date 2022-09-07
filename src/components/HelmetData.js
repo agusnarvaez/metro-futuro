@@ -12,7 +12,7 @@ export default function HelmetData({metaData}) {
             <meta name="keywords" content={metaData.keywords} />
 
             
-            <meta property="og:title" content={`Metro-Futuro | ${metaData.title}`}/>
+            <meta property="og:title" content={`Metro Futuro | ${metaData.title}`}/>
             <meta property="og:description" content={metaData.description}/>
            
         </Helmet>
