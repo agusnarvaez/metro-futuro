@@ -11,6 +11,8 @@ import credentials from "../../credentials";
 
 //* Componentes
 import ContactErrors from "../../components/Contact/ContactErrors";
+import ContactInputs from "../../components/Contact/ContactInputs";
+
 export default function ContactForm() {
 
     //* Clases para los inputs del formulario
@@ -47,14 +49,13 @@ export default function ContactForm() {
     const [validSubject,setValidSubject]= useState(false);
     const [validMessage,setValidMessage]= useState(false);
 
-    const canpos ={
-
-    }
-    const [campos,setCampos] = useState();
-
     const fields =[
         {
-            id:"from_name",
+            name:"from_name",
+            type:"inputContainer",
+            class: "contactSmallInput",
+            value:"",
+            placeholder:"Nombre",
             valid:validName,
             setValid:setValidName,
             error:"Ingrese un nombre",
@@ -62,7 +63,11 @@ export default function ContactForm() {
             setContainer: setNameContainer
         },
         {
-            id:"email",
+            name:"email",
+            type:"inputContainer",
+            class: "contactSmallInput",
+            value:"",
+            placeholder:"Email",
             valid:validEmail,
             setValid:setValidEmail,
             error:"Ingrese un email válido",
@@ -70,7 +75,11 @@ export default function ContactForm() {
             setContainer: setEmailContainer
         },
         {
-            id:"subject",
+            name:"subject",
+            type:"inputContainer",
+            class: "contactSmallInput",
+            value:"",
+            placeholder:"Asunto",
             valid:validSubject,
             setValid:setValidSubject,
             error:"Ingrese un asunto",
@@ -78,14 +87,22 @@ export default function ContactForm() {
             setContainer: setSubjectContainer
         },
         {
-            id:"messaje",
+            name:"message",
+            type:"inputContainer",
+            class: "largeInput",
+            value:"",
+            placeholder:"¿Porque deseas contactarte?",
             valid:validMessage,
             setValid:setValidMessage,
             error:"Ingrese un mensaje",
-            container: "inputContainer",
+            container: messageContainer,
+            setContainer: setMessageContainer
         },
         {
-            id:"captcha",
+            name:"captcha",
+            type:"captcha",
+            class:"recaptcha",
+            value:"",
             valid:validCaptcha,
             setValid:setValidCaptcha,
             error:"Por favor, verifique que no es un robot",
@@ -94,21 +111,33 @@ export default function ContactForm() {
         }
     ]
 
+    /* fields[0].setContainer = "inputContainer inputContainerFocus";
+
+    console.log(fields[0].setContainer) */
     const [showMessage, setShowMessage] = useState(false);
     
-    //*Hook para albergar el componente ContactErrors
+    //* Hook para albergar el componente ContactErrors
     const [errors,setErrors]=useState([]);
+
+
     //* Función que detecta el cambio en los campos para las validaciones
     const handleChange = e => {
+        
+
         const { name, value } = e.target;
+        
+        /* console.log(name + " " + value); */
+
         setContact({ ...contact, [name]: value });
         
+
         //* Validación de nombre
         if(contact.from_name.length>0){
             setValidName(true);
         }else{
             setValidName(false);
         }
+
         //* Validación de email
         if(contact.from_email.length<0){
             setValidEmail(false);
@@ -124,47 +153,48 @@ export default function ContactForm() {
         }else{
             setValidSubject(true);
         }
+
         //* Validación de mensaje
         if(contact.message.length<=0){
             setValidMessage(false);
         }else{
             setValidMessage(true);
         }
-    };
+    }
 
     //* Función que detecta el evento de presionar el botón ENVIAR
     const handleSubmit = e => {
         //* Prevengo que refresque la página
-        e.preventDefault();
+        e.preventDefault()
 
         //* Validación de nombre
         if(contact.from_name.length<=0){
-            setValidName(false);
+            setValidName(false)
         }else{
-            setValidName(true);
+            setValidName(true)
         }
 
         //* Validación de email
         if(contact.from_email.length<=0){
-            setValidEmail(false);
+            setValidEmail(false)
         }else if(!(contact.from_email.indexOf('@hotmail.com') !== (-1) || contact.from_email.indexOf('@gmail.com') !== (-1) || contact.from_email.indexOf('@outlook.com') !== (-1) || contact.from_email.indexOf('@live.com') !== (-1) || contact.from_email.indexOf('@yahoo.com') !== (-1) || contact.from_email.indexOf('@gmx.') !== (-1) || contact.from_email.indexOf('@aol.com') !== (-1))){
-            setValidEmail(false);
+            setValidEmail(false)
         }else{
-            setValidEmail(true);
+            setValidEmail(true)
         }
         
         //* Validación de asunto
         if(contact.subject.length<=0){
-            setValidSubject(false);
+            setValidSubject(false)
         }else{
-            setValidSubject(true);
+            setValidSubject(true)
         }
 
         //* Validación de mensaje
         if(contact.message.length<=0){
-            setValidMessage(false);
+            setValidMessage(false)
         }else{
-            setValidMessage(true);
+            setValidMessage(true)
         }
         
 
@@ -188,13 +218,14 @@ export default function ContactForm() {
                     setContact(frmContact);
                     setShowMessage(true);
                 },
+
                 //* Capturo el error al enviar el mensaje
                 (err) => {
                     console.log('ERROR:\n', err);
                 });
         }else{
             //* SINO, muestro los errores y envío alerta para revisar los campos
-            console.log("ERROR");
+            console.log("ERROR: Revisar los campos");
             alert("Por favor revise los campos!")
         }
     }
@@ -203,7 +234,8 @@ export default function ContactForm() {
         <section id="formContainer">
                 
                 <form onSubmit={handleSubmit}>
-                    <div className={nameContainer} id="inputContainer">
+                    <ContactInputs fields={fields} handleChange={handleChange} />
+                    {/* <div className={nameContainer} id="inputContainer">
                         <input
                             className="contactSmallInput"
                             id="input"
@@ -215,6 +247,7 @@ export default function ContactForm() {
                             onFocus={()=>{setNameContainer("inputContainer inputContainerFocus")}}
                             onBlur={()=>{
                                 setNameContainer("inputContainer")
+                                
                             }}
                             required
                         />
@@ -260,7 +293,7 @@ export default function ContactForm() {
                             onBlur={()=>{setMessageContainer("inputLargeContainer")}}
                             required
                         />
-                    </div>
+                    </div> */}
 
                     {/* <div className="contactAttachment">
                         <span className='contactAttachmentInput'>
