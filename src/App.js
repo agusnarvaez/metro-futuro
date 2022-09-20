@@ -3,8 +3,6 @@
 //* REACT-ROUTER-DOM
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-
-
 //* STYLESHEETS
 import "./assets/css/normalize.css"
 import "./assets/css/styles.css"
@@ -23,7 +21,6 @@ import "./assets/css/investmentDetail.css"
 
 import "./assets/css/404NotFound.css"
 
-
 //* ### COMPONENTS ###
 import Header from "./components/Header";
 import Home from './pages/Home.js'
@@ -36,7 +33,7 @@ import Error404 from './pages/Error404';
 import Footer from "./components/Footer/Footer";
 
 //TODO: INVESTMENTS
-/*
+/* TODO:
 import Investments from "./pages/Investments";
 import InvestmentDetail from "./pages/InvestmentDetail"; 
 */
