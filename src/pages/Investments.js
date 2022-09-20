@@ -22,7 +22,7 @@ export default function Investments({investmentsList}) {
             if(investmentSearch===""){
                 setInvestmentsCards(
                     investmentsList.map((investment,i)=>{
-                     return <InvestmentCard {...investment} key={i} />
+                        return <InvestmentCard {...investment} key={i} />
                     })
                 )
             }else{
