@@ -35,8 +35,14 @@ const metaData = {
             title: "",
             description:"",
             keywords:"blog, artículo, novedad, real estate"
-        }
-        ,
+        },
+        
+    admin:
+        {
+            title: "Panel de administrador",
+            description:"Agregue, edite y elimine elementos",
+            keywords:"admin, control panel, add, edit, delete"
+        },
     error404:
         {
             title: "Página no encontrada | Error 404",
