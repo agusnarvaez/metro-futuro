@@ -29,6 +29,7 @@ import LearnCourse from "./pages/LearnCourse";
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Faq from "./pages/Faq";
+import Admin from './pages/Admin';
 import Error404 from './pages/Error404';
 import Footer from "./components/Footer/Footer";
 
@@ -42,6 +43,7 @@ import InvestmentDetail from "./pages/InvestmentDetail";
 import investmentsList from './data/investmentsList.js';
 import blogArticles from "./data/blogArticles"
 import metaData from "./data/metaData";
+import credentials from './credentials';
 /* import coursesList from "./data/coursesList"; */
 
 
@@ -79,6 +81,10 @@ export default function App() {
     {
       component: <Faq metaData={metaData.faq} />,
       path: "/help"
+    },
+    {
+      component: <Admin metaData={metaData.admin} />,
+      path: `/admin/${credentials.apiKey}`
     },
     {
       component: <Error404 metaData={metaData.error404} />,

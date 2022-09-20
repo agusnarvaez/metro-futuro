@@ -10,6 +10,7 @@ export default function Admin({metaData}) {
             
             <HelmetData metaData={metaData} />
             
+            <h1>Admin</h1>
         </main>
     )
 }
