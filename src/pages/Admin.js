@@ -10,7 +10,7 @@ export default function Admin({metaData}) {
     const [navIndex,setNavIndex] = useState(0)
 
     const adminComponents = ["Artículos","Cursos","Propiedades"]
-    
+    const elements = ["Post1","Post2","Post3"]
     useEffect(()=>{
         console.log(navIndex)
     },[navIndex])
@@ -24,7 +24,7 @@ export default function Admin({metaData}) {
 
             <AdminNav navIndex={navIndex} setNavIndex={setNavIndex} />
 
-            <AdminEdition content={adminComponents[navIndex]} />
+            <AdminEdition components={adminComponents} elements={elements} navIndex={navIndex} />
             
         </main>
     )

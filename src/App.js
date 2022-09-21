@@ -9,12 +9,12 @@ import "./assets/css/styles.css"
 import "./assets/css/header.css"
 import "./assets/css/home.css";
 import "./assets/css/learn.css";
-import "./assets/css/learnCourse.css";
-import "./assets/css/about.css";
-import "./assets/css/contact.css";
-import "./assets/css/faqPage.css";
-import "./assets/css/footer.css";
-
+import "./assets/css/learnCourse.css"
+import "./assets/css/about.css"
+import "./assets/css/contact.css"
+import "./assets/css/faqPage.css"
+import "./assets/css/footer.css"
+import "./assets/css/admin.css"
 //*TODO:INVESTMENTS
 import "./assets/css/investments.css";
 import "./assets/css/investmentDetail.css"

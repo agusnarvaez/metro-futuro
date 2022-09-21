@@ -1,10 +1,11 @@
-export default function AdminEditionInfo({content}) {
+export default function AdminEditionInfo({components,setPostIndex}) {
 
 	return (
 		<section className="adminEdition_Info">
-
-			{content}
-			
+			Información
+			{/* {components.map((component,index)=>{
+				return <p key={index}>{component}</p>
+			})} */}
 		</section>
 	)
 }
