@@ -4,10 +4,10 @@
 import instagramLogo from "../../assets/img/icons/instagramLogo.svg";
 
 //TODO: ESPERAR A QUE JUAN GENERE LAS REDES
-import linkedinLogo from "../../assets/img/icons/linkedInLogo.svg";
-import twitterLogo from "../../assets/img/icons/twitterLogo.svg";
-import telegramLogo from "../../assets/img/icons/telegramLogo.png";
-
+import linkedinLogo from "../../assets/img/icons/linkedInLogo.svg"
+import twitterLogo from "../../assets/img/icons/twitterLogo.svg"
+import telegramLogo from "../../assets/img/icons/telegramLogo.png"
+import youTubeLogo from "../../assets/img/icons/youTubeLogo.svg"
 export default function FooterSocialLogos() {
 	const socialLogos = [
 		{
@@ -29,6 +29,11 @@ export default function FooterSocialLogos() {
 			className: "telegramLogo",
 			src: telegramLogo,
 			href: "https://t.me/metrofuturodefi"
+		},
+		{
+			className: "youTubeLogo",
+			src: youTubeLogo,
+			href: "https://www.youtube.com/channel/UCmiKhrSZxmtVFlz7wt1dcKw"
 		} 
 
 	];
