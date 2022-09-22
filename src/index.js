@@ -18,7 +18,15 @@ const store = createStore(reducers,compose(applyMiddleware(thunk)))
 const rootElement = document.getElementById("root");
 
 if(rootElement.hasChildNodes()){
-  hydrate(<App />,rootElement);
+  hydrate(
+    <Provider store={store} >
+      <App />
+    </Provider>,
+    rootElement);
 }else{
-  render(<App />,rootElement);
+  render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    rootElement);
 }

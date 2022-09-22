@@ -15,11 +15,12 @@ import "./assets/css/contact.css"
 import "./assets/css/faqPage.css"
 import "./assets/css/footer.css"
 import "./assets/css/admin.css"
+import "./assets/css/404NotFound.css"
+
 //*TODO:INVESTMENTS
 import "./assets/css/investments.css";
 import "./assets/css/investmentDetail.css"
 
-import "./assets/css/404NotFound.css"
 
 //* ### COMPONENTS ###
 import Header from "./components/Header";
