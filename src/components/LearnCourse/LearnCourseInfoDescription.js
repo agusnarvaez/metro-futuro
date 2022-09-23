@@ -3,7 +3,6 @@
 /* import coursesList from '../../data/coursesList'; */
 import LearnCourseInfoDescriptionCard from './LearnCourseInfoDescriptionCard';
 import LearnCourseInfoDescriptionResume from './LearnCourseInfoDescriptionResume';
-import DegradedNavLink from "./../DegradedNavLink";
 
 export default function LearnCourseInfoDescription({content,item}) {
 	
