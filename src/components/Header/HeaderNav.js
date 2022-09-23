@@ -10,11 +10,11 @@ export default function HeaderNav({burgerMenu}) {
         },
        /*  {
             title:"Aprende",
-            to:"/learn/courses"
+            to:"/courses"
         }, */
         {
             title:"Blog",
-            to:"/learn/blog"
+            to:"/blog"
         },
         {
             title:"Quienes Somos",

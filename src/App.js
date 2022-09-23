@@ -57,19 +57,19 @@ export default function App() {
     },
     /* {
       component: <Learn list={coursesList} metaData={metaData} />,
-      path: "/learn/courses"
+      path: "/courses"
     },
     {
       component: <LearnCourse list={coursesList} />,
-      path: "/learn/courses/:id"
+      path: "/courses/:id"
     }, */
     {
       component: <Learn list={blogArticles} metaData={metaData.blog} />,
-      path: "/learn/blog"
+      path: "/blog"
     },
     {
       component: <LearnCourse list={blogArticles} metaData={metaData.blogArticle} />,
-      path: "/learn/blog/:id"
+      path: "/blog/:id"
     },
     {
       component: <About metaData={metaData.about} />,
