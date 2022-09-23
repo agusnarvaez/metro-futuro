@@ -17,7 +17,6 @@ export default function LearnCourse({list,metaData}) {
 	
 	
 	useEffect(() => {
-		console.log(list);
     }, [params]);
 
 	return (

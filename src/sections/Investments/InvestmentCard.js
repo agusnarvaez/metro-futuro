@@ -2,7 +2,7 @@
 import { NavLink } from 'react-router-dom'
 
 export default function InvestmentCard(props) {
-    console.log(props)
+    
     return (
         <article className="investmentsPageProjectCard">
             <NavLink to={`/investments/${props.id}`} exact="true">
