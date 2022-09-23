@@ -5,7 +5,7 @@ import LearnCourseInfoDescriptionCard from './LearnCourseInfoDescriptionCard';
 import LearnCourseInfoDescriptionResume from './LearnCourseInfoDescriptionResume';
 import DegradedNavLink from "./../DegradedNavLink";
 
-export default function LearnCourseInfoDescription({content,item,url,type}) {
+export default function LearnCourseInfoDescription({content,item}) {
 	
 	return (
 		<div className="learnCoursePage_InfoDescription">
@@ -15,7 +15,6 @@ export default function LearnCourseInfoDescription({content,item,url,type}) {
 			{content.map((item,key) => {
 				return <LearnCourseInfoDescriptionCard key={key} content={item} />
 			})}
-			<DegradedNavLink route={`/learn/${url}`} text={`Más ${type}s`} backgroundColor="white" />
 		</div>	
 	)
 }
