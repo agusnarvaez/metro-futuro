@@ -17,7 +17,7 @@ export default function LearnCourses({item,url}) {
 
 			<p>{item.shortDescription}</p>
 
-			<DegradedNavLink route={`/learn/${url+item.id}`} text="Mas información" backgroundColor="white" />
+			<DegradedNavLink route={`/${url+item.id}`} text="Mas información" backgroundColor="white" />
 
 		</article>
 
