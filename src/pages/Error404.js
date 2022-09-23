@@ -8,7 +8,7 @@ import HelmetData from "../components/HelmetData";
 export default function Error404({metaData}) {
     
     return (
-        <main id="NotFound404ErrorPage">
+        <main className="NotFound404ErrorPage" id="NotFound404ErrorPage">
             <HelmetData metaData={metaData} />
             
             <img src={NotFound404ErrorImage} alt='Imagen de error 404' />
