@@ -24,3 +24,4 @@ yarn-error.log*
 
 # Credentials
 /src/credentials.js
+/.env.development
