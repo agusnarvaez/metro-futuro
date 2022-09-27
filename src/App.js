@@ -16,7 +16,7 @@ import "./assets/css/about.css";
 import "./assets/css/contact.css";
 import "./assets/css/faqPage.css";
 import "./assets/css/footer.css";
-
+import "./assets/css/whatsappButton.css";
 //*TODO:INVESTMENTS
 import "./assets/css/investments.css";
 import "./assets/css/investmentDetail.css"
@@ -33,6 +33,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Faq from "./pages/Faq";
 import Error404 from './pages/Error404';
+import WhatsappButton from './components/WhatsappButton'
 import Footer from "./components/Footer/Footer";
 
 //TODO: INVESTMENTS
@@ -97,9 +98,10 @@ export default function App() {
       <Routes>
 
         {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
-        
+
       </Routes>
 
+      <WhatsappButton />
 
       <Footer />
 
