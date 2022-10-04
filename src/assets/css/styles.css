@@ -2,7 +2,32 @@
 /*! ############### MOBILE ###############*/
 /*! #######################################*/
 
+#NotFound404ErrorPage{
+    padding: 5% 0 5% 0;
+    
+    justify-content: center;
+}
+#NotFound404ErrorPage img{
+    width: 40%;
+    height: auto;
+}
+#NotFound404ErrorPage .sectionInfo{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#NotFound404ErrorPage h1{
+    width: 96%;
+    font-size: 2.5em;
+}
+
+#NotFound404ErrorPage .degradedLink{
+    width: 40%;
+    margin: 1% 2%;
+}
+
 /** #### Estilos generales #### */
+
+
 
 * {
     font-family: Lexend;
@@ -448,7 +473,10 @@ li{
 /*! ########################################*/
 @media (min-width: 481px) {
 
-    
+    #NotFound404ErrorPage img{
+        width: 35%;
+        height: auto;
+    }
     
 }
     
@@ -456,6 +484,39 @@ li{
 /*! ################ LAPTOPS ###############*/
 /*! ########################################*/
 @media (min-width: 769px) {
+    #NotFound404ErrorPage{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 5%;
+    }
+    
+    #NotFound404ErrorPage img{
+        width: 40%;
+        height: auto;
+    }
+    #NotFound404ErrorPage .sectionInfo{
+        width: fit-content;
+        padding: 0 0 0 2%;
+        /* flex-direction: row; */
+        justify-content: flex-start;
+    }
+    #NotFound404ErrorPage .sectionInfo h1{
+        text-align: start;
+        font-size: 3em;
+    }
+    #NotFound404ErrorPage .sectionInfo .degradedLink{
+        margin: 1% 5% 0 0
+    }
+    #NotFound404ErrorPage .sectionInfo .degradedLink a{
+        font-size: 1.7em;
+    }
+
+
+
+
+
     section{
         width: 100%;
         height: 80vh;
@@ -615,6 +676,24 @@ li{
 /*! ############ LARGER DESKTOPS ###########*/
 /*! ########################################*/
 @media (min-width: 1280px) {
+    #NotFound404ErrorPage img{
+        width: 35%;
+    }
+    #NotFound404ErrorPage .sectionInfo{
+        padding: 0 0 0 5%;
+    }
+    #NotFound404ErrorPage .sectionInfo h1{
+        font-size: 4em;
+    }
+    #NotFound404ErrorPage .sectionInfo .degradedLink{
+        width: 35%;
+    }
+    #NotFound404ErrorPage .sectionInfo .degradedLink a{
+        font-size: 2em;
+    }
+
+
+
 
     main{
         margin-top: 15vh;

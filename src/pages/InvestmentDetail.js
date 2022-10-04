@@ -12,10 +12,10 @@ import Map from "../components/Map";
 
 export default function InvestmentDetail({investmentsList}) {
     const params = useParams();
-    const [investmentId,setInvestmentId] = useState(params.id);
+    const investmentId =params.id;
     const investment = investmentsList[investmentId];
     useEffect(() => {
-        console.log(investment);
+        
     }, [investmentId]);
 
     return (
