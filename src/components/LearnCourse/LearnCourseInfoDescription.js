@@ -1,19 +1,18 @@
 
 
 /* import coursesList from '../../data/coursesList'; */
-import LearnCourseInfoDescriptionCard from './LearnCourseInfoDescriptionCard';
+import LearnCourseInfoDescriptionContainer from './LearnCourseInfoDescriptionContainer';
 import LearnCourseInfoDescriptionResume from './LearnCourseInfoDescriptionResume';
 
-export default function LearnCourseInfoDescription({content,item}) {
-	
+export default function LearnCourseInfoDescription({item}) {
+
 	return (
 		<div className="learnCoursePage_InfoDescription">
 			
 			<LearnCourseInfoDescriptionResume item={item} />
+
+			<LearnCourseInfoDescriptionContainer item={item}/>
 			
-			{content.map((item,key) => {
-				return <LearnCourseInfoDescriptionCard key={key} content={item} />
-			})}
 		</div>	
 	)
 }
