@@ -1,5 +1,5 @@
 //* REACT
-import { useEffect,useState } from 'react';
+import { useState } from 'react';
 
 //* REACT-ROUTER-DOM
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
