@@ -8,10 +8,9 @@ import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle";
 import LearnCourseInfo from "../sections/LearnCourse/LearnCourseInfo";
 import HelmetData from "../components/HelmetData";
 
-import { path } from "../Functions/learnFunctions";
-
 export default function LearnCourse({list,setList,metaData}) {
 	//* Capturo los parámetros de la URL
+	const pathSplited = window.location.pathname.split('/')[1]
 	const params = useParams();
 
 	//* Selecciono el ítem según la URL
@@ -21,8 +20,8 @@ export default function LearnCourse({list,setList,metaData}) {
 		if(item!==undefined){
 			return ([
 				<LearnCourseCover item={item} key={0}/>,
-				<LearnCourseTitle item={item} type={list.type} key={1}/>,
-				<LearnCourseInfo item={item} type={list.type} key={2}/>
+				<LearnCourseTitle item={item} type={list.type} pathSplited={pathSplited} key={1}/>,
+				<LearnCourseInfo item={item} type={list.type} pathSplited={pathSplited} key={2}/>
 			])
 		}else{
 			return([])
@@ -33,7 +32,7 @@ export default function LearnCourse({list,setList,metaData}) {
 		if(list.length===0){
 			articles.getEntries()
 				.then((response)=>{
-					return response.items.filter(article=>path.indexOf(article.sys.contentType.sys.id)>=0)
+					return response.items.filter(article=>pathSplited.indexOf(article.sys.contentType.sys.id)>=0)
 				})
 				.then(newList =>{
 					setList(newList)
@@ -47,7 +46,7 @@ export default function LearnCourse({list,setList,metaData}) {
 			setItem(list[params.id].fields)
 		}
 		
-    }, []);
+    }, [list,params.id,pathSplited,setList]);
 
 	return (
 		<main className='learnCoursePage'>

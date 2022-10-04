@@ -1,5 +1,4 @@
 //* Obtiene la url para saber los tipos de cursos
-const path = window.location.pathname.slice(1)
 
 const selectTitle = (param) => {
 	switch(param){
@@ -24,7 +23,7 @@ const selectSlogan = (param) => {
 	}
 }
 
-const pathSplited = window.location.pathname.split('/')[1]
+
 const selectType = (param) => {
 	switch(param){
 		case "blog":
@@ -36,4 +35,4 @@ const selectType = (param) => {
 	}
 }
 
-export {selectTitle,selectSlogan,path,selectType,pathSplited}
+export {selectTitle,selectSlogan,selectType}
