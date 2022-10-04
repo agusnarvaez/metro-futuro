@@ -1,9 +1,8 @@
 //* REACT
+import { useState } from 'react';
 
 //* REACT-ROUTER-DOM
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-
 
 //* STYLESHEETS
 import "./assets/css/normalize.css"
@@ -22,7 +21,6 @@ import "./assets/css/investments.css";
 import "./assets/css/investmentDetail.css"
 
 import "./assets/css/404NotFound.css"
-
 
 //* ### COMPONENTS ###
 import Header from "./components/Header";
@@ -44,12 +42,14 @@ import InvestmentDetail from "./pages/InvestmentDetail";
 
 //* DATA
 import investmentsList from './data/investmentsList.js';
-import blogArticles from "./data/blogArticles"
+/* import blogArticles from "./data/blogArticles" */
 import metaData from "./data/metaData";
 /* import coursesList from "./data/coursesList"; */
 
 
 export default function App() {
+  
+  const [articles,setArticles]=useState([])
 
   const routesList =[
     {
@@ -65,12 +65,20 @@ export default function App() {
       path: "/courses/:id"
     }, */
     {
-      component: <Learn list={blogArticles} metaData={metaData.blog} />,
+      component: <Learn list={articles} metaData={metaData.blog} setList={setArticles} />,
       path: "/blog"
     },
     {
-      component: <LearnCourse list={blogArticles} metaData={metaData.blogArticle} />,
+      component: <LearnCourse list={articles} setList={setArticles} metaData={metaData.blogArticle} />,
       path: "/blog/:id"
+    },
+    {
+      component: <Learn list={articles} setList={setArticles} metaData={metaData.blog} />,
+      path: "/articles"
+    },
+    {
+      component: <LearnCourse list={articles} setList={setArticles} metaData={metaData.blogArticle} />,
+      path: "/articles/:id"
     },
     {
       component: <About metaData={metaData.about} />,
