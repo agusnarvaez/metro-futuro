@@ -5,27 +5,37 @@ import LearnSlogan from"../sections/Learn/LearnSlogan.js"
 import LearnCourses from '../sections/Learn/LearnCourses.js'
 import HelmetData from "../components/HelmetData";
 
-import { useEffect,useState } from 'react';
+import { useEffect } from 'react';
 
 import {articles} from '../client/client'
 
-import { pathSplited } from "../Functions/learnFunctions.js";
+//import { pathSplited } from "../Functions/learnFunctions.js";
 
 export default function Learn({metaData,list,setList}) {
-	const path = window.location.pathname.slice(1)
-	const [fetched,setFetched] = useState(false)
+	//const path = window.location.pathname.slice(1,-1)
+	const path = window.location.pathname.split('/')[1]
+	//const [fetched,setFetched] = useState(false)
 	
 	useEffect(()=>{
-		if(fetched===false){
+		//* Si el array está vacío, no realiza la petición
+		if(list.length===0){
 			articles.getEntries()
-				.then((response)=>response)
 				.then((articles)=>{
-					setFetched(true)
-					setList(articles.items.filter(article=>article.sys.contentType.sys.id===path))
+					return articles.items.filter(article=>article.sys.contentType.sys.id===path)
 				})
-				.catch(error=>console.log(error))
+				.then(newList=>{
+					setList(newList)
+					return newList
+				})
+				.catch((error)=>{
+					console.log(error)
+					window.location = '/404NotFound';
+					})
+					
+		}else{
+			setList(list)
 		}
-	  },[list])
+	  },[list,setList,path])
 
 	return (
 		<main className='learnPage'>

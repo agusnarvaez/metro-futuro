@@ -35,13 +35,18 @@ export default function LearnCourse({list,setList,metaData}) {
 					return response.items.filter(article=>pathSplited.indexOf(article.sys.contentType.sys.id)>=0)
 				})
 				.then(newList =>{
+					console.log(list)
 					setList(newList)
+					console.log(list)
 					return newList[params.id].fields
 				})
 				.then((newItem)=>{
 					setItem(newItem)
 				})
-				.catch(error=>console.log(error))
+				.catch((error)=>{
+					console.log(error)
+					window.location = '/404NotFound';
+				})
 		}else{
 			setItem(list[params.id].fields)
 		}
