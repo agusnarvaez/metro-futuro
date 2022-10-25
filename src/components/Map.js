@@ -12,9 +12,9 @@ export default class Map extends Component {
                 <GoogleMaps
                     style={{width: "100%", height: "100%"}}
                     apiKey={credentials.mapsKey}
-                    center={{lat: 37.388685, lng:-5.983617}}
+                    center={{lat: -34.55104311413929, lng:-58.56219387334089}}
                     zoom={15}
-                    markers={[{lat: 37.388685, lng:-5.983617}]}
+                    markers={[{lat: -34.55104311413929, lng:-58.56219387334089}]}
                 />
             </div>
         )

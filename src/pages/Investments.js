@@ -1,39 +1,42 @@
 import { useEffect, useState } from "react";
 
-
 // images
 import investmentsTitleBg from "../assets/img/background/investmentsTitleBg.png";
 // import investmentsPageProjectsCover from "../assets/img/projects/nitaCover.png";
 
 // COMPONENTS
-
-import InvestmentCard from "../sections/Investments/InvestmentCard";
+//import InvestmentCard from "../sections/Investments/InvestmentCard";
 // import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";
 // import investmentsFilterHomeIcon from "../assets/img/icons/investmentsFilterHomeIcon.png"
 
-export default function Investments({investmentsList}) {
-    const [investmentsCards,setInvestmentsCards]=useState([]);
-    const [listClass,setListClass]=useState("");
+import reqApi from "../services/getArticles";
+
+export default function Investments({list,setList}) {
+    //const [investmentsCards,setInvestmentsCards]=useState([]);
+    //const [listClass,setListClass]=useState("");
     //const [priceFilterList,setPriceFilterList]=useState([]);
-    const [investmentSearch,setInvestmentSearch] = useState("");
+    //const [investmentSearch,setInvestmentSearch] = useState("");
     // const [investmentSearchClass,setInvestmentSearchClass] = useState("investmentsSearch");
     useEffect(()=>{
-            // Algoritmo de buscador
-            if(investmentSearch===""){
+        reqApi(list,setList)
+            .then( console.log(list))
+            /* console.log(investMentsApi) */
+            //* Algoritmo de buscador
+            /* if(investmentSearch===""){
                 setInvestmentsCards(
-                    investmentsList.map((investment,i)=>{
+                    list.map((investment,i)=>{
                         return <InvestmentCard {...investment} key={i} />
                     })
                 )
             }else{
                 setInvestmentsCards(
-                investmentsList.filter((investment)=>(
+                    list.filter((investment)=>(
                     investment.title.toLowerCase().includes(investmentSearch.toLowerCase())||investment.address.toLowerCase().includes(investmentSearch.toLowerCase())
                 )).map((investment,i) =>{
                         return <InvestmentCard {...investment} key={i} />
                     })
                 )
-            }
+            } */
 
             /* setPriceFilterList(
                 <ul className={listClass}>
@@ -46,16 +49,16 @@ export default function Investments({investmentsList}) {
                     <li>+$3000</li>
                 </ul>
             ) */
-            console.log(investmentSearch);
+            /* console.log(investmentSearch); */
     },
-    [listClass,investmentSearch])
+    [/* listClass,investmentSearch */list,setList])
     return (
         <main className="investmentsPage">
             <section className="investmentstPageTitle">
                 <img alt="sectionBackground" className="sectionBackground" src={investmentsTitleBg} />
                 <h1>
                     Conoce las
-                    <font color="#004DFF">propiedades</font>
+                    <font color="#004DFF">oportunidades inmobiliarias</font>
                 </h1>
             </section>
             <section className="investmentsPageList">
@@ -86,9 +89,9 @@ export default function Investments({investmentsList}) {
                         </div>
                     </form>
                 </div> */}
-                <div className="investmentsPageProjectsList">
+                {/* <div className="investmentsPageProjectsList">
                     {investmentsCards}
-                </div>
+                </div> */}
             </section>
         </main>
     )

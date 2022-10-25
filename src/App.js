@@ -44,6 +44,7 @@ import InvestmentDetail from "./pages/InvestmentDetail";
 import investmentsList from './data/investmentsList.js';
 /* import blogArticles from "./data/blogArticles" */
 import metaData from "./data/metaData";
+import Investments from './pages/Investments';
 /* import coursesList from "./data/coursesList"; */
 
 
@@ -57,11 +58,19 @@ export default function App() {
       path: "/"
     },
     /* {
-      component: <Learn list={coursesList} metaData={metaData} />,
+      component: <Learn list={list} metaData={metaData} />,
       path: "/courses"
     },
     {
-      component: <LearnCourse list={coursesList} />,
+      component: <LearnCourse list={list} />,
+      path: "/courses/:id"
+    }, */
+    {
+      component: <Investments list={articles} setList={setArticles} metaData={metaData} />,
+      path: "/investments"
+    },
+    /*{
+      component: <LearnCourse list={list} />,
       path: "/courses/:id"
     }, */
     {

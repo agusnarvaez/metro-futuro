@@ -28,16 +28,14 @@ export default function LearnCourse({list,setList,metaData}) {
 		}
 	}
 	useEffect(() => {
-		//* Chequeo si ya se solicitó el ítem
+		//* Chequeo si ya se solicitó el ítem list.length===0
 		if(list.length===0){
 			articles.getEntries()
 				.then((response)=>{
 					return response.items.filter(article=>pathSplited.indexOf(article.sys.contentType.sys.id)>=0)
 				})
 				.then(newList =>{
-					console.log(list)
 					setList(newList)
-					console.log(list)
 					return newList[params.id].fields
 				})
 				.then((newItem)=>{
