@@ -13,6 +13,10 @@ export default function HeaderNav({burgerMenu}) {
             to:"/courses"
         }, */
         {
+            title:"Proyectos",
+            to:"/proyects"
+        },
+        {
             title:"Blog",
             to:"/blog"
         },
@@ -33,7 +37,7 @@ export default function HeaderNav({burgerMenu}) {
             <ul className={burgerMenu?"navigation hiddenMenu":"navigation"} >
                 {links.map((link, key) => {
                     return(
-                        <HeaderNavLink link={link} key={key} index={key}/>
+                        <HeaderNavLink link={link} key={key} links={links} index={key}/>
                 )})}
             </ul>
     )
