@@ -9,9 +9,10 @@ export default function LearnCourseInfoDescription({item}) {
 	return (
 		<div className="learnCoursePage_InfoDescription">
 			
-			<LearnCourseInfoDescriptionResume item={item} />
 
 			<LearnCourseInfoDescriptionContainer item={item}/>
+			
+			<LearnCourseInfoDescriptionResume item={item} />
 			
 		</div>	
 	)

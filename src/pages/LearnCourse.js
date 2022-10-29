@@ -15,7 +15,7 @@ export default function LearnCourse({list,setList,metaData}) {
 
 	//* Selecciono el ítem según la URL
 	const [item,setItem] = useState()
-
+	const [newMetaData,setMetaData] = useState(metaData)
 	const courseItems = ()=>{
 		if(item!==undefined){
 			return ([
@@ -40,6 +40,11 @@ export default function LearnCourse({list,setList,metaData}) {
 				})
 				.then((newItem)=>{
 					setItem(newItem)
+					setMetaData({
+						...newMetaData,
+						title: newItem.title,
+						description:newItem.description,
+					})
 				})
 				.catch((error)=>{
 					console.log(error)
@@ -49,12 +54,12 @@ export default function LearnCourse({list,setList,metaData}) {
 			setItem(list[params.id].fields)
 		}
 		
-    }, [list,params.id,pathSplited,setList]);
+    }, [list,params.id,pathSplited,setList,newMetaData,setMetaData,metaData]);
 
 	return (
 		<main className='learnCoursePage'>
 
-			<HelmetData metaData={metaData} />
+			<HelmetData metaData={newMetaData} />
 			
 			{courseItems().map((item,key)=>item)}
 
