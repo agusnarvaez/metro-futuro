@@ -14,7 +14,7 @@ export default function HeaderNav({burgerMenu}) {
         }, */
         {
             title:"Proyectos",
-            to:"/proyects"
+            to:"/investments"
         },
         {
             title:"Blog",

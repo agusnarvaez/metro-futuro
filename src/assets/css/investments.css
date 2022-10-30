@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 85vh;
+    /* min-height: 85vh; */
     position: relative;
 }
 
@@ -35,6 +35,10 @@
 
 .investmentstPageTitle{
     justify-content: center;
+    height: 40vh;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    border-radius: 15px;
 }
 
 .investmentstPageTitle h1{
@@ -44,9 +48,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     font-size: 4em;
-    font-weight: 500;
-    /* display: inline; */
+    font-weight: 600;
 }
 .investmentstPageTitle font{
     padding-left: 0.6% ;
@@ -179,10 +183,11 @@
 
 .investmentsPageProjectCard {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
+    flex-direction: column;
     min-height: fit-content;
-    height: 40vh;
+    min-height: 70vh;
     margin: 2% 0;
     background: #FFFFFF;
     border: 1px solid #F3F2F2;
@@ -197,56 +202,27 @@
     -webkit-transition: height 0.3s ease-in-out,width 0.3s ease-in-out,color 15s ease-in-out;
 }
 .investmentsPageProjectsCover{
-    width: 40%;
-    height: 100%;
+    width: 100%;
+    height: 25vh;
     overflow: hidden;
     display: flex;
+    object-fit: cover;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
 }
 .investmentsPageProjectsCover img{
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
 }
 
-.investmentsPageProjectCard a{
-    width: 100%;
-    height: 100%;
-    position: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-.investmentsPageProjectCard a:visited{
-    width: 100%;
-    height: 100%;
-    position: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-.investmentsPageProjectCard a:hover{
-    width: 100%;
-    height: 100%;
-    position: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #004DFF;
-}
 .investmentsPageProjectInfo{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width: 60%;
-    height: 100%;
+    width: 100%;
     padding: 3% 3%;
 }
 .investmentsPageProjectInfoTitle{
@@ -257,13 +233,14 @@
 }
 .investmentsPageProjectInfoTitle h2{
     font-size: 2em;
+    font-weight: 600;
 }
-.investmentsPageProjectInfoTitle p{
-    font-size: 1.4em;
+.investmentsPageProjectInfoTitle h3{
+    font-size: 1.6em;
     color: #000F33;
     font-style: normal;
-    font-weight: 300;
-    padding: 1% 0;
+    font-weight: 400;
+    padding: 0% 0;
 }
 .investmentsPageProjectInfoDetails{
     display: flex;
@@ -271,10 +248,11 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    padding: 3% 0;
 }
 
 .investmentsPageProjectInfoDetails li{
-    width: 40%;
+    width: 100%;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -282,12 +260,26 @@
     padding: 0.5% 0%;
 }
 
-.investmentsPageProjectInfoDetails li p{
+.investmentsPageProjectInfoDetails li *{
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: #000F33;
+    font-weight: 400;
     font-style: normal;
-    font-weight: 300;
+    font-size: 1.5em;
+    display: inline-block;
+}
+.investmentsPageProjectInfoDetails li font{
+    width: 10%;
+    text-align: center;
+    font-weight: 600;
+}
+.investmentsPageProjectCard .degradedLink{
+    align-self: center;
+    margin: 0;
+    width: 35%;
+}
+.investmentsPageProjectCard .degradedLink_TextContainer{
+    padding: 5% 0;
+}
+.investmentsPageProjectCard .degradedLink_TextContainer a{
+    font-weight: 600;
 }

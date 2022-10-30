@@ -1,7 +1,6 @@
 import {articles} from '../client/client'
 
 const reqApi = async(list,setList)=>{
-
     if(list.length===0){
         const pathSplited = window.location.pathname.split('/')[1]
 
