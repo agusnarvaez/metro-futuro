@@ -194,14 +194,9 @@
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
     border-radius: 10px;
     transition: width 0.5s ease-in-out;
-    -webkit-transition: height 0.3s ease-in-out,width 0.3s ease-in-out,color 15s ease-in-out;
 }
-.investmentsPageProjectCard:hover{
-    height: 45vh;
-    width: 105%;
-    -webkit-transition: height 0.3s ease-in-out,width 0.3s ease-in-out,color 15s ease-in-out;
-}
-.investmentsPageProjectsCover{
+
+/* .investmentsPageProjectsCover{
     width: 100%;
     height: 25vh;
     overflow: hidden;
@@ -210,11 +205,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-}
-.investmentsPageProjectsCover img{
+} */
+.investmentsPageProjectCard img{
     width: 100%;
-    /* height: 100%; */
+    max-height: 25vh;
     object-fit: cover;
+    /* overflow: hidden; */
+    border-radius: 10px;
 }
 
 .investmentsPageProjectInfo{
@@ -282,4 +279,138 @@
 }
 .investmentsPageProjectCard .degradedLink_TextContainer a{
     font-weight: 600;
+}
+
+
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
+
+    .investmentsPageProjectCard {
+        flex-direction: row;
+        min-height: 20vh;
+        justify-content: space-between;
+        /* max-height: 30vh; */
+        align-items: stretch;
+        margin: 0;
+        padding: 0;
+    }
+    .investmentsPageProjectCard img{
+        object-fit: cover;
+        min-height: 100%;
+        max-height: none;
+        width: 40%;
+    }
+    
+    .investmentsPageProjectInfo{
+        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2% 2% 2% 2%;
+        padding: 0;
+        width: 60%;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .investmentsPageProjectInfoTitle{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 3% 0;
+    }
+    .investmentsPageProjectInfoTitle h2{
+        font-size: 1.5em;
+        width: 50%;
+    }
+    .investmentsPageProjectInfoTitle h3{
+        font-size: 1.3em;
+        width: 50%;
+    }
+    .investmentsPageProjectInfoDetails{
+        width: 65%;
+        /* height: 100%; */
+        padding: 0;
+        margin: 0;
+    }
+    .investmentsPageProjectInfoDetails li *{
+        font-size: 1.3em;
+    }
+    .investmentsPageProjectCard .degradedLink{
+        width: 25%;
+        align-self: flex-end;
+    }
+    .investmentsPageProjectCard .degradedLink_TextContainer{
+        padding: 0% 0;
+    }
+    .investmentsPageProjectCard .degradedLink_TextContainer a{
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+}
+    
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
+
+ 
+    .investmentsPageProjectCard img{
+        width: 35%;
+    }
+    
+    .investmentsPageProjectInfo{
+        align-self: center;
+        margin: 1% 2%;
+        height: 100%;
+        width: 65%;
+    }
+    .investmentsPageProjectInfoTitle h2{
+        font-size: 2em;
+        width: 70%;
+    }
+    .investmentsPageProjectInfoTitle h3{
+        font-size: 1.3em;
+        width: 30%;
+    }
+    .investmentsPageProjectInfoDetails{
+        width: 55%;
+    }
+    .investmentsPageProjectCard .degradedLink{
+        width: 20%;
+        align-self: flex-end;
+    }
+    .investmentsPageProjectCard .degradedLink_TextContainer{
+        padding: 0% 0;
+    }
+    .investmentsPageProjectCard .degradedLink_TextContainer a{
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+}
+
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
+    .investmentsPageProjectCard img{
+        width: 35%;
+    }
+    .investmentsPageProjectInfo{
+        margin: 3% 2%;
+    }
+    .investmentsPageProjectInfoTitle h2{
+        font-size: 3em;
+        width: 60%;
+    }
+    .investmentsPageProjectInfoTitle h3{
+        font-size: 2em;
+        width: 40%;
+    }
+    .investmentsPageProjectInfoDetails li *{
+        font-size: 2em;
+    }
+    .investmentsPageProjectCard .degradedLink_TextContainer a{
+        font-size: 2em;
+    }
 }

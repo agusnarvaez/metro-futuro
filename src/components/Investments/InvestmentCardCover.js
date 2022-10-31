@@ -2,8 +2,10 @@
 
 export default function InvestmentCardCover({cover}) {
     return (
-        <div className="investmentsPageProjectsCover">
+        <>
+        {/* <div className="investmentsPageProjectsCover"> */}
             <img alt="investmentsPageProjectsCover" src={cover}/>
-        </div>
+            {/* </div> */ }
+        </>
     )
 }
