@@ -2,13 +2,15 @@ import {useEffect,useState} from "react";
 import {useParams} from "react-router-dom";
 
 import {articles} from '../client/client'
+
+import {reqApi,filterItems} from "../services/getArticles";
 //* SECTIONS 
 import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover";
 import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle";
 import LearnCourseInfo from "../sections/LearnCourse/LearnCourseInfo";
 import HelmetData from "../components/HelmetData";
 
-export default function LearnCourse({list,setList,metaData}) {
+export default function LearnCourse({list,setList,metaData,learnArticles,setLearnArticles}) {
 	//* Capturo los parámetros de la URL
 	const pathSplited = window.location.pathname.split('/')[1]
 	const params = useParams();
@@ -28,33 +30,24 @@ export default function LearnCourse({list,setList,metaData}) {
 		}
 	}
 	useEffect(() => {
-		//* Chequeo si ya se solicitó el ítem list.length===0
-		if(list.length===0){
-			articles.getEntries()
-				.then((response)=>{
-					return response.items.filter(article=>pathSplited.indexOf(article.sys.contentType.sys.id)>=0)
-				})
-				.then(newList =>{
-					setList(newList)
-					return newList[params.id].fields
-				})
-				.then((newItem)=>{
-					setItem(newItem)
+		reqApi(list,setList)
+        if(learnArticles.length===0){
+            filterItems(list,setLearnArticles)
+        }else{
+			if(item===undefined){
+				setItem(learnArticles[params.id].fields)
+				if(item!==undefined){
 					setMetaData({
 						...newMetaData,
-						title: newItem.title,
-						description:newItem.description,
+						title: item.title,
+						description:item.description,
 					})
-				})
-				.catch((error)=>{
-					console.log(error)
-					window.location = '/404NotFound';
-				})
-		}else{
-			setItem(list[params.id].fields)
+				}
+			}
+			
 		}
 		
-    }, [list,params.id,pathSplited,setList,newMetaData,setMetaData,metaData]);
+    }, [list,params.id,pathSplited,setList,newMetaData,setMetaData,metaData,learnArticles,setLearnArticles,item]);
 
 	return (
 		<main className='learnCoursePage'>

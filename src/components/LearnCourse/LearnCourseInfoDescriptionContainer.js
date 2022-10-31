@@ -4,7 +4,6 @@ import {documentToReactComponents} from "@contentful/rich-text-react-renderer"/*
 import {RICHTEXT_OPTIONS} from "../../Functions/textFunctions"
 
 export default function LearnCourseInfoDescriptionCard({item}) {
-
 	return (
 		<div className="learnCoursePage_InfoDescriptionContainer">
 			{documentToReactComponents(item.content,RICHTEXT_OPTIONS)}
