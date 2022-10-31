@@ -4,50 +4,40 @@ import {useState, useEffect} from "react";
 // Importo useParams para obtener los parametros de la url
 import {useParams} from "react-router-dom";
 
-// Hoja de estilos
+// API de contentful
+import reqApi from "../services/getArticles";
 
+//* ### SECCIONES ###
+import InvestmentDetailTitle from "../sections/InvestmentDetail/InvestmentDetailTitle";
 
 // Mapa de google
 import Map from "../components/Map";
 
-export default function InvestmentDetail({investmentsList}) {
+export default function InvestmentDetail({list,setList,metaData}) {
     const params = useParams();
     const investmentId =params.id;
-    const investment = investmentsList[investmentId];
+    
+    const [investment,setInvestment]=useState({});
+
     useEffect(() => {
+        reqApi(list,setList)
+        list.length > 0 ? setInvestment(list[investmentId].fields) : console.log("No hay datos");
         
-    }, [investmentId]);
+        console.log(investment)
+    }, [list,setList,investmentId,investment,setInvestment]);
 
     return (
         <main className="investmentDetailPage">
-
-            <section className="investmentDetailPageTitle">
-                <div className="investmentDetailPageTitleInfo">
-                    <h1>{investment.title}</h1>
-                    <h2>Dirección, Localidad</h2>
-                </div>
-                <div className="investmentDetailPageTitleShare">
-
-                </div>
-            </section>
-
-            <section className="investmentDetailPageMedia">
-                <div className="investmentDetailPageMediaImage"></div>
-                <div className="investmentDetailPageMediaVideo"></div>
-                <div className="investmentDetailPageMedia360"></div>
-                <div className="investmentDetailPageMediaPano"></div>
-                <div className="investmentDetailPageMediaSelect"></div>
-            </section>
-
-            <section className="investmentDetailPageInfo">
-
-            </section>
-
-            <section className="investmentDetailPageResume">
-
-            </section>
             
+            <InvestmentDetailTitle investment={investment}/>
+            
+
+
+
+
+
             <Map/>
+            
         </main>
     )
 }

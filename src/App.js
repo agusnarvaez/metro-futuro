@@ -4,7 +4,9 @@ import { useState } from 'react';
 //* REACT-ROUTER-DOM
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-//* STYLESHEETS
+//* #######################
+//* ##### STYLESHEETS #####
+//* #######################
 import "./assets/css/normalize.css"
 import "./assets/css/styles.css"
 import "./assets/css/header.css"
@@ -16,15 +18,17 @@ import "./assets/css/contact.css";
 import "./assets/css/faqPage.css";
 import "./assets/css/footer.css";
 import "./assets/css/whatsappButton.css";
-//*TODO:INVESTMENTS
 import "./assets/css/investments.css";
-import "./assets/css/investmentDetail.css"
 
+//*TODO:INVESTMENTS
+import "./assets/css/investmentDetail.css"
 import "./assets/css/404NotFound.css"
 
 //* ### COMPONENTS ###
 import Header from "./components/Header";
 import Home from './pages/Home.js'
+import Investments from './pages/Investments';
+import InvestmentDetail from "./pages/InvestmentDetail"; 
 import Learn from "./pages/Learn";
 import LearnCourse from "./pages/LearnCourse";
 import About from './pages/About';
@@ -34,17 +38,11 @@ import Error404 from './pages/Error404';
 import WhatsappButton from './components/WhatsappButton'
 import Footer from "./components/Footer/Footer";
 
-//TODO: INVESTMENTS
-/*
-import Investments from "./pages/Investments";
-import InvestmentDetail from "./pages/InvestmentDetail"; 
-*/
 
 //* DATA
 import investmentsList from './data/investmentsList.js';
 /* import blogArticles from "./data/blogArticles" */
 import metaData from "./data/metaData";
-import Investments from './pages/Investments';
 /* import coursesList from "./data/coursesList"; */
 
 
@@ -68,6 +66,10 @@ export default function App() {
     {
       component: <Investments list={articles} setList={setArticles} metaData={metaData} />,
       path: "/investments"
+    },
+    {
+      component: <InvestmentDetail list={articles} setList={setArticles} metaData={metaData} />,
+      path: "/investments/:id"
     },
     /*{
       component: <LearnCourse list={list} />,
