@@ -51,7 +51,7 @@
 }
 
 /** ############### **/
-/** ### RESUMEN ### */
+/** ### RESUMEN ### **/
 /** ############### **/
 .investmentDetailResume{
     height: auto;
@@ -81,8 +81,28 @@
     margin: 0 3% 0 0;
 }
 
+
+/** ################# **/
+/** ### DESCARGAS ### **/
+/** ################# **/
+.investmentDetailDownloads{
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.investmentDetailDownloads .degradedLink{
+    width: 80%;
+    padding: 1%;
+}
+.investmentDetailDownloads .degradedLink_TextContainer{
+    padding: 1%;
+}
+.investmentDetailDownloads .degradedLink *{
+    font-size: 1.3em;
+    font-weight: 600;
+}
 /** ############ **/
-/** ### MAPA ### */
+/** ### MAPA ### **/
 /** ############ **/
 .investmentDetailPage .Map{
     width: 100%;
@@ -124,6 +144,23 @@
     .investmentDetailResume li img{
         width: 45px;
     }
+
+    /** ################# **/
+    /** ### DESCARGAS ### **/
+    /** ################# **/
+
+    .investmentDetailDownloads .degradedLink{
+        width: 50%;
+        padding: 0.6%;
+        margin: 2% 10%;
+    }
+    .investmentDetailDownloads .degradedLink_TextContainer{
+        padding: 0.1%;
+    }
+    .investmentDetailDownloads .degradedLink *{
+        font-size: 1.4em;
+        font-weight: 600;
+    }
     
 }
     
@@ -157,6 +194,26 @@
     }
     .investmentDetailResume li img{
         width: 50px;
+    }
+    
+    /** ################# **/
+    /** ### DESCARGAS ### **/
+    /** ################# **/
+    .investmentDetailDownloads{
+        justify-content: space-between;
+    }
+    .investmentDetailDownloads .degradedLink{
+        width: 30%;
+        padding: 0.3%;
+        margin: 0% 0%;
+    }
+    .investmentDetailDownloads .degradedLink_TextContainer{
+        padding: 0%;
+    }
+    .investmentDetailDownloads .degradedLink *{
+        font-size: 1.2em;
+        font-weight: 400;
+        padding: 0.5% 0%;
     }
 }
 
@@ -192,5 +249,13 @@
     }
     .investmentDetailResume li img{
         width: 60px;
+    }
+
+
+    /** ################# **/
+    /** ### DESCARGAS ### **/
+    /** ################# **/
+    .investmentDetailDownloads .degradedLink *{
+        font-size: 1.5em;
     }
 }

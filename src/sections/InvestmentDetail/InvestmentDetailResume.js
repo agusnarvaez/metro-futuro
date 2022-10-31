@@ -25,7 +25,6 @@ export default function InvestmentDetailResume({investment}) {
             text: investment.bathrooms + " Baño"+ (investment.bathrooms!==1?"s":"")
         }
     ]
-    console.log(list)
     return (
         <section className="investmentDetailResume">
             <ul>
