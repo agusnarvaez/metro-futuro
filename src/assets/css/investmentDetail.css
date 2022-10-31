@@ -50,6 +50,37 @@
     font-size: 1.5em;
 }
 
+/** ############### **/
+/** ### RESUMEN ### */
+/** ############### **/
+.investmentDetailResume{
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.investmentDetailResume ul{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.investmentDetailResume li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 2% 0;
+    font-size: 1.5em;
+
+}
+.investmentDetailResume li img{
+    width: 40px;
+    margin: 0 3% 0 0;
+}
+
 /** ############ **/
 /** ### MAPA ### */
 /** ############ **/
@@ -83,6 +114,16 @@
         font-size: 1.8em;
     }
     
+    /** ############### **/
+    /** ### RESUMEN ### */
+    /** ############### **/
+    .investmentDetailResume li{
+        font-size: 1.7em;
+        justify-content: center;
+    }
+    .investmentDetailResume li img{
+        width: 45px;
+    }
     
 }
     
@@ -103,9 +144,19 @@
     /** ############### **/
     /** ### DETALLE ### */
     /** ############### **/
-
     .investmentDetailInfo p{
         font-size: 2em;
+    }
+
+    /** ############### **/
+    /** ### RESUMEN ### */
+    /** ############### **/
+    .investmentDetailResume li{
+        font-size: 2em;   
+        width: 25%;
+    }
+    .investmentDetailResume li img{
+        width: 50px;
     }
 }
 
@@ -129,5 +180,17 @@
     /** ############### **/
     .investmentDetailInfo p{
         font-size: 2.5em;
+    }
+
+
+    /** ############### **/
+    /** ### RESUMEN ### */
+    /** ############### **/
+    .investmentDetailResume li{
+        font-size: 2.5em;
+
+    }
+    .investmentDetailResume li img{
+        width: 60px;
     }
 }

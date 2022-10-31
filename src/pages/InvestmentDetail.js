@@ -10,6 +10,7 @@ import {reqApi,filterItems} from "../services/getArticles";
 //* ### SECCIONES ###
 import InvestmentDetailTitle from "../sections/InvestmentDetail/InvestmentDetailTitle";
 import InvestmentDetailInfo from "../sections/InvestmentDetail/InvestmentDetailInfo";
+import InvestmentDetailResume from "../sections/InvestmentDetail/InvestmentDetailResume";
 // Mapa de google
 import Map from "../components/Map";
 
@@ -35,7 +36,7 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
 
             <InvestmentDetailInfo investment={investment}/>
 
-
+            {investment? <InvestmentDetailResume investment={investment}/> : ""}
 
             <Map/>
 
