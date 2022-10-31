@@ -8,13 +8,16 @@ import InvestmentCard from "../../components/Investments/InvestmentCard";
 // import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";
 // import investmentsFilterHomeIcon from "../assets/img/icons/investmentsFilterHomeIcon.png"
 
-import reqApi from "../../services/getArticles";
+import {reqApi,filterItems} from "../../services/getArticles";
 
-export default function Investments({list,setList}) {
+export default function InvestmentsList({list,setList,investments,setInvestments}) {
     useEffect(()=>{
         reqApi(list,setList)
-
-    },[/* listClass,investmentSearch */list,setList])
+        console.log(investments)
+        if(investments.length===0){
+            filterItems(list,setInvestments)
+        }
+    },[list,setList,investments,setInvestments])
     return (            
         <section className="investmentsPageList">
             {/* <div className="investmentsPageListFilter">
@@ -45,9 +48,7 @@ export default function Investments({list,setList}) {
                 </form>
             </div> */}
             
-            {list.map((article,key)=>{
-                console.log(key)
-                
+            {investments.map((article,key)=>{
                 return(<InvestmentCard investment={article.fields} index={key} />)
             })}
         </section>
