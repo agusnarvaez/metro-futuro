@@ -27,7 +27,6 @@ export default function InvestmentCardInfo({investment,index}) {
             value: investment.area
         }
     ]
-    console.log(index)
     return (
         <div className="investmentsPageProjectInfo">
 

@@ -17,27 +17,7 @@ export default function Learn({metaData,list,setList,learnArticles,setLearnArtic
 	//const [fetched,setFetched] = useState(false)
 	
 	useEffect(()=>{
-		//* Si el array está vacío, no realiza la petición
-		/* if(list.length===0){
-			articles.getEntries()
-				.then((articles)=>{
-					return articles.items.filter(article=>article.sys.contentType.sys.id===path)
-				})
-				.then(newList=>{
-					setList(newList)
-					return newList
-				})
-				.catch((error)=>{
-					console.log(error)
-					window.location = '/404NotFound';
-					})
-					
-		}else{
-			setList(list)
-		} */
-
 		reqApi(list,setList)
-        console.log(learnArticles)
         if(learnArticles.length===0){
             filterItems(list,setLearnArticles)
         }

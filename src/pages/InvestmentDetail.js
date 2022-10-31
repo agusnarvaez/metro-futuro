@@ -25,8 +25,6 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
             filterItems(list,setInvestments)
         }
         investments.length > 0 ? setInvestment(investments[investmentId].fields) : console.log("No hay datos");
-        
-        console.log(investment)
     }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments]);
 
     return (

@@ -13,7 +13,6 @@ import {reqApi,filterItems} from "../../services/getArticles";
 export default function InvestmentsList({list,setList,investments,setInvestments}) {
     useEffect(()=>{
         reqApi(list,setList)
-        console.log(investments)
         if(investments.length===0){
             filterItems(list,setInvestments)
         }

@@ -14,8 +14,6 @@ const reqApi = async(list,setList)=>{
         }
 
         const api = await articles.getEntries()
-        console.log(api.items)
-        //const investmentApi = await api.items.filter(article=>article.sys.contentType.sys.id===contentType())
         setList(api.items)
     }
 }
