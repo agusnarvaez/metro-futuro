@@ -40,6 +40,16 @@
     margin: 1% 0;
 }
 
+/** ############### **/
+/** ### DETALLE ### */
+/** ############### **/
+.investmentDetailInfo{
+    height: auto;
+}
+.investmentDetailInfo p{
+    font-size: 1.5em;
+}
+
 /** ############ **/
 /** ### MAPA ### */
 /** ############ **/
@@ -89,6 +99,14 @@
     .investmentDetailTitleInfo h2{
         font-size: 2em;
     }
+
+    /** ############### **/
+    /** ### DETALLE ### */
+    /** ############### **/
+
+    .investmentDetailInfo p{
+        font-size: 2em;
+    }
 }
 
 /*! ########################################*/
@@ -102,6 +120,14 @@
         font-size: 4em;
     }
     .investmentDetailTitleInfo h2{
+        font-size: 2.5em;
+    }
+
+
+    /** ############### **/
+    /** ### DETALLE ### */
+    /** ############### **/
+    .investmentDetailInfo p{
         font-size: 2.5em;
     }
 }

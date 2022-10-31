@@ -7,14 +7,11 @@ import HelmetData from "../components/HelmetData";
 
 import { useEffect } from 'react';
 
-import {articles} from '../client/client'
 import {reqApi,filterItems} from "../services/getArticles";
 //import { pathSplited } from "../Functions/learnFunctions.js";
 
 export default function Learn({metaData,list,setList,learnArticles,setLearnArticles}) {
-	//const path = window.location.pathname.slice(1,-1)
 	const path = window.location.pathname.split('/')[1]
-	//const [fetched,setFetched] = useState(false)
 	
 	useEffect(()=>{
 		reqApi(list,setList)
