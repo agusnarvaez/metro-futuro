@@ -12,6 +12,8 @@ import InvestmentDetailTitle from "../sections/InvestmentDetail/InvestmentDetail
 import InvestmentDetailInfo from "../sections/InvestmentDetail/InvestmentDetailInfo";
 import InvestmentDetailResume from "../sections/InvestmentDetail/InvestmentDetailResume";
 import InvestmentDetailDownloads from "../sections/InvestmentDetail/InvestmentDetailDownloads";
+import InvestmentDetailValue from "../sections/InvestmentDetail/InvestmentDetailValue";
+import DegradedLink from "../components/DegradedNavLink";
 // Mapa de google
 import Map from "../components/Map";
 
@@ -20,6 +22,16 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
     const investmentId =params.id;
     
     const [investment,setInvestment]=useState({});
+
+    const [degLinkId,setDegLinkId]= useState("degradedLink--inverted")
+
+    const changeDegLink = ()=>{
+        if(degLinkId===""){
+            setDegLinkId("degradedLink--inverted")
+        }else{
+            setDegLinkId("")
+        }
+    }
 
     useEffect(() => {
         reqApi(list,setList)
@@ -33,7 +45,6 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
         <main className="investmentDetailPage">
             
             <InvestmentDetailTitle investment={investment}/>
-            
 
             <InvestmentDetailInfo investment={investment}/>
 
@@ -41,6 +52,10 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
 
             <InvestmentDetailDownloads investment={investment}/>
 
+            <InvestmentDetailValue investment={investment}/>
+
+            <DegradedLink  text="¡Quiero invertir!" route="" backgroundColor="" id={degLinkId} /* onFocus={changeDegLink} onBlur={changeDegLink} *//>
+            
             <Map/>
 
         </main>

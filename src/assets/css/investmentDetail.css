@@ -101,6 +101,67 @@
     font-size: 1.3em;
     font-weight: 600;
 }
+
+/** ################# **/
+/** #### VALORES #### **/
+/** ################# **/
+.investmentDetailValue{
+    height: auto;
+    flex-wrap: wrap;
+}
+.investmentDetailValueCard{
+    margin: 3% 0;
+    width: 100%;
+    padding: 1.1%;
+    background: linear-gradient(to right,#004DFF, #FF00CC);
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.investmentDetailValueCardBorder{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.investmentDetailValueCardTextContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
+    padding: 3%;
+    z-index: 10;
+}
+.investmentDetailValueCardTextContainer p{
+    margin: 1% 0;
+
+    font-weight: 600;
+}
+.investmentDetailValueCardTextContainerTitle{
+    -webkit-text-fill-color: black;
+    z-index: 11;
+    font-size: 2em;
+}
+.investmentDetailValueCardTextContainerValue{
+    font-size: 3.5em;
+}
+
+/** ######################### **/
+/** ### ¡QUIERO INVERTIR! ### **/
+/** ######################### **/
+.investmentDetailPage #degradedLink--inverted{
+    width: 50%;
+}
+
 /** ############ **/
 /** ### MAPA ### **/
 /** ############ **/
@@ -161,7 +222,28 @@
         font-size: 1.4em;
         font-weight: 600;
     }
+
+    /** ################# **/
+    /** #### VALORES #### **/
+    /** ################# **/
+    .investmentDetailValueCard{
+        margin: 2% 0;
+        width: 90%;
+        padding: 0.8%;
+    }
+    .investmentDetailValueCardTextContainerTitle{
+        font-size: 2.3em;
+    }
+    .investmentDetailValueCardTextContainerValue{
+        font-size: 3.5em;
+    }
     
+    /** ######################### **/
+    /** ### ¡QUIERO INVERTIR! ### **/
+    /** ######################### **/
+    .investmentDetailPage #degradedLink--inverted{
+        width: 40%;
+    }
 }
     
 /*! ########################################*/
@@ -215,6 +297,38 @@
         font-weight: 400;
         padding: 0.5% 0%;
     }
+
+    /** ################# **/
+    /** #### VALORES #### **/
+    /** ################# **/
+    .investmentDetailValue{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .investmentDetailValueCard{
+        margin: 2% 0;
+        width: 30%;
+        padding: 0.4%;
+    }
+    .investmentDetailValueCardTextContainer{
+        width: 100%;
+        padding: 3% 0;
+    }
+    .investmentDetailValueCardTextContainerTitle{
+        font-size: 1.6em;
+    }
+    .investmentDetailValueCardTextContainerValue{
+        font-size: 3em;
+    }
+
+    /** ######################### **/
+    /** ### ¡QUIERO INVERTIR! ### **/
+    /** ######################### **/
+    .investmentDetailPage #degradedLink--inverted{
+        width: 30%;
+        padding: 0.4%;
+    }
+
 }
 
 /*! ########################################*/
@@ -257,5 +371,29 @@
     /** ################# **/
     .investmentDetailDownloads .degradedLink *{
         font-size: 1.5em;
+    }
+
+
+    /** ################# **/
+    /** #### VALORES #### **/
+    /** ################# **/
+    .investmentDetailValue{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .investmentDetailValueCard{
+        margin: 2% 0;
+        width: 30%;
+        padding: 0.4%;
+    }
+    .investmentDetailValueCardTextContainer{
+        width: 100%;
+        padding: 3% 0;
+    }
+    .investmentDetailValueCardTextContainerTitle{
+        font-size: 2.2em;
+    }
+    .investmentDetailValueCardTextContainerValue{
+        font-size: 3.5em;
     }
 }
