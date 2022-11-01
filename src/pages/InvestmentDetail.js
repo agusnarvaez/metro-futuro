@@ -9,6 +9,7 @@ import {reqApi,filterItems} from "../services/getArticles";
 
 //* ### SECCIONES ###
 import InvestmentDetailTitle from "../sections/InvestmentDetail/InvestmentDetailTitle";
+import InvestmentDetailMedia from "../sections/InvestmentDetail/InvestmentDetailMedia";
 import InvestmentDetailInfo from "../sections/InvestmentDetail/InvestmentDetailInfo";
 import InvestmentDetailResume from "../sections/InvestmentDetail/InvestmentDetailResume";
 import InvestmentDetailDownloads from "../sections/InvestmentDetail/InvestmentDetailDownloads";
@@ -23,15 +24,7 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
     
     const [investment,setInvestment]=useState({});
 
-    const [degLinkId,setDegLinkId]= useState("degradedLink--inverted")
-
-    const changeDegLink = ()=>{
-        if(degLinkId===""){
-            setDegLinkId("degradedLink--inverted")
-        }else{
-            setDegLinkId("")
-        }
-    }
+    const degLinkId="degradedLink--inverted"
 
     useEffect(() => {
         reqApi(list,setList)
@@ -46,6 +39,8 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
             
             <InvestmentDetailTitle investment={investment}/>
 
+            <InvestmentDetailMedia investment={investment}/>
+            
             <InvestmentDetailInfo investment={investment}/>
 
             <InvestmentDetailResume investment={investment}/>

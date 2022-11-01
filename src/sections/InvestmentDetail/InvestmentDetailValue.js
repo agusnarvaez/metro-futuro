@@ -20,8 +20,8 @@ export default function InvestmentDetailValue({investment}) {
     
     return (
         <section className="investmentDetailValue">
-            {list.map((item,index)=>(<div className="investmentDetailValueCard">
-                <div className="investmentDetailValueCardBorder">
+            {list.map((item,key)=>(<div className="investmentDetailValueCard">
+                <div className="investmentDetailValueCardBorder" index={key}>
                     <div className="investmentDetailValueCardTextContainer">
                         <p className="investmentDetailValueCardTextContainerTitle">{item.text}</p>
                         <p className="investmentDetailValueCardTextContainerValue">${item.value}</p>
