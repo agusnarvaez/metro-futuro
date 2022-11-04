@@ -17,6 +17,10 @@ export default function BottomFooter() {
 				text: 'Home'
 			},
 			{
+				to:'/investments',
+				text: 'Proyectos'
+			},
+			{
 				to:'/blog',
 				text: 'Blog'
 			},

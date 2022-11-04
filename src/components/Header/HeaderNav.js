@@ -12,7 +12,7 @@ export default function HeaderNav({burgerMenu}) {
             title:"Aprende",
             to:"/courses"
         }, */
-/*         {
+        /* {
             title:"Proyectos",
             to:"/investments"
         }, */
