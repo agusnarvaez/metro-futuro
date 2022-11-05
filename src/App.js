@@ -65,11 +65,11 @@ export default function App() {
       path: "/courses/:id"
     }, */
     {
-      component: <Investments list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData} />,
+      component: <Investments list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData.investments} />,
       path: "/investments"
     },
     {
-      component: <InvestmentDetail list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData} />,
+      component: <InvestmentDetail list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData.investmentDetail} />,
       path: "/investments/:id"
     },
     /*{

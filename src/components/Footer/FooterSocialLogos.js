@@ -23,7 +23,7 @@ export default function FooterSocialLogos() {
 		{
 			className: "twitterLogo",
 			src: twitterLogo,
-			href: "https://twitter.com/MProptech"
+			href: "https://twitter.com/Metrofuturo"
 		},
 		{
 			className: "telegramLogo",

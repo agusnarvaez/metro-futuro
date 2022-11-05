@@ -6,15 +6,15 @@ export default function InvestmentDetailValue({investment}) {
     const list = [
         {
             text: "Valor del token",
-            value: investment.tokenValue
+            value: investment.tokenValue + " eur"
+        },
+        {
+            text: "Tokens emitidos",
+            value: investment.tokensQuantity + " m2f"
         },
         {
             text: "Rentabilidad anual",
-            value: (investment.rentProfit*12).toFixed(2)
-        },
-        {
-            text: "Rentabilidad total",
-            value: investment.saleProfit
+            value: investment.saleProfit + " %"
         }
     ]
     
@@ -24,7 +24,7 @@ export default function InvestmentDetailValue({investment}) {
                 <div className="investmentDetailValueCardBorder" index={key}>
                     <div className="investmentDetailValueCardTextContainer">
                         <p className="investmentDetailValueCardTextContainerTitle">{item.text}</p>
-                        <p className="investmentDetailValueCardTextContainerValue">{item.value} eur</p>
+                        <p className="investmentDetailValueCardTextContainerValue">{item.value}</p>
                     </div>
                 </div>
             </div>))}

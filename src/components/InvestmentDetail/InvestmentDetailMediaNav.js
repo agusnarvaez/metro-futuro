@@ -11,6 +11,8 @@ export default function InvestmentDetailMediaNav({setIndex}) {
             <li onClick={()=>setIndex(1)}><img src={investmentDetailMediaVideo} alt="icono" />Videos</li>
             <li className="investmentDetailMediaNavSeparator"></li>
             <li onClick={()=>setIndex(2)}><img src={investmentDetailMedia360} alt="icono" />360</li>
+            <li className="investmentDetailMediaNavSeparator"></li>
+            <li onClick={()=>setIndex(3)}><img src={investmentDetailMedia360} alt="icono" />Planos</li>
         </ul>
     )
 }

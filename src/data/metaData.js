@@ -6,6 +6,18 @@ const metaData = {
             description:"Enterate de las últimas novedades en Real Estate y como invertir en este fantástico mundo!",
             keywords:"inversiones, real, estate, españa, token, blockchain, metro futuro"
         },
+    investments:
+        {
+            title: "Inmuebles",
+            description:"Invertí en inmuebles tokenizados en europa",
+            keywords:"inversión, novedades, real estate"
+        },
+    investmentDetail:
+        {
+            title: "",
+            description:"",
+            keywords:"inversión, novedades, real estate"
+        },
     about:
         {
             title: "Conocé el equipo",

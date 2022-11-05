@@ -18,25 +18,40 @@ import DegradedLink from "../components/DegradedNavLink";
 // Mapa de google
 import Map from "../components/Map";
 
+import HelmetData from "../components/HelmetData"
+
 export default function InvestmentDetail({list,setList,metaData,investments,setInvestments}) {
     const params = useParams();
     const investmentId =params.id;
     
     const [investment,setInvestment]=useState({});
-
+    const [newMetaData,setNewMetaData] = useState(metaData)
     const degLinkId="degradedLink--inverted"
 
     useEffect(() => {
         reqApi(list,setList)
         if(investments.length===0){
             filterItems(list,setInvestments)
+        }else{
+            if(investments.length>0){
+                setInvestment(investments[investmentId].fields)
+                /* if(investment!=={}){
+					setNewMetaData({
+						...newMetaData,
+						title: investment.title,
+						description:"descripcion",
+					})
+				} */
+            }
         }
-        investments.length > 0 ? setInvestment(investments[investmentId].fields) : console.log("No hay datos");
-    }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments]);
+        //investments.length > 0 ? setInvestment(investments[investmentId].fields) : console.log("No hay datos");
+    }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments,newMetaData,setNewMetaData]);
 
     return (
         <main className="investmentDetailPage">
             
+            <HelmetData metaData={newMetaData}/>
+
             <InvestmentDetailTitle investment={investment}/>
 
             <InvestmentDetailMedia investment={investment}/>

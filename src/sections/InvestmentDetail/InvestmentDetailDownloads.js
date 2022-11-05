@@ -14,7 +14,7 @@ export default function InvestmentDetailDownloads({investment}) {
         },
         {
             url: "",
-            text: "Descargar voucher"
+            text: "Descargar brochure"
         }
     ]
     return (

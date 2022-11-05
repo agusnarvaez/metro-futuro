@@ -20,7 +20,7 @@ export default function InvestmentCardInfo({investment,index}) {
         },
         {
             title:"Valor del token",
-            value: investment.tokenValue + " Eur"
+            value: investment.tokenValue + " eur"
         },
         {
             title:"Superficie (m2)",
