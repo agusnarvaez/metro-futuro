@@ -16,15 +16,15 @@ export default function InvestmentCardInfo({investment,index}) {
         },
         {
             title:"Tokens emitidos",
-            value: investment.tokensQuantity
+            value: investment.tokensQuantity + " m2f"
         },
         {
             title:"Valor del token",
-            value: investment.tokenValue
+            value: investment.tokenValue + " Eur"
         },
         {
             title:"Superficie (m2)",
-            value: investment.area
+            value: investment.area + " m2"
         }
     ]
     return (
