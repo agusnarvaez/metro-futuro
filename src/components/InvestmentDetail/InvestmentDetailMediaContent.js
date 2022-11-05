@@ -13,7 +13,6 @@ export default function InvestmentDetailMediaContent({investment,index}) {
     ]
 
     useEffect(()=>{
-        console.log(index)
     },[index])
     return (
         <div className="investmentDetailMediaContent">
