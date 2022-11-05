@@ -1,12 +1,12 @@
 // Importo React y Component para hacerlo componente de clase
-import React, {Component} from "react";
+/* import React, {Component} from "react"; */
 // Importo Google Maps
 import GoogleMaps from "simple-react-google-maps";
 // Importo credenciales
 import credentials from "../credentials";
 
-export default class Map extends Component {
-    render() {
+/* export default class Map extends Component {
+    render({coorddinates}) {
         return(
             <div className="MapComponent">
                 <GoogleMaps
@@ -19,4 +19,18 @@ export default class Map extends Component {
             </div>
         )
     }
+} */
+export default function InvestmentDetail({coordinates}){
+    console.log(coordinates)
+    return(
+        <div className="MapComponent">
+            <GoogleMaps
+                style={{width: "100%", height: "100%"}}
+                apiKey={credentials.mapsKey}
+                center={{lat: coordinates.lat, lng:coordinates.lon}}
+                zoom={16}
+                markers={[{lat: coordinates.lat, lng:coordinates.lon}]}
+            />
+        </div>
+    )
 }
