@@ -381,6 +381,10 @@
     /** ############## **/
     /** ### TÍTULO ### **/
     /** ############## **/
+    .investmentDetailPage{
+        padding: 1vh 10vw 10vh 10vw;
+
+    }
     .investmentDetailTitleInfo h1{
         font-size: 3em;
     }
@@ -441,7 +445,7 @@
         padding: 0%;
     }
     .investmentDetailDownloads .degradedLink *{
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 400;
         padding: 0.5% 0%;
     }
@@ -532,7 +536,7 @@
     /** ### DESCARGAS ### **/
     /** ################# **/
     .investmentDetailDownloads .degradedLink *{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
 
@@ -553,7 +557,7 @@
         padding: 3% 0;
     }
     .investmentDetailValueCardTextContainerTitle{
-        font-size: 2.2em;
+        font-size: 2em;
     }
     .investmentDetailValueCardTextContainerValue{
         font-size: 3.5em;
