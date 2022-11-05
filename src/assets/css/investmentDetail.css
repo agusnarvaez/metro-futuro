@@ -172,7 +172,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 95%;
     background-color: white;
     margin: 0;
     padding: 0% 0%;
@@ -180,28 +180,26 @@
     z-index: 20;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
     cursor: pointer;
+    overflow: hidden;
 }
 .investmentDetailMediaNav li{
     display: flex;
     height: 100%;
-    width: 33%;
+    width: 23%;
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
-    padding: 1.5% 0;
+    padding: 3.5% 0;
 }
-.investmentDetailMediaNav li:hover{
-    background-color: rgba(211, 211, 211, 0.13);
-    border-radius: 10px;
-}
+
 .investmentDetailMediaNavSeparator{
-    height: 45px !important;
-    width: 3px !important;
-    padding: 3% 0;
+    height: 35px !important;
+    width: 2.5px !important;
+    /* margin: 2% 0 !important; */
     border: none;
     z-index: 5;
     border-radius: 50rem;
-    background: linear-gradient(to bottom, #004DFF 0%, #FF00CC 100%);
+    background: linear-gradient(to bottom, #004DFF 0%, #FF00CC 100%) !important;
 }
 .investmentDetailMediaNav img{
     height: 20px;
@@ -378,11 +376,18 @@
     .investmentDetailMediaNav{
         font-size: 1.3em;
     }
+    .investmentDetailMediaNav--active{
+        /* background-color: rgba(0, 51, 255, 0.16); */
+        /* background: linear-gradient(to bottom right, #004cff2a 0%, #ff00cc2f 100%) !important; */
+        background: linear-gradient(to bottom right, #004cff1e 0%, #ff00cc1a 100%) !important;
+        border-radius: 5px;
+    }
     .investmentDetailMediaNavSeparator{
-        height: 45px !important;
-        width: 3px !important;
+        height: 50px !important;
+        width: 3.5px !important;
         padding: 1.5% 0;
     }
+
     .investmentDetailMediaNav img{
         height: 25px;
         margin: 0 5% 0 0;
@@ -470,6 +475,7 @@
     }
     .investmentDetailMediaNav{
         font-size: 1.5em;
+        
     }
     .investmentDetailMediaNavSeparator{
         padding: 1.5% 0;
@@ -477,6 +483,23 @@
     .investmentDetailMediaNav img{
         height: 30px;
     }
+    .investmentDetailMediaNav li{
+        width: 24.5%;
+    }
+
+    .investmentDetailMediaNav li:hover{
+        /* background-color: rgba(0, 51, 255, 0.114); */
+        background: linear-gradient(to top left, #004cff1e 0%, #ff00cc1a 100%);
+        border-radius: 5px;
+    }
+    
+    .investmentDetailMediaNav--active:hover{
+        /* background: linear-gradient(to bottom right, #004cff2a 0%, #ff00cc2f 100%) !important; */
+        background: linear-gradient(to bottom right, #004cff1e 0%, #ff00cc1a 100%) !important;
+        border-radius: 5px;
+    }
+
+
     /** ############### **/
     /** ### DETALLE ### */
     /** ############### **/
@@ -573,6 +596,12 @@
     }
     .investmentDetailMediaNav img{
         height: 35px;
+    }
+    .investmentDetailMediaNavSeparator{
+        width: 4px !important;
+    }
+    .investmentDetailMediaNav li{
+        width: 24.6%;
     }
 
 

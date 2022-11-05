@@ -35,13 +35,14 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
         }else{
             if(investments.length>0){
                 setInvestment(investments[investmentId].fields)
-                /* if(investment!=={}){
+                //console.log()
+                if(Object.entries(investment).length>0){
 					setNewMetaData({
 						...newMetaData,
 						title: investment.title,
-						description:"descripcion",
+						description:investment.shortDescription,
 					})
-				} */
+				}
             }
         }
         //investments.length > 0 ? setInvestment(investments[investmentId].fields) : console.log("No hay datos");

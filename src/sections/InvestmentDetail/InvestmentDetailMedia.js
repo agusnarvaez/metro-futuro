@@ -11,7 +11,7 @@ export default function InvestmentDetailMedia({investment}) {
             
             <InvestmentDetailMediaContent index={index} investment={investment}/>
             
-            <InvestmentDetailMediaNav setIndex={setIndex}/>
+            <InvestmentDetailMediaNav index={index} setIndex={setIndex}/>
             
         </section>
     )
