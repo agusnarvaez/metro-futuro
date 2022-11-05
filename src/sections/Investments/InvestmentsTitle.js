@@ -6,7 +6,7 @@ export default function InvestmentsTitle() {
         <section className="investmentstPageTitle">
             <img alt="sectionBackground" className="sectionBackground" src={investmentsTitleBg} />
             <h1>
-                Conoce las <font color="#004DFF">oportunidades inmobiliarias</font>
+                Conoce nuestros <font color="#004DFF">inmuebles tokenizados</font>
             </h1>
         </section>
     )
