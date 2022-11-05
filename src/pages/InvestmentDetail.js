@@ -35,8 +35,7 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
         }else{
             if(investments.length>0){
                 setInvestment(investments[investmentId].fields)
-                //console.log()
-                if(Object.entries(investment).length>0){
+                if(Object.entries(investment).length>0&&newMetaData.title===""){
 					setNewMetaData({
 						...newMetaData,
 						title: investment.title,
@@ -67,7 +66,7 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
 
             <DegradedLink  text="¡Quiero invertir!" route="" backgroundColor="" id={degLinkId} /* onFocus={changeDegLink} onBlur={changeDegLink} *//>
             
-            <Map/>
+            {Object.entries(investment).length>0?<Map coordinates={investment.mapCoordinates}/>:""}
 
         </main>
     )
