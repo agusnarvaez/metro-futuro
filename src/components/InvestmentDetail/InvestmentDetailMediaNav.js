@@ -2,6 +2,7 @@
 import investmentDetailMediaImage from "../../assets/img/icons/investmentDetailMediaImage.svg"
 import investmentDetailMediaVideo from "../../assets/img/icons/investmentDetailMediaVideo.svg"
 import investmentDetailMedia360 from "../../assets/img/icons/investmentDetailMedia360.svg"
+import investmentDetailMediaBlueprints from "../../assets/img/icons/investmentDetailMediaBlueprints.svg"
 export default function InvestmentDetailMediaNav({index,setIndex}) {
 
     return (
@@ -12,7 +13,7 @@ export default function InvestmentDetailMediaNav({index,setIndex}) {
             <li className="investmentDetailMediaNavSeparator"></li>
             <li onClick={()=>setIndex(2)} className={index===2?"investmentDetailMediaNav--active":0}><img src={investmentDetailMedia360} alt="icono" />360</li>
             <li className="investmentDetailMediaNavSeparator"></li>
-            <li onClick={()=>setIndex(3)} className={index===3?"investmentDetailMediaNav--active":0}><img src={investmentDetailMedia360} alt="icono" />Planos</li>
+            <li onClick={()=>setIndex(3)} className={index===3?"investmentDetailMediaNav--active":0}><img src={investmentDetailMediaBlueprints} alt="icono" />Planos</li>
         </ul>
     )
 }
