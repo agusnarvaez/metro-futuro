@@ -219,6 +219,7 @@
    margin: 0;
  }
  .videoArrow{
+   cursor:pointer;
    width: 25px;
    transition: rotate 0.5s ease-in-out;
  }
