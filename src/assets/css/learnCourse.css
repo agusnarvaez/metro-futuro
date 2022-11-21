@@ -68,7 +68,7 @@
     width: 95%;
     height: fit-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     border-bottom: 1px solid black;
 }
@@ -193,6 +193,53 @@
     max-height: 50vh;
     margin: 0 0 5% 0;
  }
+ .learnCoursePage_InfoVideos{
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .learnCoursePage_InfoVideoCard{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   overflow: hidden;
+   border-radius: 7px;
+   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+   margin: 0% 0 5% 0;
+ }
+ .learnCoursePage_InfoVideoCard h2{
+   width: 100%;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   font-size: 1.3em;
+   padding: 3% 3%;
+   margin: 0;
+ }
+ .videoArrow{
+   width: 25px;
+   transition: rotate 0.5s ease-in-out;
+ }
+ .videoArrow--rotated{
+   rotate: 180deg;
+ }
+ .learnCoursePage_videoContainer{
+   width: 100%;
+   max-height: 5000px;
+   transition: max-height 0.5s ease;
+   /* padding: 5%; */
+ }
+ .learnCoursePage_videoContainer--wrapped{
+   max-height: 0;
+   transition: max-height 0.5s ease;
+ }
+ .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
+   width: 100%;
+   height: 500px;
+   padding: 3% 3%;
+ }
 
  .learnCoursePage_InfoVideos p{
     font-size: 1.5em;
@@ -219,6 +266,13 @@
 /*! ########################################*/
 @media (min-width: 481px) {
     
+   .learnCoursePage_InfoVideoCard h2{
+      font-size: 1.5em;
+    }
+    .videoArrow{
+      width: 30px;
+    }
+   
     
 }
 
@@ -255,6 +309,18 @@
       max-width: 95%;
       max-height: 70vh
    }
+
+   .learnCoursePage_InfoVideoCard h2{
+      font-size: 1.7em;
+    }
+    .videoArrow{
+      width: 35px;
+    }
+    .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
+      width: 100%;
+      height: 500px !important;
+      /* padding: 3% 3%; */
+    }
 }
 
 /*! ########################################*/
@@ -263,5 +329,9 @@
 @media (min-width: 1280px) {
    .learnCoursePage_InfoDescriptionCard p{
       font-size: 1.7em;
+   }
+
+   .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
+      height: 600px !important;
    }
 }

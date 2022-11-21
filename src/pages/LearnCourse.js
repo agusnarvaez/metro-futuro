@@ -1,7 +1,7 @@
 import {useEffect,useState} from "react";
 import {useParams} from "react-router-dom";
 
-import {articles} from '../client/client'
+//import {articles} from '../client/client'
 
 import {reqApi,filterItems} from "../services/getArticles";
 //* SECTIONS 
@@ -22,8 +22,8 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 		if(item!==undefined){
 			return ([
 				<LearnCourseCover item={item} key={0}/>,
-				<LearnCourseTitle item={item} type={list.type} pathSplited={pathSplited} key={1}/>,
-				<LearnCourseInfo item={item} type={list.type} pathSplited={pathSplited} key={2}/>
+				<LearnCourseTitle item={item} type={learnArticles.type} pathSplited={pathSplited} key={1}/>,
+				<LearnCourseInfo item={item} type={learnArticles.type} pathSplited={pathSplited} key={2}/>
 			])
 		}else{
 			return([])
@@ -46,6 +46,7 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 			}
 			
 		}
+		console.log(item)
 		
     }, [list,params.id,pathSplited,setList,newMetaData,setMetaData,metaData,learnArticles,setLearnArticles,item]);
 

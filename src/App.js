@@ -49,6 +49,7 @@ import metaData from "./data/metaData";
 export default function App() {
   
   const [articles,setArticles]=useState([])
+  const [learnArticles,setLearnArticles]=useState([])
   const [blogArticles,setBlogArticles]=useState([])
   const [investments,setInvestments]=useState([])
   const routesList =[
@@ -56,14 +57,14 @@ export default function App() {
       component: <Home investmentsList={investmentsList} metaData={metaData.home} />,
       path: "/"
     },
-    /* {
-      component: <Learn list={list} metaData={metaData} />,
-      path: "/courses"
+    {
+      component: <Learn list={articles} metaData={metaData.courses} setList={setArticles} learnArticles={learnArticles} setLearnArticles={setLearnArticles} />,
+      path: "/learn"
     },
     {
-      component: <LearnCourse list={list} />,
-      path: "/courses/:id"
-    }, */
+      component: <LearnCourse list={articles} setList={setArticles} metaData={metaData.course} learnArticles={learnArticles} setLearnArticles={setLearnArticles} />,
+      path: "/learn/:id"
+    },
     {
       component: <Investments list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData.investments} />,
       path: "/investments"

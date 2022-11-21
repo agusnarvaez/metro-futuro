@@ -15,7 +15,7 @@ const filterItems = (list,setNewList)=>{
             switch(pathSplited){
                 case "investments": return "property"
                 case "blog": return "blog"
-                case "course": return "courses"
+                case "learn": return "courses"
                 default: break
             }
         }

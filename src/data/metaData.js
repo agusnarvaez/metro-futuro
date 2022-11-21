@@ -47,8 +47,19 @@ const metaData = {
             title: "",
             description:"",
             keywords:"blog, artículo, novedad, real estate"
-        }
-        ,
+        },
+    courses:
+        {
+            title: "Aprende",
+            description:"Descubre la historia y los mecanismos para lograr tus objetivos económicos con el blockchain",
+            keywords:"cursos, novedades, real estate"
+        },
+    course:
+        {
+            title: "",
+            description:"",
+            keywords:"curso, artículo, novedad, real estate"
+        },
     error404:
         {
             title: "Página no encontrada | Error 404",

@@ -10,7 +10,7 @@ export default function HeaderNav({burgerMenu}) {
         },
        /*  {
             title:"Aprende",
-            to:"/courses"
+            to:"/learn"
         }, */
         /* {
             title:"Proyectos",

@@ -75,7 +75,7 @@
 .header .hiddenMenu{
     width: 100%;
     position: absolute;
-    top: -400%;
+    top: -700%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -116,7 +116,7 @@
     }
 
     .header .hiddenMenu{
-        top: -600%;
+        top: -1000%;
     }
 }
 

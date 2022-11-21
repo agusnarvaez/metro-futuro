@@ -21,6 +21,10 @@ export default function BottomFooter() {
 				text: 'Proyectos'
 			},
 			{
+				to:'/learn',
+				text: 'Aprende'
+			},
+			{
 				to:'/blog',
 				text: 'Blog'
 			},

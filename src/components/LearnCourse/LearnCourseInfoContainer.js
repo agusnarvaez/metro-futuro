@@ -1,13 +1,16 @@
 //* COMPONENTS
 import LearnCourseInfoDescription from "./LearnCourseInfoDescription";
 import LearnCourseInfoVideos from "./LearnCourseInfoVideos";
-import LearnCourseInfoAditional from "./LearnCourseInfoAditional";
+/* import LearnCourseInfoAditional from "./LearnCourseInfoAditional"; */
+
+import {useEffect,useState} from 'react'
 
 export default function LearnCourseInfoContainer({infoIndex,item}) {
 	
 	//* Obtengo el tipo de artículo desde la ruta
 	const path = window.location.pathname.split('/')[1]
 
+	const [info,setInfo] = useState([])
 	//* Función que define los elementos a mostrar según el tipo de artículo
 	const infoContent = (type)=>{ 
 		if(type==="blog"){
@@ -15,15 +18,23 @@ export default function LearnCourseInfoContainer({infoIndex,item}) {
 		}else{
 			return([
 				<LearnCourseInfoDescription item={item} key={0}/>,
-				<LearnCourseInfoVideos item={item} key={1}/>,
-				<LearnCourseInfoAditional item={item} key={2}/>
+				<LearnCourseInfoVideos item={item} key={1}/>/* ,
+				<LearnCourseInfoAditional item={item} key={2}/> */
 			])
 	}}
+
+	useEffect(() => {
+		console.log(info)
+		if(info.length===0){
+			setInfo(infoContent(path))
+			console.log(infoIndex)
+		}
+	},[item,infoIndex,setInfo,info,path])
 	
 	return (
 		<div className="learnCoursePage_InfoContainer">
 			
-			{infoContent.length===1?infoContent(path):infoContent(path)[infoIndex]}
+			{info.length===1?info:info[infoIndex]}
 
 		</div>
 	)
