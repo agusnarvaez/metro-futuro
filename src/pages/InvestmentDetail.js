@@ -32,18 +32,17 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
         reqApi(list,setList)
         if(investments.length===0){
             filterItems(list,setInvestments)
-        }else{
-            if(investments.length>0){
-                setInvestment(investments[investmentId].fields)
-                if(Object.entries(investment).length>0&&newMetaData.title===""){
-					setNewMetaData({
-						...newMetaData,
-						title: investment.title,
-						description:investment.shortDescription,
-					})
-				}
+        }else if(investments.length>0){
+            setInvestment(investments[investmentId].fields)
+            if(Object.entries(investment).length>0&&newMetaData.title===""){
+                setNewMetaData({
+                    ...newMetaData,
+                    title: investment.title,
+                    description:investment.shortDescription,
+                })
             }
         }
+        
         //investments.length > 0 ? setInvestment(investments[investmentId].fields) : console.log("No hay datos");
     }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments,newMetaData,setNewMetaData]);
 

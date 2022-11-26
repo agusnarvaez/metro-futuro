@@ -17,7 +17,7 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 
 	//* Selecciono el ítem según la URL
 	const [item,setItem] = useState()
-	const [newMetaData,setMetaData] = useState(metaData)
+	const [newMetaData,setNewMetaData] = useState(metaData)
 	const courseItems = ()=>{
 		if(item!==undefined){
 			return ([
@@ -33,22 +33,19 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 		reqApi(list,setList)
         if(learnArticles.length===0){
             filterItems(list,setLearnArticles)
-        }else{
-			if(item===undefined){
-				setItem(learnArticles[params.id].fields)
-				if(item!==undefined){
-					setMetaData({
-						...newMetaData,
-						title: item.title,
-						description:item.description,
-					})
-				}
-			}
-			
+        }else if(item===undefined){
+			setItem(learnArticles[params.id].fields)
 		}
-		console.log(item)
+		if(item!==undefined&&newMetaData.title===""){
+			setNewMetaData({
+				...newMetaData,
+				title: item.title,
+				description:item.description,
+			})
+			console.log(newMetaData)
+		}
 		
-    }, [list,params.id,pathSplited,setList,newMetaData,setMetaData,metaData,learnArticles,setLearnArticles,item]);
+    }, [list,params.id,pathSplited,setList,newMetaData,setNewMetaData,metaData,learnArticles,setLearnArticles,item]);
 
 	return (
 		<main className='learnCoursePage'>
