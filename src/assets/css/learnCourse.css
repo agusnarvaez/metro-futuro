@@ -229,17 +229,16 @@
  .learnCoursePage_videoContainer{
    width: 100%;
    max-height: 5000px;
-   transition: max-height 0.5s ease;
-   /* padding: 5%; */
+   transition: max-height 0.3s ease;
  }
  .learnCoursePage_videoContainer--wrapped{
    max-height: 0;
-   transition: max-height 0.5s ease;
+   transition: max-height 0.3s ease;
  }
  .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
    width: 100%;
-   height: 500px;
-   padding: 3% 3%;
+   min-height: 500px;
+   padding: 1%;
  }
 
  .learnCoursePage_InfoVideos p{
@@ -319,8 +318,7 @@
     }
     .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
       width: 100%;
-      height: 500px !important;
-      /* padding: 3% 3%; */
+      min-height: 600px !important;
     }
 }
 
@@ -333,6 +331,6 @@
    }
 
    .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
-      height: 600px !important;
+      min-height: 700px !important;
    }
 }
