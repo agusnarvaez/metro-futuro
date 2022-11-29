@@ -1,30 +1,15 @@
+/*! #######################################*/
+/*! ############### MOBILE ###############*/
+/*! #######################################*/
 
 .investmentDetailPage{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 1vh 6vw 10vh 6vw;
     background-color: #FBFDFF;
-}
-
-.investmentDetailPage section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    min-height: 85vh;
-    position: relative;
-}
-
-.investmentDetailPage .sectionBackground{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
 }
 
 .investmentDetailPage b,
@@ -33,27 +18,322 @@
     display: inline;
 }
 
-.investmentstPageTitle{
-    justify-content: center;
+/** ############## **/
+/** ### TÍTULO ### **/
+/** ############## **/
+.investmentDetailTitle{
+    height: fit-content;
+    margin: 5% 0;
+}
+.investmentDetailTitleInfo{
+    width: 100%;
+}
+.investmentDetailTitleInfo h1{
+    font-size: 2.1em;
+    font-weight: 600;
+    text-align: start;
+    margin: 1% 0;
+}
+.investmentDetailTitleInfo h2{
+    font-size: 1.7em;
+    font-weight: 400;
+    margin: 1% 0;
 }
 
-.investmentstPageTitle h1{
+/** ################## **/
+/** ### MULTIMEDIA ### */
+/** ################## **/
+.investmentDetailMedia{
+    height: 30vh;
     width: 100%;
-    text-align: center;
-    z-index: 5;
+    border-radius: 10px;
+    position: relative;
+    margin: 0% 0 10% 0;
+    z-index: 10;
+}
+.investmentDetailMediaContent{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    border-radius: 10px;
+    z-index: 10;
+}
+.investmentDetailMediaArrows{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.investmentDetailMediaArrows li{
+    z-index: 100;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    /* opacity: 30%; */
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.investmentDetailMediaArrows li div{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    cursor: pointer;
+}
+
+.investmentDetailMediaArrows li img{
+    height: 30px;
+    width: 30px;
+    z-index: 100;
+}
+.investmentDetailMediaArrows li:first-child, div{
+    justify-content: flex-start;
+}
+.investmentDetailMediaArrows li:first-child:active{
+    transition: all 1s ease;
+    background: linear-gradient(to right, #0447e336 0%, #ffffff00 100%);
+}
+.investmentDetailMediaArrows li:last-child div,
+.investmentDetailMediaArrows li:last-child {
+    justify-content: flex-end;
+}
+.investmentDetailMediaArrows li:last-child:active{
+    transition: 1s ease;
+    background: linear-gradient(to left, #0447e336 0%, #ffffff00 100%);
+}
+
+
+.investmentDetailMediaImage{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 10;
+    position: relative;
+}
+.investmentDetailMediaImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.investmentDetailMediaVideo{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4em;
-    font-weight: 500;
-    /* display: inline; */
+    position: relative;
+    overflow: hidden;
 }
-.investmentstPageTitle font{
-    padding-left: 0.6% ;
+
+.investmentDetailMediaVideo .youTubeVideo_Player{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    z-index: 10;
+}
+.investmentDetailMediaVideo video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.investmentDetailMedia360{
+    width: 100%;
+    height: 100%;
+}
+.investmentDetailMedia360 iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.investmentDetailMedia360 script{
+    width: 100%;
+    height: 100%;
+}
+
+.investmentDetailMediaNav{
+    position: absolute;
+    
+    bottom: -10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    background-color: white;
+    margin: 0;
+    padding: 0% 0%;
+    border-radius: 10px;
+    z-index: 20;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+    cursor: pointer;
+    overflow: hidden;
+}
+.investmentDetailMediaNav li{
+    display: flex;
+    height: 100%;
+    width: 23%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    padding: 3.5% 0;
+}
+
+.investmentDetailMediaNavSeparator{
+    height: 35px !important;
+    width: 2.5px !important;
+    /* margin: 2% 0 !important; */
+    border: none;
+    z-index: 5;
+    border-radius: 50rem;
+    background: linear-gradient(to bottom, #004DFF 0%, #FF00CC 100%) !important;
+}
+.investmentDetailMediaNav img{
+    height: 20px;
+    margin: 0 3% 0 0;
 }
 
 
-/* Mapa */
+
+/** ############### **/
+/** ### DETALLE ### */
+/** ############### **/
+.investmentDetailInfo{
+    height: auto;
+}
+.investmentDetailInfo p{
+    font-size: 1.5em;
+}
+
+/** ############### **/
+/** ### RESUMEN ### **/
+/** ############### **/
+.investmentDetailResume{
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.investmentDetailResume ul{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.investmentDetailResume li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 2% 0;
+    font-size: 1.5em;
+
+}
+.investmentDetailResume li img{
+    width: 40px;
+    margin: 0 3% 0 0;
+}
+
+
+/** ################# **/
+/** ### DESCARGAS ### **/
+/** ################# **/
+.investmentDetailDownloads{
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.investmentDetailDownloads .degradedLink{
+    width: 80%;
+    padding: 1%;
+}
+.investmentDetailDownloads .degradedLink_TextContainer{
+    padding: 1%;
+}
+.investmentDetailDownloads .degradedLink *{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+/** ################# **/
+/** #### VALORES #### **/
+/** ################# **/
+.investmentDetailValue{
+    height: auto;
+    flex-wrap: wrap;
+}
+.investmentDetailValueCard{
+    margin: 3% 0;
+    width: 100%;
+    padding: 1.1%;
+    background: linear-gradient(to right,#004DFF, #FF00CC);
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.investmentDetailValueCardBorder{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.investmentDetailValueCardTextContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
+    padding: 3%;
+    z-index: 10;
+}
+.investmentDetailValueCardTextContainer p{
+    margin: 1% 0;
+
+    font-weight: 600;
+}
+.investmentDetailValueCardTextContainerTitle{
+    -webkit-text-fill-color: black;
+    z-index: 11;
+    font-size: 2em;
+}
+.investmentDetailValueCardTextContainerValue{
+    font-size: 3.5em;
+}
+
+/** ######################### **/
+/** ### ¡QUIERO INVERTIR! ### **/
+/** ######################### **/
+.investmentDetailPage #degradedLink--inverted{
+    width: 50%;
+    margin: 5% 0;
+}
+
+/** ############ **/
+/** ### MAPA ### **/
+/** ############ **/
 .investmentDetailPage .Map{
     width: 100%;
     height: 100%;
@@ -63,4 +343,317 @@
 .MapComponent{
     width: 100%;
     height: 60vh;
+}
+
+
+
+
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
+
+    /** ############## **/
+    /** ### TÍTULO ### **/
+    /** ############## **/
+
+    .investmentDetailTitleInfo h1{
+        font-size: 2.5em;
+    }
+    .investmentDetailTitleInfo h2{
+        font-size: 1.8em;
+    }
+    
+    /** ################## **/
+    /** ### MULTIMEDIA ### */
+    /** ################## **/
+    .investmentDetailMedia{
+        height: 50vh;
+    }
+    .investmentDetailMediaVideo{
+        height: 97%;
+    }
+    .investmentDetailMediaNav{
+        font-size: 1.3em;
+    }
+    .investmentDetailMediaNav--active{
+        /* background-color: rgba(0, 51, 255, 0.16); */
+        /* background: linear-gradient(to bottom right, #004cff2a 0%, #ff00cc2f 100%) !important; */
+        background: linear-gradient(to bottom right, #004cff1e 0%, #ff00cc1a 100%) !important;
+        border-radius: 5px;
+    }
+    .investmentDetailMediaNavSeparator{
+        height: 50px !important;
+        width: 3.5px !important;
+        padding: 1.5% 0;
+    }
+
+    .investmentDetailMediaNav img{
+        height: 25px;
+        margin: 0 5% 0 0;
+    }
+
+    /** ############### **/
+    /** ### RESUMEN ### */
+    /** ############### **/
+    .investmentDetailResume li{
+        font-size: 1.7em;
+        justify-content: center;
+    }
+    .investmentDetailResume li img{
+        width: 45px;
+    }
+
+    /** ################# **/
+    /** ### DESCARGAS ### **/
+    /** ################# **/
+
+    .investmentDetailDownloads .degradedLink{
+        width: 50%;
+        padding: 0.6%;
+        margin: 2% 10%;
+    }
+    .investmentDetailDownloads .degradedLink_TextContainer{
+        padding: 0.1%;
+    }
+    .investmentDetailDownloads .degradedLink *{
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
+    /** ################# **/
+    /** #### VALORES #### **/
+    /** ################# **/
+    .investmentDetailValueCard{
+        margin: 2% 0;
+        width: 90%;
+        padding: 0.8%;
+    }
+    .investmentDetailValueCardTextContainerTitle{
+        font-size: 2.3em;
+    }
+    .investmentDetailValueCardTextContainerValue{
+        font-size: 3.5em;
+    }
+    
+    /** ######################### **/
+    /** ### ¡QUIERO INVERTIR! ### **/
+    /** ######################### **/
+    .investmentDetailPage #degradedLink--inverted{
+        width: 40%;
+    }
+}
+    
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
+    /** ############## **/
+    /** ### TÍTULO ### **/
+    /** ############## **/
+    .investmentDetailPage{
+        padding: 1vh 10vw 10vh 10vw;
+
+    }
+    .investmentDetailTitleInfo h1{
+        font-size: 3em;
+    }
+    .investmentDetailTitleInfo h2{
+        font-size: 2em;
+    }
+
+
+
+    /** ################## **/
+    /** ### MULTIMEDIA ### */
+    /** ################## **/
+    .investmentDetailMedia{
+        height: 65vh;
+    }
+    .investmentDetailMediaVideo{
+        height: 100%;
+    }
+    .investmentDetailMediaNav{
+        font-size: 1.5em;
+        
+    }
+    .investmentDetailMediaNavSeparator{
+        padding: 1.5% 0;
+    }
+    .investmentDetailMediaNav img{
+        height: 30px;
+    }
+    .investmentDetailMediaNav li{
+        width: 24.5%;
+    }
+
+    .investmentDetailMediaNav li:hover{
+        /* background-color: rgba(0, 51, 255, 0.114); */
+        background: linear-gradient(to top left, #004cff1e 0%, #ff00cc1a 100%);
+        border-radius: 5px;
+    }
+    
+    .investmentDetailMediaNav--active:hover{
+        /* background: linear-gradient(to bottom right, #004cff2a 0%, #ff00cc2f 100%) !important; */
+        background: linear-gradient(to bottom right, #004cff1e 0%, #ff00cc1a 100%) !important;
+        border-radius: 5px;
+    }
+
+
+    /** ############### **/
+    /** ### DETALLE ### */
+    /** ############### **/
+    .investmentDetailInfo p{
+        font-size: 2em;
+    }
+
+    /** ############### **/
+    /** ### RESUMEN ### */
+    /** ############### **/
+    .investmentDetailResume li{
+        font-size: 2em;   
+        width: 25%;
+    }
+    .investmentDetailResume li img{
+        width: 50px;
+    }
+    
+    /** ################# **/
+    /** ### DESCARGAS ### **/
+    /** ################# **/
+    .investmentDetailDownloads{
+        justify-content: space-between;
+    }
+    .investmentDetailDownloads .degradedLink{
+        width: 30%;
+        padding: 0.3%;
+        margin: 0% 0%;
+    }
+    .investmentDetailDownloads .degradedLink_TextContainer{
+        padding: 0%;
+    }
+    .investmentDetailDownloads .degradedLink *{
+        font-size: 1em;
+        font-weight: 400;
+        padding: 0.5% 0%;
+    }
+
+    /** ################# **/
+    /** #### VALORES #### **/
+    /** ################# **/
+    .investmentDetailValue{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .investmentDetailValueCard{
+        margin: 2% 0;
+        width: 30%;
+        padding: 0.4%;
+    }
+    .investmentDetailValueCardTextContainer{
+        width: 100%;
+        padding: 3% 0;
+    }
+    .investmentDetailValueCardTextContainerTitle{
+        font-size: 1.6em;
+    }
+    .investmentDetailValueCardTextContainerValue{
+        font-size: 3em;
+    }
+
+    /** ######################### **/
+    /** ### ¡QUIERO INVERTIR! ### **/
+    /** ######################### **/
+    .investmentDetailPage #degradedLink--inverted{
+        width: 30%;
+        padding: 0.4%;
+    }
+
+}
+
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
+    /** ############## **/
+    /** ### TÍTULO ### **/
+    /** ############## **/
+    .investmentDetailTitleInfo h1{
+        font-size: 4em;
+    }
+    .investmentDetailTitleInfo h2{
+        font-size: 2.5em;
+    }
+
+    /** ################## **/
+    /** ### MULTIMEDIA ### */
+    /** ################## **/
+    .investmentDetailMedia{
+        height: 75vh;
+    }
+    .investmentDetailMediaNav{
+        font-size: 1.7em;
+    }
+    .investmentDetailMediaNav img{
+        height: 35px;
+    }
+    .investmentDetailMediaNavSeparator{
+        width: 4px !important;
+    }
+    .investmentDetailMediaNav li{
+        width: 24.6%;
+    }
+
+
+
+    /** ############### **/
+    /** ### DETALLE ### */
+    /** ############### **/
+    .investmentDetailInfo p{
+        font-size: 2.5em;
+    }
+
+
+    /** ############### **/
+    /** ### RESUMEN ### */
+    /** ############### **/
+    .investmentDetailResume li{
+        font-size: 2.5em;
+
+    }
+    .investmentDetailResume li img{
+        width: 60px;
+    }
+
+
+    /** ################# **/
+    /** ### DESCARGAS ### **/
+    /** ################# **/
+    .investmentDetailDownloads .degradedLink *{
+        font-size: 1.2em;
+    }
+
+
+    /** ################# **/
+    /** #### VALORES #### **/
+    /** ################# **/
+    .investmentDetailValue{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .investmentDetailValueCard{
+        margin: 2% 0;
+        width: 30%;
+        padding: 0.4%;
+    }
+    .investmentDetailValueCardTextContainer{
+        width: 100%;
+        padding: 3% 0;
+    }
+    .investmentDetailValueCardTextContainerTitle{
+        font-size: 2em;
+    }
+    .investmentDetailValueCardTextContainerValue{
+        font-size: 3.5em;
+    }
 }

@@ -1,6 +1,6 @@
 export default function LearnCourseInfoNav({infoIndex,setInfoIndex}/* handleClick */) {
 
-	const navItems = ["Descripción","Videos","Contenido Adicional"]
+	const navItems = ["Descripción","Videos"/* ,"Contenido Adicional" */]
 
 	return (
 		<ul className="learnCoursePage_Nav">

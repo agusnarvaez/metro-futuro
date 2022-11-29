@@ -68,7 +68,7 @@
     width: 95%;
     height: fit-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     border-bottom: 1px solid black;
 }
@@ -100,18 +100,18 @@
     align-items: center;
     font-size: 1.5em;
  }
-/*  .learnCoursePage_InfoDescription h1{
-    width: 100%;
-    text-align: start;
-    font-weight: 600;
-    font-size: 2em;
- } */
+
  .learnCoursePage_InfoDescriptionResume{
     width: 100%;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-evenly;
     margin: 2% 0;
     align-items: center;
+ }
+ .learnCoursePage_InfoDescriptionLectureTime{
+   width: 15%;
+   display: flex;
+   align-items: center;
  }
  .learnCoursePage_InfoDescriptionResume .learnCoursesCard_Difficulty{
     font-size: 1em;
@@ -128,11 +128,12 @@
     font-size: 1.5em;
     font-weight: 300;
  }
- .learnCoursePage_InfoDescriptionResume img{
+ .learnCoursePage_InfoDescriptionLectureTime img{
     width: 20px;
+    height: 20px;
     margin: 0 0 0 2%;
  }
- .learnCoursePage_InfoDescriptionCard{
+ .learnCoursePage_InfoDescriptionContainer{
     width: 90%;
     height: fit-content;
     display: flex;
@@ -142,31 +143,102 @@
     margin: 0;
     padding: 0;
  }
- .learnCoursePage_InfoDescriptionCard h2{
+ .learnCoursePage_InfoDescriptionContainer h2{
     width: 100%;
     height: fit-content;
     padding: 2% 0 2% 0;
     font-size: 2.3em;
     font-weight: 600;
  }
- .learnCoursePage_InfoDescriptionCard p{
+ .learnCoursePage_InfoDescriptionContainer p{
     width: 100%;
     font-size: 1.3em;
     text-align: justify;
     font-weight: 300;
  }
- .learnCoursePage_InfoDescriptionCard a{
+ .learnCoursePage_InfoDescriptionContainer a{
    text-decoration: none;
    font-size: inherit;
    color: #004DFF;
   }
-  .learnCoursePage_InfoDescriptionCard a:hover{
+  .learnCoursePage_InfoDescriptionContainer a:hover{
    color: black;
   }
- .learnCoursePage_InfoDescriptionCard img{
+
+  .learnCoursePage_InfoDescriptionContainer ul,
+  .learnCoursePage_InfoDescriptionContainer ol{
+   width: 100%;
+  }
+  .learnCoursePage_InfoDescriptionContainer ul{
+   list-style:initial;
+  }
+  .learnCoursePage_InfoDescriptionContainer li{
+   list-style:inherit;
+  }
+  .learnCoursePage_InfoDescriptionContainer blockquote{
+   width: 90%;
+   padding-left: 5%;
+   display: flex;
+   align-items: center;
+   margin: 0;
+   border-left: 5px solid lightgray;
+  }
+
+  .learnCoursePage_InfoDescriptionContainer blockquote p{
+   margin: 0;
+  }
+
+ .learnCoursePage_InfoDescriptionContainer img{
     max-width: 95%;
     max-height: 50vh;
     margin: 0 0 5% 0;
+ }
+ .learnCoursePage_InfoVideos{
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .learnCoursePage_InfoVideoCard{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   overflow: hidden;
+   border-radius: 7px;
+   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+   margin: 0% 0 5% 0;
+ }
+ .learnCoursePage_InfoVideoCard h2{
+   width: 100%;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   font-size: 1.3em;
+   padding: 3% 3%;
+   margin: 0;
+ }
+ .videoArrow{
+   cursor:pointer;
+   width: 25px;
+   transition: rotate 0.5s ease-in-out;
+ }
+ .videoArrow--rotated{
+   rotate: 180deg;
+ }
+ .learnCoursePage_videoContainer{
+   width: 100%;
+   max-height: 5000px;
+   transition: max-height 0.3s ease;
+ }
+ .learnCoursePage_videoContainer--wrapped{
+   max-height: 0;
+   transition: max-height 0.3s ease;
+ }
+ .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
+   width: 100%;
+   min-height: 500px;
+   padding: 1%;
  }
 
  .learnCoursePage_InfoVideos p{
@@ -194,6 +266,13 @@
 /*! ########################################*/
 @media (min-width: 481px) {
     
+   .learnCoursePage_InfoVideoCard h2{
+      font-size: 1.5em;
+    }
+    .videoArrow{
+      width: 30px;
+    }
+   
     
 }
 
@@ -202,31 +281,45 @@
 /*! ########################################*/
 @media (min-width: 769px) {
 
-    .learnCoursePage_Cover{
-        max-height: 60vh;
-        overflow: hidden;
-        width: 100vw;
-        border-radius: 0;
-    }
-    .learnCoursePage_Nav li{
-        font-size: 1.5em;
-        padding: 2% 1%;
-        
-     
-      }
-      .learnCoursePage_InfoDescription{
-         padding: 0 10%;
-      }
-     .learnCoursePage_InfoDescriptionCard p{
-      padding: 0 10%;
+   .learnCoursePage_Cover{
+      max-height: 60vh;
+      overflow: hidden;
+      width: 100vw;
+      border-radius: 0;
+   }
+   .learnCoursePage_Nav li{
       font-size: 1.5em;
-     }
-     
-     
-     .learnCoursePage_InfoDescriptionCard img{
-        max-width: 95%;
-        max-height: 70vh
-     }
+      padding: 2% 1%;
+   }
+   .learnCoursePage_InfoDescriptionResume br{
+      display: none;
+   }
+   .learnCoursePage_InfoDescription{
+      padding: 0 10%;
+   }
+   .learnCoursePage_InfoDescriptionContainer{
+      width: 100%;
+   }
+   .learnCoursePage_InfoDescriptionContainer p{
+      padding: 0;
+      font-size: 1.5em;
+   }
+
+   .learnCoursePage_InfoDescriptionContainer img{
+      max-width: 95%;
+      max-height: 70vh
+   }
+
+   .learnCoursePage_InfoVideoCard h2{
+      font-size: 1.7em;
+    }
+    .videoArrow{
+      width: 35px;
+    }
+    .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
+      width: 100%;
+      min-height: 600px !important;
+    }
 }
 
 /*! ########################################*/
@@ -235,5 +328,9 @@
 @media (min-width: 1280px) {
    .learnCoursePage_InfoDescriptionCard p{
       font-size: 1.7em;
+   }
+
+   .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
+      min-height: 700px !important;
    }
 }

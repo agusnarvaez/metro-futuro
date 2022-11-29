@@ -3,21 +3,20 @@
 import LearnCoursesCardDifficulty from './LearnCoursesCardDifficulty.js'
 import DegradedNavLink from '../../components/DegradedNavLink.js'
 
-export default function LearnCourses({item,url}) {
-	
+export default function LearnCourses({item,url,id}) {
 	return (
 
 		<article id='learnCoursesCard'>
 
-			<img src={item.cover} alt="learnCoursesCardDemo" />
+			<img src={item.cover.fields.file.url} alt="learnCoursesCardDemo" />
 
 			<LearnCoursesCardDifficulty  difficulty={item.difficulty}/>
 
 			<h3>{item.title}</h3>
 
-			<p>{item.shortDescription}</p>
+			<p>{item.description}</p>
 
-			<DegradedNavLink route={`/learn/${url+item.id}`} text="Mas información" backgroundColor="white" />
+			<DegradedNavLink route={`/${url+"/"+id}`} text="Mas información" backgroundColor="white" />
 
 		</article>
 

@@ -10,11 +10,15 @@ export default function HeaderNav({burgerMenu}) {
         },
        /*  {
             title:"Aprende",
-            to:"/learn/courses"
+            to:"/learn"
+        }, */
+        /* {
+            title:"Proyectos",
+            to:"/investments"
         }, */
         {
             title:"Blog",
-            to:"/learn/blog"
+            to:"/blog"
         },
         {
             title:"Quienes Somos",
@@ -33,7 +37,7 @@ export default function HeaderNav({burgerMenu}) {
             <ul className={burgerMenu?"navigation hiddenMenu":"navigation"} >
                 {links.map((link, key) => {
                     return(
-                        <HeaderNavLink link={link} key={key} index={key}/>
+                        <HeaderNavLink link={link} key={key} links={links} index={key}/>
                 )})}
             </ul>
     )

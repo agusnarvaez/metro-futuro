@@ -1,0 +1,70 @@
+/*! #######################################*/
+/*! ############### MOBILE ###############*/
+/*! #######################################*/
+
+.whatsappButton{
+    border-radius: 50rem;
+    border: 3px solid #00BB2D;
+    position: fixed;
+    padding: 3%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+    background-color: white;
+}
+
+.whatsappButton_img{
+    width: 30px;   
+    
+}
+
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
+
+    .whatsappButton{
+        padding: 2%;
+        right: 15px;
+        bottom: 15px;
+    }
+    
+    .whatsappButton_img{
+        width: 35px;
+        
+    }
+    
+}
+    
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
+
+    .whatsappButton{
+        padding: 1%;
+        right: 20px;
+        bottom: 20px;
+        transition: all 1.5s ease;
+    }
+    
+    .whatsappButton_img{ 
+        transition: all 0.1s ease;
+    }
+
+    .whatsappButton:hover{
+        background-color: #00BB2D;
+    }
+
+    .whatsappButton:hover .whatsappButton_img{
+        filter: grayscale(100%) contrast(10000%);
+    }
+
+}
+
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
+
+}

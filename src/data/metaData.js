@@ -6,6 +6,18 @@ const metaData = {
             description:"Enterate de las últimas novedades en Real Estate y como invertir en este fantástico mundo!",
             keywords:"inversiones, real, estate, españa, token, blockchain, metro futuro"
         },
+    investments:
+        {
+            title: "Inmuebles",
+            description:"Invertí en inmuebles tokenizados en europa",
+            keywords:"inversión, novedades, real estate"
+        },
+    investmentDetail:
+        {
+            title: "",
+            description:"",
+            keywords:"inversión, novedades, real estate"
+        },
     about:
         {
             title: "Conocé el equipo",
@@ -35,8 +47,19 @@ const metaData = {
             title: "",
             description:"",
             keywords:"blog, artículo, novedad, real estate"
-        }
-        ,
+        },
+    courses:
+        {
+            title: "Aprende",
+            description:"Descubre la historia y los mecanismos para lograr tus objetivos económicos con el blockchain",
+            keywords:"cursos, novedades, real estate"
+        },
+    course:
+        {
+            title: "",
+            description:"",
+            keywords:"curso, artículo, novedad, real estate"
+        },
     error404:
         {
             title: "Página no encontrada | Error 404",

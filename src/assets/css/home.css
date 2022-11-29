@@ -12,6 +12,7 @@
 #homeAbout{
     overflow: hidden;
     height: 40vh;
+    margin: 0;
 }
 #homeAboutLink div{
     background-color: #FBFAFF;
@@ -115,7 +116,7 @@
 
 /** ### OPORTUNIDAD DE INVERSIÓN ###*/
     #homeOportunity{
-        margin: 5% 0;
+        margin: 1% 0;
     }
     #homeOportunity .sectionInfo{
         padding: 5% 0 0 0;

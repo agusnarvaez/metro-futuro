@@ -1,21 +1,19 @@
 
 
 /* import coursesList from '../../data/coursesList'; */
-import LearnCourseInfoDescriptionCard from './LearnCourseInfoDescriptionCard';
+import LearnCourseInfoDescriptionContainer from './LearnCourseInfoDescriptionContainer';
 import LearnCourseInfoDescriptionResume from './LearnCourseInfoDescriptionResume';
-import DegradedNavLink from "./../DegradedNavLink";
 
-export default function LearnCourseInfoDescription({content,item,url,type}) {
-	
+export default function LearnCourseInfoDescription({item}) {
+
 	return (
 		<div className="learnCoursePage_InfoDescription">
 			
+
+			<LearnCourseInfoDescriptionContainer item={item}/>
+			
 			<LearnCourseInfoDescriptionResume item={item} />
 			
-			{content.map((item,key) => {
-				return <LearnCourseInfoDescriptionCard key={key} content={item} />
-			})}
-			<DegradedNavLink route={`/learn/${url}`} text={`Más ${type}s`} backgroundColor="white" />
 		</div>	
 	)
 }
