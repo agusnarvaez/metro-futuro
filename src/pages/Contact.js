@@ -38,17 +38,17 @@ export default function Contact({metaData}) {
     const [showMessage, setShowMessage] = useState(false);
     const [validName,setValidName]= useState(false);
     const [validEmail,setValidEmail]= useState(false);
-    
+
     const [validSubject,setValidSubject]= useState(false);
-    
+
     const [validMessage,setValidMessage]= useState(false);
-    
+
     const [errors,setErrors]=useState([]);
-    
+
     const handleChange = e => {
         const { name, value } = e.target;
         setContact({ ...contact, [name]: value });
-        
+
         // Validación de nombre
         if(contact.from_name.length>0){
             setValidName(true);
@@ -63,7 +63,7 @@ export default function Contact({metaData}) {
         }else{
             setValidEmail(true);
         }
-        
+
         // Validación de asunto
         if(contact.subject.length<=0){
             setValidSubject(false);
@@ -93,7 +93,7 @@ export default function Contact({metaData}) {
         }else{
             setValidEmail(true);
         }
-        
+
         // Validación de asunto
         if(contact.subject.length<=0){
             setValidSubject(false);
@@ -115,15 +115,16 @@ export default function Contact({metaData}) {
                 <p className={validCaptcha?"errorHidden":"errorShown"}>Por favor, verifique que no es un robot</p>
             </div>
         );
-        
+
         if(validCaptcha&&validName&&validEmail&&validSubject&&validMessage){
-            emailjs.send('service_sddwvre', 'template_b1tdztw', contact, credentials.emailJs)
+            emailjs.send(credentials.emailJs.service,credentials.emailJs.template, contact, credentials.emailJs.id)
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
                     alert("Mensaje enviado con éxito!");
                     setContact(frmContact);
                     setShowMessage(true);
                 }, (err) => {
+                    alert("Error al enviar el mensaje, por favor contáctese vía whatsapp!");
                     console.log('FAILED...', err);
                 });
         }else{
@@ -131,7 +132,7 @@ export default function Contact({metaData}) {
             alert("Por favor revise los campos!")
         }
     }
-    
+
     return (
         <main id="contactPage">
             <HelmetData metaData={metaData} />
@@ -145,7 +146,7 @@ export default function Contact({metaData}) {
                 <p>Ponte en contacto con nosotros enviándonos un mensaje</p>
             </section>
             <section id="formContainer">
-                
+
                 <form onSubmit={handleSubmit}>
                     <div className={nameContainer} id="inputContainer">
                         <input
@@ -171,7 +172,7 @@ export default function Contact({metaData}) {
                             name="from_email"
                             placeholder="Email"
                             type="text"
-                            value={contact.from_email} 
+                            value={contact.from_email}
                             onChange={handleChange}
                             onFocus={()=>{setEmailContainer("inputContainer inputContainerFocus")}}
                             onBlur={()=>{setEmailContainer("inputContainer")}}
@@ -215,7 +216,7 @@ export default function Contact({metaData}) {
                                 id="attachment"
                             />
                         </span>
-                        <label 
+                        <label
                             htmlFor="attachment"
                             className='contactLabelAttachment'
                         >
@@ -234,7 +235,7 @@ export default function Contact({metaData}) {
                             onChange={onChangeCaptcha}
                         />
                     </div>
-                    
+
                         {errors}
                     <button
                         className="contactSubmit"
@@ -246,7 +247,7 @@ export default function Contact({metaData}) {
                             </p>
                         </div>
                     </button>
-                    
+
 
                     {showMessage ? <div className="alertSuccess" role="alert">Enviado con éxito!</div> : ``}
                 </form >
