@@ -88,7 +88,14 @@ export default function ContactForm() {
         e.preventDefault()
 
         if(fields.current.some(field=>field.isValid===false)){
-            console.log("ERROR: Revisar los campos");
+
+            if(fields.current[fields.current.length-1].isValid===false){
+                fields.current[fields.current.length-1].showErrors=true;
+            }else{
+                fields.current[fields.current.length-1].showErrors=false;
+            }
+
+            console.log("ERROR: Revisar los campos")
             alert("Por favor revise los campos!")
         }else{
             //* Si están ok, ejecuta el método de emailJs

@@ -110,10 +110,10 @@ body {
     background: linear-gradient(to left, #FF00CC 0%, #004DFF 100%);
 }
 .input--valid{
-    background: #3ecf60;
+    background: #76e18f;
 }
 .input--invalid{
-    background: #FF0000;
+    background: #ea7070;
 }
 
 

@@ -8,7 +8,6 @@ import ContactForm from "../sections/Contact/ContactForm";
 
 export default function Contact({metaData}) {
     
-    
     return (
         <main id="contactPage">
             <HelmetData metaData={metaData} />
@@ -22,7 +21,7 @@ export default function Contact({metaData}) {
             <ContactSlogan />
 
             <ContactForm />
-            
+
         </main >
     )
 }

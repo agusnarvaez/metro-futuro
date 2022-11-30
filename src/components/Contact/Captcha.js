@@ -25,6 +25,7 @@ export default function Captcha({field}) {
                     onChange={onChangeCaptcha}
                 />
             </div>
+            {field.showErrors?<p className="errorShown">{field.error}</p>:null}
         </>
     )
 }
