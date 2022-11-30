@@ -79,21 +79,21 @@ body {
     color: #000F33;
 }
 
-.inputLargeContainer{
+.largeInput{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     width: 100%;
     background: #004cff89;
-    padding: 3px 3px;
-    
+    padding: 5px;
+    border: none;
     height: 130px;
     margin: 1% 0;
 }
-.inputLargeContainer textarea{
+.largeInput textarea{
     min-height: fit-content;
-    border-radius: 23px;
+    border-radius: 20px;
     border: none;
     width: 100%;
     height: 100%;
@@ -102,10 +102,18 @@ body {
     font-size: 16px;
     color: #000F33;
     opacity: 100%;
+    background-color: white;
+    outline: none;
 }
 
-.inputContainerFocus {
+.input--focus {
     background: linear-gradient(to left, #FF00CC 0%, #004DFF 100%);
+}
+.input--valid{
+    background: #3ecf60;
+}
+.input--invalid{
+    background: #FF0000;
 }
 
 
@@ -158,9 +166,9 @@ body {
     font-size: 16px;
     background-color: #004cff;
     border-radius: 50rem;
-    
+
     padding: 2% 5%;
-    
+
     color: #F3F2F2;
 }
 
@@ -195,7 +203,7 @@ body {
 }
 .recaptcha > div > div > div{
     margin: 0 !important;
-    
+
 }
 /*! ### RECAPTCHA ### */
 
@@ -266,7 +274,7 @@ body {
         margin: 0;
         padding: 0% 10%;
     }
-    
+
     #contactPageSlogan h1{
         width: 100%;
         font-size: 2.5em;
@@ -278,23 +286,23 @@ body {
         font-size: 1.5em;
         text-align: center;
     }
-    
+
     /** ### RECAPTCHA ### */
     .recaptcha{
         margin: 3% 0;
     }
-    
+
     /*! ### RECAPTCHA ### */
-    
+
     /** Link degradado */
     .contactSubmit {
         width: 20%;
         margin: 0% 0;
         padding: 3px 3px;
     }
-    
+
 }
-    
+
 /*! ########################################*/
 /*! ################ LAPTOPS ###############*/
 /*! ########################################*/
@@ -323,7 +331,7 @@ body {
     #contactPageSlogan{
         padding: 0 0 0 5% !important;
     }
-    
+
     #contactPageSlogan h1{
         width: 100%;
         font-size: 3em;
@@ -346,12 +354,12 @@ body {
     .recaptcha{
         margin: 3% 0;
     }
-    
+
     /*! ### RECAPTCHA ### */
-    
+
     /** Link degradado */
     .contactSubmit {
-        
+
         width: 30%;
         margin: 0% 0;
         padding: 3px 3px;
@@ -368,19 +376,19 @@ body {
 
     #contactPageSlogan{
         padding: 0 0 0 7% !important;
-    }    
+    }
     #contactPageSlogan h1{
         font-size: 3.8em;
-    } 
+    }
     #contactPageSlogan p{
         width: 100%;
         font-size: 2em;
     }
-    
+
     .inputContainer{
         padding: 5px;
     }
-    
+
     .inputLargeContainer{
         padding: 5px;
         border-radius: 30px;
