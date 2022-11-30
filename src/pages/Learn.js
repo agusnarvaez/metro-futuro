@@ -12,7 +12,7 @@ import {reqApi,filterItems} from "../services/getArticles";
 
 export default function Learn({metaData,list,setList,learnArticles,setLearnArticles}) {
 	const path = window.location.pathname.split('/')[1]
-	
+
 	useEffect(()=>{
 		reqApi(list,setList)
         if(learnArticles.length===0){
@@ -25,7 +25,7 @@ export default function Learn({metaData,list,setList,learnArticles,setLearnArtic
 			<HelmetData metaData={metaData} />
 
 			<LearnSlogan path={path} />
-			
+
 			<LearnCourses list={learnArticles} url={path}  />
 		</main>
 	)
