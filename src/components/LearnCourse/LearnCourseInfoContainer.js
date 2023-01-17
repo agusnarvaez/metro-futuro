@@ -24,10 +24,8 @@ export default function LearnCourseInfoContainer({infoIndex,item}) {
 	}}
 
 	useEffect(() => {
-		console.log(info)
 		if(info.length===0){
 			setInfo(infoContent(path))
-			console.log(infoIndex)
 		}
 	},[item,infoIndex,setInfo,info,path])
 	
