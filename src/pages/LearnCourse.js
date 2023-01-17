@@ -1,8 +1,6 @@
 import {useEffect,useState} from "react";
 import {useParams} from "react-router-dom";
 
-import {articles} from '../client/client'
-
 import {reqApi,filterItems} from "../services/getArticles";
 //* SECTIONS 
 import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover";

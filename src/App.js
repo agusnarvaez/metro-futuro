@@ -19,6 +19,7 @@ import "./assets/css/faqPage.css";
 import "./assets/css/footer.css";
 import "./assets/css/whatsappButton.css";
 import "./assets/css/investments.css";
+import "./assets/css/terms.css";
 
 //*TODO:INVESTMENTS
 import "./assets/css/investmentDetail.css"
@@ -37,7 +38,7 @@ import Faq from "./pages/Faq";
 import Error404 from './pages/Error404';
 import WhatsappButton from './components/WhatsappButton'
 import Footer from "./components/Footer/Footer";
-
+import Terms from "./pages/Terms";
 
 //* DATA
 import investmentsList from './data/investmentsList.js';
@@ -103,6 +104,10 @@ export default function App() {
     {
       component: <Faq metaData={metaData.faq} />,
       path: "/help"
+    },
+    {
+      component: <Terms metaData={metaData.faq} />,
+      path: "/terms"
     },
     {
       component: <Error404 metaData={metaData.error404} />,
