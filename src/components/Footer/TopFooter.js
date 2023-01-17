@@ -50,14 +50,14 @@ export default function BottomFooter() {
 		{
 			to:'/help',
 			text: 'Ayuda/FAQ'
-		}/* ,
-		{
-			to:'/privacy',
-			text: 'Políticas de privacidad'
 		},
 		{
 			to:'/terms',
 			text: 'Términos y condiciones'
+		}/* ,
+		{
+			to:'/privacy',
+			text: 'Políticas de privacidad'
 		} */
 	]}
 
