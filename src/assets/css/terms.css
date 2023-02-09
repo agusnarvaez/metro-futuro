@@ -1,0 +1,65 @@
+/*! #######################################*/
+/*! ############### MOBILE ###############*/
+/*! #######################################*/
+
+.termsPage{
+    width: 90%;
+    margin: 12vh 0 0 3vh;
+    padding: 0 1.1%;
+}
+.termsPage h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.termsPage h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.termsPage li,
+.termsPage p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+}
+.termsPage u{
+    font-size: inherit;
+}
+.termsPage ol{
+    list-style: auto;
+}
+
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
+    .termsPage{
+        margin: 12vh 0 0 5vh;
+    }
+    
+    
+}
+    
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
+    .termsPage{
+        margin: 12vh 0 0 3vh;
+    }
+}
+
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
+    .termsPage{
+        margin: 15vh 0 0 3vh;
+    }
+}

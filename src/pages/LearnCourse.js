@@ -1,8 +1,6 @@
 import {useEffect,useState} from "react";
 import {useParams} from "react-router-dom";
 
-//import {articles} from '../client/client'
-
 import {reqApi,filterItems} from "../services/getArticles";
 //* SECTIONS 
 import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover";
@@ -42,7 +40,6 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 				title: item.title,
 				description:item.description,
 			})
-			console.log(newMetaData)
 		}
 		
     }, [list,params.id,pathSplited,setList,newMetaData,setNewMetaData,metaData,learnArticles,setLearnArticles,item]);
