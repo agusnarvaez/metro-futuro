@@ -34,7 +34,7 @@ export default function ContactForm() {
                 fields.current[fields.current.length-1].showErrors=false;
             }
 
-            console.log("ERROR: Revisar los campos")
+            /* console.log("ERROR: Revisar los campos") */
             alert("Por favor revise los campos!")
 
         }else{
@@ -49,7 +49,7 @@ export default function ContactForm() {
                 credentials.emailJs.id //* ID de
                 )
                     .then((response) => {
-                        console.log('SUCCESS!', response.status, response.text);
+                        /* console.log('SUCCESS!', response.status, response.text); */
                         alert("Mensaje enviado con éxito!");
                         setContact(frmContact);
                         setButtonClass("contactSubmit degradedLink contactSubmit--success")
@@ -57,7 +57,7 @@ export default function ContactForm() {
 
                     //* Capturo el error al enviar el mensaje
                     (err) => {
-                        console.log('ERROR:\n', err);
+                       /*  console.log('ERROR:\n', err); */
                         setButtonClass("contactSubmit contactSubmit--error")
                     });
         }

@@ -12,7 +12,6 @@ export default function LargeInput({field,contact,setContact}) {
         }else{
             field.isValid = false
         }
-        console.log(contact)
     }
 
     const handleBlur = () => {
