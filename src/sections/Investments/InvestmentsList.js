@@ -17,7 +17,7 @@ export default function InvestmentsList({list,setList,investments,setInvestments
             filterItems(list,setInvestments)
         }
     },[list,setList,investments,setInvestments])
-    return (            
+    return (
         <section className="investmentsPageList">
             {/* <div className="investmentsPageListFilter">
                 <form>
@@ -34,7 +34,7 @@ export default function InvestmentsList({list,setList,investments,setInvestments
                             }}
                         />
                     </div>
-                    <div name="Precio" className="priceFilter" 
+                    <div name="Precio" className="priceFilter"
                     onClick={()=>{
                         setListClass(
                             (listClass=="")?
@@ -46,9 +46,9 @@ export default function InvestmentsList({list,setList,investments,setInvestments
                     </div>
                 </form>
             </div> */}
-            
+
             {investments.map((article,key)=>{
-                return(<InvestmentCard investment={article.fields} index={key} />)
+                return(<InvestmentCard investment={article.fields} index={key} key={key} />)
             })}
         </section>
     )

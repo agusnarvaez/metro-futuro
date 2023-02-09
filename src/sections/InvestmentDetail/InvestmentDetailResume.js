@@ -6,7 +6,7 @@ import garageIcon from "../../assets/img/icons/investmentDetailGarage.svg"
 import bathsIcon from "../../assets/img/icons/investmentDetailBath.svg"
 
 export default function InvestmentDetailResume({investment}) {
-    
+
     const list = [
         {
             icon:roomsIcon,
@@ -28,7 +28,7 @@ export default function InvestmentDetailResume({investment}) {
     return (
         <section className="investmentDetailResume">
             <ul>
-                {list.map((item,index)=>(<li><img alt="iconoDeResumen" src={item.icon}/>{item.text}</li>))}
+                {list.map((item,index)=>(<li key={index}><img alt="iconoDeResumen" src={item.icon}/>{item.text}</li>))}
             </ul>
         </section>
     )
