@@ -208,7 +208,7 @@ body {
 /*! ### RECAPTCHA ### */
 
 /** Link degradado */
-.contactSubmit {
+/* .contactSubmit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,21 +220,119 @@ body {
     padding: 3px 3px;
     border-radius: 50rem;
     border: none;
+    position: relative;
+} */
+.contactSubmit{
+    border: none;
 }
-.contactSubmit div {
+.contactSubmit--success{
+    width: 30% !important;
+}
+.contactSubmit--success img{
+    background: transparent !important;
+}
+.contactSubmit--success p{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white !important;
+    margin:0;
+}
+.contactSubmit--error{
+    background: #FF0000;
+    border-radius: 50rem !important;
+    width: 50% !important;
+}
+.contactSubmit--error p{
+    padding: 3% 5%;
+    color: white !important;
+    font-size: 1.3em !important;
+    margin: 0;
+    font-weight: 500 !important;
+}
+.contactSubmit--loading{
+/*     width: 70px !important;
+    height: 70px !important; */
+    background-color: #004DFF;
+    /* background-color: transparent; */
+    display: flex !important;
+    justify-content: center;
+    align-items: center !important;;
+    width: 45px !important;
+    height: 45px;
+    border: 5px solid white;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent ;
+    border-right-color: transparent !important;;
+    border-radius: 50%;
+    /* display: inline-block; */
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    animation: loader 1s linear infinite;
+}
+.contactSubmit--loading__rotation{
+    /* background: linear-gradient(to right, #ffffff, #FF00CC); */
+    /* border: 5px lightgray solid; */
+    /* border-right: solid gray 5px; */
+    /* border-left: solid gray 5px; */
+
+    /* border-top: solid black 5px; */
+    /* border-radius: none;
+    border-radius: 50%;
+    height: 50px !important;
+    width: 50px !important;
+    z-index: 1 !important;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    animation: loader 2s linear infinite; */
+    background: white !important;
+    /* margin: 5px !important; */
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0;
+    /* border: 5px solid transparent !important; */
+    /* border-bottom:5px solid white !important; */
+    border-radius: 50% !important;
+    /* display: inline-block; */
+    /* box-sizing: border-box; */
+    /* animation: loader 1.5s linear infinite; */
+}
+.contactSubmit--loading__center {
+    /* position: absolute;
+    top: 30%;
+    left: 30%; */
+/*     width: 30px !important;
+    height: 30px !important;
+    background: linear-gradient(to right, #004DFF, #FF00CC) !important;
+    z-index: 5 !important; */
+}
+@keyframes loader {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.contactSubmit div {
+/*     display: flex;
     justify-content: center;
     align-items: center;
     background: #FBFDFF;
     width: 100%;
-    height: auto;
+    height: auto; */
     /* margin: 2.5px 2.5px 2.5px 2.5px; */
-    z-index: 2;
-    border-radius: 50rem;
-    transition: background-color 0.5s ease-in-out;
+  /*   z-index: 2;
+    border-radius: 50rem; */
+    /* transition: background-color 0.5s ease-in-out; */
 }
 
-.contactSubmit p {
+/* .contactSubmit p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,12 +345,12 @@ body {
     margin: 0 !important;
     padding: 6%;
     font-weight: 500;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-text-fill-color: linear-gradient(to right, #004DFF 0%, #FF00CC 100%) !important;
+    background: white;
     -webkit-background-clip: text;
     -webkit-border-image: fill;
     z-index: 5;
-}
+} */
 
 .contactSubmit:hover div{
     background: transparent;

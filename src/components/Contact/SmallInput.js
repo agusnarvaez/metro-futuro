@@ -3,7 +3,7 @@ export default function SmallInput({field,contact,setContact}) {
 
     const [inputClass,setInputClass] = useState("inputContainer")
     const checkEmail = (email)=>{
-        if(email.includes("@")){
+        if(email.includes("@")&&email.includes(".com")){
             field.isValid = true
         }else{
             field.isValid = false
