@@ -2,7 +2,7 @@
 
 
 export default function InvestmentDetailValue({investment}) {
-    
+
     const list = [
         {
             text: "Valor del token",
@@ -17,11 +17,12 @@ export default function InvestmentDetailValue({investment}) {
             value: investment.saleProfit + " %"
         }
     ]
-    
+
     return (
         <section className="investmentDetailValue">
-            {list.map((item,key)=>(<div className="investmentDetailValueCard">
-                <div className="investmentDetailValueCardBorder" index={key}>
+            {list.map((item,key)=>(
+            <div className="investmentDetailValueCard" key={key} index={key}>
+                <div className="investmentDetailValueCardBorder"  >
                     <div className="investmentDetailValueCardTextContainer">
                         <p className="investmentDetailValueCardTextContainerTitle">{item.text}</p>
                         <p className="investmentDetailValueCardTextContainerValue">{item.value}</p>

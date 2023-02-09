@@ -2,7 +2,7 @@
 import DegradedLink from "../../components/DegradedNavLink"
 
 export default function InvestmentDetailDownloads({investment}) {
-    
+
     const list = [
         {
             url:"",
@@ -19,7 +19,7 @@ export default function InvestmentDetailDownloads({investment}) {
     ]
     return (
         <section className="investmentDetailDownloads">
-                {list.map((item,index)=>(<DegradedLink text={item.text} route={item.url} backgroundColor="white" />))}
+                {list.map((item,index)=>(<DegradedLink key={index} text={item.text} route={item.url} backgroundColor="white" />))}
         </section>
     )
 }
