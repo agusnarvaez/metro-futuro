@@ -7,22 +7,22 @@ export default function HeaderNav({burgerMenu}) {
         /*{
             title:"Home",
             to:"/"
-        },
-         {
-            title:"Aprende",
-            to:"/learn"
         }, */
         /* {
             title:"Proyectos",
             to:"/investments"
         }, */
         {
-            title:"Blog",
-            to:"/blog"
+            title:"Conocenos",
+            to:"/about"
         },
         {
-            title:"Quienes Somos",
-            to:"/about"
+            title:"Aprende",
+            to:"/learn"
+        },
+        {
+            title:"Blog",
+            to:"/blog"
         },
         {
             title:"Contacto",
