@@ -13,7 +13,7 @@ export default function HeaderNav({burgerMenu}) {
             to:"/investments"
         }, */
         {
-            title:"Conocenos",
+            title:"Quienes somos",
             to:"/about"
         },
         {
