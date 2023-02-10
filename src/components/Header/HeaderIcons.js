@@ -19,7 +19,7 @@ export default function HeaderIcons({burgerMenu,setBurgerMenu}) {
             <div className="headerIcons">
                 <NavLink
                     onClick={scrollToTop}
-                    className={({ isActive }) => (isActive ? "navLink active" : "navLink")}
+                    className="metroFuturoLogo"
                     to="/"
                     exact="true"
                 >

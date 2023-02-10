@@ -11,7 +11,7 @@ export default function Header() {
     
     return (
 
-        <header className="header" onClick={() => setBurgerMenu(!burgerMenu)}>
+        <header className="header">
 
             <div className="headerShadow" />
 
