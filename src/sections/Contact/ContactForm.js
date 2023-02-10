@@ -50,7 +50,7 @@ export default function ContactForm() {
                 )
                     .then((response) => {
                         /* console.log('SUCCESS!', response.status, response.text); */
-                        alert("Mensaje enviado con éxito!");
+                        /* alert("Mensaje enviado con éxito!"); */
                         setContact(frmContact);
                         setButtonClass("contactSubmit degradedLink contactSubmit--success")
                     },
