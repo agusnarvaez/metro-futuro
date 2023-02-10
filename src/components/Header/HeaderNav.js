@@ -2,13 +2,13 @@
 import HeaderNavLink from "./HeaderNavLink";
 
 export default function HeaderNav({burgerMenu}) {
-    
+
     const links = [
-        {
+        /*{
             title:"Home",
             to:"/"
         },
-       /*  {
+         {
             title:"Aprende",
             to:"/learn"
         }, */
@@ -29,11 +29,11 @@ export default function HeaderNav({burgerMenu}) {
             to:"/contact"
         }
     ]
-    
-    
-    
+
+
+
     return (
-        
+
             <ul className={burgerMenu?"navigation hiddenMenu":"navigation"} >
                 {links.map((link, key) => {
                     return(
