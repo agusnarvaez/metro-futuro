@@ -17,7 +17,7 @@ export default function Header() {
 
             <HeaderIcons burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}  />
 
-            <HeaderNav burgerMenu={burgerMenu} />
+            <HeaderNav burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
            
         </header >
     )

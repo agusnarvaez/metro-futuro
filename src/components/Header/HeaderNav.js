@@ -1,7 +1,7 @@
 
 import HeaderNavLink from "./HeaderNavLink";
 
-export default function HeaderNav({burgerMenu}) {
+export default function HeaderNav({burgerMenu,setBurgerMenu}) {
 
     const links = [
         /*{
@@ -37,7 +37,11 @@ export default function HeaderNav({burgerMenu}) {
             <ul className={burgerMenu?"navigation hiddenMenu":"navigation"} >
                 {links.map((link, key) => {
                     return(
-                        <HeaderNavLink link={link} key={key} links={links} index={key}/>
+                        <HeaderNavLink 
+                            index={key} key={key}
+                            link={link} links={links}
+                            burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}
+                        />
                 )})}
             </ul>
     )
