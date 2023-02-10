@@ -13,7 +13,7 @@ export default function InvestmentDetailValue({investment}) {
             value: investment.tokensQuantity + " m2f"
         },
         {
-            text: "Rentabilidad anual",
+            text: "Rentabilidad anual por token",
             value: investment.saleProfit + " %"
         }
     ]
