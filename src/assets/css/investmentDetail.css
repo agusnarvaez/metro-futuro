@@ -168,11 +168,11 @@
 .investmentDetailMediaNav{
     position: absolute;
     
-    bottom: -10%;
+    bottom: -20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 70%;
     background-color: white;
     margin: 0;
     padding: 0% 0%;
@@ -185,13 +185,18 @@
 .investmentDetailMediaNav li{
     display: flex;
     height: 100%;
-    width: 23%;
+    width: 50%;
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
     padding: 3.5% 0;
 }
-
+.investmentDetailMediaNav--active{
+    /* background-color: rgba(0, 51, 255, 0.16); */
+    /* background: linear-gradient(to bottom right, #004cff2a 0%, #ff00cc2f 100%) !important; */
+    background: linear-gradient(to bottom right, #004cff1e 0%, #ff00cc1a 100%) !important;
+    border-radius: 5px;
+}
 .investmentDetailMediaNavSeparator{
     height: 35px !important;
     width: 2.5px !important;
@@ -376,12 +381,7 @@
     .investmentDetailMediaNav{
         font-size: 1.3em;
     }
-    .investmentDetailMediaNav--active{
-        /* background-color: rgba(0, 51, 255, 0.16); */
-        /* background: linear-gradient(to bottom right, #004cff2a 0%, #ff00cc2f 100%) !important; */
-        background: linear-gradient(to bottom right, #004cff1e 0%, #ff00cc1a 100%) !important;
-        border-radius: 5px;
-    }
+    
     .investmentDetailMediaNavSeparator{
         height: 50px !important;
         width: 3.5px !important;
@@ -482,9 +482,6 @@
     }
     .investmentDetailMediaNav img{
         height: 30px;
-    }
-    .investmentDetailMediaNav li{
-        width: 24.5%;
     }
 
     .investmentDetailMediaNav li:hover{
@@ -599,9 +596,6 @@
     }
     .investmentDetailMediaNavSeparator{
         width: 4px !important;
-    }
-    .investmentDetailMediaNav li{
-        width: 24.6%;
     }
 
 
