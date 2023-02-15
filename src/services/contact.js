@@ -2,7 +2,7 @@
 const fieldsList = [
     {
         name:"from_name",
-        type:"inputContainer",
+        type:"text",
         class: "contactSmallInput",
         value:"",
         placeholder:"Nombre",
@@ -12,7 +12,7 @@ const fieldsList = [
     },
     {
         name:"from_email",
-        type:"inputContainer",
+        type:"text",
         class: "contactSmallInput",
         value:"",
         placeholder:"Email",
@@ -21,8 +21,18 @@ const fieldsList = [
         error:"Ingrese un email válido"
     },
     {
+        name:"phone",
+        type:"tel",
+        class: "contactSmallInput",
+        value:"",
+        placeholder:"Ingrese un teléfono",
+        isValid:false,
+        showErrors:false,
+        error:"Ingrese un teléfono válido"
+    },
+    {
         name:"subject",
-        type:"inputContainer",
+        type:"text",
         class: "contactSmallInput",
         value:"",
         placeholder:"Asunto",
@@ -32,7 +42,7 @@ const fieldsList = [
     },
     {
         name:"message",
-        type:"inputContainer",
+        type:"text",
         class: "largeInput",
         value:"",
         placeholder:"¿Porque deseas contactarte?",

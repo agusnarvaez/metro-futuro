@@ -1,6 +1,6 @@
 import { useState } from "react"
 export default function SmallInput({field,contact,setContact}) {
-
+    const patron = /[A-Za-z0-9]/;
     const [inputClass,setInputClass] = useState("inputContainer")
     const checkEmail = (email)=>{
         if(email.includes("@")&&email.includes(".com")){
@@ -9,11 +9,11 @@ export default function SmallInput({field,contact,setContact}) {
             field.isValid = false
         }
     }
+    
     const handleChange = (event) => {
 
         const { name, value } = event.target
         setContact({ ...contact, [name]: value })
-
         event.target.value.length > 0 ?
             (field.name === "from_email") ?
                 checkEmail(event.target.value)
@@ -38,7 +38,7 @@ export default function SmallInput({field,contact,setContact}) {
                     id="input"
                     name={field.name}
                     placeholder={field.placeholder}
-                    type="text"
+                    type={field.type}
                     onChange={handleChange}
                     onFocus={()=>{setInputClass("inputContainer input--focus")}}
                     onBlur={handleBlur}
