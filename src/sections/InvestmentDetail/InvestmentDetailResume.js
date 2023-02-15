@@ -15,11 +15,11 @@ export default function InvestmentDetailResume({investment}) {
         {
             icon:areaIcon,
             text: investment.area + " m2"
-        },
+        }/* ,
         {
             icon:garageIcon,
             text: investment.garage + " Cochera" + (investment.garage!==1?"s":"")
-        },
+        } */,
         {
             icon:bathsIcon,
             text: investment.bathrooms + " Baño"+ (investment.bathrooms!==1?"s":"")
