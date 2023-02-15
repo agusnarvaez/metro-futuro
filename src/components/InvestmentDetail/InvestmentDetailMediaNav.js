@@ -1,7 +1,7 @@
 
 import investmentDetailMediaImage from "../../assets/img/icons/investmentDetailMediaImage.svg"
-import investmentDetailMediaVideo from "../../assets/img/icons/investmentDetailMediaVideo.svg"
-import investmentDetailMedia360 from "../../assets/img/icons/investmentDetailMedia360.svg"
+/* import investmentDetailMediaVideo from "../../assets/img/icons/investmentDetailMediaVideo.svg"
+import investmentDetailMedia360 from "../../assets/img/icons/investmentDetailMedia360.svg" */
 import investmentDetailMediaBlueprints from "../../assets/img/icons/investmentDetailMediaBlueprints.svg"
 export default function InvestmentDetailMediaNav({index,setIndex}) {
 
