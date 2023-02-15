@@ -18,7 +18,12 @@ export default function HomeOportunity({principalInvestment}) {
 
                 <p className="section_paragraph">Con rendimientos de más del {principalInvestment.estimatedEarnings} anual</p>
 
-                <DegradedNavLink id="homeOportunityLink" text="Mas información" backgroundColor="white" route="/contact" />
+                <DegradedNavLink 
+                    id="homeOportunityLink"
+                    text="Quiero invertir"
+                    backgroundColor="white"
+                    route="/contact" 
+                />
 
             </div>
         </section>
