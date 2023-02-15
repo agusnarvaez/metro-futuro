@@ -4,12 +4,12 @@ const investmentsList = [
       title:"Edificio Nita - 3A",
       cover:"../assets/images/projects/cadizCover.png",
       address: "Valencia 18",
-      city: "Cadiz",
+      city: "Valencia",
       country: "España",
-      estimatedEarnings: "11%",
+      estimatedEarnings: "10%",
       contractExpiration: "30/06/25",
       area: "47.8",
-      areaValue: "$500",
+      areaValue: "100",
       status: "Active"
     },
     {

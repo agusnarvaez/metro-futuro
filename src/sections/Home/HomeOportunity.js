@@ -14,9 +14,9 @@ export default function HomeOportunity({principalInvestment}) {
             <img src={principalInvestment.cover} alt="investmentCover" className='sectionCover'/>
             <div className='sectionInfo'>
 
-                <h2 className='section_subTitle'>Invertí en inmuebles tokenixados en <span className="degradedText">{principalInvestment.country}</span></h2>
+                <h2 className='section_subTitle'>Invertí en inmuebles tokenizados en <span className="degradedText">{principalInvestment.country}</span></h2>
 
-                <p className="section_paragraph">Rentabilidad neta estimada anual {principalInvestment.estimatedEarnings}</p>
+                <p className="section_paragraph">Con rendimientos de más del {principalInvestment.estimatedEarnings} anual</p>
 
                 <DegradedNavLink id="homeOportunityLink" text="Mas información" backgroundColor="white" route="/contact" />
 
