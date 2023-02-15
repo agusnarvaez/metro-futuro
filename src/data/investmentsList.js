@@ -2,7 +2,7 @@ const investmentsList = [
     {
       id: 0,
       title:"Edificio Nita - 3A",
-      cover:"../assets/images/projects/cadizCover.png",
+      cover:"../assets/images/projects/living-sevilla-cover-MF.jpg",
       address: "Valencia 18",
       city: "Valencia",
       country: "España",
