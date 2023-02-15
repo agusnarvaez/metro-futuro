@@ -2,10 +2,11 @@
 //* React Router Dom para la navegación
 import { NavLink } from 'react-router-dom'
 
-export default function HeaderNavLink({link,index,links}) {
+export default function HeaderNavLink({link,index,links,burgerMenu,setBurgerMenu}) {
 
     //* Función para scrollear hacia arriba cada vez que se toca un enlace
     const scrollToTop = () =>{
+        setBurgerMenu(!burgerMenu)
         window.scrollTo({
           top: 0, 
           behavior: 'smooth'

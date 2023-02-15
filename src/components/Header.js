@@ -11,13 +11,13 @@ export default function Header() {
     
     return (
 
-        <header className="header" onClick={() => setBurgerMenu(!burgerMenu)}>
+        <header className="header">
 
             <div className="headerShadow" />
 
             <HeaderIcons burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}  />
 
-            <HeaderNav burgerMenu={burgerMenu} />
+            <HeaderNav burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
            
         </header >
     )
