@@ -1,6 +1,6 @@
 import { useState } from "react"
 export default function SmallInput({field,contact,setContact}) {
-    const patron = /[A-Za-z0-9]/;
+
     const [inputClass,setInputClass] = useState("inputContainer")
     const checkEmail = (email)=>{
         if(email.includes("@")&&email.includes(".com")){

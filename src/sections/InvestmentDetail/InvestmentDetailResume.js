@@ -2,7 +2,7 @@
 //* Imágenes
 import roomsIcon from "../../assets/img/icons/investmentDetailHome.svg"
 import areaIcon from "../../assets/img/icons/investmentDetailArea.svg"
-import garageIcon from "../../assets/img/icons/investmentDetailGarage.svg"
+/* import garageIcon from "../../assets/img/icons/investmentDetailGarage.svg" */
 import bathsIcon from "../../assets/img/icons/investmentDetailBath.svg"
 
 export default function InvestmentDetailResume({investment}) {
