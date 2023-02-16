@@ -218,6 +218,7 @@
 /** ############### **/
 .investmentDetailInfo{
     height: auto;
+    margin-top: 5%;
 }
 .investmentDetailInfo p{
     font-size: 1.5em;
@@ -391,6 +392,13 @@
     .investmentDetailMediaNav img{
         height: 25px;
         margin: 0 5% 0 0;
+    }
+
+        /** ############### **/
+    /** ### DETALLE ### */
+    /** ############### **/
+    .investmentDetailInfo{
+        margin-top: 2%;
     }
 
     /** ############### **/
