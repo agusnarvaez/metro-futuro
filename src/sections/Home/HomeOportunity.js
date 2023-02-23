@@ -4,7 +4,7 @@
 
 //* Componentes
 /* import DegradedLink from "../DegradedLink"; */
-import DegradedNavLink from "../../components/DegradedNavLink";
+import DegradedLink from "../../components/DegradedLink";
 //* Íconos
 
 export default function HomeOportunity({principalInvestment}) {
@@ -18,11 +18,11 @@ export default function HomeOportunity({principalInvestment}) {
 
                 <p className="section_paragraph">Con rendimientos de más del {principalInvestment.estimatedEarnings} anual</p>
 
-                <DegradedNavLink 
+                <DegradedLink 
                     id="homeOportunityLink"
                     text="Quiero invertir"
                     backgroundColor="white"
-                    route="/contact" 
+                    route="https://app.metro-futuro.com/home" 
                 />
 
             </div>
