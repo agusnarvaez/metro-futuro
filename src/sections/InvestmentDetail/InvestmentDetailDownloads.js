@@ -2,18 +2,18 @@
 import DegradedLink from "../../components/DegradedNavLink"
 
 export default function InvestmentDetailDownloads({investment}) {
-    console.log(investment)
+    
     const list = [
         {
-            url:"",
+            url:investment.whitePaper?investment.whitePaper.fields.file.url:"",
             text: "Descargar White Paper"
         },
         {
-            url: "",
+            url: investment.contract?investment.contract.fields.file.url:"",
             text: "Descargar contrato"
         },
         {
-            url: "",
+            url: investment.brochure?investment.brochure.fields.file.url:"",
             text: "Descargar brochure"
         }
     ]
