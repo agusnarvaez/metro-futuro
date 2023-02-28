@@ -34,7 +34,6 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
             filterItems(list,setInvestments)
         }else if(investments.length>0){
             setInvestment(investments[investmentId].fields)
-            console.log(investment)
             if(Object.entries(investment).length>0&&newMetaData.title===""){
                 setNewMetaData({
                     ...newMetaData,

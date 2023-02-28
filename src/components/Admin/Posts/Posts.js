@@ -6,9 +6,7 @@ import Post from "./Post/Post"
 
 
 export default function Posts() {
-	const posts = useSelector((state)=> state.posts)
-
-	console.log(posts)
+	/* const posts = useSelector((state)=> state.posts) */
 
 	return (
 		
