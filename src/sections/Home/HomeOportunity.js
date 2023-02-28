@@ -4,7 +4,7 @@
 
 //* Componentes
 /* import DegradedLink from "../DegradedLink"; */
-import DegradedLink from "../../components/DegradedLink";
+import DegradedNavLink from "../../components/DegradedNavLink";
 //* Íconos
 
 export default function HomeOportunity({principalInvestment}) {
@@ -14,15 +14,15 @@ export default function HomeOportunity({principalInvestment}) {
             <img src={principalInvestment.cover} alt="investmentCover" className='sectionCover'/>
             <div className='sectionInfo'>
 
-                <h2 className='section_subTitle'>Invertí en inmuebles tokenizados en <span className="degradedText">{principalInvestment.country}</span></h2>
+                <h2 className='section_subTitle'>Invierte en inmuebles tokenizados en <span className="degradedText">{principalInvestment.country}</span></h2>
 
                 <p className="section_paragraph">Con rendimientos de más del {principalInvestment.estimatedEarnings} anual</p>
 
-                <DegradedLink 
+                <DegradedNavLink 
                     id="homeOportunityLink"
                     text="Quiero invertir"
                     backgroundColor="white"
-                    route="https://app.metro-futuro.com/home" 
+                    route="/investments/0" 
                 />
 
             </div>
