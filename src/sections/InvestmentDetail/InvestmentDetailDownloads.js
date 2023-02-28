@@ -2,7 +2,7 @@
 import DegradedLink from "../../components/DegradedNavLink"
 
 export default function InvestmentDetailDownloads({investment}) {
-
+    console.log(investment)
     const list = [
         {
             url:"",

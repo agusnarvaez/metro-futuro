@@ -282,6 +282,7 @@
 .investmentDetailValue{
     height: auto;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 .investmentDetailValueCard{
     margin: 3% 0;
