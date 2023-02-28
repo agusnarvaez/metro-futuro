@@ -34,6 +34,7 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
             filterItems(list,setInvestments)
         }else if(investments.length>0){
             setInvestment(investments[investmentId].fields)
+            console.log(investment)
             if(Object.entries(investment).length>0&&newMetaData.title===""){
                 setNewMetaData({
                     ...newMetaData,
@@ -63,7 +64,7 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
 
             <InvestmentDetailValue investment={investment}/>
 
-            <DegradedLink  text="¡Quiero invertir!" route="https://app.metro-futuro.com/project-detail/f63c7d96-38f4-410c-bcdd-30eecd3065c7" backgroundColor="" id={degLinkId} /* onFocus={changeDegLink} onBlur={changeDegLink} *//>
+            <DegradedLink  text="¡Quiero invertir!" route={investment.platformLink} backgroundColor="" id={degLinkId} /* onFocus={changeDegLink} onBlur={changeDegLink} *//>
             
             {Object.entries(investment).length>0?<Map coordinates={investment.mapCoordinates}/>:""}
 
