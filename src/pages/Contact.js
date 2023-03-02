@@ -1,3 +1,7 @@
+//* Importo Hooks y ReactGA (Google Anlytics)
+import {useEffect} from "react";
+import ReactGA from 'react-ga';
+
 // Fondo de pantalla
 import contactPageBg from "../assets/img/background/contactPageBg.png";
 
@@ -7,6 +11,9 @@ import ContactSlogan from "../sections/Contact/ContactSlogan";
 import ContactForm from "../sections/Contact/ContactForm";
 
 export default function Contact({metaData}) {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname);
+      }, []);
     return (
         <main id="contactPage">
             <HelmetData metaData={metaData} />

@@ -1,5 +1,8 @@
-import {useEffect,useState} from "react";
-import {useParams} from "react-router-dom";
+//* Importo Hooks y ReactGA (Google Anlytics)
+import {useEffect,useState} from "react"
+import ReactGA from 'react-ga'
+
+import {useParams} from "react-router-dom"
 
 import {reqApi,filterItems} from "../services/getArticles";
 //* SECTIONS 
@@ -28,6 +31,9 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 		}
 	}
 	useEffect(() => {
+		
+		ReactGA.pageview(window.location.pathname);
+		  
 		reqApi(list,setList)
         if(learnArticles.length===0){
             filterItems(list,setLearnArticles)
