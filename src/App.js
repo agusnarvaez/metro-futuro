@@ -1,6 +1,7 @@
-//* REACT
-import { useState } from 'react';
 
+//* Importo Hooks y ReactGA (Google Anlytics)
+import {useState,useEffect} from "react";
+import ReactGA from 'react-ga';
 //* REACT-ROUTER-DOM
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -115,7 +116,9 @@ export default function App() {
       path: "/*"
     }
   ]
-  
+  useEffect(() => {
+    ReactGA.initialize('UA-258855116-1');
+  }, []);
   return (
     <BrowserRouter>
 

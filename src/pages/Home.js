@@ -4,7 +4,9 @@
 
 //* MÉTODOS DE REACT
 import { useRef } from "react";
-
+//* Importo Hooks y ReactGA (Google Anlytics)
+import {useEffect} from "react";
+import ReactGA from 'react-ga';
 
 /** ### Import de componentes ### **/
 import HomeAbout from "../sections/Home/HomeAbout";
@@ -46,7 +48,9 @@ export default function Home({investmentsList,metaData}) {
             window.removeEventListener("scroll",handleScroll);
         }
     },[scrollTransition]); */
-
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname);
+      }, []);
     return (
         <main className="homePage">
             
