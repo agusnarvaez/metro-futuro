@@ -117,7 +117,7 @@ export default function App() {
     }
   ]
   useEffect(() => {
-    ReactGA.initialize('UA-258855116-1');
+    ReactGA.initialize('G-ZHYMQ1QR1B');
   }, []);
   return (
     <BrowserRouter>
