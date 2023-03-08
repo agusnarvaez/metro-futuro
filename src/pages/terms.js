@@ -151,6 +151,13 @@ export default function Terms() {
                     </p>
                 </li>
                 <li>
+                    <u><b>Declaración de fondos</b></u>
+                    <p>
+                    Por la presente DECLARO BAJO JURAMENTO que los fondos y valores que se utilizan para realizar las operaciones e inversiones provienen de actividades lícitas.
+                    </p>
+                    <p>También en carácter de DECLARACIÓN JURADA manifiesto que las informaciones consignadas en el presente trámite son exactas y verdaderas y que NO me encuentro incluido y/o alcanzado dentro de ninguna nómina de personas políticamente expuestas. <br/>Además asumo el compromiso de informar cualquier modificación que se produzca a este respecto, dentro de los TREINTA (30) días de ocurrida, mediante la presentación de una nueva declaración jurada.</p>
+                </li>
+                <li>
                     <u><b>Condiciones de los Tokens.</b></u>
                     <p>
                         Cualquier Token que usted adquiera se regirá íntegramente por el contrato inteligente y la red blockchain que rigen dicho Token. 
