@@ -63,10 +63,6 @@ export default function App() {
       path: "/*"
     },
     {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/aprende/*"
-    },
-    {
       component: <Learn list={articles} metaData={metaData.courses} setList={setArticles} learnArticles={learnArticles} setLearnArticles={setLearnArticles} />,
       path: "/aprende"
     },
@@ -75,88 +71,36 @@ export default function App() {
       path: "/aprende/:id"
     },
     {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/aprende/:id/*"
-    },
-    {
       component: <Investments list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData.investments} />,
       path: "/inmuebles"
-    },
-    {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/inmuebles/*"
     },
     {
       component: <InvestmentDetail list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData.investmentDetail} />,
       path: "/inmuebles/:id"
     },
     {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/inmuebles/:id/*"
-    },
-    {
       component: <Learn list={articles} metaData={metaData.blog} setList={setArticles} learnArticles={blogArticles} setLearnArticles={setBlogArticles} />,
       path: "/blog"
-    },
-    {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/blog/*"
     },
     {
       component: <LearnCourse list={articles} setList={setArticles} metaData={metaData.blogArticle} learnArticles={blogArticles} setLearnArticles={setBlogArticles} />,
       path: "/blog/:id"
     },
     {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/blog/:id/*"
-    },
-    {
-      component: <Learn list={articles} setList={setArticles} metaData={metaData.blog} />,
-      path: "/aprende"
-    },
-    {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/aprende/*"
-    },
-    {
-      component: <LearnCourse list={articles} setList={setArticles} metaData={metaData.blogArticle} />,
-      path: "/aprende/:id"
-    },
-    {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/aprende/:id/*"
-    },
-    {
       component: <About metaData={metaData.about} />,
       path: "/sobreNosotros"
-    },
-    {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/sobreNosotros/*"
     },
     {
       component: <Contact metaData={metaData.contact} />,
       path: "/contacto"
     },
     {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/contacto/*"
-    },
-    {
       component: <Faq metaData={metaData.faq} />,
       path: "/ayuda"
     },
     {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/ayuda/*"
-    },
-    {
       component: <Terms metaData={metaData.faq} />,
       path: "/terminosYCondiciones"
-    },
-    {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/terminosYCondiciones/*"
     }
   ]
   useEffect(() => {

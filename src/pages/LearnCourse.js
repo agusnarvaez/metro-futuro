@@ -2,7 +2,7 @@
 import {useEffect,useState} from "react"
 
 
-import {useParams} from "react-router-dom"
+import {useParams,useNavigate } from "react-router-dom"
 
 import {reqApi,filterItems} from "../services/getArticles";
 //* SECTIONS 
@@ -14,8 +14,9 @@ import HelmetData from "../components/HelmetData";
 export default function LearnCourse({list,setList,metaData,learnArticles,setLearnArticles}) {
 	//* Capturo los parámetros de la URL
 	const pathSplited = window.location.pathname.split('/')[1]
-	const params = useParams();
+	const params = useParams()
 
+	let navigate = useNavigate()
 	//* Selecciono el ítem según la URL
 	const [item,setItem] = useState()
 	const [newMetaData,setNewMetaData] = useState(metaData)
@@ -31,22 +32,29 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 		}
 	}
 	useEffect(() => {
-		  
-		reqApi(list,setList)
-        if(learnArticles.length===0){
-            filterItems(list,setLearnArticles)
-        }else if(item===undefined){
-			setItem(learnArticles[params.id].fields)
-		}
-		if(item!==undefined&&newMetaData.title===""){
-			setNewMetaData({
-				...newMetaData,
-				title: item.title,
-				description:item.description,
-			})
-		}
 		
-    }, [list,params.id,pathSplited,setList,newMetaData,setNewMetaData,metaData,learnArticles,setLearnArticles,item]);
+		if(isNaN(params.id)){
+			navigate("/error")
+		}else {
+			reqApi(list,setList)
+			if(learnArticles.length===0){
+				filterItems(list,setLearnArticles)
+			}else if(item===undefined){
+				if(learnArticles[params.id]===undefined){
+					navigate("/error")
+				}else{
+					setItem(learnArticles[params.id].fields)
+				}
+			}
+			if(item!==undefined&&newMetaData.title===""){
+				setNewMetaData({
+					...newMetaData,
+					title: item.title,
+					description:item.description,
+				})
+			}
+		}
+    }, [list,params.id,pathSplited,setList,newMetaData,setNewMetaData,metaData,learnArticles,setLearnArticles,item,navigate]);
 
 	return (
 		<main className='learnCoursePage'>

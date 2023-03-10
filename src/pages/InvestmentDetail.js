@@ -3,7 +3,7 @@
 import {useState, useEffect} from "react";
 
 //* Importo useParams para obtener los parametros de la url
-import {useParams} from "react-router-dom";
+import {useParams,useNavigate} from "react-router-dom";
 
 //* API de contentful
 import {reqApi,filterItems} from "../services/getArticles";
@@ -25,27 +25,36 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
     const params = useParams();
     const investmentId =params.id;
     
+    let navigate = useNavigate()
+    
     const [investment,setInvestment]=useState({});
     const [newMetaData,setNewMetaData] = useState(metaData)
     const degLinkId="degradedLink--inverted"
 
     useEffect(() => {
-        reqApi(list,setList)
-        if(investments.length===0){
-            filterItems(list,setInvestments)
-        }else if(investments.length>0){
-            setInvestment(investments[investmentId].fields)
-            if(Object.entries(investment).length>0&&newMetaData.title===""){
-                setNewMetaData({
-                    ...newMetaData,
-                    title: investment.title,
-                    description:investment.shortDescription,
-                })
+        if(isNaN(params.id)){
+			navigate("/error")
+		}else {
+            reqApi(list,setList)
+            if(investments.length===0){
+                filterItems(list,setInvestments)
             }
-        }
-        
-        //investments.length > 0 ? setInvestment(investments[investmentId].fields) : console.log("No hay datos");
-    }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments,newMetaData,setNewMetaData]);
+            else if(investments.length>0){
+                if(investments[investmentId]===undefined){
+                    navigate("/error")
+                }else{
+                    setInvestment(investments[investmentId].fields)
+                    if(Object.entries(investment).length>0&&newMetaData.title===""){
+                        setNewMetaData({
+                            ...newMetaData,
+                            title: investment.title,
+                            description:investment.shortDescription,
+                    })
+                    }
+                }
+            }
+        }   //investments.length > 0 ? setInvestment(investments[investmentId].fields) : console.log("No hay datos");
+    }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments,newMetaData,setNewMetaData,navigate,params.id]);
 
     return (
         <main className="investmentDetailPage">
