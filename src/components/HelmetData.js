@@ -15,7 +15,7 @@ export default function HelmetData({metaData}) {
                 
                 <meta property="og:title" content={`Metro Futuro | ${metaData.title}`}/>
                 <meta property="og:description" content={metaData.description}/>
-            
+                <link rel="canonical" href={metaData.cannonical}/>
             </Helmet>
         </HelmetProvider>
     )
