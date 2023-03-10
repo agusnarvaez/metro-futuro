@@ -1,11 +1,11 @@
 // Importo React
 //* Importo Hooks y ReactGA (Google Anlytics)
 import {useState, useEffect} from "react";
-import ReactGA from 'react-ga';
-// Importo useParams para obtener los parametros de la url
+
+//* Importo useParams para obtener los parametros de la url
 import {useParams} from "react-router-dom";
 
-// API de contentful
+//* API de contentful
 import {reqApi,filterItems} from "../services/getArticles";
 
 //* ### SECCIONES ###
@@ -29,9 +29,6 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
     const [newMetaData,setNewMetaData] = useState(metaData)
     const degLinkId="degradedLink--inverted"
 
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname);
-      }, []);
     useEffect(() => {
         reqApi(list,setList)
         if(investments.length===0){

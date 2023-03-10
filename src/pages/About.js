@@ -1,8 +1,5 @@
 //* ##### Página ABOUT ####
 
-//* Importo Hooks y ReactGA (Google Anlytics)
-import {useEffect} from "react";
-import ReactGA from 'react-ga';
 
 //* #### COMPONENTS ####
 import AboutTitle from '../sections/About/AboutTitle';
@@ -14,9 +11,6 @@ import AboutTeam from "../sections/About/AboutTeam";
 import HelmetData from "../components/HelmetData";
 
 export default function About({metaData}) {
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname);
-      }, []);
     return (
         <main id="aboutPage">
             

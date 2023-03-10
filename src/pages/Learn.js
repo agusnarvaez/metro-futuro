@@ -1,7 +1,7 @@
 //* ### SECCIÓN APRENDE ###
 //* Importo Hooks y ReactGA (Google Anlytics)
 import {useEffect} from "react";
-import ReactGA from 'react-ga';
+
 //* COMPONENTS
 import LearnSlogan from"../sections/Learn/LearnSlogan.js"
 import LearnCourses from '../sections/Learn/LearnCourses.js'
@@ -16,7 +16,6 @@ export default function Learn({metaData,list,setList,learnArticles,setLearnArtic
 	
 	
 	useEffect(()=>{
-		ReactGA.pageview(window.location.pathname);
 		reqApi(list,setList)
         if(learnArticles.length===0){
             filterItems(list,setLearnArticles)

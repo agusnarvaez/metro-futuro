@@ -1,11 +1,7 @@
 //* ### PÁGINA DE TÉRMINOS Y CONDICIONES ###
-//* Importo Hooks y ReactGA (Google Anlytics)
-import {useEffect} from "react";
-import ReactGA from 'react-ga';
+
 export default function Terms() {
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname);
-      }, []);
+
     return (
 
         <main className='termsPage'>

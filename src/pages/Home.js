@@ -1,13 +1,6 @@
 //* ###### VISTA DE HOME ####
 
 
-
-//* MÉTODOS DE REACT
-import { useRef } from "react";
-//* Importo Hooks y ReactGA (Google Anlytics)
-import {useEffect} from "react";
-import ReactGA from 'react-ga';
-
 /** ### Import de componentes ### **/
 import HomeAbout from "../sections/Home/HomeAbout";
 import HomeSlogan from "../sections/Home/HomeSlogan";
@@ -25,7 +18,7 @@ export default function Home({investmentsList,metaData}) {
 
     const principalInvestment = investmentsList[0];
     
-    const sloganRef = useRef();
+    /* const sloganRef = useRef(); */
     /* const [scrollTransition,setScrollTransition]=useState('scrollInitial');
 
     useEffect(() => {
@@ -48,9 +41,6 @@ export default function Home({investmentsList,metaData}) {
             window.removeEventListener("scroll",handleScroll);
         }
     },[scrollTransition]); */
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname);
-      }, []);
     return (
         <main className="homePage">
             
@@ -60,7 +50,7 @@ export default function Home({investmentsList,metaData}) {
 
             <HomeOportunity principalInvestment={principalInvestment} />
             
-            <HomeSlogan ref={sloganRef} /*  scrollTransition={scrollTransition}  *//>
+            <HomeSlogan  /*  scrollTransition={scrollTransition}  *//>
 
             <HomeInvestmentSteps/>
             

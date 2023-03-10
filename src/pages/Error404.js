@@ -1,6 +1,3 @@
-//* Importo Hooks y ReactGA (Google Anlytics)
-import {useEffect} from "react";
-import ReactGA from 'react-ga';
 
 // IMAGES
 import NotFound404ErrorImage from "../assets/img/404Error.png";
@@ -10,9 +7,7 @@ import DegradedNavLink from '../components/DegradedNavLink';
 import HelmetData from "../components/HelmetData";
 
 export default function Error404({metaData}) {
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname);
-      }, []);
+
     return (
         <main className="NotFound404ErrorPage" id="NotFound404ErrorPage">
             <HelmetData metaData={metaData} />

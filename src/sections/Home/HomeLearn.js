@@ -13,15 +13,15 @@ export default function HomeLearnWithUs() {
                 <img className="sectionBackground--desktop" id="homeLearnWithUsBackground" alt="learnWithUsBackground" src={learnWithUsBg} />
                 <div className="youTubeVideo_Container">
                     <ReactPlayer
+                        url="https://www.youtube.com/embed/wX7HmpI8NsY?showinfo=0&enablejsapi=1"
+                        config={{ youtube: { playerVars: { origin: 'https://www.youtube.com' } },YTConfig: {'host': 'https://www.youtube.com'} }}
                         className="youTubeVideo_Player"
-                        url="http://youtu.be/wX7HmpI8NsY"
                         controls
                         width="100%"
                         height="100%"
                         border-radius="30px"
                         border="none"  
                         loop
-                        
                     />
                 </div>
                 <div className="sectionInfo" id="homeLearnWithUs_Info">
