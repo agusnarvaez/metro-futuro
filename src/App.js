@@ -61,19 +61,19 @@ export default function App() {
     },
     {
       component: <Learn list={articles} metaData={metaData.courses} setList={setArticles} learnArticles={learnArticles} setLearnArticles={setLearnArticles} />,
-      path: "/learn"
+      path: "/aprende"
     },
     {
       component: <LearnCourse list={articles} setList={setArticles} metaData={metaData.course} learnArticles={learnArticles} setLearnArticles={setLearnArticles} />,
-      path: "/learn/:id"
+      path: "/aprende/:id"
     },
     {
       component: <Investments list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData.investments} />,
-      path: "/investments"
+      path: "/inmuebles"
     },
     {
       component: <InvestmentDetail list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData.investmentDetail} />,
-      path: "/investments/:id"
+      path: "/inmuebles/:id"
     },
     /*{
       component: <LearnCourse list={list} />,
@@ -89,27 +89,27 @@ export default function App() {
     },
     {
       component: <Learn list={articles} setList={setArticles} metaData={metaData.blog} />,
-      path: "/articles"
+      path: "/articulos"
     },
     {
       component: <LearnCourse list={articles} setList={setArticles} metaData={metaData.blogArticle} />,
-      path: "/articles/:id"
+      path: "/articulos/:id"
     },
     {
       component: <About metaData={metaData.about} />,
-      path: "/about"
+      path: "/sobreNosotros"
     },
     {
       component: <Contact metaData={metaData.contact} />,
-      path: "/contact"
+      path: "/contacto"
     },
     {
       component: <Faq metaData={metaData.faq} />,
-      path: "/help"
+      path: "/ayuda"
     },
     {
       component: <Terms metaData={metaData.faq} />,
-      path: "/terms"
+      path: "/terminosYCondiciones"
     },
     {
       component: <Error404 metaData={metaData.error404} />,

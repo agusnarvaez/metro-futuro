@@ -17,11 +17,11 @@ export default function BottomFooter() {
 				text: 'Home'
 			},
 			{
-				to:'/investments',
+				to:'/inmuebles',
 				text: 'Proyectos'
 			},
 			{
-				to:'/learn',
+				to:'/aprende',
 				text: 'Aprende'
 			},
 			{
@@ -29,7 +29,7 @@ export default function BottomFooter() {
 				text: 'Blog'
 			},
 			{
-				to:'/about',
+				to:'/sobreNosotros',
 				text: 'Quienes somos'
 			}/* ,
 			{
@@ -44,15 +44,15 @@ export default function BottomFooter() {
 		className: "rightLinks",
 		content:[
 		{
-			to:'/contact',
+			to:'/contacto',
 			text: 'Contáctanos'
 		},
 		{
-			to:'/help',
+			to:'/ayuda',
 			text: 'Ayuda/FAQ'
 		},
 		{
-			to:'/terms',
+			to:'/terminosYCondiciones',
 			text: 'Términos y condiciones'
 		}/* ,
 		{

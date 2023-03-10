@@ -14,11 +14,11 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
         }, */
         {
             title:"Quienes somos",
-            to:"/about"
+            to:"/sobreNosotros"
         },
         {
             title:"Aprende",
-            to:"/learn"
+            to:"/aprende"
         },
         {
             title:"Blog",
@@ -26,7 +26,7 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
         },
         {
             title:"Contacto",
-            to:"/contact"
+            to:"/contacto"
         }
     ]
 

@@ -25,7 +25,7 @@ export default function Error404({metaData}) {
                 
                 <DegradedNavLink route="/" text="Volver a la Home" backgroundColor="white" id="404ErrorLinkToHome"/>
                 
-                <DegradedNavLink route="/contact" text="Contáctanos" backgroundColor="white" id="404ErrorLinkToContact"/>
+                <DegradedNavLink route="/contacto" text="Contáctanos" backgroundColor="white" id="404ErrorLinkToContact"/>
             </div>
         </main>
     )

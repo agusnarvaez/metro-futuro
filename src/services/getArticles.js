@@ -13,9 +13,9 @@ const filterItems = (list,setNewList)=>{
 
         const contentType = ()=>{
             switch(pathSplited){
-                case "investments": return "property"
+                case "inmuebles": return "property"
                 case "blog": return "blog"
-                case "learn": return "courses"
+                case "aprende": return "courses"
                 default: break
             }
         }

@@ -46,7 +46,7 @@ export default function InvestmentCardInfo({investment,index}) {
                 })}
             </ul>
 
-            <DegradedNavLink text="Ver más" backgroundColor="white" route={`/investments/${index}`}/>
+            <DegradedNavLink text="Ver más" backgroundColor="white" route={`/inmuebles/${index}`}/>
         </div>
     )
 }

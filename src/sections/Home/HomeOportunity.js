@@ -22,7 +22,7 @@ export default function HomeOportunity({principalInvestment}) {
                     id="homeOportunityLink"
                     text="Quiero invertir"
                     backgroundColor="white"
-                    route="/investments/0" 
+                    route="/inmuebles/0" 
                 />
 
             </div>

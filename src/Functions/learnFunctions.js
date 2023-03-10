@@ -16,7 +16,7 @@ const selectSlogan = (param) => {
 	switch(param){
 		case "blog":
 			return "Infórmate";
-		case "learn": 
+		case "aprende": 
 			return "Aprendé";
 		default:  
 			return ""
