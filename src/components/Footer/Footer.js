@@ -21,7 +21,7 @@ export default function Footer() {
 	const changeBgColor = () => {
 		switch(location){
 			case "/": return("homeFooterBg");
-			case "/sobreNosotros": return("aboutFooterBg");
+			case "/sobre-nosotros": return("aboutFooterBg");
 			default: return("");
 		}
 	}

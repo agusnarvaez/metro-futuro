@@ -29,7 +29,7 @@ export default function BottomFooter() {
 				text: 'Blog'
 			},
 			{
-				to:'/sobreNosotros',
+				to:'/sobre-nosotros',
 				text: 'Quienes somos'
 			}/* ,
 			{
@@ -52,7 +52,7 @@ export default function BottomFooter() {
 			text: 'Ayuda/FAQ'
 		},
 		{
-			to:'/terminosYCondiciones',
+			to:'/terminos-y-condiciones',
 			text: 'Términos y condiciones'
 		}/* ,
 		{

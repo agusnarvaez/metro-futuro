@@ -26,7 +26,7 @@ const metaData = {
             title: "Conocé el equipo",
             description:"Conocé nuestra historia y fundamentos que forjan nuestro éxito y confiabilidad",
             keywords:"sobre nosotros, equipo, foco, servicios, inversiones, misión, visión, valores",
-            cannonical: "/sobreNosotros"
+            cannonical: "/sobre-nosotros"
         },
     contact:
         {

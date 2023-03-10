@@ -14,7 +14,7 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
         }, */
         {
             title:"Quienes somos",
-            to:"/sobreNosotros"
+            to:"/sobre-nosotros"
         },
         {
             title:"Aprende",

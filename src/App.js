@@ -88,7 +88,7 @@ export default function App() {
     },
     {
       component: <About metaData={metaData.about} />,
-      path: "/sobreNosotros"
+      path: "/sobre-nosotros"
     },
     {
       component: <Contact metaData={metaData.contact} />,
