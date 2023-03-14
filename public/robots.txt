@@ -1,3 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
+Sitemap: https://metro-futuro.com/sitemap.xml
 User-agent: *
+
+Allow: /
+Allow: /blog
+Allow: /aprende
+Allow: /inmuebles
+Allow: /sobre-nosotros
+Allow: /contacto
+Allow: /ayuda
+Allow: /terminos-y-condiciones
+
 Disallow:
