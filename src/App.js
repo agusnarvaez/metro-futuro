@@ -100,7 +100,7 @@ export default function App() {
     },
     {
       component: <Terms metaData={metaData.faq} />,
-      path: "/terminosYCondiciones"
+      path: "/terminos-y-condiciones"
     }
   ]
   useEffect(() => {
