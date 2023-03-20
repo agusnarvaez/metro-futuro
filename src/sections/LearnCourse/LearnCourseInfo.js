@@ -12,7 +12,7 @@ export default function LearnCourseInfo({item,type,pathSplited}) {
 	const [infoIndex,setInfoIndex]=useState(0)
 	return (
 		<section className="learnCoursePage_Info">
-			{pathSplited==="learn"?<LearnCourseInfoNav infoIndex={infoIndex} setInfoIndex={setInfoIndex}/>:""}
+			{pathSplited==="aprende"?<LearnCourseInfoNav infoIndex={infoIndex} setInfoIndex={setInfoIndex}/>:""}
 
 			{item?<LearnCourseInfoContainer infoIndex={infoIndex} item={item} url={pathSplited} type={selectType(pathSplited)}/>:""}
 

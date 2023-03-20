@@ -1,5 +1,5 @@
 
-/* import learnDemoImage from '../../assets/img/learn/learnCoursesCardDemo.jpg' */
+
 import LearnCoursesCardDifficulty from './LearnCoursesCardDifficulty.js'
 import DegradedNavLink from '../../components/DegradedNavLink.js'
 
@@ -8,7 +8,7 @@ export default function LearnCourses({item,url,id}) {
 
 		<article id='learnCoursesCard'>
 
-			<img src={item.cover.fields.file.url} alt="learnCoursesCardDemo" />
+			<img src={item.cover.fields.file.url} alt="learnCoursesCard" />
 
 			<LearnCoursesCardDifficulty  difficulty={item.difficulty}/>
 
