@@ -29,7 +29,7 @@ body {
 #contactPageSlogan h1 br{
     display: none;
 }
-#contactPageSlogan p{
+#contactPageSlogan h2{
     font-size: 1.2em;
     text-align: center;
 }
@@ -380,7 +380,7 @@ body {
         margin: 3% 0 0 0;
     }
 
-    #contactPageSlogan p{
+    #contactPageSlogan h2{
         font-size: 1.5em;
         text-align: center;
     }
@@ -440,7 +440,7 @@ body {
         display: block;
     }
 
-    #contactPageSlogan p{
+    #contactPageSlogan h2{
         width: 100%;
         font-size: 1.5em;
         text-align: start;
@@ -478,7 +478,7 @@ body {
     #contactPageSlogan h1{
         font-size: 3.8em;
     }
-    #contactPageSlogan p{
+    #contactPageSlogan h2{
         width: 100%;
         font-size: 2em;
     }
