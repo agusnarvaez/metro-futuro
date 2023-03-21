@@ -6,7 +6,7 @@ export default function HomeBenefitCard({benefit}) {
             <li>
                 <img alt="icon" src={benefit.img} />
                 <div>
-                    <h5>{benefit.title}</h5>
+                    <h4>{benefit.title}</h4>
                     <p>{benefit.text}</p>
                 </div>
             </li>
