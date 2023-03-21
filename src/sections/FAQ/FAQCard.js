@@ -18,7 +18,7 @@ return (
         <div className="faqContainer">
             {/**Pregunta*/}
             <div className="faqQuestion">
-                <h4>{faq.question}</h4>
+                <h3>{faq.question}</h3>
                 {/**Cruz de FAQ*/}
                 <img
                     src={homeFaqIcon}

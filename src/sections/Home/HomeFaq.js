@@ -11,7 +11,7 @@ return (
     <section className="sectionInfo" id="homeFaq">
 
         {/**Título**/}
-        <h3>Preguntas frecuentes</h3>
+        <h2>Preguntas frecuentes</h2>
 
         <PrincipalFAQ/>
 
