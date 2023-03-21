@@ -1,6 +1,6 @@
 
 // IMAGES
-import NotFound404ErrorImage from "../assets/img/404Error.png";
+import NotFound404ErrorImage from "../assets/img/404Error.svg";
 
 // COMPONENTS
 import DegradedNavLink from '../components/DegradedNavLink';

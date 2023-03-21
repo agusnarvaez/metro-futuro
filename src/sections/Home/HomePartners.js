@@ -1,5 +1,5 @@
 // Background
-import homePartnersBg from "../../assets/img/background/homePartnersBg.png";
+import homePartnersBg from "../../assets/img/background/homePartnersBg.svg";
 
 // Logos Partners
 import metroXLogo from "../../assets/img/logos/metroXLogo.png";

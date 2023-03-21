@@ -1,5 +1,5 @@
 
-import learnDemoImage from '../../assets/img/learn/learnCoursesCardDemo.jpg'
+
 
 //* Components
 import LearnCourseInfoAditionalType from './LearnCourseInfoAditionalType'
@@ -10,7 +10,7 @@ export default function LearnCourseInfoAditionalCard({aditional}) {
 	return (
 
 		<article id='learnCoursesCard'>
-			<img src={learnDemoImage} alt="learnCoursesCard" />
+			{/* <img src={learnDemoImage} alt="learnCoursesCard" /> */}
 			<LearnCourseInfoAditionalType  type={aditional.type}/>
 			<h3>{aditional.title}</h3>
 			<p>{aditional.description}</p>

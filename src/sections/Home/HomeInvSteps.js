@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom';
 import HomeInvStepsCard from "./HomeInvStepsCard";
 
 // Background
-import investmentStepsBg from "../../assets/img/background/homeInvestmentStepsBg.png";
+import investmentStepsBg from "../../assets/img/background/homeInvestmentStepsBg.svg";
 
 // Flechas carrousel
-import rightArrowHomeCarrousel from "../../assets/img/icons/rightArrow.png"
-import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.png"
+import rightArrowHomeCarrousel from "../../assets/img/icons/rightArrow.svg"
+import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.svg"
 
 // Info Carrousel
 import carrouselInfo from "../../data/homeCarrouselInfo";

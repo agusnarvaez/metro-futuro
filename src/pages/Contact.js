@@ -1,7 +1,7 @@
 
 
 // Fondo de pantalla
-import contactPageBg from "../assets/img/background/contactPageBg.png";
+import contactPageBg from "../assets/img/background/contactPageBg.svg";
 
 //* COMPONENTES
 import HelmetData from "../components/HelmetData";

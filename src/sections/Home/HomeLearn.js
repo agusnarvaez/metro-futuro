@@ -1,5 +1,5 @@
 // Background
-import learnWithUsBg from "../../assets/img/background/homeLearnWithUsBg.png";
+import learnWithUsBg from "../../assets/img/background/homeLearnWithUsBg.svg";
 
 // Visor de videos de Youtube
 import ReactPlayer from "react-player";

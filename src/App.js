@@ -41,10 +41,7 @@ import Footer from "./components/Footer/Footer";
 import Terms from "./pages/Terms";
 
 //* DATA
-import investmentsList from './data/investmentsList.js';
-/* import blogArticles from "./data/blogArticles" */
 import metaData from "./data/metaData";
-/* import coursesList from "./data/coursesList"; */
 
 
 export default function App() {
@@ -55,7 +52,7 @@ export default function App() {
   const [investments,setInvestments]=useState([])
   const routesList =[
     {
-      component: <Home investmentsList={investmentsList} metaData={metaData.home} />,
+      component: <Home metaData={metaData.home}  list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} />,
       path: "/"
     },
     {

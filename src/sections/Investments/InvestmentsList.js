@@ -1,8 +1,5 @@
 import { useEffect } from "react";
 
-// images
-// import investmentsPageProjectsCover from "../assets/img/projects/nitaCover.png";
-
 // COMPONENTS
 import InvestmentCard from "../../components/Investments/InvestmentCard";
 // import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";

@@ -1,5 +1,5 @@
 //* Images
-import investmentsTitleBg from "../../assets/img/background/investmentsTitleBg.png";
+import investmentsTitleBg from "../../assets/img/background/investmentsTitleBg.svg";
 
 export default function InvestmentsTitle() {
     return (

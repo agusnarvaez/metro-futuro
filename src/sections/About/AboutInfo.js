@@ -1,5 +1,5 @@
 // Background
-import aboutInfoBg from "../../assets/img/background/aboutInfoBg.png";
+import aboutInfoBg from "../../assets/img/background/aboutInfoBg.svg";
 
 export default  function AboutInfo() {
 

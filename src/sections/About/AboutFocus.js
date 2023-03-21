@@ -2,7 +2,7 @@
 import AboutFocusCard from './AboutFocusCard';
 
 // Background
-import aboutFocusBg from "../../assets/img/background/aboutFocusBg.png";
+import aboutFocusBg from "../../assets/img/background/aboutFocusBg.svg";
 
 
 // Lista de tarjetas

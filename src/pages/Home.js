@@ -1,7 +1,8 @@
 //* ###### VISTA DE HOME ####
 
 
-/** ### Import de componentes ### **/
+
+//* ### Import de componentes ###
 import HomeAbout from "../sections/Home/HomeAbout";
 import HomeSlogan from "../sections/Home/HomeSlogan";
 import HomeInvestmentSteps from "../sections/Home/HomeInvSteps";
@@ -14,33 +15,9 @@ import HomeFaq from "../sections/Home/HomeFaq";
 
 import HelmetData from "../components/HelmetData";
 
-export default function Home({investmentsList,metaData}) {
+export default function Home({metaData,list,setList,investments,setInvestments}) {
 
-    const principalInvestment = investmentsList[0];
     
-    /* const sloganRef = useRef(); */
-    /* const [scrollTransition,setScrollTransition]=useState('scrollInitial');
-
-    useEffect(() => {
-        const handleScroll = ()=>{
-            const slogan = sloganRef.current;
-            const sloganCoordinates=slogan.getBoundingClientRect();
-            const sloganY = sloganCoordinates.y;
-            const topAppear = sloganY < 500 ? 'topAppear':'scrollInitial';
-            
-            setScrollTransition(topAppear);
-            
-            /* console.log(sloganY + ' ' + scrollTransition);     */
-      /*      
-        }
-
-
-        window.addEventListener("scroll",handleScroll);
-
-        return ()=>{
-            window.removeEventListener("scroll",handleScroll);
-        }
-    },[scrollTransition]); */
     return (
         <main className="homePage">
             
@@ -48,7 +25,7 @@ export default function Home({investmentsList,metaData}) {
 
             <HomeAbout/>
 
-            <HomeOportunity principalInvestment={principalInvestment} />
+            <HomeOportunity list={list} setList={setList} investments={investments} setInvestments={setInvestments} />
             
             <HomeSlogan  /*  scrollTransition={scrollTransition}  *//>
 

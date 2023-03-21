@@ -2,7 +2,7 @@
 import React,{ useState } from "react";
 
 // Íconos
-import homeFaqIcon from '../../assets/img/icons/homeFaqIcon.png';
+import homeFaqIcon from '../../assets/img/icons/homeFaqIcon.svg';
 
 export default function FAQCard({item}) {
    

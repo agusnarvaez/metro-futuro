@@ -53,7 +53,7 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
                     }
                 }
             }
-        }   //investments.length > 0 ? setInvestment(investments[investmentId].fields) : console.log("No hay datos");
+        }   
     }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments,newMetaData,setNewMetaData,navigate,params.id]);
 
     return (

@@ -1,4 +1,4 @@
-import Clock from "../../assets/img/icons/learnClock.png";
+import Clock from "../../assets/img/icons/homeClock.svg";
 
 import LearnCoursesCardDifficulty from "../Learn/LearnCoursesCardDifficulty";
 

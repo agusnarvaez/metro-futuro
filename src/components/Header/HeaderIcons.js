@@ -1,9 +1,9 @@
 //* Logo de Metro Futuro
-import metroFuturoLogo from "../../assets/img/icons/metroFuturoLogo.png"
+import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.png"
 
 //* Ícono de menú
-import burgerMenuIcon from "../../assets/img/icons/burgerMenuIcon.png";
-import burgerMenuCrossIcon from "../../assets/img/icons/BurgerMenuCrossIcon.png";
+import burgerMenuIcon from "../../assets/img/icons/burgerMenuIcon.svg";
+import burgerMenuCrossIcon from "../../assets/img/icons/BurgerMenuCrossIcon.svg";
 
 import { NavLink } from 'react-router-dom'
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 // Background
-import livingRoom from '../../assets/img/livingRoom.png';
+import livingRoom from '../../assets/img/livingRoom.jpg';
 
-import homeAboutCoverMobile from '../../assets/img/background/homeAboutCoverMobile.png';
+import homeAboutCoverMobile from '../../assets/img/background/homeAboutCoverMobile.svg';
 
 export default function HomeAbout() {
     return (

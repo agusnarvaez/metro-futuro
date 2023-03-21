@@ -1,5 +1,5 @@
 // Logos
-import linkedinLogo from "../../assets/img/icons/aboutLinkedinLogo.png";
+import linkedinLogo from "../../assets/img/icons/aboutLinkedinLogo.svg";
 
 export default function AboutTeamCard({teamMember}) {
     

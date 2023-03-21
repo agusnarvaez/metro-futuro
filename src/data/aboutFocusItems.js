@@ -1,7 +1,7 @@
 // Icons
-import missionIcon from "../assets/img/icons/missionIcon.png";
-import visionIcon from "../assets/img/icons/visionIcon.png";
-import valuesIcon from "../assets/img/icons/valuesIcon.png";
+import missionIcon from "../assets/img/icons/missionIcon.svg";
+import visionIcon from "../assets/img/icons/visionIcon.svg";
+import valuesIcon from "../assets/img/icons/valuesIcon.svg";
 
 
 const aboutFocusItems = [

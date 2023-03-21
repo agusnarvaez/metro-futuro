@@ -1,5 +1,5 @@
 // Background
-import aboutTitleBg from "../../assets/img/background/aboutTitleBg.png";
+import aboutTitleBg from "../../assets/img/background/aboutTitleBg.svg";
 
 // Logos
 import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogoTag.png";

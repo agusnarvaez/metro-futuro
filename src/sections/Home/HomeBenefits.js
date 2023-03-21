@@ -2,17 +2,17 @@
 import HomeBenefitCard from './HomeBenefitsCard';
 
 //* Background
-import homeBenefitsBg from "../../assets/img/background/homeBenefitsBg.png";
+import homeBenefitsBg from "../../assets/img/background/homeBenefitsBg.svg";
 
 //* Imágenes
-import building from '../../assets/img/building.png';
+import building from '../../assets/img/building.jpg';
 
 //* Íconos
-import clockIcon from '../../assets/img/icons/homeClock.png';
-import shoppingCartIcon from '../../assets/img/icons/homeShoppingCart.png';
-import dollarSignIcon from '../../assets/img/icons/homeDollarSign.png';
-import padlockIcon from '../../assets/img/icons/homePadlock.png';
-import suitcaseIcon from '../../assets/img/icons/homeSuitcase.png';
+import clockIcon from '../../assets/img/icons/homeClock.svg';
+import shoppingCartIcon from '../../assets/img/icons/homeShoppingCart.svg';
+import dollarSignIcon from '../../assets/img/icons/homeDollarSign.svg';
+import padlockIcon from '../../assets/img/icons/homePadlock.svg';
+import suitcaseIcon from '../../assets/img/icons/homeSuitcase.svg';
 
 export default function HomeBenefits() {
     const benefitsList = [
