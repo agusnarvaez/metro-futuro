@@ -7,7 +7,7 @@ export default function FooterLinks({scrollToTop,links,title}) {
 	
 		<ul className="rightLinks">
 
-			<li><h4>{title}</h4></li>
+			<li><h3>{title}</h3></li>
 
 			{
 				links.map((link, key) => { return (

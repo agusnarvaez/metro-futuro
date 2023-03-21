@@ -77,7 +77,7 @@ export default function BottomFooter() {
 		<div className="topFooter">
 
 					<div className='footerMetroLogo'>
-						<h3>Sumate a</h3>
+						<h2>Sumate a</h2>
 						<img
 							src={metroFuturoLogo} alt="metroFuturoLogo"
 						/>
