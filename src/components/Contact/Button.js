@@ -22,7 +22,7 @@ export default function ContactInputs({buttonClass,setButtonClass}) {
                 >
                     <div className="degradedLink_TextContainer">
                         <p>
-                            <img alt="check" src={check}/>Enviado
+                            <img alt="check" title="check" src={check}/>Enviado
                         </p>
                         </div>
                 </button>)

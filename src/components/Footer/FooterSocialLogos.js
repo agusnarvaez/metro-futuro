@@ -55,6 +55,7 @@ export default function FooterSocialLogos() {
 									<img
 										src={socialLogo.src}
 										alt={socialLogo.className}
+										title={socialLogo.className}
 									/>
 								</div>
 							</a>

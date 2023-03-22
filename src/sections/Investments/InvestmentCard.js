@@ -7,7 +7,7 @@ export default function InvestmentCard({investment,index}) {
         <article className="investmentsPageProjectCard">
             <NavLink to={`/inmuebles/${investment.id}`} exact="true">
                 <div className="investmentsPageProjectsCover">
-                    <img className="investmentsPageProjectsCoverImg" alt="investmentsPageProjectsCoverImg" src={investment.cover}/>
+                    <img className="investmentsPageProjectsCoverImg" alt="investmentsPageProjectsCoverImg" title='investmentsPageProjectsCoverImg' src={investment.cover}/>
                     
                 </div>
                 <div className="investmentsPageProjectInfo">

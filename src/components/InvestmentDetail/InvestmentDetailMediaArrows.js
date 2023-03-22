@@ -8,9 +8,9 @@ export default function InvestmentDetailMediaArrows({index,setIndex,length}) {
     
     return (
         <ul className="investmentDetailMediaArrows">
-            <li><div onClick={()=>bajarIndice()}><img src={investmentDetailMediaLeftArrow} alt="flecha izq" /></div></li>
+            <li><div onClick={()=>bajarIndice()}><img src={investmentDetailMediaLeftArrow} alt="flecha izq" title='flecha izq' /></div></li>
             
-            <li><div onClick={()=>subirIndice()}><img src={investmentDetailMediaRightArrow} alt="flecha der" /></div></li>
+            <li><div onClick={()=>subirIndice()}><img src={investmentDetailMediaRightArrow} alt="flecha der" title='flecha der'/></div></li>
         </ul>
     )
 }

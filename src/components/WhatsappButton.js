@@ -9,7 +9,7 @@ export default function WhatsappButton() {
     return (
         
             <a href={credentials.whatsappApi} className="whatsappButton" target="_blank" rel="noreferrer">
-                <img className="whatsappButton_img"src={whatsappLogo} alt="whatsappLogo" />
+                <img className="whatsappButton_img"src={whatsappLogo} alt="whatsappLogo" title="whatsappLogo" />
             </a>
         
     )

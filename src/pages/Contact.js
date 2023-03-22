@@ -15,6 +15,7 @@ export default function Contact({metaData}) {
 
             <img
                 alt="contactPageBg"
+                title="contactPageBg"
                 className="sectionBackground--desktop"
                 src={contactPageBg}
             />

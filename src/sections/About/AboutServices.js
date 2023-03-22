@@ -7,7 +7,7 @@ export default function AboutServices() {
     return (
 
         <section id="aboutServices">
-                <img className="sectionCover" alt="aboutServicesImg" src={aboutServicesImg} />
+                <img className="sectionCover" alt="aboutServicesImg" title="aboutServicesImg" src={aboutServicesImg} />
                 
                 <div className="sectionInfo">
                     <h2>Enfocamos nuestros esfuerzos en el mejor servicio</h2>
@@ -16,7 +16,7 @@ export default function AboutServices() {
                     <ul>
                         {services.map((service, index) => { return(
                             <li>
-                                <img alt="listIcon" src={aboutListIcon} />
+                                <img alt="listIcon" title="listIcon" src={aboutListIcon} />
                                 <p>{service}</p>
                             </li>
                         )})}

@@ -27,6 +27,7 @@ export default function HeaderIcons({burgerMenu,setBurgerMenu}) {
                     src={metroFuturoLogo}
                     alt="metroFuturoLogo"
                     className="metroFuturoLogo"
+                    title="metroFuturoLogo"
                 />
                 </NavLink>
 
@@ -35,12 +36,14 @@ export default function HeaderIcons({burgerMenu,setBurgerMenu}) {
                     className={burgerMenu?"burgerMenuIcon":"burgerMenuIconHidden"}
                     src={burgerMenuIcon}
                     alt="burgerMenuIcon"
+                    title="burgerMenuIcon"
                     onClick={() => setBurgerMenu(!burgerMenu)}
                 />
                 <img
                     className={burgerMenu?"burgerMenuIconHidden":"burgerMenuIcon"}
                     src={burgerMenuCrossIcon}
                     alt="burgerMenuCrossIcon"
+                    title="burgerMenuCrossIcon"
                     onClick={() => setBurgerMenu(!burgerMenu)}
                 />
             </div>

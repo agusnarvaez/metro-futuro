@@ -31,7 +31,7 @@ export default function HomePartners() {
     return (
 
         <section id="homePartners">
-                <img alt="homePartnersBackground" className="sectionBackground--desktop" src={homePartnersBg} />
+                <img alt="homePartnersBackground" title="homePartnersBackground" className="sectionBackground--desktop" src={homePartnersBg} />
                 <h3 className='section_subTitle'>Nuestros partners</h3>
                 <div id='homePartnersContainer'>
                     <ul>

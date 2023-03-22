@@ -8,7 +8,7 @@ export default function LearnCourses({item,url,id}) {
 
 		<article id='learnCoursesCard'>
 
-			<img src={item.cover.fields.file.url} alt="learnCoursesCard" />
+			<img src={item.cover.fields.file.url} alt="learnCoursesCard" title='learnCoursesCard' />
 
 			<LearnCoursesCardDifficulty  difficulty={item.difficulty}/>
 

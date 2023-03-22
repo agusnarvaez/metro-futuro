@@ -8,7 +8,7 @@ export default function LearnCourseInfoVideoCard({title,link}){
 		<div className="learnCoursePage_InfoVideoCard">
 			<h2>
 				{title}
-				<img className={!showVideo?"videoArrow":"videoArrow videoArrow--rotated"} onClick={()=>setShowVideo(!showVideo)} alt="downArrow" src={learnCourseVideoDownArrow}/>
+				<img className={!showVideo?"videoArrow":"videoArrow videoArrow--rotated"} onClick={()=>setShowVideo(!showVideo)} alt="downArrow" title="downArrow" src={learnCourseVideoDownArrow}/>
 			</h2>
 
 			<div className={showVideo?"learnCoursePage_videoContainer":"learnCoursePage_videoContainer learnCoursePage_videoContainer--wrapped"}>

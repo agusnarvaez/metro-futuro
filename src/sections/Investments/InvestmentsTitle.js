@@ -4,7 +4,7 @@ import investmentsTitleBg from "../../assets/img/background/investmentsTitleBg.s
 export default function InvestmentsTitle() {
     return (
         <section className="investmentstPageTitle">
-            <img alt="sectionBackground" className="sectionBackground" src={investmentsTitleBg} />
+            <img alt="sectionBackground" title="sectionBackground" className="sectionBackground" src={investmentsTitleBg} />
             <h1>
                 Conoce nuestros <font color="#004DFF">inmuebles tokenizados</font>
             </h1>

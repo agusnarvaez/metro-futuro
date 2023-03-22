@@ -13,6 +13,7 @@ export default function BottomFooter() {
 						<img
 							src={brikenLogo}
 							alt="brikenLogo"
+							title="brikenLogo"
 						/>
 					</div>
 					

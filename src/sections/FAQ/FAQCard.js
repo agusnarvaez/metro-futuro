@@ -23,6 +23,7 @@ return (
                 <img
                     src={homeFaqIcon}
                     alt="faqIcon" 
+                    title="faqIcon"
                     className={faq.cross?"faqCross":"faqCross faqCross--rotated45"}
                     
                 />

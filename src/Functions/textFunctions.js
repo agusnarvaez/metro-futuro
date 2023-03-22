@@ -9,7 +9,7 @@ const RICHTEXT_OPTIONS = {
 			return <a href={node.data.uri}>{children}</a>
 		},
 		[BLOCKS.EMBEDDED_ASSET]:(node,children)=>{
-			return <img src={node.data.target.fields.file.url} alt={node.data.target.fields.title}/>
+			return <img src={node.data.target.fields.file.url} alt={node.data.target.fields.title} title={node.data.target.fields.title}/>
 		}
 		
 	}}

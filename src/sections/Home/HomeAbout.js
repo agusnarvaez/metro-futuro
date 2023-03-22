@@ -31,8 +31,8 @@ export default function HomeAbout() {
 
 
                 {/* Background */}
-                <img className="sectionBackground--desktop"  src={livingRoom} alt="livingRoom" />
-                <img className="sectionBackground--mobile" src={homeAboutCoverMobile} alt="sectionBackground" />
+                <img className="sectionBackground--desktop"  src={livingRoom} alt="livingRoom" title='livingRoom' />
+                <img className="sectionBackground--mobile" src={homeAboutCoverMobile} alt="sectionBackground" title='sectionBackground' />
             </section>
     )
 }

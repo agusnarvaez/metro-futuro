@@ -28,7 +28,7 @@ export default function InvestmentDetailResume({investment}) {
     return (
         <section className="investmentDetailResume">
             <ul>
-                {list.map((item,index)=>(<li key={index}><img alt="iconoDeResumen" src={item.icon}/>{item.text}</li>))}
+                {list.map((item,index)=>(<li key={index}><img alt="iconoDeResumen" title="iconoDeResumen" src={item.icon}/>{item.text}</li>))}
             </ul>
         </section>
     )

@@ -9,6 +9,7 @@ export default function AboutTeamCard({teamMember}) {
                     <div>
                         <img
                             alt="aboutTeamMemberImg"
+                            title="aboutTeamMemberImg"
                             src={teamMember.avatar}
                         />
                     </div>
@@ -26,6 +27,7 @@ export default function AboutTeamCard({teamMember}) {
                             <img
                                 src={linkedinLogo}
                                 alt="linkedInLogo"
+                                title="linkedInLogo"
                             />
                         </div>
                     </a>
