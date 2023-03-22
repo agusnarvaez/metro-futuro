@@ -17,7 +17,7 @@ export default function DegradedLink({id,text,route,backgroundColor}) {
 
             <div className={`degradedLink_TextContainer degradedLink_TextContainer--${backgroundColor}`}>
 
-                <Link to={route} className="degradedLink_Text">
+                <Link to={route} className="degradedLink_Text" title={text}>
                     {text}
                 </Link>
 

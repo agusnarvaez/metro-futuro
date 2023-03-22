@@ -50,6 +50,7 @@ export default function FooterSocialLogos() {
 								target="_blank"
 								href={socialLogo.href}
 								rel="noreferrer"
+								title={socialLogo.className}
 								>
 								<div className={socialLogo.className}>
 									<img

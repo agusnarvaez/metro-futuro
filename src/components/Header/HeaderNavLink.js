@@ -19,6 +19,7 @@ export default function HeaderNavLink({link,index,links,burgerMenu,setBurgerMenu
                     onClick={scrollToTop}
                     className={({ isActive }) => (isActive ? "navLink active" : "navLink")}
                     to={link.to}
+                    title={link.title}
                     exact="true"
                 >
                     {link.title}

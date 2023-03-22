@@ -11,7 +11,7 @@ export default function FooterLinks({scrollToTop,links,title}) {
 
 			{
 				links.map((link, key) => { return (
-					<li key={key}><NavLink onClick={scrollToTop} to={link.to}>{link.text}</NavLink></li>
+					<li key={key}><NavLink onClick={scrollToTop} title={link.text} to={link.to}>{link.text}</NavLink></li>
 					)})
 			}
 			

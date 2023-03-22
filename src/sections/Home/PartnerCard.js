@@ -5,7 +5,9 @@ export default  function PartnerCard({partner}) {
             <a
                 target="_blank"
                 href={partner.link}
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+                title={partner.alt}
+                >
                 <img alt={partner.alt} title={partner.alt} src={partner.img} />
             </a>
         </li>

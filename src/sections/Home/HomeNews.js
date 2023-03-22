@@ -14,7 +14,7 @@ export default function HomeNews() {
                 </div>
                 <div className="degradedLink" id="homeNews_degradedLink">
                     <div className='degradedLink_TextContainer degradedLink_TextContainer--lightBlue'>
-                        <NavLink className="degradedLink_Text"to='/contact'>
+                        <NavLink className="degradedLink_Text"to='/contact' title='contact'>
                             Quiero saber más
                         </NavLink>
                     </div>

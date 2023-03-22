@@ -20,6 +20,7 @@ export default function HeaderIcons({burgerMenu,setBurgerMenu}) {
                 <NavLink
                     onClick={scrollToTop}
                     className="metroFuturoLogo"
+                    title="Home"
                     to="/"
                     exact="true"
                 >

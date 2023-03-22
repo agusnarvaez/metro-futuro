@@ -6,7 +6,7 @@ const RICHTEXT_OPTIONS = {
 			return <p>{children}</p>
 		},
 		[INLINES.HYPERLINK]:(node,children)=>{
-			return <a href={node.data.uri}>{children}</a>
+			return <a href={node.data.uri} title={children}>{children}</a>
 		},
 		[BLOCKS.EMBEDDED_ASSET]:(node,children)=>{
 			return <img src={node.data.target.fields.file.url} alt={node.data.target.fields.title} title={node.data.target.fields.title}/>

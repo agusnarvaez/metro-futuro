@@ -22,6 +22,7 @@ export default function AboutTeamCard({teamMember}) {
                         target="_blank"
                         href={teamMember.linkedin}
                         rel="noopener noreferrer"
+                        title={teamMember.name + " LinkedIn"}
                     >
                         <div className="aboutTeamlinkedInLogo">
                             <img
