@@ -68,4 +68,20 @@
   <changefreq>monthly</changefreq>
   <priority>0.60</priority>
 </url>
+<url>
+  <loc>https://www.youtube.com/embed/wX7HmpI8NsY?autoplay=0&mute=0&controls=1&origin=https%3A%2F%2Fmetro-futuro.com&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1</loc>
+  <video:video>
+    <video:title>Academia Metro Futuro</video:title>
+    <video:description>Te ofrecemos una plataforma eLearning online y gratuita para formarse en inversiones inmobiliarias y la tecnología Blockchain. Únete a la academia de Metro Futuro para lograr capitalizar tus ahorros y transformarte en un inversor del Real State, la industria con mayor seguridad y menor riesgo.</video:description>
+    <video:duration>23</video:duration>
+    <video:publication_date>2022-05-31</video:publication_date>
+    
+    
+    <video:view_count>93</video:view_count>
+    <video:family_friendly>yes</video:family_friendly>
+    <video:category>Real Estate</video:category>
+    <video:tag>presentación, publicidad</video:tag>
+  </video:video>
+</url>
 </urlset>
+
