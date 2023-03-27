@@ -11,7 +11,7 @@ export default  function AboutInfo() {
                 Utilizamos <b>tecnología blockchain</b> para registrar los tokens inmobiliarios a través de Smart Contracts (contratos inteligentes) permitiéndonos generar pequeñas participaciones del inmueble, lo que llamamos el fraccionamiento por m<sup>2</sup>, es decir, cualquier persona puede comprar un token que es una representación digital del negocio asociado al inmueble.<br />
                 Desde nuestra plataforma con tu billetera digital podes manejar tus inversiones, vender o comprar los tokens y recibir los dividendos mensualmente.
             </p>
-            <img alt="sectionBackground" title="sectionBackground" className="sectionBackground" src={aboutInfoBg} />
+            <img alt="sectionBackground" title="sectionBackground" className="sectionBackground" src={aboutInfoBg} loading="lazy"/>
         </section>
     )
 }

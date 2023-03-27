@@ -42,7 +42,7 @@ export default function HomeInvestmentSteps() {
                             onClick={() => setCarrousel(!carrousel)}
                         >
                             <div>
-                                <img src={leftArrowHomeCarrousel} alt="leftArrowNav" title='leftArrowNav' />
+                                <img src={leftArrowHomeCarrousel} alt="leftArrowNav" title='leftArrowNav' loading="lazy"/>
                             </div>
                         </div>
                         <div className="carrouselNav_arrowContainer"
@@ -50,7 +50,7 @@ export default function HomeInvestmentSteps() {
 
                         >
                             <div>
-                                <img src={rightArrowHomeCarrousel} alt="rightArrowNav" title='rightArrowNav' />
+                                <img src={rightArrowHomeCarrousel} alt="rightArrowNav" title='rightArrowNav'loading="lazy" />
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@ export default function HomeInvestmentSteps() {
                     </div>
                 </div>
             {/* ### Background ### */}
-            <img className="sectionBackground--desktop" alt="homeInvestmentStepsBg" title='homeInvestmentStepsBg' src={investmentStepsBg} />
+            <img className="sectionBackground--desktop" alt="homeInvestmentStepsBg" title='homeInvestmentStepsBg' src={investmentStepsBg} loading="lazy"/>
             </section>
     )
 }

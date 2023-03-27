@@ -11,6 +11,7 @@ export default function AboutTeamCard({teamMember}) {
                             alt="aboutTeamMemberImg"
                             title="aboutTeamMemberImg"
                             src={teamMember.avatar}
+                            loading="lazy"
                         />
                     </div>
                 </div>
@@ -29,6 +30,7 @@ export default function AboutTeamCard({teamMember}) {
                                 src={linkedinLogo}
                                 alt="linkedInLogo"
                                 title="linkedInLogo"
+                                loading="lazy"
                             />
                         </div>
                     </a>

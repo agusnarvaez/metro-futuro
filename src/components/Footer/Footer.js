@@ -34,8 +34,8 @@ export default function Footer() {
 
 			<footer className="mainFooter">
 				
-				<img className='mainFooterBackgroundLeft' alt="footerBackground" title='footerBackground' src={footerLeftBg} />
-				<img className='mainFooterBackgroundRight' alt="footerBackground" title='footerBackground' src={footerRightBg} />
+				<img className='mainFooterBackgroundLeft' alt="footerBackground" title='footerBackground' src={footerLeftBg} loading="lazy"/>
+				<img className='mainFooterBackgroundRight' alt="footerBackground" title='footerBackground' src={footerRightBg} loading="lazy"/>
 				
 				<TopFooter/>
 

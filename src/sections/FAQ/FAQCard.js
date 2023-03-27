@@ -25,7 +25,7 @@ return (
                     alt="faqIcon" 
                     title="faqIcon"
                     className={faq.cross?"faqCross":"faqCross faqCross--rotated45"}
-                    
+                    loading="lazy"
                 />
             </div>
             {/* Respuesta FAQ */}

@@ -44,11 +44,11 @@ export default function HomeBenefits() {
         ]
     return (
         <section className="sectionInfo" id="homeBenefits">
-                <img className="sectionBackground--desktop" alt="homeBenefitsBackground" title='homeBenefitsBackground' src={homeBenefitsBg} />
+                <img className="sectionBackground--desktop" alt="homeBenefitsBackground" title='homeBenefitsBackground' src={homeBenefitsBg} loading="lazy"/>
                 <h3>Beneficios de invertir con Metro Futuro</h3>
                 <div className="sectionInfo" id="homeBenefitsContainer">
                     <div id="homeBenefitsImg">
-                        <img alt="homeBenefitsImg" title='homeBenefitsImg' src={building} />
+                        <img alt="homeBenefitsImg" title='homeBenefitsImg' src={building} loading="lazy" />
                     </div>
                     <ul>
                         {benefitsList.map((benefit, key) =>{

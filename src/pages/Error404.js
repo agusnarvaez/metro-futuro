@@ -12,7 +12,7 @@ export default function Error404({metaData}) {
         <main className="NotFound404ErrorPage" id="NotFound404ErrorPage">
             <HelmetData metaData={metaData} />
             
-            <img src={NotFound404ErrorImage} alt='Imagen de error 404' title="Imagen de error 404"/>
+            <img src={NotFound404ErrorImage} alt='Imagen de error 404' title="Imagen de error 404" loading="lazy"/>
 
             <div className="sectionInfo">
                 

@@ -8,7 +8,7 @@ export default  function PartnerCard({partner}) {
                 rel="noopener noreferrer"
                 title={partner.alt}
                 >
-                <img alt={partner.alt} title={partner.alt} src={partner.img} />
+                <img alt={partner.alt} title={partner.alt} src={partner.img} loading="lazy" />
             </a>
         </li>
     )

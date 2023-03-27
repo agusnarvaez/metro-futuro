@@ -14,6 +14,7 @@ export default function BottomFooter() {
 							src={brikenLogo}
 							alt="brikenLogo"
 							title="brikenLogo"
+							loading="lazy"
 						/>
 					</div>
 					

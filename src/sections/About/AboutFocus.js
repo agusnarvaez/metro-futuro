@@ -24,7 +24,7 @@ export default function AboutFocus() {
                     
                 </ul>
             </div>
-            <img alt="sectionBackground" title='sectionBackground' className="sectionBackground--desktop" src={aboutFocusBg} />
+            <img alt="sectionBackground" title='sectionBackground' className="sectionBackground--desktop" src={aboutFocusBg} loading="lazy"/>
         </section>
 
     )

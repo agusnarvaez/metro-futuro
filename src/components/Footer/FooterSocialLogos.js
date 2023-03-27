@@ -57,6 +57,7 @@ export default function FooterSocialLogos() {
 										src={socialLogo.src}
 										alt={socialLogo.className}
 										title={socialLogo.className}
+										loading="lazy"
 									/>
 								</div>
 							</a>

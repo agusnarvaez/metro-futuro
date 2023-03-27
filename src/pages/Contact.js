@@ -18,6 +18,7 @@ export default function Contact({metaData}) {
                 title="contactPageBg"
                 className="sectionBackground--desktop"
                 src={contactPageBg}
+                loading="lazy"
             />
 
             <ContactSlogan />

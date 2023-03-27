@@ -37,9 +37,9 @@ export default function InvestmentsList({list,setList,investments,setInvestments
                             (listClass=="")?
                             "priceFilterList":"");
                     }}>
-                        <p><img alt="investmentsFilterHomeIcon" title="investmentsFilterHomeIcon" className="investmentsFilterHomeIcon" src={investmentsFilterHomeIcon}/>Precio</p>
+                        <p><img alt="investmentsFilterHomeIcon" title="investmentsFilterHomeIcon" className="investmentsFilterHomeIcon" src={investmentsFilterHomeIcon} loading="lazy"/>Precio</p>
                         {priceFilterList}
-                        <img className="investmentsSearchFilterArrow" alt="investmentsSearchFilterArrow" title="investmentsSearchFilterArrow" src={investmentsSearchFilterArrow}/>
+                        <img className="investmentsSearchFilterArrow" alt="investmentsSearchFilterArrow" title="investmentsSearchFilterArrow" src={investmentsSearchFilterArrow} loading="lazy"/>
                     </div>
                 </form>
             </div> */}

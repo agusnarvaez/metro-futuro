@@ -10,7 +10,7 @@ export default function HomeLearnWithUs() {
     return (
 
         <section id="homeLearnWithUs">
-                <img className="sectionBackground--desktop" id="homeLearnWithUsBackground" alt="learnWithUsBackground" title="learnWithUsBackground" src={learnWithUsBg} />
+                <img className="sectionBackground--desktop" id="homeLearnWithUsBackground" alt="learnWithUsBackground" title="learnWithUsBackground" src={learnWithUsBg} loading="lazy"/>
                 <div className="youTubeVideo_Container">
                     <ReactPlayer
                         url="https://www.youtube.com/embed/wX7HmpI8NsY?showinfo=0&enablejsapi=1"

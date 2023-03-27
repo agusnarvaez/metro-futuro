@@ -40,7 +40,7 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
 
     return (
         <section className="sectionInfo" id="homeOportunity">
-            {Object.entries(investment).length!==0? <img src={investment.photos[0].fields.file.url} alt="investmentCover" title="investmentCover" className='sectionCover'/>:""}
+            {Object.entries(investment).length!==0? <img src={investment.photos[0].fields.file.url} alt="investmentCover" title="investmentCover" className='sectionCover' loading="lazy"/>:""}
             {Object.entries(investment).length!==0?
                 <div className='sectionInfo'>
 

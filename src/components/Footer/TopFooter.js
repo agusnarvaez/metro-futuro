@@ -79,7 +79,7 @@ export default function BottomFooter() {
 					<div className='footerMetroLogo'>
 						<h2>Sumate a</h2>
 						<img
-							src={metroFuturoLogo} alt="metroFuturoLogo" title="metroFuturoLogo"
+							src={metroFuturoLogo} alt="metroFuturoLogo" title="metroFuturoLogo" loading="lazy"
 						/>
 					</div>
 

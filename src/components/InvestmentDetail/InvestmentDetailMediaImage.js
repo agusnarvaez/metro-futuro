@@ -11,7 +11,7 @@ export default function InvestmentDetailMediaImage({investment,images}) {
     return (
             <div className="investmentDetailMediaImage">
                 {images?<InvestmentDetailMediaArrows index={index} setIndex={setIndex} length={images.length-1}/>:""}
-                {images?<img src={images[index].fields.file.url} alt={images[index].fields.title} title={images[index].fields.title} key={0}/>: ""}
+                {images?<img src={images[index].fields.file.url} alt={images[index].fields.title} title={images[index].fields.title} key={0} loading="lazy"/>: ""}
             </div>
     )
 }
