@@ -849,7 +849,7 @@ li{
         flex-direction: row;
         justify-content: center;
         /* height: 50vh; */
-        min-height: 65vh;
+        min-height: 40vh;
         align-items: center;
         background: #ffff;
         border-radius: 50px;
