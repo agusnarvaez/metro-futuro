@@ -67,7 +67,7 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
-.footerMetroLogo h3{
+.footerMetroLogo h2{
     font-size: 2.5em;
 }
 .footerMetroLogo img{
@@ -102,7 +102,7 @@
     font-size: 1.2em;
     font-weight: 200;    
 }
-.footerLinks h4{
+.footerLinks h3{
     font-size: 1.5em;
 }
 
@@ -144,8 +144,8 @@
 
 .footerSocials a {
     padding: 2.5%;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border: 2px white solid;
     border-radius: 50rem;
     margin-left: 3%;
@@ -162,6 +162,7 @@
     align-items: center;
     margin: 0.5%;
 }
+
 .footerSocials img{
     height: 17px;
     width: 17px;
@@ -224,7 +225,7 @@
         justify-content: center;
         align-items: flex-start;
     }
-    .footerMetroLogo h3{
+    .footerMetroLogo h2{
         font-size: 2.5em;
     }
     .footerMetroLogo img{
@@ -259,7 +260,7 @@
         font-size: 1.5em;
         font-weight: 300;    
     }
-    .footerLinks h4{
+    .footerLinks h3{
         font-size: 2em;
     }
     

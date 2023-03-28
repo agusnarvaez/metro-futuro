@@ -2,6 +2,7 @@
 /*! ############### MOBILE ###############*/
 /*! #######################################*/
 
+
 #NotFound404ErrorPage{
     padding: 5% 0 5% 0;
     
@@ -37,7 +38,16 @@
     margin: 0;
     
 }
-
+.sectionInfo h2{
+    font-size: 2.5em;
+    font-weight: 400;
+}
+h3{
+    font-size: 2em;
+}
+i{
+    font-size: inherit;
+}
 html{
     width: 100%;
     overflow-x: hidden;
@@ -167,7 +177,7 @@ li{
         z-index: 10;
     }
     .section_subTitle{
-        font-size: 3em; 
+        font-size: 2.5em; 
         text-align: center;
         font-weight: 600;
         z-index: 10;
@@ -337,7 +347,7 @@ li{
         padding: 2% 1% 1% 1%;
         background-color: #FFFFFF;
     }
-    .carrouselContainer_card h4{
+    .carrouselContainer_card h3{
         color: #004DFF;
         font-size: 2em;
         font-weight: 500;
@@ -654,7 +664,7 @@ li{
             padding: 3% 1% 1.5% 1%;
             background-color: #FFFFFF;
     }
-    .carrouselContainer_card h4{
+    .carrouselContainer_card h3{
         color: #004DFF;
         font-size: 2.3em;
         font-weight: 500;
@@ -879,7 +889,7 @@ li{
             padding: 3% 1% 1.5% 1%;
             background-color: #FFFFFF;
     }
-    .carrouselContainer_card h4{
+    .carrouselContainer_card h3{
         color: #004DFF;
         font-size: 2.3em;
         font-weight: 500;

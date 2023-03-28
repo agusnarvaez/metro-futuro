@@ -10,7 +10,7 @@ export default function LearnCourses({item,url,id}) {
 
 			<img src={item.cover.fields.file.url} alt="learnCoursesCard" title='learnCoursesCard' loading="lazy"/>
 
-			<LearnCoursesCardDifficulty  difficulty={item.difficulty}/>
+			{/* <LearnCoursesCardDifficulty  difficulty={item.difficulty}/> */}
 
 			<h3>{item.title}</h3>
 

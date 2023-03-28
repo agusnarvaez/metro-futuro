@@ -31,7 +31,7 @@
 #learnSlogan h2{
     font-weight: 600;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3em;
     z-index: 10;
 }
 /** ### LEARN COURSES ### */
@@ -45,13 +45,13 @@
 
 #learnCoursesCard{
     display: flex;
-    flex-direction: row;
+/*     flex-direction: row; */
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     width: 90%;
     margin: 5% 0;
-    min-height: 70vh;
+    min-height: 40vh;
     background: #FFFFFF;
     border: 1px solid #F3F2F2;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
@@ -200,11 +200,9 @@
 
     }
     #learnCoursesCard p{
-        font-size: 1.5em;
+        font-size: 1.7em;
         padding: 1% 1%;
         margin: 3% 0;
-
-    
     }
     #learnCoursesCard .degradedLink{
         width: 50%;
