@@ -663,9 +663,10 @@
     }
     #homeBenefitsContainer ul li div h4{
         color: #000F33;
+        font-size: 2em;
     }
     #homeBenefitsContainer ul li div p{
-        font-size: 1.5em;
+        font-size: 1.7em;
         line-height: 20px;
     }
 /*! ### Beneficios de invertir con Metro Futuro ###**/
@@ -696,7 +697,8 @@
     }
     #homeLearnWithUs_Info p {
         width: 90%;
-        font-size: 1.5em;
+        font-size: 2em;
+        line-height: 1em;
         text-align: end;
         padding: 3% 0;
     }
