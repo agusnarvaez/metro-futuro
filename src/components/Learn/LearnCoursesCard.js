@@ -1,6 +1,6 @@
 
 
-import LearnCoursesCardDifficulty from './LearnCoursesCardDifficulty.js'
+/* import LearnCoursesCardDifficulty from './LearnCoursesCardDifficulty.js' */
 import DegradedNavLink from '../../components/DegradedNavLink.js'
 
 export default function LearnCourses({item,url,id}) {
