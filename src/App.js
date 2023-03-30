@@ -1,6 +1,6 @@
 
 //* Importo Hooks y ReactGA (Google Anlytics)
-import {useState,useEffect} from "react";
+import {useState, useEffect, Suspense, lazy } from "react";
 import ReactGA from 'react-ga';
 //* REACT-ROUTER-DOM
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -27,22 +27,24 @@ import "./assets/css/404NotFound.css"
 
 //* ### COMPONENTS ###
 import Header from "./components/Header";
-import Home from './pages/Home.js'
-import Investments from './pages/Investments';
-import InvestmentDetail from "./pages/InvestmentDetail"; 
-import Learn from "./pages/Learn";
-import LearnCourse from "./pages/LearnCourse";
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Faq from "./pages/Faq";
-import Error404 from './pages/Error404';
+
 import WhatsappButton from './components/WhatsappButton'
 import Footer from "./components/Footer/Footer";
-import Terms from "./pages/Terms";
 
 //* DATA
 import metaData from "./data/metaData";
 
+//* Lazy Loading de las páginas
+const Home = lazy(()=> import('./pages/Home.js'))
+const Investments= lazy(()=>import('./pages/Investments'))
+const InvestmentDetail = lazy(()=> import("./pages/InvestmentDetail"))
+const Learn = lazy(()=> import("./pages/Learn"))
+const LearnCourse = lazy(()=> import("./pages/LearnCourse"))
+const About = lazy(()=> import('./pages/About'))
+const Contact = lazy(()=> import('./pages/Contact'))
+const Faq = lazy(()=> import("./pages/Faq"))
+const Error404 = lazy(()=> import('./pages/Error404'))
+const Terms = lazy(()=> import("./pages/Terms"))
 
 export default function App() {
   
@@ -109,11 +111,11 @@ export default function App() {
     <BrowserRouter>
 
       <Header />
-
-      <Routes>
-        {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
-      </Routes>
-
+      <Suspense fallback={<div className="loading">Cargando...</div>}>
+        <Routes>
+          {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
+        </Routes>
+      </Suspense>
       <WhatsappButton />
 
       <Footer />
