@@ -31,7 +31,6 @@
 
     #NotFound404ErrorPage img{
         width: 35%;
-        height: auto;
     }
     
 }
@@ -50,12 +49,10 @@
     
     #NotFound404ErrorPage img{
         width: 40%;
-        height: auto;
     }
     #NotFound404ErrorPage .sectionInfo{
         width: fit-content;
         padding: 0 0 0 2%;
-        /* flex-direction: row; */
         justify-content: flex-start;
     }
     #NotFound404ErrorPage .sectionInfo h1{
