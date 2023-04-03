@@ -8,8 +8,8 @@ import HomeInvStepsCard from "./HomeInvStepsCard";
 import investmentStepsBg from "../../assets/img/background/homeInvestmentStepsBg.svg";
 
 // Flechas carrousel
-import rightArrowHomeCarrousel from "../../assets/img/icons/rightArrow.svg"
-import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.svg"
+import rightArrowHomeCarrousel from "../../assets/img/icons/rightArrow.png"
+import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.png"
 
 // Info Carrousel
 import carrouselInfo from "../../data/homeCarrouselInfo";
@@ -42,7 +42,7 @@ export default function HomeInvestmentSteps() {
                             onClick={() => setCarrousel(!carrousel)}
                         >
                             <div>
-                                <img src={leftArrowHomeCarrousel} alt="leftArrowNav" title='leftArrowNav' loading="lazy"/>
+                                <img src={leftArrowHomeCarrousel} alt="leftArrowNav" title='leftArrowNav' loading="lazy" type='img/svg'/>
                             </div>
                         </div>
                         <div className="carrouselNav_arrowContainer"
