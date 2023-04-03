@@ -55,9 +55,6 @@
     font-size: 3em;
     font-weight: 600;
 }
-#aboutTitle p{
-    font-size: 1.7em;
-}
 
 /*! #### SOMOS METRO FUTURO ####*/
 
@@ -128,7 +125,6 @@
     max-height: 55vh;
 }
 
-
 #aboutFocus h2{
     font-size: 2em;
     margin: 0;
@@ -163,7 +159,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
-    
     padding: 2%;
     margin: 0 1%;
     border-radius: 10px;
@@ -242,7 +237,6 @@
 #aboutSlogan{
     width: 90%;
     flex-direction: column;
-    
     min-height: fit-content;
     max-height: 60vh;
     margin: 0% 0;
@@ -343,7 +337,6 @@
     width: 100%;
 }
 
-
 .aboutTeamInfo{
     display: flex;
     width: 100%;
@@ -419,20 +412,13 @@
 
     
     #aboutTitle p{
-        text-align: center;
         font-size: 2em
     }
     .aboutMetroLogo{
         width: 150px;
-        height: auto;
-        z-index: 10;
     }
     #aboutTitle h1{
-        flex-direction: column;
-        margin: 0;
-        padding: 1% 0;
         font-size: 5em;
-        font-weight: 600;
     }
 
 /*! #### SOMOS METRO FUTURO ####*/
@@ -444,15 +430,12 @@
     margin: 0% 0;
 }
 #aboutServices .sectionInfo p{
-    margin: 3% 0;;
+    margin: 3% 0;
 }
 
 /*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 
 /** #### ¿CUAL ES NUESTRO FOCO? ####*/
-#aboutFocus{
-    max-height: 55vh;
-}
 
 #aboutFocus .sectionInfo{
     overflow-x: visible;
@@ -461,7 +444,6 @@
 #aboutFocus .sectionInfo ul{
     justify-content: center;
     align-items: stretch;
-    padding: 5% 0;
 }
 #aboutFocus .sectionInfo ul li{
     width: 30%;
@@ -517,9 +499,6 @@
     margin: 15% 0 5% 0;
 }
 
-.aboutTeamlinkedInLogo{
-    background-color: #E5E5E5;
-}
 /*! #### Conoce al equipo ####*/
 
 }
@@ -545,14 +524,8 @@
         #aboutPage{
             background-color: #FBFDFF;
         }
-        #aboutTitle{
-            padding: 5% 0;
-        }
         #aboutTitle .sectionBackground{
             width: 100%;
-            background-color: #FBFAFF;
-            /* border-radius: 0; */
-            height: 100%;
         }
     /*! ##### SOMOS METRO FUTURO ####*/
 
@@ -560,7 +533,6 @@
     #aboutServices{
         width: 90vw;
         flex-direction: row;
-        justify-content: space-between;
     }
     #aboutServices .sectionCover{
         border-radius: 50px;
@@ -578,14 +550,7 @@
     #aboutServices .sectionInfo p{
         font-size: 1.7em;
     }
-    #aboutServices .sectionInfo ul {
-        margin: 0;
-        padding: 5% 0 0 0;
-    }
-    #aboutServices .sectionInfo ul li img {
-        width: 24px;
-        height: 24px;
-    }
+
     #aboutServices .sectionInfo ul li p{
         font-size: 1.7em;
         font-weight: 400;
@@ -607,10 +572,7 @@
     font-weight: 600;
 }
 #aboutFocus .sectionInfo{
-    overflow-x: visible;
     background: transparent;
-    
-    padding: 0  0  10% 0 ;
     justify-content: center;
     align-items: center;
 }
@@ -619,13 +581,7 @@
     padding: 3% 0;
     background: transparent;
 }
-#aboutFocus .sectionInfo ul li{
-    width: 30%;
-    
-}
-#aboutFocus .sectionInfo ul li .cardTitle{
-    padding: 5% 0;
-}
+
 #aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
     width: 55px;
     height: 55px;
@@ -635,7 +591,6 @@
 }
 #aboutFocus h3{
     font-size: 2.5em;
-    padding: 10% 0 0 0 ;
 }
 #aboutFocus .sectionInfo ul li p{
     font-size: 1.7em;
@@ -646,10 +601,6 @@
 
 
 /** #### AGREGAMOS VALOR GENERANDO MAYOR ACCESO A LA INDUSTRIA INMOBILIARIA ####*/
-#aboutInfo{
-    
-    padding: 10% 0;
-}
 #aboutInfo .sectionBackground{
     border-top-right-radius: 200px;
 }
@@ -661,7 +612,6 @@
 #aboutInfo .section_paragraph{
     font-size: 1.7em;
     text-align: start;
-    
 }
 
 /*! #### Agregamos valor generando mayor acceso a la industria inmobiliaria####*/
@@ -689,10 +639,7 @@
     padding: 0;
 }
 .aboutTeamCard{
-    height: fit-content;
     width: 33%;
-    margin: 0;
-    padding: 0;
 }
 
 .aboutTeamImage{
@@ -725,10 +672,6 @@
 @media (min-width: 1280px) {
 
 /** ##### SOMOS METRO FUTURO ####*/
-    #aboutTitle .sectionBackground{
-        width: 100%;
-        background-color: #FBFAFF;
-    }
     #aboutTitle p{
         font-size: 3em;
     }
@@ -737,30 +680,19 @@
 /** #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 #aboutServices{
     width: 90vw;
-    flex-direction: row;
-    justify-content: space-between;
 }
 #aboutServices .sectionCover{
     border-radius: 50px;
     width: 45%;
 }
-#aboutServices .sectionInfo{
-    padding: 0% 0 0% 3%;
-    width: 50%;
-    justify-content: center;
-}
 
 #aboutServices .sectionInfo h2{
     font-size: 3em;
-    text-align: start
 }
 #aboutServices .sectionInfo p{
     font-size: 2em;
 }
-#aboutServices .sectionInfo ul {
-    margin: 0;
-    padding: 5% 0 0 0;
-}
+
 #aboutServices .sectionInfo ul li{
     padding: 2% 0;
 }
@@ -770,15 +702,12 @@
 }
 #aboutServices .sectionInfo ul li p{
     font-size: 2em;
-    font-weight: 400;
-
 }
 /*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 
 /** #### ¿CUAL ES NUESTRO FOCO? ####*/
 #aboutFocus{   
     min-height: 95vh;
-    background: transparent;
 }
 #aboutFocus .sectionBackground--desktop{
     border-top-left-radius: 300px;
@@ -792,12 +721,10 @@
 }
 #aboutFocus .sectionInfo ul{
     width: 90%;
-    /* height: max-content; */
     height: fit-content;
 }
 #aboutFocus .sectionInfo ul li{
     height: fit-content;
-    /* height: max-content; */
 }
 #aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
     width: 65px;
@@ -808,7 +735,6 @@
 }
 #aboutFocus h3{
     font-size: 2.8em;
-
 }
 #aboutFocus .sectionInfo ul li p{
     font-size: 1.9em;
@@ -820,7 +746,6 @@
 /** #### AGREGAMOS VALOR GENERANDO MAYOR ACCESO A LA INDUSTRIA INMOBILIARIA ####*/
 #aboutInfo{
     padding: 7% 0;
-    width: 100%;
     overflow: visible;
 }
 #aboutInfo .sectionBackground{
@@ -828,27 +753,19 @@
 }
 #aboutInfo .section_subTitle {
     font-size: 4em;
-    
-    text-align: start;
 }
 #aboutInfo .section_paragraph{
     font-size: 2.5em;
-    text-align: start;
-    
 }
 
 /*! #### Agregamos valor generando mayor acceso a la industria inmobiliaria####*/
 
 /** #### SLOGAN ####*/
 
-#aboutSlogan{
-    max-height: 50vh;
+.aboutSloganText {
     margin: 3% 0;
 }
-.aboutSloganText{
-    margin: 3% 0;
-}
-.aboutSloganText h2{
+.aboutSloganText h2 {
     font-size: 3em;
 }
 #aboutSlogan #aboutSloganLink{
@@ -862,39 +779,24 @@
     font-size: 3em;
     margin: 0;
 }
-#aboutTeam ul{
-    padding: 0;
-}
-.aboutTeamCard{
-    height: fit-content;
-    width: 33%;
-    margin: 0;
-    padding: 0;
-}
 
 .aboutTeamImage{
     width: 250px;
     height: 250px;
-    margin: 10% 0 5% 0;
 }
 
 .aboutTeamInfo h3{
     font-size: 2.5em;
-    padding: 1% 0;
 }
 .aboutTeamInfo p{
     font-size: 1.7em;
-    padding: 1% 0;
 }
 .aboutTeamInfo a{
-    margin: 5% 0 0 0;
     width: 60px;
     height: 60px;
     padding: 4px;
 }
-.aboutTeamlinkedInLogo{
-    background-color: #FBFDFF;
-}
+
 .aboutTeamlinkedInLogo img{
     display: flex;
     justify-content: center;
