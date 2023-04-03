@@ -112,18 +112,18 @@ export default function App() {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
-    <BrowserRouter>
+    <Suspense fallback={<div className="loading">Cargando...</div>}>
+      <BrowserRouter>
 
-      <Header />
-      <Suspense fallback={<div className="loading">Cargando...</div>}>
-        <Routes>
-          {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
-        </Routes>
-      </Suspense>
-      <WhatsappButton />
+        <Header />
+          <Routes>
+            {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
+          </Routes>
+        <WhatsappButton />
 
-      <Footer />
+        <Footer />
 
-    </BrowserRouter>
+      </BrowserRouter>
+    </Suspense>
   );
 }
