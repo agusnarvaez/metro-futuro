@@ -21,7 +21,7 @@ export default function HeaderIcons({burgerMenu,setBurgerMenu}) {
                     onClick={scrollToTop}
                     className="metroFuturoLogo"
                     title="Home"
-                    to="/"
+                    to="/inicio"
                     exact="true"
                 >
                     <img

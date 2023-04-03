@@ -18,7 +18,7 @@ export default function Error404({metaData}) {
                 
                 <h1>¡Lo sentimos! La página que estás buscando no pudo ser encontrada</h1>
                 
-                <DegradedNavLink route="/" text="Volver a la Home" backgroundColor="white" id="404ErrorLinkToHome"/>
+                <DegradedNavLink route="/inicio" text="Volver a la Home" backgroundColor="white" id="404ErrorLinkToHome"/>
                 
                 <DegradedNavLink route="/contacto" text="Contáctanos" backgroundColor="white" id="404ErrorLinkToContact"/>
             </div>

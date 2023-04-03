@@ -55,6 +55,10 @@ export default function App() {
   const routesList =[
     {
       component: <Home metaData={metaData.home}  list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} />,
+      path: "/inicio"
+    },
+    {
+      component: <Home metaData={metaData.home}  list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} />,
       path: "/"
     },
     {

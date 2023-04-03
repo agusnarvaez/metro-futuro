@@ -20,7 +20,7 @@ export default function Footer() {
 	//* Cambia color del fondo segun la ruta actual
 	const changeBgColor = () => {
 		switch(location){
-			case "/": return("homeFooterBg");
+			case "/inicio": return("homeFooterBg");
 			case "/sobre-nosotros": return("aboutFooterBg");
 			default: return("");
 		}
