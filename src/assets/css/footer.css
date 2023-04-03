@@ -175,88 +175,47 @@
 
     .mainFooter{
         padding: 15vh 10vw 10vh 10vw;
-        justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        flex-wrap: wrap;
-        height:fit-content;
         border-top-left-radius: 150px;
     }
     /** ### BACKGROUNDS ### */
     .mainFooterBackgroundLeft{
-        position: absolute;
-        border-top-left-radius: 150px;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: space-between;
-        z-index: 0;
-        opacity: 50%;
     }
     .mainFooterBackgroundRight {
-        position: absolute;
-        border-top-left-radius: 150px;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: space-between;
-        z-index: 0;
-        opacity: 50%;
     }
     /*! ### Backgrounds ### */
 
 
     .topFooter{
-        width: 100%;
-        height: auto;
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 65px;
-        z-index: 5;
     }
     .footerMetroLogo{
         width: 30%;
-        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-    }
-    .footerMetroLogo h2{
-        font-size: 2.5em;
     }
     .footerMetroLogo img{
         width: 100%;
-        height: auto;
     }
     .footerLinks{
         width: 45%;
-        height: 100% !important; 
-        display: flex;
         justify-content: flex-end;
         align-items: flex-start;
     }
     .footerLinks ul{
-        display: flex;
-        flex-direction: column;
         justify-content: flex-start;
         width: 50%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .footerLinks li{
-        list-style: none;
-        width: auto;
-        height: auto;
-        padding: 5% 0 5% 0;
     }
     
     .footerLinks a {
-        text-decoration: none;
         font-size: 1.5em;
         font-weight: 300;    
     }
@@ -265,24 +224,12 @@
     }
     
     .bottomFooter{
-        border-top: 1px white solid;
-        width: 100%;
         padding-top: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     
     .mainFooter .briken{
         width: 100%;
-        display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .mainFooter .briken *{
-        padding: 1%;
-        letter-spacing: 1px;
     }
     .mainFooter .briken img{
         max-height: 50px;
@@ -290,33 +237,19 @@
     
     .footerSocials{
         width: 45%;
-            height: 100%;
-        display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        
     }
     
     .footerSocials a {
-        padding: 2.5%;
         height: 50px;
         width: 50px;
         border: 1.7px white solid;
-        border-radius: 50rem;
-        margin-left: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         cursor: pointer;
     }
     
     .footerSocials a *{
-        height: auto;
-        width: 100%;
-        display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
+        cursor: pointer;
     }
 
 }
