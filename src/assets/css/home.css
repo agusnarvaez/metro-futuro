@@ -1,9 +1,7 @@
 /*! #######################################*/
 /*! ################ MOBILE ###############*/
 /*! #######################################*/
-:root{
-    --main-color: #FBFAFF
-}
+
 #root{
     background-color: var(--main-color);
 }
@@ -122,14 +120,12 @@
         padding: 5% 0 0 0;
     }
     #homeOportunity .section_subTitle{ 
-        /* font-size: 2em; */
         font-weight: 500;
         line-height: 1.5em;
         width: 80%;
         text-align: center;
     }
     #homeOportunity .section_paragraph{ 
-        /* font-size: 1.3em; */
         width: 70%;
         text-align: center;
     }
@@ -203,7 +199,6 @@
 }
 #homeBenefitsContainer ul li div h4{
     font-size: 1.5em;
-    /* color: #004DFF; */
     font-weight: 600;
 }
 #homeBenefitsContainer ul li div p{
@@ -257,7 +252,6 @@
 #homePartners h3{
     font-size: 3em;
     font-weight: 500;
-    /* padding: 0; */
     margin: 0;
 }
 #homePartnersContainer{
@@ -296,7 +290,7 @@
     align-items: center;
     object-fit: cover;
     padding: 1%;
-    -webkit-transition: height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
+    -webkit-transition: max-height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
 }
 
 #homePartners a{
@@ -315,179 +309,15 @@
 }
 /*! ### Nuestros partners ### **/
 
-/** #### PREGUNTAS FRECUENTES ####*/
-    
-    #homeFaq{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0;
-    }
-    #homeFaq h3{
-        color: #000F33;
-        font-weight: 600;
-        padding: 3% 0;
-    }
-    .faqList{
-        width: 95%;
-        max-height: 4000px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        overflow: hidden;
-        padding: 0;
-        transition: max-height 2s ease-in-out;
-    }
-
-    #principalFaqs{
-        height: fit-content;
-    }
-
-    .faqItem,
-    .faqItem--collapsed{
-        height: fit-content;
-        width: 100%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        background: linear-gradient(to right, #004DFF, #FF00CC);
-        padding: 3px;
-        white-space: nowrap;
-        margin: 1% 0;
-        border-radius: 13px;
-        z-index: 5;
-    }
-
-    .faqContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        background: #FBFDFF;
-        width: 100%;
-        height: fit-content;
-        z-index: 5;
-        border-radius: 10px;
-        padding: 2% 3%;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .faqQuestion{
-        position: relative;
-        width: 100%;
-        height: fit-content;
-        padding: 0% 0%;
-        display: flex;
-        justify-content: space-between  ;
-        align-items: center;
-        flex-wrap: wrap;
-        
-        background: #FBFDFF;
-        border-radius: 20px;
-        z-index: 5;
-    }
-
-    .faqItem h3 {
-        text-decoration: none;
-        font-style: normal;
-        font-size: 1.5em;
-        text-align: start;
-        width: 80%;
-        height: auto;
-        padding: 5% 0;
-        margin: 0;
-        font-weight: 500;
-        color:#000F33;
-        white-space: pre-wrap;
-        z-index: 5;
-    }
-
-    .faqCross{
-        width: 35px;
-        height: 35px;
-        transition: transform 0.5s ease;
-        z-index: 5;
-        cursor: pointer;
-    }
-    .faqCross--rotated45{
-        transform: rotate(135deg);
-    }
-
-    .faqResponse{
-        max-height: 0px;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-        font-size: 1.2em;
-        font-weight: 300;
-        padding: 0% 3%;
-        margin: 0;
-        white-space: pre-wrap;
-        transition: max-height 0.7s ease-in-out;
-    }
-    .faqResponse--Expanded{
-        /* min-height: fit-content; */
-        max-height: 300px;
-        transition: max-height 1s ease-in-out;
-        /* min-height: fit-content !important; */
-    }
-
-
-    /***** Preguntas extra *****/
-
-    .hiddenFaqs{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
-
-    .faqList--collapsed{
-        max-height: 0px;
-        width: 95%;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        transition: max-height 2s ease-in;
-    }
-    #faqLink{
-        width: 30%;
-    }
-
-/*! #### Preguntas frecuentes ####*/
-
-
-#homeNews{
-    display: none;
-}
 
 /*! ########################################*/
 /*! ################ LAPTOPS ###############*/
 /*! ########################################*/
 @media (min-width: 769px) {
-/**### Important
-* ! sdada
-* TODO: 
-*/
 /** ### SOBRE NOSOTROS ### */
     #homeAbout{
-        overflow: hidden;
         width: 95%;
         height: 50vh;
-        margin: 0;
     }
     #homeAbout #homeAboutSubtitle{
         margin: 0;
@@ -543,10 +373,8 @@
         }
     }
     #homeSlogan h2{
-        text-align: center;
         font-size: 2em;
         font-weight: 400;
-        letter-spacing: 0.5px;
     }
 
 /*! ### Slogan ###*/
@@ -572,7 +400,6 @@
     }
     #homeCarrouselNav{
         justify-content: flex-end;
-        align-items: center;
     }
         
     #homeInvestmentSteps_mobileLink{
@@ -633,10 +460,9 @@
         padding-top: 3%;
     }
     #homeBenefitsImg{
+        display: block;
         width: 45%;
-        display: flex;
         justify-content: flex-end;
-        align-items: center;
     }
     #homeBenefitsImg img{
         width: 60%;
@@ -679,7 +505,6 @@
         width: 95%;
     }
     #homeLearnWithUs .youTubeVideo_Container{
-        margin: 0;
         height: 70%;
         width: 60%;
         border-radius: 20px;
@@ -693,7 +518,6 @@
     }
     #homeLearnWithUs_Info h4{
         font-size: 3em;
-        font-weight: 600;
     }
     #homeLearnWithUs_Info p {
         width: 90%;
@@ -710,59 +534,10 @@
     
 /*! ### Aprende con Metro Futuro ### */
     
-/** #### Novedades ####*/
-    #homeNews{
-        height: 15vw;
-        border-radius: 40px;
-        background-image: linear-gradient(140deg,
-                    hsl(222deg 100% 50%) 0%,
-                    hsl(230deg 99% 64%) 0%,
-                    hsl(231deg 97% 69%) 1%,
-                    hsl(232deg 95% 73%) 2%,
-                    hsl(233deg 93% 77%) 5%,
-                    hsl(233deg 90% 80%) 10%,
-                    hsl(234deg 86% 82%) 17%,
-                    hsl(234deg 80% 85%) 26%,
-                    hsl(235deg 74% 87%) 40%,
-                    hsl(235deg 64% 89%) 56%,
-                    hsl(236deg 51% 91%) 72%,
-                    hsl(239deg 31% 93%) 87%,
-                    hsl(0deg 4% 95%) 100%);
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-size: 200% 300%;
-        animation: gradient 15s ease-out infinite;
-    }
-    #homeNews_Text{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color:    #F3F2F2;
-    }
-    #homeNews_Text h2{
-        font-size: 3em;
-        font-weight: 500;
-    }
-    
-    #homeNews_Text p {
-        font-size: 1.1em;
-        font-weight: 300;
-    }
-    
-    /* Link degradado */
-    #homeNews_degradedLink{
-        width: 20%;
-    }
-/*! ### Novedades ### */
-    
 /** ### NUESTROS PARTNERS ### **/
     
     #homePartners{
         height: 50vh;
-        margin: 5% 0;
     }
     
     #homePartners h3{
@@ -779,7 +554,6 @@
     }
     #homePartnersContainer li{
         max-height: 90%;
-        -webkit-transition: max-height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
     }
     
     #homePartnersContainer li:hover{
@@ -791,56 +565,7 @@
     
 
 
-    /** #### PREGUNTAS FRECUENTES ####*/
     
-    #homeFaq h3{
-        font-size: 2.5em;
-        font-weight: 500;
-    }
-    .faqList{
-        width: 70%;
-    }
-
-    #principalFaqs{
-        height: fit-content;
-    }
-
-    .faqItem,
-    .faqItem--collapsed{
-        padding: 4px;
-        border-radius: 20px;
-    }
-
-    .faqContainer{
-        border-radius: 16px;
-    }
-
-    .faqQuestion{
-        padding: 0% 3%;
-    }
-
-    .faqItem h3 {
-        font-size: 2.3em;
-        padding: 5% 0;
-        width: 90%;
-    }
-
-    .faqCross{
-        width: 55px;
-        height: 55px;
-    }
-
-
-    .faqResponse{
-        font-size: 1.8em;
-    }
-    /***** Preguntas extra *****/
-
-    #faqLink{
-        width: 10%;
-    }
-
-/*! #### Preguntas frecuentes ####*/
 
 }
 
