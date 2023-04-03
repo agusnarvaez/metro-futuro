@@ -44,7 +44,7 @@ body {
 :root{
     width: 100%;
     height: fit-content;
-    /* overflow-x: hidden; */
+    --main-color: #FBFAFF;
     
 }
 
