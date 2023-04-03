@@ -297,7 +297,7 @@ li{
         transition: background-color 0.2s ease-in-out;
     }
     .carrouselNav_arrowContainer img{
-        width: 27px;   
+        width: 15px;   
         transition: filter 0.2s ease-in-out;
     }
     .carrouselContainer{
@@ -592,13 +592,6 @@ li{
         justify-content: flex-end;
         align-items: flex-end;
     }
-    .carrouselNav_arrowContainer{
-        background: linear-gradient(to right, #004DFF, #FF00CC);
-        border-radius: 50rem;
-        z-index: 1;
-        margin: 1%;
-        cursor: pointer;
-    }
     .carrouselNav_arrowContainer:hover div{
         background: transparent;
     }
@@ -606,19 +599,7 @@ li{
         filter: grayscale(500%) brightness(600%);
     }
     .carrouselNav_arrowContainer div{
-        background: #FBFDFF;
-        width: 50px;
-        height: 50px;
-        margin: 2px;
-        border-radius: 50rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         transition: background-color 0.2s ease-in-out;
-    }
-    .carrouselNav_arrowContainer img{
-        width: 27px;   
-        transition: filter 0.2s ease-in-out;
     }
     .carrouselContainer{
         display: flex;
@@ -815,34 +796,6 @@ li{
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-    }
-    .carrouselNav_arrowContainer{
-        background: linear-gradient(to right, #004DFF, #FF00CC);
-        border-radius: 50rem;
-        z-index: 1;
-        margin: 1%;
-        cursor: pointer;
-    }
-    .carrouselNav_arrowContainer:hover div{
-        background: transparent;
-    }
-    .carrouselNav_arrowContainer:hover img{
-        filter: grayscale(500%) brightness(600%);
-    }
-    .carrouselNav_arrowContainer div{
-        background: #FBFDFF;
-        width: 50px;
-        height: 50px;
-        margin: 2px;
-        border-radius: 50rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-color 0.2s ease-in-out;
-    }
-    .carrouselNav_arrowContainer img{
-        width: 27px;   
-        transition: filter 0.2s ease-in-out;
     }
     .carrouselContainer{
         display: flex;
