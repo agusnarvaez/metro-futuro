@@ -1,9 +1,7 @@
 /*! #######################################*/
 /*! ############### MOBILE ###############*/
 /*! #######################################*/
-body {
-    background-color: #FBFAFF;
-}
+
 #contactPage{
     justify-content: space-between;
     flex-direction: row;
@@ -11,7 +9,6 @@ body {
     background-color: #FBFDFF;
     min-height: fit-content;
     flex-wrap: wrap;
-    /* padding: 0 0 5% 0; */
 }
 
 #contactPage section{
@@ -70,7 +67,6 @@ body {
 .inputContainer input{
     width: 100%;
     border-radius: 50rem;
-    /* margin: 3px 2.5px; */
     padding: 3% 3% 3% 5%;
     color: #000F33;
     opacity: 100%;
@@ -166,9 +162,7 @@ body {
     font-size: 16px;
     background-color: #004cff;
     border-radius: 50rem;
-
     padding: 2% 5%;
-
     color: #F3F2F2;
 }
 
@@ -208,21 +202,8 @@ body {
 /*! ### RECAPTCHA ### */
 
 /** Link degradado */
-/* .contactSubmit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    background: linear-gradient(to right, #004DFF, #FF00CC);
-    z-index: 1;
-    white-space: nowrap;
-    margin: 2% 0;
-    padding: 3px 3px;
-    border-radius: 50rem;
-    border: none;
-    position: relative;
-} */
-.contactSubmit{
+
+.contactSubmit {
     border: none;
 }
 .contactSubmit--success{
@@ -252,10 +233,7 @@ body {
     font-weight: 500 !important;
 }
 .contactSubmit--loading{
-/*     width: 70px !important;
-    height: 70px !important; */
     background-color: #004DFF;
-    /* background-color: transparent; */
     display: flex !important;
     justify-content: center;
     align-items: center !important;;
@@ -266,50 +244,19 @@ body {
     border-left-color: transparent ;
     border-right-color: transparent !important;;
     border-radius: 50%;
-    /* display: inline-block; */
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
     animation: loader 1s linear infinite;
 }
 .contactSubmit--loading__rotation{
-    /* background: linear-gradient(to right, #ffffff, #FF00CC); */
-    /* border: 5px lightgray solid; */
-    /* border-right: solid gray 5px; */
-    /* border-left: solid gray 5px; */
-
-    /* border-top: solid black 5px; */
-    /* border-radius: none;
-    border-radius: 50%;
-    height: 50px !important;
-    width: 50px !important;
-    z-index: 1 !important;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-
-    animation: loader 2s linear infinite; */
     background: white !important;
-    /* margin: 5px !important; */
     width: 100% !important;
     height: 100% !important;
     margin: 0;
-    /* border: 5px solid transparent !important; */
-    /* border-bottom:5px solid white !important; */
     border-radius: 50% !important;
-    /* display: inline-block; */
-    /* box-sizing: border-box; */
-    /* animation: loader 1.5s linear infinite; */
 }
-.contactSubmit--loading__center {
-    /* position: absolute;
-    top: 30%;
-    left: 30%; */
-/*     width: 30px !important;
-    height: 30px !important;
-    background: linear-gradient(to right, #004DFF, #FF00CC) !important;
-    z-index: 5 !important; */
-}
+
 @keyframes loader {
     from{
         transform: rotate(0deg);
@@ -374,15 +321,12 @@ body {
     }
 
     #contactPageSlogan h1{
-        width: 100%;
         font-size: 2.5em;
-        text-align: center;
         margin: 3% 0 0 0;
     }
 
     #contactPageSlogan h2{
         font-size: 1.5em;
-        text-align: center;
     }
 
     /** ### RECAPTCHA ### */
@@ -395,7 +339,6 @@ body {
     /** Link degradado */
     .contactSubmit {
         width: 20%;
-        margin: 0% 0;
         padding: 3px 3px;
     }
 
@@ -421,9 +364,7 @@ body {
 
 
     #contactPage section{
-        margin: 0;
         width: 50%;
-        padding: 0% 10%;
     }
 
     #contactPageSlogan{
@@ -431,10 +372,8 @@ body {
     }
 
     #contactPageSlogan h1{
-        width: 100%;
         font-size: 3em;
         text-align: start;
-        margin: 3% 0 0 0;
     }
     #contactPageSlogan h1 br{
         display: block;
@@ -442,25 +381,15 @@ body {
 
     #contactPageSlogan h2{
         width: 100%;
-        font-size: 1.5em;
         text-align: start;
     }
     #formContainer{
         padding: 0 5% !important;
     }
-    /** ### RECAPTCHA ### */
-    .recaptcha{
-        margin: 3% 0;
-    }
-
-    /*! ### RECAPTCHA ### */
 
     /** Link degradado */
     .contactSubmit {
-
         width: 30%;
-        margin: 0% 0;
-        padding: 3px 3px;
     }
     .contactSubmit p{
         font-size: 1.8em;
@@ -479,7 +408,6 @@ body {
         font-size: 3.8em;
     }
     #contactPageSlogan h2{
-        width: 100%;
         font-size: 2em;
     }
 
@@ -498,7 +426,6 @@ body {
     /** Link degradado */
     .contactSubmit {
         width: 17%;
-        margin: 0% 0;
         padding: 4px 4px;
     }
 }
