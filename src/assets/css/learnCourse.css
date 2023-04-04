@@ -1,15 +1,6 @@
-/* .learnPage section, 
-.learnPage article,
-.learnPage div{
-    border: 1px solid black;
-} */
-
 /*! #######################################*/
 /*! ############### MOBILE ###############*/
 /*! #######################################*/
-/* .learnCoursePage{
-    justify-content: flex-start;
-} */
 /** ### Course Cover ### */
 .learnCoursePage_Cover{
     width: 100%;
@@ -21,10 +12,8 @@
 .learnCoursePage_Cover div{
     position: absolute;
     bottom: -5%;
-    /* bottom: 0; */
     width: 100%;
     background: linear-gradient(180deg, rgba(251, 253, 255, 0) 7.61%, rgba(251, 253, 255, 0.12709) 16.22%, rgba(251, 253, 255, 0.253148) 22.67%, rgba(251, 253, 255, 0.392475) 29.2%, rgba(251, 253, 255, 0.705621) 47.48%, #FBFDFF 60.68%, #FBFDFF 87.2%);
-
     height: 30%;
     z-index: 10;
 }
@@ -285,7 +274,6 @@
       max-height: 60vh;
       overflow: hidden;
       width: 100vw;
-      border-radius: 0;
    }
    .learnCoursePage_Nav li{
       font-size: 1.5em;
@@ -306,7 +294,6 @@
    }
 
    .learnCoursePage_InfoDescriptionContainer img{
-      max-width: 95%;
       max-height: 70vh
    }
 
@@ -317,7 +304,6 @@
       width: 35px;
     }
     .learnCoursePage_videoContainer .courseYouTubeVideo_Player{
-      width: 100%;
       min-height: 600px !important;
     }
 }
