@@ -1,16 +1,7 @@
-/* .learnPage section, 
-.learnPage article,
-.learnPage div{
-    border: 1px solid black;
-} */
-
 /*! #######################################*/
 /*! ############### MOBILE ###############*/
 /*! #######################################*/
 
-#learnCourses{
-    height: fit-content;
-}
 
 /** ### LEARN SLOGAN ### */
 #learnSlogan{
@@ -36,6 +27,7 @@
 }
 /** ### LEARN COURSES ### */
 #learnCourses{
+    height: fit-content;
     width: 100%;
     min-height: 50vh;
     margin: 5% 0;
@@ -45,7 +37,6 @@
 
 #learnCoursesCard{
     display: flex;
-/*     flex-direction: row; */
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -63,7 +54,6 @@
     height: 40%;
     object-fit: cover;
     border-radius: 10px;
-    
 }
 
 .learnCoursesCard_Difficulty{
@@ -113,14 +103,10 @@
     #learnSlogan{
         height: 30vh;
     }
-    #learnSlogan h2{
-        font-size: 3em;
-    }
 
     /** ### LEARN COURSES ### */
     #learnCourses{
         min-height: 30vh;
-        width: 100%;
         justify-content: space-around;
     }
     #learnCoursesCard{
@@ -132,7 +118,6 @@
         font-size: 1.5em;
     }
     #learnCoursesCard h3{
-        margin: 0;
         font-size: 1.7em;
     }
     #learnCoursesCard p{
@@ -160,14 +145,9 @@
     }
     #learnCoursesCard h3{
         padding: 1% 0;
-        margin: 0;
-
     }
     #learnCoursesCard p{
-        font-size: 1.3em;
         padding: 1% 1%;
-        margin: 0;
-
     }
     #learnCoursesCard .degradedLink a{
         padding: 2%;
@@ -179,9 +159,6 @@
 /*! ########################################*/
 @media (min-width: 1280px) {
      /** ### LEARN COURSES ### */
-     #learnCourses{
-        margin: 3% 0;
-     }
      #learnCoursesCard{
         width: 30%;
         min-height: 50vh;
@@ -195,9 +172,7 @@
     }
     #learnCoursesCard h3{
         font-size: 2.3em;
-        padding: 1% 0;
         margin: 2% 0;
-
     }
     #learnCoursesCard p{
         font-size: 2em;
