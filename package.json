@@ -7,6 +7,7 @@
     "@contentful/rich-text-types": "^16.0.2",
     "contentful": "^9.2.17",
     "emailjs-com": "^3.2.0",
+    "google-map-react": "^2.2.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,7 +18,6 @@
     "react-router-dom": "^6.6.2",
     "react-scripts": "^5.0.1",
     "react-snap": "^0.2.0",
-    "simple-react-google-maps": "^1.1.2",
     "source-map-explorer": "^2.5.3",
     "web-vitals": "^3.1.1"
   },

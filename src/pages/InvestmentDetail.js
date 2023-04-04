@@ -17,7 +17,7 @@ import InvestmentDetailDownloads from "../sections/InvestmentDetail/InvestmentDe
 import InvestmentDetailValue from "../sections/InvestmentDetail/InvestmentDetailValue";
 import DegradedLink from "../components/DegradedLink";
 // Mapa de google
-import Map from "../components/Map";
+import Map from "../components/GoogleMapReact";
 
 import HelmetData from "../components/HelmetData"
 
