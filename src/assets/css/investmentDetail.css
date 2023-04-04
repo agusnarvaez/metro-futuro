@@ -304,7 +304,9 @@
     text-align: center;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    background-clip: text;
     -webkit-background-clip: text;
+    border-image: fill;
     -webkit-border-image: fill;
     padding: 3%;
     z-index: 10;
