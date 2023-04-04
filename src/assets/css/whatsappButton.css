@@ -28,14 +28,12 @@
 @media (min-width: 481px) {
 
     .whatsappButton{
-        padding: 2%;
         right: 15px;
         bottom: 15px;
     }
     
     .whatsappButton_img{
         width: 35px;
-        
     }
     
 }
