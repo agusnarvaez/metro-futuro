@@ -146,7 +146,6 @@
 .priceFilter ul{
     display: none;
 }
-/* .priceFilter:hover .priceFilterList, */
 .priceFilter *{
     display: block;
 }
@@ -196,27 +195,13 @@
     transition: width 0.5s ease-in-out;
 }
 
-/* .investmentsPageProjectsCover{
-    width: 100%;
-    height: 25vh;
-    overflow: hidden;
-    display: flex;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-} */
 .investmentsPageProjectsCover{
-    /* border: 1px solid black;
-    width: 100%;
-    max-height: 25vh; */
     position: relative;
 }
 .investmentsPageProjectCard img{
     width: 100%;
     max-height: 25vh;
     object-fit: cover;
-    /* overflow: hidden; */
     border-radius: 10px;
 }
 .investmentsPageProjectCardAvailability{
@@ -250,7 +235,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
 }
 .investmentsPageProjectInfoTitle h2{
     font-size: 2em;
@@ -315,13 +299,11 @@
         flex-direction: row;
         min-height: 20vh;
         justify-content: space-between;
-        /* max-height: 30vh; */
         align-items: stretch;
         margin: 0;
         padding: 0;
     }
     .investmentsPageProjectCard img{
-        object-fit: cover;
         min-height: 100%;
         max-height: none;
         width: 40%;
@@ -330,7 +312,6 @@
     .investmentsPageProjectInfo{
         justify-content: center;
         flex-direction: row;
-        justify-content: space-between;
         margin: 2% 2% 2% 2%;
         padding: 0;
         width: 60%;
@@ -340,7 +321,6 @@
     .investmentsPageProjectInfoTitle{
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
         padding: 0 0 3% 0;
     }
     .investmentsPageProjectInfoTitle h2{
@@ -353,7 +333,6 @@
     }
     .investmentsPageProjectInfoDetails{
         width: 65%;
-        /* height: 100%; */
         padding: 0;
         margin: 0;
     }
@@ -392,11 +371,9 @@
         width: 65%;
     }
     .investmentsPageProjectInfoTitle h2{
-        font-size: 1.5em;
         width: 70%;
     }
     .investmentsPageProjectInfoTitle h3{
-        font-size: 1.3em;
         width: 30%;
     }
     .investmentsPageProjectInfoDetails{
@@ -404,14 +381,6 @@
     }
     .investmentsPageProjectCard .degradedLink{
         width: 20%;
-        align-self: flex-end;
-    }
-    .investmentsPageProjectCard .degradedLink_TextContainer{
-        padding: 0% 0;
-    }
-    .investmentsPageProjectCard .degradedLink_TextContainer a{
-        font-weight: 500;
-        font-size: 1.3em;
     }
 }
 
@@ -419,12 +388,10 @@
 /*! ############ LARGER DESKTOPS ###########*/
 /*! ########################################*/
 @media (min-width: 1280px) {
-    .investmentsPageProjectCard{
+    .investmentsPageProjectCard {
         max-height: 45vh;
     }
-    .investmentsPageProjectCard img{
-        width: 35%;
-    }
+
     .investmentsPageProjectInfo{
         margin: 3% 2%;
     }
