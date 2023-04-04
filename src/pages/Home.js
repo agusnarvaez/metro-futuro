@@ -9,7 +9,6 @@ import HomeInvestmentSteps from "../sections/Home/HomeInvSteps";
 import HomeOportunity from "../sections/Home/HomeOportunity";
 import HomeBenefits from "../sections/Home/HomeBenefits";
 import HomeLearnWithUs from "../sections/Home/HomeLearn";
-import HomeNews from "../sections/Home/HomeNews";
 import HomePartners from "../sections/Home/HomePartners";
 import HomeFaq from "../sections/Home/HomeFaq";
 
@@ -34,8 +33,6 @@ export default function Home({metaData,list,setList,investments,setInvestments})
             <HomeBenefits/>
 
             <HomeLearnWithUs/>
-
-            <HomeNews/>
             
             <HomePartners/>
 
