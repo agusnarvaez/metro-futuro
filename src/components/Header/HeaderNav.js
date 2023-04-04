@@ -4,10 +4,6 @@ import HeaderNavLink from "./HeaderNavLink";
 export default function HeaderNav({burgerMenu,setBurgerMenu}) {
 
     const links = [
-        /*{
-            title:"Home",
-            to:"/"
-        }, */
         /* {
             title:"Proyectos",
             to:"/investments"
