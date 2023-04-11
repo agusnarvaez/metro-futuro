@@ -2,6 +2,8 @@
 // Importo Google Maps
 
 import GoogleMapReact from 'google-map-react';
+import Marker from 'google-map-react'
+import locationIcon from "../assets/img/icons/locationIcon.png";
 // Importo credenciales
 import credentials from "../credentials";
 import React from "react";
@@ -14,9 +16,8 @@ export default function Map ({coordinates}) {
                 bootstrapURLKeys={{ key: credentials.mapsKey }}
                 defaultCenter={{lat: coordinates.lat, lng:coordinates.lon}}
                 defaultZoom={16}
-                markers={[{lat: coordinates.lat, lng:coordinates.lon}]}
+                yesIWantToUseGoogleMapApiInternals
             >
-                
             </GoogleMapReact>
         </div>
     )
