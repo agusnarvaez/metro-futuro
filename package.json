@@ -2,7 +2,6 @@
   "name": "metro-futuro-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://metrofuturo.com/inicio",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.16.2",
     "@contentful/rich-text-types": "^16.0.2",
