@@ -45,7 +45,7 @@ const fieldsList = [
         type:"text",
         class: "largeInput",
         value:"",
-        placeholder:"¿Porque deseas contactarte?",
+        placeholder:"¿Por qué deseas contactarte?",
         isValid:false,
         showErrors:false,
         error:"Ingrese un mensaje"
