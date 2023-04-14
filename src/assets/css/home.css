@@ -389,6 +389,7 @@
     }
     #homeCarrousel{
         width: 85%;
+        background: transparent;
     }
     #homeInvestmentSteps_subTitle{
         text-align: start;
