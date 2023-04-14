@@ -57,19 +57,13 @@ export default function HomeInvestmentSteps() {
                     <div className="carrouselContainer">
                         <div
                             className={carrousel ? "carrouselContainer_mobil carrousel_mobil--desktop" : "carrouselContainer_mobil carrouselContainer_mobil--moved carrousel_mobil--desktop"}
-                        >{carrouselInfo.map((card,key) => {
-                            return(
-                                <HomeInvStepsCard card={card} key={key} />
-                            )
-                        })}
+                        >
+                            {carrouselInfo.map((card,key) => <HomeInvStepsCard card={card} key={key} /> )}
                         </div>
                         <div
                             className={carrousel ? "carrouselContainer_mobil carrousel_mobil--mobile" : "carrouselContainer_mobil carrouselContainer_mobil--moved carrousel_mobil--mobile"}
-                        >{carrouselInfo.map((card,key) => {
-                            return(
-                                <HomeInvStepsCard card={card} key={key} />
-                            )
-                        })}
+                        >
+                            {carrouselInfo.map((card,key) => <HomeInvStepsCard card={card} key={key} />)}
                         </div>
                     </div>
                     <div onClick={scrollToTop} className="degradedLink" id="homeInvestmentSteps_mobileLink">
