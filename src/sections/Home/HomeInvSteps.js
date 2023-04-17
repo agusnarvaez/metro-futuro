@@ -1,6 +1,5 @@
 import {useState} from 'react';
-import { NavLink } from 'react-router-dom';
-
+import DegradedLink from '../../components/DegradedLink';
 // Componentes
 import HomeInvStepsCard from "./HomeInvStepsCard";
 
@@ -17,24 +16,13 @@ import carrouselInfo from "../../data/homeCarrouselInfo";
 export default function HomeInvestmentSteps() {
     
     const [carrousel, setCarrousel] = useState(true);
-    const scrollToTop = () =>{
-        window.scrollTo({
-          top: 0, 
-          behavior: 'smooth'
-        });
-    }
+
     return (
 
         <section id="homeInvestmentSteps">
                 <div className="sectionInfo_subsection sectionInfo_subsection--column">
                     <h2 id="homeInvestmentSteps_subTitle" className="section_subTitle section_subTitle--left">¿Como <font color="#004DFF">invertir</font> en simples pasos?</h2>
-                    <div className="degradedLink" id="homeInvestmentSteps_desktopLink">
-                        <div onClick={scrollToTop} className='degradedLink_TextContainer degradedLink_TextContainer--white'>
-                            <NavLink className="degradedLink_Text" to='/inmuebles/0' title="inmueble">
-                                Invierte
-                            </NavLink>
-                        </div>
-                    </div>
+                    <DegradedLink text="Invierte" id="homeInvestmentSteps_desktopLink" route="https://app.metro-futuro.com/project-detail/f63c7d96-38f4-410c-bcdd-30eecd3065c7" backgroundColor="white"/>
                 </div>
                 <div className="sectionInfo_subsection sectionInfo_subsection--column" id='homeCarrousel'>
                     <div className="carrouselNav" id="homeCarrouselNav">
@@ -66,13 +54,7 @@ export default function HomeInvestmentSteps() {
                             {carrouselInfo.map((card,key) => <HomeInvStepsCard card={card} key={key} />)}
                         </div>
                     </div>
-                    <div onClick={scrollToTop} className="degradedLink" id="homeInvestmentSteps_mobileLink">
-                        <div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
-                            <NavLink className="degradedLink_Text" to='/inmuebles/0' title='inmueble'>
-                                Invierte
-                            </NavLink>
-                        </div>
-                    </div>
+                    <DegradedLink text="Invierte" id="homeInvestmentSteps_mobileLink" route="https://app.metro-futuro.com/project-detail/f63c7d96-38f4-410c-bcdd-30eecd3065c7" backgroundColor="white"/>
                 </div>
             {/* ### Background ### */}
             <img className="sectionBackground--desktop" alt="homeInvestmentStepsBg" title='homeInvestmentStepsBg' src={investmentStepsBg} loading="lazy"/>
