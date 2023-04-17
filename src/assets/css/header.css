@@ -2,12 +2,6 @@
 /*! ############ MOBILE & TABLETS ###########*/
 /*! #########################################*/
 
-@font-face {
-    font-family: "Lexend";
-    src: url("./fonts/Lexend-VariableFont_wght.ttf");
-    font-display: swap;
-}
-
 .header{
     width: 100vw;
     height: 10vh;
