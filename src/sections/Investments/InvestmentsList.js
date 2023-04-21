@@ -16,34 +16,6 @@ export default function InvestmentsList({list,setList,investments,setInvestments
     },[list,setList,investments,setInvestments])
     return (
         <section className="investmentsPageList">
-            {/* <div className="investmentsPageListFilter">
-                <form>
-                    <div className={investmentSearchClass}>
-                        <input type="text" name="search" placeholder="Buscar"  id="investmentsSearch"
-                            onChange={(e)=>{
-                                setInvestmentSearch(e.target.value);
-                            }}
-                            onFocus={()=>{
-                                setInvestmentSearchClass("investmentsSearchFocus");
-                            }}
-                            onBlur={()=>{
-                                setInvestmentSearchClass("investmentsSearch");
-                            }}
-                        />
-                    </div>
-                    <div name="Precio" className="priceFilter"
-                    onClick={()=>{
-                        setListClass(
-                            (listClass=="")?
-                            "priceFilterList":"");
-                    }}>
-                        <p><img alt="investmentsFilterHomeIcon" title="investmentsFilterHomeIcon" className="investmentsFilterHomeIcon" src={investmentsFilterHomeIcon} loading="lazy"/>Precio</p>
-                        {priceFilterList}
-                        <img className="investmentsSearchFilterArrow" alt="investmentsSearchFilterArrow" title="investmentsSearchFilterArrow" src={investmentsSearchFilterArrow} loading="lazy"/>
-                    </div>
-                </form>
-            </div> */}
-
             {investments.map((article,key)=>{
                 return(<InvestmentCard investment={article.fields} index={key} key={key} />)
             })}
