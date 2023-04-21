@@ -4,7 +4,7 @@ import DegradedNavLink from "../DegradedNavLink"
 export default function InvestmentCardInfo({investment,index}) {
 
     const address = investment.street + ", " + investment.city + ", " + investment.country;
-
+    
     const list = [
         {
             title:"Rentabilidad con alquiler",
@@ -46,7 +46,7 @@ export default function InvestmentCardInfo({investment,index}) {
                 })}
             </ul>
 
-            <DegradedNavLink text="Ver más" backgroundColor="white" route={`/inmuebles/${index}`}/>
+            <DegradedNavLink text="Ver más" backgroundColor="white" route={`/inmuebles/${investment.url}`}/>
         </div>
     )
 }
