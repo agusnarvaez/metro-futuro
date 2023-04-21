@@ -4,12 +4,16 @@
 
 /** #### Estilos generales #### */
 
-* {
+body {
     font-family: Lexend;
     font-size: 12px;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+.div,
+.sectionInfo{
+    font-size: inherit;
 }
 .sectionInfo h2{
     font-size: 2.5em;
@@ -171,11 +175,18 @@ li{
     .blackText{
         color: #000F33;
     }
+    
+    h4,
     u,
     b,
     font {
         font-size: inherit;
         display: inline;
+    }
+    h4,
+    u,
+    font {
+        font-weight: inherit;
     }
     .degradedText{
         /* Efecto degradado texto */
