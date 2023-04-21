@@ -1,3 +1,4 @@
+import { getFullList } from "../client/client"
 const emptyList = (list)=> list.length===0
 
 const listHasItems = (list)=> list.length>0
@@ -38,5 +39,33 @@ const setFirstItem = (list,item,setItem)=>{
         }
     }
 }
+const findItem = (list,param)=> list.find((item)=>item.fields.url===param)
 
-export {filterItems,pathSplitted,emptyList,setFirstItem}
+const existsItem = (item,param)=> findItem(item,param)!==undefined
+
+const itemHasEntries = (item)=> item!==undefined? Object.entries(item).length>0 :false
+
+const selectItem = async (item,setItem,list,itemID,meta,setMeta) =>{
+    await setItem(findItem(list,itemID).fields)
+    if(itemHasEntries(item)&&meta.title===""){
+        setMeta({
+            ...meta,
+            title: item.title,
+            description:item.shortDescription,
+        })
+    }
+}
+
+const handleListItems = (list,setList,newList,setNewList,itemID,item,setItem,metaData,setMetaData,navigate)=>{
+    getFullList(list,setList,newList,setNewList)
+    if(listHasItems(newList)){
+        if(existsItem(newList,itemID)){
+            selectItem(item,setItem,newList,itemID,metaData,setMetaData)
+        }else{
+            console.log("El item no existe")
+            navigate("/error")
+        }
+    }
+}
+
+export {handleListItems,itemHasEntries,filterItems,pathSplitted,emptyList,existsItem,listHasItems,setFirstItem,findItem,selectItem}
