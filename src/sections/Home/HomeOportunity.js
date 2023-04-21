@@ -36,7 +36,7 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
                         id="homeOportunityLink"
                         text="Quiero invertir"
                         backgroundColor="white"
-                        route="/inmuebles/0" 
+                        route={`/inmuebles/${investment.url}`}
                     />
 
                 </div>
