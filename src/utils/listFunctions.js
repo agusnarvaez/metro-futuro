@@ -1,23 +1,8 @@
-import {articles} from '../client/client'
-
 const emptyList = (list)=> list.length===0
 
 const listHasItems = (list)=> list.length>0
 
 const pathSplitted =()=>  window.location.pathname.split('/')[1]
-
-const reqApi = async(list,setList)=>{
-    if(emptyList(list)){
-        try{
-            const api = await articles.getEntries()
-            await setList(api.items)
-            
-        }catch(err){
-            console.log("Error en la petición")
-            console.log(err)
-        }
-    }
-}
 
 const contentType = ()=>{
     switch(pathSplitted()){
@@ -38,4 +23,4 @@ const filterItems = (list,setNewList)=>{
     }
 }
 
-export {reqApi,filterItems}
+export {filterItems,pathSplitted,emptyList}
