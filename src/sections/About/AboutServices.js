@@ -14,8 +14,8 @@ export default function AboutServices() {
                     <p>Nos ocupamos de la búsqueda de la mejor oportunidad en los mercados europeos</p>
                     <div className="degradedSeparator"></div>
                     <ul>
-                        {services.map((service, index) => { return(
-                            <li>
+                        {services.map((service, key) => { return(
+                            <li key={key}>
                                 <img alt="listIcon" title="listIcon" src={aboutListIcon} loading="lazy"/>
                                 <p>{service}</p>
                             </li>

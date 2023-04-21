@@ -15,9 +15,9 @@ export default function AboutFocus() {
             <h2 className='section_subTitle'>¿Cuál es nuestro foco?</h2>
             <div className='sectionInfo'>
                 <ul>
-                    {focusItems.map((item,index) => {
+                    {focusItems.map((item,key) => {
                         return(
-                            <AboutFocusCard focus={item}/>
+                            <AboutFocusCard focus={item} key={key}/>
                         )
                     })}
                     
