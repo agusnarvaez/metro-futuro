@@ -5,9 +5,7 @@ import {useEffect,useState} from "react"
 import {useParams,useNavigate } from "react-router-dom"
 
 //* API de contentful
-import {reqApi} from "../client/client"
-import { filterItems } from "../utils/listFunctions"
-
+import {handleListItems} from "../utils/listFunctions"
 //* SECTIONS 
 import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover";
 import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle";
@@ -18,7 +16,7 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 	//* Capturo los parámetros de la URL
 	const pathSplited = window.location.pathname.split('/')[1]
 	const params = useParams()
-
+	const itemID = params.id
 	let navigate = useNavigate()
 	//* Selecciono el ítem según la URL
 	const [item,setItem] = useState()
@@ -36,28 +34,9 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 	}
 	useEffect(() => {
 		
-		if(isNaN(params.id)){
-			navigate("/error")
-		}else {
-			reqApi(list,setList)
-			if(learnArticles.length===0){
-				filterItems(list,setLearnArticles)
-			}else if(item===undefined){
-				if(learnArticles[params.id]===undefined){
-					navigate("/error")
-				}else{
-					setItem(learnArticles[params.id].fields)
-				}
-			}
-			if(item!==undefined&&newMetaData.title===""){
-				setNewMetaData({
-					...newMetaData,
-					title: item.title,
-					description:item.description,
-				})
-			}
-		}
-    }, [list,params.id,pathSplited,setList,newMetaData,setNewMetaData,metaData,learnArticles,setLearnArticles,item,navigate]);
+		handleListItems(list,setList,learnArticles,setLearnArticles,itemID,item,setItem,newMetaData,setNewMetaData,navigate)           
+
+    }, [list,params.id,pathSplited,setList,newMetaData,setNewMetaData,metaData,learnArticles,setLearnArticles,item,navigate,itemID]);
 
 	return (
 		<main className='learnCoursePage'>

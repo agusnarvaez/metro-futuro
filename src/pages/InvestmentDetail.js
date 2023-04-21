@@ -6,8 +6,6 @@ import {useState, useEffect} from "react";
 import {useParams,useNavigate} from "react-router-dom"
 
 //* API de contentful
-import {reqApi} from "../client/client"
-import { filterItems } from "../utils/listFunctions"
 
 //* ### SECCIONES ###
 import InvestmentDetailTitle from "../sections/InvestmentDetail/InvestmentDetailTitle";
@@ -21,7 +19,7 @@ import DegradedLink from "../components/DegradedLink";
 import Map from "../components/GoogleMapReact";
 
 import HelmetData from "../components/HelmetData"
-
+import {itemHasEntries, handleListItems} from "../utils/listFunctions"
 export default function InvestmentDetail({list,setList,metaData,investments,setInvestments}) {
     const params = useParams();
     const investmentId =params.id;
@@ -33,29 +31,10 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
     const degLinkId="degradedLink--inverted"
 
     useEffect(() => {
-        if(isNaN(params.id)){
-			navigate("/error")
-		}else {
-            reqApi(list,setList)
-            if(investments.length===0){
-                filterItems(list,setInvestments)
-            }
-            else if(investments.length>0){
-                if(investments[investmentId]===undefined){
-                    navigate("/error")
-                }else{
-                    setInvestment(investments[investmentId].fields)
-                    if(Object.entries(investment).length>0&&newMetaData.title===""){
-                        setNewMetaData({
-                            ...newMetaData,
-                            title: investment.title,
-                            description:investment.shortDescription,
-                    })
-                    }
-                }
-            }
-        }   
-    }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments,newMetaData,setNewMetaData,navigate,params.id]);
+        
+        handleListItems(list,setList,investments,setInvestments,investmentId,investment,setInvestment,newMetaData,setNewMetaData,navigate)           
+
+    }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments,newMetaData,setNewMetaData,navigate]);
 
     return (
         <main className="investmentDetailPage">
@@ -76,7 +55,7 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
 
             <DegradedLink  text="¡Quiero invertir!" route={investment.platformLink} backgroundColor="" id={degLinkId} /* onFocus={changeDegLink} onBlur={changeDegLink} *//>
             
-            {Object.entries(investment).length>0?<Map coordinates={investment.mapCoordinates}/>:""}
+            {itemHasEntries(investment)?<Map coordinates={investment.mapCoordinates}/>:""}
 
         </main>
     )
