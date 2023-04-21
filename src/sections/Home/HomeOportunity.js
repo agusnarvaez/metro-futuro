@@ -2,14 +2,13 @@
 //* Importo Hooks
 import { useEffect,useState } from "react";
 //* API de contentful
-import {reqApi} from "../../client/client"
-import { filterItems } from "../../utils/listFunctions"
+import { setFirstItem } from "../../utils/listFunctions"
+import { getFullList } from "../../client/client";
 
-import {useNavigate} from "react-router-dom";
 //* Background
 
 //* Componentes
-/* import DegradedLink from "../DegradedLink"; */
+
 import DegradedNavLink from "../../components/DegradedNavLink";
 //* Íconos
 
@@ -17,26 +16,11 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
 
     const [investment,setInvestment]=useState({});
 
-    let navigate = useNavigate()
-
     useEffect(()=>{
-        if(list.length===0){
-            reqApi(list,setList)
-        }else{
-            if(investments.length===0){
-                filterItems(list,setInvestments)
-            }
-            else if(investments.length>0){
-                    if(investments[0]===undefined){
-                        navigate("/error")
-                    }else{
-                        if(investment!==investments[0].fields){
-                            setInvestment(investments[0].fields)
-                        }
-                    }
-            }
-        }
-    },[list,setList,investments,setInvestments,investment,setInvestment,navigate ])
+        getFullList(list,setList,investments,setInvestments)
+        
+        setFirstItem(investments,investment,setInvestment)
+    },[list,setList,investments,setInvestments,investment,setInvestment])
 
     return (
         <section className="sectionInfo" id="homeOportunity">
