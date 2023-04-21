@@ -19,7 +19,7 @@ const metaData = {
             title: "",
             description:"",
             keywords:"inversión, novedades, real estate",
-            cannonical: "/inmuebles/0"
+            cannonical: "/inmuebles/"
         },
     about:
         {
@@ -54,7 +54,7 @@ const metaData = {
             title: "",
             description:"",
             keywords:"blog, artículo, novedad, real estate",
-            cannonical: "/blog/0"
+            cannonical: "/blog/"
         },
     courses:
         {
@@ -68,7 +68,7 @@ const metaData = {
             title: "",
             description:"",
             keywords:"curso, artículo, novedad, real estate",
-            cannonical: "/aprende/0"
+            cannonical: "/aprende/"
         },
     error404:
         {
