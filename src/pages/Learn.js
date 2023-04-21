@@ -5,14 +5,13 @@ import {useEffect} from "react";
 //* COMPONENTS
 import LearnSlogan from"../sections/Learn/LearnSlogan.js"
 import LearnCourses from '../sections/Learn/LearnCourses.js'
-import HelmetData from "../components/HelmetData";
+import HelmetData from "../components/HelmetData"
 
 
-import {reqApi,filterItems} from "../services/getArticles";
-//import { pathSplited } from "../Functions/learnFunctions.js";
+import {reqApi} from "../client/client"
+import { pathSplitted, filterItems } from "../utils/listFunctions"
 
 export default function Learn({metaData,list,setList,learnArticles,setLearnArticles}) {
-	const path = window.location.pathname.split('/')[1]
 	
 	
 	useEffect(()=>{
@@ -20,15 +19,15 @@ export default function Learn({metaData,list,setList,learnArticles,setLearnArtic
         if(learnArticles.length===0){
             filterItems(list,setLearnArticles)
         }
-	  },[list,setList,path,learnArticles,setLearnArticles])
+	  },[list,setList,learnArticles,setLearnArticles])
 
 	return (
 		<main className='learnPage'>
 			<HelmetData metaData={metaData} />
 
-			<LearnSlogan path={path} />
+			<LearnSlogan path={pathSplitted()} />
 
-			<LearnCourses list={learnArticles} url={path}  />
+			<LearnCourses list={learnArticles} url={pathSplitted()}  />
 		</main>
 	)
 }

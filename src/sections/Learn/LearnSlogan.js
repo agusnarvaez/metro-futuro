@@ -2,7 +2,7 @@
 import background from '../../assets/img/background/learnSloganBg.svg'
 
 //* Importo la función que selecciona el título del Slogan
-import { selectSlogan } from '../../Functions/learnFunctions';
+import { selectSlogan } from '../../utils/learnFunctions';
 
 export default function LearnSlogan({path}) {
 	return (

@@ -1,4 +1,4 @@
-import { selectTitle } from "../../Functions/learnFunctions"
+import { selectTitle } from "../../utils/learnFunctions"
 
 export default function LearnCourseTitle({item,type,pathSplited}) {
 	return (

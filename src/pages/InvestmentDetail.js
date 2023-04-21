@@ -3,10 +3,11 @@
 import {useState, useEffect} from "react";
 
 //* Importo useParams para obtener los parametros de la url
-import {useParams,useNavigate} from "react-router-dom";
+import {useParams,useNavigate} from "react-router-dom"
 
 //* API de contentful
-import {reqApi,filterItems} from "../services/getArticles";
+import {reqApi} from "../client/client"
+import { filterItems } from "../utils/listFunctions"
 
 //* ### SECCIONES ###
 import InvestmentDetailTitle from "../sections/InvestmentDetail/InvestmentDetailTitle";

@@ -1,7 +1,9 @@
 
 //* Importo Hooks
 import { useEffect,useState } from "react";
-import {reqApi,filterItems} from "../../services/getArticles";
+//* API de contentful
+import {reqApi} from "../../client/client"
+import { filterItems } from "../../utils/listFunctions"
 
 import {useNavigate} from "react-router-dom";
 //* Background
@@ -30,8 +32,6 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
                     }else{
                         if(investment!==investments[0].fields){
                             setInvestment(investments[0].fields)
-                        }else{
-                            console.log(investment.photos[0].fields.file.url)
                         }
                     }
             }

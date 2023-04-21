@@ -5,7 +5,7 @@ import LearnCourseInfoNav from '../../components/LearnCourse/LearnCourseInfoNav'
 import LearnCourseInfoContainer from '../../components/LearnCourse/LearnCourseInfoContainer'
 import DegradedNavLink from "../../components/DegradedNavLink";
 
-import { selectType } from '../../Functions/learnFunctions';
+import { selectType } from '../../utils/learnFunctions';
 
 export default function LearnCourseInfo({item,type,pathSplited}) {
 	//* Selecciona el contenido para ver

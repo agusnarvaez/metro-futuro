@@ -2,10 +2,10 @@ import { useEffect } from "react";
 
 // COMPONENTS
 import InvestmentCard from "../../components/Investments/InvestmentCard";
-// import investmentsSearchFilterArrow from "../assets/img/icons/investmentsSearchFilterArrow.png";
-// import investmentsFilterHomeIcon from "../assets/img/icons/investmentsFilterHomeIcon.png"
 
-import {reqApi,filterItems} from "../../services/getArticles";
+//* API de contentful
+import {reqApi} from "../../client/client"
+import { filterItems } from "../../utils/listFunctions"
 
 export default function InvestmentsList({list,setList,investments,setInvestments}) {
     useEffect(()=>{

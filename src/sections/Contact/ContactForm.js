@@ -5,7 +5,7 @@ import { useState,useRef } from "react";
 //* API de Emails
 import emailjs from 'emailjs-com';
 
-import { fieldsList,frmContact } from "../../services/contact";
+import { fieldsList,frmContact } from "../../utils/contactFields";
 
 import credentials from "../../credentials";
 

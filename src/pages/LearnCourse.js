@@ -4,7 +4,10 @@ import {useEffect,useState} from "react"
 
 import {useParams,useNavigate } from "react-router-dom"
 
-import {reqApi,filterItems} from "../services/getArticles";
+//* API de contentful
+import {reqApi} from "../client/client"
+import { filterItems } from "../utils/listFunctions"
+
 //* SECTIONS 
 import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover";
 import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle";
