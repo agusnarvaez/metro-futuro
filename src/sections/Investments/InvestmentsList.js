@@ -4,15 +4,13 @@ import { useEffect } from "react";
 import InvestmentCard from "../../components/Investments/InvestmentCard";
 
 //* API de contentful
-import {reqApi} from "../../client/client"
-import { filterItems } from "../../utils/listFunctions"
 
+import {getFullList} from "../../client/client";
 export default function InvestmentsList({list,setList,investments,setInvestments}) {
     useEffect(()=>{
-        reqApi(list,setList)
-        if(investments.length===0){
-            filterItems(list,setInvestments)
-        }
+        
+        getFullList(list,setList,investments,setInvestments)
+
     },[list,setList,investments,setInvestments])
     return (
         <section className="investmentsPageList">

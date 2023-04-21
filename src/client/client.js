@@ -1,6 +1,7 @@
 import {createClient} from 'contentful'
 import credentials from '../credentials'
-import {emptyList} from '../utils/listFunctions'
+import {emptyList,filterItems} from '../utils/listFunctions'
+
 export const articles = createClient({
     space: credentials.contentful.space,
     accessToken: credentials.contentful.accessToken
@@ -16,5 +17,17 @@ export const reqApi = async(list,setList)=>{
             console.log("Error en la petición")
             console.log(err)
         }
+    }
+}
+
+export const getFullList = async (list,setList,newList,setNewList) =>{
+    try{
+        await reqApi(list,setList)
+        if(newList.length===0){
+            filterItems(list,setNewList)
+        }
+    }catch(err){
+        console.log("Error en la petición")
+        console.log(err)
     }
 }

@@ -7,18 +7,15 @@ import LearnSlogan from"../sections/Learn/LearnSlogan.js"
 import LearnCourses from '../sections/Learn/LearnCourses.js'
 import HelmetData from "../components/HelmetData"
 
+import { pathSplitted } from "../utils/listFunctions"
 
-import {reqApi} from "../client/client"
-import { pathSplitted, filterItems } from "../utils/listFunctions"
+import {getFullList} from "../client/client";
 
 export default function Learn({metaData,list,setList,learnArticles,setLearnArticles}) {
 	
 	
 	useEffect(()=>{
-		reqApi(list,setList)
-        if(learnArticles.length===0){
-            filterItems(list,setLearnArticles)
-        }
+		getFullList(list,setList,learnArticles,setLearnArticles)
 	  },[list,setList,learnArticles,setLearnArticles])
 
 	return (
