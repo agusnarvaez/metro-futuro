@@ -136,7 +136,14 @@
     width: 100%;
     height: fit-content;
     padding: 2% 0 2% 0;
-    font-size: 1.5em;
+    font-size: 2.3em;
+    font-weight: 600;
+ }
+ .learnCoursePage_InfoDescriptionContainer h3{
+   width: 100%;
+    height: fit-content;
+    padding: 2% 0 2% 0;
+    font-size: 2.1em;
     font-weight: 600;
  }
  .learnCoursePage_InfoDescriptionContainer p{
