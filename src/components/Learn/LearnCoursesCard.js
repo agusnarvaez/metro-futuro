@@ -1,6 +1,4 @@
 
-
-/* import LearnCoursesCardDifficulty from './LearnCoursesCardDifficulty.js' */
 import DegradedNavLink from '../../components/DegradedNavLink.js'
 
 export default function LearnCourses({item,url,id}) {
@@ -16,7 +14,7 @@ export default function LearnCourses({item,url,id}) {
 
 			<p>{item.description}</p>
 
-			<DegradedNavLink route={`/${url+"/"+id}`} text="Mas información" backgroundColor="white" />
+			<DegradedNavLink route={`/${url+"/"+item.url}`} text="Mas información" backgroundColor="white" />
 
 		</article>
 
