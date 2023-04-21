@@ -1,7 +1,13 @@
 import {articles} from '../client/client'
 
+const emptyList = (list)=> list.length===0
+
+const listHasItems = (list)=> list.length>0
+
+const pathSplitted =()=>  window.location.pathname.split('/')[1]
+
 const reqApi = async(list,setList)=>{
-    if(list.length===0){
+    if(emptyList(list)){
         try{
             const api = await articles.getEntries()
             await setList(api.items)
@@ -13,19 +19,22 @@ const reqApi = async(list,setList)=>{
     }
 }
 
+const contentType = ()=>{
+    switch(pathSplitted()){
+        case "inmuebles": return "property"
+        case "blog": return "blog"
+        case "aprende": return "courses"
+        default: return "property"
+    }
+}
+
+const compareType = (article)=> article.sys.contentType.sys.id===contentType()
+
+const newFilteredList =(list)=> list.filter(article=>compareType(article))
+
 const filterItems = (list,setNewList)=>{
-    if(list.length>0){
-        const pathSplited = window.location.pathname.split('/')[1]
-        const contentType = ()=>{
-            switch(pathSplited){
-                case "inmuebles": return "property"
-                case "blog": return "blog"
-                case "aprende": return "courses"
-                default: return "property"
-            }
-        }
-        const newFilteredList = list.filter(article=>article.sys.contentType.sys.id===contentType())
-        setNewList(newFilteredList)
+    if(listHasItems(list)){
+        setNewList(newFilteredList(list))
     }
 }
 
