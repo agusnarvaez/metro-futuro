@@ -27,7 +27,7 @@ export default function LearnCourseInfoContainer({infoIndex,item}) {
 		if(info.length===0){
 			setInfo(infoContent(path))
 		}
-	},[item,infoIndex,setInfo,info,path])
+	},[item,infoIndex,setInfo,info,path,infoContent])
 	
 	return (
 		<div className="learnCoursePage_InfoContainer">

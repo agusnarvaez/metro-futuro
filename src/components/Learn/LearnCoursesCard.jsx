@@ -1,5 +1,5 @@
 
-import DegradedNavLink from '../../components/DegradedNavLink.js'
+import DegradedNavLink from '../DegradedNavLink'
 
 export default function LearnCourses({item,url,id}) {
 	return (

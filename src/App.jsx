@@ -35,7 +35,7 @@ import Footer from "./components/Footer/Footer";
 import metaData from "./data/metaData";
 
 //* Lazy Loading de las páginas
-const Home = lazy(()=> import('./pages/Home.js'))
+const Home = lazy(()=> import('./pages/Home'))
 const Investments= lazy(()=>import('./pages/Investments'))
 const InvestmentDetail = lazy(()=> import("./pages/InvestmentDetail"))
 const Learn = lazy(()=> import("./pages/Learn"))

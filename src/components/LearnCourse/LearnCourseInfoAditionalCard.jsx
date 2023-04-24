@@ -3,7 +3,7 @@
 
 //* Components
 import LearnCourseInfoAditionalType from './LearnCourseInfoAditionalType'
-import DegradedLink from '../DegradedLink.js'
+import DegradedLink from '../DegradedLink'
 
 export default function LearnCourseInfoAditionalCard({aditional}) {
 	

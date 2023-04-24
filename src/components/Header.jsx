@@ -3,8 +3,8 @@ import {useState} from "react";
 
 
 //* COMPONENTS
-import HeaderNav from "./Header/HeaderNav.js"
-import HeaderIcons from "./Header/HeaderIcons.js"
+import HeaderNav from "./Header/HeaderNav"
+import HeaderIcons from "./Header/HeaderIcons"
 
 export default function Header() {
 
