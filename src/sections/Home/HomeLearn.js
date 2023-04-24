@@ -3,7 +3,7 @@ import learnWithUsBg from "../../assets/img/background/homeLearnWithUsBg.svg";
 import { lazy, Suspense } from 'react';
 // Visor de videos de Youtube
 import DegradedLink from '../../components/DegradedLink';
-const ReactPlayer = lazy(() => import('react-player/youtube'));
+const ReactPlayer = lazy(() => import('react-player/lazy'));
 
 export default function HomeLearnWithUs() {
 

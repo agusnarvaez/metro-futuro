@@ -52,7 +52,7 @@
 .header .navigation{
     width: 100%;
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

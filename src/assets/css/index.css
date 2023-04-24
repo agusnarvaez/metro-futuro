@@ -3,7 +3,9 @@
 /*! #######################################*/
 
 /** #### Estilos generales #### */
-
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: Lexend;
     font-size: 12px;
@@ -187,6 +189,11 @@ li{
     u,
     font {
         font-weight: inherit;
+    }
+    h3,
+    h4,
+    p{
+        margin: 0;
     }
     .degradedText{
         /* Efecto degradado texto */
