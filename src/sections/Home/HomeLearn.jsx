@@ -1,9 +1,9 @@
 // Background
-import learnWithUsBg from "../../assets/img/background/homeLearnWithUsBg.svg";
-import { lazy, Suspense } from 'react';
+import learnWithUsBg from "../../assets/img/background/homeLearnWithUsBg.svg"
+
 // Visor de videos de Youtube
-import DegradedLink from '../../components/DegradedLink';
-const ReactPlayer = lazy(() => import('react-player/lazy'));
+import DegradedLink from '../../components/DegradedLink'
+import LazyReactPlayer from '../../components/LazyReactPlayer'
 
 export default function HomeLearnWithUs() {
 
@@ -12,19 +12,7 @@ export default function HomeLearnWithUs() {
         <section id="homeLearnWithUs">
             <img className="sectionBackground--desktop" id="homeLearnWithUsBackground" alt="learnWithUsBackground" title="learnWithUsBackground" src={learnWithUsBg} loading="lazy"/>
             <div className="youTubeVideo_Container">
-            <Suspense fallback={<div>Loading...</div>}>
-                <ReactPlayer
-                    url="https://www.youtube.com/embed/wX7HmpI8NsY?showinfo=0&enablejsapi=1"
-                    config={{ youtube: { playerVars: { origin: 'https://www.youtube.com' } },YTConfig: {'host': 'https://www.youtube.com'} }}
-                    className="youTubeVideo_Player"
-                    controls
-                    width="100%"
-                    height="100%"
-                    border-radius="30px"
-                    border="none"  
-                    loop
-                />
-            </Suspense>
+                <LazyReactPlayer url="https://www.youtube.com/embed/wX7HmpI8NsY?showinfo=0&enablejsapi=1" border-radius="30px" />
             </div>
             <div className="sectionInfo" id="homeLearnWithUs_Info">
                 <h4>Aprendé con <font color="#004DFF">Metro Futuro</font></h4>
