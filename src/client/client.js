@@ -12,7 +12,7 @@ export const reqApi = async(list,setList)=>{
         try{
             const api = await articles.getEntries()
             await setList(api.items)
-            
+
         }catch(err){
             console.log("Error en la petición")
             console.log(err)
@@ -31,3 +31,18 @@ export const getFullList = async (list,setList,newList,setNewList) =>{
         console.log(err)
     }
 }
+
+
+export const getFullListForSiteMap = async () =>{
+    try{
+        const api = await articles.getEntries()
+
+        return api.items
+
+    }catch(err){
+        console.log("Error en la petición")
+        console.log(err)
+    }
+}
+
+export const filteredList = (list,path) => list.filter(article=>article.sys.contentType.sys.id===path)

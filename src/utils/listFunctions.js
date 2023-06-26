@@ -5,8 +5,8 @@ const listHasItems = (list)=> list.length>0
 
 const pathSplitted =()=>  window.location.pathname.split('/')[1]
 
-const contentType = ()=>{
-    switch(pathSplitted()){
+const contentType = (condition)=>{
+    switch(condition){
         case "inmuebles": return "property"
         case "blog": return "blog"
         case "aprende": return "courses"
@@ -14,7 +14,7 @@ const contentType = ()=>{
     }
 }
 
-const compareType = (article)=> article.sys.contentType.sys.id===contentType()
+const compareType = (article)=> article.sys.contentType.sys.id===contentType(pathSplitted())
 
 const newFilteredList =(list)=> list.filter(article=>compareType(article))
 

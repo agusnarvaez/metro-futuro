@@ -1,9 +1,9 @@
 
 //* Importo Hooks y ReactGA (Google Anlytics)
-import {useState, useEffect, Suspense, lazy } from "react";
-import ReactGA from 'react-ga';
+import {useState, useEffect, Suspense, lazy } from "react"
+import ReactGA from 'react-ga'
 //* REACT-ROUTER-DOM
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 //* #######################
 //* ##### STYLESHEETS #####
@@ -47,7 +47,7 @@ const Error404 = lazy(()=> import('./pages/Error404'))
 const Terms = lazy(()=> import("./pages/Terms"))
 
 export default function App() {
-  
+
   const [articles,setArticles]=useState([])
   const [learnArticles,setLearnArticles]=useState([])
   const [blogArticles,setBlogArticles]=useState([])
