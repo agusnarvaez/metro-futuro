@@ -6,7 +6,7 @@ import LearnCourseInfoVideos from "./LearnCourseInfoVideos";
 import {useEffect,useState} from 'react'
 
 export default function LearnCourseInfoContainer({infoIndex,item}) {
-	
+
 	//* Obtengo el tipo de artículo desde la ruta
 	const path = window.location.pathname.split('/')[1]
 
@@ -28,10 +28,10 @@ export default function LearnCourseInfoContainer({infoIndex,item}) {
 			setInfo(infoContent(path))
 		}
 	},[item,infoIndex,setInfo,info,path])
-	
+
 	return (
 		<div className="learnCoursePage_InfoContainer">
-			
+
 			{info.length===1?info:info[infoIndex]}
 
 		</div>
