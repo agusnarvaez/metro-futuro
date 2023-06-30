@@ -47,7 +47,7 @@ const Error404 = lazy(()=> import('./pages/Error404'))
 const Terms = lazy(()=> import("./pages/Terms"))
 
 export default function App() {
-  
+
   const [articles,setArticles]=useState([])
   const [learnArticles,setLearnArticles]=useState([])
   const [blogArticles,setBlogArticles]=useState([])
@@ -119,7 +119,7 @@ export default function App() {
           <Routes>
             {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
           </Routes>
-        <WhatsappButton />
+        {/* <WhatsappButton /> */}
 
         <Footer />
 
