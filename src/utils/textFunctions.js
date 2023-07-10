@@ -1,4 +1,4 @@
-import {BLOCKS,INLINES,MARKS} from "@contentful/rich-text-types"
+import {BLOCKS,INLINES} from "@contentful/rich-text-types"
 
 const RICHTEXT_OPTIONS = {
 	renderNode:{
@@ -18,11 +18,6 @@ const RICHTEXT_OPTIONS = {
 		return <blockquote>{children}</blockquote>;
 		}
 	},
-	/* renderMark: {
-		[MARKS.BOLD]: (text) => {
-		  return <strong>{text}</strong>;
-		},
-	}, */
 	renderText: (text) => {
 		return text.split('\n').flatMap((textChunk, index) => {
 		  if (index > 0) {
