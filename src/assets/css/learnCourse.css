@@ -136,21 +136,21 @@
     width: 100%;
     height: fit-content;
     padding: 0;
-    margin-top:10%;
+    margin:5% 0 2% 0;
     font-size: 2em;
     font-weight: 600;
  }
  .learnCoursePage_InfoDescriptionContainer h3{
    width: 100%;
     height: fit-content;
-    margin-top:5%;
+    margin:5% 0 2% 0;
     padding: 0;
     font-size: 1.7em;
     font-weight: 600;
  }
  .learnCoursePage_InfoDescriptionContainer h4{
    font-size: 1.7em;
-   margin-top:5%;
+   margin:5% 0 2% 0;
  }
  .learnCoursePage_InfoDescriptionContainer h5{
    font-size: 1.7em;
@@ -159,7 +159,6 @@
  .learnCoursePage_InfoDescriptionContainer h6{
    font-size: 1.5em;
    margin: 5% 0 0 0;
-
  }
 
  .learnCoursePage_InfoDescriptionContainer p{
@@ -167,7 +166,7 @@
     font-size: 1.3em;
     text-align: justify;
     font-weight: 300;
-    margin: 0;
+    margin: 1% 0 3% 0;
  }
  .learnCoursePage_InfoDescriptionContainer a{
    text-decoration: none;
@@ -313,10 +312,21 @@
    .learnCoursePage_InfoDescriptionContainer{
       width: 100%;
    }
-   .learnCoursePage_InfoDescriptionContainer p{
-      padding: 0;
+
+   .learnCoursePage_InfoDescriptionContainer h2,
+   .learnCoursePage_InfoDescriptionContainer h3,
+   .learnCoursePage_InfoDescriptionContainer h4,
+   .learnCoursePage_InfoDescriptionContainer h5,
+   .learnCoursePage_InfoDescriptionContainer h6{
       font-size: 2em;
+      margin: 3% 0 0 0;
    }
+   .learnCoursePage_InfoDescriptionContainer p{
+      font-size: 1.7em;
+      margin: 1% 0 2% 0;
+   }
+
+
 
    .learnCoursePage_InfoDescriptionContainer img{
       max-height: 70vh
