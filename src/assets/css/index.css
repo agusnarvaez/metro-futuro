@@ -13,6 +13,9 @@ body {
     padding: 0;
     margin: 0;
 }
+.py-2{
+    padding: 3% 0;
+}
 .div,
 .sectionInfo{
     font-size: inherit;
@@ -112,7 +115,7 @@ li{
 .sectionInfo_subsection{
     height: 100%;
     display: flex;
-    
+
     justify-content: center;
     align-items: flex-start;
     z-index: 5;
@@ -154,7 +157,7 @@ li{
         z-index: 10;
     }
     .section_subTitle{
-        font-size: 2.5em; 
+        font-size: 2.5em;
         text-align: center;
         font-weight: 600;
         z-index: 10;
@@ -177,7 +180,7 @@ li{
     .blackText{
         color: #000F33;
     }
-    
+
     h4,
     u,
     b,
@@ -201,7 +204,7 @@ li{
         -webkit-text-fill-color: transparent;
         background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
         -webkit-background-clip: text;
-        -webkit-border-image: fill; 
+        -webkit-border-image: fill;
         z-index: 50;
         font-size: inherit;
     }
@@ -284,7 +287,7 @@ li{
         transition: background-color 0.2s ease-in-out;
     }
     .carrouselNav_arrowContainer img{
-        width: 15px;   
+        width: 15px;
         transition: filter 0.2s ease-in-out;
     }
     .carrouselContainer{
@@ -319,7 +322,7 @@ li{
     .carrousel_mobil--desktop{
         display: none;
     }
-    
+
     .carrouselContainer_card{
         display: flex;
         flex-direction: column;
@@ -389,10 +392,10 @@ li{
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         width: 100%;
         height: auto;
-        
+
         z-index: 50;
         border-radius: 50rem;
         transition: background-color 0.2s ease-in-out;
@@ -414,7 +417,7 @@ li{
     .degradedLink:active .degradedLink_TextContainer{
         background: transparent !important;
     }
-    
+
 
     /*? Puede ser Link(a) o Párrafo (p) según necesidad*/
     .degradedLink_Text{
@@ -433,9 +436,9 @@ li{
         -webkit-text-fill-color: transparent;
         background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
         -webkit-background-clip: text;
-        -webkit-border-image: fill; 
+        -webkit-border-image: fill;
         z-index: 50;
-    }   
+    }
     .degradedLink:active .degradedLink_Text{
         -webkit-text-fill-color: #FBFDFF;
     }
@@ -452,9 +455,9 @@ li{
         background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        -webkit-border-image: fill; 
+        -webkit-border-image: fill;
         font-weight: 600;
-        
+
     }
 /*! ### Link degradado ### */
 
@@ -493,15 +496,15 @@ li{
     .carrouselContainer_mobil{
         width: 150vw;
     }
-   
+
 }
-    
+
 /*! ########################################*/
 /*! ################ LAPTOPS ###############*/
 /*! ########################################*/
 @media (min-width: 769px) {
 
-    
+
     #NotFound404ErrorPage img{
         width: 40%;
         height: auto;
@@ -695,16 +698,16 @@ li{
         transition: background-color 0.5s ease-in-out;
         z-index: 50;
     }
-    
+
     .degradedLink:hover .degradedLink_TextContainer{
         background: transparent !important;
-        
+
     }
     /* Puede ser Link(a) o Párrafo (p) según necesidad*/
     .degradedLink_Text{
         font-weight: 500;
-    }   
-    
+    }
+
     .degradedLink:hover .degradedLink_Text{
         -webkit-text-fill-color: #FBFDFF;
     }

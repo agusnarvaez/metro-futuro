@@ -20,7 +20,7 @@
 .learnCoursePage .learnCourseCover{
     width: 100%;
     object-fit: cover;
-    
+
 }
 
 /** ### Course Title ### */
@@ -136,25 +136,37 @@
     width: 100%;
     height: fit-content;
     padding: 0;
-    font-size: 2.3em;
+    margin:5% 0 2% 0;
+    font-size: 2em;
     font-weight: 600;
  }
  .learnCoursePage_InfoDescriptionContainer h3{
    width: 100%;
     height: fit-content;
+    margin:5% 0 2% 0;
     padding: 0;
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 600;
  }
  .learnCoursePage_InfoDescriptionContainer h4{
-   font-size: 2em;
+   font-size: 1.7em;
+   margin:5% 0 2% 0;
  }
+ .learnCoursePage_InfoDescriptionContainer h5{
+   font-size: 1.7em;
+   margin: 5% 0 0 0;
+ }
+ .learnCoursePage_InfoDescriptionContainer h6{
+   font-size: 1.5em;
+   margin: 5% 0 0 0;
+ }
+
  .learnCoursePage_InfoDescriptionContainer p{
     width: 100%;
     font-size: 1.3em;
     text-align: justify;
     font-weight: 300;
-    margin: 0;
+    margin: 1% 0 3% 0;
  }
  .learnCoursePage_InfoDescriptionContainer a{
    text-decoration: none;
@@ -258,7 +270,7 @@
     padding: 1% 10%;
     margin: 3% 0;
     color: white;
-    
+
     border-radius: 50rem;
     background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
  }
@@ -266,15 +278,15 @@
 /*! ##### TABLETS & LARGER SMARTPHONES #####*/
 /*! ########################################*/
 @media (min-width: 481px) {
-    
+
    .learnCoursePage_InfoVideoCard h2{
       font-size: 1.5em;
     }
     .videoArrow{
       width: 30px;
     }
-   
-    
+
+
 }
 
 /*! ########################################*/
@@ -300,10 +312,21 @@
    .learnCoursePage_InfoDescriptionContainer{
       width: 100%;
    }
-   .learnCoursePage_InfoDescriptionContainer p{
-      padding: 0;
+
+   .learnCoursePage_InfoDescriptionContainer h2,
+   .learnCoursePage_InfoDescriptionContainer h3,
+   .learnCoursePage_InfoDescriptionContainer h4,
+   .learnCoursePage_InfoDescriptionContainer h5,
+   .learnCoursePage_InfoDescriptionContainer h6{
       font-size: 2em;
+      margin: 3% 0 0 0;
    }
+   .learnCoursePage_InfoDescriptionContainer p{
+      font-size: 1.7em;
+      margin: 1% 0 2% 0;
+   }
+
+
 
    .learnCoursePage_InfoDescriptionContainer img{
       max-height: 70vh

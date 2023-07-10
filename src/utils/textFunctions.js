@@ -10,8 +10,14 @@ const RICHTEXT_OPTIONS = {
 		},
 		[BLOCKS.EMBEDDED_ASSET]:(node,children)=>{
 			return <img src={node.data.target.fields.file.url} alt={node.data.target.fields.title} title={node.data.target.fields.title} loading="lazy"/>
+		},
+		[BLOCKS.HR]: (node) => {
+			return <hr />;
+		  },
+		[BLOCKS.QUOTE]: (node, children) => {
+		return <blockquote>{children}</blockquote>;
 		}
-		
-	}}
+	}
+}
 
 export {RICHTEXT_OPTIONS}

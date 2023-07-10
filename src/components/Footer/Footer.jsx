@@ -13,14 +13,14 @@ import TopFooter from './TopFooter';
 
 
 export default function Footer() {
-	
+
 	//* Obtener la ruta actual
 	const location = useLocation().pathname;
 
 	//* Cambia color del fondo segun la ruta actual
 	const changeBgColor = () => {
 		switch(location){
-			case "/inicio": return("homeFooterBg");
+			case "/": return("homeFooterBg");
 			case "/sobre-nosotros": return("aboutFooterBg");
 			default: return("");
 		}
@@ -33,10 +33,10 @@ export default function Footer() {
 			<div className={changeBgColor()} ></div>
 
 			<footer className="mainFooter">
-				
+
 				<img className='mainFooterBackgroundLeft' alt="footerBackground" title='footerBackground' src={footerLeftBg} loading="lazy"/>
 				<img className='mainFooterBackgroundRight' alt="footerBackground" title='footerBackground' src={footerRightBg} loading="lazy"/>
-				
+
 				<TopFooter/>
 
 				<BottomFooter/>

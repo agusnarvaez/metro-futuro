@@ -5,7 +5,7 @@ const metaData = {
             title: "Inversión en Real Estate",
             description:"Enterate de las últimas novedades en Real Estate y como invertir en este fantástico mundo!",
             keywords:"inversiones, real, estate, españa, token, blockchain, metro futuro",
-            cannonical: "/inicio"
+            cannonical: "/"
         },
     investments:
         {

@@ -55,15 +55,7 @@ export default function App() {
   const routesList =[
     {
       component: <Home metaData={metaData.home}  list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} />,
-      path: "/inicio"
-    },
-    {
-      component: <Home metaData={metaData.home}  list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} />,
       path: "/"
-    },
-    {
-      component: <Error404 metaData={metaData.error404} />,
-      path: "/*"
     },
     {
       component: <Learn list={articles} metaData={metaData.courses} setList={setArticles} learnArticles={learnArticles} setLearnArticles={setLearnArticles} />,
@@ -104,6 +96,10 @@ export default function App() {
     {
       component: <Terms metaData={metaData.faq} />,
       path: "/terminos-y-condiciones"
+    },
+    {
+      component: <Error404 metaData={metaData.error404} />,
+      path: "/*"
     }
   ]
   useEffect(() => {
@@ -119,7 +115,7 @@ export default function App() {
           <Routes>
             {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
           </Routes>
-        <WhatsappButton />
+        {/* <WhatsappButton /> */}
 
         <Footer />
 
