@@ -20,7 +20,7 @@
 .learnCoursePage .learnCourseCover{
     width: 100%;
     object-fit: cover;
-    
+
 }
 
 /** ### Course Title ### */
@@ -136,19 +136,32 @@
     width: 100%;
     height: fit-content;
     padding: 0;
-    font-size: 2.3em;
+    margin-top:10%;
+    font-size: 2em;
     font-weight: 600;
  }
  .learnCoursePage_InfoDescriptionContainer h3{
    width: 100%;
     height: fit-content;
+    margin-top:5%;
     padding: 0;
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 600;
  }
  .learnCoursePage_InfoDescriptionContainer h4{
-   font-size: 2em;
+   font-size: 1.7em;
+   margin-top:5%;
  }
+ .learnCoursePage_InfoDescriptionContainer h5{
+   font-size: 1.7em;
+   margin: 5% 0 0 0;
+ }
+ .learnCoursePage_InfoDescriptionContainer h6{
+   font-size: 1.5em;
+   margin: 5% 0 0 0;
+
+ }
+
  .learnCoursePage_InfoDescriptionContainer p{
     width: 100%;
     font-size: 1.3em;
@@ -258,7 +271,7 @@
     padding: 1% 10%;
     margin: 3% 0;
     color: white;
-    
+
     border-radius: 50rem;
     background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
  }
@@ -266,15 +279,15 @@
 /*! ##### TABLETS & LARGER SMARTPHONES #####*/
 /*! ########################################*/
 @media (min-width: 481px) {
-    
+
    .learnCoursePage_InfoVideoCard h2{
       font-size: 1.5em;
     }
     .videoArrow{
       width: 30px;
     }
-   
-    
+
+
 }
 
 /*! ########################################*/
