@@ -56,7 +56,68 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+        <loc>https://metro-futuro.com/blog/Inversion-Inmobiliaria-En-Espania</loc>
+        <lastmod>2023-08-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+  </url>
 
+  <url>
+        <loc>https://metro-futuro.com/blog/wallet-en-metamask</loc>
+        <lastmod>2023-08-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+  </url>
+
+  <url>
+        <loc>https://metro-futuro.com/blog/cepo-cripto</loc>
+        <lastmod>2023-08-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+  </url>
+
+  <url>
+        <loc>https://metro-futuro.com/blog/ganancias-de-los-criptoactivos</loc>
+        <lastmod>2023-08-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+  </url>
+
+  <url>
+        <loc>https://metro-futuro.com/blog/aguinaldo-e-inflacion</loc>
+        <lastmod>2023-08-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+  </url>
+
+  <url>
+        <loc>https://metro-futuro.com/blog/combatir-la-inflacion-token</loc>
+        <lastmod>2023-08-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+  </url>
+
+  <url>
+        <loc>https://metro-futuro.com/blog/bienes-raices-en-espana</loc>
+        <lastmod>2023-08-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+  </url>
+
+  <url>
+        <loc>https://metro-futuro.com/blog/tecnologia-blockchain</loc>
+        <lastmod>2023-08-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+  </url>
+
+  <url>
+        <loc>https://metro-futuro.com/blog/diversificar-tus-inversiones</loc>
+        <lastmod>2023-08-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+  </url>
   <url>
     <loc>https://metro-futuro.com/blog/bajo-presupuesto-inversiones</loc>
     <lastmod>2023-06-26</lastmod>
