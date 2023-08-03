@@ -121,7 +121,7 @@
 .investmentDetailMediaImage img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .investmentDetailMediaVideo{
     width: 100%;
@@ -329,7 +329,7 @@
 /** ### ¡QUIERO INVERTIR! ### **/
 /** ######################### **/
 .investmentDetailPage #degradedLink--inverted{
-    width: 50%;
+    width: 70%;
     margin: 5% 0;
 }
 
@@ -365,7 +365,7 @@
     .investmentDetailTitleInfo h2{
         font-size: 1.8em;
     }
-    
+
     /** ################## **/
     /** ### MULTIMEDIA ### */
     /** ################## **/
@@ -378,7 +378,7 @@
     .investmentDetailMediaNav{
         font-size: 1.3em;
     }
-    
+
     .investmentDetailMediaNavSeparator{
         height: 50px !important;
         width: 3.5px !important;
@@ -439,7 +439,7 @@
     .investmentDetailValueCardTextContainerValue{
         font-size: 3.5em;
     }
-    
+
     /** ######################### **/
     /** ### ¡QUIERO INVERTIR! ### **/
     /** ######################### **/
@@ -447,7 +447,7 @@
         width: 40%;
     }
 }
-    
+
 /*! ########################################*/
 /*! ################ LAPTOPS ###############*/
 /*! ########################################*/
@@ -479,7 +479,7 @@
     }
     .investmentDetailMediaNav{
         font-size: 1.5em;
-        
+
     }
     .investmentDetailMediaNav img{
         height: 30px;
@@ -490,7 +490,7 @@
         background: linear-gradient(to top left, #004cff1e 0%, #ff00cc1a 100%);
         border-radius: 5px;
     }
-    
+
     .investmentDetailMediaNav--active:hover{
         /* background: linear-gradient(to bottom right, #004cff2a 0%, #ff00cc2f 100%) !important; */
         background: linear-gradient(to bottom right, #004cff1e 0%, #ff00cc1a 100%) !important;
@@ -509,13 +509,13 @@
     /** ### RESUMEN ### */
     /** ############### **/
     .investmentDetailResume li{
-        font-size: 2em;   
+        font-size: 2em;
         width: 25%;
     }
     .investmentDetailResume li img{
         width: 50px;
     }
-    
+
     /** ################# **/
     /** ### DESCARGAS ### **/
     /** ################# **/

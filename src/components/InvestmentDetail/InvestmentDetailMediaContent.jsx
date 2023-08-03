@@ -7,10 +7,10 @@ export default function InvestmentDetailMediaContent({investment,index}) {
 
 
     const media = [
-        <InvestmentDetailMediaImage investment={investment} images={investment.photos}/>,
+        <InvestmentDetailMediaImage investment={investment} images={investment.photos} objecFit='cover'/>,
         /* <InvestmentDetailMediaVideo investment={investment} />,
         <InvestmentDetailMedia360 investment={investment}/>, */
-        <InvestmentDetailMediaImage investment={investment} images={investment.blueprints}/>
+        <InvestmentDetailMediaImage investment={investment} images={investment.blueprints} objecFit='contain'/>
     ]
 
     useEffect(()=>{

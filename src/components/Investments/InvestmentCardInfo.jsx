@@ -4,27 +4,32 @@ import DegradedNavLink from "../DegradedNavLink"
 export default function InvestmentCardInfo({investment,index}) {
 
     const address = investment.street + ", " + investment.city + ", " + investment.country;
-    
+
     const list = [
         {
             title:"Rentabilidad con alquiler",
-            value: investment.rentProfit + "%"
+            value: investment.rentProfit,
+            unit:' %'
         },
         {
             title:"Rentabilidad con venta",
-            value: investment.saleProfit + "%"
+            value: investment.saleProfit,
+            unit:' %'
         },
         {
             title:"Tokens emitidos",
-            value: investment.tokensQuantity + " m2f"
+            value: investment.tokensQuantity,
+            unit:' m2f'
         },
         {
             title:"Valor del token",
-            value: investment.tokenValue + " eur"
+            value: investment.tokenValue,
+            unit:' eur'
         },
         {
             title:"Superficie (m2)",
-            value: investment.area + " m2"
+            value: investment.area,
+            unit:' m2'
         }
     ]
     return (
@@ -37,12 +42,16 @@ export default function InvestmentCardInfo({investment,index}) {
 
             <ul className="investmentsPageProjectInfoDetails">
                 {list.map((item,key)=>{
-                    return(
-                        <li key={key}>
-                            <h3>{item.title}</h3>
-                            <font color="#004DFF">{item.value}</font>
-                        </li>
-                    )
+                    if(item.value!==0){
+                        return(
+                            <li key={key}>
+                                <h3>{item.title}</h3>
+                                <font color="#004DFF">{item.value+ item.unit}</font>
+                            </li>
+                        )
+                    }
+                    return('')
+
                 })}
             </ul>
 
