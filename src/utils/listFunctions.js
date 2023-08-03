@@ -23,16 +23,16 @@ const filterItems = (list,setNewList)=>{
         setNewList(newFilteredList(list))
     }
 }
-const firstItem = (list)=> list[0].fields
+const lastItem = (list)=> list[list.length-1].fields
 const existsFirstItem = (list)=> list[0]!==undefined
 
 const compareItems=(itemA,itemB)=> itemA!==itemB
 
-const setFirstItem = (list,item,setItem)=>{
+const setLastItem = (list,item,setItem)=>{
     if(listHasItems(list)){
         if(existsFirstItem(list)){
-            if(compareItems(item,firstItem(list))){
-                setItem(firstItem(list))
+            if(compareItems(item,lastItem(list))){
+                setItem(lastItem(list))
             }
         }else{
             throw new Error("Error en la petición")
@@ -68,4 +68,4 @@ const handleListItems = (list,setList,newList,setNewList,itemID,item,setItem,met
     }
 }
 
-export {handleListItems,itemHasEntries,filterItems,pathSplitted,emptyList,existsItem,listHasItems,setFirstItem,findItem,selectItem}
+export {handleListItems,itemHasEntries,filterItems,pathSplitted,emptyList,existsItem,listHasItems,setLastItem,findItem,selectItem}

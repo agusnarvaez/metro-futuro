@@ -2,7 +2,7 @@
 //* Importo Hooks
 import { useEffect,useState } from "react";
 //* API de contentful
-import { setFirstItem } from "../../utils/listFunctions"
+import { setLastItem } from "../../utils/listFunctions"
 import { getFullList } from "../../client/client";
 
 //* Background
@@ -18,8 +18,8 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
 
     useEffect(()=>{
         getFullList(list,setList,investments,setInvestments)
-        
-        setFirstItem(investments,investment,setInvestment)
+
+        setLastItem(investments,investment,setInvestment)
     },[list,setList,investments,setInvestments,investment,setInvestment])
 
     return (
@@ -28,11 +28,11 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
             {Object.entries(investment).length!==0?
                 <div className='sectionInfo'>
 
-                    <h2 className='section_subTitle'>Invierte en inmuebles tokenizados en <span className="degradedText">{investment.country}</span></h2> 
+                    <h2 className='section_subTitle'>Invierte en inmuebles tokenizados en <span className="degradedText">{investment.country}</span></h2>
 
                     <p className="section_paragraph">Con rendimientos de más del {investment.rentProfit}% anual</p>
 
-                    <DegradedNavLink 
+                    <DegradedNavLink
                         id="homeOportunityLink"
                         text="Quiero invertir"
                         backgroundColor="white"
