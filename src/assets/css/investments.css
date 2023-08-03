@@ -315,8 +315,8 @@
     .investmentsPageProjectInfo{
         justify-content: space-between;
         flex-direction: column;
-        margin: 0% 2% 0% 2%;
-        padding: 2% 0;
+        /* margin: 0% 2% 0% 2%; */
+        padding: 2%;
         width: 60%;
         /* height: 100%; */
         flex-wrap: wrap;
@@ -335,7 +335,6 @@
         width: 50%;
     }
     .investmentsPageProjectInfoDetails{
-        width: 100%;
         padding: 0 20% 0 0 ;
         margin: 0;
     }
@@ -353,6 +352,9 @@
         font-weight: 500;
         font-size: 1.3em;
     }
+    .investmentsPageProjectInfoDetails li{
+        padding: 1% 0;
+    }
 }
 
 /*! ########################################*/
@@ -369,7 +371,6 @@
 
     .investmentsPageProjectInfo{
         align-self: center;
-        margin: 1% 2%;
         height: 100%;
         width: 65%;
     }
@@ -379,9 +380,7 @@
     .investmentsPageProjectInfoTitle h3{
         width: 30%;
     }
-    .investmentsPageProjectInfoDetails{
-        width: 55%;
-    }
+
     .investmentsPageProjectCard .degradedLink{
         width: 20%;
     }
@@ -395,9 +394,9 @@
         max-height: 45vh;
     }
 
-    .investmentsPageProjectInfo{
+ /*    .investmentsPageProjectInfo{
         margin: 3% 2%;
-    }
+    } */
     .investmentsPageProjectInfoTitle h2{
         font-size: 2.5em;
         width: 60%;
