@@ -6,29 +6,32 @@ export default function InvestmentDetailValue({investment}) {
     const list = [
         {
             text: "Valor del token",
-            value: investment.tokenValue + " eur"
+            value: investment.tokenValue,
+            unit: " eur"
         },
         {
             text: "Tokens emitidos",
-            value: investment.tokensQuantity + " m2f"
+            value: investment.tokensQuantity,
+            unit: " m2f"
         },
         {
             text: "Rentabilidad anual por token",
-            value: investment.saleProfit + " %"
+            value: investment.saleProfit,
+            unit: " %"
         }
     ]
 
     return (
         <section className="investmentDetailValue">
             {list.map((item,key)=>(
-            <div className="investmentDetailValueCard" key={key} index={key}>
+            item.value!==0?<div className="investmentDetailValueCard" key={key} index={key}>
                 <div className="investmentDetailValueCardBorder"  >
                     <div className="investmentDetailValueCardTextContainer">
                         <p className="investmentDetailValueCardTextContainerTitle">{item.text}</p>
-                        <p className="investmentDetailValueCardTextContainerValue">{item.value}</p>
+                        <p className="investmentDetailValueCardTextContainerValue">{item.value+item.unit}</p>
                     </div>
                 </div>
-            </div>))}
+            </div>:null))}
         </section>
     )
 }
