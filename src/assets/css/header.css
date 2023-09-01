@@ -110,6 +110,9 @@
     .header .hiddenMenu{
         top: -1000%;
     }
+    .header .navigation li {
+        padding: 3% 0;
+    }
 }
 
 /*! ########################################*/
@@ -164,6 +167,6 @@
     }
 
     .header .navigation{
-        width: 50%;
+        width: 70%;
     }
 }
