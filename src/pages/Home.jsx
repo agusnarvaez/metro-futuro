@@ -26,8 +26,6 @@ export default function Home({metaData,list,setList,investments,setInvestments})
 
             <HomeAbout/>
 
-            <HomeSlogan  /*  scrollTransition={scrollTransition}  *//>
-
             <HomeInvestmentSteps/>
 
             <HomeBenefits/>
