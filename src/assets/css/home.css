@@ -9,8 +9,9 @@
 /** ### SOBRE NOSOTROS ### */
 #homeAbout{
     overflow: hidden;
-    height: 40vh;
+    height: 70vh;
     margin: 0;
+    padding: 1% 5%;
 }
 #homeAboutLink div{
     background-color: #FBFAFF;
@@ -22,7 +23,7 @@
     -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
     -webkit-background-clip: text;
-    -webkit-border-image: fill; 
+    -webkit-border-image: fill;
 }
 
 #homeAboutParagraph{
@@ -45,7 +46,7 @@
     hsl(235deg 100% 81%) 39%,
     hsl(288deg 67% 79%) 61%,
     hsl(312deg 100% 50%) 100%);
-    
+
     font-size: 1.9em;
     color: #F3F2F2;
     background-size: 200% 500%;
@@ -119,13 +120,13 @@
     #homeOportunity .sectionInfo{
         padding: 5% 0 0 0;
     }
-    #homeOportunity .section_subTitle{ 
+    #homeOportunity .section_subTitle{
         font-weight: 500;
         line-height: 1.5em;
         width: 80%;
         text-align: center;
     }
-    #homeOportunity .section_paragraph{ 
+    #homeOportunity .section_paragraph{
         width: 70%;
         text-align: center;
     }
@@ -242,7 +243,7 @@
 /*! ### Aprende con Metro Futuro ### */
 
 /** ### NUESTROS PARTNERS ### **/
-    
+
 #homePartners{
     height: 40vh;
     flex-direction: column;
@@ -317,7 +318,7 @@
 /** ### SOBRE NOSOTROS ### */
     #homeAbout{
         width: 95%;
-        height: 50vh;
+        height: 60vh;
     }
     #homeAbout #homeAboutSubtitle{
         margin: 0;
@@ -378,8 +379,8 @@
     }
 
 /*! ### Slogan ###*/
-    
-    
+
+
 /** #### ¿COMO INVERTIR EN SIMPLES PASOS? ####*/
     #homeInvestmentSteps{
         /* background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%); */
@@ -402,15 +403,15 @@
     #homeCarrouselNav{
         justify-content: flex-end;
     }
-        
+
     #homeInvestmentSteps_mobileLink{
         display: none;
     }
 /*! #### ¿Como invertir en simples pasos? ####*/
-    
+
 /** ### OPORTUNIDAD DE INVERSIÓN ###*/
 
-#homeOportunity { 
+#homeOportunity {
     flex-direction: row;
     align-items: center;
     padding: 0;
@@ -423,7 +424,7 @@
     padding: 0 0 0 0%;
     justify-content: center;
 }
-#homeOportunity .section_subTitle{ 
+#homeOportunity .section_subTitle{
     font-size: 3em;
     line-height: 1.3em;
     font-weight: 600;
@@ -431,7 +432,7 @@
     text-align: start;
     padding: 0;
 }
-#homeOportunity .section_paragraph{ 
+#homeOportunity .section_paragraph{
     font-size: 2em;
     width: 95%;
     text-align: start;
@@ -450,7 +451,7 @@
         padding: 0;
         margin: 5% 0;
         width: 95%;
-    }    
+    }
 
     #homeBenefits h3{
         width: 95%;
@@ -480,7 +481,7 @@
         border-radius: none;
         border: none;
     }
-    
+
     #homeBenefitsContainer ul li div{
         padding: 0 0 0 1%;
     }
@@ -532,15 +533,15 @@
         width: 20%;
         margin: 0;
     }
-    
+
 /*! ### Aprende con Metro Futuro ### */
-    
+
 /** ### NUESTROS PARTNERS ### **/
-    
+
     #homePartners{
         height: 50vh;
     }
-    
+
     #homePartners h3{
         font-size: 3.5em;
     }
@@ -556,17 +557,17 @@
     #homePartnersContainer li{
         max-height: 90%;
     }
-    
+
     #homePartnersContainer li:hover{
         max-height: 100%;
         width: 35%;
         -webkit-transition: max-height 0.3s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
     }
 /*! ### Nuestros partners ### **/
-    
 
 
-    
+
+
 
 }
 

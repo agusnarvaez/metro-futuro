@@ -10,7 +10,7 @@ export default function HomeAbout() {
 
         <section id="homeAbout">
                 <div className="sectionInfo">
-                    <h2 
+                    <h2
                         className='section_subTitle blackText'
                         id="homeAboutSubtitle">
                             Inversiones por M<sup>2</sup>
@@ -18,12 +18,17 @@ export default function HomeAbout() {
                     <p
                         className='section_paragraph blackText'
                         id="homeAboutParagraph">
-                            Somos una empresa global de inversiones inmobiliarias entre Europa y LATAM con tecnología blockchain
+                            Somos una startup global que ofrece a los usuarios la <b>oportunidad de invertir</b> en una cartera diversificada de activos financieros digitales, en el <b>mercado inmobiliario de Europa.</b>
+                    </p>
+                    <p
+                        className='section_paragraph blackText'
+                        id="homeAboutParagraph">
+                            Ofrecemos la posibilidad de adaptar la estrategia de inversión a las necesidades personales con la posibilidad de invertir <b>desde 100 euros</b>, con <b>dividendos mensuales y liquidez garantizada.</b>
                     </p>
                     <div className="degradedLink" id='homeAboutLink'>
                         <div className='degradedLink_TextContainer degradedLink_TextContainer--lightGray' id="homeAboutInfoLink">
                             <NavLink className="degradedLink_Text" title="Sobre nosotros" to='/sobre-nosotros'>
-                                Conocenos
+                                Conócenos
                             </NavLink>
                         </div>
                     </div>
