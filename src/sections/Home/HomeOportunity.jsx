@@ -30,13 +30,13 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
 
                     <h2 className='section_subTitle'>Invierte en inmuebles tokenizados en <span className="degradedText">{investment.country}</span></h2>
 
-                    <p className="section_paragraph">Con rendimientos de más del {investment.rentProfit}% anual</p>
+                    <p className="section_paragraph">Genera ingresos pasivos con rendimientos de mas del {investment.rentProfit}% anual</p>
 
                     <DegradedNavLink
                         id="homeOportunityLink"
                         text="Quiero invertir"
                         backgroundColor="white"
-                        route={`/inmuebles/${investment.url}`}
+                        route={`/inmuebles`}
                     />
 
                 </div>
