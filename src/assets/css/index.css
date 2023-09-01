@@ -405,6 +405,8 @@ li{
         z-index: 50;
         border-radius: 50rem;
         transition: background-color 0.2s ease-in-out;
+
+        cursor: pointer;
     }
     .degradedLink_TextContainer--hidden{
         display: none;
@@ -436,7 +438,7 @@ li{
         text-align: center;
         padding: 5%;
         font-weight: 500;
-
+        cursor: pointer;
 
         /* Efecto degradado texto */
         -webkit-text-fill-color: transparent;
