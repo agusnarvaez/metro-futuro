@@ -4,16 +4,20 @@ import HeaderNavLink from "./HeaderNavLink";
 export default function HeaderNav({burgerMenu,setBurgerMenu}) {
 
     const links = [
-        /* {
-            title:"Proyectos",
-            to:"/investments"
-        }, */
+        {
+            title:"Home",
+            to:"/"
+        },
         {
             title:"Quienes somos",
             to:"/sobre-nosotros"
         },
         {
-            title:"Aprende",
+            title:"Inmuebles",
+            to:"/inmuebles"
+        },
+        {
+            title:"Academy",
             to:"/aprende"
         },
         {
@@ -33,7 +37,7 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
             <ul className={burgerMenu?"navigation hiddenMenu":"navigation"} >
                 {links.map((link, key) => {
                     return(
-                        <HeaderNavLink 
+                        <HeaderNavLink
                             index={key} key={key}
                             link={link} links={links}
                             burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}
