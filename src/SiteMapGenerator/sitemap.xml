@@ -64,6 +64,34 @@
     <priority>0.6</priority>
   </url>
 
+      <url>
+            <loc>https://metro-futuro.com/blog/Inversion-Inmobiliaria-En-Espania</loc>
+            <lastmod>2023-09-02</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.80</priority>
+      </url>
+
+      <url>
+            <loc>https://metro-futuro.com/blog/wallet-en-metamask</loc>
+            <lastmod>2023-09-02</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.80</priority>
+      </url>
+
+      <url>
+            <loc>https://metro-futuro.com/blog/cepo-cripto</loc>
+            <lastmod>2023-09-02</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.80</priority>
+      </url>
+
+      <url>
+            <loc>https://metro-futuro.com/blog/ganancias-de-los-criptoactivos</loc>
+            <lastmod>2023-09-02</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.80</priority>
+      </url>
+
   <url>
         <loc>https://metro-futuro.com/blog/aguinaldo-e-inflacion</loc>
         <lastmod>2023-07-10</lastmod>
