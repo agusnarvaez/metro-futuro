@@ -1,9 +1,9 @@
 
 //* Importo Hooks y ReactGA (Google Anlytics)
-import {useState, useEffect, Suspense, lazy } from "react";
-import ReactGA from 'react-ga';
+import {useState, useEffect, Suspense, lazy } from "react"
+import ReactGA from 'react-ga'
 //* REACT-ROUTER-DOM
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 //* #######################
 //* ##### STYLESHEETS #####
