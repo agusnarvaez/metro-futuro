@@ -17,7 +17,7 @@ const homeCarrouselInfo = [
   {
       id: 4,
       title: "Pago",
-      text: "Una vez realizdao el pago, recibes tus tokens en tu billetera digital para poder disponer de ellos o recibir tu renta mensualmente."
+      text: "Una vez realizado el pago, recibes tus tokens en tu billetera digital para poder disponer de ellos o recibir tu renta mensualmente."
   }
 ]
 export default homeCarrouselInfo;

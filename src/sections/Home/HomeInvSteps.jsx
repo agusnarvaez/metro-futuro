@@ -14,14 +14,14 @@ import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.png"
 import carrouselInfo from "../../data/homeCarrouselInfo";
 
 export default function HomeInvestmentSteps() {
-    
+
     const [carrousel, setCarrousel] = useState(true);
 
     return (
 
         <section id="homeInvestmentSteps">
                 <div className="sectionInfo_subsection sectionInfo_subsection--column">
-                    <h2 id="homeInvestmentSteps_subTitle" className="section_subTitle section_subTitle--left">¿Como <font color="#004DFF">invertir</font> en simples pasos?</h2>
+                    <h2 id="homeInvestmentSteps_subTitle" className="section_subTitle section_subTitle--left">¿Cómo <font color="#004DFF">invertir</font> en simples pasos?</h2>
                     <DegradedLink text="Invierte" id="homeInvestmentSteps_desktopLink" route="https://app.metro-futuro.com/project-detail/f63c7d96-38f4-410c-bcdd-30eecd3065c7" backgroundColor="white"/>
                 </div>
                 <div className="sectionInfo_subsection sectionInfo_subsection--column" id='homeCarrousel'>

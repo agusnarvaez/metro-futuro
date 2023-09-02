@@ -8,6 +8,7 @@ import linkedinLogo from "../../assets/img/icons/linkedInLogo.svg"
 import twitterLogo from "../../assets/img/icons/twitterLogo.svg"
 import telegramLogo from "../../assets/img/icons/telegramLogo.png"
 import youTubeLogo from "../../assets/img/icons/youTubeLogo.svg"
+import tikTokLogo from "../../assets/img/icons/tiktokLogo.svg"
 export default function FooterSocialLogos() {
 	const socialLogos = [
 		{
@@ -34,10 +35,15 @@ export default function FooterSocialLogos() {
 			className: "youTubeLogo",
 			src: youTubeLogo,
 			href: "https://www.youtube.com/channel/UCmiKhrSZxmtVFlz7wt1dcKw"
-		} 
+		},
+		{
+			className: "tikTokLogo",
+			src: tikTokLogo,
+			href: "https://www.tiktok.com/@metrofuturo"
+		}
 
 	];
-	
+
 	return (
 
 		<div className='footerSocials'>
@@ -45,7 +51,7 @@ export default function FooterSocialLogos() {
 				socialLogos.map(
 					(socialLogo,key)=> {
 						return(
-							<a 
+							<a
 								key={key}
 								target="_blank"
 								href={socialLogo.href}

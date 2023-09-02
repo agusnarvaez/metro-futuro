@@ -35,6 +35,15 @@
     flex-direction: column;
     justify-content: flex-start;
 }
+#formContainer form > p{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    padding: 5% 0;
+    color: #003314;
+    opacity: 50%;
+    font-weight: 600;
+}
 
 #formContainer form{
     display: flex;
@@ -205,6 +214,7 @@
 
 .contactSubmit {
     border: none;
+    cursor: pointer;
 }
 .contactSubmit--success{
     width: 30% !important;

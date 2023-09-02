@@ -16,28 +16,26 @@ import HelmetData from "../components/HelmetData";
 
 export default function Home({metaData,list,setList,investments,setInvestments}) {
 
-    
+
     return (
         <main className="homePage">
-            
+
             <HelmetData metaData={metaData} />
+
+            <HomeOportunity list={list} setList={setList} investments={investments} setInvestments={setInvestments} />
 
             <HomeAbout/>
 
-            <HomeOportunity list={list} setList={setList} investments={investments} setInvestments={setInvestments} />
-            
-            <HomeSlogan  /*  scrollTransition={scrollTransition}  *//>
-
             <HomeInvestmentSteps/>
-            
+
             <HomeBenefits/>
 
             <HomeLearnWithUs/>
-            
+
             <HomePartners/>
 
             <HomeFaq/>
-            
+
         </main>
     )
 }

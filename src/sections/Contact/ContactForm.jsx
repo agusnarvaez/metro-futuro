@@ -18,7 +18,7 @@ export default function ContactForm() {
     //* Hook de mail a enviar
     const [contact, setContact] = useState(frmContact);
     const [buttonClass,setButtonClass] = useState("contactSubmit degradedLink");
-
+    const [successMessage,setSuccessMessage] = useState(false)
     const fields = useRef(fieldsList)
 
 
@@ -48,14 +48,15 @@ export default function ContactForm() {
                 credentials.emailJs.id //* ID de
                 )
                     .then((response) => {
-                        console.log('SUCCESS!', response.status, response.text);
-                        setContact(frmContact);
+                        console.log('SUCCESS!', response.status, response.text)
+                        setContact(frmContact)
                         setButtonClass("contactSubmit degradedLink contactSubmit--success")
+                        setSuccessMessage(true)
                     },
 
                     //* Capturo el error al enviar el mensaje
                     (err) => {
-                        console.log('ERROR:\n', err);
+                        console.log('ERROR:\n', err)
                         setButtonClass("contactSubmit contactSubmit--error")
                     });
         }
@@ -69,7 +70,7 @@ export default function ContactForm() {
                 <ContactInputs fields={fields.current} contact={contact} setContact={setContact} />
 
                 <Button buttonClass={buttonClass} setButtonClass={setButtonClass} />
-
+                {successMessage?<p>Gracias por tu interés. En breve, un representante de Metro Futuro se estará comunicando contigo.</p>:""}
             </form >
 
         </section>

@@ -17,20 +17,24 @@ export default function BottomFooter() {
 				text: 'Home'
 			},
 			{
+				to:'/sobre-nosotros',
+				text: 'Quienes somos'
+			},
+			{
 				to:'/inmuebles',
-				text: 'Proyectos'
+				text: 'Inmuebles'
 			},
 			{
 				to:'/aprende',
-				text: 'Aprende'
+				text: 'Academy'
 			},
 			{
 				to:'/blog',
 				text: 'Blog'
 			},
 			{
-				to:'/sobre-nosotros',
-				text: 'Quienes somos'
+				to:'/contacto',
+				text: 'Contáctanos'
 			}/* ,
 			{
 				to:'/investments/list',
@@ -43,10 +47,6 @@ export default function BottomFooter() {
 		title: "Recursos",
 		className: "rightLinks",
 		content:[
-		{
-			to:'/contacto',
-			text: 'Contáctanos'
-		},
 		{
 			to:'/ayuda',
 			text: 'Ayuda/FAQ'
@@ -65,15 +65,15 @@ export default function BottomFooter() {
 	//* Función para scrollear hacia arriba cada vez que se toca un enlace
     const scrollToTop = () =>{
         window.scrollTo({
-          top: 0, 
+          top: 0,
           behavior: 'smooth'
           /* you can also use 'auto' behaviour
              in place of 'smooth' */
         });
       };
-	  
+
 	return (
-	
+
 		<div className="topFooter">
 
 					<div className='footerMetroLogo'>
@@ -84,21 +84,21 @@ export default function BottomFooter() {
 					</div>
 
 					<div className="footerLinks">
-						
-						<FooterLinks 
+
+						<FooterLinks
 							scrollToTop={scrollToTop}
 							title={leftLinks.title}
-							className={leftLinks.className} 
+							className={leftLinks.className}
 							links={leftLinks.content}
 						/>
 
-						<FooterLinks 
+						<FooterLinks
 							scrollToTop={scrollToTop}
 							title={rightLinks.title}
-							className={rightLinks.className} 
+							className={rightLinks.className}
 							links={rightLinks.content}
 						/>
-						
+
 					</div>
 
 				</div>
