@@ -2,6 +2,7 @@
 import DegradedNavLink from '../DegradedNavLink'
 
 export default function LearnCourses({item,url,id}) {
+	console.log(item)
 	return (
 
 		<article id='learnCoursesCard'>

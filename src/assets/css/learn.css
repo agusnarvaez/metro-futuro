@@ -63,7 +63,7 @@
     margin: 3% 0;
     color: white;
     border-radius: 50rem;
-    
+
 }
 .learnCoursesCard_Difficulty--Básico{
     background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
@@ -123,8 +123,8 @@
     #learnCoursesCard p{
         font-size: 1.3em;
     }
-    
-    
+
+
 }
 
 /*! ########################################*/
@@ -175,7 +175,7 @@
         margin: 2% 0;
     }
     #learnCoursesCard p{
-        font-size: 2em;
+        font-size: 1.5em;
         padding: 1% 1.5%;
         margin: 3% 0;
     }
@@ -184,6 +184,6 @@
     }
     #learnCoursesCard .degradedLink a{
         padding: 2%;
-        
+
     }
 }
