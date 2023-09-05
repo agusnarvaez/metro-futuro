@@ -22,11 +22,11 @@ export default function HomePartners() {
             img: stayRealTVLogo,
             alt: "stayRealTVLogo"
         },
-        {
+/*         {
             link: "https://briken.io/",
             img: brikenLogo,
             alt: "brikenLogo"
-        }
+        } */
     ];
     return (
 
