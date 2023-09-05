@@ -1,4 +1,4 @@
-import DegradedLink from "../../components/DegradedLink";
+import DegradedNavLink from "../../components/DegradedNavLink";
 
 export default function InvestmentDetailTitle({investment}) {
     const address = investment.street + ", " + investment.city + ", " + investment.country;
@@ -9,7 +9,7 @@ export default function InvestmentDetailTitle({investment}) {
                 <h1>{investment.title}</h1>
                 <h2>{address}</h2>
             </div>
-            <DegradedLink  text="¡Quiero invertir!" route={investment.platformLink} backgroundColor="" id={degLinkId} /* onFocus={changeDegLink} onBlur={changeDegLink} *//>
+            <DegradedNavLink  text="¡Quiero invertir!" route='/contacto' backgroundColor="" id={degLinkId} />
             {/*  <div className="investmentDetailPageTitleShare">
 
             </div> */}

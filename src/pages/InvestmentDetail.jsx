@@ -23,28 +23,28 @@ import {itemHasEntries, handleListItems} from "../utils/listFunctions"
 export default function InvestmentDetail({list,setList,metaData,investments,setInvestments}) {
     const params = useParams();
     const investmentId =params.id;
-    
+
     let navigate = useNavigate()
-    
+
     const [investment,setInvestment]=useState({});
     const [newMetaData,setNewMetaData] = useState(metaData)
     const degLinkId="degradedLink--inverted"
 
     useEffect(() => {
-        
-        handleListItems(list,setList,investments,setInvestments,investmentId,investment,setInvestment,newMetaData,setNewMetaData,navigate)           
+
+        handleListItems(list,setList,investments,setInvestments,investmentId,investment,setInvestment,newMetaData,setNewMetaData,navigate)
 
     }, [list,setList,investmentId,investment,setInvestment,investments,setInvestments,newMetaData,setNewMetaData,navigate]);
 
     return (
         <main className="investmentDetailPage">
-            
+
             <HelmetData metaData={newMetaData}/>
 
             <InvestmentDetailTitle investment={investment}/>
 
             <InvestmentDetailMedia investment={investment}/>
-            
+
             <InvestmentDetailInfo investment={investment}/>
 
             <InvestmentDetailResume investment={investment}/>
@@ -53,8 +53,8 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
 
             <InvestmentDetailValue investment={investment}/>
 
-            <DegradedLink  text="¡Quiero invertir!" route={investment.platformLink} backgroundColor="" id={degLinkId} /* onFocus={changeDegLink} onBlur={changeDegLink} *//>
-            
+            {/* <DegradedLink  text="¡Quiero invertir!" route={investment.platformLink} backgroundColor="" id={degLinkId} /> */}
+
             {itemHasEntries(investment)?<Map coordinates={investment.mapCoordinates}/>:""}
 
         </main>
