@@ -9,7 +9,7 @@ export default function InvestmentDetailTitle({investment}) {
                 <h1>{investment.title}</h1>
                 <h2>{address}</h2>
             </div>
-            {/* <DegradedNavLink  text="¡Quiero invertir!" route='/contacto' backgroundColor="" id={degLinkId} /> */}
+            <DegradedNavLink  text="¡Quiero invertir!" route='/plataforma-de-inversiones' backgroundColor="" id={degLinkId} />
             {/*  <div className="investmentDetailPageTitleShare">
 
             </div> */}

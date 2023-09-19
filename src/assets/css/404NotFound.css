@@ -1,25 +1,31 @@
 /*! #######################################*/
 /*! ############### MOBILE ###############*/
 /*! #######################################*/
-
+.investment-platform-maintanance,
 #NotFound404ErrorPage{
     padding: 5% 0 5% 0;
-    
+
     justify-content: center;
 }
+.investment-platform-maintanance img,
 #NotFound404ErrorPage img{
     width: 40%;
     height: auto;
 }
+.investment-platform-maintanance .sectionInfo,
 #NotFound404ErrorPage .sectionInfo{
     flex-direction: row;
     flex-wrap: wrap;
 }
+.investment-platform-maintanance h1,
+.investment-platform-maintanance h2,
 #NotFound404ErrorPage h1{
     width: 96%;
+    text-align: center;
     font-size: 2.5em;
 }
 
+.investment-platform-maintanance .degradedLink,
 #NotFound404ErrorPage .degradedLink{
     width: 40%;
     margin: 1% 2%;
@@ -29,16 +35,18 @@
 /*! ########################################*/
 @media (min-width: 481px) {
 
+    .investment-platform-maintanance img,
     #NotFound404ErrorPage img{
         width: 35%;
     }
-    
+
 }
-    
+
 /*! ########################################*/
 /*! ################ LAPTOPS ###############*/
 /*! ########################################*/
 @media (min-width: 769px) {
+    .investment-platform-maintanance,
     #NotFound404ErrorPage{
         width: 100%;
         flex-direction: row;
@@ -46,22 +54,32 @@
         align-items: center;
         padding: 2% 5%;
     }
-    
+
+    .investment-platform-maintanance img,
     #NotFound404ErrorPage img{
         width: 40%;
     }
+
+    .investment-platform-maintanance .sectionInfo,
     #NotFound404ErrorPage .sectionInfo{
         width: fit-content;
         padding: 0 0 0 2%;
         justify-content: flex-start;
     }
+
+    .investment-platform-maintanance h1,
+    .investment-platform-maintanance h2,
     #NotFound404ErrorPage .sectionInfo h1{
         text-align: start;
         font-size: 3em;
     }
+
+    .investment-platform-maintanance .sectionInfo .degradedLink,
     #NotFound404ErrorPage .sectionInfo .degradedLink{
         margin: 1% 5% 0 0
     }
+
+    .investment-platform-maintanance .sectionInfo .degradedLink a,
     #NotFound404ErrorPage .sectionInfo .degradedLink a{
         font-size: 1.7em;
     }
@@ -71,19 +89,29 @@
 /*! ############ LARGER DESKTOPS ###########*/
 /*! ########################################*/
 @media (min-width: 1280px) {
-    
+
+    .investment-platform-maintanance img,
     #NotFound404ErrorPage img{
         width: 35%;
     }
+
+    .investment-platform-maintanance .sectionInfo,
     #NotFound404ErrorPage .sectionInfo{
         padding: 0 0 0 5%;
     }
+
+    .investment-platform-maintanance h1,
+    .investment-platform-maintanance h2,
     #NotFound404ErrorPage .sectionInfo h1{
         font-size: 4em;
     }
+
+    .investment-platform-maintanance .sectionInfo .degradedLink,
     #NotFound404ErrorPage .sectionInfo .degradedLink{
         width: 35%;
     }
+
+    .investment-platform-maintanance .sectionInfo .degradedLink a,
     #NotFound404ErrorPage .sectionInfo .degradedLink a{
         font-size: 2em;
     }

@@ -28,7 +28,7 @@ import "./assets/css/404NotFound.css"
 //* ### COMPONENTS ###
 import Header from "./components/Header";
 
-import WhatsappButton from './components/WhatsappButton'
+/* import WhatsappButton from './components/WhatsappButton' */
 import Footer from "./components/Footer/Footer";
 
 //* DATA
@@ -45,7 +45,7 @@ const Contact = lazy(()=> import('./pages/Contact'))
 const Faq = lazy(()=> import("./pages/Faq"))
 const Error404 = lazy(()=> import('./pages/Error404'))
 const Terms = lazy(()=> import("./pages/Terms"))
-
+const InvestmentPlatform = lazy(()=> import("./pages/InvestmentPlatform"))
 export default function App() {
 
   const [articles,setArticles]=useState([])
@@ -100,6 +100,10 @@ export default function App() {
     {
       component: <Error404 metaData={metaData.error404} />,
       path: "/*"
+    },
+    {
+      component: <InvestmentPlatform />,
+      path: "/plataforma-de-inversiones"
     }
   ]
   useEffect(() => {
