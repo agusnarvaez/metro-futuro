@@ -1,17 +1,18 @@
 import {useState} from 'react';
-import DegradedLink from '../../components/DegradedLink';
+import DegradedLink from '../../components/DegradedLink'
+import DegradedNavLink from '../../components/DegradedNavLink'
 // Componentes
-import HomeInvStepsCard from "./HomeInvStepsCard";
+import HomeInvStepsCard from "./HomeInvStepsCard"
 
 // Background
-import investmentStepsBg from "../../assets/img/background/homeInvestmentStepsBg.svg";
+import investmentStepsBg from "../../assets/img/background/homeInvestmentStepsBg.svg"
 
 // Flechas carrousel
 import rightArrowHomeCarrousel from "../../assets/img/icons/rightArrow.png"
 import leftArrowHomeCarrousel from "../../assets/img/icons/leftArrow.png"
 
 // Info Carrousel
-import carrouselInfo from "../../data/homeCarrouselInfo";
+import carrouselInfo from "../../data/homeCarrouselInfo"
 
 export default function HomeInvestmentSteps() {
 
@@ -22,7 +23,7 @@ export default function HomeInvestmentSteps() {
         <section id="homeInvestmentSteps">
                 <div className="sectionInfo_subsection sectionInfo_subsection--column">
                     <h2 id="homeInvestmentSteps_subTitle" className="section_subTitle section_subTitle--left">¿Cómo <font color="#004DFF">invertir</font> en simples pasos?</h2>
-                    <DegradedLink text="Invierte" id="homeInvestmentSteps_desktopLink" route="https://app.metro-futuro.com/project-detail/f63c7d96-38f4-410c-bcdd-30eecd3065c7" backgroundColor="white"/>
+                    <DegradedNavLink text="Invierte" id="homeInvestmentSteps_desktopLink" route="/inmuebles" backgroundColor="white"/>
                 </div>
                 <div className="sectionInfo_subsection sectionInfo_subsection--column" id='homeCarrousel'>
                     <div className="carrouselNav" id="homeCarrouselNav">
@@ -54,7 +55,7 @@ export default function HomeInvestmentSteps() {
                             {carrouselInfo.map((card,key) => <HomeInvStepsCard card={card} key={key} />)}
                         </div>
                     </div>
-                    <DegradedLink text="Invierte" id="homeInvestmentSteps_mobileLink" route="https://app.metro-futuro.com/project-detail/f63c7d96-38f4-410c-bcdd-30eecd3065c7" backgroundColor="white"/>
+                    <DegradedNavLink text="Invierte" id="homeInvestmentSteps_mobileLink" route="/inmuebles" backgroundColor="white"/>
                 </div>
             {/* ### Background ### */}
             <img className="sectionBackground--desktop" alt="homeInvestmentStepsBg" title='homeInvestmentStepsBg' src={investmentStepsBg} loading="lazy"/>

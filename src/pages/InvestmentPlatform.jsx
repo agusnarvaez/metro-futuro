@@ -23,7 +23,7 @@ export default function InvestmentPlatform({difficulty}) {
 
                 <h1>¡La plataforma está en mantenimiento!</h1>
 
-				<h2>Estaremos volviendo a la brevedad</h2>
+				<h2>Estamos realizando un upgrade en nuestra plataforma tecnológica para mejorar la experiencia de nuestros usuarios. Estaremos volviendo a la brevedad.</h2>
 
                 <DegradedNavLink route="/" text="Volver a la Home" backgroundColor="white" id="404ErrorLinkToHome"/>
 
