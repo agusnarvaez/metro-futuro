@@ -315,6 +315,7 @@
     .investmentsPageProjectInfo{
         justify-content: space-between;
         flex-direction: column;
+        align-self: flex-start;
         /* margin: 0% 2% 0% 2%; */
         padding: 2%;
         width: 60%;
@@ -370,7 +371,7 @@
     }
 
     .investmentsPageProjectInfo{
-        align-self: center;
+        align-self: flex-start;
         height: 100%;
         width: 65%;
     }
