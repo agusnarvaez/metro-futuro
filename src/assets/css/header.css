@@ -70,7 +70,7 @@
 .header .hiddenMenu{
     width: 100%;
     position: absolute;
-    top: -700%;
+    top: -800%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,7 +100,13 @@
     -webkit-background-clip: text;
     -webkit-border-image: fill;
 }
-
+.login-button-li{
+    width: 75%;
+}
+#login-button{
+    /* min-width: 250px; */
+    width: 100%;
+}
 
 /*! ########################################*/
 /*! ##### TABLETS & LARGER SMARTPHONES #####*/
@@ -148,10 +154,14 @@
         transition: none;
         height: 100%;
     }
+
     .headerIcons{
         width: fit-content;
         justify-content: flex-start;
         padding: 0;
+    }
+    .login-button-li{
+        width: 16%;
     }
 }
 
@@ -169,4 +179,6 @@
     .header .navigation{
         width: 70%;
     }
+
+    
 }

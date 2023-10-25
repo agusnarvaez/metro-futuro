@@ -28,7 +28,6 @@ export default function InvestmentDetail({list,setList,metaData,investments,setI
 
     const [investment,setInvestment]=useState({});
     const [newMetaData,setNewMetaData] = useState(metaData)
-    const degLinkId="degradedLink--inverted"
 
     useEffect(() => {
 

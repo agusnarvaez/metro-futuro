@@ -1,6 +1,6 @@
 
-import HeaderNavLink from "./HeaderNavLink";
-
+import HeaderNavLink from "./HeaderNavLink"
+import DegradedLink from "../DegradedLink"
 export default function HeaderNav({burgerMenu,setBurgerMenu}) {
 
     const links = [
@@ -43,6 +43,7 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
                             burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}
                         />
                 )})}
+                <li className="login-button-li"><DegradedLink  text="Iniciar sesión" route='https://app.metro-futuro.com/login' backgroundColor="" id="login-button" inverted={true} /></li>
             </ul>
     )
 }

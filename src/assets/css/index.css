@@ -450,16 +450,17 @@ li{
     .degradedLink:active .degradedLink_Text{
         -webkit-text-fill-color: #FBFDFF;
     }
-    #degradedLink--inverted .degradedLink_TextContainer{
+
+    .degradedLink--inverted .degradedLink_TextContainer{
         background: transparent;
     }
-    #degradedLink--inverted .degradedLink_Text{
+    .degradedLink--inverted .degradedLink_Text{
         -webkit-text-fill-color: #FBFDFF;
     }
-    #degradedLink--inverted:hover .degradedLink_TextContainer{
+    .degradedLink--inverted:hover .degradedLink_TextContainer{
         background: #FBFDFF !important;
     }
-    #degradedLink--inverted:hover .degradedLink_Text{
+    .degradedLink--inverted:hover .degradedLink_Text{
         background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;

@@ -8,14 +8,14 @@ export default function HeaderNavLink({link,index,links,burgerMenu,setBurgerMenu
     const scrollToTop = () =>{
         setBurgerMenu(!burgerMenu)
         window.scrollTo({
-          top: 0, 
+          top: 0,
           behavior: 'smooth'
         });
       };
     return (
         <>
             <li>
-                <NavLink 
+                <NavLink
                     onClick={scrollToTop}
                     className={({ isActive }) => (isActive ? "navLink active" : "navLink")}
                     to={link.to}
@@ -25,7 +25,7 @@ export default function HeaderNavLink({link,index,links,burgerMenu,setBurgerMenu
                     {link.title}
                 </NavLink>
             </li>
-            <div className={index>=0&&index<(links.length-1)?"degradedSeparator degradedSeparator--header":""}/>
+            <div className={index>=0/* &&index<(links.length-1) */?"degradedSeparator degradedSeparator--header":""}/>
         </>
     )
 }
