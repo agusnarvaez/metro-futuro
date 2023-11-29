@@ -6,7 +6,7 @@ import {useParams,useNavigate } from "react-router-dom"
 
 //* API de contentful
 import {handleListItems} from "../utils/listFunctions"
-//* SECTIONS 
+//* SECTIONS
 import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover";
 import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle";
 import LearnCourseInfo from "../sections/LearnCourse/LearnCourseInfo";
@@ -33,8 +33,8 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 		}
 	}
 	useEffect(() => {
-		
-		handleListItems(list,setList,learnArticles,setLearnArticles,itemID,item,setItem,newMetaData,setNewMetaData,navigate)           
+
+		handleListItems(list,setList,learnArticles,setLearnArticles,itemID,item,setItem,newMetaData,setNewMetaData,navigate)
 
     }, [list,params.id,pathSplited,setList,newMetaData,setNewMetaData,metaData,learnArticles,setLearnArticles,item,navigate,itemID]);
 
@@ -42,7 +42,7 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 		<main className='learnCoursePage'>
 
 			<HelmetData metaData={newMetaData} />
-			
+
 			{courseItems().map((item,key)=>item)}
 
 		</main>
