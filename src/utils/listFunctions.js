@@ -51,7 +51,7 @@ const selectItem = async (item,setItem,list,itemID,meta,setMeta) =>{
         setMeta({
             ...meta,
             title: item.title,
-            description:item.shortDescription,
+            description:item.shortDescription||item.description,
         })
     }
 }
