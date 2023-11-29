@@ -23,7 +23,7 @@ export default function HomeInvestmentSteps() {
         <section id="homeInvestmentSteps">
                 <div className="sectionInfo_subsection sectionInfo_subsection--column">
                     <h2 id="homeInvestmentSteps_subTitle" className="section_subTitle section_subTitle--left">¿Cómo <font color="#004DFF">invertir</font> en simples pasos?</h2>
-                    <DegradedNavLink text="Invierte" id="homeInvestmentSteps_desktopLink" route="/contacto" backgroundColor="white"/>
+                    <DegradedNavLink text="Invierte" id="homeInvestmentSteps_desktopLink" route="/inmuebles" backgroundColor="white"/>
                 </div>
                 <div className="sectionInfo_subsection sectionInfo_subsection--column" id='homeCarrousel'>
                     <div className="carrouselNav" id="homeCarrouselNav">

@@ -20,10 +20,10 @@ export default function BottomFooter() {
 				to:'/sobre-nosotros',
 				text: 'Quienes somos'
 			},
-		/* 	{
+			{
 				to:'/inmuebles',
 				text: 'Inmuebles'
-			}, */
+			},
 			{
 				to:'/aprende',
 				text: 'Academy'

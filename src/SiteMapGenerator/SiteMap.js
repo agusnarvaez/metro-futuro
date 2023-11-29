@@ -47,7 +47,7 @@ async function Sitemap() {
     { path: '/', changefreq: 'yearly', priority: 1.0 },
     { path: '/inicio', changefreq: 'yearly', priority: 0.9 },
     { path: '/aprende', changefreq: 'monthly', priority: 0.8 },
-    /* { path: '/inmuebles', changefreq: 'monthly', priority: 0.8 }, */
+    { path: '/inmuebles', changefreq: 'monthly', priority: 0.8 },
     { path: '/blog', changefreq: 'monthly', priority: 0.8 },
     { path: '/contacto', changefreq: 'monthly', priority: 0.8 },
     { path: '/sobre-nosotros', changefreq: 'monthly', priority: 0.6 },
@@ -63,7 +63,7 @@ async function Sitemap() {
 }
 
 async function  generateSitemapUrl(routes) {
-  const baseUrl = 'https://www.metro-futuro.com';
+  const baseUrl = 'https://metro-futuro.com';
 
   const list = await getFullListForSiteMap()
 	const blogList = filteredList(list,'blog')

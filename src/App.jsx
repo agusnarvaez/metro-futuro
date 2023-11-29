@@ -65,14 +65,14 @@ export default function App() {
       component: <LearnCourse list={articles} setList={setArticles} metaData={metaData.course} learnArticles={learnArticles} setLearnArticles={setLearnArticles} />,
       path: "/aprende/:id"
     },
-  /*   {
+    {
       component: <Investments list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData.investments} />,
       path: "/inmuebles"
     },
     {
       component: <InvestmentDetail list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} metaData={metaData.investmentDetail} />,
       path: "/inmuebles/:id"
-    }, */
+    },
     {
       component: <Learn list={articles} metaData={metaData.blog} setList={setArticles} learnArticles={blogArticles} setLearnArticles={setBlogArticles} />,
       path: "/blog"
@@ -101,10 +101,10 @@ export default function App() {
       component: <Error404 metaData={metaData.error404} />,
       path: "/*"
     },
-   /*  {
+    {
       component: <InvestmentPlatform />,
       path: "/plataforma-de-inversiones"
-    } */
+    }
   ]
   useEffect(() => {
     ReactGA.initialize('G-ZHYMQ1QR1B');

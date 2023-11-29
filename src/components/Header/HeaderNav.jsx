@@ -12,10 +12,10 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
             title:"Quienes somos",
             to:"/sobre-nosotros"
         },
-      /*   {
+        {
             title:"Inmuebles",
             to:"/inmuebles"
-        }, */
+        },
         {
             title:"Academy",
             to:"/aprende"
