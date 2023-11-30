@@ -4,10 +4,10 @@ const selectTitle = (param) => {
 	switch(param){
 		case "blog":
 			return "artículo";
-		case "learn":
+		case "aprende":
 			return "curso";
 		default:
-			return ""
+			return "curso"
 	}
 }
 
