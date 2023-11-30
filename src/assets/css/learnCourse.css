@@ -234,19 +234,20 @@
  .videoArrow{
    cursor:pointer;
    width: 25px;
-   transition: rotate 0.5s ease-in-out;
+   transition: rotate 0.3s ease-in-out;
  }
  .videoArrow--rotated{
    rotate: 180deg;
  }
  .learnCoursePage_videoContainer{
    width: 100%;
+   min-height: 80vh;
    max-height: 5000px;
-   transition: max-height 0.3s ease;
+   transition: all 0.3s ease;
  }
  .learnCoursePage_videoContainer--wrapped{
+   min-height: 0;
    max-height: 0;
-   transition: max-height 0.3s ease;
  }
  .learnCoursePage_videoContainer .youTubeVideo_Player{
    width: 100%;
