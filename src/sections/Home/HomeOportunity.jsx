@@ -16,6 +16,11 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
 
     const [investment,setInvestment]=useState({});
 
+    //Función que pase número con . a ,
+    function formatNumber(num) {
+        return num.toString().replace('.', ',')
+    }
+
     useEffect(()=>{
         getFullList(list,setList,investments,setInvestments)
 
@@ -30,7 +35,7 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
 
                     <h2 className='section_subTitle'>Invierte en inmuebles tokenizados en <span className="degradedText">{investment.country}</span></h2>
 
-                    <p className="section_paragraph">Genera ingresos pasivos con rendimientos de mas del {investment.rentProfit}% anual</p>
+                    <p className="section_paragraph">Genera ingresos pasivos con rendimientos de mas del {formatNumber(investment.rentProfit)}% anual</p>
 
                     <DegradedNavLink
                         id="homeOportunityLink"
