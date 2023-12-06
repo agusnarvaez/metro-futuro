@@ -241,11 +241,11 @@
  }
  .learnCoursePage_videoContainer{
    width: 100%;
-   min-height: 80vh;
+   min-height: 60vh;
    max-height: 5000px;
    transition: all 0.3s ease;
  }
- .learnCoursePage_videoContainer--wrapped{
+ .learnCoursePage_videoContainer.learnCoursePage_videoContainer--wrapped{
    min-height: 0;
    max-height: 0;
  }
@@ -354,5 +354,9 @@
 
    .learnCoursePage_videoContainer .youTubeVideo_Player{
       min-height: 700px !important;
+   }
+
+   .learnCoursePage_videoContainer{
+      min-height: 75vh;
    }
 }
