@@ -51,6 +51,7 @@
 
 #learnCoursesCard img{
     width: 100%;
+    min-height: 190px;
     height: 40%;
     object-fit: cover;
     border-radius: 10px;
