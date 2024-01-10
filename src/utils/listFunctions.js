@@ -50,7 +50,7 @@ const selectItem = async (item,setItem,list,itemID,meta,setMeta) =>{
     if(itemHasEntries(item)&&meta.title===""){
         setMeta({
             ...meta,
-            title: item.title,
+            title: item.metaTitle || item.title,
             description:item.shortDescription||item.description,
         })
     }
