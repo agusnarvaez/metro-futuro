@@ -1,10 +1,13 @@
 //* ### PÁGINA DE TÉRMINOS Y CONDICIONES ###
 
-export default function Terms() {
+import HelmetData from "../components/HelmetData"
 
+
+export default function Terms({metaData}) {
     return (
 
         <main className='termsPage'>
+            <HelmetData metaData={metaData} />
             <h1>Términos y condiciones</h1>
             <p>
                 Bienvenido a www.metro-futuro.com. Le rogamos que lea atentamente los presentes Términos de Servicio (los "<u>Términos</u>"), ya que rigen el uso del sitio web https://www.metro-futuro.com/ (el "<u>Sitio</u>"), la plataforma en la que los usuarios de dicha plataforma (denominados “<u>Usuario</u>” o colectivamente, “<u>Usuarios</u>”, “<u>Usted</u>” o palabras de significado similar) pueden comprar tokens (la “<u>Plataforma</u>”) operados por Metro Futuro (“<u>Metro Futuro</u>”, y conjuntamente con Usted serán cada uno una “<u>Parte</u>” del presente y colectivamente las “<u>Partes</u>”).
@@ -23,7 +26,7 @@ export default function Terms() {
             </p>
             <br></br>
             <h2>TÉRMINOS GENERALES PARA EL USO DE LA PLATAFORMA</h2>
-            
+
             <ol>
                 <li>
                     <u><b>Aceptación de los términos.</b></u>
@@ -96,7 +99,7 @@ export default function Terms() {
 
             <br></br>
             <h2>ACERCA DE LOS SERVICIOS</h2>
-            
+
             <ol>
                 <li>
                     <u><b>Partes.</b></u>
@@ -131,7 +134,7 @@ export default function Terms() {
                 <li>
                     <u><b>Comisiones.</b></u>
                     <p>
-                        Al comprar un Token en la Plataforma, Usted acepta pagar todas las tarifas informadas aplicables y autoriza a Metro Futuro a deducir automáticamente las tarifas (incluida cualquier tarifa de transacción y cualquier otra tarifa que pudiera ser aplicable a las transacciones en blockchain) y las tarifas de procesamiento de pagos, incluidas las tarifas de transacción de tarjetas de crédito, directamente de su pago. 
+                        Al comprar un Token en la Plataforma, Usted acepta pagar todas las tarifas informadas aplicables y autoriza a Metro Futuro a deducir automáticamente las tarifas (incluida cualquier tarifa de transacción y cualquier otra tarifa que pudiera ser aplicable a las transacciones en blockchain) y las tarifas de procesamiento de pagos, incluidas las tarifas de transacción de tarjetas de crédito, directamente de su pago.
                     </p>
                 </li>
                 <li>
@@ -156,7 +159,7 @@ export default function Terms() {
                 <li>
                     <u><b>Condiciones de los Tokens.</b></u>
                     <p>
-                        Cualquier Token que usted adquiera se regirá íntegramente por el contrato inteligente y la red blockchain que rigen dicho Token. 
+                        Cualquier Token que usted adquiera se regirá íntegramente por el contrato inteligente y la red blockchain que rigen dicho Token.
                     </p>
                 </li>
                 <li>
