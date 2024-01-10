@@ -24,7 +24,7 @@ const metaData = {
     about:
         {
             title: "Sobre Nosotros - Conoce el equipo",
-            description:"Conocé nuestra historia y fundamentos que forjan nuestro éxito y confiabilidad",
+            description:"Somos una empresa que se dedica a ofrecer inversiones tokenizadas en Europa con foco en España para que puedas diversificar tu cartera de inversiones.",
             keywords:"sobre nosotros, equipo, foco, servicios, inversiones, misión, visión, valores",
             cannonical: "https://www.metro-futuro.com/sobre-nosotros"
         },
