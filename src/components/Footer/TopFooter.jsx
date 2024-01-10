@@ -1,10 +1,10 @@
 
 
 //* IMAGES
-import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.png";
+import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.png"
 
 //* COMPONENTS
-import FooterLinks from './FooterLinks';
+import FooterLinks from './FooterLinks'
 
 export default function BottomFooter() {
 
@@ -69,8 +69,8 @@ export default function BottomFooter() {
           behavior: 'smooth'
           /* you can also use 'auto' behaviour
              in place of 'smooth' */
-        });
-      };
+        })
+      }
 
 	return (
 

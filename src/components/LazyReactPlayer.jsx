@@ -1,10 +1,10 @@
 //* ### LINK DEGRADADO A PÁGINA EXTERIOR ###
-import { lazy, Suspense } from 'react';
-const ReactPlayer = lazy(() => import('react-player/lazy'));
+import { lazy, Suspense } from 'react'
+const ReactPlayer = lazy(() => import('react-player/lazy'))
 
 
 export default function LazyReactPlayer({url,borderRadius}) {
-    
+
     return (
         <Suspense fallback={<div>Loading...</div>}>
                 <ReactPlayer
@@ -18,6 +18,6 @@ export default function LazyReactPlayer({url,borderRadius}) {
                         border="none"
                     />
             </Suspense>
-        
+
         )
 }

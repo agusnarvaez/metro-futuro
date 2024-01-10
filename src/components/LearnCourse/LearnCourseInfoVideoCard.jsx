@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import learnCourseVideoDownArrow from '../../assets/img/icons/learnCourseVideoDownArrow.svg';
-import LazyReactPlayer from '../LazyReactPlayer';
+import { useState } from 'react'
+import learnCourseVideoDownArrow from '../../assets/img/icons/learnCourseVideoDownArrow.svg'
+import LazyReactPlayer from '../LazyReactPlayer'
 
 export default function LearnCourseInfoVideoCard({title,link}){
 	const [showVideo,setShowVideo]=useState(false)
@@ -14,6 +14,6 @@ export default function LearnCourseInfoVideoCard({title,link}){
 			<div className={showVideo?"learnCoursePage_videoContainer":"learnCoursePage_videoContainer learnCoursePage_videoContainer--wrapped"}>
 				<LazyReactPlayer url={link} />
 			</div>
-		</div>	
+		</div>
 	)
 }

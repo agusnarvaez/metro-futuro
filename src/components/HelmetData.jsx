@@ -1,6 +1,6 @@
 
 //* REACT-HELMET
-import { Helmet,HelmetProvider } from 'react-helmet-async';
+import { Helmet,HelmetProvider } from 'react-helmet-async'
 
 export default function HelmetData({metaData}) {
     const isFound = metaData.title !== "Página no encontrada | Error 404"

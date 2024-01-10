@@ -1,20 +1,20 @@
 // Importo React
-import { useState } from "react";
+import { useState } from "react"
 
 // Componentes
-import FAQCard from "./FAQCard";
+import FAQCard from "./FAQCard"
 
 // Íconos
 
-import completeFaqList from "../../data/faqList";
+import completeFaqList from "../../data/faqList"
 
 export default function HiddenFAQ() {
 
     // Controladores de cruces para mostrar info (+)
-    const [homeFaqHidden,setHomeFaqHidden]= useState(true);
-    const faqList = completeFaqList.hidden;
-    
-    
+    const [homeFaqHidden,setHomeFaqHidden]= useState(true)
+    const faqList = completeFaqList.hidden
+
+
 return (
 
     <div className="hiddenFaqs">
@@ -23,7 +23,7 @@ return (
                 return (
                     <FAQCard item={item} faqList={faqList} key={key}/>
                 )
-            })} 
+            })}
         </ul>
 
         <div className="degradedLink" id="faqLink"
@@ -39,7 +39,7 @@ return (
                     </p>
                 </div>
         </div>
-        
+
     </div>
     )
 }

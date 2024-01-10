@@ -1,13 +1,13 @@
 
 // Componentes
-import FAQCard from "./FAQCard";
+import FAQCard from "./FAQCard"
 // Íconos
-import completeFaqList from "../../data/faqList";
+import completeFaqList from "../../data/faqList"
 
 export default function PrincipalFAQ() {
 
     // Controladores de cruces para mostrar info (+)
-    const faqList = completeFaqList.principal;
+    const faqList = completeFaqList.principal
 
 return (
 
@@ -16,7 +16,7 @@ return (
                 return (
                     <FAQCard item={item} faqList={faqList} key={key}/>
                 )
-            })} 
+            })}
         </ul>
     )
 }

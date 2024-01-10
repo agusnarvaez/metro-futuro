@@ -1,8 +1,8 @@
 //* Importo Hooks y ReactGA (Google Anlytics)
 
 // COMPONENTS
-import HomeFaq from "../sections/Home/HomeFaq";
-import HelmetData from "../components/HelmetData";
+import HomeFaq from "../sections/Home/HomeFaq"
+import HelmetData from "../components/HelmetData"
 
 export default function Faq({metaData}) {
 

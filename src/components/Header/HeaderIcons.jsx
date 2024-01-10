@@ -2,8 +2,8 @@
 import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.png"
 
 //* Ícono de menú
-import burgerMenuIcon from "../../assets/img/icons/burgerMenuIcon.svg";
-import burgerMenuCrossIcon from "../../assets/img/icons/BurgerMenuCrossIcon.svg";
+import burgerMenuIcon from "../../assets/img/icons/burgerMenuIcon.svg"
+import burgerMenuCrossIcon from "../../assets/img/icons/BurgerMenuCrossIcon.svg"
 
 import { NavLink } from 'react-router-dom'
 
@@ -12,8 +12,8 @@ export default function HeaderIcons({burgerMenu,setBurgerMenu}) {
         window.scrollTo({
           top: 0,
           behavior: 'smooth'
-        });
-      };
+        })
+      }
     return (
 
             <div className="headerIcons">

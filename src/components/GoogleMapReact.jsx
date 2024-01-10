@@ -1,12 +1,12 @@
 // Importo React y Component para hacerlo componente de clase
 // Importo Google Maps
 
-import GoogleMapReact from 'google-map-react';
+import GoogleMapReact from 'google-map-react'
 /* import Marker from 'google-map-react'
-import locationIcon from "../assets/img/icons/locationIcon.png"; */
+import locationIcon from "../assets/img/icons/locationIcon.png" */
 // Importo credenciales
-import credentials from "../credentials";
-import React from "react";
+import credentials from "../credentials"
+import React from "react"
 
 export default function Map ({coordinates}) {
     return(

@@ -1,6 +1,6 @@
 //* ### SECCIÓN APRENDE ###
 //* Importo Hooks y ReactGA (Google Anlytics)
-import {useEffect} from "react";
+import {useEffect} from "react"
 
 //* COMPONENTS
 import LearnSlogan from"../sections/Learn/LearnSlogan"
@@ -9,11 +9,11 @@ import HelmetData from "../components/HelmetData"
 
 import { pathSplitted } from "../utils/listFunctions.js"
 
-import {getFullList} from "../client/client.js";
+import {getFullList} from "../client/client.js"
 
 export default function Learn({metaData,list,setList,learnArticles,setLearnArticles}) {
-	
-	
+
+
 	useEffect(()=>{
 		getFullList(list,setList,learnArticles,setLearnArticles)
 	  },[list,setList,learnArticles,setLearnArticles])

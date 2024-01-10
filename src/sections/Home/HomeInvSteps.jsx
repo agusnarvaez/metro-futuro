@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import DegradedLink from '../../components/DegradedLink'
 import DegradedNavLink from '../../components/DegradedNavLink'
 // Componentes
 import HomeInvStepsCard from "./HomeInvStepsCard"

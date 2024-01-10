@@ -3,7 +3,7 @@ import DegradedNavLink from "../DegradedNavLink"
 
 export default function InvestmentCardInfo({investment,index}) {
 
-    const address = investment.street + ", " + investment.city + ", " + investment.country;
+    const address = investment.street + ", " + investment.city + ", " + investment.country
 
     const list = [
         {

@@ -7,10 +7,10 @@ import {useParams,useNavigate } from "react-router-dom"
 //* API de contentful
 import {handleListItems} from "../utils/listFunctions"
 //* SECTIONS
-import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover";
-import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle";
-import LearnCourseInfo from "../sections/LearnCourse/LearnCourseInfo";
-import HelmetData from "../components/HelmetData";
+import LearnCourseCover from "../sections/LearnCourse/LearnCourseCover"
+import LearnCourseTitle from "../sections/LearnCourse/LearnCourseTitle"
+import LearnCourseInfo from "../sections/LearnCourse/LearnCourseInfo"
+import HelmetData from "../components/HelmetData"
 
 export default function LearnCourse({list,setList,metaData,learnArticles,setLearnArticles}) {
 	//* Capturo los parámetros de la URL
@@ -36,7 +36,7 @@ export default function LearnCourse({list,setList,metaData,learnArticles,setLear
 
 		handleListItems(list,setList,learnArticles,setLearnArticles,itemID,item,setItem,newMetaData,setNewMetaData,navigate)
 
-    }, [list,params.id,pathSplited,setList,newMetaData,setNewMetaData,metaData,learnArticles,setLearnArticles,item,navigate,itemID]);
+    }, [list,params.id,pathSplited,setList,newMetaData,setNewMetaData,metaData,learnArticles,setLearnArticles,item,navigate,itemID])
 
 	return (
 		<main className='learnCoursePage'>

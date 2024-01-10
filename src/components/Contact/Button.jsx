@@ -1,5 +1,5 @@
 
-import check from '../../assets/img/icons/check.svg';
+import check from '../../assets/img/icons/check.svg'
 
 export default function ContactInputs({buttonClass,setButtonClass}) {
 
@@ -14,7 +14,7 @@ export default function ContactInputs({buttonClass,setButtonClass}) {
                       {/*   <div className="contactSubmit--loading__center"></div> */}
                         <div className="contactSubmit--loading__rotation"></div>
                 </button>
-                    );
+                    )
             case "contactSubmit degradedLink contactSubmit--success": return (
                 <button
                 className={buttonClass}
@@ -31,7 +31,7 @@ export default function ContactInputs({buttonClass,setButtonClass}) {
                 className={buttonClass}
                 >
                     <p>X ¡Ups! Ha habido un error</p>
-                </button>);
+                </button>)
         default: return (
             <button
                 className={buttonClass}

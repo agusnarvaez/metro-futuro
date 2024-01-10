@@ -86,4 +86,4 @@ hidden: [
       cross: true,
   }
 ]}
-export default faqList;
+export default faqList

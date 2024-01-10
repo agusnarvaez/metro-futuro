@@ -84,5 +84,5 @@ const metaData = {
             keywords:"inversiones, real, estate, españa, token, blockchain, metro futuro",
             cannonical: "https://www.metro-futuro.com/"
         },
-};
-export default metaData;
+}
+export default metaData

@@ -24,4 +24,4 @@ export default function Error404({metaData}) {
             </div>
         </main>
     )
-};
+}

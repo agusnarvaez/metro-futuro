@@ -1,23 +1,23 @@
 //* Importo React
-import { useState,useRef } from "react";
+import { useState,useRef } from "react"
 
 
 //* API de Emails
-import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com'
 
-import { fieldsList,frmContact } from "../../utils/contactFields";
+import { fieldsList,frmContact } from "../../utils/contactFields"
 
-import credentials from "../../credentials";
+import credentials from "../../credentials"
 
 //* Componentes
-import ContactInputs from "../../components/Contact/ContactInputs";
-import Button from "../../components/Contact/Button";
+import ContactInputs from "../../components/Contact/ContactInputs"
+import Button from "../../components/Contact/Button"
 
 export default function ContactForm() {
 
     //* Hook de mail a enviar
-    const [contact, setContact] = useState(frmContact);
-    const [buttonClass,setButtonClass] = useState("contactSubmit degradedLink");
+    const [contact, setContact] = useState(frmContact)
+    const [buttonClass,setButtonClass] = useState("contactSubmit degradedLink")
     const [successMessage,setSuccessMessage] = useState(false)
     const fields = useRef(fieldsList)
 
@@ -30,9 +30,9 @@ export default function ContactForm() {
         if(fields.current.some(field=>field.isValid===false)){
 
             if(fields.current[fields.current.length-1].isValid===false){
-                fields.current[fields.current.length-1].showErrors=true;
+                fields.current[fields.current.length-1].showErrors=true
             }else{
-                fields.current[fields.current.length-1].showErrors=false;
+                fields.current[fields.current.length-1].showErrors=false
             }
             alert("Por favor revise los campos!")
 
@@ -58,7 +58,7 @@ export default function ContactForm() {
                     (err) => {
                         console.log('ERROR:\n', err)
                         setButtonClass("contactSubmit contactSubmit--error")
-                    });
+                    })
         }
     }
 

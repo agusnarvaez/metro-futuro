@@ -3,7 +3,7 @@
 //* #######################
 
 //* COMPONENTS
-import InvestmentCardCover from "./InvestmentCardCover";
+import InvestmentCardCover from "./InvestmentCardCover"
 import InvestmentCardInfo from "./InvestmentCardInfo"
 
 export default function InvestmentCard({investment,index}) {

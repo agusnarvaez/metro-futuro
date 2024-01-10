@@ -20,4 +20,4 @@ const homeCarrouselInfo = [
       text: "Una vez realizado el pago, recibes tus tokens en tu billetera digital para poder disponer de ellos o recibir tu renta mensualmente."
   }
 ]
-export default homeCarrouselInfo;
+export default homeCarrouselInfo

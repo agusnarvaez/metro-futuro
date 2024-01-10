@@ -1,11 +1,11 @@
 //* Componentes
-import HomeBenefitCard from './HomeBenefitsCard';
+import HomeBenefitCard from './HomeBenefitsCard'
 
 //* Background
-import homeBenefitsBg from "../../assets/img/background/homeBenefitsBg.svg";
+import homeBenefitsBg from "../../assets/img/background/homeBenefitsBg.svg"
 
 //* Imágenes
-import building from '../../assets/img/building.jpg';
+import building from '../../assets/img/building.jpg'
 
 //* Íconos
 import invertIcon from '../../assets/img/icons/homeInvert.svg'
@@ -42,7 +42,7 @@ export default function HomeBenefits() {
             {
                 img: suitcaseIcon,
                 title: "Liquidez",
-                text: "Liquidez inmediata; vende tus tokens a un tercero en cualquier momento"
+                text: "Liquidez inmediata vende tus tokens a un tercero en cualquier momento"
             },
             {
                 img: markIcon,

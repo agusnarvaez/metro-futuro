@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react'
-import LearnCourseInfoVideoCard from "./LearnCourseInfoVideoCard";
+import LearnCourseInfoVideoCard from "./LearnCourseInfoVideoCard"
 
 export default function LearnCourseInfoVideos({item}){
 
@@ -8,7 +8,7 @@ export default function LearnCourseInfoVideos({item}){
 
 	useEffect(() => {
 		if(item!==undefined){
-			
+
 			if(item.youTubeVideosTitles.length===0){
 				setVideos(<p>Aún no se encuentran videos disponibles</p>)
 			}else{

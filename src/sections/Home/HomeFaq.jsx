@@ -1,13 +1,13 @@
-import React from "react";
+import React from "react"
 
-import PrincipalFAQ from "../FAQ/PrincipalFAQ";
+import PrincipalFAQ from "../FAQ/PrincipalFAQ"
 
-import HiddenFAQ from "../FAQ/HiddenFAQ";
+import HiddenFAQ from "../FAQ/HiddenFAQ"
 
 export default function HomeFaq() {
-    
+
 return (
-    
+
     <section className="sectionInfo" id="homeFaq">
 
         {/**Título**/}

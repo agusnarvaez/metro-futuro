@@ -1,7 +1,7 @@
 // Icons
-import missionIcon from "../assets/img/icons/missionIcon.svg";
-import visionIcon from "../assets/img/icons/visionIcon.svg";
-import valuesIcon from "../assets/img/icons/valuesIcon.svg";
+import missionIcon from "../assets/img/icons/missionIcon.svg"
+import visionIcon from "../assets/img/icons/visionIcon.svg"
+import valuesIcon from "../assets/img/icons/valuesIcon.svg"
 
 
 const aboutFocusItems = [
@@ -20,5 +20,5 @@ const aboutFocusItems = [
       title: "Valores",
       text:"El conocimiento, la transparencia e inclusión son los valores principales para un trabajo en equipo por el bien común."
   }
-];
-export default aboutFocusItems;
+]
+export default aboutFocusItems

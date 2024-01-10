@@ -1,7 +1,7 @@
 //* ### COMPONENTE FOOTER ###
 
 //* IMAGES
-import instagramLogo from "../../assets/img/icons/instagramLogo.svg";
+import instagramLogo from "../../assets/img/icons/instagramLogo.svg"
 
 //TODO: ESPERAR A QUE JUAN GENERE LAS REDES
 import linkedinLogo from "../../assets/img/icons/linkedInLogo.svg"
@@ -42,7 +42,7 @@ export default function FooterSocialLogos() {
 			href: "https://www.tiktok.com/@metrofuturo"
 		}
 
-	];
+	]
 
 	return (
 

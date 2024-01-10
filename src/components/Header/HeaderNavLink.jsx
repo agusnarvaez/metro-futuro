@@ -10,8 +10,8 @@ export default function HeaderNavLink({link,index,links,burgerMenu,setBurgerMenu
         window.scrollTo({
           top: 0,
           behavior: 'smooth'
-        });
-      };
+        })
+      }
     return (
         <>
             <li>

@@ -1,12 +1,12 @@
 
 
 // Fondo de pantalla
-import contactPageBg from "../assets/img/background/contactPageBg.svg";
+import contactPageBg from "../assets/img/background/contactPageBg.svg"
 
 //* COMPONENTES
-import HelmetData from "../components/HelmetData";
-import ContactSlogan from "../sections/Contact/ContactSlogan";
-import ContactForm from "../sections/Contact/ContactForm";
+import HelmetData from "../components/HelmetData"
+import ContactSlogan from "../sections/Contact/ContactSlogan"
+import ContactForm from "../sections/Contact/ContactForm"
 
 export default function Contact({metaData}) {
     return (

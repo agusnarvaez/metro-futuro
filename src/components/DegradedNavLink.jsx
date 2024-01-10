@@ -1,16 +1,16 @@
 //* ### LINK DEGRADADO A PÁGINA INTERNA ###
 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 export default function DegradedLink({id,text,route,backgroundColor}) {
 
     //* FUNCIÓN PARA DESLIZAR HACIA ARRIBA DE TODO
     const scrollToTop = () =>{
         window.scrollTo({
-          top: 0, 
+          top: 0,
           behavior: 'smooth'
-        });
-      };
+        })
+      }
 
     return (
         <div onClick={scrollToTop} className="degradedLink" id={id}>
@@ -22,8 +22,8 @@ export default function DegradedLink({id,text,route,backgroundColor}) {
                 </Link>
 
             </div>
-            
+
         </div>
-        
+
         )
 }

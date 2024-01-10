@@ -1,9 +1,9 @@
-import InvestmentDetailMediaArrows from "./InvestmentDetailMediaArrows";
+import InvestmentDetailMediaArrows from "./InvestmentDetailMediaArrows"
 
-import {useEffect,useState} from "react";
+import {useEffect,useState} from "react"
 
 export default function InvestmentDetailMediaImage({investment,images,objecFit}) {
-    const [index,setIndex] = useState(0);
+    const [index,setIndex] = useState(0)
 
     useEffect(()=>{
     },[index,setIndex,images,investment])

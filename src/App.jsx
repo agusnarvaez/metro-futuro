@@ -10,29 +10,29 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 //* #######################
 import "./assets/css/normalize.css"
 import "./assets/css/header.css"
-import "./assets/css/home.css";
-import "./assets/css/learn.css";
-import "./assets/css/learnCourse.css";
-import "./assets/css/about.css";
-import "./assets/css/contact.css";
-import "./assets/css/faqPage.css";
-import "./assets/css/footer.css";
-import "./assets/css/whatsappButton.css";
-import "./assets/css/investments.css";
-import "./assets/css/terms.css";
+import "./assets/css/home.css"
+import "./assets/css/learn.css"
+import "./assets/css/learnCourse.css"
+import "./assets/css/about.css"
+import "./assets/css/contact.css"
+import "./assets/css/faqPage.css"
+import "./assets/css/footer.css"
+import "./assets/css/whatsappButton.css"
+import "./assets/css/investments.css"
+import "./assets/css/terms.css"
 
 //*TODO:INVESTMENTS
 import "./assets/css/investmentDetail.css"
 import "./assets/css/404NotFound.css"
 
 //* ### COMPONENTS ###
-import Header from "./components/Header";
+import Header from "./components/Header"
 
 /* import WhatsappButton from './components/WhatsappButton' */
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer"
 
 //* DATA
-import metaData from "./data/metaData";
+import metaData from "./data/metaData"
 
 //* Lazy Loading de las páginas
 const Home = lazy(()=> import('./pages/Home'))
@@ -107,10 +107,10 @@ export default function App() {
     }
   ]
   useEffect(() => {
-    ReactGA.initialize('G-ZHYMQ1QR1B');
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+    ReactGA.initialize('G-ZHYMQ1QR1B')
+    ReactGA.set({ page: window.location.pathname })
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
   return (
     <Suspense fallback={<div className="loading">Cargando...</div>}>
       <BrowserRouter>
@@ -125,5 +125,5 @@ export default function App() {
 
       </BrowserRouter>
     </Suspense>
-  );
+  )
 }

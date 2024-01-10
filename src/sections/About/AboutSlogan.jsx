@@ -1,6 +1,6 @@
 // Componentes
 import DegradedLink from '../../components/DegradedLink'
-import DegradedNavLink from '../../components/DegradedNavLink'
+
 export default function AboutSlogan() {
 
     return (

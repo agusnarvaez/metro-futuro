@@ -1,8 +1,8 @@
 // Logos
-import linkedinLogo from "../../assets/img/icons/aboutLinkedinLogo.svg";
+import linkedinLogo from "../../assets/img/icons/aboutLinkedinLogo.svg"
 
 export default function AboutTeamCard({teamMember}) {
-    
+
     return (
             <li className='aboutTeamCard'>
                 <div className="aboutTeamImage">
@@ -18,8 +18,8 @@ export default function AboutTeamCard({teamMember}) {
                 <div className="aboutTeamInfo">
                     <h3>{teamMember.name}</h3>
                     <p>{teamMember.function}</p>
-                    
-                    <a 
+
+                    <a
                         target="_blank"
                         href={teamMember.linkedin}
                         rel="noopener noreferrer"

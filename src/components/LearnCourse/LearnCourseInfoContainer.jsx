@@ -1,7 +1,7 @@
 //* COMPONENTS
-import LearnCourseInfoDescription from "./LearnCourseInfoDescription";
-import LearnCourseInfoVideos from "./LearnCourseInfoVideos";
-/* import LearnCourseInfoAditional from "./LearnCourseInfoAditional"; */
+import LearnCourseInfoDescription from "./LearnCourseInfoDescription"
+import LearnCourseInfoVideos from "./LearnCourseInfoVideos"
+/* import LearnCourseInfoAditional from "./LearnCourseInfoAditional" */
 
 import {useEffect,useState} from 'react'
 
@@ -12,7 +12,7 @@ export default function LearnCourseInfoContainer({infoIndex,item}) {
 
 	const [info,setInfo] = useState([])
 	//* Función que define los elementos a mostrar según el tipo de artículo
-	const infoContent = (type)=>{ 
+	const infoContent = (type)=>{
 		if(type==="blog"){
 			return ([<LearnCourseInfoDescription item={item} key={0} />])
 		}else{

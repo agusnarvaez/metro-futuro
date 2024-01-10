@@ -1,16 +1,16 @@
 
 // Componentes
-import AboutTeamCard from './AboutTeamCard';
+import AboutTeamCard from './AboutTeamCard'
 
 // Team avatars
-import jobCarreraAvatar from "../../assets/img/team/jobCarreraDiaz.png";
-import marielaScheloneAvatar from "../../assets/img/team/marielaSchelone.png";
-import pedroSilvestriAvatar from "../../assets/img/team/pedroSilvestri.png";
-import pedroNicholsonAvatar from "../../assets/img/team/pedroNicholson.png";
-import juanPorrazzoAvatar from "../../assets/img/team/juanPorrazzo.png";
+import jobCarreraAvatar from "../../assets/img/team/jobCarreraDiaz.png"
+import marielaScheloneAvatar from "../../assets/img/team/marielaSchelone.png"
+import pedroSilvestriAvatar from "../../assets/img/team/pedroSilvestri.png"
+import pedroNicholsonAvatar from "../../assets/img/team/pedroNicholson.png"
+import juanPorrazzoAvatar from "../../assets/img/team/juanPorrazzo.png"
 
 export default function AboutTeam() {
-    
+
     const teamList = [
         {
             name: "Job Carrera Diaz",

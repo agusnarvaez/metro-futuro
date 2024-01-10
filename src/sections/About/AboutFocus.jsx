@@ -1,12 +1,12 @@
 // Componente
-import AboutFocusCard from './AboutFocusCard';
+import AboutFocusCard from './AboutFocusCard'
 
 // Background
-import aboutFocusBg from "../../assets/img/background/aboutFocusBg.svg";
+import aboutFocusBg from "../../assets/img/background/aboutFocusBg.svg"
 
 
 // Lista de tarjetas
-import focusItems from '../../data/aboutFocusItems';
+import focusItems from '../../data/aboutFocusItems'
 
 export default function AboutFocus() {
     return (
@@ -20,8 +20,8 @@ export default function AboutFocus() {
                             <AboutFocusCard focus={item} key={key}/>
                         )
                     })}
-                    
-                    
+
+
                 </ul>
             </div>
             <img alt="sectionBackground" title='sectionBackground' className="sectionBackground--desktop" src={aboutFocusBg} loading="lazy"/>

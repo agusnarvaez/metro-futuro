@@ -1,11 +1,10 @@
 // Background
-import homePartnersBg from "../../assets/img/background/homePartnersBg.svg";
+import homePartnersBg from "../../assets/img/background/homePartnersBg.svg"
 
 // Logos Partners
-import metroXLogo from "../../assets/img/logos/metroXLogo.png";
-import stayRealTVLogo from "../../assets/img/logos/stayRealTVLogo.png";
-import brikenLogo from "../../assets/img/logos/brikenLogo.png";
-import PartnerCard from './PartnerCard';
+import metroXLogo from "../../assets/img/logos/metroXLogo.png"
+import stayRealTVLogo from "../../assets/img/logos/stayRealTVLogo.png"
+import PartnerCard from './PartnerCard'
 
 
 
