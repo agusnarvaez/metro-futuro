@@ -9,7 +9,6 @@ export default function SmallInput({field,contact,setContact}) {
             field.isValid = false
         }
     }
-    
     const handleChange = (event) => {
 
         const { name, value } = event.target
@@ -32,10 +31,10 @@ export default function SmallInput({field,contact,setContact}) {
     }
     return (
         <>
-            <div className={inputClass} id={field.type}>
+            <div className={inputClass} id={field.name}>
                 <input
                     className={field.class}
-                    id="input"
+                    id={field.name}
                     name={field.name}
                     placeholder={field.placeholder}
                     type={field.type}
@@ -43,6 +42,7 @@ export default function SmallInput({field,contact,setContact}) {
                     onFocus={()=>{setInputClass("inputContainer input--focus")}}
                     onBlur={handleBlur}
                     required
+                    autoComplete="on"
                 />
             </div>
             {field.showErrors?<p className="errorShown">{field.error}</p>:null}
