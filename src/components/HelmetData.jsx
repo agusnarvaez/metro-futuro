@@ -8,7 +8,7 @@ export default function HelmetData({metaData}) {
     return (
         <HelmetProvider>
             <Helmet defer={true}>
-                <title>Metro Futuro | {metaData.title}</title>
+                <title>{metaData.title}</title>
                 <meta property="og:title" content={`Metro Futuro | ${metaData.title}`}/>
 
                 {isFound &&
