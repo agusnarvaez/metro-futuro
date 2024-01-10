@@ -94,7 +94,7 @@ export default function App() {
       path: "/ayuda"
     },
     {
-      component: <Terms metaData={metaData.faq} />,
+      component: <Terms metaData={metaData.terms} />,
       path: "/terminos-y-condiciones"
     },
     {
