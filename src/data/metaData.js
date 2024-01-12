@@ -44,7 +44,7 @@ const metaData = {
         },
     blog:
         {
-            title: "Ínfórmate con nuestro blog",
+            title: "Ínfórmate con nuestro blog de Real Estate",
             description:"Explora las últimas tendencias y noticias del mercado inmobiliario con información actualizada sobre el sector del Real Estate.",
             keywords:"blog, novedades, real estate",
             cannonical: "https://www.metro-futuro.com/aprende"
@@ -58,7 +58,7 @@ const metaData = {
         },
     courses:
         {
-            title: "Aprende con Nosotros",
+            title: "Aprende con nosotros sobre Real Estate",
             description:"¡Explora el fascinante mundo del blockchain y su potencial para alcanzar tus metas económicas! Aprende sobre su historia y como puede ayudarte.",
             keywords:"cursos, novedades, real estate",
             cannonical: "https://www.metro-futuro.com/aprende"
