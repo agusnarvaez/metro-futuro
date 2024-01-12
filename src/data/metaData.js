@@ -3,14 +3,14 @@ const metaData = {
     home:
         {
             title: "Inversión en Real Estate Tokenizados en España",
-            description:"Enterate de las últimas novedades en Real Estate y como invertir en este fantástico mundo!",
+            description:"Descubre el mundo del Real Estate y aprende a invertir en él con las últimas novedades y consejos expertos. ¡Maximiza tus ganancias hoy mismo!",
             keywords:"inversiones, real, estate, españa, token, blockchain, metro futuro",
             cannonical: "https://www.metro-futuro.com/"
         },
     investments:
         {
             title: "Conoce nuestros inmuebles tokenizados",
-            description:"Invertí en inmuebles tokenizados en europa",
+            description:"Encuentra oportunidades de inversión en inmuebles tokenizados en España para maximizar tus ganancias y diversificar tu cartera.",
             keywords:"inversión, novedades, real estate",
             cannonical: "https://www.metro-futuro.com/inmuebles"
         },
@@ -31,21 +31,21 @@ const metaData = {
     contact:
         {
             title: "Ponte en contacto con nosotros",
-            description:"Realizá tu consulta al equipo para guiarte en el mundo de las inversiones tokenizadas",
+            description:"¿Necesitas más información? Ponte en contacto con nosotros . Estamos aquí para ayudarte con tus dudas, consultas o necesidades ¡Contáctanos ahora!",
             keywords:"contacto, consulta, inversiones",
             cannonical: "https://www.metro-futuro.com/contacto"
         },
     faq:
         {
             title: "Preguntas frecuentes sobre Metro Futuro",
-            description:"Descubre si algunas de tus dudas están compartidas por las de la comunidad",
+            description:"Descubre si tus dudas son compartidas por la comunidad y encuentra respuestas en este espacio de intercambio de ideas y conocimientos.",
             keywords:"faq, preguntas frecuentes, inversiones",
             cannonical: "https://www.metro-futuro.com/preguntasFrecuentes"
         },
     blog:
         {
             title: "Ínfórmate con nuestro blog",
-            description:"Descubre los últimos datos y novedades del Real Estate",
+            description:"Explora las últimas tendencias y noticias del mercado inmobiliario con información actualizada sobre el sector del Real Estate.",
             keywords:"blog, novedades, real estate",
             cannonical: "https://www.metro-futuro.com/aprende"
         },
@@ -59,7 +59,7 @@ const metaData = {
     courses:
         {
             title: "Aprende con Nosotros",
-            description:"Descubre la historia y los mecanismos para lograr tus objetivos económicos con el blockchain",
+            description:"¡Explora el fascinante mundo del blockchain y su potencial para alcanzar tus metas económicas! Aprende sobre su historia y como puede ayudarte.",
             keywords:"cursos, novedades, real estate",
             cannonical: "https://www.metro-futuro.com/aprende"
         },
