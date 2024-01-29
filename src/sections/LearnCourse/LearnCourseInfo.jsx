@@ -10,11 +10,13 @@ import { selectType } from '../../utils/learnFunctions';
 export default function LearnCourseInfo({item,type,pathSplited}) {
 	//* Selecciona el contenido para ver
 	const [infoIndex,setInfoIndex]=useState(0)
+
+	/* const isLearnCourse = pathSplited==="aprende" */
 	return (
 		<section className="learnCoursePage_Info">
-			{pathSplited==="aprende"?<LearnCourseInfoNav infoIndex={infoIndex} setInfoIndex={setInfoIndex}/>:""}
+			{/* {isLearnCourse&& <LearnCourseInfoNav infoIndex={infoIndex} setInfoIndex={setInfoIndex}/>} */}
 
-			{item?<LearnCourseInfoContainer infoIndex={infoIndex} item={item} url={pathSplited} type={selectType(pathSplited)}/>:""}
+			{item && <LearnCourseInfoContainer infoIndex={infoIndex} item={item} url={pathSplited} type={selectType(pathSplited)}/>}
 
 			<DegradedNavLink route={`/${pathSplited}`} text={`Más ${selectType(pathSplited)}s`} backgroundColor="white" />
 		</section>

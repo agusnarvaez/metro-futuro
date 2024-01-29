@@ -2,6 +2,7 @@
 import LearnCourseInfoDescription from "./LearnCourseInfoDescription"
 import LearnCourseInfoVideos from "./LearnCourseInfoVideos"
 /* import LearnCourseInfoAditional from "./LearnCourseInfoAditional" */
+import LearnCourseInfoDescriptionResume from './LearnCourseInfoDescriptionResume'
 
 import {useEffect,useState} from 'react'
 
@@ -32,8 +33,11 @@ export default function LearnCourseInfoContainer({infoIndex,item}) {
 	return (
 		<div className="learnCoursePage_InfoContainer">
 
-			{info.length===1?info:info[infoIndex]}
+			{/* {info.length===1?info:info[infoIndex]} */}
+			<LearnCourseInfoDescription item={item} key={0}/>
+			<LearnCourseInfoVideos item={item} key={1}/>
 
+			<LearnCourseInfoDescriptionResume item={item} />
 		</div>
 	)
 }

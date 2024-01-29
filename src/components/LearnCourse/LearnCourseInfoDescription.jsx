@@ -2,7 +2,6 @@
 
 /* import coursesList from '../../data/coursesList' */
 import LearnCourseInfoDescriptionContainer from './LearnCourseInfoDescriptionContainer'
-import LearnCourseInfoDescriptionResume from './LearnCourseInfoDescriptionResume'
 
 export default function LearnCourseInfoDescription({item}) {
 
@@ -12,7 +11,6 @@ export default function LearnCourseInfoDescription({item}) {
 
 			<LearnCourseInfoDescriptionContainer item={item}/>
 
-			<LearnCourseInfoDescriptionResume item={item} />
 
 		</div>
 	)
