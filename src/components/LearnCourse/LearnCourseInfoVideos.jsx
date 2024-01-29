@@ -14,7 +14,7 @@ export default function LearnCourseInfoVideos({item}){
 			}else{
 				setVideos(item.youTubeVideosTitles.map((videoTitle,key)=>{
 					return(
-						<LearnCourseInfoVideoCard title={videoTitle} link={item.youTubeLinks[key]} />
+						<LearnCourseInfoVideoCard title={videoTitle} link={item.youTubeLinks[key]} key={key} />
 					)})
 				)
 			}
