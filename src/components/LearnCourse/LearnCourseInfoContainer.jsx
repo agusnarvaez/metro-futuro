@@ -12,6 +12,8 @@ export default function LearnCourseInfoContainer({infoIndex,item}) {
 	const path = window.location.pathname.split('/')[1]
 
 	const [info,setInfo] = useState([])
+
+	const isCourse = path!=="blog"
 	//* Función que define los elementos a mostrar según el tipo de artículo
 	const infoContent = (type)=>{
 		if(type==="blog"){
@@ -34,8 +36,8 @@ export default function LearnCourseInfoContainer({infoIndex,item}) {
 		<div className="learnCoursePage_InfoContainer">
 
 			{/* {info.length===1?info:info[infoIndex]} */}
-			<LearnCourseInfoDescription item={item} key={0}/>
-			<LearnCourseInfoVideos item={item} key={1}/>
+			<LearnCourseInfoDescription item={item} />
+			{isCourse&&<LearnCourseInfoVideos item={item} />}
 
 			<LearnCourseInfoDescriptionResume item={item} />
 		</div>
