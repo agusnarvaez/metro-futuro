@@ -320,17 +320,23 @@
     #homeAbout{
         width: 95%;
         height: 60vh;
+        padding: 2%;
+    }
+    #homeAbout .sectionInfo{
+        padding: 0;
     }
     #homeAbout #homeAboutSubtitle{
         margin: 0;
-        padding: 0;
+        padding: 0 0 1% 0;
         text-align: start;
         width: 90%;
     }
     #homeAbout .section_paragraph{
-        width: 90%;
-        font-size: 2em;
+        width: 60%;
+        font-size: 1.5em;
+        line-height: 1.3em;
         text-align: start;
+        padding: 0% 0 1% 0;
     }
 
     #homeAboutLink{
