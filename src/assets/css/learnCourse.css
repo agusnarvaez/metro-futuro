@@ -209,7 +209,7 @@
     margin: 0 0 5% 0;
  }
  .learnCoursePage_InfoVideos{
-   width: 100%;
+   width: 80%;
    height: fit-content;
    display: flex;
    flex-direction: column;
@@ -244,8 +244,12 @@
  }
  .learnCoursePage_videoContainer{
    width: 100%;
-   min-height: 60vh;
+   min-height: 40vh;
    max-height: 5000px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
    transition: all 0.3s ease;
  }
  .learnCoursePage_videoContainer.learnCoursePage_videoContainer--wrapped{
@@ -343,7 +347,7 @@
       width: 35px;
     }
     .learnCoursePage_videoContainer .youTubeVideo_Player{
-      min-height: 600px !important;
+      min-height: 500px !important;
     }
 }
 
@@ -356,10 +360,10 @@
    }
 
    .learnCoursePage_videoContainer .youTubeVideo_Player{
-      min-height: 700px !important;
+      min-height: 400px !important;
    }
 
    .learnCoursePage_videoContainer{
-      min-height: 75vh;
+      min-height: 40vh;
    }
 }
