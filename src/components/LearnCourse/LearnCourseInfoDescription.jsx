@@ -7,11 +7,7 @@ export default function LearnCourseInfoDescription({item}) {
 
 	return (
 		<div className="learnCoursePage_InfoDescription">
-
-
 			<LearnCourseInfoDescriptionContainer item={item}/>
-
-
 		</div>
 	)
 }

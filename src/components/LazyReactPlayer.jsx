@@ -12,8 +12,7 @@ export default function LazyReactPlayer({url,borderRadius}) {
                         config={{ youtube: { playerVars: { origin: 'https://www.youtube.com' } },YTConfig: {'host': 'https://www.youtube.com'} }}
                         url={url}
                         controls
-                        width="80%"
-                        height="80%"
+                        
                         border-radius={borderRadius}
                         border="none"
                     />

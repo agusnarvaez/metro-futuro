@@ -36,7 +36,7 @@ export default function LearnCourseInfoContainer({infoIndex,item}) {
 		<div className="learnCoursePage_InfoContainer">
 
 			{/* {info.length===1?info:info[infoIndex]} */}
-			<LearnCourseInfoDescription item={item} />
+			{!isCourse&&<LearnCourseInfoDescription item={item} />}
 			{isCourse&&<LearnCourseInfoVideos item={item} />}
 
 			<LearnCourseInfoDescriptionResume item={item} />
