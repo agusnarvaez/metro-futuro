@@ -4,6 +4,48 @@
 
 
 /** ### LEARN SLOGAN ### */
+#learnPopUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+#learnPopUp h2{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
+}
+#learnPopUp form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin: 5% 0; */
+    gap: 2rem;
+}
+#learnPopUp form .inputContainer{
+    width: 50%;
+}
+#learnPopUp form .error{
+    color: red;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+
+}
+#learnPopUp form .degradedLink{
+    border: none;
+}
 #learnSlogan{
     width: 90%;
     height:50vh;
