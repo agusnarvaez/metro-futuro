@@ -87,12 +87,53 @@
     padding: 5% 0;
     z-index: 5;
 }
+li.academy-accordion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+}
 
+.academy-accordion span,
 .navLink{
     text-decoration: none;
     font-size: 2em;
     color: black;
     z-index: 5;
+}
+.academy-accordion span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+.academy-accordion span p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.academy-accordion span img{
+    position: absolute;
+    right: 0;
+
+}
+.academy-accordion ul{
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+}
+li.academy-accordion.show ul{
+    max-height: 1000px;
+
 }
 .active{
     -webkit-text-fill-color: transparent;
@@ -163,6 +204,30 @@
     .login-button-li{
         width: 16%;
     }
+    .header ul.navigation.hiddenMenu li.academy-accordion{
+        width: 20%;
+        height: 100%;
+        position: relative;
+        background-color: #FBFDFF;
+        z-index: 0;
+        padding: 0;
+    }
+    .header ul.navigation.hiddenMenu li.academy-accordion span{
+        height: 100%;
+        background-color: #FBFDFF;
+        z-index: 100;
+    }
+    li.academy-accordion ul{
+        position: absolute;
+        width: 150%;
+        background-color: #FBFDFF;
+        top: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    li.academy-accordion ul .degradedSeparator--header{
+        display: flex;
+    }
 }
 
 /*! ########################################*/
@@ -180,5 +245,5 @@
         width: 70%;
     }
 
-    
+
 }

@@ -1,8 +1,9 @@
-
+import { useState } from "react"
 import HeaderNavLink from "./HeaderNavLink"
 import DegradedLink from "../DegradedLink"
+import learnCourseVideoDownArrow from '../../assets/img/icons/learnCourseVideoDownArrow.svg'
 export default function HeaderNav({burgerMenu,setBurgerMenu}) {
-
+    const [showCourses,setShowCourses] = useState(false)
     const links = [
         {
             title:"Home",
@@ -15,14 +16,6 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
         {
             title:"Inmuebles",
             to:"/inmuebles"
-        },
-        {
-            title:"Academy",
-            to:"/aprende"
-        },
-        {
-            title:"Blog",
-            to:"/blog"
         },
         {
             title:"Contacto",
@@ -43,6 +36,17 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
                             burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}
                         />
                 )})}
+                <li className={`academy-accordion ${showCourses?'show':''}`} onClick={()=>{setShowCourses(!showCourses)}}>
+                    <span>
+                        <p>Academia</p>
+                        <img className={!showCourses?"videoArrow":"videoArrow videoArrow--rotated"}  alt="downArrow" title="downArrow" src={learnCourseVideoDownArrow} loading="lazy"/>
+                    </span>
+                    <ul>
+                        <li><HeaderNavLink link={{title:'Cursos On-demand', to:'/aprende'}} burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} /></li>
+                        <div className={"degradedSeparator degradedSeparator--header"}/>
+                        <li><HeaderNavLink link={{title:'Blog', to:'/blog'}} burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} /></li>
+                    </ul>
+                </li>
                 <li className="login-button-li"><DegradedLink  text="Iniciar sesión" route='https://app.metro-futuro.com/login' backgroundColor="" id="login-button" inverted={true} /></li>
             </ul>
     )
