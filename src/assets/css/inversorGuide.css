@@ -4,6 +4,13 @@
 .inversorGuidePage{
     scroll-behavior: smooth;
 }
+.inversorGuidePage h1{
+    font-size: 30px;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
+}
 
 .inversorGuidePage aside{
     /* width: 30%; */
@@ -94,6 +101,7 @@
 @media (min-width: 769px) {
     .inversorGuidePage h1{
         width: 100%;
+        font-size: 40px;
     }
     .inversorGuidePage{
         flex-direction: row;
@@ -109,6 +117,15 @@
         width: 69%;
         padding: 0;
     }
+    .inversorGuidePage aside ul,
+    .inversorGuidePage main section p,
+    .inversorGuidePage section ul li,
+    .inversorGuidePage main section ul li{
+        font-size: 20px;
+    }
+    .inversorGuidePage aside ul li{
+        font-size: 17px;
+    }
 }
 
 /*! ########################################*/
@@ -117,5 +134,17 @@
 @media (min-width: 1280px) {
     .inversorGuidePage{
         padding: 0 3%;
+    }
+    .inversorGuidePage h1{
+        font-size: 50px;
+    }
+    .inversorGuidePage aside ul,
+    .inversorGuidePage main section p,
+    .inversorGuidePage section ul li,
+    .inversorGuidePage main section ul li{
+        font-size: 25px;
+    }
+    .inversorGuidePage aside ul li{
+        font-size: 20px;
     }
 }
