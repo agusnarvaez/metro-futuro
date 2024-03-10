@@ -38,7 +38,8 @@ i{
 }
 html{
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
 }
 body {
     width: 100%;
@@ -47,7 +48,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     position: relative;
     background-color: #FBFAFF;
 }
@@ -69,7 +70,7 @@ main{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 section{
@@ -484,7 +485,7 @@ li{
 }
 .youTubeVideo_Player{
     width: 100% !important;
-    height: 50% !important;
+    height: 50%;
     border: none;
     border-radius: 30px;
     display: flex;
@@ -507,7 +508,7 @@ li{
     }
 
     .youTubeVideo_Player{
-        height: 70% !important;
+        height: 70% ;
     }
 
 }
@@ -744,7 +745,7 @@ li{
         z-index: 5;
     }
     .youTubeVideo_Player{
-        width: 50% !important;
+        width: 50%;
         height: 100%;
         border: none;
         border-radius: 30px;

@@ -84,5 +84,12 @@ const metaData = {
             keywords:"inversiones, real, estate, españa, token, blockchain, metro futuro",
             cannonical: "https://www.metro-futuro.com/"
         },
+    inversorGuide:
+        {
+            title: "Guía del Inversor",
+            description:"Descubre el mundo del Real Estate y aprende a invertir en él con las últimas novedades y consejos expertos. ¡Maximiza tus ganancias hoy mismo!",
+            keywords:"inversiones, real, estate, españa, token, blockchain, metro futuro",
+            cannonical: "https://www.metro-futuro.com/"
+        }
 }
 export default metaData

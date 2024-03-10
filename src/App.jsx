@@ -46,6 +46,7 @@ const Faq = lazy(()=> import("./pages/Faq"))
 const Error404 = lazy(()=> import('./pages/Error404'))
 const Terms = lazy(()=> import("./pages/Terms"))
 const InvestmentPlatform = lazy(()=> import("./pages/InvestmentPlatform"))
+const InversorGuide = lazy(()=> import("./pages/InversorGuide"))
 export default function App() {
 
   const [articles,setArticles]=useState([])
@@ -104,6 +105,10 @@ export default function App() {
     {
       component: <InvestmentPlatform />,
       path: "/plataforma-de-inversiones"
+    },
+    {
+      component: <InversorGuide metaData={metaData.inversorGuide} />,
+      path: "/guia-del-inversor"
     }
   ]
   useEffect(() => {

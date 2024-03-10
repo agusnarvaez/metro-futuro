@@ -1,0 +1,121 @@
+/*! #######################################*/
+/*! ############### MOBILE ###############*/
+/*! #######################################*/
+.inversorGuidePage{
+    scroll-behavior: smooth;
+}
+
+.inversorGuidePage aside{
+    /* width: 30%; */
+}
+
+.inversorGuidePage aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0% 0 25% 0;
+}
+.inversorGuidePage aside ul{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+    border-radius: 1rem;
+    padding: 5% 10%;
+}
+.inversorGuidePage aside ul li{
+    list-style:decimal;
+    font-size: 15px;
+}
+.inversorGuidePage aside ul li a{
+    text-decoration: none;
+    color: #000F33;
+}
+
+.inversorGuidePage main{
+    margin: 0;
+    background-color: transparent;
+}
+.inversorGuidePage main section{
+    flex-direction: column;
+    padding: 5%;
+    height: fit-content;
+    gap: 15px;
+}
+.inversorGuidePage main section h2{
+    text-align: start;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.inversorGuidePage main section p{
+    font-size: 15px;
+}
+.inversorGuidePage main section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inversorGuidePage main section ul li{
+    list-style:circle;
+    font-size: 15px;
+
+}
+.inversorGuidePage main section ul li .youTubeVideo_Player{
+    height: 100% !important;
+}
+
+
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
+    .inversorGuidePage aside ul,
+    .inversorGuidePage main section p,
+    .inversorGuidePage section ul li,
+    .inversorGuidePage main section ul li{
+        font-size: 20px;
+    }
+    .inversorGuidePage main section{
+        padding: 2%;
+    }
+    .inversorGuidePage main section h2{
+        font-size: 30px;
+    }
+
+
+}
+
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
+    .inversorGuidePage h1{
+        width: 100%;
+    }
+    .inversorGuidePage{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .inversorGuidePage aside{
+        width: 30%;
+        position: sticky;
+        top: 15vh;
+    }
+    .inversorGuidePage main{
+        width: 69%;
+        padding: 0;
+    }
+}
+
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
+    .inversorGuidePage{
+        padding: 0 3%;
+    }
+}
