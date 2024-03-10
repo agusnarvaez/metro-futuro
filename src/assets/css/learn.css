@@ -6,23 +6,46 @@
 /** ### LEARN SLOGAN ### */
 #learnPopUp{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000;
+    top: 12vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 80vh;
+    padding: 5%;
+    border-radius: 10px;
+    z-index: 90;
     display: flex;
     gap: 2rem;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+}
+#learnPopUp::after{
+    content: '';
+    position: absolute;
+    top: -2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    z-index: -1;
+    opacity: 0.8;
+
 }
 #learnPopUp h2{
+    font-size: 30px;
+    text-align: center;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
     -webkit-background-clip: text;
     -webkit-border-image: fill;
+}
+#learnPopUp h3{
+    width: 100%;
+    text-align: center;
 }
 #learnPopUp form{
     display: flex;
@@ -34,7 +57,7 @@
     gap: 2rem;
 }
 #learnPopUp form .inputContainer{
-    width: 50%;
+    width: 80%;
 }
 #learnPopUp form .error{
     color: red;
@@ -195,6 +218,16 @@
     #learnCoursesCard .degradedLink a{
         padding: 2%;
     }
+    #learnPopUp{
+        height: 85vh;
+        width: 80vw;
+        border-radius: 15px;
+        gap: 1rem;
+    }
+    #learnPopUp h2,
+    #learnPopUp h3{
+        margin: 0;
+    }
 }
 
 /*! ########################################*/
@@ -228,5 +261,8 @@
     #learnCoursesCard .degradedLink a{
         padding: 2%;
 
+    }
+    #learnPopUp{
+        width: 60vw;
     }
 }

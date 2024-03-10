@@ -30,7 +30,8 @@ export default function LearnSlogan({path,setShowPopUp}) {
   }
 	return (
 		<section id='learnPopUp'>
-            <h2>Registrese para ver el contenido</h2>
+            <h2>Completa unos pocos datos para acceder a nuestra academia de recursos educativos</h2>
+			<h3>Hazte parte de nuestra comunidad.</h3>
 
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<div className="inputContainer">
