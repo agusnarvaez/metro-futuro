@@ -45,6 +45,8 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
                         <li><HeaderNavLink link={{title:'Cursos On-demand', to:'/aprende'}} burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} /></li>
                         <div className={"degradedSeparator degradedSeparator--header"}/>
                         <li><HeaderNavLink link={{title:'Blog', to:'/blog'}} burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} /></li>
+                        <div className={"degradedSeparator degradedSeparator--header"}/>
+                        <li><HeaderNavLink link={{title:'Guía del inversor', to:'/guia-del-inversor'}} burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} /></li>
                     </ul>
                 </li>
                 <li className="login-button-li"><DegradedLink  text="Iniciar sesión" route='https://app.metro-futuro.com/login' backgroundColor="" id="login-button" inverted={true} /></li>

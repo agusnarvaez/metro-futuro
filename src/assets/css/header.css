@@ -93,6 +93,7 @@ li.academy-accordion{
     align-items: center;
     flex-direction: column;
     width: 75%;
+    cursor: pointer;
 }
 
 .academy-accordion span,
@@ -189,6 +190,7 @@ li.academy-accordion.show ul{
         width: 70%;
         flex-direction: row;
         position: relative;
+        justify-content: space-between;
         top: 0;
         padding: 0;
         margin: 0;
@@ -204,7 +206,7 @@ li.academy-accordion.show ul{
     .login-button-li{
         width: 16%;
     }
-    .header ul.navigation.hiddenMenu li.academy-accordion{
+    .header ul.navigation li.academy-accordion{
         width: 20%;
         height: 100%;
         position: relative;
