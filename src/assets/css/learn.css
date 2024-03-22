@@ -15,7 +15,7 @@
     border-radius: 10px;
     z-index: 90;
     display: flex;
-    gap: 2rem;
+    gap: 0.7rem;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@
 
 }
 #learnPopUp h2{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
@@ -54,7 +54,7 @@
     align-items: center;
     width: 100%;
     /* margin: 5% 0; */
-    gap: 2rem;
+    gap: 0.5rem;
 }
 #learnPopUp form .inputContainer{
     width: 80%;
@@ -188,6 +188,9 @@
     }
     #learnCoursesCard p{
         font-size: 1.3em;
+    }
+    #learnPupUp h2{
+        font-size: 30px;
     }
 
 
