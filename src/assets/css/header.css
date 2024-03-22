@@ -51,16 +51,19 @@
 
 .header .navigation{
     width: 100%;
+    height: 90vh;
     position: absolute;
-    top: 8vh;
+    top: 10vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0;
+    padding: 5% 0 0 0;
     z-index: 10;
+    gap: 20px;
     background-color: #FBFDFF;
     transition: top 0.5s ease-in-out;
+    margin-block: 0;
 }
 .degradedSeparator--header{
     width: 75% !important;
@@ -68,15 +71,7 @@
     opacity: 40%;
 }
 .header .hiddenMenu{
-    width: 100%;
-    position: absolute;
     top: -800%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
-    background-color: #FBFDFF;
 }
 .header .hiddenMenu li,
 .header .navigation li {
@@ -84,7 +79,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5% 0;
+    padding: 0% 0;
     z-index: 5;
 }
 li.academy-accordion{
@@ -94,6 +89,7 @@ li.academy-accordion{
     flex-direction: column;
     width: 75%;
     cursor: pointer;
+    gap: 30px;
 }
 
 .academy-accordion span,
@@ -122,17 +118,24 @@ li.academy-accordion{
     right: 0;
 
 }
-.academy-accordion ul{
+.academy-accordion .accordion-container{
+    transition: all 0.3s ease-in-out;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.academy-accordion ul{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    transition: all 0.3s ease-in-out;
     padding: 0;
+    gap: 20px;
 }
-li.academy-accordion.show ul{
+li.academy-accordion.show .accordion-container{
     max-height: 1000px;
 
 }
@@ -158,9 +161,10 @@ li.academy-accordion.show ul{
     .header .hiddenMenu{
         top: -1000%;
     }
-    .header .navigation li {
+    /* .header .navigation li {
         padding: 3% 0;
-    }
+    } */
+
 }
 
 /*! ########################################*/
@@ -187,7 +191,7 @@ li.academy-accordion.show ul{
     }
     .header .hiddenMenu,
     .header .navigation{
-        width: 70%;
+        width: 75%;
         flex-direction: row;
         position: relative;
         justify-content: space-between;
@@ -196,6 +200,10 @@ li.academy-accordion.show ul{
         margin: 0;
         transition: none;
         height: 100%;
+    }
+    .academy-accordion span,
+    .navLink{
+        font-size: 1.5em;
     }
 
     .headerIcons{
@@ -207,7 +215,7 @@ li.academy-accordion.show ul{
         width: 16%;
     }
     .header ul.navigation li.academy-accordion{
-        width: 18%;
+        width: 20%;
         height: 100%;
         position: relative;
         background-color: #FBFDFF;
@@ -219,13 +227,19 @@ li.academy-accordion.show ul{
         background-color: #FBFDFF;
         z-index: 100;
     }
-    li.academy-accordion ul{
+    .header ul.navigation.hiddenMenu li.academy-accordion span .videoArrow{
+        width: 25px;
+    }
+    li.academy-accordion .accordion-container{
         position: absolute;
         width: 150%;
         background-color: #FBFDFF;
         top: 100%;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+    li.academy-accordion ul{
+        padding: 10% 0;
     }
     li.academy-accordion ul .degradedSeparator--header{
         display: flex;
@@ -245,6 +259,13 @@ li.academy-accordion.show ul{
 
     .header .navigation{
         width: 70%;
+    }
+    .header ul.navigation li.academy-accordion{
+        width: 17%;
+    }
+    .academy-accordion span,
+    .navLink{
+        font-size: 1.7em;
     }
 
 
