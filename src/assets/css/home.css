@@ -311,6 +311,22 @@
 }
 /*! ### Nuestros partners ### **/
 
+/*! ########################################*/
+/*! ################ TABLETS ###############*/
+/*! ########################################*/
+
+@media (min-width: 481px){
+    #homeLearnWithUs .youTubeVideo_Container{
+        height: 60vh;
+        width: 90%;
+    }
+    #homeLearnWithUs .youTubeVideo_Container .youTubeVideo_Player{
+        border-radius: 30px;
+        height: 100% !important;
+        overflow: hidden;
+    }
+}
+
 
 /*! ########################################*/
 /*! ################ LAPTOPS ###############*/
@@ -514,11 +530,12 @@
         width: 95%;
     }
     #homeLearnWithUs .youTubeVideo_Container{
-        height: 70%;
+        height: 90%;
         width: 80%;
-        border-radius: 20px;
         z-index: 10;
     }
+
+
 
     #homeLearnWithUs_Info{
         width: 60%;
