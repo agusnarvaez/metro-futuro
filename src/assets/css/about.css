@@ -2,7 +2,7 @@
 
 #aboutPage{
     background-color: #E5E5E5;
-    
+
 }
 .aboutFooterBg{
     position: absolute;
@@ -84,7 +84,7 @@
 }
 #aboutServices .sectionInfo ul {
     width: 100%;
-    
+
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -133,7 +133,7 @@
 #aboutFocus .sectionInfo{
     overflow-x: scroll;
     scrollbar-width: 0;
-    
+
     justify-content: flex-start;
     align-items: flex-start;
     height: fit-content;
@@ -162,7 +162,7 @@
     padding: 2%;
     margin: 0 1%;
     border-radius: 10px;
-    
+
 }
 #aboutFocus .sectionInfo ul li .cardTitle .cardTitle_Icon{
     width: 40px;
@@ -180,7 +180,7 @@
     padding: 3% 0;
     height: 50%;
     width: 100%;
-    
+
 }
 #aboutFocus h3{
     color: #004DFF;
@@ -209,7 +209,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 !important;
-    padding: 12% 0;
+    padding: 5% 0;
 }
 #aboutInfo .sectionBackground{
     background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
@@ -290,7 +290,7 @@
     height: fit-content;
     flex-direction: column;
     margin: 2% 0;
-    
+
 }
 #aboutTeam .section_subTitle{
     font-size: 2em;
@@ -370,7 +370,7 @@
 }
 
 .aboutTeamInfo a{
-    
+
     width: 40px;
     height: 40px;
     display: flex;
@@ -410,7 +410,7 @@
 
 /** #### SOMOS METRO FUTURO ####*/
 
-    
+
     #aboutTitle p{
         font-size: 2em
     }
@@ -463,7 +463,7 @@
 
 /** #### AGREGAMOS VALOR GENERANDO MAYOR ACCESO A LA INDUSTRIA INMOBILIARIA ####*/
 #aboutInfo{
-    padding: 10% 0;
+    padding: 5% 0;
 }
 #aboutInfo .section_subTitle {
     padding: 3% 0;
@@ -513,8 +513,8 @@
 /*! ########################################*/
 @media (min-width: 769px) {
     /** ###### GENERAL #####*/
-        
-        
+
+
         .aboutFooterBg{
             background-color: #FBFDFF;
         }
@@ -706,7 +706,7 @@
 /*! #### ENFOCAMOS NUESTROS ESFUERZOS EN EL MEJOR SERVICIO ####*/
 
 /** #### ¿CUAL ES NUESTRO FOCO? ####*/
-#aboutFocus{   
+#aboutFocus{
     min-height: 95vh;
 }
 #aboutFocus .sectionBackground--desktop{
@@ -745,7 +745,7 @@
 
 /** #### AGREGAMOS VALOR GENERANDO MAYOR ACCESO A LA INDUSTRIA INMOBILIARIA ####*/
 #aboutInfo{
-    padding: 7% 0;
+    padding: 0% 0;
     overflow: visible;
 }
 #aboutInfo .sectionBackground{
