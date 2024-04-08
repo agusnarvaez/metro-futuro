@@ -307,7 +307,7 @@
     padding: 0%;
 }
 #homePartners img{
-    width: 100%;
+    width: 80%;
 }
 /*! ### Nuestros partners ### **/
 
@@ -586,12 +586,13 @@
     }
 
     #homePartnersContainer li:hover{
-        /* max-height: 100%;
-        width: 35%; */
         transform: scale(1.1);
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
+    }
+    #homePartners img{
+        width: 70%;
     }
 /*! ### Nuestros partners ### **/
 
