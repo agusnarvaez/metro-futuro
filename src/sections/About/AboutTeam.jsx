@@ -14,31 +14,31 @@ export default function AboutTeam() {
     const teamList = [
         {
             name: "Job Carrera Diaz",
-            function: "Dir. de inmuebles",
+            function: "CEO",
             linkedin: "https://www.linkedin.com/in/job-carrera-diaz-3471a325/",
             avatar: jobCarreraAvatar
         },
         {
             name: "Mariela Schenone",
-            function: "Dir. de estructuración financiera",
+            function: "CFO",
             linkedin: "https://www.linkedin.com/in/mariela-schenone-1890a43/",
             avatar: marielaScheloneAvatar
         },
         {
             name: "Pedro Silvestri",
-            function: "Dir. financiero",
+            function: "COO",
             linkedin: "https://www.linkedin.com/in/pedro-silvestri-07300b2a/",
             avatar: pedroSilvestriAvatar
         },
         {
             name: "Pedro Nicholson",
-            function: "Dir. de legales",
+            function: "Legal",
             linkedin: "https://www.linkedin.com/in/pedro-nicholson-ba737b9/",
             avatar: pedroNicholsonAvatar
         },
         {
             name: "Juan Porrazzo",
-            function: "Tech",
+            function: "CTO",
             linkedin: "https://www.linkedin.com/in/juan-porrazzo-969b8383/",
             avatar: juanPorrazzoAvatar
         }
