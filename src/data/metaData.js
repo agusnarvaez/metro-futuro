@@ -90,6 +90,12 @@ const metaData = {
             description:"Descubre el mundo del Real Estate y aprende a invertir en él con las últimas novedades y consejos expertos. ¡Maximiza tus ganancias hoy mismo!",
             keywords:"inversiones, real, estate, españa, token, blockchain, metro futuro",
             cannonical: "https://www.metro-futuro.com/"
-        }
+        },
+    cookiesPolitics:{
+        title: "Política de Privacidad: Uso de Cookies",
+        description:"En Metro Futuro, nos comprometemos a proteger la privacidad de nuestros usuarios y a proporcionar una experiencia segura y funcional. Este segmento de nuestra Política de Privacidad explica cómo y por qué utilizamos cookies en nuestro sitio web.",
+        keywords:"cookies, privacidad, metro futuro",
+        cannonical: "https://www.metro-futuro.com/"
+    }
 }
 export default metaData

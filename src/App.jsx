@@ -20,8 +20,6 @@ import "./assets/css/footer.css"
 import "./assets/css/whatsappButton.css"
 import "./assets/css/investments.css"
 import "./assets/css/terms.css"
-
-//*TODO:INVESTMENTS
 import "./assets/css/investmentDetail.css"
 import "./assets/css/404NotFound.css"
 
@@ -47,6 +45,7 @@ const Error404 = lazy(()=> import('./pages/Error404'))
 const Terms = lazy(()=> import("./pages/Terms"))
 const InvestmentPlatform = lazy(()=> import("./pages/InvestmentPlatform"))
 const InversorGuide = lazy(()=> import("./pages/InversorGuide"))
+const CookiesPolitics = lazy(()=> import("./pages/CookiesPolitics"))
 export default function App() {
 
   const [articles,setArticles]=useState([])
@@ -109,6 +108,10 @@ export default function App() {
     {
       component: <InversorGuide metaData={metaData.inversorGuide} />,
       path: "/guia-del-inversor"
+    },
+    {
+      component: <CookiesPolitics metaData={metaData.cookiesPolitics} />,
+      path: "/politica-de-cookies"
     }
   ]
   useEffect(() => {
