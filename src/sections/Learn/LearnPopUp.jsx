@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form'
 import Cookies from 'js-cookie'
 import credentials from '../../credentials'
+import { Link } from 'react-router-dom'
 //* Importo la función que selecciona el título del Slogan
 
 export default function LearnSlogan({path,setShowPopUp}) {
@@ -17,7 +18,7 @@ export default function LearnSlogan({path,setShowPopUp}) {
       })
       /* const responseData = await response.json() */
       if (response.status>=200) {
-        Cookies.set('isRegistered', 'true', { expires: 7 }) // La cookie expira en 7 días
+        Cookies.set('isRegistered', 'true', { expires: 30 }) // La cookie expira en 7 días
         setShowPopUp(false) // Ocultar el PopUp después de registrar
       } else {
         // Manejar la respuesta no exitosa
@@ -55,6 +56,15 @@ export default function LearnSlogan({path,setShowPopUp}) {
 					/>
 				</div>
 				{errors.email && <span className="error">Este campo es obligatorio y debe ser un email válido</span>}
+				<div className="cookies-container">
+					<label for='learn-cookies'>Aceptar Cookies</label>
+					<input
+						id='learn-cookies'
+						{...register('learnCookies', { required: true })}
+						type='checkbox'
+					/>
+				</div>
+				{errors.learnCookies && <span className="error">Debe aceptar las cookies para poder ingresar. <Link to='/cookie-politics'>¿Porque?</Link></span>}
 				<button className='degradedLink' type='submit'>
 					<div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
 						<span className='degradedLink_Text'>Enviar</span>
