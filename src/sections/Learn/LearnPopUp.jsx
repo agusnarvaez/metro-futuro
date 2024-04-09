@@ -35,36 +35,42 @@ export default function LearnSlogan({path,setShowPopUp}) {
 			<h3>Hazte parte de nuestra comunidad.</h3>
 
 			<form onSubmit={handleSubmit(onSubmit)}>
-				<div className="inputContainer">
-					<input
-					{...register('name', { required: true })}
-					placeholder='Nombre'
-					/>
+				<div className='input-wrapper'>
+					<div className="inputContainer">
+						<input
+						{...register('name', { required: true })}
+						placeholder='Nombre'
+						/>
+					</div>
+					{errors.name && <span className="error">El nombre es obligatorio</span>}
 				</div>
-				{errors.name && <span className="error">Este campo es obligatorio</span>}
-				<div className="inputContainer">
-					<input
-					{...register('last_name', { required: true })}
-					placeholder='Apellido'
-					/>
+				<div className='input-wrapper'>
+					<div className="inputContainer">
+						<input
+						{...register('last_name', { required: true })}
+						placeholder='Apellido'
+						/>
+					{errors.last_name && <span className="error">El apellido es obligatorio</span>}
+					</div>
 				</div>
-				{errors.last_name && <span className="error">Este campo es obligatorio</span>}
-				<div className="inputContainer">
+				<div className='input-wrapper'>
+					<div className="inputContainer">
 					<input
 					{...register('email', { required: true, pattern: /^\S+@\S+$/i })}
 					placeholder='Email'
 					/>
-				</div>
+					</div>
 				{errors.email && <span className="error">Este campo es obligatorio y debe ser un email válido</span>}
-				<div className="cookies-container">
+				</div>
+				<div className="cookies-container input-wrapper">
 					<label for='learn-cookies'>Aceptar Cookies</label>
 					<input
 						id='learn-cookies'
 						{...register('learnCookies', { required: true })}
 						type='checkbox'
 					/>
+					{errors.learnCookies && <span className="error">Debe aceptar las cookies para poder ingresar. <Link to='/cookie-politics'>¿Porque?</Link></span>}
 				</div>
-				{errors.learnCookies && <span className="error">Debe aceptar las cookies para poder ingresar. <Link to='/cookie-politics'>¿Porque?</Link></span>}
 				<button className='degradedLink' type='submit'>
 					<div className='degradedLink_TextContainer degradedLink_TextContainer--white'>
 						<span className='degradedLink_Text'>Enviar</span>
