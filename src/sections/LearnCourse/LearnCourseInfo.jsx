@@ -7,7 +7,7 @@ import DegradedNavLink from "../../components/DegradedNavLink";
 
 import { selectType } from '../../utils/learnFunctions';
 
-export default function LearnCourseInfo({item,type,pathSplited}) {
+export default function LearnCourseInfo({item,pathSplited}) {
 	//* Selecciona el contenido para ver
 	const [infoIndex,setInfoIndex]=useState(0)
 

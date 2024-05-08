@@ -1,6 +1,6 @@
 import { selectTitle } from "../../utils/learnFunctions"
 
-export default function LearnCourseTitle({item,type,pathSplited}) {
+export default function LearnCourseTitle({item,pathSplited}) {
 	return (
 		<section className="learnCoursePage_Title">
 			<h1>{item.title}</h1>
