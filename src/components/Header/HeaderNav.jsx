@@ -18,6 +18,10 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
             to:"/sobre-nosotros"
         },
         {
+            title:"Blog",
+            to:"/blog"
+        },
+        {
             title:"Contacto",
             to:"/contacto"
         }
@@ -45,8 +49,8 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
                         <ul>
                             <li><HeaderNavLink link={{title:'Cursos On-demand', to:'/aprende'}} burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} /></li>
                             <div className={"degradedSeparator degradedSeparator--header"}/>
-                            <li><HeaderNavLink link={{title:'Blog', to:'/blog'}} burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} /></li>
-                            <div className={"degradedSeparator degradedSeparator--header"}/>
+                            {/* <li><HeaderNavLink link={{title:'Blog', to:'/blog'}} burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} /></li>
+                            <div className={"degradedSeparator degradedSeparator--header"}/> */}
                             <li><HeaderNavLink link={{title:'Guía del inversor', to:'/guia-del-inversor'}} burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} /></li>
                         </ul>
                     </div>
