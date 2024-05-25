@@ -338,6 +338,9 @@
         height: 60vh;
         padding: 2%;
     }
+    #homeAbout .sectionBackground{
+        width: 100%;
+    }
     #homeAbout .sectionInfo{
         padding: 0;
     }
@@ -474,6 +477,9 @@
         padding: 0;
         margin: 5% 0;
         width: 95%;
+    }
+    #homeBenefits .sectionBackground--desktop{
+        width: 100%;
     }
 
     #homeBenefits h3{

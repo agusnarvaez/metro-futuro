@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     position: relative;
     background-color: #FBFAFF;
 }
@@ -70,7 +70,7 @@ main{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 section{
