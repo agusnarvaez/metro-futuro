@@ -3,6 +3,8 @@
 /*! #######################################*/
 .inversorGuidePage{
     scroll-behavior: smooth;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .inversorGuidePage h1{
     font-size: 30px;
@@ -13,28 +15,67 @@
 }
 
 .inversorGuidePage aside{
-    /* width: 30%; */
-}
-
-.inversorGuidePage aside{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
-    padding: 0% 0 25% 0;
+    padding: 3%;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+    border-radius: 1rem;
 }
+.inversorGuidePage aside article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+.inversorGuidePage aside article .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inversorGuidePage aside article .title h3{
+    font-size: 15px;
+}
+.inversorGuidePage aside article .index{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.inversorGuidePage aside article .show.index{
+    max-height: 99999px;
+}
+.inversorGuidePage aside article.first-list .index ul{
+    list-style: decimal inside;
+    padding: 5% 0% 0 10%;
+}
+.inversorGuidePage aside article.second-list .index ul{
+    counter-reset: item 11;
+    list-style: decimal inside;
+    list-style-type: none;
+    padding-left: 0;
+}
+.inversorGuidePage aside article.second-list .index ul li{
+    counter-increment: item;
+}
+.inversorGuidePage aside .second-list .index ul li::before {
+    content: counter(item) ". ";
+}
+
 .inversorGuidePage aside ul{
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
-    border-radius: 1rem;
+
+
     padding: 5% 10%;
 }
 .inversorGuidePage aside ul li{
     list-style:decimal;
-    font-size: 15px;
+    font-size: 17px;
 }
 .inversorGuidePage aside ul li a{
     text-decoration: none;
@@ -43,6 +84,7 @@
 
 .inversorGuidePage main{
     margin: 0;
+
     background-color: transparent;
 }
 .inversorGuidePage main section{
@@ -79,6 +121,14 @@
 /*! ##### TABLETS & LARGER SMARTPHONES #####*/
 /*! ########################################*/
 @media (min-width: 481px) {
+    .inversorGuidePage{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .inversorGuidePage main{
+        width: 100%;
+    }
+
     .inversorGuidePage aside ul,
     .inversorGuidePage main section p,
     .inversorGuidePage section ul li,
@@ -92,7 +142,9 @@
         font-size: 30px;
     }
 
-
+    .inversorGuidePage aside ul li{
+        font-size: 20px;
+    }
 }
 
 /*! ########################################*/
@@ -107,11 +159,28 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: space-between;
+        padding: 3% 3%;
+        height: 95vh;
+        overflow: hidden; /* Oculta la barra de desplazamiento */
+        padding-right: 15px; /* Añade padding para que el contenido no se corte */
+    }
+    .inversorGuidePage main {
+        -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
+        scrollbar-width: none;  /* Para Firefox */
+        overflow-y: scroll; /* Permite el desplazamiento vertical */
+        height: 80vh; /* Ajusta la altura según tus necesidades */
+        padding-right: 15px; /* Ajusta el padding para evitar el corte del contenido */
+        /* padding-bottom: 15%; */
+    }
+
+    .inversorGuidePage main::-webkit-scrollbar {
+        display: none;  /* Para Chrome, Safari y Opera */
     }
     .inversorGuidePage aside{
         width: 30%;
         position: sticky;
-        top: 15vh;
+        top: 5vh;
     }
     .inversorGuidePage main{
         width: 69%;
@@ -122,6 +191,16 @@
     .inversorGuidePage section ul li,
     .inversorGuidePage main section ul li{
         font-size: 20px;
+    }
+    .inversorGuidePage aside article.first-list .index ul{
+        padding: 0% 0 0 15%;
+    }
+    .inversorGuidePage aside{
+        padding: 10px;
+        gap: 10px;
+    }
+    .inversorGuidePage aside article{
+        padding: 0;
     }
     .inversorGuidePage aside ul li{
         font-size: 17px;
