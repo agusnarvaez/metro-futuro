@@ -55,6 +55,9 @@
     font-size: 3em;
     font-weight: 600;
 }
+#aboutTitle h1 img{
+    width: 70%;
+}
 
 /*! #### SOMOS METRO FUTURO ####*/
 
@@ -419,6 +422,9 @@
     }
     #aboutTitle h1{
         font-size: 5em;
+    }
+    #aboutTitle h1 img{
+        width: 60%;
     }
 
 /*! #### SOMOS METRO FUTURO ####*/
