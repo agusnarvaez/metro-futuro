@@ -33,7 +33,7 @@ export default function HomeOportunity({list,setList,investments,setInvestments}
             {Object.entries(investment).length!==0?
                 <div className='sectionInfo'>
 
-                    <h2 className='section_subTitle'>Invierte en inmuebles tokenizados en <span className="degradedText">{investment.country}</span></h2>
+                    <h2 className='section_subTitle'>El futuro de la inversión inmobiliaria{/* Invierte en inmuebles tokenizados en <span className="degradedText">{investment.country}</span> */}</h2>
 
                     <p className="section_paragraph">Genera ingresos pasivos con rendimientos de mas del {/* {formatNumber(investment.rentProfit)} */}10% anual</p>
 
