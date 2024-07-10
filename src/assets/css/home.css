@@ -270,7 +270,7 @@
     position: absolute;
     left: 0;
     display: flex;
-    width: 100%;
+    width: 400%;
     height: 60%;
     justify-content: center;
     gap: 3%;
@@ -324,6 +324,14 @@
         border-radius: 30px;
         height: 100% !important;
         overflow: hidden;
+    }
+    #homePartnersContainer li{
+        max-height: 300px;
+    }
+
+    #homePartners li a img{
+        width: 80%;
+        object-fit: scale-down;
     }
 }
 
@@ -576,16 +584,18 @@
         font-size: 3.5em;
     }
     #homePartnersContainer{
-        overflow: visible;
+        /* overflow: visible; */
         padding: 0;
     }
     #homePartnersContainer ul{
-        position: static;
+        /* position: static; */
         height: 100%;
+        width: 200%;
         padding: 3% 5%;
     }
+
     #homePartnersContainer li{
-        max-height: 90%;
+        max-height: 70%;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
@@ -597,8 +607,9 @@
         transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
     }
-    #homePartners img{
+    #homePartners li a img{
         width: 70%;
+        object-fit: scale-down;
     }
 /*! ### Nuestros partners ### **/
 
