@@ -1,7 +1,7 @@
 
 import check from '../../assets/img/icons/check.svg'
 
-export default function ContactInputs({buttonClass,setButtonClass}) {
+export default function FormButton({buttonClass,setButtonClass}) {
 
 
     const buttonSelection = ()=>{

@@ -11,7 +11,7 @@ import credentials from "../../credentials"
 
 //* Componentes
 import ContactInputs from "../../components/Contact/ContactInputs"
-import Button from "../../components/Contact/Button"
+import FormButton from "../../components/Contact/FormButton"
 
 export default function ContactForm() {
 
@@ -69,7 +69,7 @@ export default function ContactForm() {
 
                 <ContactInputs fields={fields.current} contact={contact} setContact={setContact} />
 
-                <Button buttonClass={buttonClass} setButtonClass={setButtonClass} />
+                <FormButton buttonClass={buttonClass} setButtonClass={setButtonClass} />
                 {successMessage?<p>Gracias por tu interés. En breve, un representante de Metro Futuro se estará comunicando contigo.</p>:""}
             </form >
 
