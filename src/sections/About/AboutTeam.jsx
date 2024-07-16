@@ -14,13 +14,13 @@ export default function AboutTeam() {
     const teamList = [
         {
             name: "Job Carrera Diaz",
-            function: "CEO",
+            function: "CFO",
             linkedin: "https://www.linkedin.com/in/job-carrera-diaz-3471a325/",
             avatar: jobCarreraAvatar
         },
         {
             name: "Mariela Schenone",
-            function: "CFO",
+            function: "CEO",
             linkedin: "https://www.linkedin.com/in/mariela-schenone-1890a43/",
             avatar: marielaScheloneAvatar
         },
