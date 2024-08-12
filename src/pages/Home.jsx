@@ -8,7 +8,7 @@ import HomeBenefits from "../sections/Home/HomeBenefits"
 import HomeLearnWithUs from "../sections/Home/HomeLearn"
 import HomePartners from "../sections/Home/HomePartners"
 import HomeFaq from "../sections/Home/HomeFaq"
-
+import HomePress from "../sections/Home/HomePress"
 import HelmetData from "../components/HelmetData"
 
 export default function Home({metaData,list,setList,investments,setInvestments}) {
@@ -26,6 +26,8 @@ export default function Home({metaData,list,setList,investments,setInvestments})
             <HomeInvestmentSteps/>
 
             <HomeBenefits/>
+
+            <HomePress />
 
             <HomeLearnWithUs/>
 
