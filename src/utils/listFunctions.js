@@ -62,7 +62,7 @@ const handleListItems = (list,setList,newList,setNewList,itemID,item,setItem,met
         if(existsItem(newList,itemID)){
             selectItem(item,setItem,newList,itemID,metaData,setMetaData)
         }else{
-            console.log("El item no existe")
+            console.error("El item no existe")
             navigate("/error")
         }
     }

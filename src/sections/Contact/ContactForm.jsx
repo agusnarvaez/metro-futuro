@@ -48,7 +48,7 @@ export default function ContactForm() {
                 credentials.emailJs.id //* ID de
                 )
                     .then((response) => {
-                        console.log('SUCCESS!', response.status, response.text)
+                        console.info('SUCCESS!', response.status, response.text)
                         setContact(frmContact)
                         setButtonClass("contactSubmit degradedLink contactSubmit--success")
                         setSuccessMessage(true)
@@ -56,7 +56,7 @@ export default function ContactForm() {
 
                     //* Capturo el error al enviar el mensaje
                     (err) => {
-                        console.log('ERROR:\n', err)
+                        console.error('ERROR:\n', err)
                         setButtonClass("contactSubmit contactSubmit--error")
                     })
         }

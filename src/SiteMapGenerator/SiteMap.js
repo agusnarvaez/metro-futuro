@@ -13,8 +13,7 @@ const getFullListForSiteMap = async () =>{
         return api.items
 
     }catch(err){
-        console.log("Error en la petición")
-        console.log(err)
+        console.error("Error en la petición getFullListForSiteMap",err)
     }
 }
 const filteredList = (list,path) => list.filter(article=>article.sys.contentType.sys.id===path)
@@ -56,7 +55,7 @@ async function Sitemap() {
   ]
 
   const finalSiteMap = await generateSitemapUrl(routes)
-  console.log(finalSiteMap)
+  console.info(finalSiteMap)
   return (
     finalSiteMap
   )
@@ -94,4 +93,4 @@ async function  generateSitemapUrl(routes) {
   `
 }
 
-console.log(Sitemap())
+console.info(Sitemap())

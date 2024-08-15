@@ -14,8 +14,7 @@ export const reqApi = async(list,setList)=>{
             await setList(api.items)
 
         }catch(err){
-            console.log("Error en la petición")
-            console.log(err)
+            console.error("Error en la petición reqApi",err)
         }
     }
 }
@@ -27,8 +26,7 @@ export const getFullList = async (list,setList,newList,setNewList) =>{
             filterItems(list,setNewList)
         }
     }catch(err){
-        console.log("Error en la petición")
-        console.log(err)
+        console.error("Error en la petición getFullList",err)
     }
 }
 
@@ -40,8 +38,7 @@ export const getFullListForSiteMap = async () =>{
         return api.items
 
     }catch(err){
-        console.log("Error en la petición")
-        console.log(err)
+        console.error("Error en la petición getFullListForSiteMap",err)
     }
 }
 

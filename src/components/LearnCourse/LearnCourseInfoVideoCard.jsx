@@ -4,7 +4,6 @@ import LazyReactPlayer from '../LazyReactPlayer'
 
 export default function LearnCourseInfoVideoCard({title,link, description}){
 	const [showVideo,setShowVideo]=useState(false)
-	console.log(description)
 	return (
 		<div className="learnCoursePage_InfoVideoCard" onClick={()=>setShowVideo(!showVideo)}>
 			<h2>

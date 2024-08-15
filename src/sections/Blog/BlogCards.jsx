@@ -1,7 +1,6 @@
 
 import BlogCard from '../../components/Blog/BlogCard'
 function BlogCards({list,url,setVideoUrl}) {
-	console.log(list)
 	return (
 		<section id='blogCards'>
 			{list.map((item,key) => {
