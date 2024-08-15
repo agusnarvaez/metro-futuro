@@ -2,6 +2,12 @@
 /*! ############### MOBILE ###############*/
 /*! #######################################*/
 
+:root {
+    --blue-mf: #1233b5;
+    --white: #FBFDFF;
+    --box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+}
+
 /** #### Estilos generales #### */
 *{
     box-sizing: border-box;
@@ -214,6 +220,22 @@ li{
         -webkit-border-image: fill;
         z-index: 50;
         font-size: inherit;
+    }
+    .degraded-blue-button{
+        background: linear-gradient(to right, black 0%, var(--blue-mf) 100%);
+        color: var(--white);
+        border: none;
+        padding: 0.5rem 2rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .degraded-blue-button:hover{
+        transform: scale(1.05);
+    }
+    .degraded-blue-button:active{
+        transform: scale(0.95);
+        border: none;
     }
 /*! ### Tipografías ### */
 

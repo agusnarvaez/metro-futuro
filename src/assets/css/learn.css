@@ -55,6 +55,47 @@
     width: 100%;
     gap: 0.5rem;
 }
+.learnPage{
+    position: relative;
+}
+.learnPage .video-modal{
+    display: none;
+    position: fixed;
+    width: 90vw;
+    height: 65vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1rem;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+}
+.learnPage .video-modal.video-modal_show{
+    display: flex;
+}
+
+.learnPage .video-modal i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--blue-mf);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.learnPage .video-modal i:hover{
+    color: var(--blue-mf-hover);
+    transform: scale(1.1);
+}
+.learnPage .video-modal i:active{
+    transform: scale(0.9);
+}
+
+
 .learnPage #learnPopUp form
 .learnPage #learnPopUp form .error{
     position: static;
@@ -136,6 +177,7 @@
     margin: 5% 0;
     flex-wrap: wrap;
     align-items: stretch;
+    gap: 1rem;
 }
 
 #learnCoursesCard{
@@ -150,12 +192,30 @@
     border: 1px solid #F3F2F2;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
     border-radius: 10px;
+    margin: 0;
+}
+#learnCoursesCard .main-info,
+#learnCoursesCard .main-info .description{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    margin: 0;
+}
+#learnCoursesCard .main-info{
+    box-shadow: var(--box-shadow);
+}
+#learnCoursesCard .main-info .description{
+    padding: 0.5rem;
 }
 
-#learnCoursesCard img{
+
+#learnCoursesCard .main-info img{
     width: 100%;
     min-height: 190px;
-    height: 40%;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -176,8 +236,8 @@
     background: linear-gradient(90.36deg, rgba(255, 0, 204, 0.6) -0.35%, rgba(255, 0, 204, 0) 135.57%);
 }
 
-#learnCoursesCard h3{
-    width: 95%;
+#learnCoursesCard .main-info .description h3{
+    width: 100%;
     text-align: center;
     font-size: 2em;
     font-weight: 600;
@@ -185,17 +245,109 @@
     align-self: flex-start;
     margin: 0;
     padding: 0;
+    color: var(--blue-mf);
 }
-#learnCoursesCard p{
+#learnCoursesCard .main-info .description p{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 300;
     align-self: flex-start;
-    padding: 0 5%;
     margin: 0% 0;
 }
 #learnCoursesCard .degradedLink{
     align-self: flex-end;
+}
+
+#learnCoursesCard .videos-container{
+    height: fit-content;
+    max-height: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+#learnCoursesCard .videos-container.videos-container_collapsed{
+    max-height: 5000px;
+}
+
+#learnCoursesCard .videos-container > i{
+    position: absolute;
+    top: 30%;
+    left: 1rem;
+    color: var(--blue-mf);
+    font-size: 2rem;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#learnCoursesCard .videos-container > i:hover{
+    color: var(--blue-mf-hover);
+    transform: scale(1.1);
+}
+#learnCoursesCard .videos-container > i:active{
+    transform: scale(0.9);
+}
+
+#learnCoursesCard .videos-container .fa-chevron-right{
+    right: 1rem;
+    left: auto;
+}
+
+#learnCoursesCard .videos-container .videos-wrapper{
+    display: flex;
+    overflow: hidden;
+    width: fit-content;
+}
+
+#learnCoursesCard .mini-video-container{
+    width: 100%;
+    flex: 0 0 auto;
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+#learnCoursesCard .mini-video-container .miniature-container{
+    width: 70%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    position: relative;
+    background-color: var(--white);
+}
+#learnCoursesCard .mini-video-container .miniature-container i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 100;
+}
+#learnCoursesCard .mini-video-container .miniature-container img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+#learnCoursesCard .mini-video-container h3{
+    font-size: 1.2rem;
+    color: var(--blue-mf);
+    text-align: center;
+}
+#learnCoursesCard .mini-video-container h4{
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 /*! ########################################*/
@@ -215,18 +367,47 @@
         justify-content: space-around;
     }
     #learnCoursesCard{
-        width: 45%;
-        margin: 3% 0%;
+        width: 100%;
+        margin: 0% 0%;
+        /* height: 30vh; */
+        /* height: 300px; */
+        height: fit-content;
+        min-height: 0;
+        gap: 0;
     }
+    #learnCoursesCard .main-info{
+        flex-direction: row-reverse;
+        align-items: stretch;
+        height: 300px;
+    }
+
+    #learnCoursesCard .main-info img{
+        height: 100%;
+        width: auto;
+        max-width: 300px;
+    }
+
     .learnCoursesCard_Difficulty{
         margin: 0;
         font-size: 1.5em;
     }
-    #learnCoursesCard h3{
-        font-size: 1.7em;
+    #learnCoursesCard .main-info .description{
+        align-items: flex-start;
+        width: 60%;
+        padding: 1rem;
     }
-    #learnCoursesCard p{
+
+    #learnCoursesCard .videos-container .videos-wrapper .mini-video-container .miniature-container{
+        height: 200px;
+    }
+
+    #learnCoursesCard .main-info .description h3{
+        font-size: 1.7em;
+        text-align: left;
+    }
+    #learnCoursesCard .main-info .description p{
         font-size: 1.3em;
+        text-align: left;
     }
 
     .learnPage #learnPopUp form .cookies-container label{
@@ -248,8 +429,21 @@
 
     /** ### LEARN COURSES ### */
     #learnCoursesCard{
-        width: 32%;
+        width:100%;
         min-height: 30vh;
+    }
+    #learnCoursesCard .main-info .description{
+        width: 70%;
+    }
+    #learnCoursesCard .mini-video-container{
+        width: 30%;
+        padding: 2rem;
+    }
+    #learnCoursesCard .videos-container .videos-wrapper .mini-video-container .miniature-container{
+        height: 100px;
+    }
+    #learnCoursesCard .videos-container .videos-wrapper .mini-video-container .miniature-container img{
+        aspect-ratio: unset;
     }
 
     #learnCoursesCardDifficulty{
@@ -283,10 +477,16 @@
 /*! ########################################*/
 @media (min-width: 1280px) {
      /** ### LEARN COURSES ### */
-     #learnCoursesCard{
-        width: 30%;
-        min-height: 50vh;
-        padding: 0 0% 2% 0%;
+     #learnCoursesCard .main-info img{
+        max-width: 350px;
+     }
+
+     .learnPage .video-modal{
+        width: 60vw;
+     }
+
+     #learnCoursesCard .videos-container .videos-wrapper .mini-video-container .miniature-container{
+        height: 120px;
     }
 
     #learnCoursesCardDifficulty{
