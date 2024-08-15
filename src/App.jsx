@@ -12,6 +12,7 @@ import "./assets/css/normalize.css"
 import "./assets/css/header.css"
 import "./assets/css/home.css"
 import "./assets/css/learn.css"
+import "./assets/css/blog.css"
 import "./assets/css/learnCourse.css"
 import "./assets/css/about.css"
 import "./assets/css/contact.css"
@@ -37,6 +38,7 @@ const Home = lazy(()=> import('./pages/Home'))
 const Investments= lazy(()=>import('./pages/Investments'))
 const InvestmentDetail = lazy(()=> import("./pages/InvestmentDetail"))
 const Learn = lazy(()=> import("./pages/Learn"))
+const Blog = lazy(()=> import("./pages/Blog"))
 const LearnCourse = lazy(()=> import("./pages/LearnCourse"))
 const About = lazy(()=> import('./pages/About'))
 const Contact = lazy(()=> import('./pages/Contact'))
@@ -74,7 +76,7 @@ export default function App() {
       path: "/inmuebles/:id"
     },
     {
-      component: <Learn list={articles} metaData={metaData.blog} setList={setArticles} learnArticles={blogArticles} setLearnArticles={setBlogArticles} />,
+      component: <Blog list={articles} metaData={metaData.blog} setList={setArticles} learnArticles={blogArticles} setLearnArticles={setBlogArticles} />,
       path: "/blog"
     },
     {

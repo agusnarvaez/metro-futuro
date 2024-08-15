@@ -1,0 +1,316 @@
+/*! #######################################*/
+/*! ############### MOBILE ###############*/
+/*! #######################################*/
+
+
+/** ### LEARN SLOGAN ### */
+#learnPopUp{
+    position: fixed;
+    top: 12vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 80vh;
+    padding: 5%;
+    border-radius: 10px;
+    z-index: 90;
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+}
+#learnPopUp::after{
+    content: '';
+    position: absolute;
+    top: -2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#learnPopUp h2{
+    font-size: 25px;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #004DFF 0%, #FF00CC 100%);
+    -webkit-background-clip: text;
+    -webkit-border-image: fill;
+}
+#learnPopUp h3{
+    width: 100%;
+    text-align: center;
+}
+#learnPopUp form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+.blogPage #learnPopUp form
+.blogPage #learnPopUp form .error{
+    position: static;
+    top: 0px;
+    left: 0;
+}
+
+#learnPopUp form .inputContainer{
+    width: 80%;
+}
+#learnPopUp form .error{
+    color: red;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+
+}
+#learnPopUp form .degradedLink{
+    border: none;
+}
+#learnPopUp form .input-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+#learnPopUp form .input-wrapper .error{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: red;
+}
+.blogPage #learnPopUp form .cookies-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1% 25%;
+}
+
+.blogPage #learnPopUp form .cookies-container label{
+    font-size: 15px;
+}
+.blogPage #learnPopUp form .cookies-container  input{
+    height: 20px;
+    width: 20px;
+}
+
+#learnSlogan{
+    width: 90%;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 0 10%;
+    margin: 5% 0 0 0;
+}
+#learnSloganBackground{
+    width: 100%;
+}
+
+#learnSlogan h2{
+    font-weight: 600;
+    text-align: center;
+    font-size: 3em;
+    z-index: 10;
+}
+/** ### LEARN COURSES ### */
+#blogCards{
+    height: fit-content;
+    width: 100%;
+    min-height: 50vh;
+    margin: 5% 0;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+#blogCard{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5% 0;
+    min-height: 40vh;
+    background: #FFFFFF;
+    border: 1px solid #F3F2F2;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+    border-radius: 10px;
+}
+
+#blogCard img{
+    width: 100%;
+    min-height: 190px;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.learnCoursesCard_Difficulty{
+    font-weight: 300;
+    font-size: 1.7em;
+    padding: 1% 10%;
+    margin: 3% 0;
+    color: white;
+    border-radius: 50rem;
+
+}
+.learnCoursesCard_Difficulty--Básico{
+    background: linear-gradient(90.36deg, rgba(0, 77, 255, 0.6) -0.35%, rgba(0, 77, 255, 0) 135.57%);
+}
+.learnCoursesCard_Difficulty--Avanzado{
+    background: linear-gradient(90.36deg, rgba(255, 0, 204, 0.6) -0.35%, rgba(255, 0, 204, 0) 135.57%);
+}
+
+#blogCard h3{
+    width: 95%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    height: fit-content;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+}
+#blogCard p{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    align-self: flex-start;
+    padding: 0 5%;
+    margin: 0% 0;
+}
+#blogCard .degradedLink{
+    align-self: flex-end;
+}
+
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
+
+    /** ### LEARN SLOGAN ### */
+    #learnSlogan{
+        height: 30vh;
+    }
+
+    /** ### LEARN COURSES ### */
+    #blogCards{
+        min-height: 30vh;
+        padding: 0 5%;
+        justify-content: space-around;
+    }
+    #blogCard{
+        width: 45%;
+        margin: 3% 0%;
+    }
+    .learnCoursesCard_Difficulty{
+        margin: 0;
+        font-size: 1.5em;
+    }
+    #blogCard h3{
+        font-size: 1.7em;
+    }
+    #blogCard p{
+        font-size: 1.3em;
+    }
+
+    .blogPage #learnPopUp form .cookies-container label{
+        font-size: 20px;
+    }
+    .blogPage #learnPopUp form .cookies-container{
+        padding: 2% 25%;
+    }
+    #learnPopUp form .input-wrapper .error{
+        font-size: 15px;
+    }
+
+}
+
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
+
+    /** ### LEARN COURSES ### */
+    #blogCard{
+        width: 32%;
+        min-height: 30vh;
+    }
+
+    #learnCoursesCardDifficulty{
+        font-size: 1.5em;
+        padding: 0 5%;
+        margin: 3% 0
+    }
+    #blogCard h3{
+        padding: 1% 0;
+    }
+    #blogCard p{
+        padding: 1% 1%;
+    }
+    #blogCard .degradedLink a{
+        padding: 2%;
+    }
+    #learnPopUp{
+        height: 85vh;
+        width: 80vw;
+        border-radius: 15px;
+        gap: 1rem;
+    }
+    #learnPopUp h2,
+    #learnPopUp h3{
+        margin: 0;
+    }
+}
+
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
+     /** ### LEARN COURSES ### */
+     #blogCard{
+        width: 30%;
+        min-height: 50vh;
+        padding: 0 0% 2% 0%;
+    }
+
+    #learnCoursesCardDifficulty{
+        font-size: 1.5em;
+        padding: 0 5%;
+        margin: 3% 0
+    }
+    #blogCard h3{
+        font-size: 2.3em;
+        margin: 2% 0;
+    }
+    #blogCard p{
+        font-size: 1.5em;
+        padding: 1% 1.5%;
+        margin: 3% 0;
+    }
+    #blogCard .degradedLink{
+        width: 50%;
+    }
+    #blogCard .degradedLink a{
+        padding: 2%;
+
+    }
+    #learnPopUp{
+        width: 60vw;
+    }
+}
