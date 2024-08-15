@@ -308,6 +308,13 @@
     justify-items: center;
     align-items: center;
     padding: 2rem 3rem;
+    cursor: pointer;
+}
+#learnCoursesCard .mini-video-container:hover{
+    transform: scale(1.05);
+}
+#learnCoursesCard .mini-video-container:active{
+    transform: scale(0.95);
 }
 
 #learnCoursesCard .mini-video-container .miniature-container{
