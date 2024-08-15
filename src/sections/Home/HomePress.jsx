@@ -15,12 +15,12 @@ import PartnerCard from './PartnerCard'
 export default function HomePress() {
     const partnersList = [
         {
-            link: "https://www.ambito.com/",
+            link: "https://www.ambito.com/economia/boom-hidrocarburos-desarrollaran-una-nueva-ciudad-el-corazon-vaca-muerta-n5818232?utm_campaign=newsletter_10_-_11dic&utm_medium=email&utm_source=RD+Station",
             img: ambitoLogo,
             alt: "ambitoLogo"
         },
         {
-            link: "https://eleconomista.com.ar/",
+            link: "https://x.com/ElEconomista_/status/1734975086921122069",
             img: economistaLogo,
             alt: "economistaLogo"
         },
@@ -30,17 +30,17 @@ export default function HomePress() {
             alt: "realEstateLogo"
         },
         {
-            link: "https://www.infobae.com/",
+            link: "https://www.infobae.com/economia/2022/10/17/tokenizar-casas-y-departamentos-en-que-consiste-la-nueva-tendencia-cripto-y-como-invertir-desde-usd-100/",
             img: infobaeLogo,
             alt: "infobaeLogo"
         },
         {
-            link: "https://www.lanacion.com.ar/",
+            link: "https://www.lanacion.com.ar/propiedades/tokens-inmobiliarios-quien-es-el-joven-que-esta-digitalizando-el-mercado-de-propiedades-local-nid04082021/",
             img: laNacionLogo,
             alt: "laNacionLogo"
         },
         {
-            link: "https://www.neura.media/",
+            link: "https://www.youtube.com/watch?v=4ilGDg0r3aI",
             img: neuraLogo,
             alt: "neuraLogo"
         }
