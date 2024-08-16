@@ -76,7 +76,6 @@ export default function LearnCourses({item,url,id,setVideoUrl}) {
 
 									>
 									<div className='miniature-container' onClick={()=>setVideoUrl(item.youTubeLinks[i])}>
-										<i class="fa-regular fa-circle-play"></i>
 										<img src={thumbnailUrl} alt='miniatura video' />
 									</div>
 									<h3>{title}</h3>

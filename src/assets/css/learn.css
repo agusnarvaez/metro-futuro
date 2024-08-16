@@ -309,6 +309,7 @@
     align-items: center;
     padding: 2rem 3rem;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 #learnCoursesCard .mini-video-container:hover{
     transform: scale(1.05);

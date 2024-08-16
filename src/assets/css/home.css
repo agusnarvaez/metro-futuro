@@ -259,7 +259,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-    overflow-x: scroll;
     z-index: 5;
     display: flex;
     justify-content: center;
@@ -277,7 +276,10 @@
     align-items: flex-start;
     padding: 0 5%;
     margin: 0;
+    animation: scrollPartners 20s linear infinite alternate;
+    animation-timing-function: linear;
 }
+
 #homePartnersContainer li{
     list-style: none;
     width: 45%;
@@ -292,6 +294,7 @@
     align-items: center;
     object-fit: cover;
     padding: 1%;
+    scroll-snap-align: start;
     -webkit-transition: max-height 0.2s ease-in-out,width 0.2s ease-in-out,color 1s ease-in-out;
 }
 
@@ -309,6 +312,16 @@
 #homePartners img{
     width: 80%;
 }
+
+@keyframes scrollPartners {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 /*! ### Nuestros partners ### **/
 
 /*! ########################################*/
@@ -615,7 +628,6 @@
     #homePartners li a img{
         width: 70%;
         object-fit: scale-down;
-        /* width: auto; */  /* Ajusta el ancho automáticamente para mantener la proporción */
         object-fit: contain;
     }
 /*! ### Nuestros partners ### **/
@@ -640,28 +652,7 @@
     }
 
     #homePartnersContainer ul {
-        display: flex;
-        animation: scrollPartners 20s linear infinite alternate;
         width: 200%;
-        /* width: calc(100% * 8); */ /* Ajusta el ancho del ul según el número de items */
-    }
-
-    #homePartnersContainer li {
-        /* flex: 0 0 12.5%; */ /* Muestra 8 elementos en pantalla, ajusta según el número deseado */
-        scroll-snap-align: start;
-    }
-
-    @keyframes scrollPartners {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(-50%);
-        }
-    }
-
-    #homePartnersContainer ul {
-        animation-timing-function: linear;
     }
 }
 
