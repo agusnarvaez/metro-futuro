@@ -8,7 +8,7 @@ import realEstateLogo from "../../assets/img/logos/realEstateLogo.png"
 import infobaeLogo from "../../assets/img/logos/infobaeLogo.png"
 import laNacionLogo from "../../assets/img/logos/laNacionLogo.png"
 import neuraLogo from "../../assets/img/logos/neuraLogo.png"
-
+import forbesLogo from '../../assets/img/logos/forbes-logo.svg'
 // Componentes
 import PartnerCard from './PartnerCard'
 
@@ -25,7 +25,7 @@ export default function HomePress() {
             alt: "economistaLogo"
         },
         {
-            link:"https://exporealestate.com.ar/",
+            link:"https://www.youtube.com/watch?v=a4ovUlWAT1c&list=PLYNs9h3-e4UPCZebn3P8c2Al9GSRjfOjj",
             img: realEstateLogo,
             alt: "realEstateLogo"
         },
@@ -43,6 +43,11 @@ export default function HomePress() {
             link: "https://www.youtube.com/watch?v=4ilGDg0r3aI",
             img: neuraLogo,
             alt: "neuraLogo"
+        },
+        {
+            link: 'https://www.forbesargentina.com/negocios/como-estrategia-comercial-startups-argentinas-quieren-conquistar-estados-unidos-n57983',
+            img: forbesLogo,
+            alt: 'forbesLogo'
         }
     ]
     return (
