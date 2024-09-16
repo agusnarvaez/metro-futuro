@@ -48,6 +48,7 @@ const Terms = lazy(()=> import("./pages/Terms"))
 const InvestmentPlatform = lazy(()=> import("./pages/InvestmentPlatform"))
 const InversorGuide = lazy(()=> import("./pages/InversorGuide"))
 const CookiesPolitics = lazy(()=> import("./pages/CookiesPolitics"))
+const ClientSignUpForm = lazy(()=> import("./pages/ClientSignUpForm/ClientSignUpForm"))
 export default function App() {
 
   const [articles,setArticles]=useState([])
@@ -58,6 +59,10 @@ export default function App() {
     {
       component: <Home metaData={metaData.home}  list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} />,
       path: "/"
+    },
+    {
+      component: <ClientSignUpForm metaData={metaData.clientSignUpForm} />,
+      path: '/alta-cliente'
     },
     {
       component: <Learn list={articles} metaData={metaData.courses} setList={setArticles} learnArticles={learnArticles} setLearnArticles={setLearnArticles} />,
