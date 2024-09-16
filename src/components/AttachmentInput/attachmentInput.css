@@ -1,0 +1,77 @@
+/*! #######################################*/
+/*! ############### MOBILE ###############*/
+/*! #######################################*/
+.fileInputContainer {
+    width: 100%;
+    background: #004cff89;
+    padding: 0;
+    border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin: 1% 0;
+    outline: none;
+}
+
+.fileInputContainer label {
+    border-radius: 50rem;
+    padding: 3% 7%;
+    font-size: 16px;
+    background: white;
+    outline: none;
+    width: 100%;
+    opacity: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fileInputContainer label i{
+    color: #004cff89;
+}
+
+
+.fileInputContainer input[type="file"] {
+    display: none;
+}
+
+.fileName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%; /* Ajusta el porcentaje según sea necesario */
+}
+.fileInputContainer--success{
+    background: #76e18f;
+}
+.fileInputContainer input[type="file"]:focus {
+    border: none;
+    outline: none;
+}
+
+
+
+/*! ########################################*/
+/*! ##### TABLETS & LARGER SMARTPHONES #####*/
+/*! ########################################*/
+@media (min-width: 481px) {
+
+
+}
+
+/*! ########################################*/
+/*! ################ LAPTOPS ###############*/
+/*! ########################################*/
+@media (min-width: 769px) {
+
+
+
+}
+
+/*! ########################################*/
+/*! ############ LARGER DESKTOPS ###########*/
+/*! ########################################*/
+@media (min-width: 1280px) {
+
+}
