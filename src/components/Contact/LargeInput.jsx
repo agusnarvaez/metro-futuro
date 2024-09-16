@@ -1,44 +1,34 @@
-import { useState } from "react"
-export default function LargeInput({field,contact,setContact}) {
-    const [inputClass,setInputClass] = useState("largeInput")
+import { useState, forwardRef } from "react";
 
-    const handleChange = (event) => {
+const LargeInput = forwardRef(({ field, error, ...props }, ref) => {
+  const [inputClass, setInputClass] = useState("largeInput");
 
-        const { name, value } = event.target
-        setContact({ ...contact, [name]: value })
-
-        if(event.target.value.length > 0){
-            field.isValid = true
-        }else{
-            field.isValid = false
-        }
+  const handleBlur = () => {
+    if (!error) {
+      setInputClass("largeInput input--valid");
+    } else {
+      setInputClass("largeInput input--invalid");
     }
+  };
 
-    const handleBlur = () => {
-        if(field.isValid){
-            setInputClass("largeInput input--valid")
-            field.showErrors = false
-        }else{
-            setInputClass("largeInput input--invalid")
-            field.showErrors = true
-        }
-    }
+  return (
+    <>
+      <div className={inputClass} id="inputContainer">
+        <textarea
+          className={field.class || ""}
+          id={field.name}
+          name={field.name}
+          placeholder={field.placeholder}
+          onFocus={() => setInputClass("largeInput input--focus")}
+          onBlur={handleBlur}
+          ref={ref} // La referencia de react-hook-form
+          {...props} // Incluye las propiedades adicionales de react-hook-form
+          required
+        />
+      </div>
+      {error && <p className="errorShown">{field.error}</p>}
+    </>
+  );
+});
 
-    return (
-        <>
-            <div className={inputClass} id="inputContainer">
-                <textarea
-                    className={field.class}
-                    id="input"
-                    name={field.name}
-                    placeholder={field.placeholder}
-                    onChange={handleChange}
-                    onFocus={()=>{setInputClass("largeInput input--focus")}}
-                    onBlur={handleBlur}
-                    required
-                />
-            </div>
-            {field.showErrors?<p className="errorShown">{field.error}</p>:null}
-        </>
-    )
-}
+export default LargeInput;
