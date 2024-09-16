@@ -96,6 +96,12 @@ const metaData = {
         description:"En Metro Futuro, nos comprometemos a proteger la privacidad de nuestros usuarios y a proporcionar una experiencia segura y funcional. Este segmento de nuestra Política de Privacidad explica cómo y por qué utilizamos cookies en nuestro sitio web.",
         keywords:"cookies, privacidad, metro futuro",
         cannonical: "https://www.metro-futuro.com/"
+    },
+    clientSignUpForm:{
+        title: "Regístrate como cliente",
+        description:"Regístrate como cliente para acceder a todas las funcionalidades de Metro Futuro y disfrutar de una experiencia personalizada.",
+        keywords:"registro, cliente, metro futuro",
+        cannonical: "https://www.metro-futuro.com/"
     }
 }
 export default metaData
