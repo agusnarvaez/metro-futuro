@@ -55,7 +55,7 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
                         </ul>
                     </div>
                 </li>
-                <li className="login-button-li"><DegradedLink  text="Iniciar sesión" route='https://app.metro-futuro.com/login' backgroundColor="" id="login-button" inverted={true} /></li>
+                {/* <li className="login-button-li"><DegradedLink  text="Iniciar sesión" route='https://app.metro-futuro.com/login' backgroundColor="" id="login-button" inverted={true} /></li> */}
             </ul>
     )
 }
