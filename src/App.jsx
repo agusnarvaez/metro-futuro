@@ -34,7 +34,7 @@ import Footer from "./components/Footer/Footer"
 import metaData from "./data/metaData"
 
 //* Lazy Loading de las páginas
-const Home = lazy(()=> import('./pages/Home'))
+//const Home = lazy(()=> import('./pages/Home'))
 const Investments= lazy(()=>import('./pages/Investments'))
 const InvestmentDetail = lazy(()=> import("./pages/InvestmentDetail"))
 const Learn = lazy(()=> import("./pages/Learn"))
@@ -56,7 +56,7 @@ export default function App() {
   const [investments,setInvestments]=useState([])
   const routesList =[
     {
-      component: <Home metaData={metaData.home}  list={articles} setList={setArticles} investments={investments} setInvestments={setInvestments} />,
+      component: <Learn list={articles} metaData={metaData.courses} setList={setArticles} learnArticles={learnArticles} setLearnArticles={setLearnArticles} />,
       path: "/"
     },
     {

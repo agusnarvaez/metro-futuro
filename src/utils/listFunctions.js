@@ -10,6 +10,7 @@ const contentType = (condition)=>{
         case "inmuebles": return "property"
         case "blog": return "blog"
         case "aprende": return "courses"
+        case "": return "courses"
         default: return "property"
     }
 }

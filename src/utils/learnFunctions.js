@@ -6,6 +6,8 @@ const selectTitle = (param) => {
 			return "artículo";
 		case "aprende":
 			return "curso";
+		case "":
+			return "curso";
 		default:
 			return "curso"
 	}
@@ -18,6 +20,8 @@ const selectSlogan = (param) => {
 			return "Un blog sobre las últimas tendencias en inversiones digitales y Real Estate";
 		case "aprende":
 			return "Aprende sobre las últimas tendencias en inversiones digitales y Real Estate";
+		case "":
+			return "Aprende sobre las últimas tendencias en inversiones digitales y Real Estate";
 		default:
 			return ""
 	}
@@ -29,6 +33,8 @@ const selectType = (param) => {
 		case "blog":
 			return "artículo";
 		case "aprende":
+			return "curso";
+		case "":
 			return "curso";
 		default:
 			return ""
