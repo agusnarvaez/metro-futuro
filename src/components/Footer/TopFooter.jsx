@@ -13,17 +13,17 @@ export default function BottomFooter() {
 		className: "leftLinks",
 		content:[
 			{
-				to:'/',
+				to:'https://metro-futuro.com',
 				text: 'Home'
 			},
 			{
-				to:'/sobre-nosotros',
+				to:'https://metro-futuro.com/nosotros',
 				text: 'Quienes somos'
 			},
 			{
-				to:'/inmuebles',
+				to:'https://metro-futuro.com',
 				text: 'Inmuebles'
-			},
+			},/* ,
 			{
 				to:'/aprende',
 				text: 'Academy'
@@ -31,15 +31,11 @@ export default function BottomFooter() {
 			{
 				to:'/blog',
 				text: 'Blog'
-			},
+			}, */
 			{
-				to:'/contacto',
+				to:'https://metro-futuro.com/contacto',
 				text: 'Contáctanos'
-			}/* ,
-			{
-				to:'/investments/list',
-				text: 'Inversiones'
-			} */
+			}
 		]
 	}
 
@@ -48,17 +44,13 @@ export default function BottomFooter() {
 		className: "rightLinks",
 		content:[
 		{
-			to:'/ayuda',
+			to:'https://metro-futuro.com/faq',
 			text: 'Ayuda/FAQ'
 		},
 		{
-			to:'/terminos-y-condiciones',
+			to:'https://metro-futuro.com/tyc',
 			text: 'Términos y condiciones'
-		}/* ,
-		{
-			to:'/privacy',
-			text: 'Políticas de privacidad'
-		} */
+		}
 	]}
 
 
@@ -67,8 +59,6 @@ export default function BottomFooter() {
         window.scrollTo({
           top: 0,
           behavior: 'smooth'
-          /* you can also use 'auto' behaviour
-             in place of 'smooth' */
         })
       }
 
