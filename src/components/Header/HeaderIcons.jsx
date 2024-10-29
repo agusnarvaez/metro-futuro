@@ -17,12 +17,12 @@ export default function HeaderIcons({burgerMenu,setBurgerMenu}) {
     return (
 
             <div className="headerIcons">
-                <NavLink
-                    onClick={scrollToTop}
+                <a
                     className="metroFuturoLogo"
                     title="Home"
-                    to="/"
-                    exact="true"
+                    href="https://metro-futuro.com"
+                    target="_self"  // Abre en la misma pestaña
+                    rel="noopener noreferrer"
                 >
                     <img
                     src={metroFuturoLogo}
@@ -31,7 +31,7 @@ export default function HeaderIcons({burgerMenu,setBurgerMenu}) {
                     title="metroFuturoLogo"
                     loading="lazy"
                 />
-                </NavLink>
+                </a>
 
                 {/** Burger Menu Icons **/}
                 <img

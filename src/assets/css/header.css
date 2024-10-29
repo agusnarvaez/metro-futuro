@@ -147,6 +147,18 @@ li.academy-accordion.show .accordion-container{
 }
 .login-button-li{
     width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-mf);
+    color: var(--white);
+    border-radius: 50rem;
+    height: 10%;
+    max-height: 40px;
+}
+.login-button-li a{
+    color: var(--white);
+    text-decoration: none;
 }
 #login-button{
     /* min-width: 250px; */
@@ -161,9 +173,9 @@ li.academy-accordion.show .accordion-container{
     .header .hiddenMenu{
         top: -1000%;
     }
-    /* .header .navigation li {
-        padding: 3% 0;
-    } */
+    .login-button-li{
+        width: 50%;
+    }
 
 }
 
@@ -212,7 +224,9 @@ li.academy-accordion.show .accordion-container{
         padding: 0;
     }
     .login-button-li{
-        width: 16%;
+        width: 17%;
+        height: 70%;
+        max-height: 80px;
     }
     .header ul.navigation li.academy-accordion{
         width: 20%;
