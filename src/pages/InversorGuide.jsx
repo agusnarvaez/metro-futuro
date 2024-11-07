@@ -42,10 +42,6 @@ export default function InversorGuide({metaData}) {
                     <div className={showInvest?"show index":"index"}>
                         <ul className={showInvest?"show":""}>
                             <li><a href='#guide-12'>¿Cómo crear una cuenta en Metro Futuro?</a></li>
-                            <li><a href='#guide-13'>¿Cómo verificar tu identidad en Metro Futuro?</a></li>
-                            <li><a href='#guide-14'>¿Cómo crear una billetera digital en MetaMask?</a></li>
-                            <li><a href='#guide-15'>¿Cómo configurar tu billetera digital en MetaMask?</a></li>
-                            <li><a href='#guide-16'>¿Cómo invertir en una propiedad a través de Metro Futuro?</a></li>
                         </ul>
                     </div>
                 </article>
@@ -112,33 +108,12 @@ export default function InversorGuide({metaData}) {
                     <p>Al igual que una billetera que utilizamos para guardar tarjetas o dinero en efectivo, existen billeteras digitales que permiten almacenar nuestro dinero y tokens. Un ejemplo de estas es Metamask, la billetera digital que recomendamos en Metro Futuro, es uno de los monederos virtuales más populares para interactuar con blockchains compatibles con la red Ethereum y con otras importantes redes.</p>
                     <LazyReactPlayer url='https://youtu.be/m2V0nTONHL8?si=zE9dfmWGTIbGSER5' borderRadius='10px' />
                 </section>
-
-
                 <section id='guide-12'>
                     <h2>12- ¿Cómo crear una cuenta en Metro Futuro?</h2>
                     <p>Ahora que ya conoces qué es Metro Futuro y algunos conceptos básicos vinculados al negocio de tokenización inmobiliaria. Te vamos a enseñar cómo podes registrarte en nuestra plataforma para comenzar a invertir en tokens inmobiliarios.</p>
-                    <LazyReactPlayer url='https://youtu.be/6VU38OaCqHY' borderRadius='10px' />
+                    <LazyReactPlayer url='https://youtu.be/HTPxxXtt3xY' borderRadius='10px' />
                 </section>
-                <section id='guide-13'>
-                    <h2>13- ¿Cómo verificar tu identidad en Metro Futuro?</h2>
-                    <LazyReactPlayer url='https://youtu.be/AmTvz6cntGo' borderRadius='10px' />
-                </section>
-                <section id='guide-14'>
-                    <h2>14- ¿Cómo crear una billetera digital en MetaMask?</h2>
-                    <p>Este video puede ayudarte a complementar el proceso de creación de una wallet en Metamask.</p>
-                    <LazyReactPlayer url='https://youtu.be/G3kwPO4I90c' borderRadius='10px' />
-                </section>
-                <section id='guide-15'>
-                    <h2>15- ¿Cómo configurar tu billetera digital en MetaMask?</h2>
-                    <p>A lo largo de los últimos años la tecnología ha cambiado la forma en que vivimos y hacemos negocios. Los tokens inmobiliarios son la última gran revolución del mercado inmobiliario. Una analogía para comprender los tokens son las acciones. Al igual que se generan acciones de empresas, se generan tokens de inmuebles. Cada token representa una fracción del piso, es decir, si la propiedad vale 100.000 euros, se pueden generar 1000 tokens de 100 euros cada uno.</p>
-                    <LazyReactPlayer url='https://youtu.be/8L2uJxJWmMs' borderRadius='10px' />
-                </section>
-                <section id='guide-16'>
-                    <h2>16- ¿Cómo invertir en una propiedad a través de Metro Futuro?</h2>
-                    <p>¡Felicitaciones! Estás muy cerca de concretar tu compra de tokens inmobiliarios. Si llegaste hasta aquí, quiere decir que ya abriste tu cuenta en Metro Futuro y tienes tu billetera en MetaMask activa y con fondos. Lo único que queda es completar el proceso de compra de los tokens que desees desde la plataforma de Metro Futuro. En este video te contamos cómo hacerlo.</p>
-                    <LazyReactPlayer url='https://youtu.be/Lj03WT37vFI' borderRadius='10px' />
-                </section>
-                </main>
+            </main>
         </main>
     )
 }
