@@ -27,14 +27,12 @@ import "./assets/css/404NotFound.css"
 //* ### COMPONENTS ###
 import Header from "./components/Header"
 
-/* import WhatsappButton from './components/WhatsappButton' */
 import Footer from "./components/Footer/Footer"
 
 //* DATA
 import metaData from "./data/metaData"
 
 //* Lazy Loading de las páginas
-//const Home = lazy(()=> import('./pages/Home'))
 const Investments= lazy(()=>import('./pages/Investments'))
 const InvestmentDetail = lazy(()=> import("./pages/InvestmentDetail"))
 const Learn = lazy(()=> import("./pages/Learn"))
@@ -129,8 +127,6 @@ export default function App() {
           <Routes>
             {routesList.map((route, key) => { return (<Route key={key} path={route.path} element={route.component} />)})}
           </Routes>
-        {/* <WhatsappButton /> */}
-
         <Footer />
 
       </BrowserRouter>
