@@ -111,7 +111,7 @@ export default function InversorGuide({metaData}) {
                 <section id='guide-12'>
                     <h2>12- ¿Cómo crear una cuenta en Metro Futuro?</h2>
                     <p>Ahora que ya conoces qué es Metro Futuro y algunos conceptos básicos vinculados al negocio de tokenización inmobiliaria. Te vamos a enseñar cómo podes registrarte en nuestra plataforma para comenzar a invertir en tokens inmobiliarios.</p>
-                    <LazyReactPlayer url='https://youtu.be/HTPxxXtt3xY' borderRadius='10px' />
+                    <LazyReactPlayer url='https://youtu.be/p5v4n4hseTc' borderRadius='10px' />
                 </section>
             </main>
         </main>
