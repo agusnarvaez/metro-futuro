@@ -79,7 +79,7 @@ export default function LearnCourses({item,url,id,setVideoUrl}) {
 										<img src={thumbnailUrl} alt='miniatura video' />
 									</div>
 									<h3>{title}</h3>
-									<h4>{item.videosDescriptions[i]}</h4>
+									<h4>{item.videosDescriptions && item.videosDescriptions[i]}</h4>
 								</article>
 								)
 						})

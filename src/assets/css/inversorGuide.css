@@ -54,7 +54,7 @@
     padding: 5% 0% 0 10%;
 }
 .inversorGuidePage aside article.second-list .index ul{
-    counter-reset: item 11;
+    /* counter-reset: item 11; */
     list-style: decimal inside;
     list-style-type: none;
     padding-left: 0;
