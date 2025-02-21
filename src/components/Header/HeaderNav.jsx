@@ -53,7 +53,7 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
                         </ul>
                     </div>
                 </li>
-                <li className="login-button-li"><a href='https://app.metro-futuro.com/login'>INICIAR SESIÓN</a></li>
+                <li className="login-button-li"><a href='https://metro-futuro.com/login'>INICIAR SESIÓN</a></li>
             </ul>
     )
 }
