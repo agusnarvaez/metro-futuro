@@ -42,6 +42,10 @@ export default function InversorGuide({metaData}) {
                     <div className={showInvest?"show index":"index"}>
                         <ul className={showInvest?"show":""}>
                             <li><a href='#guide-12'>¿Cómo crear una cuenta en Metro Futuro?</a></li>
+                            <li><a href='#guide-13'>¿Cómo verificar tu identidad en Metro Futuro?</a></li>
+                            <li><a href='#guide-14'>¿Cómo crear una billetera digital en MetaMask?</a></li>
+                            <li><a href='#guide-15'>¿Cómo configurar tu billetera digital en MetaMask?</a></li>
+                            <li><a href='#guide-16'>¿Cómo invertir en una propiedad a través de Metro Futuro?</a></li>
                         </ul>
                     </div>
                 </article>
