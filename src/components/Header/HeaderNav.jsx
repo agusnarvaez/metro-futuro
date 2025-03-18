@@ -1,9 +1,7 @@
 import { useState } from "react"
 import HeaderLink from "./HeaderLink"
 import HeaderNavLink from "./HeaderNavLink"
-import DegradedLink from "../DegradedLink"
 import learnCourseVideoDownArrow from '../../assets/img/icons/learnCourseVideoDownArrow.svg'
-import { Link } from "react-router-dom"
 export default function HeaderNav({burgerMenu,setBurgerMenu}) {
     const [showCourses,setShowCourses] = useState(false)
     const links = [

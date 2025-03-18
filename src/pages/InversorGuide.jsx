@@ -6,8 +6,8 @@ import HelmetData from "../components/HelmetData"
 import LazyReactPlayer from '../components/LazyReactPlayer'
 import learnCourseVideoDownArrow from '../assets/img/icons/learnCourseVideoDownArrow.svg'
 export default function InversorGuide({metaData}) {
-    const [showBasics, setShowBasics] = useState(false)
-    const [showInvest,setShowInvest] = useState(false)
+/*     const [showBasics, setShowBasics] = useState(false)
+ */    const [showInvest,setShowInvest] = useState(false)
     return (
         <main className='inversorGuidePage'>
             <HelmetData metaData={metaData} />
@@ -41,20 +41,27 @@ export default function InversorGuide({metaData}) {
                     </div>
                     <div className={showInvest?"show index":"index"}>
                         <ul className={showInvest?"show":""}>
-                            <li><a href='#guide-12'>¿Cómo crear una cuenta en Metro Futuro?</a></li>
-                            <li><a href='#guide-13'>¿Cómo verificar tu identidad en Metro Futuro?</a></li>
+                            <li><a href='#guide-12'>¿Cómo depositar dólar cripto en tu billetera de Metro Futuro?</a></li>
+                            <li><a href='#guide-13'>¿Cómo invertir en pesos argentinos?</a></li>
+                            <li><a href='#guide-14'>¿Cómo invertir en dólares o euros?</a></li>
+                            <li><a href='#guide-15'>¿Cómo elegir inmuebles?</a></li>
+                            <li><a href='#guide-16'>¿Cómo verificar mi identidad?</a></li>
+                            <li><a href='#guide-17'>¿Cómo registrarme en Metro Futuro?</a></li>
+                            <li><a href='#guide-18'>¿Cómo reinvertir y generar interés compuesto?</a></li>
+                            {/* <li><a href='#guide-13'>¿Cómo verificar tu identidad en Metro Futuro?</a></li>
                             <li><a href='#guide-14'>¿Cómo crear una billetera digital en MetaMask?</a></li>
                             <li><a href='#guide-15'>¿Cómo configurar tu billetera digital en MetaMask?</a></li>
-                            <li><a href='#guide-16'>¿Cómo invertir en una propiedad a través de Metro Futuro?</a></li>
+                            <li><a href='#guide-16'>¿Cómo invertir en una propiedad a través de Metro Futuro?</a></li> */}
                         </ul>
                     </div>
                 </article>
             </aside>
             <main>
-                {/* <section id='guide-1'>
-                    <h2>1- ¿Qué es Metro Futuro?</h2>
+            <section id='guide-1'>
+                    <h2>¿Qué es Metro Futuro?</h2>
                     <p>Metro Futuro es una plataforma de inversión en inmuebles tokenizados en Europa. A través de Metro Futuro puedes comenzar a invertir desde 100 euros y recibir una renta mensual por el alquiler de los pisos.</p>
                 </section>
+                {/*
                 <section id='guide-2'>
                     <h2>2- ¿Cómo funciona Metro Futuro?</h2>
                     <LazyReactPlayer url='https://youtu.be/jKbQe482oJw?si=hnNQHULAx3dnTAVR' borderRadius='10px' />
@@ -115,28 +122,32 @@ export default function InversorGuide({metaData}) {
 
 
                 <section id='guide-12'>
-                    <h2>1- ¿Cómo crear una cuenta en Metro Futuro?</h2>
-                    <p>Ahora que ya conoces qué es Metro Futuro y algunos conceptos básicos vinculados al negocio de tokenización inmobiliaria. Te vamos a enseñar cómo podes registrarte en nuestra plataforma para comenzar a invertir en tokens inmobiliarios.</p>
-                    <LazyReactPlayer url='https://youtu.be/6VU38OaCqHY' borderRadius='10px' />
+                    <h2>1- ¿Cómo depositar dólar cripto en tu billetera de Metro Futuro?</h2>
+                    <LazyReactPlayer url='https://youtu.be/p2oyEsgMA7c?si=VB6E9Py7ReabCeMz' borderRadius='10px' />
                 </section>
                 <section id='guide-13'>
-                    <h2>2- ¿Cómo verificar tu identidad en Metro Futuro?</h2>
-                    <LazyReactPlayer url='https://youtu.be/AmTvz6cntGo' borderRadius='10px' />
+                    <h2>2- ¿Cómo invertir en pesos argentinos?</h2>
+                    <LazyReactPlayer url='https://youtu.be/D_-9Nq4ehHo?si=Y7FTiuKd6p0sJ7il' borderRadius='10px' />
                 </section>
                 <section id='guide-14'>
-                    <h2>3- ¿Cómo crear una billetera digital en MetaMask?</h2>
-                    <p>Este video puede ayudarte a complementar el proceso de creación de una wallet en Metamask.</p>
-                    <LazyReactPlayer url='https://youtu.be/G3kwPO4I90c' borderRadius='10px' />
+                    <h2>3- ¿Cómo invertir en dólares o euros?</h2>
+                    <LazyReactPlayer url='https://youtu.be/JO_F0YZPOgQ?si=CAOhjUz9nf1cmcpf' borderRadius='10px' />
                 </section>
                 <section id='guide-15'>
-                    <h2>4- ¿Cómo configurar tu billetera digital en MetaMask?</h2>
-                    <p>A lo largo de los últimos años la tecnología ha cambiado la forma en que vivimos y hacemos negocios. Los tokens inmobiliarios son la última gran revolución del mercado inmobiliario. Una analogía para comprender los tokens son las acciones. Al igual que se generan acciones de empresas, se generan tokens de inmuebles. Cada token representa una fracción del piso, es decir, si la propiedad vale 100.000 euros, se pueden generar 1000 tokens de 100 euros cada uno.</p>
-                    <LazyReactPlayer url='https://youtu.be/8L2uJxJWmMs' borderRadius='10px' />
+                    <h2>4- ¿Cómo elegir inmuebles?</h2>
+                    <LazyReactPlayer url='https://youtu.be/xDpEkTnoZqU?si=bL14VvWXNE9QQww9' borderRadius='10px' />
                 </section>
                 <section id='guide-16'>
-                    <h2>5- ¿Cómo invertir en una propiedad a través de Metro Futuro?</h2>
-                    <p>¡Felicitaciones! Estás muy cerca de concretar tu compra de tokens inmobiliarios. Si llegaste hasta aquí, quiere decir que ya abriste tu cuenta en Metro Futuro y tienes tu billetera en MetaMask activa y con fondos. Lo único que queda es completar el proceso de compra de los tokens que desees desde la plataforma de Metro Futuro. En este video te contamos cómo hacerlo.</p>
-                    <LazyReactPlayer url='https://youtu.be/Lj03WT37vFI' borderRadius='10px' />
+                    <h2>5- ¿Cómo verificar mi identidad?</h2>
+                    <LazyReactPlayer url='https://youtu.be/fGHZ1AirtQA?si=O6ok7WM9ErjdKZgq' borderRadius='10px' />
+                </section>
+                <section id='guide-17'>
+                    <h2>6- ¿Cómo registrarme en Metro Futuro?</h2>
+                    <LazyReactPlayer url='https://youtu.be/K72v_KtwF74?si=YMr4k_jiESGnKqhp' borderRadius='10px' />
+                </section>
+                <section id='guide-18'>
+                    <h2>7- ¿Cómo reinvertir y generar interés compuesto?</h2>
+                    <LazyReactPlayer url='https://youtu.be/jIOYJeQkCx4?si=wWGZQfGQ4qhQnbtI' borderRadius='10px' />
                 </section>
             </main>
         </main>
