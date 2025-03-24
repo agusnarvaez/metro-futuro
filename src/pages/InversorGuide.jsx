@@ -1,13 +1,13 @@
 //* Importo Hooks y ReactGA (Google Anlytics)
 import '../assets/css/inversorGuide.css'
-import { useState } from 'react'
+/* import { useState } from 'react' */
 // COMPONENTS
 import HelmetData from "../components/HelmetData"
 import LazyReactPlayer from '../components/LazyReactPlayer'
-import learnCourseVideoDownArrow from '../assets/img/icons/learnCourseVideoDownArrow.svg'
+/* import learnCourseVideoDownArrow from '../assets/img/icons/learnCourseVideoDownArrow.svg' */
 export default function InversorGuide({metaData}) {
-/*     const [showBasics, setShowBasics] = useState(false)
- */    const [showInvest,setShowInvest] = useState(false)
+/*     const [showBasics, setShowBasics] = useState(false)*/
+/*     const [showInvest,setShowInvest] = useState(false) */
     return (
         <main className='inversorGuidePage'>
             <HelmetData metaData={metaData} />
@@ -35,18 +35,18 @@ export default function InversorGuide({metaData}) {
                     </div>
                 </article> */}
                 <article className='second-list'>
-                    <div className='title' onClick={()=>setShowInvest(!showInvest)}>
-                        <h3>CÓMO COMENZAR A INVERTIR</h3>
-                        <img className={!showInvest?"videoArrow":"videoArrow videoArrow--rotated"}  alt="downArrow" title="downArrow" src={learnCourseVideoDownArrow} loading="lazy"/>
+                    <div className='title'>
+                        <h2>CÓMO COMENZAR A INVERTIR</h2>
+                        {/* <img className={!showInvest?"videoArrow":"videoArrow videoArrow--rotated"}  alt="downArrow" title="downArrow" src={learnCourseVideoDownArrow} loading="lazy"/> */}
                     </div>
-                    <div className={showInvest?"show index":"index"}>
-                        <ul className={showInvest?"show":""}>
-                            <li><a href='#guide-12'>¿Cómo depositar dólar cripto en tu billetera de Metro Futuro?</a></li>
-                            <li><a href='#guide-13'>¿Cómo invertir en pesos argentinos?</a></li>
-                            <li><a href='#guide-14'>¿Cómo invertir en dólares o euros?</a></li>
-                            <li><a href='#guide-15'>¿Cómo elegir inmuebles?</a></li>
-                            <li><a href='#guide-16'>¿Cómo verificar mi identidad?</a></li>
-                            <li><a href='#guide-17'>¿Cómo registrarme en Metro Futuro?</a></li>
+                    <div className={"show index"}>
+                        <ul className={"show"}>
+                            <li><a href='#guide-12'>¿Cómo registrarme en Metro Futuro?</a></li>
+                            <li><a href='#guide-13'>¿Cómo verificar mi identidad?</a></li>
+                            <li><a href='#guide-14'>¿Cómo elegir inmuebles?</a></li>
+                            <li><a href='#guide-15'>¿Cómo invertir en pesos argentinos?</a></li>
+                            <li><a href='#guide-16'>¿Cómo invertir en dólares o euros?</a></li>
+                            <li><a href='#guide-17'>¿Cómo depositar dólar cripto en tu billetera de Metro Futuro?</a></li>
                             <li><a href='#guide-18'>¿Cómo reinvertir y generar interés compuesto?</a></li>
                             {/* <li><a href='#guide-13'>¿Cómo verificar tu identidad en Metro Futuro?</a></li>
                             <li><a href='#guide-14'>¿Cómo crear una billetera digital en MetaMask?</a></li>
@@ -57,10 +57,6 @@ export default function InversorGuide({metaData}) {
                 </article>
             </aside>
             <main>
-            <section id='guide-1'>
-                    <h2>¿Qué es Metro Futuro?</h2>
-                    <p>Metro Futuro es una plataforma de inversión en inmuebles tokenizados en Europa. A través de Metro Futuro puedes comenzar a invertir desde 100 euros y recibir una renta mensual por el alquiler de los pisos.</p>
-                </section>
                 {/*
                 <section id='guide-2'>
                     <h2>2- ¿Cómo funciona Metro Futuro?</h2>
@@ -122,28 +118,28 @@ export default function InversorGuide({metaData}) {
 
 
                 <section id='guide-12'>
-                    <h2>1- ¿Cómo depositar dólar cripto en tu billetera de Metro Futuro?</h2>
-                    <LazyReactPlayer url='https://youtu.be/p2oyEsgMA7c?si=VB6E9Py7ReabCeMz' borderRadius='10px' />
+                    <h2>1- ¿Cómo registrarme en Metro Futuro?</h2>
+                    <LazyReactPlayer url='https://youtu.be/K72v_KtwF74?si=YMr4k_jiESGnKqhp' borderRadius='10px' />
                 </section>
                 <section id='guide-13'>
-                    <h2>2- ¿Cómo invertir en pesos argentinos?</h2>
-                    <LazyReactPlayer url='https://youtu.be/D_-9Nq4ehHo?si=Y7FTiuKd6p0sJ7il' borderRadius='10px' />
-                </section>
-                <section id='guide-14'>
-                    <h2>3- ¿Cómo invertir en dólares o euros?</h2>
-                    <LazyReactPlayer url='https://youtu.be/JO_F0YZPOgQ?si=CAOhjUz9nf1cmcpf' borderRadius='10px' />
-                </section>
-                <section id='guide-15'>
-                    <h2>4- ¿Cómo elegir inmuebles?</h2>
-                    <LazyReactPlayer url='https://youtu.be/xDpEkTnoZqU?si=bL14VvWXNE9QQww9' borderRadius='10px' />
-                </section>
-                <section id='guide-16'>
-                    <h2>5- ¿Cómo verificar mi identidad?</h2>
+                    <h2>2- ¿Cómo verificar mi identidad?</h2>
                     <LazyReactPlayer url='https://youtu.be/fGHZ1AirtQA?si=O6ok7WM9ErjdKZgq' borderRadius='10px' />
                 </section>
+                <section id='guide-14'>
+                    <h2>3- ¿Cómo elegir inmuebles?</h2>
+                    <LazyReactPlayer url='https://youtu.be/xDpEkTnoZqU?si=bL14VvWXNE9QQww9' borderRadius='10px' />
+                </section>
+                <section id='guide-15'>
+                    <h2>4- ¿Cómo invertir en pesos argentinos?</h2>
+                    <LazyReactPlayer url='https://youtu.be/D_-9Nq4ehHo?si=Y7FTiuKd6p0sJ7il' borderRadius='10px' />
+                </section>
+                <section id='guide-16'>
+                    <h2>5- ¿Cómo invertir en dólares o euros?</h2>
+                    <LazyReactPlayer url='https://youtu.be/JO_F0YZPOgQ?si=CAOhjUz9nf1cmcpf' borderRadius='10px' />
+                </section>
                 <section id='guide-17'>
-                    <h2>6- ¿Cómo registrarme en Metro Futuro?</h2>
-                    <LazyReactPlayer url='https://youtu.be/K72v_KtwF74?si=YMr4k_jiESGnKqhp' borderRadius='10px' />
+                    <h2>6- ¿Cómo depositar dólar cripto en tu billetera de Metro Futuro?</h2>
+                    <LazyReactPlayer url='https://youtu.be/p2oyEsgMA7c?si=VB6E9Py7ReabCeMz' borderRadius='10px' />
                 </section>
                 <section id='guide-18'>
                     <h2>7- ¿Cómo reinvertir y generar interés compuesto?</h2>
