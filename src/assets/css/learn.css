@@ -57,6 +57,7 @@
 }
 .learnPage{
     position: relative;
+    padding: 1vh 10vw 10vh 10vw;
 }
 .learnPage .video-modal{
     display: none;

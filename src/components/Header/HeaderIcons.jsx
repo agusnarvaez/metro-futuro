@@ -1,5 +1,5 @@
 //* Logo de Metro Futuro
-import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.png"
+import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.svg"
 
 //* Ícono de menú
 import burgerMenuIcon from "../../assets/img/icons/burgerMenuIcon.svg"

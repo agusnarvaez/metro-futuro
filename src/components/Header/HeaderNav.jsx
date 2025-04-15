@@ -5,10 +5,10 @@ import learnCourseVideoDownArrow from '../../assets/img/icons/learnCourseVideoDo
 export default function HeaderNav({burgerMenu,setBurgerMenu}) {
     const [showCourses,setShowCourses] = useState(false)
     const links = [
-        {
+       /*  {
             title:"Home",
             to:"metro-futuro.com"
-        },
+        }, */
         {
             title:"Inmuebles",
             to:"metro-futuro.com"
@@ -17,10 +17,10 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
             title:"Quienes somos",
             to:"metro-futuro.com/nosotros"
         },
-        {
+/*         {
             title:"Contacto",
             to:"metro-futuro.com/contacto"
-        }
+        } */
     ]
 
 
@@ -51,6 +51,10 @@ export default function HeaderNav({burgerMenu,setBurgerMenu}) {
                         </ul>
                     </div>
                 </li>
+                <HeaderLink
+                            link={{title:'Contacto',to:'metro-futuro.com/contacto'}} links={links}
+                            burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}
+                        />
                 <li className="login-button-li"><a href='https://metro-futuro.com/login'>INICIAR SESIÓN</a></li>
             </ul>
     )

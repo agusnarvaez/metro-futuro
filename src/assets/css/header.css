@@ -14,6 +14,7 @@
     left: 0;
     right: 0;
     z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .headerShadow{
     width: 100%;
@@ -95,9 +96,15 @@ li.academy-accordion{
 .academy-accordion span,
 .navLink{
     text-decoration: none;
-    font-size: 2em;
-    color: black;
+    font-size: 2rem;
+    color: var(--grey);
     z-index: 5;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.academy-accordion span:hover,
+.navLink:hover{
+    color: var(--blue-mf);
 }
 .academy-accordion span{
     width: 100%;
@@ -115,6 +122,7 @@ li.academy-accordion{
 }
 .academy-accordion span img{
     position: absolute;
+    opacity: 0.4;
     right: 0;
 
 }
@@ -155,6 +163,7 @@ li.academy-accordion.show .accordion-container{
     border-radius: 50rem;
     height: 10%;
     max-height: 40px;
+    font-family: 'Lexend';
 }
 .login-button-li a{
     color: var(--white);
@@ -185,7 +194,9 @@ li.academy-accordion.show .accordion-container{
 @media (min-width: 769px) {
 
     .header{
-        padding: 1vh 3vw 1vh 3vw;
+        padding: 1vh 15vw 1vh 15vw;
+        height: 8vh;
+        max-height: 84px;
     }
     .degradedSeparator--header{
         display: none;
@@ -194,8 +205,8 @@ li.academy-accordion.show .accordion-container{
         display: none;
     }
     .metroFuturoLogo{
-        width: 19vw;
-        height: auto;
+        width: 200px;
+        height: 50px;
     }
 
     .burgerMenuIcon{
@@ -203,7 +214,7 @@ li.academy-accordion.show .accordion-container{
     }
     .header .hiddenMenu,
     .header .navigation{
-        width: 75%;
+        width: 70%;
         flex-direction: row;
         position: relative;
         justify-content: space-between;
@@ -215,7 +226,7 @@ li.academy-accordion.show .accordion-container{
     }
     .academy-accordion span,
     .navLink{
-        font-size: 1.5em;
+        font-size: 14px;
     }
 
     .headerIcons{
@@ -224,9 +235,15 @@ li.academy-accordion.show .accordion-container{
         padding: 0;
     }
     .login-button-li{
+        min-width: 150px;
+        padding: 0 5%;
         width: 17%;
         height: 70%;
-        max-height: 80px;
+        max-height: 36px;
+        transition: all 0.3s ease-in-out;
+    }
+    .login-button-li:hover{
+        background-color: var(--pink);
     }
     .header ul.navigation li.academy-accordion{
         width: 20%;
@@ -243,6 +260,9 @@ li.academy-accordion.show .accordion-container{
     }
     .header ul.navigation.hiddenMenu li.academy-accordion span .videoArrow{
         width: 25px;
+        color: var(--grey);
+        /* Agregar opacidad, porque no puedo modificar ícono */
+        opacity: 0.4;
     }
     li.academy-accordion .accordion-container{
         position: absolute;
@@ -267,19 +287,19 @@ li.academy-accordion.show .accordion-container{
     .header{
         height: 15vh;
     }
-    .metroFuturoLogo{
+   /*  .metroFuturoLogo{
         width: 20vw;
     }
-
+ */
     .header .navigation{
-        width: 70%;
+        width: 60%;
     }
     .header ul.navigation li.academy-accordion{
         width: 17%;
     }
     .academy-accordion span,
     .navLink{
-        font-size: 1.7em;
+        font-size: 14px;
     }
 
 

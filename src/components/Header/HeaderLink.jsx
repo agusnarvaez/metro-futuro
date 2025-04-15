@@ -7,7 +7,7 @@ export default function HeaderLink({link,index,links,burgerMenu,setBurgerMenu}) 
     return (
         <>
             <li>
-            <a
+                <a
                     className='navLink'
                     href={`https://${link.to}`}  // Asegura que incluya el protocolo
                     title={link.title}

@@ -1,7 +1,7 @@
 
 
 //* IMAGES
-import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.png"
+import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.svg"
 
 //* COMPONENTS
 import FooterLinks from './FooterLinks'

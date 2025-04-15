@@ -2,7 +2,7 @@
 import aboutTitleBg from "../../assets/img/background/aboutTitleBg.svg"
 
 // Logos
-import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.png"
+import metroFuturoLogo from "../../assets/img/logos/metroFuturoLogo.svg"
 
 
 export default function AboutTitle() {
