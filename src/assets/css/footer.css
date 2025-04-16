@@ -8,7 +8,7 @@
 .mainFooter{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right,#C2D4FF,#004DFF);
+    background: var(--blue-mf);
     padding: 15vh 10vw 10vh 10vw;
     display: flex;
     flex-direction: column;
@@ -16,36 +16,42 @@
     align-items: center;
     flex-wrap: wrap;
     height:fit-content;
-    border-top-left-radius: 100px;
     position: relative;
     overflow: hidden;
+    margin-top: -5px;
+}
+.footerContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    position: relative;
+}
+.footerContainer > .svgContainer{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+.bgFooterContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 20;
+    inset: 0;
 }
 
 /** ### BACKGROUNDS ### */
-.mainFooterBackgroundLeft{
+.mainFooterBackground{
     position: absolute;
-    border-top-left-radius: 150px;
     top: 0;
-    left: 0;
-    width: 250vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    z-index: 0;
-    opacity: 50%;
-    background-color: transparent;
-}
-.mainFooterBackgroundRight {
-    position: absolute;
-    border-top-left-radius: 150px;
-    bottom: 0;
-    right:  -100%;
-    width: 300vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    z-index: 0;
-    opacity: 50%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
 }
 /*! ### Backgrounds ### */
 
@@ -55,10 +61,62 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 20px;
     z-index: 5;
+    gap: 40px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.topFooter section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    margin: 0;
+    gap: 15px;
+}
+.topFooter section > *{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+.topFooter section h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+.topFooter section h3{
+    font-size: 20px;
+}
+.topFooter section p{
+    font-size: 14px;
+}
+.topFooter .footerLocation{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.topFooter ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.topFooter ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
 }
 .footerMetroLogo{
     width: 100%;
@@ -73,6 +131,11 @@
 .footerMetroLogo img{
     width: 80%;
     height: auto;
+}
+.topFooter .footerContact,
+.footerContact ul{
+    gap: 20px;
+
 }
 .footerLinks{
     width: 100%;
@@ -96,10 +159,13 @@
     height: auto;
     padding: 5% 0 5% 0;
 }
-
+.footerLink{
+    font-size: 14px;
+    text-decoration: none;
+}
 .footerLinks a {
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 14px;
     font-weight: 200;
 }
 .footerLinks h3{
@@ -107,11 +173,30 @@
 }
 
 .bottomFooter{
-    border-top: 1px white solid;
+    border-top: 0.5px white solid;
     width: 100%;
     padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.bottomFooter ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.bottomFooter ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -133,12 +218,17 @@
     max-height: 40px;
 }
 
-.footerSocials{
-    width: 50%;
+.topFooter .footerSocials{
+    width: fit-content;
     height: 100%;
-    display: flex;
+    gap: 10px;
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    /* 3 columnas y dos filas */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     z-index: 5;
 }
 
@@ -152,6 +242,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .footerSocials a *{
@@ -161,15 +252,44 @@
     justify-content: center;
     align-items: center;
     margin: 0.5%;
+    color: rgb(30 136 229);
+}
+.footerSocials a > *{
+    font-size: 20px;
 }
 
-.footerSocials img{
-    height: 17px;
-    width: 17px;
-    color: white;
+.footerSocials i{
+    height: 25px;
+    width: 25px;
+    /* color: rgb(30 136 229);
+    fill: rgb(30 136 229); */
 }
-.tikTokLogo{
-    filter: brightness(0) invert(1);
+.footerSocials svg{
+    /* color: rgb(30 136 229);
+    fill: rgb(30 136 229); */
+}
+
+@media (min-width: 768px){
+    .topFooter{
+        padding-bottom: 20px;
+        flex-direction: row;
+    }
+    .bottomFooter{
+        padding-top: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bottomFooter .bapps,
+    .bottomFooter ul{
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    .botomFooter ul{
+        justify-content: flex-end;
+    }
+    .bottomFooter ul li{
+        width: fit-content;
+    }
 }
 
 /*! #######################################*/
@@ -178,10 +298,9 @@
 @media (min-width: 1024px) {
 
     .mainFooter{
-        padding: 15vh 10vw 10vh 10vw;
+        padding: 10vh 10vw 10vh 10vw;
         flex-direction: row;
         align-items: center;
-        border-top-left-radius: 150px;
     }
     /** ### BACKGROUNDS ### */
     .mainFooterBackgroundLeft{
@@ -229,6 +348,7 @@
 
     .bottomFooter{
         padding-top: 50px;
+        flex-direction: row;
     }
 
     .mainFooter .bapps{
@@ -246,11 +366,14 @@
     }
 
     .footerSocials a {
-        height: 50px;
-        width: 50px;
+        height: 36px;
+        width: 36px;
         border: 1.7px white solid;
         cursor: pointer;
         margin:0;
+    }
+    .footerSocials a i{
+        font-size: 20px;
     }
 
     .footerSocials a *{

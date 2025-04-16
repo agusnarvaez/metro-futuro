@@ -1,48 +1,56 @@
 //* ### COMPONENTE FOOTER ###
 
 //* IMAGES
-import instagramLogo from "../../assets/img/icons/instagramLogo.svg"
+/* import instagramLogo from "../../assets/img/icons/instagramLogo.svg"
 
 //TODO: ESPERAR A QUE JUAN GENERE LAS REDES
 import linkedinLogo from "../../assets/img/icons/linkedInLogo.svg"
 import twitterLogo from "../../assets/img/icons/twitterLogo.svg"
 import telegramLogo from "../../assets/img/icons/telegramLogo.png"
 import youTubeLogo from "../../assets/img/icons/youTubeLogo.svg"
+import tikTokLogo from "../../assets/img/icons/tiktokLogo.svg" */
 import tikTokLogo from "../../assets/img/icons/tiktokLogo.svg"
+
 export default function FooterSocialLogos() {
 	const socialLogos = [
 		{
 			className: "instagramLogo",
-			src: instagramLogo,
+			src: 'fa-brands fa-instagram',
 			href: "https://www.instagram.com/metrofuturo/"
 		},
 		{
 			className: "linkedinLogo",
-			src: linkedinLogo,
-			href: "https://www.linkedin.com/company/metro-futuro/"
+			src: 'fa-brands fa-linkedin',
+			href: "https://www.linkedin.com/company/metro-futuro/posts/?feedView=all"
 		},
 		{
 			className: "twitterLogo",
-			src: twitterLogo,
-			href: "https://twitter.com/Metrofuturo"
-		},
-		{
-			className: "telegramLogo",
-			src: telegramLogo,
-			href: "https://t.me/metrofuturodefi"
+			src: 'fa-brands fa-twitter',
+			href: "https://x.com/Metrofuturo"
 		},
 		{
 			className: "youTubeLogo",
-			src: youTubeLogo,
+			src: 'fa-brands fa-youtube',
 			href: "https://www.youtube.com/channel/UCmiKhrSZxmtVFlz7wt1dcKw"
 		},
 		{
 			className: "tikTokLogo",
-			src: tikTokLogo,
+			src: 'fa-brands fa-tiktok',
 			href: "https://www.tiktok.com/@metrofuturo"
-		}
+		},
+		{
+			className: "telegramLogo",
+			src: 'fa-brands fa-telegram',
+			href: "https://t.me/metrofuturodefi"
+		},
 
 	]
+
+	const isSvg = (src) => {
+		const svgPattern = /\.svg$/i; // Expresión regular para verificar si es un SVG
+		console.log(src,svgPattern.test(src))
+		return svgPattern.test(src);
+	}
 
 	return (
 
@@ -59,12 +67,10 @@ export default function FooterSocialLogos() {
 								title={socialLogo.className}
 								>
 								<div className={socialLogo.className}>
-									<img
-										src={socialLogo.src}
-										alt={socialLogo.className}
-										title={socialLogo.className}
-										loading="lazy"
-									/>
+									{<i
+										className={socialLogo.src}
+									/>}
+
 								</div>
 							</a>
 						)
