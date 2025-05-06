@@ -26,13 +26,14 @@
 /** ### Course Title ### */
 .learnCoursePage_Title{
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 95%;
     height: fit-content;
     margin: 0;
     padding: 0;
 }
 .learnCoursePage_Title h1{
+   width: 90%;
     font-size: 2.1em;
     font-weight: 600;
     text-align: start;
@@ -40,6 +41,7 @@
     margin-bottom: 1rem;
 }
 .learnCoursePage_Title p{
+   width: 90%;
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
@@ -318,6 +320,17 @@
       overflow: hidden;
       width: 100vw;
    }
+
+
+   .learnCoursePage_Title,
+   .learnCoursePage_InfoDescription{
+      width: 80%;
+   }
+   .learnCoursePage_Title > h1,
+   .learnCoursePage_Title > p,
+   .learnCoursePage_Info > *{
+      width: 100%;
+   }
    .learnCoursePage_Nav li{
       font-size: 1.5em;
       padding: 2% 1%;
@@ -325,9 +338,9 @@
    .learnCoursePage_InfoDescriptionResume br{
       display: none;
    }
-   .learnCoursePage_InfoDescription{
+   /* .learnCoursePage_InfoDescription{
       padding: 0 10%;
-   }
+   } */
    .learnCoursePage_InfoDescriptionContainer{
       width: 100%;
    }
