@@ -17,18 +17,10 @@ export default function BottomFooter() {
 	}
 
 	return (
-
 		<div className="topFooter">
 			<section>
 				<h2>Metro Futuro</h2>
-				<p>Inversiones inmobiliarias en blockchain</p>
 				<FooterSocialLogos/>
-				<ul className="footerLocation">
-					<li>Metro Futuro DeFi SL (B72928500)</li>
-					<li>Calle Augusto Plasencia, Num 1 - Sevilla, España</li>
-					<li>Metro Futuro SRL (30718689410)</li>
-					<li>Tucuman 1 Piso 4 - CABA, Argentina</li>
-				</ul>
 			</section>
 			<section>
 				<h3>Empresa</h3>
@@ -56,18 +48,24 @@ export default function BottomFooter() {
 				>
 					Blog
 				</NavLink>
-			</section>
-			<section>
-				<h3>Inmuebles</h3>
 				<a
 					className='footerLink'
-					href={`https://metro-futuro.com/inmuebles`}  // Asegura que incluya el protocolo
+					href={`https://metro-futuro.com/guia-del-inversor`}  // Asegura que incluya el protocolo
 					title='Quiero invertir'
 					target="_self"  // Abre en la misma pestaña
 					rel="noopener noreferrer"  // Seguridad adicional para evitar vulnerabilidades de redirección
 				>
-					Quiero invertir
+					Guía del Inversor
 				</a>
+			</section>
+			<section>
+				<h3>Ubicación</h3>
+				<ul className="footerLocation">
+					<li>Metro Futuro DeFi SL (B72928500)</li>
+					<li>Calle Augusto Plasencia, Num 1 - Sevilla, España</li>
+					<li>Metro Futuro SRL (30718689410)</li>
+					<li>Tucuman 1 Piso 4 - CABA, Argentina</li>
+				</ul>
 			</section>
 			<section className="footerContact">
 				<h3>Contacto</h3>

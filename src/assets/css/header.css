@@ -168,6 +168,7 @@ li.academy-accordion.show .accordion-container{
 .login-button-li a{
     color: var(--white);
     text-decoration: none;
+    font-weight: 600;
 }
 #login-button{
     /* min-width: 250px; */
@@ -217,12 +218,21 @@ li.academy-accordion.show .accordion-container{
         width: 70%;
         flex-direction: row;
         position: relative;
-        justify-content: space-between;
+        justify-content: flex-end;
         top: 0;
         padding: 0;
         margin: 0;
         transition: none;
         height: 100%;
+    }
+    .header ul.navigation li.academy-accordion {
+        width: 15%;
+    }
+    .academy-accordion span{
+        width: fit-content;
+    }
+    .academy-accordion span img{
+        right: -25px;
     }
     .academy-accordion span,
     .navLink{
@@ -246,7 +256,7 @@ li.academy-accordion.show .accordion-container{
         background-color: var(--pink);
     }
     .header ul.navigation li.academy-accordion{
-        width: 20%;
+        /* width: 20%; */
         height: 100%;
         position: relative;
         background-color: #FBFDFF;
@@ -294,9 +304,9 @@ li.academy-accordion.show .accordion-container{
     .header .navigation{
         width: 60%;
     }
-    .header ul.navigation li.academy-accordion{
+    /* .header ul.navigation li.academy-accordion{
         width: 17%;
-    }
+    } */
     .academy-accordion span,
     .navLink{
         font-size: 14px;
