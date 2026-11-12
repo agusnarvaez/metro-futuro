@@ -1,0 +1,16 @@
+version: 1
+id: metro-futuro
+kind: site
+# Demo de portfolio: Metro Futuro ya no es cliente. Sin form, sin registro y sin tracking del cliente.
+environments:
+  testing:
+    url: https://metro-futuro-testing.bapps.com.ar
+    host: vps
+    health: /version.json
+    workflow: deploy-testing.yml
+  prod:
+    url: https://metro-futuro.bapps.com.ar
+    host: vps
+    health: /version.json
+    workflow: deploy-prod.yml
+domains: [bapps.com.ar]

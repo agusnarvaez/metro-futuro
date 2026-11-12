@@ -1,7 +1,5 @@
-
-//* Importo Hooks y ReactGA (Google Anlytics)
-import {useState, useEffect, Suspense, lazy } from "react"
-import ReactGA from 'react-ga'
+//* Importo Hooks
+import { useState, Suspense, lazy } from "react"
 //* REACT-ROUTER-DOM
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -114,11 +112,6 @@ export default function App() {
       path: "/politica-de-cookies"
     }
   ]
-  useEffect(() => {
-    ReactGA.initialize('G-ZHYMQ1QR1B')
-    ReactGA.set({ page: window.location.pathname })
-    ReactGA.pageview(window.location.pathname + window.location.search)
-  }, [])
   return (
     <Suspense fallback={<div className="loading">Cargando...</div>}>
       <BrowserRouter>

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import Cookies from 'js-cookie'
-import credentials from '../../credentials'
 import { Link } from 'react-router-dom'
 import FormButton from '../../components/Contact/FormButton'
 //* Importo la función que selecciona el título del Slogan
@@ -11,34 +10,11 @@ export default function LearnSlogan({path,setShowPopUp}) {
 
 	const [buttonClass, setButtonClass] = useState('contactSubmit degradedLink')
 
-	const onSubmit = async (data) => {
-		try {
-			setButtonClass('contactSubmit contactSubmit--loading')
-			const response = await fetch(
-				`${credentials.metroFuturoApi}/users`, // URL de la API
-				{
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify(data),
-				}
-			)
-
-			if (response.status>=200) {
-				Cookies.set('isRegistered', 'true', { expires: 60 })
-				setButtonClass('contactSubmit degradedLink contactSubmit--success')
-
-				setShowPopUp(false) // Ocultar el PopUp después de registrar
-			} else {
-				// Manejar la respuesta no exitosa
-				console.error('Registro fallido: ',response)
-				setButtonClass('contactSubmit contactSubmit--error')
-		}
-		} catch (error) {
-		console.error('Error al enviar el formulario:', error)
-		setButtonClass('contactSubmit contactSubmit--error')
-		}
+	//* ponytail: sitio demo de portfolio, no se registra a nadie: solo da acceso a la academia
+	const onSubmit = () => {
+		Cookies.set('isRegistered', 'true', { expires: 60 })
+		setButtonClass('contactSubmit degradedLink contactSubmit--success')
+		setShowPopUp(false)
 	}
 	return (
 		<section id='learnPopUp'>

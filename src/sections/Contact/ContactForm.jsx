@@ -2,12 +2,7 @@
 import { useState,useRef } from "react"
 
 
-//* API de Emails
-import emailjs from 'emailjs-com'
-
 import { fieldsList,frmContact } from "../../utils/contactFields"
-
-import credentials from "../../credentials"
 
 //* Componentes
 import ContactInputs from "../../components/Contact/ContactInputs"
@@ -40,25 +35,10 @@ export default function ContactForm() {
             //* Si está todo ok, muestro el símbolo de carga
             setButtonClass("contactSubmit contactSubmit--loading")
 
-            //* Si están ok, ejecuta el método de emailJs
-            emailjs.send(
-                credentials.emailJs.service, //* ID de servicio de mail de la API
-                credentials.emailJs.template, //* ID de la plantilla de Mail
-                contact,
-                credentials.emailJs.id //* ID de
-                )
-                    .then((response) => {
-                        console.info('SUCCESS!', response.status, response.text)
-                        setContact(frmContact)
-                        setButtonClass("contactSubmit degradedLink contactSubmit--success")
-                        setSuccessMessage(true)
-                    },
-
-                    //* Capturo el error al enviar el mensaje
-                    (err) => {
-                        console.error('ERROR:\n', err)
-                        setButtonClass("contactSubmit contactSubmit--error")
-                    })
+            //* ponytail: sitio demo de portfolio, el formulario no envía datos
+            setContact(frmContact)
+            setButtonClass("contactSubmit degradedLink contactSubmit--success")
+            setSuccessMessage(true)
         }
     }
 
@@ -70,7 +50,7 @@ export default function ContactForm() {
                 <ContactInputs fields={fields.current} contact={contact} setContact={setContact} />
 
                 <FormButton buttonClass={buttonClass} setButtonClass={setButtonClass} />
-                {successMessage?<p>Gracias por tu interés. En breve, un representante de Metro Futuro se estará comunicando contigo.</p>:""}
+                {successMessage?<p>Sitio de demostración: el formulario no envía datos.</p>:""}
             </form >
 
         </section>

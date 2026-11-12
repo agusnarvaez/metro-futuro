@@ -49,15 +49,6 @@ const fieldsList = [
         isValid:false,
         showErrors:false,
         error:"Ingrese un mensaje"
-    },
-    {
-        name:"captcha",
-        type:"captcha",
-        class:"recaptcha",
-        value:"",
-        isValid:false,
-        showErrors:false,
-        error:"Por favor, verifique que no es un robot"
     }
 ]
 
